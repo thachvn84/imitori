@@ -1,0 +1,13 @@
+{
+    "port": 9000,
+    "service": {
+        "host" : "localhost",
+        "port" : 9001
+    },
+    "paths": {
+        "searchOneWord": "/word",
+        "searchMultiWord": "/multiword"
+    },
+    "timeout": 3600000,
+    "expire": 60000
+}
