@@ -5,8 +5,8 @@
         "port" : 9001
     },
     "paths": {
-        "searchOneWord": "/word",
-        "searchMultiWord": "/multiword"
+        "searchOneWord": "/dic/word/search",
+        "searchMultiWord": "/dic/word/searchlike"
     },
     "timeout": 3600000,
     "expire": 60000

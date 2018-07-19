@@ -3,6 +3,7 @@ package imitori.neo4j.services;
 import java.util.*;
 
 import imitori.neo4j.entity.WordEntity;
+import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.repositories.WordRepository;
 
 import org.slf4j.Logger;
@@ -31,6 +32,13 @@ public class WordService {
     public Collection<WordEntity> findByWordLike(String word) {
         LOG.debug("findByWordLike" + word);
         Collection<WordEntity> result = wordRepository.findByWordLike(word);
+        return result;
+    }
+
+    @Transactional(readOnly = true)
+    public WordEntity addOneWord(WordDto word) {
+        WordEntity result;
+        result = wordRepository.addOneWord(word.word, word.kana, word.romaji);
         return result;
     }
 }
