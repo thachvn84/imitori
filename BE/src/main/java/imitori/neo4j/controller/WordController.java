@@ -26,13 +26,25 @@ public class WordController {
     }
 
     @GetMapping("/search")
-    public WordEntity findByWord(@RequestParam String word) {
-        return wordService.findByWord(word);
+    public WordEntity findOneByWord(@RequestParam String word) {
+        WordEntity result;
+        result = wordService.findOneByWord(word);
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(result));
+        if (result == null) {
+            result = wordService.findOneByKana(word);
+            System.out.println(gson.toJson(result));
+        }
+        if (result == null) {
+            result = wordService.findOneByRomaji(word);
+            System.out.println(gson.toJson(result));
+        }
+        return result;
     }
 
-    @GetMapping("/searchlike")
-    public Collection<WordEntity> findByWordLike(@RequestParam String word) {
-        return wordService.findByWordLike(word);
+    @GetMapping("/searchAll")
+    public Collection<WordEntity> findAllByWord(@RequestParam String word) {
+        return wordService.findAllByWord(word);
     }
 
     @PostMapping("/add")

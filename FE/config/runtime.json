@@ -6,7 +6,7 @@
     },
     "paths": {
         "searchOneWord": "/dic/word/search",
-        "searchMultiWord": "/dic/word/searchlike"
+        "searchMultiWord": "/dic/word/searchAll"
     },
     "timeout": 3600000,
     "expire": 60000

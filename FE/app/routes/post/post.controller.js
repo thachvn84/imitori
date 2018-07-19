@@ -42,12 +42,14 @@ module.exports = (router) => {
                 path: config.paths.searchOneWord+"?word="+encodeURI(req.body.word)
             };
             console.log(option);
+            
             http.get(option, function(resp) {
                 var jsonStr = '';
                 resp.on('data', function(data) {
                     jsonStr += data;
                 });
                 resp.on('end', function() {
+                    console.log(jsonStr.length);
                     res.send(jsonStr);
                 });
                 resp.on('error', function(e) {

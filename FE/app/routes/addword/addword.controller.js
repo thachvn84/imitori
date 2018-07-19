@@ -8,7 +8,7 @@ var http=require('http'),
  * @param {object} router
  */
 module.exports = (router) => {
-    router.get("/post",
+    router.get("/resever",
         /**
          * @param {object} req
          * @param {object} res
@@ -26,7 +26,7 @@ module.exports = (router) => {
         },
     );
 
-    router.post("/post",
+    router.post("/resever",
         /**
          * @param {object} req
          * @param {object} res

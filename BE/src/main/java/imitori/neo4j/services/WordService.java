@@ -22,16 +22,28 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public WordEntity findByWord(String word) {
-        LOG.debug("findByWord" + word);
-        WordEntity result = wordRepository.findByWord(word);
+    public WordEntity findOneByWord(String word) {
+        WordEntity result = wordRepository.findOneByWord(word);
         return result;
     }
 
     @Transactional(readOnly = true)
-    public Collection<WordEntity> findByWordLike(String word) {
+    public WordEntity findOneByKana(String word) {
+        WordEntity result = wordRepository.findOneByKana(word);
+        return result;
+    }
+
+    @Transactional(readOnly = true)
+    public WordEntity findOneByRomaji(String word) {
+        WordEntity result = wordRepository.findOneByRomaji(word);
+        return result;
+    }
+    
+
+    @Transactional(readOnly = true)
+    public Collection<WordEntity> findAllByWord(String word) {
         LOG.debug("findByWordLike" + word);
-        Collection<WordEntity> result = wordRepository.findByWordLike(word);
+        Collection<WordEntity> result = wordRepository.findAllByWord(word);
         return result;
     }
 
