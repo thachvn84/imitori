@@ -9,7 +9,7 @@ export default {
     props: {
         word: {
             type: String,
-            default: "Z"
+            default: ""
         },
         kana: {
             type: String,
