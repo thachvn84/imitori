@@ -51,7 +51,7 @@ public class WordController {
         if (result == null) {
             result = new WordEntity(0L, "", "", "");
         }
-        System.out.println(excutePost(""));
+        //System.out.println(excutePost(""));
         return ResponseEntity.status(HttpStatus.CREATED).header("Access-Control-Allow-Origin", "*")
                 .body(new WordDto(result.getId(), result.word, result.kana, result.romaji, result.mean));
     }
@@ -74,7 +74,7 @@ public class WordController {
         HttpURLConnection connection = null;
         try {
             // Create connection
-            url = new URL("https://dictionary.cambridge.org/dictionary/english-vietnamese/attract");
+            url = new URL("https://dictionary.cambridge.org/dictionary/english-vietnamese/direct/?p=attract");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
