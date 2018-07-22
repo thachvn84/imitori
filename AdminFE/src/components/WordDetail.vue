@@ -21,9 +21,6 @@
                  <div>
                     <form accept-charset="utf-8">
                         <div class="form-group">
-                            <div>
-                                {{analyzeWord()}}
-                            </div>
                             <label class="px-2" for="word.word">Word:</label>
                             <input id="word-edit" class="form-control" type="text" name="word" v-model="word.word" autocomplete=""/>
                             <label class="px-2" for="word.kana">kana:</label>
@@ -63,11 +60,13 @@ export default {
     word: {
       type: Object,
       default: ""
-    }
+    }    
+  },
+  beforeMount: function() {
   },
   methods: {
     hvDetect: function() {
-      console.log(this.word.word);
+      //console.log(this.word.word);
 
       var res = "";
       var i = 0;
@@ -78,66 +77,13 @@ export default {
       return res;
     },
     disabledFunc: function() {},
-    analyzeWord: function() {
-      console.log(this.word.word);
-      console.log(this.word.kana);
-      if (this.word.mean != null) {
-        var wArr = this.word.mean.split(/\r?\n/);
-
-        var i = 0;
-        var wo = new Array();
-        if (wArr.length > 0) {
-          var tl = this.word.mean.split(/\r?\n/)[0].split(")");
-          var wtl = this.word.mean.split(/\r?\n/)[0].split(")");
-          var ttl = new Array();
-          wo.push({ data: wtl.pop() });
-          if (tl.length > 1) {
-            tl = tl[0].split("(")[1].split(",");
-            tl.forEach(element => {
-              if (element.trim().length > 0) {
-                ttl.push({ data: element.trim() });
-                console.log(element.trim());
-              }
-            });
-
-            this.word.tl = ttl;
-            console.log(this.word.tl);
-          }
-        }
-        if (wArr.length > 1) {
-          for (i = 1; i < wArr.length; i++) {
-            if (wArr[i].length > 0) {
-              wo.push({ data: wArr[i] });
-            }
-          }
-        }
-        this.word.meanlist = wo;
-        console.log(this.word.meanlist);
-
-        var res = [{ tl: this.word.tl }, { mean: this.word.meanlist }];
-      } else {
-          /*
-        this.word = {
-          word: "NewWord",
-          kana: "NewWord",
-          mean: "mean",
-          meanlist: [{ data: "mean" }],
-          tl: [{ data: "unknown type" }]
-        };*/
-      }
-      return "";
-
-      //Vue.http.get('https://dictionary.cambridge.org/search/english-vietnamese/direct/?q='+w).then(function(response) {
-      //console.log(response.body.split("<span class=\"trans\" lang=\"vi\">")[1].split("</span>")[0]);
-      //})
-    },
     addTl: function(e) {
-        e.preventDefault();
-        this.word.tl.push({data: "newtl"});
+      e.preventDefault();
+      this.word.tl.push({ data: "newtl" });
     },
     addMean: function(e) {
-        e.preventDefault();
-        this.word.meanlist.push({data: "new mean"});
+      e.preventDefault();
+      this.word.meanlist.push({ data: "new mean" });
     },
     saveWord: function(e) {
       e.preventDefault();
@@ -146,10 +92,10 @@ export default {
       console.log(this.word.kana);
       var i = 0;
       for (i = 0; i < this.word.tl.length; i++) {
-          console.log(this.word.tl[i].data);
+        console.log(this.word.tl[i].data);
       }
       for (i = 0; i < this.word.meanlist.length; i++) {
-          console.log(this.word.meanlist[i].data);
+        console.log(this.word.meanlist[i].data);
       }
     }
   }
