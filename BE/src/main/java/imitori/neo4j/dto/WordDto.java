@@ -16,6 +16,9 @@ public class WordDto {
     @JsonProperty("romaji")
     public String romaji;
 
+    @JsonProperty("mean")
+    public String mean;
+
     public Long getId() {
         return this.id;
     }
@@ -23,4 +26,11 @@ public class WordDto {
         this.id = id;
     }
 
+    public WordDto(Long id, String word, String kana, String romaji, String mean) {
+        this.id = id;
+        this.word = word;
+        this.kana = kana;
+        this.romaji = romaji;
+        this.mean = mean;
+    }
 }

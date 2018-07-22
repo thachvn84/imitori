@@ -15,9 +15,10 @@ public class WordEntity {
     @GeneratedValue
     private Long id;
 
-    private String word;
-    private String kana;
-    private String romaji;
+    public String word;
+    public String kana;
+    public String romaji;
+    public String mean;
     /*
     @Relationship(type="SIMILAR_TO", direction = Relationship.OUTGOING)
     private List<WordEntity> similarWords = new ArrayList<>();
@@ -34,39 +35,22 @@ public class WordEntity {
     public WordEntity() {
     }
 
-    public WordEntity(String word, String kana, String romaji) {
+    public WordEntity(Long id, String word, String kana, String romaji) {
+        this.id = id;
         this.word = word;
         this.kana = kana;
         this.romaji = romaji;
     }
 
+    public WordEntity(Long id, String word, String kana, String romaji, String mean) {
+        this.id = id;
+        this.word = word;
+        this.kana = kana;
+        this.romaji = romaji;
+        this.mean = mean;
+    }
+
     public Long getId() {
         return id;
     }
-
-    public String getWord() {
-        return this.word;
-    }
-
-    public void setWord(String w) {
-        this.word = w;
-    }
-
-    public String getKana() {
-        return this.kana;
-    }
-
-    public void setKana(String k) {
-        this.kana = k;
-    }
-
-    public String getRomaji() {
-        return this.romaji;
-    }
-
-    public void setRomaji(String r) {
-        this.romaji = r;
-    }
-
-
 }
