@@ -2,3 +2,5 @@ FE/node_modules
 BE/.settings
 BE/target
 AdminFE/node_modules
+FE/package-lock.json
+AdminFE/package-lock.json
