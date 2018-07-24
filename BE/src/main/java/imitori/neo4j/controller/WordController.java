@@ -33,6 +33,11 @@ public class WordController {
         return id;
     }
 
+    @GetMapping("/delete")
+    public void deleteOneWord(@RequestParam Long id) {
+        wordService.deleteOneWord(id);
+    }
+
     @GetMapping("/search")
     public ResponseEntity<WordDto> findOneByWord(@RequestParam String word) {
         WordEntity result;
@@ -73,6 +78,23 @@ public class WordController {
                                    @RequestParam Integer sc) {
         String result; 
         wordService.createPairOfWord(w1, l1, w2, l2, sc);                            
+        result = findSimilarToByWord(w1);
+        return result;
+    }
+
+    //Add a pair of word, then set the SIMILAR_TO.score between them
+    //If one of them (from Word, Relation, ToWord) existed, only update
+    //If not existed, create full element
+    @GetMapping("/createPairFull")
+    public String createPairOfFullWord(@RequestParam String w1,
+                                       @RequestParam String sp1,
+                                       @RequestParam String l1,
+                                       @RequestParam String w2,
+                                       @RequestParam String sp2,
+                                       @RequestParam String l2,
+                                       @RequestParam Integer sc) {
+        String result;
+        wordService.createPairOfFullWord(w1, sp1, l1, w2, sp2, l2, sc);
         result = findSimilarToByWord(w1);
         return result;
     }

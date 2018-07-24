@@ -27,6 +27,10 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
+    public void deleteOneWord(Long id) {
+        wordRepository.deleteOneWord(id);
+    }
+    @Transactional(readOnly = true)
     public WordEntity findOneWord(String word) {
         WordEntity result = wordRepository.findOneWord(word);
         return result;
@@ -108,6 +112,25 @@ public class WordService {
 
         if (word2 == null) {
             word2 = wordRepository.createOneWord(w2, "", l2);
+        }
+
+        wordRepository.createSimilarToRel(word1.getId(), word2.getId(), sc);
+    }
+
+    //Add a pair of word, then set the SIMILAR_TO.score between them
+    //If one of them (from Word, Relation, ToWord) existed, only update
+    //If not, create full of word
+    @Transactional(readOnly = true)
+    public void createPairOfFullWord(String w1, String sp1, String l1, String w2, String sp2, String l2, Integer sc) {
+        WordEntity word1 = wordRepository.findOneWord(w1, sp1, l1);
+        WordEntity word2 = wordRepository.findOneWord(w2, sp2, l2);
+
+        if (word1 == null) {
+            word1 = wordRepository.createOneWord(w1, sp1, l1);
+        } 
+
+        if (word2 == null) {
+            word2 = wordRepository.createOneWord(w2, sp2, l2);
         }
 
         wordRepository.createSimilarToRel(word1.getId(), word2.getId(), sc);
