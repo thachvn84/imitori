@@ -1,29 +1,18 @@
 package imitori.neo4j.controller;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.Collection;
-import java.util.Map;
-
 import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.services.WordService;
 
-import java.io.InputStream;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Collection;
+import java.util.Map;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
-import com.google.gson.Gson;
 
 @RestController
 @RequestMapping("/dic/word/")
@@ -34,87 +23,57 @@ public class WordController {
         this.wordService = wordService;
     }
 
+    @GetMapping("/add")
+    public Long createOneWord(@RequestParam String word,
+                              @RequestParam String spell,
+                              @RequestParam String lang) {
+        Long id = 0L;
+        WordEntity wi  = wordService.creatOneWord(word, spell, lang);
+        id = wi.getId();
+        return id;
+    }
+
     @GetMapping("/search")
     public ResponseEntity<WordDto> findOneByWord(@RequestParam String word) {
         WordEntity result;
-        result = wordService.findOneByWord(word);
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(result));
-        if (result == null) {
-            result = wordService.findOneByKana(word);
-            System.out.println(gson.toJson(result));
-        }
-        if (result == null) {
-            result = wordService.findOneByRomaji(word);
-            System.out.println(gson.toJson(result));
-        }
+        result = wordService.findOneWord(word);
         if (result == null) {
             result = new WordEntity(0L, "", "", "");
         }
         //System.out.println(excutePost(""));
         return ResponseEntity.status(HttpStatus.CREATED).header("Access-Control-Allow-Origin", "*")
-                .body(new WordDto(result.getId(), result.word, result.kana, result.romaji, result.mean));
+                .body(new WordDto(result.getId(), result.word, result.spell, result.lang));
     }
 
-    @GetMapping("/searchAll")
-    public Collection<WordEntity> findAllByWord(@RequestParam String word) {
-        return wordService.findAllByWord(word);
+    // Return the list of [Word.word, r.score] that [Input param]-[r:SIMILAR_TO]->(Word)
+    @GetMapping("/similarTo")
+    public  String findSimilarToByWord(@RequestParam String word) {
+        Collection<Map<String, Integer>> result;
+        result = wordService.findSimilarTo(word);
+ 
+        return result.toString();
     }
 
-    @PostMapping("/add")
-    public void addOneWord(@RequestBody WordDto word) {
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(word));
-        WordEntity result = wordService.addOneWord(word);
-        System.out.println(gson.toJson(result));
+    // Return the list of [Word.word, r.score] that [Word]-[r:SIMILAR_TO]->(Input param)
+    @GetMapping("/similarFrom")
+    public  String findSimilarFromByWord(@RequestParam String word) {
+        Collection<Map<String, Integer>> result;
+        result = wordService.findSimilarFrom(word);
+ 
+        return result.toString();
     }
 
-    public static String excutePost(String urlParameters) {
-        URL url;
-        HttpURLConnection connection = null;
-        try {
-            // Create connection
-            url = new URL("https://dictionary.cambridge.org/dictionary/english-vietnamese/direct/?p=attract");
-            connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-
-            connection.setRequestProperty("Content-Length", "" + Integer.toString(urlParameters.getBytes().length));
-            connection.setRequestProperty("Content-Language", "en-US");
-
-            connection.setUseCaches(false);
-            connection.setDoInput(true);
-            connection.setDoOutput(true);
-
-            // Send request
-            DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
-            wr.writeBytes(urlParameters);
-            wr.flush();
-            wr.close();
-
-            // Get Response
-            InputStream is = connection.getInputStream();
-            //InputStreamReader a;
-            BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-            String line;
-            StringBuffer response = new StringBuffer();
-            while ((line = rd.readLine()) != null) {
-                response.append(line);
-                response.append('\r');
-            }
-            rd.close();
-            return response.toString();
-
-        } catch (Exception e) {
-
-            e.printStackTrace();
-            return null;
-
-        } finally {
-
-            if (connection != null) {
-                connection.disconnect();
-            }
-        }
+    //Add a pair of word, then set the SIMILAR_TO.score between them
+    //If one of them (from Word, Relation, ToWord) existed, only update
+    @GetMapping("/createPair")
+    public String createPairOfWord(@RequestParam String w1,
+                                   @RequestParam String l1,
+                                   @RequestParam String w2,
+                                   @RequestParam String l2,
+                                   @RequestParam Integer sc) {
+        String result; 
+        wordService.createPairOfWord(w1, l1, w2, l2, sc);                            
+        result = findSimilarToByWord(w1);
+        return result;
     }
 }

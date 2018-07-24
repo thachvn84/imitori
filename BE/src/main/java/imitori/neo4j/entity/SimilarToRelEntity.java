@@ -12,39 +12,15 @@ public class SimilarToRelEntity {
     @GeneratedValue
     private Long id;
 
-    private Integer score;
+    public Integer score;
 
     @StartNode
-    private WordEntity startWord;
+    public WordEntity startWord;
 
     @EndNode
-    private WordEntity endWord;
+    public WordEntity endWord;
 
     public Long getId() {
         return id;
-    }
-
-    public WordEntity getStartWord() {
-        return startWord;
-    }
-
-    public void setStartWord(WordEntity w) {
-        this.startWord = w;
-    }
-
-    public WordEntity getEndWord() {
-        return endWord;
-    }
-
-    public void setEndWord(WordEntity w) {
-        this.endWord = w;
-    }
-
-    public Integer getScore() {
-        return score;
-    }
-
-    public void setScore(Integer s) {
-        this.score = s;
     }
 }

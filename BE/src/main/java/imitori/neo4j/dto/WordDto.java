@@ -10,14 +10,11 @@ public class WordDto {
     @JsonProperty("word")
     public String word;
 
-    @JsonProperty("kana")
-    public String kana;
+    @JsonProperty("spell")
+    public String spell;
 
-    @JsonProperty("romaji")
-    public String romaji;
-
-    @JsonProperty("mean")
-    public String mean;
+    @JsonProperty("lang")
+    public String lang;
 
     public Long getId() {
         return this.id;
@@ -26,11 +23,10 @@ public class WordDto {
         this.id = id;
     }
 
-    public WordDto(Long id, String word, String kana, String romaji, String mean) {
+    public WordDto(Long id, String word, String spell, String lang) {
         this.id = id;
         this.word = word;
-        this.kana = kana;
-        this.romaji = romaji;
-        this.mean = mean;
+        this.spell = spell;
+        this.lang = lang;
     }
 }
