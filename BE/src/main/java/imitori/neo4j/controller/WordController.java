@@ -1,15 +1,21 @@
 package imitori.neo4j.controller;
 
 import imitori.neo4j.entity.WordEntity;
+import imitori.neo4j.dto.FullWordDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.services.WordService;
 
 import java.util.Collection;
 import java.util.Map;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -98,4 +104,11 @@ public class WordController {
         result = findSimilarToByWord(w1);
         return result;
     }
+
+    //Add word with full information
+    @PostMapping("/addFullWord")
+    public void addFullWord(@RequestBody FullWordDto word) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        System.out.println(gson.toJson(word));
+    } 
 }
