@@ -110,5 +110,6 @@ public class WordController {
     public void addFullWord(@RequestBody FullWordDto word) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         System.out.println(gson.toJson(word));
+        wordService.addFullWord(word);
     } 
 }
