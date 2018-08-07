@@ -1,11 +1,8 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonDeserializer;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapter;
 import com.google.gson.TypeAdapterFactory;
+import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
@@ -21,58 +18,52 @@ import java.util.List;
 
 public class Application {
 
-    public static class sample_d {
-        String d1;
-        String d2;
-    }
-
-    public static class sample {
-        int a;
-        List<String> b;
-        int c;
-        sample_d d;
-    }
-
     public static class k_ele_Class {
-        String keb;
-        List<String> ke_inf;
-        List<String> ke_pri;
+        String keb; // Kanji cua tu
+        List<String> ke_inf; // Thong tin bo sung cho keb trong nhom
+        List<String> ke_pri; // Thong tin bo sung
     }
 
+    // Reading element
     public static class r_ele_Class {
-        String reb;
-        String re_nokanji;
-        List<String> re_restr;
-        List<String> re_inf;
-        List<String> re_pri;
+        String reb; // Furigana, neu reb = katakana, co nghia la ko co kanji
+        String re_nokanji; // Neu khong co kanji, thi gia tri nay khac null (la blank)
+        List<String> re_restr; // Kanji tuong ung cho reb trong nhom
+                               // Neu trong nhom khong co re_restr, thi reb la furigana
+                               // cua mainword
+        List<String> re_inf; // Thong tin cho reb trong nhom
+        List<String> re_pri; // Thong tin bo sung
     }
 
+    // Loan word
     public class lsource_Class {
-        String xml_lang;
-        String content;
-        String ls_type;
-        String ls_wasei;
+        @SerializedName("xml:lang")
+        String xml_lang; // Borrow from Language
+        String content; // Content
+        String ls_type; // Always "y"
+        String ls_wasei; // Alwasy "part"
     }
 
+    // Meaning and related info
     public static class sense_Class {
-        List<String> stagk;
-        List<String> stagr;
-        List<String> pos;
-        List<String> xref;
-        List<String> ant;
-        List<String> field;
-        List<String> misc;
-        String s_inf;
-        List<lsource_Class> lsource;
-        List<String> dial;
-        List<Object> gloss;
+        List<String> stagk; // Lexical meaning of Keb
+        List<String> stagr; // Lexical meaning of Reb
+        List<String> pos; // Tu loai
+        List<String> xref; // Tu co lien quan
+        List<String> ant; // Tu trai nghia
+        List<String> field; // Chuyen nganh
+        List<String> misc; // Thong tin them
+        String s_inf; // Thong tin ghi chu them
+        List<lsource_Class> lsource; // Tu muon tu nuoc ngoai
+        List<String> dial; // Tu dia phuong
+        List<Object> gloss; // Nghia cua tu
     }
 
     public static class entry_Class {
-        int ent_seq;
-        List<k_ele_Class> k_ele;
-        private List<r_ele_Class> r_ele;
-        List<sense_Class> sense;
+        int ent_seq; // Entry ID
+        List<k_ele_Class> k_ele; // Kanji Element
+        private List<r_ele_Class> r_ele; // Reading Element
+        List<sense_Class> sense; // Translation and related information
     }
 
     public class SingletonListTypeAdapterFactory implements TypeAdapterFactory {
@@ -149,7 +140,7 @@ public class Application {
         entry_Class[] we = gson.fromJson(new FileReader("filename.txt"), entry_Class[].class);
 
         for (int i = 0; i < we.length; i++) {
-            if (we[i].ent_seq == 2745190) {
+            if (we[i].ent_seq == 1057250) {
                 // Access ent_seq
                 System.out.println(we[i].ent_seq);
 
