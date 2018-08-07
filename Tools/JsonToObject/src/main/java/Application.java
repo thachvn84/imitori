@@ -16,127 +16,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Application {
-
-    // ===========================================================================================
-    private static class r_ele_ClassTypeAdapter implements JsonDeserializer<List<r_ele_Class>> {
-        public List<r_ele_Class> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext ctx) {
-            List<r_ele_Class> vals = new ArrayList<r_ele_Class>();
-            if (json.isJsonArray()) {
-                System.out.println("re_ele array");
-                for (JsonElement e : json.getAsJsonArray()) {
-                    vals.add((r_ele_Class) ctx.deserialize(e, r_ele_Class.class));
-                }
-            } else if (json.isJsonObject()) {
-                System.out.println("re_ele single");
-                vals.add((r_ele_Class) ctx.deserialize(json, r_ele_Class.class));
-            } else {
-                throw new RuntimeException("Unexpected JSON type: " + json.getClass());
-            }
-            return vals;
-        }
-    }
-
-    private static class r_String_ClassTypeAdapter implements JsonDeserializer<List<String>> {
-        public List<String> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext ctx) {
-            List<String> vals = new ArrayList<String>();
-            if (json.isJsonArray()) {
-                System.out.println("String array");
-                for (JsonElement e : json.getAsJsonArray()) {
-                    vals.add((String) ctx.deserialize(e, String.class));
-                }
-            } else if (json.isJsonObject()) {
-                System.out.println("String single");
-                vals.add((String) ctx.deserialize(json, String.class));
-            } else {
-                throw new RuntimeException("Unexpected JSON type: " + json.getClass());
-            }
-            return vals;
-        }
-    }
-
-    public abstract class CustomizedTypeAdapterFactory<C> implements TypeAdapterFactory {
-
-        private final Class<C> customizedClass;
-
-        public CustomizedTypeAdapterFactory(Class<C> customizedClass) {
-            this.customizedClass = customizedClass;
-        }
-
-        @SuppressWarnings("unchecked") // we use a runtime check to guarantee that 'C' and 'T' are equal
-        public final <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-            return type.getRawType() == customizedClass
-                    ? (TypeAdapter<T>) customizeMyClassAdapter(gson, (TypeToken<C>) type)
-                    : null;
-        }
-
-        private TypeAdapter<C> customizeMyClassAdapter(Gson gson, TypeToken<C> type) {
-            final TypeAdapter<C> delegate = gson.getDelegateAdapter(this, type);
-            final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-
-            return new TypeAdapter<C>() {
-
-                @Override
-                public void write(JsonWriter out, C value) throws IOException {
-                    JsonElement tree = delegate.toJsonTree(value);
-                    beforeWrite(value, tree);
-                    elementAdapter.write(out, tree);
-                }
-
-                @Override
-                public C read(JsonReader in) throws IOException {
-                    JsonElement tree = elementAdapter.read(in);
-                    afterRead(tree);
-                    return delegate.fromJsonTree(tree);
-                }
-            };
-        }
-
-        /**
-         * Override this to muck with {@code toSerialize} before it is written to the
-         * outgoing JSON stream.
-         */
-        protected void beforeWrite(C source, JsonElement toSerialize) {
-        }
-
-        /**
-         * Override this to muck with {@code deserialized} before it parsed into the
-         * application type.
-         */
-        protected void afterRead(JsonElement deserialized) {
-        }
-    }
-
-    private class r_ele_TypeAdapterFactory extends CustomizedTypeAdapterFactory<r_ele_Class> {
-        private r_ele_TypeAdapterFactory() {
-            super(r_ele_Class.class);
-        }
-
-        @Override
-        protected void beforeWrite(r_ele_Class source, JsonElement toSerialize) {
-
-        }
-
-        @Override
-        protected void afterRead(JsonElement json) {
-            System.out.println(json.toString());
-            if (json.isJsonArray()) {
-                System.out.println("re_ele array");
-                for (JsonElement e : json.getAsJsonArray()) {
-                    r_ele_Class tmp = new r_ele_Class();
-                    tmp.reb = e.getAsJsonObject().get("reb").getAsString();
-                }
-            } else if (json.isJsonObject()) {
-                System.out.println("re_ele single");
-            }
-        }
-    }
-
-    // ============================================================================
 
     public static class sample_d {
         String d1;
@@ -158,7 +41,7 @@ public class Application {
 
     public static class r_ele_Class {
         String reb;
-        String re_nokoanji;
+        String re_nokanji;
         List<String> re_restr;
         List<String> re_inf;
         List<String> re_pri;
@@ -263,25 +146,160 @@ public class Application {
         Gson gson = new GsonBuilder()
                 .registerTypeAdapterFactory(new Application().new SingletonListTypeAdapterFactory()).create();
 
-        // Gson gson = new Gson();
-        entry_Class[] we = gson.fromJson(new FileReader("filename.json"), entry_Class[].class);
+        entry_Class[] we = gson.fromJson(new FileReader("filename.txt"), entry_Class[].class);
 
-        //sample[] smp = gson.fromJson(new FileReader("vidu.json"), sample[].class);
-        //System.out.println(smp[0].d.d1);
-
-        System.out.println(we.length);
         for (int i = 0; i < we.length; i++) {
-            if (we[i].ent_seq == 2745380) {
-                for (int j = 0; j < we[i].sense.get(0).gloss.size(); j++) {
-                    Object t = (we[i].sense.get(0).gloss.get(j));
-                    System.out.println(t.toString());
-                    if (checkGloss(t) == 1 ) {
-                        System.out.println("Ok to cast");
-                        gloss_Class res = getGloss(t);
-                        System.out.println(res.g_type);
-                        System.out.println(res.content);
+            if (we[i].ent_seq == 2745190) {
+                // Access ent_seq
+                System.out.println(we[i].ent_seq);
+
+                // Access we[i].k_ele
+                if (we[i].k_ele != null) {
+                    for (int ik_ele = 0; ik_ele < we[i].k_ele.size(); ik_ele++) {
+                        k_ele_Class K_ele = we[i].k_ele.get(ik_ele);
+
+                        // Get keb
+                        System.out.println("keb: " + K_ele.keb);
+
+                        // Get ke_inf
+                        if (K_ele.ke_inf != null) {
+                            for (int ike_inf = 0; ike_inf < K_ele.ke_inf.size(); ike_inf++) {
+                                System.out.println("ke_inf: " + K_ele.ke_inf.get(ike_inf));
+                            }
+                        }
+
+                        // Get ke_pri
+                        if (K_ele.ke_pri != null) {
+                            for (int ike_pri = 0; ike_pri < K_ele.ke_pri.size(); ike_pri++) {
+                                System.out.println("ke_pri: " + K_ele.ke_pri.get(ike_pri));
+                            }
+                        }
                     }
                 }
+
+                // Access we[i].r_ele
+                if (we[i].r_ele != null) {
+                    for (int ir_ele = 0; ir_ele < we[i].r_ele.size(); ir_ele++) {
+                        r_ele_Class R_ele = we[i].r_ele.get(ir_ele);
+
+                        // get reb
+                        System.out.println("reb: " + R_ele.reb);
+
+                        // get re_nokanji
+                        System.out.println("re_nokanji: " + R_ele.re_nokanji);
+
+                        // get re_restr
+                        if (R_ele.re_restr != null) {
+                            for (int ire_restr = 0; ire_restr < R_ele.re_restr.size(); ire_restr++) {
+                                System.out.println("re_restr: " + R_ele.re_restr.get(ire_restr));
+                            }
+                        }
+
+                        // get re_inf
+                        if (R_ele.re_inf != null) {
+                            for (int ire_inf = 0; ire_inf < R_ele.re_inf.size(); ire_inf++) {
+                                System.out.println("re_inf: " + R_ele.re_inf.get(ire_inf));
+                            }
+                        }
+
+                        // get re_pri
+                        if (R_ele.re_pri != null) {
+                            for (int ire_pri = 0; ire_pri < R_ele.re_pri.size(); ire_pri++) {
+                                System.out.println("re_pri: " + R_ele.re_pri.get(ire_pri));
+                            }
+                        }
+                    }
+                }
+                // Access we[i].sense
+                if (we[i].sense != null) {
+                    for (int isense = 0; isense < we[i].sense.size(); isense++) {
+                        sense_Class Sense = we[i].sense.get(isense);
+                        // Get stagk
+                        if (Sense.stagk != null) {
+                            for (int istagk = 0; istagk < Sense.stagk.size(); istagk++) {
+                                System.out.println("stagk: " + Sense.stagk.get(istagk));
+                            }
+                        }
+
+                        // Get stagr
+                        if (Sense.stagr != null) {
+                            for (int istagr = 0; istagr < Sense.stagk.size(); istagr++) {
+                                System.out.println("stagr: " + Sense.stagr.get(istagr));
+                            }
+                        }
+
+                        // Get pos
+                        if (Sense.pos != null) {
+                            for (int ipos = 0; ipos < Sense.pos.size(); ipos++) {
+                                System.out.println("pos: " + Sense.pos.get(ipos));
+                            }
+                        }
+
+                        // Get xref
+                        if (Sense.xref != null) {
+                            for (int ixref = 0; ixref < Sense.xref.size(); ixref++) {
+                                System.out.println("xref: " + Sense.xref.get(ixref));
+                            }
+                        }
+
+                        // Get ant
+                        if (Sense.ant != null) {
+                            for (int iant = 0; iant < Sense.ant.size(); iant++) {
+                                System.out.println("ant: " + Sense.ant.get(iant));
+                            }
+                        }
+
+                        // Get field
+                        if (Sense.field != null) {
+                            for (int ifield = 0; ifield < Sense.field.size(); ifield++) {
+                                System.out.println("field: " + Sense.field.get(ifield));
+                            }
+                        }
+
+                        // Get misc
+                        if (Sense.misc != null) {
+                            for (int imisc = 0; imisc < Sense.misc.size(); imisc++) {
+                                System.out.println("misc: " + Sense.misc.get(imisc));
+                            }
+                        }
+
+                        // Get dial
+                        if (Sense.dial != null) {
+                            for (int idial = 0; idial < Sense.dial.size(); idial++) {
+                                System.out.println("dial: " + Sense.dial.get(idial));
+                            }
+                        }
+
+                        // Get s_inf
+                        System.out.println("s_inf: " + Sense.s_inf);
+
+                        // Get lsource
+                        if (Sense.lsource != null) {
+                            for (int ilsource = 0; ilsource < Sense.lsource.size(); ilsource++) {
+                                System.out.println("lsource.xml_lang: " + Sense.lsource.get(ilsource).xml_lang);
+                                System.out.println("lsource.ls_type: " + Sense.lsource.get(ilsource).ls_type);
+                                System.out.println("lsource.ls_wasei: " + Sense.lsource.get(ilsource).ls_wasei);
+                                System.out.println("lsource.content: " + Sense.lsource.get(ilsource).content);
+                            }
+                        }
+
+                        // Get gloss
+                        if (Sense.gloss != null) {
+                            for (int igloss = 0; igloss < Sense.gloss.size(); igloss++) {
+                                Object gloss = (Sense.gloss.get(igloss));
+                                if (checkGloss(gloss) == 1) {
+                                    System.out.println("Gloss Object:");
+                                    gloss_Class res = getGloss(gloss);
+                                    System.out.println("\tg_type: " + res.g_type);
+                                    System.out.println("\tcontent: " + res.content);
+                                } else {
+                                    System.out.println("gloss: " + gloss.toString());
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
