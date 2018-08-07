@@ -18,6 +18,8 @@ import java.util.List;
 
 public class Application {
 
+    // Kanji cua tu (tao tap hop (khong trung) k_ele[].keb[] de tao danh sach tu
+    // tieng Nhat)
     public static class k_ele_Class {
         String keb; // Kanji cua tu
         List<String> ke_inf; // Thong tin bo sung cho keb trong nhom
@@ -140,7 +142,7 @@ public class Application {
         entry_Class[] we = gson.fromJson(new FileReader("filename.txt"), entry_Class[].class);
 
         for (int i = 0; i < we.length; i++) {
-            if (we[i].ent_seq == 1057250) {
+            if (we[i].ent_seq != 0) {
                 // Access ent_seq
                 System.out.println(we[i].ent_seq);
 
@@ -214,7 +216,7 @@ public class Application {
 
                         // Get stagr
                         if (Sense.stagr != null) {
-                            for (int istagr = 0; istagr < Sense.stagk.size(); istagr++) {
+                            for (int istagr = 0; istagr < Sense.stagr.size(); istagr++) {
                                 System.out.println("stagr: " + Sense.stagr.get(istagr));
                             }
                         }
@@ -278,13 +280,15 @@ public class Application {
                         if (Sense.gloss != null) {
                             for (int igloss = 0; igloss < Sense.gloss.size(); igloss++) {
                                 Object gloss = (Sense.gloss.get(igloss));
-                                if (checkGloss(gloss) == 1) {
-                                    System.out.println("Gloss Object:");
-                                    gloss_Class res = getGloss(gloss);
-                                    System.out.println("\tg_type: " + res.g_type);
-                                    System.out.println("\tcontent: " + res.content);
-                                } else {
-                                    System.out.println("gloss: " + gloss.toString());
+                                if (gloss != null) {
+                                    if (checkGloss(gloss) == 1) {
+                                        System.out.println("Gloss Object:");
+                                        gloss_Class res = getGloss(gloss);
+                                        System.out.println("\tg_type: " + res.g_type);
+                                        System.out.println("\tcontent: " + res.content);
+                                    } else {
+                                        System.out.println("gloss: " + gloss.toString());
+                                    }
                                 }
                             }
                         }
