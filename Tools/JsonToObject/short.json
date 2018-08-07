@@ -1,7 +1,47 @@
-[{
-        "ent_seq": 1000000
+[
+    {
+        "ent_seq": 1000000,
+        "r_ele": {"reb": "ヽ"},
+        "sense": {
+            "gloss": {
+                "g_type": "expl",
+                "content": "repetition mark in katakana"
+            },
+            "pos": "&unc;"
+        }
     },
     {
-        "ent_seq": 1000010
+        "ent_seq": 1000100,
+        "r_ele": {"reb": "エービーシーじゅん"},
+        "k_ele": {"keb": "ＡＢＣ順"},
+        "sense": {
+            "gloss": "alphabetical order",
+            "pos": "&n;"
+        }
+    },
+    {
+        "ent_seq": 1000110,
+        "r_ele": [
+            {
+                "reb": "シーディープレーヤー",
+                "re_restr": "ＣＤプレーヤー",
+                "re_pri": "spec1"
+            },
+            {
+                "reb": "シーディープレイヤー2",
+                "re_restr": "ＣＤプレイヤー2"
+            }
+        ],
+        "k_ele": [
+            {
+                "ke_pri": "spec1",
+                "keb": "ＣＤプレーヤー3"
+            },
+            {"keb": "ＣＤプレイヤー4"}
+        ],
+        "sense": {
+            "gloss": "CD player",
+            "pos": "&n;"
+        }
     }
 ]
