@@ -1,4 +1,4 @@
-package imitori.neo4j.services;
+package imitori.services;
 
 import java.util.*;
 
@@ -30,6 +30,7 @@ public class WordService {
     public void deleteOneWord(Long id) {
         wordRepository.deleteOneWord(id);
     }
+
     @Transactional(readOnly = true)
     public WordEntity findOneWord(String word) {
         WordEntity result = wordRepository.findOneWord(word);
@@ -50,12 +51,12 @@ public class WordService {
 
         while (wi.hasNext()) {
             WordEntity w = wi.next();
-            //Check the InComing word
+            // Check the InComing word
             System.out.println("In come: " + w.word);
-            for (SimilarToRelEntity smlt: w.getSimilarTo()) {
+            for (SimilarToRelEntity smlt : w.getSimilarTo()) {
                 if (smlt.startWord != null && smlt.endWord != null) {
-                    System.out.println("\"" + smlt.startWord.word +
-                    "\" -> \"" + smlt.endWord.word + "\" | Score: " + smlt.score.toString());
+                    System.out.println("\"" + smlt.startWord.word + "\" -> \"" + smlt.endWord.word + "\" | Score: "
+                            + smlt.score.toString());
                     Map<String, Integer> r = new HashMap<>();
                     r.put(smlt.endWord.word, smlt.score);
                     res.add(r);
@@ -74,21 +75,22 @@ public class WordService {
         while (wi.hasNext()) {
             WordEntity w = wi.next();
             System.out.println("Out come: " + w.word);
-            for (SimilarToRelEntity smlf: w.getSimilarFrom()) {
+            for (SimilarToRelEntity smlf : w.getSimilarFrom()) {
                 if (smlf.startWord != null && smlf.endWord != null) {
-                    System.out.println("\"" + smlf.startWord.word +
-                    "\" -> \"" + smlf.endWord.word + "\" | Score: " + smlf.score.toString());
+                    System.out.println("\"" + smlf.startWord.word + "\" -> \"" + smlf.endWord.word + "\" | Score: "
+                            + smlf.score.toString());
                     Map<String, Integer> r = new HashMap<>();
                     r.put(smlf.startWord.word, smlf.score);
                     res.add(r);
                 }
             }
-            
+
         }
         return res;
     }
 
-    //Set a score for a SimilarRel between 2 word, if the rel is null, create the rel
+    // Set a score for a SimilarRel between 2 word, if the rel is null, create the
+    // rel
     @Transactional(readOnly = true)
     public void setSimilarRelScore(Long from_id, Long to_id, Integer rel_score) {
         WordEntity fw = findOneWord(from_id);
@@ -96,11 +98,11 @@ public class WordService {
         if (fw == null || tw == null) {
             return;
         }
-        
+
     }
 
-    //Add a pair of word, then set the SIMILAR_TO.score between them
-    //If one of them (from Word, Relation, ToWord) existed, only update
+    // Add a pair of word, then set the SIMILAR_TO.score between them
+    // If one of them (from Word, Relation, ToWord) existed, only update
     @Transactional(readOnly = true)
     public void createPairOfWord(String w1, String l1, String w2, String l2, Integer sc) {
         WordEntity word1 = wordRepository.findOneWord(w1, l1);
@@ -108,7 +110,7 @@ public class WordService {
 
         if (word1 == null) {
             word1 = wordRepository.createOneWord(w1, "", l1);
-        } 
+        }
 
         if (word2 == null) {
             word2 = wordRepository.createOneWord(w2, "", l2);
@@ -117,9 +119,9 @@ public class WordService {
         wordRepository.createSimilarToRel(word1.getId(), word2.getId(), sc);
     }
 
-    //Add a pair of word, then set the SIMILAR_TO.score between them
-    //If one of them (from Word, Relation, ToWord) existed, only update
-    //If not, create full of word
+    // Add a pair of word, then set the SIMILAR_TO.score between them
+    // If one of them (from Word, Relation, ToWord) existed, only update
+    // If not, create full of word
     @Transactional(readOnly = true)
     public void createPairOfFullWord(String w1, String sp1, String l1, String w2, String sp2, String l2, Integer sc) {
         WordEntity word1 = wordRepository.findOneWord(w1, sp1, l1);
@@ -127,7 +129,7 @@ public class WordService {
 
         if (word1 == null) {
             word1 = wordRepository.createOneWord(w1, sp1, l1);
-        } 
+        }
 
         if (word2 == null) {
             word2 = wordRepository.createOneWord(w2, sp2, l2);

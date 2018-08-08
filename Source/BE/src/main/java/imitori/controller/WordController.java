@@ -1,16 +1,24 @@
-package imitori.neo4j.controller;
+package imitori.controller;
 
 import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.dto.FullWordDto;
 import imitori.neo4j.dto.WordDto;
-import imitori.neo4j.services.WordService;
+import imitori.services.WordService;
+import imitori.mongodb.entity.Employee;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,6 +52,7 @@ public class WordController {
 
     @GetMapping("/search")
     public ResponseEntity<WordDto> findOneByWord(@RequestParam String word) {
+
         WordEntity result;
         result = wordService.findOneWord(word);
         if (result == null) {
@@ -103,5 +112,10 @@ public class WordController {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         System.out.println(gson.toJson(word));
         // wordService.addFullWord(word);
+    }
+
+    @GetMapping("/mongo")
+    public void mongo() {
+
     }
 }
