@@ -3,9 +3,12 @@ package imitori.controller;
 import java.util.Date;
 import java.util.List;
 
+import imitori.mongodb.entity.ENWordEntity;
 import imitori.mongodb.entity.Employee;
 import imitori.mongodb.entity.JAWordEntity;
 import imitori.mongodb.repository.JAWordRepository;
+import imitori.mongodb.repository.ENWordCrudRepository;
+import imitori.mongodb.repository.ENWordRepository;
 import imitori.mongodb.repository.EmployeeRepository;
 import imitori.mongodb.repository.EmployeeRepositoryCustom;
 import imitori.mongodb.repository.JAWordCrudRepository;
@@ -34,12 +37,18 @@ public class MainController {
     @Autowired
     JAWordCrudRepository jaWordCrudRepository;
 
-    static int id; 
+    @Autowired
+    ENWordRepository enWordRepository;
+
+    @Autowired
+    ENWordCrudRepository enWordCrudRepository;
+
+    static int id;
 
     @ResponseBody
     @RequestMapping("/")
     public String home() {
-        
+
         String html = "";
         html += "<ul>";
         html += " <li><a href='/testInsert'>Test Insert</a></li>";
@@ -47,8 +56,8 @@ public class MainController {
         html += " <li><a href='/showFullNameLikeTom'>Show All 'Tom'</a></li>";
         html += " <li><a href='/deleteAllEmployee'>Delete All Employee</a></li>";
         html += "</ul>";
-        //JAWordRepository.insertWord(id++);
-        //html += jaWordRepository.getWordCount();
+        // JAWordRepository.insertWord(id++);
+        // html += jaWordRepository.getWordCount();
         return html;
     }
 
@@ -58,6 +67,15 @@ public class MainController {
         long id = this.jaWordRepository.getMaxWordId() + 1;
         word.setid(id);
         this.jaWordCrudRepository.insert(word);
+        return html;
+    }
+
+    @PostMapping("/addEn")
+    public String add(@RequestBody ENWordEntity word) {
+        String html = "OK";
+        long id = this.enWordRepository.getMaxWordId() + 1;
+        word.setid(id);
+        this.enWordCrudRepository.insert(word);
         return html;
     }
 
