@@ -22,8 +22,12 @@ public class Application {
 
     public static void main(String[] args) throws ClientProtocolException, IOException {
 
-        Jp2En jp2En = new Jp2En();
-        jp2En.test();
+        /*
+         * Jp2En jp2En = new Jp2En(); jp2En.test();
+         */
+
+        En2Vn en2vn = new En2Vn();
+        en2vn.test();
 
     }
 }
