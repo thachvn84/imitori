@@ -4,10 +4,16 @@ import java.util.Date;
 import java.util.List;
 
 import imitori.mongodb.entity.Employee;
+import imitori.mongodb.entity.JAWordEntity;
+import imitori.mongodb.repository.JAWordRepository;
 import imitori.mongodb.repository.EmployeeRepository;
 import imitori.mongodb.repository.EmployeeRepositoryCustom;
+import imitori.mongodb.repository.JAWordCrudRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -22,9 +28,18 @@ public class MainController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @Autowired
+    JAWordRepository jaWordRepository;
+
+    @Autowired
+    JAWordCrudRepository jaWordCrudRepository;
+
+    static int id; 
+
     @ResponseBody
     @RequestMapping("/")
     public String home() {
+        
         String html = "";
         html += "<ul>";
         html += " <li><a href='/testInsert'>Test Insert</a></li>";
@@ -32,6 +47,17 @@ public class MainController {
         html += " <li><a href='/showFullNameLikeTom'>Show All 'Tom'</a></li>";
         html += " <li><a href='/deleteAllEmployee'>Delete All Employee</a></li>";
         html += "</ul>";
+        //JAWordRepository.insertWord(id++);
+        //html += jaWordRepository.getWordCount();
+        return html;
+    }
+
+    @PostMapping("/add")
+    public String add(@RequestBody JAWordEntity word) {
+        String html = "OK";
+        long id = this.jaWordRepository.getMaxWordId() + 1;
+        word.setid(id);
+        this.jaWordCrudRepository.insert(word);
         return html;
     }
 

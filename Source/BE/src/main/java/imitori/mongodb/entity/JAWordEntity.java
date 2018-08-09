@@ -3,6 +3,7 @@ package imitori.mongodb.entity;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -15,10 +16,10 @@ import java.util.regex.Pattern;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JAWordEntity {
     @Id
-    private String id;
+    private Long id;
 
     @Field("ent_seq")
-    private long ent_seq;
+    private Long ent_seq;
     
     @Field("k_ele")
     private List<k_ele_Class> k_ele;
@@ -29,6 +30,46 @@ public class JAWordEntity {
     @Field("sense")
     private List<sense_Class> sense;
 
+    public Long getid() {
+        return this.id;
+    }
+
+    public void setid(Long id) {
+        this.id  = id;
+    }
+
+    public long getent_seq() {
+        return this.ent_seq;
+    }
+
+    public void setent_seq(long s) {
+        this.ent_seq = s;
+    }
+
+    public List<k_ele_Class> getk_ele() {
+        return this.k_ele;
+    }
+
+    public void setk_ele(List<k_ele_Class> s) {
+        this.k_ele = s;
+    }
+
+    public List<r_ele_Class> getr_ele() {
+        return this.r_ele;
+    }
+
+    public void setr_ele(List<r_ele_Class> s) {
+        this.r_ele = s;
+    }
+
+    public List<sense_Class> getsense() {
+        return this.sense;
+    }
+
+    public void setsense(List<sense_Class> s) {
+        this.sense = s;
+    }
+
     public static class k_ele_Class {
         @Field("keb")
         private String keb;
@@ -38,6 +79,30 @@ public class JAWordEntity {
 
         @Field("ke_pri")
         private List<String> ke_pri;
+
+        public String getkeb() {
+            return this.keb;
+        }
+
+        public void setkeb(String s) {
+            this.keb = s;
+        }
+
+        public List<String> getke_inf() {
+            return this.ke_inf;
+        }
+
+        public void setke_inf(List<String> s) {
+            this.ke_inf = s;
+        }
+
+        public List<String> getke_pri() {
+            return this.ke_pri;
+        }
+
+        public void setke_pri(List<String> s) {
+            this.ke_pri = s;
+        }
     }
 
     public static class r_ele_Class {
@@ -55,6 +120,46 @@ public class JAWordEntity {
 
         @Field("re_pri")
         private List<String> re_pri;
+
+        public String getreb() {
+            return this.reb;
+        }
+
+        public void setreb(String s) {
+            this.reb = s;
+        }
+
+        public String getre_nokanji() {
+            return this.re_nokanji;
+        }
+
+        public void setre_nokanji(String s) {
+            this.re_nokanji = s;
+        }
+
+        public List<String> getre_restr() {
+            return this.re_restr;
+        }
+
+        public void setre_restr(List<String> s) {
+            this.re_restr = s;
+        }
+
+        public List<String> getre_inf() {
+            return this.re_inf;
+        }
+
+        public void setre_inf(List<String> s) {
+            this.re_inf = s;
+        }
+
+        public List<String> getre_pri() {
+            return this.re_pri;
+        }
+
+        public void setre_pri(List<String> s) {
+            this.re_pri = s;
+        }
 
     }
 
@@ -95,6 +200,102 @@ public class JAWordEntity {
         @Field("gloss_phrase")
         private List<gloss_phrase_Class> gloss_phrase;
 
+        public List<String> getstagk() {
+            return this.stagk;
+        }
+
+        public void setstagk(List<String> s) {
+            this.stagk = s;
+        }
+
+        public List<String> getstagr() {
+            return this.stagr;
+        }
+
+        public void setstagr(List<String> s) {
+            this.stagr = s;
+        }
+
+        public List<String> getpos() {
+            return this.pos;
+        }
+
+        public void setpos(List<String> s) {
+            this.pos = s;
+        }
+
+        public List<String> getxref() {
+            return this.xref;
+        }
+
+        public void setxref(List<String> s) {
+            this.xref = s;
+        }
+
+        public List<String> getant() {
+            return this.ant;
+        }
+
+        public void setant(List<String> s) {
+            this.ant = s;
+        }
+
+        public List<String> getfield() {
+            return this.field;
+        }
+
+        public void setfield(List<String> s) {
+            this.field = s;
+        }
+
+        public List<String> getmisc() {
+            return this.misc;
+        }
+
+        public void setmisc(List<String> s) {
+            this.misc = s;
+        }
+
+        public String gets_inf() {
+            return this.s_inf;
+        }
+
+        public void sets_inf(String s) {
+            this.s_inf = s;
+        }
+
+        public List<lsource_Class> getlsource() {
+            return this.lsource;
+        }
+
+        public void setlsource(List<lsource_Class> s) { 
+            this.lsource = s;
+        }
+
+        public List<String> getdial() {
+            return this.dial;
+        }
+
+        public void setdial(List<String> s) {
+            this.dial = s;
+        }
+
+        public List<String> getgloss_mean() {
+            return this.gloss_mean;
+        }
+
+        public void setgloss_mean(List<String> s) {
+            this.gloss_mean = s;
+        }
+
+        public List<gloss_phrase_Class> getgloss_phrase() {
+            return this.gloss_phrase;
+        }
+
+        public void setgloss_phrase(List<gloss_phrase_Class> s) {
+            this.gloss_phrase = s;
+        }
+
     }
 
     public static class lsource_Class {
@@ -109,6 +310,38 @@ public class JAWordEntity {
 
         @Field("ls_wasei")
         private String ls_wasei;
+
+        public String getxml_lang() {
+            return this.xml_lang;
+        }
+
+        public void setxml_lang(String s) {
+            this.xml_lang = s;
+        }
+
+        public String getcontent() {
+            return this.content;
+        }
+
+        public void setcontent(String s) {
+            this.content = s;
+        }
+
+        public String getls_type() {
+            return this.ls_type;
+        }
+
+        public void setls_type(String s) {
+            this.ls_type = s;
+        }
+
+        public String getls_wasei() {
+            return this.ls_wasei;
+        }
+
+        public void setls_wasei(String s) {
+            this.ls_wasei = s;
+        }
     }
 
     public static class gloss_phrase_Class {
@@ -117,6 +350,22 @@ public class JAWordEntity {
 
         @Field("content")
         private String content;
+
+        public String getg_type() {
+            return this.g_type;
+        }
+
+        public void setg_type(String s) {
+            this.g_type = s;
+        }
+
+        public String getcontent() {
+            return this.content;
+        }
+
+        public void setcontent(String s) {
+            this.content = s;
+        }
     }
 
 }
