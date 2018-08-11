@@ -1,0 +1,12 @@
+Increase swap {
+    sudo fallocate -l 1g /mnt/1GiB.swap
+    (sudo dd if=/dev/zero of=/mnt/1GiB.swap bs=1024 count=1048576)
+
+    sudo chmod 600 /mnt/1GiB.swap
+    sudo mkswap /mnt/1GiB.swap
+    sudo swapon /mnt/1GiB.swap
+
+    Default fot boot:
+    echo '/mnt/1GiB.swap swap swap defaults 0 0' | sudo tee -a /etc/fstab
+
+}

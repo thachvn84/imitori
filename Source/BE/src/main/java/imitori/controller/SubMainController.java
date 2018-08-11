@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class MainController {
+@RequestMapping("/sub/")
+public class SubMainController {
 
     private static final String[] NAMES = { "Tom", "Jerry", "Donald" };
 
