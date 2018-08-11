@@ -74,6 +74,9 @@ public class ENWordEntity {
         @Field("means")
         public ArrayList<String> means;
 
+        @Field("lv")
+        public ArrayList<LinhVuc> lv;
+
         public String getname() {
             return this.name;
         }
@@ -88,6 +91,14 @@ public class ENWordEntity {
 
         public void setmeans(ArrayList<String> s) {
             this.means = s;
+        }
+
+        public ArrayList<LinhVuc> getlv() {
+            return this.lv;
+        }
+
+        public void setlv(ArrayList<LinhVuc> s) {
+            this.lv = s;
         }
     }
 
@@ -123,6 +134,30 @@ public class ENWordEntity {
 
         public void setsidewords(ArrayList<SideWord> s) {
             this.sidewords = s;
+        }
+    }
+
+    public static class LinhVuc {
+        @Field("name")
+        public String name;
+
+        @Field("means")
+        public ArrayList<String> means;
+
+        public String getname() {
+            return this.name;
+        }
+
+        public void setname(String s) {
+            this.name = s;
+        }
+
+        public ArrayList<String> getmeans() {
+            return this.means;
+        }
+
+        public void setmeans(ArrayList<String> s) {
+            this.means = s;
         }
     }
 

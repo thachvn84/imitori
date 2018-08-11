@@ -23,9 +23,15 @@ public class En2Vn {
         public ArrayList<ChuyenNganh> fieldmeans;
     }
 
-    public static class ChuyenNganh {
+    public class LinhVuc {
         public String name;
         public ArrayList<String> means;
+    }
+
+    public class ChuyenNganh {
+        public String name;
+        public ArrayList<String> means;
+        public ArrayList<LinhVuc> lv;
     }
 
     public static class TlMean {
@@ -52,7 +58,7 @@ public class En2Vn {
     public void test() throws JsonSyntaxException, JsonIOException, FileNotFoundException, IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        WRecord[] wr = gson.fromJson(new FileReader("WRSave.json"), WRecord[].class);
+        WRecord[] wr = gson.fromJson(new FileReader("En2Vn.json"), WRecord[].class);
 
         System.out.println(wr.length);
         Gson gson1 = new Gson();
