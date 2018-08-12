@@ -1,11 +1,13 @@
 package imitori.controller;
 
+import imitori.neo4j.entity.SimilarToRelEntity;
 import imitori.neo4j.entity.WordEntity;
-import imitori.neo4j.dto.FullWordDto;
+import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.services.WordService;
 import imitori.mongodb.entity.Employee;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +42,15 @@ public class WordController {
     @GetMapping("/add")
     public Long createOneWord(@RequestParam String word, @RequestParam String spell, @RequestParam String lang) {
         Long id = 0L;
-        WordEntity wi = wordService.creatOneWord(word, spell, lang);
+        WordEntity wi = wordService.createOneWord(word, spell, lang);
+        id = wi.getId();
+        return id;
+    }
+
+    @PostMapping("/add")
+    public Long createOneWord(@RequestBody WordDto input) {
+        Long id = 0L;
+        WordEntity wi = wordService.createOneWord(input.word, input.spell, input.lang);
         id = wi.getId();
         return id;
     }
@@ -106,16 +116,10 @@ public class WordController {
         return result;
     }
 
-    // Add word with full information
-    @PostMapping("/addFullWord")
-    public void addFullWord(@RequestBody FullWordDto word) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        System.out.println(gson.toJson(word));
-        // wordService.addFullWord(word);
-    }
-
-    @GetMapping("/mongo")
-    public void mongo() {
-
+    @PostMapping("/rel/create/similarto")
+    public SimilarToRelEntity createSimilarToRelEntity(@RequestBody SimilarToRelDto input) {
+        SimilarToRelEntity res = new SimilarToRelEntity();
+        res = wordService.createSimilarToRel(input.id1, input.id2, input.score);
+        return res;
     }
 }

@@ -5,3 +5,5 @@ Source/AdminFE/node_modules
 Source/FE/package-lock.json
 Source/AdminFE/package-lock.json
 Tools/JsonToObject/target
+Source/**/**/*.class
+Tools/**/*.class

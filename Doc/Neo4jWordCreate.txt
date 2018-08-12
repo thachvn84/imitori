@@ -1,0 +1,40 @@
+Phương án tạo neo4j word & relation
+1. Tạo word collection bao gồm những field sau:
+    Long id
+    String word
+    String info
+    String[] spell
+    String tl
+    String lang
+    Long mongoId
+
+    Rel
+        - Similar_To (Cùng ngôn ngữ)
+        - Translate_To (Khác ngôn ngữ)
+        - Opposite_To (Cùng ngôn ngữ)
+        - Related_To (Cùng ngôn ngữ)
+
+
+2. Cách phân tích JAWord
+    1. k_ele[]: Mỗi keb trong này được tính là 1 từ và có cách đọc giống nhau được chỉ định trong r_ele. Những từ này sau khi được tạo ra thì sẽ có mối quan hệ Similar_To với nhau.
+    2. r_ele[]: Có bao nhiêu cách đọc thì được gán cho spell[]
+    3. Trong trường hợp k_ele không có giá trị mà r_ele có thì có nghĩa là từ không có kanji, và word sẽ bằng r_ele[] (tạo ra nhiều word), spell nếu có nhiều thì cũng gán cho spell[].
+    4. sense[].pos[]: Mỗi pos sẽ được tách thành 1 word riêng (clone toàn bộ nội dung word và spell ở trên), về nghĩa thì đi theo pos của sens đó. Ví dụ
+    {
+        "pos" : [
+            "v5k-s",
+            "vi"
+        ],
+        "xref" : [
+            "来る・くる・1"
+        ],
+        "gloss_mean" : [
+            "to go",
+            "to move (in a direction or towards a specific location)",
+            "to head (towards)",
+            "to be transported (towards)",
+            "to reach"
+        ],
+        "gloss_phrase" : []
+    }
+    với data như thế này thì sẽ có 2 từ và khác nhau về từ loại 1 loại là v5k-s và 1 loại là vi. Các từ này đều có liên kết Translated_To tới các từ được liệt kê trong gloss_mean.

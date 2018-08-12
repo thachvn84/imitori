@@ -6,8 +6,8 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
-@RelationshipEntity(type = "SIMILAR_TO")
-public class SimilarToRelEntity {
+@RelationshipEntity(type = "OPPOSITE_TO")
+public class OppositeToRelEntity {
     @Id
     @GeneratedValue
     private Long id;

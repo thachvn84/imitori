@@ -2,6 +2,7 @@ package imitori.services;
 
 import java.util.*;
 
+import imitori.neo4j.entity.RelatedToRelEntity;
 import imitori.neo4j.entity.SimilarToRelEntity;
 import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.repositories.WordRepository;
@@ -22,7 +23,12 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public WordEntity creatOneWord(String word, String spell, String lang) {
+    public WordEntity createOneWord(String word, String spell, String lang) {
+        return wordRepository.createOneWord(word, spell, lang);
+    }
+
+    @Transactional(readOnly = true)
+    public WordEntity createOneWord(String word, ArrayList<String> spell, String lang) {
         return wordRepository.createOneWord(word, spell, lang);
     }
 
@@ -136,5 +142,21 @@ public class WordService {
         }
 
         wordRepository.createSimilarToRel(word1.getId(), word2.getId(), sc);
+    }
+
+    // Create a SimilarTo relationship beetween two word
+    @Transactional(readOnly = true)
+    public SimilarToRelEntity createSimilarToRel(Long id1, Long id2, Integer score) {
+        SimilarToRelEntity res = new SimilarToRelEntity();
+
+        return res;
+    }
+
+    // Create a RelatedTo relationship beetween two word
+    @Transactional(readOnly = true)
+    public RelatedToRelEntity createRelatedToRel(Long id1, Long id2, Integer score) {
+        RelatedToRelEntity res = new RelatedToRelEntity();
+
+        return res;
     }
 }
