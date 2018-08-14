@@ -29,4 +29,9 @@ public class SimilarToRelDto {
     public SimilarToRelDto(Long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Similar {id: " + id + ", fromId: " + id1 + ", toId: " + id2 + "}";
+    }
 }

@@ -5,7 +5,6 @@ import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.services.WordService;
-import imitori.mongodb.entity.Employee;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -73,6 +72,11 @@ public class WordController {
                 .body(new WordDto(result.getId(), result.word, result.spell, result.lang));
     }
 
+    @GetMapping("/search2")
+    public void findWord(@RequestParam Long id) {
+        System.out.println("search2 " + id); 
+        wordService.getMeansScore(id);
+    }
     // Return the list of [Word.word, r.score] that [Input
     // param]-[r:SIMILAR_TO]->(Word)
     @GetMapping("/similarTo")
@@ -95,27 +99,22 @@ public class WordController {
 
     // Add a pair of word, then set the SIMILAR_TO.score between them
     // If one of them (from Word, Relation, ToWord) existed, only update
-    @GetMapping("/createPair")
-    public String createPairOfWord(@RequestParam String w1, @RequestParam String l1, @RequestParam String w2,
-            @RequestParam String l2, @RequestParam Integer sc) {
+    // If not existed, create full element
+    public class createPairOfFullWordParam {
+        WordDto w1;
+        WordDto w2;
+    }
+    @PostMapping("/createPairFull")
+    public String createPairOfFullWord(@RequestBody createPairOfFullWordParam w, Integer sc) {
         String result;
-        wordService.createPairOfWord(w1, l1, w2, l2, sc);
-        result = findSimilarToByWord(w1);
+        wordService.createPairOfSimilarWord_Full(w.w1, w.w2, sc);
+        result = findSimilarToByWord(w.w1.word);
         return result;
     }
 
-    // Add a pair of word, then set the SIMILAR_TO.score between them
+    // Create a similar to relation ship between two word
     // If one of them (from Word, Relation, ToWord) existed, only update
     // If not existed, create full element
-    @GetMapping("/createPairFull")
-    public String createPairOfFullWord(@RequestParam String w1, @RequestParam String sp1, @RequestParam String l1,
-            @RequestParam String w2, @RequestParam String sp2, @RequestParam String l2, @RequestParam Integer sc) {
-        String result;
-        wordService.createPairOfFullWord(w1, sp1, l1, w2, sp2, l2, sc);
-        result = findSimilarToByWord(w1);
-        return result;
-    }
-
     @PostMapping("/rel/create/similarto")
     public SimilarToRelEntity createSimilarToRelEntity(@RequestBody SimilarToRelDto input) {
         SimilarToRelEntity res = new SimilarToRelEntity();

@@ -32,4 +32,19 @@ public class WordDto {
         this.spell = spell;
         this.lang = lang;
     }
+
+    @Override
+    public String toString() {
+        String spelllist = new String();
+        if (this.spell.size() < 2) {
+            spelllist = "[" + this.spell.get(0) + "]";
+        } else {
+            spelllist = "[" + this.spell.get(0);
+            for (int i = 0; i < this.spell.size(); i++) {
+                spelllist += ", " + this.spell.get(i);
+            }
+            spelllist += "]";
+        }
+        return "WordDto{id: " + id + ", word: " + word + ", spell : " + spelllist + ", lang: " + lang + "}";
+    }
 }

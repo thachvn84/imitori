@@ -99,4 +99,27 @@ public class WordEntity {
     public ArrayList<OppositeToRelEntity> getOppositeFrom() {
         return this.oppisteFrom;
     }
+
+    @Override
+    public String toString() {
+        String res = new String();
+        /*
+            WordEntity {
+                id: 00000
+                word: A
+                spell: [A1, A2],
+                lang : EN
+                similarTo: [Id1, Id2],
+                similarFrom: [Id3, Id4],
+                TranslateTo: [Id5, Id6],
+                TranslateFrom: [Id7, Id8],
+                RelatedTo: [Id9],
+                RelatedFrom: [Id10],
+                OppositeTo: [Id11],
+                OppositeFrom: [Id12]
+            }
+        */
+
+        return res;
+    }
 }

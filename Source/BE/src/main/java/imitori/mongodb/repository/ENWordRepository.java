@@ -1,8 +1,12 @@
 package imitori.mongodb.repository;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
@@ -22,5 +26,16 @@ public class ENWordRepository {
             return 0L;
         }
         return maxObject.getid();
+    }
+
+    public ArrayList<ENWordEntity> findByWord(String w) {
+        ArrayList<ENWordEntity> res = new ArrayList<>();
+        Query query = new Query();
+        query.addCriteria(new Criteria("word").is(w));
+        List<ENWordEntity> mres = mongoTemplate.find(query, ENWordEntity.class);
+        for (int i = 0; i < mres.size(); i++) {
+            res.add(mres.get(i));
+        }
+        return res;
     }
 }

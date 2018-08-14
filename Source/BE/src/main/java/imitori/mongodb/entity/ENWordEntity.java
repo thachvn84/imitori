@@ -8,6 +8,8 @@ import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import imitori.utils.StringUtils;
+
 @Document(collection = "EnWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ENWordEntity {
@@ -230,5 +232,76 @@ public class ENWordEntity {
         public void setmean(String m) {
             this.mean = m;
         }
+    }
+
+    public ArrayList<String> getAllMeans() {
+        ArrayList<String> res = new ArrayList<>();
+        //Get mean from Word
+        for (int i = 0; i < this.means.size(); i++) {
+            TlMean tlmean = this.means.get(i);
+            for (int j = 0; j < tlmean.means.size(); j++) {
+                TlSubMean sub = tlmean.means.get(j);
+                String rawmean = sub.mean;
+                while (rawmean.indexOf("(") != -1) {
+                    int bpos = rawmean.indexOf("(") > 0 ? rawmean.indexOf("(") : 0;
+                    int epos = rawmean.indexOf(")") > 0 ? rawmean.indexOf(")") : rawmean.length() - 1;
+                    System.out.println("----------");
+                    System.out.println(rawmean);
+                    System.out.println(bpos);
+                    System.out.println(epos);
+                    String rem = new String();
+                    if (bpos > epos) {
+                        rem = rawmean.substring(0, epos + 1);    
+                    } else {
+                        rem = rawmean.substring(bpos, epos + 1);
+                    }
+                    rawmean = rawmean.replace(rem, "");
+                }
+                String[] srm = rawmean.split(",");
+                for (int k = 0; k < srm.length; k++) {
+                    res.add(srm[k].trim());
+                }
+            }
+        }
+        
+        //Get mean from Chuyen Nganh
+        for (int i = 0; i < this.fieldmeans.size(); i++) {
+            ChuyenNganh cn = this.fieldmeans.get(i);
+            // Process Chuyen nganh means
+            for(int j = 0; j < cn.means.size(); j++) {
+                String rawmean = cn.means.get(j);
+                while (rawmean.indexOf("(") != -1) {
+                    int bpos = rawmean.indexOf("(") > 0 ? rawmean.indexOf("(") : 0;
+                    int epos = rawmean.indexOf(")") > 0 ? rawmean.indexOf(")") : rawmean.length() - 1;
+                    String rem = rawmean.substring(bpos, epos + 1);
+                    rawmean = rawmean.replace(rem, "");
+                }
+                String[] srm = rawmean.split(",");
+                for (int k = 0; k < srm.length; k++) {
+                    res.add(srm[k].trim());
+                }
+            }
+
+            //Process Linh vuc mean
+            for (int j = 0; j < cn.lv.size(); j++) {
+                LinhVuc lv = cn.lv.get(j);
+                for (int p = 0; p < lv.means.size(); p++) {
+                    String rawmean = lv.means.get(p);
+                    while (rawmean.indexOf("(") != -1) {
+                        int bpos = rawmean.indexOf("(") > 0 ? rawmean.indexOf("(") : 0;
+                        int epos = rawmean.indexOf(")") > 0 ? rawmean.indexOf(")") : rawmean.length() - 1;
+                        String rem = rawmean.substring(bpos, epos + 1);
+                        rawmean = rawmean.replace(rem, "");
+                    }
+                    String[] srm = rawmean.split(",");
+                    for (int k = 0; k < srm.length; k++) {
+                        res.add(srm[k].trim());
+                    }
+                }
+            }
+        }
+        StringUtils f = new StringUtils();
+
+        return f.removeDuplicate(res);
     }
 }

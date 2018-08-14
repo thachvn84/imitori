@@ -7,12 +7,14 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import imitori.utils.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Document(collection = "JAWords")
+@Document(collection = "JaWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JAWordEntity {
     @Id
@@ -366,6 +368,33 @@ public class JAWordEntity {
         public void setcontent(String s) {
             this.content = s;
         }
+    }
+
+    public ArrayList<String> getAllMeans() {
+        ArrayList<String> res = new ArrayList<>();
+        if (this.sense != null) {
+            for (int i = 0; i < this.sense.size(); i++) {
+                sense_Class curS = this.sense.get(i);
+                if (curS.gloss_mean != null) {
+                    for (int j = 0; j < curS.gloss_mean.size(); j++) {
+                        String rawmean = curS.gloss_mean.get(j);
+                        while (rawmean.indexOf("(") != -1) {
+                            int bpos = rawmean.indexOf("(") > 0 ? rawmean.indexOf("(") : 0;
+                            int epos = rawmean.indexOf(")") > 0 ? rawmean.indexOf(")") : rawmean.length() - 1;
+                            String rem = rawmean.substring(bpos, epos + 1);
+                            rawmean = rawmean.replace(rem, "");
+                        }
+                        String[] srm = rawmean.split(",");
+                        for (int k = 0; k < srm.length; k++) {
+                            res.add(srm[k].trim());
+                        }
+                    }
+                }
+            }
+        }
+        StringUtils f = new StringUtils();
+
+        return f.removeDuplicate(res);
     }
 
 }

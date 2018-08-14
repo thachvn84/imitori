@@ -1,19 +1,19 @@
 package imitori.controller;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import imitori.mongodb.entity.ENWordEntity;
-import imitori.mongodb.entity.Employee;
 import imitori.mongodb.entity.JAWordEntity;
 import imitori.mongodb.repository.JAWordRepository;
 import imitori.mongodb.repository.ENWordCrudRepository;
 import imitori.mongodb.repository.ENWordRepository;
-import imitori.mongodb.repository.EmployeeRepository;
-import imitori.mongodb.repository.EmployeeRepositoryCustom;
 import imitori.mongodb.repository.JAWordCrudRepository;
 import imitori.services.JaEnDicService;
 
@@ -55,6 +55,13 @@ public class JaEnDicController {
     @GetMapping("/getMaxId")
     public Long getWordCount() {
         return jaEnDicService.getMaxId();
+    }
+
+    @GetMapping("/getAllMeansById")
+    public Collection<Map<String, Long>> getAllMeansById(@RequestParam Long id) {
+        Collection<Map<String, Long>> res = new ArrayList<>();
+        //res = jaEnDicService.getAllMeansById(id);
+        return res;
     }
 
 }

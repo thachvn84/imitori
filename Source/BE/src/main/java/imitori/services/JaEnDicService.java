@@ -7,6 +7,7 @@ import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.repositories.WordRepository;
 import imitori.mongodb.repository.JAWordRepository;
 import imitori.mongodb.entity.JAWordEntity;
+import imitori.mongodb.entity.JAWordEntity.sense_Class;
 import imitori.mongodb.repository.JAWordCrudRepository;
 
 import org.slf4j.Logger;
@@ -47,6 +48,25 @@ public class JaEnDicService {
     @Transactional(readOnly = true)
     public Long getMaxId() {
         return this.jaWordRepository.getMaxWordId();
+    }
+
+    @Transactional(readOnly = true)
+    public ArrayList<String> getAllMeansById(Long id) {
+        // Return the colletion of <Word: Id>
+        ArrayList<String> res = new ArrayList<>();
+        Optional<JAWordEntity> resq = this.jaWordCrudRepository.findById(id);
+        JAWordEntity word = new JAWordEntity();
+        if (resq.isPresent()) {
+            word = resq.get();
+            ArrayList<String> mean = new ArrayList<>();
+            mean = word.getAllMeans();
+            for (int i = 0; i < mean.size(); i++) {
+                res.add(mean.get(i));
+            }
+        } else {
+            return res;
+        }
+        return res;
     }
 
 }
