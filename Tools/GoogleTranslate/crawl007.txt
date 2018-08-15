@@ -1,0 +1,1924 @@
+repl.it
+@anonymous/IdenticalStingyTranslations
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920
+
+const translate = require('google-translate-api');
+
+var fs=require("fs");
+var content=fs.readFileSync("unknownword.txt", "utf8");
+
+
+var lines = content.split("\n");
+
+for (var i = 0, len = lines.length; i < len; i=i+2) {
+  translate(lines[i]+"【"+(i+1).toString()+"】", { from: 
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.204s
+
+
+Repl.it: package installation success
+
+completed!----------------------------------
+=> undefined
+【Chào buổi sáng】 【143】
+【Chikin】 【565】
+[Hình dạng lông mày] [785]
+【袱 紗】 【611】
+【Han chữ số không】 【15】
+【Gieo】 【133】
+【Dute] 【57】
+【Aqua Notes】 【827】
+【〃】 【9】
+【Vì lý do này】 【253】
+【T-shirt】 【23】
+【𩸽】 【643】
+【Chanko Nabe】 【401】
+[Asrock] [889]
+【Peel】 【623】
+【Chống lãng mạn】 【1083】
+【Ice smack】 【753】
+[Ác quỷ] [9085]
+[Chúc mừng sinh nhật] 【151】
+【Quả bóng quảng cáo】 【921】
+【Tuyến mắt】 【789】
+【Β carotene】 【8965】
+【Chi phí nhàn rỗi】 【771】
+[Băng nhạt] 【761】
+[Thiết kế không đối xứng] [861]
+【Bắn súng tùy chỉnh】 【9431】
+【KATSU】 【179】
+【Không có gì bạn có thể làm] 【491】
+[Xin lỗi] [97]
+【Bé】 【9033】
+【Ngoài phạm vi】 【9815】
+[Băng quần áo] [9625]
+[Gotcha] [273]
+【Đánh bại nó】 【571】
+[Bài viết] [9693]
+【HEAVY】 【609】
+[Mất] 【9293】
+[Quỹ vận động viên] [887]
+【Mồ hôi】 【9889】
+[Âm thanh âm thanh] 【851】
+【Vật dính liền】 [903]
+【Có một điều】 【243】
+【Khu vực Châu Á Thái Bình Dương】 【867】
+【Thể thao ngoài trời】 【809】
+【Treo sardine】 【171】
+【Sáng khác】 【9571】
+[Có thể nói] 【475】
+【Oya】 【83】
+[Thiết kế không đối xứng] [859]
+【Kotatsu Futon】 【237】
+【Cùng】 【393】
+[Nội thất] [125]
+【Chọn】 【607】
+【Thẳng ra】 【10181】
+【Nửa phần】 【573】
+【Inoguchi】 【153】
+[Nếu nó là] [379]
+【Từ đây】 【265】
+[Chiến dịch] [10797]
+【Hạt tiêu ngọt】 【317】
+【Sẽ là] 【445】
+【Giao dịch Outright】 【817】
+【Cơ thể】 【10375】
+[Phần mềm bên ngoài] [795]
+【Okinawa】 【107】
+【Monza】 【695】
+【】】 【】 7
+【Cheating】 【383】
+【Grudge】 【11097】
+【Xung quanh nhà ga】 [11001]
+【Ít bit】 【415】
+【Old Man】 【69】
+【Stumble】 【427】
+【Giáo dục dành cho người lớn】 【893】
+【Astrolama】 【877】
+【Ahoron Rot】 【975】
+【Anonymous】 【9545】
+【Một đồng xu yên】 【9853】
+[Về nó] [363]
+【Phật】 【649】
+【Ichi] 【9947】
+【Khoai tây】 【655】
+[Goblin] [221]
+【Giới thiệu】 【545】
+【Kaka】 【175】
+【Na Uy】 【531】
+【Liếm liếm】 【637】
+【Kokozuru】 【433】
+[Thoải mái] [9503]
+【Một mặt】 【10319】
+【Warabi】 【723】
+【Chào mừng】 【231】
+【Hikari】 【587】
+【Cột gia đình】 【12331】
+【Australopithecus】 【793】
+【Puzzle】 【233】
+【Phí y tế】 【】
+【Cầu chì của anh ấy】 【591】
+[Số lượt truy cập] [9317]
+[Vĩnh viễn] [10891]
+[Kế hoạch xấu] [9125]
+【Cách bẩn thỉu】 【11237】
+【Tỷ giá hối đoái】 【9533】
+【Đại học Y khoa】 【9745】
+【Thất vọng】 【191】
+【Mờ】 【651】
+【Đá Pick】 【759】
+【Boobs】 【73】
+【Bằng cách này】 【227】
+【Tòa án y tế】 【9711】
+【Các vấn đề y tế】 【9737】
+【Liên hệ】 77
+【Người ta nói rằng】 【477】
+[Chan] 【399】
+【Này bạn】 【263】
+【Không có gì】 【519】
+【Kiểm tra thành tích】 【895】
+【仝】 【11】
+【Ác ma】 【9115】
+【Một hành động tại một thời điểm】 【9925】
+[Không có gì giống như nó] [493]
+【Bản đồ di truyền】 【9683】
+【Ngã tư】 【333】
+【Hình ảnh vui nhộn】 【275】
+【Nhịp điệu Afro Cuban】 【961】
+【Đó là lý do】 【471】
+【Nhân viên】 【127】
+【Áp lực】 【9253】
+Theo 【theo】 535
+【Để nó xuống】 【527】
+[Ba giờ] [115]
+【Tập tin đính kèm không đúng】 【661】
+【Ngôi nhà ma ám】 【93】
+【Để có thể làm】 【443】
+[Thêm vào đó] 【361】
+【Ansake】 【9299】
+【Lý thuyết chung】 【10279】
+【Di sản】 【9653】
+[Nhiệt độ cao bất thường] [9559]
+【Năm học】 【9813】
+【Tỷ giá hối đoái】 【9537】
+【Hình dạng tốt】 【9791】
+【Yamabiko】 【699】
+【Ivy Look】 【783】
+[Xấu do] [9521]
+【Cũng giống như] 【481】
+[Lúa gạo] [10431]
+【Đồng hồ tốc độ tương tự】 【931】
+【Asahi】 【31】
+[Evil】 9145
+【Series 1】 【9945】
+【Kỳ lạ】 【617】
+【Từ đó】 【355】
+Ngoài 【543】
+【Outdrive】 【811】
+[Danh từ] [9557]
+【Chi phí chi phí】 【10809】
+【Ngủ một mình】 【10083】
+[Izuna] [9809]
+【Một hình ảnh】 【9871】
+【1 chome】 【10173】
+[Khoảng cách] [11199]
+【Một đầu】 【10159】
+【Nhà mèo tình yêu】 【9065】
+【Châu Á] [863]
+[Trở thành một thứ] 【249】
+【Trường tiểu học】 【9513】
+【Quần áo】 【9629】
+[Reed] [9243]
+【Tồi tệ hơn】 【9117】
+【Eihen】 【10909】
+【Nếu không】 【343】
+【Aquatron】 【825】
+【Theo】 【537】
+【Cuối】 【515】
+【Mưa ếch】 【10723】
+【Ngôi sao cá nhân】 【10311】
+【Buổi chiều】 【951】
+【Nhà】 [12303]
+【Cảm ơn vì món ăn ngon】 【283】
+Ngoài 【541】
+【Vòng và vòng】 【217】
+[Làm thế nào để bạn] 【497】
+【Omaru】 【123】
+【Asahigi】 【9233】
+【Lotion】 【8793】
+【Cáp RS232】 【21】
+[Có gì sai] [523]
+【Trung sĩ đầu tiên】 【10213】
+【Một mắt mắt】 [10119]
+[Ngay cả giả định] [467]
+【Idol Idol】 【769】
+【Togetobushi】 【459】
+[Nhìn từ mắt tôi] [295]
+【Mục đích】 【701】
+【Thời gian uống】 【10555】
+【Cái gì đó】 【521】
+[Thói quen xấu] [9137]
+【Giao thông một chiều】 [10325]
+【Hiệp hai】 【11649】
+[Trở nên giống như] 【713】
+【Elek】 【1627】
+【Tsubasa】 【425】
+[Tiêu chảy] [10987]
+【Rác rác】 【9391】
+【Dokitto】 【499】
+【Aoba】 【29】
+【Nigiri sushi】 【9227】
+【Quần áo】 【9627】
+【Tóm tắt】 【11113】
+【Goboguru】 【215】
+【Với bất cứ ai】 【507】
+[Câu lạc bộ sắt] 【745】
+【Đông】 【9379】
+【一 一】 【10183】
+【Biến uống】 【10547】
+[Trở nên xấu] [9089]
+[Accordion pleat] [853]
+【Lâm nghiệp】 【10861】
+[Quy định] 【9415】
+【Okinawa】 【11519】
+【】 Vĩnh viễn 【10905】
+【Người quan sát địa phương】 【8777】
+【Nam Phi】 【955】
+【Chỗ ngồi của lái xe】 【10801】
+【】 Có lợi 【9453】
+【Adjuvira】 【869】
+【Một mất】 【10255】
+【Mất bóng】 【8847】
+【Cửa hàng ngoài trời】 【807】
+【Chiều sâu có ý nghĩa】 【9499】
+【Màu sắc xù xì】 【10689】
+【Anjo】 【9295】
+[Làm nó] [321]
+【】 【】 389 lỏng lẻo】
+【Làm cho nó】 【287】
+【Chương trình hành động】 【835】
+【Thời trang】 【797】
+【Hạng nhất】 【10401】
+【Aksan Grave】 【829】
+【Đôi khi nói với bạn】 【331】
+【Tính ra】 【799】
+【Nuisance】 【563】
+[Asahi] [9237]
+【Aventure】 【935】
+【Hiệp hội Y khoa】 【9733】
+【Collapse】 【9419】
+【Cỏ bên cạnh là màu xanh】 【457】
+【Vật nuôi】 【9019】
+【Tắm】 【599】
+【Làm cho nó như】 【711】
+【So sánh】 【549】
+【Single khớp】 【10051】
+【1 nghìn】 【10135】
+【Một phút】 【10309】
+【Nhờ】 【251】 này
+【Yêu cầu thông tin】 【9433】
+【Một con bò】 【9913】
+[Tiệc] [11081]
+【Nó vv】 【365】
+【Okonomiyaki】 【109】
+[Hội chứng cách ly] 【767】
+【Af Khanna】 【945】
+【Hầu hết mọi người】 【645】
+【Hộp số】 【813】
+【Hinoki】 【589】
+【Trở thành Dòng thời gian】 【67】
+【Chin shinya】 【419】
+【Trong trường hợp này】 【255】
+【Thổ dân】 【977】
+【】 Cá】 【61】
+【Khó khăn】 【505】
+【Mẹ khác nhau】 【9579】
+【Tổng công ty y tế】 【9783】
+【Mang】 【225】
+【Công việc Nagako】 【10893】
+【Giải thưởng lớn】 【9449】
+【】 GATS 【185】
+[Bài báo giá rẻ] [9325]
+【Cuộc sống】 【13】
+[Bad malice] [9127]
+【Thời đại đen tối】 【9337】
+【Một hạt không thể hủy diệt】 【10385】
+【Đồ uống】 【10551】
+[Viết một cụm từ] 【9937】
+【Doyadaya】 【513】
+【Raindrop】 【10743】
+【Một Cả Hai】 【10391】
+【Buổi chiều ăn mặc】 【953】
+【Astec】 【875】
+【Mèo con] 【631】
+[Khắc] [10453]
+[Hiệp ước sơ bộ] [11907]
+[Không đồng nhất] [9585]
+[Điểm đấu thầu] [9263]
+【Chisubu】 【417】
+Tôi sẽ làm hết sức mình 【9529】
+【Có】 【319】
+【Cách] 【511】
+【Lăng lớn Ise】 【9395】
+【Nhóm gia đình】 【9863】
+【Không bao giờ quay lại】 【669】
+【Gosso Goto】 【271】
+【Tạm biệt Homerun】 【291】
+【Cái gì sai】 【485】
+【Petite】 【585】
+[Xin vui lòng] 【489】
+[Theo lệnh] [9405]
+【】 Tinh tế 【9483】
+【Bộ lạc Ainu】 【775】
+【Kỷ niệm】 【10039】
+【Mũi tên deviant】 【10411】
+[Nhân quả] [10495]
+【Nhân dân】 【10273】
+【Buổi tối】 【10377】
+[Lang thang] 【59】
+【Vị trí】 【9409】
+[Bất hợp pháp] 【9467】
+【Chân dung của một người đã chết】 【9637】
+【Otachochokoichi】 【71】
+[Ngủ] [9327]
+[Ibaraki ken] [10439]
+【Phim dẫn điện dị hướng】 【9581】
+【Phía dưới bên phải】 【10653】
+【Mây】 【10819】
+【Trong trường hợp này】 【257】
+[Thịnh vượng chung Vương quốc Anh] [10957]
+【Học sinh lớp 1】 【10223】
+【Rượu mạnh】 【9135】
+【Tình yêu ngay từ cái nhìn đầu tiên】 【10361】
+[Làm một vòng tròn] [503]
+[Đã hỏi] [135]
+【Nếu bạn làm điều này】 【229】
+[Bắc bắc] [9383]
+[Isometrics] [765]
+【Ako] 【517】
+[Đừng lo] 【281】
+[Nếu bạn làm điều đó] 【717】
+【儘 な ぬ な】 【667】
+【Anh ấy nói chậm】 【641】
+[Hiệu suất] [11115]
+[Uống khoảng] [10549]
+【Tuyệt, phải không? 【9437】
+【Bạn có thể làm】 【245】
+【Buồn nôn】 【9153】
+【Adenoid】 【907】
+【Khối lượng】 【9885】
+[Horizon] [11373]
+【Ichijutarou】 【10299】
+【Chankanko】 【405】
+【Không phải cho tôi】 【111】
+【Ayan】 【9275】
+【Hoạt động homing】 【847】
+【Đường một chiều】 【10337】
+【ゑ】 【727】
+[Vần điệu] [10641]
+[Bơi] [11171]
+【】 Ban đầu 【9527】
+[Bóp] [9267]
+【Giá đóng cửa】 【10531】
+【Ra sau】 【9525】
+【Một năm】 【10247】
+【Đơn đặt hàng của Unicam】 【9851】
+【Một tuần】 【10045】
+【Cuộc sống ngoài trời】 【803】
+[Giả thuyết] [11879]
+【Hoa sen】 【9617】
+【Hy sinh】 【155】
+[Mắt phải] [10673]
+[Bàn thông tin] [9361]
+【Điện thoại bổ sung】 【917】
+【Ox] 【10761】
+【Rút lại】 【10527】
+【Onigiri】 【89】
+[Màu nâu đậm] [9331]
+[Active Sports Wear] [843]
+【Ẩn】 【10639】
+【Đạo luật chăm sóc trẻ em】 【9829】
+[Sad] [9007]
+【】 Mita 【75】
+【Ngừng】 【297】
+【Kotatsuke】 【235】
+【Từ bất cứ lúc nào】 【51】
+【Kokoroko】 【435】
+【Hitting] 【547】
+【Trò chơi đường】 【8797】
+[Nhiệt độ kém] [9201]
+【Tính không đồng nhất】 【9551】
+[Tất cả cùng một lúc] 【9883】
+【Anh Saka】 【9301】
+[Quân xanh] [739]
+[Biên giới chéo] [11015]
+【Chilling】 【189】
+【Không ai】 【327】
+[Shiruchiguchi] [305]
+【Darling】 【9333】
+【Số lượng lớn】 【10115】
+[Theo] [719]
+【Kana】 【181】
+[Giao tiếp] 【10525】
+【Ishi】 【9691】
+[Khoảng cách] [11203]
+[Ác quỷ] [9141]
+[Đề cập đến] [12105]
+【Vâng bên】 【9799】
+[Mỹ phẩm] [79]
+【Hiko Hiko】 【597】
+【Cathode Ray】 【10593】
+【Căn cứ đầu tiên】 【10397】
+【Quint】 【201】
+【Shabu Shabu】 【299】
+【Cuộc sống tất cả trong biển】 【10127】
+【Ống khói】 【11129】
+【Aimate】 【787】
+[Tổn thương viêm] [11117]
+【Shabi】 【301】
+【Tần số】 【12353】
+【HoW loại người tham gia】 【213】
+【Khu phố này】 【259】
+[Photpho vàng] [11505]
+[Sự khác biệt trong mây] [10833]
+【お 袋】 【147】
+【Kéo bông】 【10521】
+【Bài hát tình yêu】 【9041】
+【Activ Defense】 【841】
+[Bad luck] [9101]
+【Đối lập】 【47】
+【Cảm ơn sự giúp đỡ của bạn】 【137】
+[Nhà hoạt động năng lượng mặt trời] 【845】
+【Khối u dạ dày】 【9601】
+【Một mảnh】 【9961】
+【Mõm】 【679】
+【Tiếp cận bắn】 【969】
+【Rất nhiều】 【387】
+【Lãi suất】 【10379】
+【Một ngày nữa】 【10237】
+【Nhà chào đón】 【95】
+【Osaka】 【131】
+[Trong thời kỳ tối] [9335]
+[Tiêu chuẩn vệ sinh] [10969]
+【Gia đình Burial】 【9641】
+【Cha mẹ nuôi dạy con cái】 【9819】
+[Kỹ thuật in] [10463]
+【Izutsu】 【9811】
+【じ ゅ う じ ゅ う】 【313】
+【Phương pháp di truyền】 【9687】
+【Nhiệm vụ nặng nề】 【10109】
+【Phụ nữ xấu】 【9143】
+[Tiếng nói xấu] [9165]
+【Giá rẻ】 【9305】
+【Kháng cáo mạch】 【8879】
+【ス ス ー ー】 【315】
+【Cuộc trò chuyện tiếng Anh】 【10915】
+【Chastise】 【45】
+【Chào mừng】 【709】
+【涔 々】 【309】
+【Mutsutsutsuji】 【211】
+【Suy nghĩ】 【479】
+【Điên】 【219】
+[Nghệ thuật ẩn] [10621]
+【Khúc côn cầu】 【763】
+[Hàng hóa giấu kín] [10637]
+[Cắt] [10533]
+【Dễ mang】 【303】
+[Rừng nhiệt đới] [885]
+【Mã di truyền】 【9677】
+[Bad ném] 【9193】
+【Tình yêu mèo】 【9063】
+[Một mảnh] [10343]
+【Upstyle】 【901】
+【む む】 【169】
+【Lái xe an toàn】 【9309】
+【Zenzu】 【10599】
+【Kusakusa】 【203】
+[Trong mưa] [10745]
+[Đột quỵ] [10811]
+[Quy tắc lợi thế] [923]
+【Một chiều dài】 【8955】
+[Siết chặt] [9229]
+【Học thuật】 【819】
+【Pachi】 【583】
+【Ra khỏi túi】 【815】
+[Không chỉ] 【375】
+【Cũng nói】 【461】
+【Yên thay đổi】 【11025】
+[Tinh thể lỏng] [10981]
+[Màu chì] [11215]
+【Bài tập thể dục】 【11107】
+【Một người Doujin】 【10021】
+【Mô-đun bổ sung】 【915】
+【Cử nhân Y khoa】 【9719】
+【Kết thúc báo】 【10543】
+【Bạn có muốn làm điều đó】 【323】
+【Okinawa】 【10147】
+[Lo lắng] 【9297】
+[Tên] [9561]
+【Thời kỳ】 【9903】
+【Truyền hình vệ tinh】 【10967】
+【Di sản】 【9661】
+【と か] 【449】
+【】 Uganda 【55】
+【Gyujyu】 【195】
+【Kỷ niệm đầu tiên】 【9873】
+【Khi 【】 451】
+[Ở phía trước nhà ga] [10999]
+[Để được ấn tượng] [557]
+【Sinh】 【601】
+【Thần kinh động cơ】 【10807】
+【Tiếp quản】 【10535】
+[Hình nón] [11055]
+【Một loại xe tăng】 【10139】
+[Sức mạnh thứ 100 triệu] [10195]
+[Trình phân tích cú pháp trợ lý] [857]
+[Mặt khác] [353]
+[Giả thuyết] [11927]
+【】】 【39】
+【Nam】 【9381】
+[Đã đọc] [9073]
+【Royal Box】 【8829】
+[Ý kiến] [9959]
+【Thời đại mới】 【10079】
+【ア プ ザ イ レ ン】 【965】
+【Vòng tròn bên trong】 【11061】
+【Eternity】 【10903】
+[Sáng bóng] [605]
+【10%】 【9879】
+【Tước】 【10977】
+[Để dựa vào điều ác] [9091]
+[Ape man] [11151]
+【Cách đó】 359
+【Chara] 【397】
+【Hệ thống y tế】 【9773】
+【Làm tốt lắm ~】 【157】
+[Thoải mái] [9507]
+【Hãy để tôi mỉm cười với bạn】 【10067】
+【Giai đoạn đánh dấu】 【10471】
+[Công việc khó khăn của bạn] [279]
+【Sự an ủi】 【9511】
+[Có dây] [8917]
+【Một phòng】 【10033】
+【Rõ ràng】 【495】
+【Phong cách châu Âu】 【11389】
+【Phim Chanbara】 【409】
+[Phong trào tròn] [11029]
+【Charmaine】 【407】
+【Cùng】 【715】
+[Văn học Anh] [10947]
+【Áp lực thần】 【9261】
+【Akane Sasu】 【9081】
+【Vị trí】 【9421】
+【Xem xét phim】 【10875】
+【Kế toán tổng hợp】 【10271】
+【Lệnh ác】 【9217】
+[Vicious] 【9119】
+【Ăn bữa】 【129】
+【Bẩn】 【509】
+【POPROPOLO】 【659】
+【Cuộc sống chung】 【10275】
+【Tải】 【9867】
+【Đại Nhân】 【9439】
+【Dễ dàng nhất có thể】 【53】
+【Bộ phim hành động】 【833】
+【Danh sách truy cập】 【837】
+[Soundboard] [11605]
+【Tái tổ hợp yếu tố di truyền】 【9679】
+【Vụ phun trào】 【10841】
+【Đào tạo nghề】 【9831】
+【Quân đội một đêm】 【10263】
+【Một Bale】 【10301】
+【Lie 八 八 八】 【10773】
+【Một lần qua】 【8941】
+[Làm điều đó] [705]
+【Hitotsu】 【10413】
+【Dấu hiệu hóa học】 【11845】
+【Chiều dài】 【357】
+【Genketsu】 【223】
+【Đô la châu Á】 【865】
+【Nước cam】 【1971】
+【Nó là gì] 【11993】
+【Hương thơm】 【9623】
+【Bộ nhớ chính】 【10029】
+【Lie và Lee】 【10779】
+【Nhà ga】 【10997】
+[Để làm điều đó] [703]
+【】 【】 Giới hạn】
+【Oka】 【63】
+【Betty】 【633】
+【Chuyên dụng】 【9807】
+【Kỹ sư chuyên nghiệp y tế】 【9715】
+【Smoky】 【11127】
+【Phim dẫn điện dị hướng】 【9583】
+[Viên đạn Tsubaki] [10877]
+【Omnibus】 【113】
+【Một ly một ngày】 【413】
+【Hình ngày】 【9397】
+【Cappella】 【821】
+【Trò chơi ngoài trời】 【805】
+【Gân Achilles】 【823】
+[Vậy làm vậy] [339]
+【Mặn】 [11223]
+【Ung thư dạ dày】 【9599】
+【Mukamuka】 【681】
+[Phấn mắt] [749]
+[Tây] [9377]
+【1 tài chính thư】 【10023】
+[Minima địa phương] 【8781】
+【Cô bé Lọ Lem】 【677】
+【Một mặt】 【10351】
+[Học điệu] [11593]
+[Còn lại để nói về bên trái] 【10649】
+【Còn lại 【】 【】 【】
+【Những gì để nói】 【447】
+[Dép] [11147]
+【Cây Bò】 【33】
+[Có] [341]
+【Gaika】 【9695】
+[Dịch] [9501]
+【Kiếm】 [10479]
+【桜 桜】 【10783】
+【Tiền chiến】 【10693】
+【Một chỗ ngồi】 【10081】
+【Whirlpools】 【10767】
+[Mỗi lần] [553]
+【Nuôi dưỡng】 【9833】
+【Vòng tròn có thể】 【11073】
+[Một tên sách] [10347]
+[Đá nén] [9251]
+【Discus Throw】 【11065】
+【Bản đồ chính】 【2309】
+【Chân thấp hơn】 【11757】
+【Một ý nghĩa từ】 【10353】
+[Nhà sư xấu] [9173]
+【Kotkoto】 【247】
+【Từ tiếng Anh】 【10941】
+【Phân ngành lao động】 【9757】
+【Sách】 【10061】
+【Khoai tây] 【10445】
+【Tôi tự hỏi nếu nó là 【167】
+【Sau khi cạo râu Lotion】 【947】
+【Nozomi】 【551】
+【Chuẩn bị nổi giận】 【615】
+【Quân đội nhìn】 【741】
+【Một cây】 【10359】
+【T trở lại】 【25】
+【Góc Châu Phi】 【957】
+[Bài hát Yên] [11039]
+【Shark Road】 【9365】
+【Bettanko】 【629】
+[Nước ép dạ dày] [9597]
+[Nagako đúng] [10895]
+【Cảm ơn bạn rắc rối】 【277】
+【嗄 れ】 【307】
+【Đóng】 【559】
+【Action Star】 【831】
+【Những điều】 【385】
+[Mưa rào] [10725]
+【Danh mục y tế】 【9713】
+【Ý định】 [9497]
+【Một dải ngân hà】 【10193】
+【Kẽm xỉn】 【8967】
+【Kenjinkai】 【10609】
+【O trở lại】 【19】
+【Một mảnh】 【9877】
+【Tôi từ】 【9387】
+[Mặt phẳng máy bay] [11489]
+[Làm một năm tốt] 【43】
+【Y khoa】 【9759】
+【Khoản vay ODA】 【11045】
+【Cả ngày lẫn đêm】 【10169】
+【Y tế】 【9651】
+[Tân] [11445]
+【Golfer trung bình】 【973】
+[Xin vui lòng xem] 【285】
+[Vật liệu] [10457]
+【Dành cho một người】 【10101】
+【Hệ thống Intoment Apo】 【981】
+[Dầu khí Anh] [10927]
+【Nhà ga an toàn】 【9307】
+【Bệnh dạ dày】 【9611】
+【Một đêm cuối】 【10003】
+【Học sinh được ủy quyền】 【9477】
+【Một con tàu】 【10117】
+【Gakushu】 【187】
+【Lịch sử y tế】 【9717】
+【Tầng giữa】 【899】
+【Kế hoạch chuyển tiếp】 【9589】
+[Hệ thống Apointe] [979]
+【Hành động】 【1719】
+[Quay mặt] [683]
+[Gắn bó] 【209】
+【Phật】 【10227】
+【Chuẩn bị cho mưa】 [10739]
+【Vẽ tay】 【10529】
+[Tưởng nhớ] 【9639】
+[Mưa bánh] [10727]
+【Hóa học y khoa】 【9705】
+[Đào tạo khoảng thời gian] [1235]
+【Bản án dự kiến】 【9697】
+[Camera ẩn] [10617]
+【Punishment】 【575】
+[Lịch âm lịch] [10615]
+【Để so sánh nhau】 【9523】
+[Mức độ phụ thuộc] [9429]
+【Một nước bỏ phiếu】 【9995】
+【Hình ảnh xuống】 【1165】
+[Old Power] [1843]
+【Sắp xếp màu】 【2137】
+[Xóa] [11195]
+【Gắn bó với 【621】
+[Ngất xỉu] 【165】
+[Tại bat] [897]
+【ヽ】 【1】
+【Gà】 【411】
+【Nhìn tốt] 【177】
+【Icety】 【755】
+【Đang chờ】 【145】
+[Ý định] [9495]
+【Bình quân đầu người】 【10089】
+[Ad hocracy] [925]
+【Hít thở】 【9909】
+[Linh mục tinh nghịch] 【9111】
+【Acoustic Guitar】 【849】
+【Golden Country】 【11449】
+【Kẻ thù đầu tiên】 【10219】
+【Thay máy】 【10197】
+【Một từ và một từ】 【9977】
+【Ainu】 【773】
+【Đóng】 【657】
+[Một đến trước] [10141]
+【Hươu cao cổ】 【391】
+【Khu vực vòng tròn】 【11027】
+[Tổ chức ra quyết định] [9489]
+[Nghỉ đêm] [10261]
+【Một phát bắn】 【10073】
+【Toro】 【463】
+【Hạ】 【91】
+【Câu trả lời】 [11295]
+[Điểm thỏa thuận] [10167]
+【Thiết kế đô thị】 【735】
+【Quyết định sớm】 【10943】
+【Cùng với 【469】
+[Mở rộng] [11083]
+【Một hoặc tám】 【9837】
+【Đạo luật của Vua】 [11429]
+【STOL】 【1543】
+【Một phần】 【9931】
+[Ăn ẩn] [10627]
+[Ngân hàng mắt] [777]
+【Lãng mạn xám】 【8871】
+[Đào tạo quyết đoán] [855]
+[Giống như để nói rằng] 【337】
+[Trang vàng] [1123]
+[Báo cáo máy ảnh] [2131]
+[Lúa gạo] [10429]
+【Ấn bản đầu tiên】 【10269】
+【Đặt hàng】 【9417】
+【Hors d'oeuvre】 【1713】
+【Trận】 【577】
+[Ăn-ăn] [653]
+【Xin đừng làm phiền tôi】 【41】
+【Decapa】 【441】
+【Ascott Thái Lan】 【873】
+【Một vụ】 【10357】
+[Bên ngoài bệnh viện] [10583]
+【Đại】 【9455】
+【Muối đơn】 【9857】
+【Khỉ cũng rơi từ gốc cây】 【11143】
+【Những điều】 【691】
+[Hey] [197]
+【Tsukatsu Masters】 【423】
+[Retinue] 【9667】
+【Con khỉ đơn giản】 【11149】
+【Throbbing】 【329】
+【Nụ cười Archem】 【733】
+【Trường hợp tùy viên】 【891】
+【Bỏ lại】 【9471】
+[Chứng nhận ấn tượng con dấu] [10451]
+【Món sushi Inagari】 【10425】
+【Quần áo】 【9621】
+【Tiệc ngày trong vườn】 【11079】
+【Vương quốc】 【11409】
+[Phí đăng ký] [9269]
+【】 ASCII 【871】
+【Ra khỏi khóa học】 【801】
+【Trong trường hợp đó】 【349】
+[Biển mây] [10817]
+【Hãy coi chừng cicadas】 【525】
+【Cuộc sống về hưu】 【10633】
+【Những người sống sót】 【9673】
+【Giá trị chú ý】 【905】
+[Tiếng Anh] [10945]
+【Một con trai】 【10087】
+【Lady】 【11721】
+【Tác dụng gây tử vong】 205
+Theo 【theo 539】
+【Chiayi】 【9517】
+【Overtake】 【9869】
+[Hình dạng đĩa] [11063]
+[Bên ngoài công ty] [10491]
+[Mùa hè mất] [12253]
+【】 Không đồng nhất 【9567】
+【Đào khoai tây】 【10441】
+【Tất cả các ngày】 【10241】
+[Số tiếng Anh] [10939]
+[Chăm sóc bạn] 【149】
+【Đầu người Mỹ】 【743】
+[Ô cắt] [1093]
+【Equal Opo Tunity】 【1133】
+【Ichigo-kai】 【9905】
+【Trò chơi trong nhà】 【1271】
+【Một ưu đãi】 【9957】
+【Lây lan lửa】 [11093]
+【Một điều】 【10389】
+【Vortex】 【10769】
+【Kéo lông mày】 【10515】
+【Afro】 【959】
+【Imagineer Ring】 【1159】
+【Công nhân】 【15777】
+[Bảng điều chỉnh tự động] [1685]
+[Trời] [10597]
+[Tôi nhiệt tình] [9485]
+【Vương quốc Anh】 【10951】
+【Yaaru】 【697】
+【Thắt chặt】 【10509】
+【Charma】 【403】
+【Nhẫn cưới】 【1431】
+[Ví dụ xấu] [9219]
+【Được gán cho Ogura】 【10705】
+【Ngắn tay】 【9897】
+【Nhìn thấy tất cả cùng nhau】 【663】
+【Hearthside】 【9463】
+【Một điều lớn】 【10157】
+[Đóng gói] [751]
+【Nó không phải là một giấc mơ nghiêm trọng】 【671】
+【Ekiden】 【11003】
+【Một con chó】 【9955】
+[Dừng hoạt động] [10803]
+[Vị trí] [9407]
+【Cả hai trong hai] 【9927】
+[Mưa lodge] [10741]
+【Một hòn đá hai con chim】 【10123】
+[Uống nó] [10563]
+【Ẩn nợ】 【10629】
+[Cửa vào] [10731]
+【Đề xuất】 【9359】
+【Bakemaker】 【567】
+【Thạch vàng】 【11477】
+【Tác động quảng cáo】 【911】
+【Hội chợ Bác sĩ】 【9751】
+【LSD】 【1607】
+【Khu vực quán rượu】 【10605】
+【Truyền giáo y học】 【9775】
+[Anh] [10923]
+[Năm của năm vĩ đại] [10763]
+【Chiến dịch quảng cáo】 【919】
+【Minmin】 【675】
+【Thịt thịt】 【10481】
+【Ipponsugi】 【10333】
+【100 triệu】 【9861】
+【Thắt chặt lông】 【10713】
+[Nhút nhát] [11533]
+【Apache】 【939】
+【Oldies】 【1837】
+【Luật của bác sĩ】 【9735】
+【Addon】 【913】
+[Xin chúc mừng] [81]
+【Au Pear Girl】 【1795】
+[Liquid] [10983]
+【Cánh phải】 【10671】
+【Điểm đến】 【9271】
+[Ice Harken] [757]
+【Ato】 【909】
+【San】 【293】
+【Một cuốn sách】 【10005】
+[Nhấn vào] [9249]
+【Động vật thấp hơn】 【11793】
+[Dường như] [721]
+【Honor】 【9941】
+【Hot Shiso】 【639】
+【Hurry】 【619】
+[Hiệu suất] [11105]
+【Grinning】 【529】
+[Trường bán hàng] [10857]
+【Một người bạn】 【9539】
+【】 Tương tự 【929】
+【Một phát】 【10345】
+【Thu hút】 【10503】
+【ゐ】 【725】
+【Bạn đang ở đây] 【345】
+【Hiếp dâm】 【693】
+[Xem từ xa] [11183]
+[Thiện] 【707】
+[Tác dụng phụ] [9103]
+[Còn lại] 【9669】
+【Đức hạnh】 【9689】
+【Vui vẻ】 【10257】
+【Không biết đại dương lớn ở giếng】 【9789】
+[Yên] [11033]
+【Phụ thuộc vào 【533】
+【Triệt hại vĩnh viễn】 【10889】
+【Dấu ấn ấn tượng】 【10475】
+【Nỗi sợ hãi】 【10579】
+[PI] [11047]
+[Uraba] [10785]
+【Ikki Tousen】 【9915】
+【Chỗ ở】 【9303】
+[Uchiha] [10683]
+【Yiichi Kiichi】 【9901】
+【Thông tin di truyền】 【9681】
+[Sét] [11211]
+[Một kích thước] [10035]
+【Kỷ nguyên vàng】 【11451】
+【Phục vụ】 【141】
+【Y khoa] 【9731】
+【Thường trú】 【10897】
+【Tektuku】 【431】
+【Aspirin Snow】 【883】
+【Hình dung robot】 【8863】
+【Risikoza】 【9057】
+[Onside] [1975]
+[Hệ thống chòm sao] [2991]
+【Đường một ngày】 【10243】
+[Tyranny] 【9991】
+【Giấc mơ nấu ăn】 【10103】
+【Một tuần】 【10047】
+【Tình yêu chim】 【9055】
+【Động từ một bước】 【10161】
+[Vậy nên] [555]
+【Ác trời】 【9187】
+[Quốc gia] [11189]
+[Chỉ định ý định] [9491]
+【Điều 1】 【10069】
+【Cơ thể bị cô lập】 【10151】
+【Ông Ogura】 【10707】
+【Tương tự như thế này】 【267】
+【Đại học Y khoa】 【9707】
+【Iceland】 【9465】
+【Gà】 【10281】
+【Máu】 【11663】
+【Sự thoái hóa】 【10883】
+【Hokkaido】 【439】
+【Bản dịch tiếng Anh】 【10953】
+[Rhyming] [10643]
+[Quen thuộc] [11153]
+【Passage】 【10131】
+【Văn phòng y tế】 【9755】
+【Truy cập】 【839】
+【】 Vương quốc Anh 【10931】
+【Vương miện】 【9619】
+【Động từ】 【12205】
+【Deb - san】 【87】
+【Bác sĩ Doctor】 【625】
+【Bác sĩ】 【9749】
+【An ninh】 【9313】
+【Lượng calo ban đầu】 【1951】
+【Gaijin】 【9699】
+【Một kích thước phía trước】 【10105】
+【Món ăn】 【11741】
+[Tòa án Gia đình] [12327]
+[Cũng như] [453]
+[Ác quỷ] [9203]
+[Ai thị] [9021]
+[Đẩy qua] [11305]
+[Khác] 【9635】
+【Chu kỳ của Chitin】 【2315】
+【Inagi】 【10437】
+【Tràn】 【10409】
+【Tiếng Anh】 【10937】
+【Một chiếc thuyền】 【10063】
+【Thủ môn】 【2615】
+[Răng vĩnh viễn] [10887]
+【Ivy Style】 【779】
+【Làm thế nào để làm】 【487】
+【Ý kiến】 【9563】
+【Vị trí】 【9411】
+[Bề mặt ngang] [11371]
+【Phương pháp bơi】 【10911】
+[SLR SLR] [9899]
+【Tổng số không gian sàn】 【11087】
+【Chào mừng】 【241】
+【Hoạt hình】 【10133】
+【Lúa gạo】 【10427】
+【Ars Amatria】 【1033】
+[Vườn] 【9671】
+【Chuyến đầu tiên】 【10285】
+【Uống trốn】 【10557】
+【Một cọc】 【10111】
+【Uzumo】 【10829】
+[Tiếng ồn] [11595]
+[Wishes] [9659]
+【Thiết bị】 【9939】
+【Quay lại] 【49】
+[Tiêu hao bình đẳng] [10383]
+【Một tòa nhà】 【10211】
+【Máy vận tải y tế】 【9785】
+[Một người phụ nữ xấu] [9123]
+【Một mặt một mặt】 【10177】
+【Bánh sandwich dầu】 【1861】
+【Con gái】 【9573】
+[Thiết bị y tế] [9769]
+【Đã bỏ】 【207】
+【Omiya】 【101】
+[Người ẩn danh] [10635]
+【Một đảng phái】 【10203】
+【Masquerade Ball】 【11983】
+【Phía Tây】 【1407】
+【1 nửa】 【9973】
+[Crank phía trước] [193]
+【Kéo】 【10507】
+【Ekiben】 【11009】
+【Cách của Chúa】 【9935】
+[Hàng tỷ] [11527]
+[In] [10487]
+【Một mảnh】 【9843】
+[Thẻ Usui] [10765]
+【1 斗】 【10201】
+[Giới thiệu] [10511]
+【Uống cùng một lúc】 【9911】
+[Agitate] 【9285】
+[Ngang] [11349]
+[Trí tuệ] [10845]
+【Cách cư xử】 【2623】
+【Thức ăn nhanh】 【1217】
+【Aspartame】 【879】
+【Unohana】 【10755】
+[Lời nguyền] 【9183】
+【Nhân vật biến thể】 【9569】
+【Một buổi sáng buổi tối】 【10179】
+[Người Anh] [10935]
+[Để in] [10465]
+【Faraway】 【11177】
+【Tanken】 635
+【Một tấm tatami】 【10071】
+【Okusaku] 【65】
+【Laguna】 【9587】
+[Ác quỷ] [9105]
+【Cùng】 【395】
+【Công ty in】 【10461】
+【Faraway】 【11205】
+【Sự khôn ngoan giàu có】 【9649】
+【Căn hộ làm xáo trộn】 【937】
+【Nuri】 【325】
+【Một phí giấy】 【10019】
+【Ezima】 【239】
+【一 一】 【9985】
+[Evil Angel] 【9191】
+【Thành tích】 【9457】
+【Kiểm soát giao dịch】 【9535】
+[Tình yêu phiên bản] [9049]
+【Đám mây mưa】 【10721】
+【5】
+[Tiếp tục giữ] 【9531】
+【Kể từ đó】 【367】
+【Hãy thử tìm】 【673】
+【Thử nghiệm đầu tiên】 【10075】
+[Như thể] [381]
+【Để thử giọng】 【11013】
+[Cắt Ý] [1149]
+【Seal imposter】 【10483】
+【Đám mây Shadows】 【10815】
+【Bộ trưởng】 【11735】
+[Trên cùng bên phải] [10659]
+【Đường quân sự】 【16423】
+【1 đơn vị】 【10153】
+【Đòn tấn công】 【2037】
+[Bìa mây] [10837]
+[Để được mở rộng] [11085]
+【Bài viết trước】 【289】
+【Mát】 【161】
+【Chợ】 【10489】
+【Tủ lạnh】 【8927】
+【Thức ăn nhanh】 【8749】
+【Nhân viên phục vụ】 【10995】
+【Illi】 【10381】
+【Bảo hiểm y tế】 【9779】
+[Cơ thể ý thức] 【9493】
+【Sada】 【8997】
+【ヾ】 【3】
+【Tekateka】 【429】
+【Ẩn trẻ em】 【10625】
+【Gấp】 【10129】
+【Argyle】 【729】
+【Iron Senri】 【10327】
+【Cuộc họp mẫu giáo】 【9825】
+【Thuật ngữ y tế】 【9727】
+【Anekemene】 【933】
+【Trường đua Ekiden】 【11005】
+【Một từ】 【9965】
+[Chuyển] [9593]
+【Tuyến đường】 【9795】
+【Hiệp ước an ninh】 【9315】
+【Ichiya】 【10373】
+【Kiểm soát của một bên】 【10205】
+【Số 1】 【9987】
+【Hơi thở】 【27】
+【Không gian thay thế】 【1835】
+【Muddy】 【10831】
+【Loài dưới đáy】 【11709】
+【Binth】 【603】
+[Răng đen] [117]
+【Đền thờ nữ】 【10581】
+【Hóa đơn một yên】 【9855】
+【一 一 覧】 【9983】
+【Tiêu hóa】 【9607】
+【Cơ quan Lâm nghiệp】 【10863】
+[Nhấn vào đây] [173]
+【Đón khẩn cấp】 【1595】
+[Wineen coffee] [1379]
+[Y khoa] [9753]
+【Cái nhìn đầu tiên】 【10365】
+【Liarbee】 【10771】
+[Một khó khăn] [10229]
+[Nhiệt độ không đổi] [10187]
+【Ướt lông quạ】 【10687】
+[Cổng Oku] [11263]
+[Mỗi lần] 【351】
+[Nước bình thường] [2057]
+【Kẻ xấu】 【9185】
+[Đám mây cao] [10823]
+【Quanh năm】 【10249】
+【Giảm giá rẻ】 【10113】
+【Hạng Executive】 【1521】
+【Autocross】 【1679】
+【Trách nhiệm】 【10539】
+[Chân phải] [10663]
+[Carbon graphite] [2011]
+【Vị trí số 1】 【9847】
+【Thơ tiếng Anh】 【10933】
+【Otanoya】 【119】
+【Thay đổi】 【9801】
+【Tôi không hài lòng】 【139】
+[Kenta] [11249]
+【Nếu có thể】 【687】
+【Zhang】 【10175】
+【Một năm】 【9865】
+【Sphere】 【10415】
+【Một mình】 【10095】
+【Tàu chiến】 【9385】
+[Khoảng cách] [11185]
+【Một mảnh】 【10341】
+【Ise 大 神宮】 【9393】
+【Một năm】 【9999】
+【Một sau tất cả】 【9923】
+【Một sợi cho mỗi phần】 【10017】
+【Thiết kế thương mại】 【2917】
+【Gió lạ】 【9575】
+[Để chiều dài] [377]
+【Một câu trả lời câu hỏi】 【10367】
+[Chi nhánh nhà xuất bản] [10607]
+[Từ phải sang trái] 【10647】
+【Giá thông tư】 【11031】
+【】 Ukifumi 【10419】
+【Okuyama】 【11267】
+【Áo đất sét】 【2549】
+【Một quốc gia một đảng】 【9993】
+【Khung nhọn bên phải】 【10667】
+[Để được hoãn lại] [11091]
+[Một bước nhảy vọt] 【10143】
+【Vâng xe tốt】 【9797】
+[Woost] [1455]
+[Seki] 【10467】
+【Mùa giải đầu tiên】 【10059】
+【1 chai nước ép】 【10065】
+【Tất cả các dịp lễ】 【1817】
+[Trẻ vị thành niên] [1329]
+【Ban Emery】 【1599】
+【Occident】 【1883】
+【Wuhua】 【10699】
+[Thủ đoạn tinh nghịch] [9113]
+【Kiểm tra khả năng cơ bản bằng tiếng Anh】 【10919】
+【Sinh viên sau đại học】 【10589】
+【Trà đầu tiên】 【10291】
+[Chuyển động tay] [10799]
+【Đại lý phục hồi tóc】 【9835】
+【Muối nướng】 【11221】
+[Nói về] [473]
+【Đứa trẻ ngọt】 【37】
+【Một mảnh】 【10339】
+[Foundation] [11163]
+【Tendo】 【371】
+【Hạng】 【9403】
+[Sharp F lớn] [10865]
+[Giấy] [10697]
+[Nổi bật] [10523]
+【Tiền xuất hiện】 【943】
+【Ấn tượng】 【10455】
+【Chào buổi tối】 【269】
+【Quận Aichi】 【9053】
+【Bẩn】 【11241】
+[Sharp] [10979]
+[Người thừa kế] [10849]
+【Giờ Vàng】 【3061】
+【Đau đớn】 【10595】
+【Xã hội】 【9709】
+【Downtown】 【11779】
+【Làm tổ】 【10859】
+【Một mảnh】 【9989】
+【Bệnh di truyền】 【9685】
+【Một từ】 【9975】
+[Indirace] [1215]
+【Surfsky】 【3111】
+【Nghe】 【10421】
+【Rhyme】 【10631】
+【Không vượt quá 12】 【10231】
+【Mưa bắt đầu】 【10733】
+【Country Wear】 【2199】
+【Nước sốt Apricot】 【9371】
+【Obon】 【11071】
+[Wishes] [10851]
+[Quần áo xấu] [9095]
+【Báo chí màu vàng】 【1119】
+【Truyền thông lớp】 【2487】
+【Lễ hội Aoi】 【9079】
+【Huata】 【10719】
+【1 lần】 【10259】
+[Utsu] 【9291】
+【Zenko】 【9555】
+【Tóc afro】 【963】
+【Nó sẽ mưa sau khi trời mưa】 【10735】
+【Một người】 【10009】
+【Lão hóa】 【9633】
+【Yêu cầu】 【9427】
+[Trong khi bạn đang làm nó] 【437】
+[Ngày nghỉ bị hủy] [10795]
+【Tiếng nói】 【8963】
+【Đầu tay】 【10283】
+【】 Ayafu 【9279】
+【Unwinding】 【10015】
+[Pubes] [10611]
+[Một chữ số] [9949]
+【Chủ tịch】 【9473】
+[Mở cuộn băng] [1793]
+[Cloud fit] [10825]
+【Bắt đầu với ま ず đầu tiên】 【665】
+[Âm thanh xa xôi] [11175]
+【Một lần】 【9895】
+[Aikonifai] [747]
+【Một quốc gia】 【9997】
+[Cấp tạm thời] [10027]
+[Nghệ thuật lừa dối] [9519]
+【Mây và hoa mặt】 【10839】
+[Mặt trời mùa hè] [12251]
+【Giảm giá một lần】 【9881】
+【Hệ thống chờ】 【1389】
+[Một tiếng thở] [9981]
+【Hỗ trợ Hiệu trưởng】 【11289】
+[West Ball] [1411]
+【Túi qua đêm】 【1731】
+【Xe phà】 【2009】
+【Một ổ bánh】 【9933】
+【Đòn tấn công cấp cứu】 【11291】
+【Hội thảo liên tiếp】 【1225】
+【Một lần đẩy】 【9859】
+【Hàng hóa y tế】 【9777】
+【Mứt mơ】 【9367】
+【Bác sĩ】 【9747】
+【Ghế Windsor】 【1371】
+【Anderslow】 【1069】
+[Nón] [2855]
+【Gaika】 【9549】
+【Một sợi tóc】 【10355】
+【Viết】 【10971】
+【Xuống dưới】 【11817】
+【Đội y tế】 【9761】
+【RUNWAYED】 【10651】
+[Đức hạnh] [10603]
+[Độc hại] [9215]
+[Đẩy] [11323]
+【Một điểm cứu trợ】 【8951】
+【Truyền giáo y khoa】 【9739】
+【One-shogun] 【9967】
+[Đơn vị] [9943]
+[Throne] [11405]
+【Aspite】 【881】
+【Điều trị】 [12181]
+【Kiểm tra Argyle】 【731】
+[Món ăn] [10573]
+【Làm một】 【lớn 627】
+[Chữa bệnh dạ dày] [9615]
+【Chiến tranh toàn cầu】 【2717】
+【1 lần giặt】 【10137】
+【Uống】 【10545】
+【Lượng mưa】 【10753】
+【Câu chuyện tội phạm】 【2473】
+【Cuộc sống đô thị】 【737】
+[Để quét] [11331]
+[Nghèo thời trang] [9223]
+[Màn hình khói] [11133]
+【Hãy phá vỡ nó】 【10209】
+【Đồ lót】 【11819】
+【Axit Alginic】 【1027】
+【Máy một điểm】 【10199】
+【Cây anh đào đơn】 【10053】
+【A la carte】 【1017】
+[Tên lửa ion] [1127]
+[Biên độ xa] [11173]
+【Vùng tối】 【9351】
+【Phỏng vấn chuyên dụng】 【9475】
+[Đơn vị bí mật] [11099]
+【Dòng Descent】 [11677]
+【Một giờ】 【10025】
+【Ánh sáng mặt trời tối】 【9345】
+【Survival mặc】 【3239】
+【Một đêm cuối】 【10001】
+【Thói quen uống】 【10569】
+【Ăn uống】 【10553】
+【E-mail】 [689]
+【Bộ trưởng Giao thông】 【10813】
+【Tuyển sinh】 【10245】
+[Mũ len] [10701]
+【Bài hát cổ vũ】 【11285】
+[Pie chà] [581]
+【Tú tài Quốc tế】 【1229】
+[Mặt trời nóng] [11123]
+[Không thể tránh khỏi] 【335】
+【Đua cổ điển】 【2483】
+【Trứng Columbus】 【2969】
+【Tất cả các bạn có thể uống】 【10559】
+[Phục Sinh] [1107]
+【Bát biển】 【10781】
+[Đẩy nó xuống] [11321]
+[Đừng rẽ phải] [10661]
+【Chúc mừng】 【2973】
+[Giun tròn] [11059]
+[Khu vực bất thường] [9541]
+【Thuế sân bay】 【1483】
+【Quân Đoàn Chết】 【16805】
+【Tuần trăng mật】 【12269】
+【】 【【647】
+【Fire】 【11119】
+【Túi Caddy】 【2343】
+【Khoảng cách】 【11193】
+【Một người】 【9841】
+[Mô hình không đồng nhất] [9543]
+[Hẹn gặp lại ngày mai] 【311】
+【Ngủ】 【10349】
+【Rosumi】 【10585】
+【Thời gian chăm sóc trẻ em】 【9827】
+【Một chất thải】 【10149】
+【Hiếp dâm】 【685】
+【Hy Lạp] 【10955】
+【Một món】 [10305]
+【Đại】 【9445】
+【Bác sĩ y khoa】 【9741】
+【Bittle】 【16073】
+[Tòa nhà thông minh] [1249]
+【Thân cây Python】 【10443】
+【Một lần viết】 【10297】
+[Công việc biên tập] [9675]
+【Đua ô tô】 【1707】
+[Bóng tối] [9347]
+【Một hoặc hai ngày】 【10393】
+[Phí phạt] [9631]
+【Tear off】 【10501】
+【Một miếng chạm khắc】 【10207】
+【Kỷ lục LP】 【1613】
+【Tất cả các món thịt nướng】 【1853】
+【Fire Fire】 [11125]
+【Một tay】 【10037】
+【Tất cả thời tiết】 【1813】
+[Một giây] [10303]
+[Đậu muối] [11231]
+[Mè gai dầu] [10843]
+【Auto Parlor】 【1693】
+【Game đếm】 【2763】
+[Cá] [10847]
+【Trong hội trường】 【1211】
+【Estoron】 【1547】
+【Ryu fukudeki】 [10885】
+【Kế hoạch mở】 【1789】
+【Weifeng】 【9469】
+【Takase nâng】 【369】
+【Một hạt】 【10387】
+【Ridicule】 【10407】
+【Rút lại】 【593】
+【Hành vi】 【10519】
+【Chim Vàng】 【11481】
+【Sau khi trượt tuyết】 【949】
+【Ấm moxibustion】 【11571】
+【Ăn uống】 【10571】
+【Mở Golf】 【1765】
+【Tôi sẽ làm phiền bạn】 【121】
+【Ả Rập】 【1023】
+【Được biết đến nửa đầu】 【10165】
+【Phun màu】 【2145】
+[Rửa dạ dày] [9605]
+[Tự động lặp lại] [1705]
+【Trở thành một đầy tớ】 【10085】
+[Chống thành lập] [1079]
+[Nút liên kết khuy măng sét] [2115]
+【Một ống】 【9891】
+【Eiji】 【10907】
+【Cơ đốc giáo】 【2393】
+【】 【15793】
+【Một sau khi】 【9921】 khác
+【Hệ thống bán mẫu】 【3377】
+【Mỗi ngày】 【10239】
+[Lái xe say] [10567]
+【Thông tư Tomb】 【11067】
+【Phà Khỉ】 【11145】
+【Tàu lượn】 【8815】
+【Satan】 【3223】
+【Tất cả xung quanh】 【10225】
+【Phim Công ty】 【10873】
+[Tôi giữ mắt] [11325]
+【Phát hành] 【10517】
+【Từ điển Anh-Nhật】 【10961】
+【Hàng rào lạm phát】 【1319】
+【Phong trào sống độc lập】 【1267】
+【Một ngày】 【9281】
+【Bài giảng từ xa】 【11181】
+【Overdose】 【1729】
+[Tin đồn là] [10791]
+【Cuộc đua Cup của Mỹ】 【997】
+【Hoa hậu bất cẩn】 【2733】
+[Carbon rod] [2017]
+【Tây Virginia】 【1385】
+[Điểm chấp chính thức] [1905]
+【Mùa hè Ấn Độ】 【1261】
+【Phương pháp uống】 【1807】
+【Orgon】 【1965】
+【Một từ hai từ】 【9969】
+【Adman】 【927】
+[Làm chứng] [9645]
+[Đám tang] [11161]
+【Dòng đầu tiên】 【10287】
+[One] [10295]
+【Bánh cưới】 【1421】
+【Một cô gái】 【10099】
+【Tháng 1】 【9951】
+【Apul】 【967】
+【Nhà bếp】 【10965】
+【Câu cá trên cao】 【10335】
+【Trả lời】 【9323】
+【Một người bán hàng】 【9979】
+【Người yêu】 【11135】
+【Bên trong khu vực】 【9817】
+[Hình xấu] [9169]
+【Komsomol】 【2955】
+【Excuse Me】 【1515】
+【Tư vấn】 【2035】
+【Thời gian vàng】 【3065】
+【West End】 【1403】
+【Anh Anh】 【1129】
+【Quần vợt mở】 【1779】
+【Bảo vệ cũ】 【1839】
+【Chấn thương lúa】 [10433]
+【Lee sóng】 【9401】
+【Shimo】 【11777】
+【Đại dương ren】 【1661】
+【Kỷ lục】 【1923】
+【Trọng lượng đào tạo】 【1391】
+【Ngày quốc khánh】 【1645】
+【Foolish】 【16097】
+【Tây Kềm】 【1409】
+【Virus AIDS】 【1497】
+[Esthetician] 【1541】
+【Trên Rock】 【1981】
+【Cyber】 【3167】
+[Eyelash Curler] [791]
+【Bài đọc】 【11603】
+【Tổ chức cánh phải】 【10677】
+[Khoảng cách] [11179]
+【Cái nhìn đầu tiên】 【10363】
+【Đã bao gồm】 【569】
+【Thư】 【421】
+【Bẩn】 【11239】
+[Ngữ pháp tiếng Anh] [10949]
+【Trận chiến đấu tranh】 【9171】
+【Góc phương đông】 【10695】
+【Cái chết sau】 【10011】
+[Dạng đám mây] [10821]
+【Ánh sáng Ả Rập】 【1019】
+【Trường Y học】 【9725】
+【Ẩn ngăn kéo】 【10619】
+【Đại dương】 【1895】
+【Một viên đá】 【10121】
+【Sinh học y học】 【9723】
+【Mỹ phẩm】 【2889】
+【Vật liệu y tế】 【9767】
+[Adjournment] [11089]
+【Hạ viện】 【10587】
+【Quay nhanh】 【2455】
+【Phong trào sinh thái】 【1527】
+【Cormorant】 【10759】
+【Overkill】 【1721】
+【Tất cả các Tòa án Mùa】 【1821】
+【Mười một】 【1189】
+【Hành lang】 【2959】
+[Mây sương mù] [10835]
+【Trưởng phòng】 【10233】
+【Ridin trong nước】 【9849】
+【Deviate】 【561】
+【Eternity trung lập】 【10899】
+【Ichigo desu】 【10265】
+【Circle】 【11037】
+【Thư Kana】 【11975】
+【Không nghỉ】 【99】
+[Vệ sinh] [10963]
+【Châu Âu】 【11381】
+【Tổng giám đốc Cơ quan Khoa học và Công nghệ】 【12361】
+【Khoảng cách lạm phát】 【1317】
+[Christiania] 【2525】
+【Esper】 【1557】
+【Bộ trưởng Quyền】 【10665】
+【Thông tin Xã hội】 【1303】
+[One-Minded] [9845]
+【Gạo Ichimosei】 【10057】
+[Tám nhịp] [1499]
+【Quá ném】 【1725】
+【Nylon len】 【1343】
+【Chỗ ở】 【9663】
+【Nghỉ đêm cả ngày】 【10235】
+[Số tiền không đổi] [10189]
+【Thờ phượng vàng】 【11453】
+【Kẹp phía tây】 【1397】
+【Viên đạn tròn】 【11057】
+【Esutetto】 【1539】
+[Cà phê Ý] [1151]
+[Cassiopeia] [2051]
+【Bắt bán】 【2337】
+[Intel] 【1251】
+【Canappe】 【2091】
+【Mời đến con đường của cái ác】 【9093】
+【Không phản đối】 【9547】
+【Tàu hàng thấp】 【8825】
+[Ying Zhen] [10913]
+【Làm thế nào để phát triển】 【9823】
+【Đá phạt】 【2811】
+【Chuyển】 【9591】
+【Đăng nhập】 【3175】
+[Phó báo anh em] 【9199】
+【Giấy công ty】 【2205】
+[Chủ nghĩa Mỹ] [1001]
+【Monogamatsu】 【10331】
+[Quay phim ẩn] [10623]
+【Một lần】 【9893】
+【Đẩy mở】 【11307】
+【Guatemala】 【2601】
+[Cuộc sống bên trong] [1283]
+【Khu vực sinh tồn】 【1633】
+【Nóng sạch】 【2511】
+[Echo trở lại] [1523]
+【Điện Kremlinology】 【2563】
+【Cuộc thi không quân】 【1481】
+【Gói thương mại】 【2919】
+[Áo cưới] [1423]
+【Danh sách kính】 【2633】
+[Sóng ngang] [11361]
+[Bình luận] [11213]
+【Bộ não phải】 【10669】
+【Avec】 【971】
+【Một câu】 【10315】
+【Một lớn】 【10155】
+[Remembrance] [9643]
+【Nhân viên y tế】 【9729】
+【Giai đoạn Apron】 【1589】
+[Để sử dụng trong y học] [9787]
+[Đông kẹp] [1109]
+【Thức ăn muối】 【11225】
+[Trong tay ném] [1071]
+【Cánh】 【1351】
+【Đồ dùng nhà bếp】 【2321】
+【Nhảy vào nguy hiểm】 【9353】
+【Gamer】 【2757】
+【Air Pad】 【1477】
+【Khoảng cách thông tin】 【1299】
+【Lạm phát phi mã】 【2437】
+【Chính sách đà điểu】 【1891】
+[Phương pháp Eliza] [1603]
+【Ichiro】 【10043】
+[Orthophenylphenol] [1967]
+【Cải thiện hiệu quả kinh tế】 【16631】
+[Hoạt động] [1935]
+【Tổ chức không chính thức】 【1293】
+【】 Hiếm 【2439】
+【Khiêu dâm vô nghĩa】 【1631】
+【El Niño】 【1611】
+【Sound Track】 【3189】
+【Tiệc cocktail】 【2049】
+【Âm thanh điện tử】 【1625】
+【Quốc gia và phương Tây】 【2197】
+【Một lá thư】 【10171】
+【Đón qua đêm】 【10371】
+【Vỏ đậu】 【10691】
+【Một chiều】 【10031】
+【Cơ sở y tế】 【9765】
+【Takeshi】 【10879】
+[Viết thư] [10777]
+【Một loại】 【10313】
+【Lục địa】 【3003】
+【Không bắn】 【1473】
+【Crank trong】 【2501】
+【Cha mẹ nuôi con】 【9821】
+【Chăm sóc y tế】 【9771】
+【Một trạm】 【9929】
+【Wind Yakke】 【1377】
+【Quần áo mùa hè】 【3291】
+【Món ăn nhẹ】 【16703】
+【Cáp bảo vệ】 【2217】
+【Máy thao tác tự động】 【1699】
+【Guitar amp】 【2421】
+[Illinois] [1185]
+【Khảo sát hình ảnh】 【1163】
+【Overhand Pass】 【1739】
+[Underper] [1073]
+【Santa Claus】 【3345】
+【Tất cả các mùa ăn】 【1825】
+【Xem xét】 【9971】
+[Đơn vị số học chung] [10277]
+【Nhảy vũ khí】 【1493】
+【Thành phố Phúc Châu】 【2459】
+【Gói quà】 【2429】
+[Cannerny] [2095]
+[Tình dục bằng miệng] [1805]
+【Mã mặt dây】 【2807】
+【Mèo mắt】 【2339】
+[Tới một người] [10091]
+【Vụ nổ lớn vũ trụ】 【10681】
+【Tạp chí lớp】 【2485】
+【Văn phòng nữ】 【1907】
+[Hạt giống bóng loáng] [11167]
+【Nghỉ hưu】 [11255】
+【Arok】 【1049】
+[Đồ trang sức Ấn Độ] [1263]
+[Bóng chày bên trong] [1203]
+【Galileo】 【2271】
+【Nghiên cứu hình ảnh】 【1171】
+【】 Nhật-Anh】 【10959】
+[Sữa bốc hơi] 【1581】
+【Bác sĩ y khoa】 【9743】
+[Canberra] [2369]
+【Toàn bộ】 【1827】
+【Carolinas】 【2187】
+【Quả bóng】 【1367】
+[Đế giày] [16199]
+【Uninhibited】 【9917】
+【Dãy núi Alps】 【1041】
+【Vào ユ ー マ ー ク】 【1991】
+【Esize】 【1537】
+【Sadomaso】 【3231】
+【Cha cuối tuần】 【1355】
+【Clomiphen】 【2597】
+【Pháo bóng】 【2345】
+【Indiana】 【1253】
+【Abilympics】 【941】
+[Lục địa tối] [9339]
+[Cô gái hộ tống] 【1535】
+[Ý định] [11257]
+【Truyền thông sẽ】 【9487】
+【Khối lượng uống】 【10575】
+【Vận chuyển một mảnh】 【10405】
+【Người ăn xin qua đêm】 【10369】
+【Nhà kinh tế công ty】 【2203】
+【Hot Top】 [11121]
+【Người Mỹ】 【1013】
+[Từ chức từ chức] [10541]
+【EDIPUS COMPLEX】 【1571】
+【Tất cả bảo đảm】 【1819】
+【Người hút thuốc trong vườn】 【2213】
+【Chuông đám cưới】 【1427】
+【Văn phòng Lady】 【1911】
+【Liên kết Golf】 【3093】
+【Số tưởng tượng】 【15179】
+【Nguy cơ vô hình】 【1289】
+【Vật liệu】 【10417】
+【Một làn da】 【10293】
+【Đạo diễn phim】 【10871】
+【Quốc gia Mỹ】 【999】
+【Vi-rút cúm】 【1315】
+【Khu nghỉ mát mùa hè】 【3297】
+【Grand Prix】 【2657】
+【Estonia】 【1545】
+【End curler】 【1641】
+【Cafe bar】 【2109】
+【Gakusei】 【10591】
+【Tuyết trộn với mưa】 【10737】
+[Chống sân khấu] [1081]
+【Rỗng hưng】 【1651】
+【Anglo America】 【1057】
+【Anzka】 【1085】
+【Thợ săn người phụ nữ】 【1335】
+[Oscar] [1889]
+【Auto Show】 【1681】
+【Saltweed】 【11219】
+[Thứ tự dễ dàng] [1099]
+[Ấn Độ] [1259]
+【Iran】 【1183】
+[Thành phần tiếng Anh] [10929]
+【Trượt tuyết】 【3363】
+[Nhà sản xuất hình ảnh] [1169]
+[Câu chuyện bên trong] [1201]
+【Akira Makoto】 【11069】
+[Công việc bên trong] [1209]
+【Age Shooter】 【1463】
+【Oshaido】 【1659】
+【Xe hạng nhất】 【10217】
+【Tập 1】 【9887】
+【Anglo Arab】 【1059】
+[Màu cánh] [1369]
+【Gast Albiter】 【2247】
+【Điểm nhấn con trỏ】 【1999】
+[Nghe nhạc dễ dàng] [1105]
+【Bóng đá Mỹ】 【1007】
+【Kích thước khung hình】 【2925】
+【Cross Fire】 【2585】
+【Thuế thu nhập】 【1195】
+[Phương pháp trường hợp] [2727]
+【Giờ Angkor】 【1063】
+【Imechen】 【1173】
+[Hình ảnh lên] [1161]
+【Ngân hàng】 [11043]
+[Nghe dễ dàng] [1103]
+[Đào giếng] [9793]
+[Bông len] [1341]
+【Có thể Kang】 【2189】
+【Phương Đông】 【1945】
+【Cattleya】 【2089】
+【Khí ga】 【2251】
+【Kickoff】 【2317】
+【Tất cả trở lại】 【1847】
+【Garzonne】 【2273】
+【Ngay cả Para】 【1117】
+[Người đàn ông neo] [1053]
+[Trên nhãn hiệu] [1979]
+【Uống rượu】 【10565】
+【Tháng 1】 【9953】
+【Abe River Cake】 【9321】
+【Cạnh bóng】 【1567】
+【Đi bộ một mình】 【10097】
+【Công suất âm thanh】 【11611】
+【Eiwa】 【10853】
+[Độc lập] [1087]
+【Air Pot】 【1485】
+【Nhịp điệu Sanga】 【3333】
+[Bóng] [11165]
+【Cafe Royale】 【2111】
+【Cuộc thi đố vui】 【2453】
+[Thiếu khí] [2253]
+【Thịt heo băm trên cơm】 【2081】
+【Nhà Karate】 【16127】
+【Copernicus】 【2913】
+【】 Amphiterable 【1091】
+【Gamelan】 【2265】
+【Khoản vay tác động】 【1287】
+【Kem Chủ Nhật】 【2505】
+【Lưỡi kiếm tròn】 【11051】
+【Sansimonism】 【3341】
+【Những đám mây tán xạ】 【10827】
+[Túi bệnh không khí] [1471]
+【Câu chuyện quân sự】 【16303】
+【Cork cao】 【2797】
+【Kịch bản gốc】 【1953】
+【】 【】 1637】
+[Inshoot] [1213]
+【Vòng tròn chờ đợi】 【1387】
+【Gimmema】 【2431】
+[Người Anh] [10925]
+[Bóng đá Mỹ] [993]
+【Oklahoma】 【1887】
+【Ampazar】 【1089】
+【Trường dâu tằm】 【16207】
+[Mặc thường] [2055]
+【Trên mạng】 【1735】
+【Key Stroke】 【2297】
+【Một bộ】 【10145】
+[Tông màu] [2149]
+【Lịch Gregorian】 【2711】
+[Thay đổi hình ảnh] [1167]
+【Phương tiện giao thông】 【10323】
+[Có thể] [14419]
+[Dọc đường ray] [11103]
+[Nụ cười cay đắng] [16065]
+【Oedipus】 【1857】
+[Axit Inosinic] [1157]
+【Wimbledon】 【1381】
+【Auto Player】 【1697】
+【Overfence】 【1743】
+【Chủ nghĩa cộng sản】 【2933】
+【Gandhi】 【2279】
+[Tất cả trong một] [1809]
+[Cuộc họp cấp cao] [9805]
+【Cố vấn nội thất】 【1239】
+【Một điều】 【9839】
+【Electone】 【1617】
+【Soda kem】 【2509】
+【Apolia】 【985】
+【Hệ thống nhập cảnh】 【1671】
+【Chiếc mũ Gaucho】 【2237】
+【Cuộc đua Indianapolis 500 dặm】 【1255】
+[Ban phục sinh] [1097]
+[Báo cáo bên trong] [1207]
+【Kekami】 【2735】
+【Ấn Độ giấy】 【1265】
+【Com】 【2953】
+【Dịch vụ đi lại】 【2929】
+[Rice] [10423]
+【Armagnac】 【1043】
+【】 Buổi tối 【16173】
+【Tài chính tồn kho】 【1323】
+【Ame Saran】 【989】
+【Đài phát thanh xe hơi】 【2023】
+【Eversoft】 【1579】
+[Máy bơm nhiệt hóa học] 【2741】
+【Đặc tính】 【16783】
+【Gạo sạch】 【2517】
+[Giấy màu vàng] [1125]
+【Wedge Sole】 【1417】
+【Bờ Tây】 【3147】
+【Episodeame】 【1585】
+【Ikura】 【1131】
+[Anzaiiren] [1065]
+【Thí điểm chủ đầu tư】 【1717】
+【Trên Slide】 【1723】
+【Tắt hồ sơ】 【1915】
+【Erodiction】 【1635】
+【Kỳ lạ】 【1509】
+【Iyabubu】 【1175】
+【Ô tô tình dục】 【1997】
+【InHigh】 【1285】
+【Gel Pin】 【2791】
+[Sắc tộc] 【1553】
+【Khu cắm trại】 【2365】
+【Tiếng Do Thái phục vụ】 【15755】
+【Đền trên không】 【16141】
+【Guignol】 【2425】
+【Hồi giáo】 【1143】
+【Bộ đổi mới】 【1683】
+[Quyền quyết định] [16811]
+【Kurd】 【2545】
+[Tự động trả lại] [1701]
+【Kết hợp màu】 【2143】
+【Overpresence】 【1745】
+[Truyện tranh Opera] [1931]
+【Hiệu ứng nhóm】 【2697】
+【Súng máy hạng nhẹ】 【16689】
+【Allah】 【1015】
+[Phần biểu diễn] [11109]
+【Itari】 【1147】
+【X quang】 【1563】
+[Các phần tùy chọn] [1927]
+【Crank lên】 【2499】
+【Lợi nhuận thu nhập】 【1193】
+[Music Box] [1963]
+【Đó là OK】 【3389】
+【Trò chơi mở】 【1755】
+【Bệnh Alzheimer】 【1035】
+[Case by Case] ​​【2725】
+【Dịch vụ ảnh qua đêm】 【1733】
+【Arik】 【1025】
+[Thành phố thông minh] [1247]
+【Cafe Napolitano】 【2107】
+[Nước sốt Worcester] [1333]
+【Quân đội】 【16319】
+【Biến động】 【1233】
+【Hội chứng Nest rỗng】 【1649】
+【Chuyên viên phân tích thông tin】 【1297】
+【Bài tập quân sự】 【16331】
+[Mở màn hình] [1783]
+【Kế hoạch của Mỹ】 【1009】
+【Carmela】 【2171】
+【Amelague】 【995】
+【】 【】 【】 【】
+【Gasol】 【2255】
+[Điều phối viên nội thất] [1243]
+【Thông tin cung cấp】 【1301】
+【Castella】 【2067】
+[Khoảng không quảng cáo] [1321]
+【Trung tâm ngoài khơi】 【1917】
+【Endorphin】 【1643】
+【Tập thể dục đi bộ】 【1501】
+[Đầu carbon] [2013]
+[Dịch vụ thông minh] [1245]
+【AMeDAS】 【991】
+【Chủ nhà mặt đất】 【2619】
+【East End】 【1113】
+【Ohm】 【1799】
+【Tất cả ouneshing】 【1815】
+[Andante Cantabile] [1075]
+【Thời trang dân tộc】 【1551】
+【Mua hàng】 【2039】
+【Dàn nhạc】 【1657】
+[Olympiad] [1957]
+【Mùa hè】 【3295】
+    
+

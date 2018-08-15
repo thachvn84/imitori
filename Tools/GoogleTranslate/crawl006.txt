@@ -1,0 +1,233 @@
+repl.it
+@anonymous/IdenticalStingyTranslations
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+unknownword.txt
+history
+11291130113111321133113411351136113711381139114011411142114311441145114611471148114911501151115211531154115511561157115811591160
+[old power]
+【オールドファン】
+[old fan]
+【オールバック】
+[swept back hair]
+【オールパス】
+[all pass]
+【オールラウンドプレイヤー】
+[all-round player]
+【オールロケ】
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.868s
+
+
+Repl.it: package installation success
+
+completed!----------------------------------
+=> undefined
+【Ẩn nợ】 【10629】
+【Một từ】 【9975】
+【Ban Emery】 【1599】
+【】 【【11095】
+[Bên ngoài công ty] [10491]
+【Một ý nghĩa từ】 【10353】
+【Vòng tròn chờ đợi】 【1387】
+【Một điều lớn】 【10157】
+【Itari】 【1147】
+【Thu thập váy】 【2433】
+【Rút ra】 【10499】
+[Viết một cụm từ] 【9937】
+[Tình dục bằng miệng] [1805]
+【Trà đầu tiên】 【10291】
+【Thợ săn người phụ nữ】 【1335】
+【Phía Tây】 【1407】
+【Kết hợp màu】 【2143】
+【Anglo America】 【1057】
+【Wind Yakke】 【1377】
+【Hội thảo liên tiếp】 【1227】
+【Áo Aloha】 【1051】
+【Hồi giáo】 【1143】
+[Ấn Độ] [1259]
+【Hệ thống nhập cảnh】 【1671】
+【Thời trang đầu】 【1177】
+【Overpace】 【1747】
+【Toàn bộ】 【1849】
+[Cà phê Ý] [1151]
+【Rỗng hưng】 【1651】
+【Lotus Tango】 【10403】
+【Ả Rập】 【1023】
+【Cuộc sống cổ điển】 【2481】
+[Sữa bốc hơi] 【1581】
+【Axit Alginic】 【1027】
+【Kenjinkai】 【10609】
+[Ô cắt] [1093]
+【Urabe】 【10787】
+【Thông tin dân chủ】 【1307】
+【Cả ngày lẫn đêm】 【10169】
+【Kama Sutra】 【2019】
+[Bông len] [1341]
+【Cuộc thi không quân】 【1481】
+【Đi bộ】 【1443】
+[Ban phục sinh] [1097]
+【Cái nhìn bình thường】 【2059】
+【Trò chơi chiến tranh】 【1447】
+[Giới thiệu] [10511]
+[Độc lập] [1087]
+【Một phút】 【10309】
+【Khu vực sinh tồn】 【1633】
+【Nguy cơ vô hình】 【1289】
+【Khóa học mở】 【1763】
+【Nylon len】 【1343】
+[Áo cưới] [1423]
+【Thời gian uống】 【10555】
+【Arik】 【1025】
+【Ichigo-kai】 【9905】
+【Một lần】 【9893】
+[Opera Glass] [1929]
+【Kế toán tổng hợp】 【10271】
+[Whiskey Sour] 【1359】
+【Chuyên viên phân tích thông tin】 【1297】
+【Số 1】 【9987】
+【Chú thích mở】 【1759】
+【Kỷ niệm】 【10039】
+【Giải Mỹ】 【1011】
+[Khăn tắm] [1475]
+[Ngữ pháp tiếng Anh] [10949]
+[Trang vàng] [1123]
+【Xe đuổi】 【2001】
+【Bệnh Alzheimer】 【1035】
+【Một năm cả】 【10395】
+【Air Pad】 【1477】
+【Học bổng】 【10993】
+【Văn phòng tình yêu】 【1909】
+【Allah】 【1015】
+【Unwinding】 【10015】
+【Trong hội trường】 【1211】
+【East End】 【1113】
+【Nhóm gia đình】 【9863】
+【Eroguro】 【1629】
+[Indirace] [1215]
+【Quạt cũ】 【1845】
+【Trường thay thế】 【1833】
+【Mở Golf】 【1765】
+[Kháng cáo Viên] [1345]
+[Wishes] [10851]
+【Osper】 【1893】
+【Trò chơi mở】 【1755】
+【Ấn tượng】 【10455】
+【Bộ đổi mới】 【1683】
+【Hitotsu】 【10413】
+【Chỗ ngồi của lái xe】 【10801】
+【Một từ】 【9965】
+【Cuộc đua Cup của Mỹ】 【997】
+【Bánh sandwich dầu】 【1861】
+[Thành phần tiếng Anh] [10929]
+【】 Ưu điểm 【2087】
+[Đồ trang sức Ấn Độ] [1263]
+【Người Mỹ】 【1013】
+【墺 太 利】 【1669】
+[Điều phối viên nội thất] [1243]
+【Thắt chặt】 【10509】
+【Tổ chức cánh phải】 【10677】
+[Để được hoãn lại] [11091]
+【Thịt thịt】 【10481】
+【Đi bộ Rally】 【1445】
+[Điểm chấp chính thức] [1905]
+【Kỷ niệm đầu tiên】 【9873】
+[Bóng chày bên trong] [1203]
+【Phát triển cơ sở hạ tầng】 【1313】
+[Kỹ năng] [1067]
+[One] [10295]
+【Hàng màu】 【1139】
+【Kết thúc báo】 【10543】
+[Xe tùy chỉnh] [2065]
+【Castella】 【2067】
+【Ikkyu】 【9919】
+【Tất cả các ngày】 【10241】
+[Tinh thể lỏng] [10981]
+【Yên giảm giá】 【11023】
+【Đệm bóng】 【2469】
+【Trách nhiệm】 【10539】
+【Thức ăn nhanh】 【1217】
+[West Ball] [1411]
+[Tour tùy chọn] [1925]
+【Khu vườn】 【10975】
+【Arok】 【1049】
+【Hệ thống chờ】 【1389】
+【Bìa bài hát】 【2097】
+[Mở cuộn băng] [1793]
+【Hoạt động thị trường mở】 【1791】
+【Gandhi】 【2279】
+【Cửa tự động】 【1687】
+[Khuấy nói dối] 【10775】
+【Một buổi sáng buổi tối】 【10179】
+【Kéo kích hoạt】 【10505】
+【Eldorado】 【1609】
+【Suy thoái tồn kho】 【1327】
+【Quyết định sớm】 【10943】
+【Tiện ích】 【1347】
+【Mạng che mặt đám cưới】 【1425】
+【Iron Senri】 【10327】
+【Quỹ nước ngoài】 【1919】
+【Động lực màu】 【2147】
+【Elpida】 【1615】
+【Giai đoạn đánh dấu】 【10471】
+【Ánh sáng Ả Rập】 【1019】
+【Canappe】 【2091】
+【Ấn bản đầu tiên】 【10269】
+【Gerbera】 【2223】
+【Điều phối viên màu】 【2141】
+【Dấu hiệu Yên】 【11035】
+【Áo sơ mi hở】 【1771】
+【Tổng số không gian sàn】 【11087】
+【Bộ não phải】 【10669】
+【Ô tô tình dục】 【1997】
+【Sự thoái hóa】 【10883】
+【Đại học liên thông】 【1223】
+【Kickoff】 【2317】
+[Tyranny] 【9991】
+【Cryo-electronics】 【2471】
+[Endian] [1639]
+【Thiết bị】 【9939】
+【Đường cơ sở đầu tiên】 【10399】
+【Tổ trống】 【1647】
+【Cà phê Mỹ】 【1005】
+【Hồi giáo】 【1141】
+[Viện trợ đóng băng] [11101]
+【Eau De Cologne】 【1675】
+【Phong trào sống độc lập】 【1267】
+【Virus AIDS】 【1497】
+[Giấy carbonless] [2015]
+【Carolinas】 【2187】
+【Một đêm cuối】 【10001】
+【Ame Saran】 【989】
+[Chăm sóc dễ dàng] [1101]
+【Hãy để tôi mỉm cười với bạn】 【10067】
+【Unohana】 【10755】
+【Nhân viên bảo vệ】 【2219】
+[Hai quạ] [10789]
+【Hộ lan can】 【2221】
+【Cafe Espresso】 【2101】
+[Axit Inosinic] [1157]
+【Kéo bông】 【10521】
+【Zenzu】 【10599】
+[Nhà sản xuất hình ảnh] [1169]
+【Tua bin khí】 【2245】
+【Ngôi sao cá nhân】 【10311】
+[Bay trong trường] [1291]
+【Cuộc trò chuyện tiếng Anh】 【10915】
+【Phía đông】 【1115】
+【InHigh】 【1285】
+    
+
