@@ -245,10 +245,10 @@ public class ENWordEntity {
                 while (rawmean.indexOf("(") != -1) {
                     int bpos = rawmean.indexOf("(") > 0 ? rawmean.indexOf("(") : 0;
                     int epos = rawmean.indexOf(")") > 0 ? rawmean.indexOf(")") : rawmean.length() - 1;
-                    System.out.println("----------");
+                    /*System.out.println("----------");
                     System.out.println(rawmean);
                     System.out.println(bpos);
-                    System.out.println(epos);
+                    System.out.println(epos);*/
                     String rem = new String();
                     if (bpos > epos) {
                         rem = rawmean.substring(0, epos + 1);    

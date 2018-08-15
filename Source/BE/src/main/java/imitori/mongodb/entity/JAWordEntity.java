@@ -386,7 +386,14 @@ public class JAWordEntity {
                         }
                         String[] srm = rawmean.split(",");
                         for (int k = 0; k < srm.length; k++) {
-                            res.add(srm[k].trim());
+                            String mg = srm[k].trim();
+                            String aw = new String();
+                            if (mg.indexOf("to ") == 0) {
+                                aw = mg.substring(3, mg.length());
+                            } else {
+                                aw = mg;
+                            }
+                            res.add(aw);
                         }
                     }
                 }

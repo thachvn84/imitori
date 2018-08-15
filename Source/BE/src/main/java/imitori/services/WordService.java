@@ -1,5 +1,9 @@
 package imitori.services;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 import imitori.mongodb.entity.ENWordEntity;
@@ -318,7 +322,11 @@ public class WordService {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
         JAWordEntity jaw = this.jaEnDicService.getWordById(jid);
+        
         ArrayList<String> jres = jaw.getAllMeans();
+        //System.out.println("------------");
+        //System.out.println(jres.toString());
+        //System.out.println("------------");
 
         ArrayList<String> eres = new ArrayList<>();
 
@@ -332,8 +340,24 @@ public class WordService {
             }
         }
 
+        if (eres.size() != 0) {
+           // System.out.println(jaw.getk_ele().get(0).getkeb());
+            //System.out.println(eres.toString());
+        } else {
+            if (jaw.getk_ele() != null) {
+                System.out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
+                try(FileWriter fw = new FileWriter("myfile.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw))
+                {
+                    out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
+                } catch (IOException e) {
+                    //exception handling left as an exercise for the reader
+                }
+            }
+            //System.out.println("nomean");
+        }
         
-        System.out.println(eres.toString());
         return res;
     }
 }

@@ -73,10 +73,17 @@ public class WordController {
     }
 
     @GetMapping("/search2")
-    public void findWord(@RequestParam Long id) {
-        System.out.println("search2 " + id); 
-        wordService.getMeansScore(id);
+    public void findWord(@RequestParam Long id1, @RequestParam Long id2) {
+        System.out.println("Range: " + id1.toString() + " ~ "  + id2.toString() + ": ");
+        for (Long i = id1; i < id2; i++) {
+            if (i % 100 == 0) {
+                System.out.println("--------- [" + i.toString() + "/" + id2.toString() + "] ------------");
+            }
+            //System.out.println("search2 " + i); 
+            wordService.getMeansScore(i);
+        }
     }
+
     // Return the list of [Word.word, r.score] that [Input
     // param]-[r:SIMILAR_TO]->(Word)
     @GetMapping("/similarTo")
