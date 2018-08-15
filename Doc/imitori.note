@@ -10,3 +10,32 @@ Increase swap {
     echo '/mnt/1GiB.swap swap swap defaults 0 0' | sudo tee -a /etc/fstab
 
 }
+
+{
+    1. Xử lý dấu () để tạo thông tin bổ sung cho từ
+    2. Xử lý dấu ; như dấu ,
+    3. Tạo quan hệ similar_to để tính score khi dịch (ví dụ:
+        Kết quả trả về
+            Hiện nay
+            Ngày nay
+            Hiện tại
+
+            Trong đó Hiện nay và ngày nay có quan hệ Similar_to, thì score cho nhóm Hiện nay, ngày nay là 2.
+            Và nghĩa của từ sẽ là Ngày nay, Hiện nay. (Thay vì hiển thị cả 3 nghĩa như ban đầu do score bằng nhau)
+    )
+    4. Xử lý các từ như là to ask, to think, to hear đúng ra là ask, think, hear nhưng vì là động từ nên thêm to vào đầu, do đó khi tra từ lại ko tìm ra được kết quả.
+    5. Xử lý những cụm từ ghép như 侵入軍　có nghĩa tiếng Anh là invading army nhưng lại không có nghĩa sang tiếng Việt.
+      ➔ Cần từ điển dịch cum từ Anh -> Việt.
+
+}
+{
+    Xử lý những từ chưa có từ tiếng Việt tương ứng bằng cách
+    1. Collect những từ này 
+    2. Đưa vào google transalte để kiểm tra 
+       Lấy nghĩa tiếng JP-VN
+       Lấy nghĩa tiếng EN-VN 
+       Tập hợp lại đưa vào DB thành danh sách những nghĩa có thể có. 
+
+    4. Thiết kế API để lấy ra những từ chưa sát nghĩa (cần thuật toán xác định)
+    5. Tạo API xử lý lựa chọn nghĩa đúng cho các từ (Chọn nghĩa đúng, like up, xóa nghĩa không liên quan) 
+}
