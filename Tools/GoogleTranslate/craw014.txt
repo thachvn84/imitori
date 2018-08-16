@@ -1,0 +1,2324 @@
+repl.it
+@anonymous/BriskGullibleAbstractions
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920212223242526272829303132333435
+
+const translate = require('google-translate-api');
+
+var fs = require("fs");
+var content = fs.readFileSync("retrans.txt", "utf8");
+
+translate("感じ", { from: 'ja', to: 'vi' }).then(res => {
+        console.log(res.text);
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.138s
+
+
+Repl.it: package installation success
+
+51216; 64019
+completed!----------------------------------
+=> undefined
+【Ngựa】 【52349】
+【Rộng rộng】 【52449】
+[Hemming] [52257]
+【Phong trào khẩn cấp】 【53311】
+【Hirokoji】 【52435】
+【Blood Blood】 【52635】
+【New Zealand】 【52511】
+【Cộng hòa thứ chín】 【52661】
+【Phòng Quan hệ công chúng】 【52447】
+【Dệt】 Dệt 【52735】
+[Voyeurism] [53285]
+[Bà Wiseman] [53317]
+[Hành động tự tẩy] [53207]
+【Quyền sở hữu】 【53201】
+【Madness】 【52399】
+【Superstitute】 【52939】
+[Viết tương đối] [52631]
+[Thiết kế hem] [52263]
+[Chung kết] [52647]
+【Sắp xếp】 【52227】
+【Anh em】 【52493】
+【Quân đội Hoàng gia】 【52417】
+【Sổ tiết kiệm gạo】 【52929】
+【Hôn nhân miễn phí】 【53173】
+【Totokuya】 【51287】
+【Nhà mới】 【52513】
+[Late] [53089]
+【Cánh trái】 【52641】
+【Cách mạng văn hóa】 【52815】
+[Trang phục cưới] [52951]
+【Đục gạo】 【52901】
+【Cuối băng giá】 【53093】
+【Cơ thể nhẹ】 【52481】
+【Trí tuệ】 【53329】
+[Người được chuyển nhượng] [53291]
+【Madness】 【52403】
+【Tư tưởng giác ngộ】 【53385】
+【Thư mới】 【52507】
+[Câu hỏi riêng] [53243]
+【Bằng sáng chế mới】 【52533】
+【Sake] 【52531】
+【Gia đình hoàng gia】 【52423】
+【Cám gạo】 【52935】
+【Fire Daruma】 【52999】
+[Lái xe buồn ngủ] [52247]
+[Cha] 【52299】
+[Nonaka] [51645]
+【Frenzy】 【52393】
+【Bunrikyo】 【52885】
+【Dọc】 【53293】
+【Hoàng thượng】 【52415】
+【Đuôi hoa】 【52957】
+【Mycobacterium tuberculosis】 【53363】
+【Hình ảnh tự do】 【53181】
+【Mài sắc】 【52091】
+[Giống như mới] [52523]
+【Không có Iwatare】 【52233】
+[Văn phòng bán vé] [52717]
+【Lắc sạch】 【52657】
+【Chương trình buổi tối】 【53085】
+【Số】 【51407】
+【Văn phòng Công tố Tối cao】 【52651】
+[Trong quá trình] [52639]
+【Bưu thiếp khứ hồi】 【52411】
+【Rong biển theo mùa】 【52747】
+【Tự hào】 【53279】
+【Tiến hành】 【51243】
+[Mặt] [53077]
+【Trường mới】 【52519】
+Kính hiển vi quang học】 【52483】
+【Quần áo tốt】 【52943】
+【Bước vào mê cung】 【52941】
+【Con gái với một căn nhà】 【52303】
+【Cha của】 【53135】
+【Đón miso】 【52751】
+【Công ty thương mại tổng hợp】 【51293】
+【日子】 【53595】
+【Okuda Hinomaru】 【52567】
+【Mối quan tâm】 【52765】
+【Cảnh đêm】 【53087】
+【Quốc gia văn minh】 【52851】
+【Cơ hội】 【52607】
+【Điện thoại dành cho cha mẹ và con】 【52561】
+【Phim văn hóa】 【52827】
+【Bàn huấn luyện】 【53335】
+【Cửa hàng bán buôn của Mỹ】 【52923】
+【Đốt】 【52993】
+[Trường bách khoa toàn thư] [51569]
+【Khen ngợi tội lỗi】 【52585】
+【Tổng số ảnh】 【51303】
+[Làm việc mùa hè] [52371]
+【Hủy bỏ】 【51239】
+【Monza】 【53019】
+【Số điện thoại】 【53191】
+[Đô thị] 【52849】
+【Hạt tiêu】 【52267】
+[Bài viết hai phần] [53581]
+【Volcano Bullet】 【52973】
+[Ngang] [52463]
+【Giao hàng】 【51891】
+【Loại tương lai】 【52739】
+【Bộ lạc cửa sổ】 【51277】
+【Go Go】 【53381】
+【Thực hành】 【52363】
+【Thuế】 【52799】
+【Khoảng cách giữa các xe】 【52351】
+【Bàn chân yếu】 【51363】
+【Ngôn ngữ hiện đại】 【52047】
+【Trước】 【52409】
+【Cảm giác】 【53067】
+【Bunko】 【52869】
+[Chi phí tài sản] 【52767】
+【Gạo lưu thông được trao đổi】 【53177】
+【Vương quốc Anh】 【52905】
+[Vết thương tốt] 【52947】
+【Các nước mới nổi】 【52555】
+【Cái này 儘】 【53103】
+【Khu vực Bunkyo】 【52865】
+[Vai lên] [52099]
+【Lịch sử nghệ thuật】 【53061】
+【Tổng số】 [51285]
+【Đám mây phóng xạ】 【51513】
+[Búp bê chị em] [53137]
+【Công việc nhà】 【52305】
+[Madman] 【52397】
+【Tự quan tâm】 【53189】
+【Nhà Married】 【52953】
+【Với một căn nhà】 【52301】
+【Sỏi thận】 【53305】
+【Đảng của nhà vua】 【52383】
+【Imperial Throne】 【52413】
+【Phong trào giác ngộ】 【53387】
+【Yumeji】 【52477】
+【新 新】 【52525】
+【Hwang Yu】 【52431】
+【Luật gia đình】 【52319】
+【Tuệ】 【52995】
+【Kanji】 【52389】
+【Tài nguyên khoáng sản】 【52469】
+【Ánh sáng xiên】 【51579】
+【Inuyama】 【54087】
+【Kaji no Tane】 【52963】
+【Awesome】 【52789】
+【Bí mật】 【53779】
+【Thu nhập của Hoa Kỳ】 【52897】
+【Nhà muỗi】 【52313】
+【Trường trung học cơ sở】 【52515】
+【Bụi】 【51237】
+【Loại báo】 【52551】
+【Premier thắng】 【52605】
+【Gia đình】 【52327】
+【Kiểm soát giá】 【52367】
+【Đúc】 【52223】
+【Khay】 【51223】
+【Bộ phận kinh tế gia đình】 【52311】
+【Cảng miễn phí】 【53169】
+【Tự động quanh co】 【53231】
+[Kinh doanh quảng cáo] [52441]
+【Quý tộc của nhà vua】 【52379】
+【Munetsu】 【51249】
+【Thực hành】 【53337】
+【Con thú】 【51685】
+【Thứ Ba】 【52977】
+[Nhà tài sản] [53131]
+【Chém】 【51585】
+【Thời gian tự học】 【53237】
+[Sơn mài] [52703]
+【Asylumian】 【52565】
+【Hideto】 【54101】
+【Ý thức thẩm mỹ】 【53069】
+【Downtown Words】 【52353】
+【Thanh toán trước】 【53021】
+[Buồn ngủ] [52153]
+【Koko】 【51935】
+【Lớp phủ keo】 【52273】
+【Cửa xe】 【52345】
+【Eagle Grip】 【54031】
+[Phân bổ theo tỉ lệ] [53811]
+【Phục hồi Hoàng gia】 【52381】
+【Điên】 【52405】
+[Ăn hết] [52245]
+【Cấp tiền】 【53365】
+【Sắp xếp theo mùa】 【52725】
+[Lớp lắng đọng] [51761]
+【Thời gian miễn phí】 【52283】
+[Vòng chìa khóa] [51881]
+【Xây dựng lưới】 【51867】
+【Trà chuyên dụng】 【51949】
+【Khám phá】 【51241】
+【Luật tiêu chuẩn xây dựng】 【51871】
+【Khu dân cư】 【51859】
+【Xung đột】 【51839】
+【Luật an ninh công cộng】 【53949】
+【Cha mẹ thứ hai】 【53591】
+[Người phụ nữ độc hại] [52207]
+【Trung Quốc viết】 【51967】
+【Giá trị ném】 【51593】
+【Được phép làm như vậy】 【53099】
+【Nhà nước văn hóa】 【52825】
+【Mua tiền】 【52071】
+【Cô gái Lesbian】 【53149】
+【Gaijin】 【51985】
+【Cung điện Hoàng gia】 【52425】
+[Mine] [53029]
+【Thông báo】 【52583】
+【Lửa】 【53003】
+【Thợ mộc xe hơi】 【52339】
+【Đền】 【53027】
+[Rave đánh giá] 【52699】
+【Lĩnh vực văn hóa】 【52829】
+【Nhà nước tự do】 【53161】
+【Hàng gia dụng】 【52307】
+【Luật sư】 【53981】
+【Tổng số】 【51331】
+[Mối quan hệ giữa các cá nhân] [51815]
+【Chó Nhật Bản】 【53607】
+【Ăn cơm】 【52785】
+[Chỉ phế liệu] [52737]
+[Clap đầu gối] [52707]
+[Tự kiểm tra máy đo độ ẩm] [53223]
+【Sekko】 【52665】
+【Xuất khẩu độc quyền】 【53801】
+【Đánh giá tuyệt đối】 【52689】
+[Chuẩn bị cho hôn nhân] 【52329】
+[Miệng rộng] [52433]
+【Đây là】 【53097】
+【Bản thảo】 【53955】
+【Tổ chức chính trị】 【54221】
+【Tự Học Tự Học】 【53193】
+【Cuộc đàm phán quỳ gối】 【52715】
+【Tàu điện ngầm】 【52355】
+【Cha mẹ】 【52603】
+【Sườn】 【52595】
+【Thời gian hoãn】 【52255】
+【Alive】 【52231】
+【Sect】 【52731】
+[Phí quảng cáo] [52439]
+【Vị trí chung】 【53431】
+【】 Khép kín 【】 53185】
+【Exhaustion】 【52633】
+【Kết hôn】 【53367】
+【Ruffle】 【52769】
+【Nơi lửa】 【52991】
+【Công thức] [53985]
+【Mồ hôi ngựa】 【51853】
+[Xe] [52343]
+[Tuyệt chủng] 【52691】
+【Hội nghị bí mật】 【53761】
+【Rampant Rogue】 【52455】
+【Bức tranh tôn giáo】 【51257】
+[Năm] [51397]
+[Mùa hè nhiệt] [52373]
+【Cửa sổ】 【51273】
+【Điểm sáng】 【52485】
+【Công việc trinh nữ】 【52331】
+【Tất cả các vận động viên】 【51323】
+【Ban Giám đốc】 【54269】
+【Câu hỏi】 【53691】
+【Koka rakusho】 【53143】
+【Sự cống hiến】 【51953】
+[Giaoman] [52117]
+【Masete】 【52293】
+【Nghỉ hàng năm】 【53721】
+【Hệ thống gia đình】 【52317】
+【Cung điện Hoàng gia】 【52429】
+【Musume】 【52491】
+【Biết khuôn mặt】 【52777】
+【Sổ hộ gia đình】 【52309】
+【Thiệt hại khoáng sản】 【52471】
+【Dinh thự】 【52239】
+[Dexes và loài ngoại lai] [53115]
+【Mặt thủ công】 【53081】
+【七 竈】 【52675】
+【Nghệ thuật thế giới】 【53063】
+[Giá hợp lý] [54139]
+【Thành viên văn học】 【52819】
+【Ẩm thực】 【53055】
+【Hóa lý vật lý】 【52795】
+【Cái chết tự nhiên】 【53249】
+[Thảo luận] 【52157】
+【Cha mẹ vv】 【52611】
+【Kính mắt】 【51753】
+【Gạo phụ gia】 【51847】
+【Trường tải】 【51687】
+[Trục đối xứng] [51829]
+[Giày dép] [51353]
+[Đăng ký công dân] [53297]
+【】 【】 53147】
+【Sức mạnh】 【53485】
+【Thoát nước】 【51419】
+【Ngày một ngày】 【53593】
+【Người nước ngoài】 【51997】
+【Komata ga】 【51723】
+【Đón dưa muối】 【52011】
+[Phobia xã hội] [51813]
+【Tác giả】 【53219】
+【Công nghiệp nội bộ】 【52297】
+【Địa điểm đào tạo】 【52095】
+【Hiệp hội cư trú】 【53197】
+【Tuyên bố Nhân quyền】 【53707】
+[Giày mát] [51475]
+[Đợi] [52243]
+【Luật mới】 【52517】
+【】 Mỹ 【52907】
+【美 美 文 調】 【53035】
+【Trái mới】 【52505】
+【Eiki phải】 【52473】
+【Thành viên Vigilante】 【53287】
+[Quần áo đẹp] [53047]
+【Lễ khai mạc】 【53457】
+【Miki】 【53059】
+【Sỏi núi lửa】 【52975】
+[Lễ trà] [51625]
+【Đua】 【51811】
+【Đọc nhanh】 【51387】
+【Một đứa trẻ】 【53391】
+【Bảo vệ tuyết】 【51467】
+【Trường Cram】 【52323】
+[Ngang] 【52457】
+【Người】 【53343】
+【Phân bón nhanh】 【51377】
+【Cảnh sát】 [52625】
+【Fall Voice】 【54043】
+【Verse】 【52733】
+【Fallout】 【52693】
+【Tổng số tóc】 【51329】
+【Tài sản】 【52801】
+【Núi lửa] 【52971】
+【Trí tuệ】 【53331】
+[Công nhân tự do] [53167]
+【美 音】 【53053】
+【Dự bị】 【52281】
+[Quyền tự vệ] [53283]
+【Ray gun】 【52489】
+【Thao tác giá】 【52369】
+【Cuộc đua đầu gối】 【52705】
+【Triết học】 【53355】
+【】 Trong nước 【53199】
+【Tổ tiên】 【52627】
+【Trọng lượng trung bình】 【51843】
+【Quyền lực của nhà vua】 【52387】
+【Điểm lạnh】 【51921】
+[Chưa được giải mã] [52743]
+[Độ tin cậy] [53127]
+[Mặt râu] [53119]
+【Phần hai học phí】 【53583】
+【Trọng lượng nặng】 【53299】
+【Cuốn sách mới】 【52535】
+【US-Trung Quốc】 【52893】
+【Tự truyện】 【53235】
+[Độc sâu bướm] [52217]
+【Absolutist】 【52683】
+[Bên ràng buộc] [52467]
+【Nhà kho lăn】 【52361】
+【Người giám hộ】 【53345】
+【Bộ lạc】 【51389】
+【Tính cách】 【53695】
+【Địa lý văn hóa】 【52821】
+【Mục bị hủy】 【52013】
+【Triệu phú】 【51561】
+【Foundry】 【52221】
+【Trong bùn】 【53551】
+【Bungee】 【52875】
+[Mất cân bằng tự động] [53209]
+【Yonekura】 【52917】
+【Bức xạ mưa】 【51511】
+【Bức tranh văn học】 【52809】
+【Cơ quan Văn hóa】 【52823】
+[Triết lý tôn giáo] 【51259】
+[Viết thẳng] [52697]
+【Xin chúc mừng】 【52655】
+【Keyring】 【51879】
+【Cân bằng mở rộng】 【52453】
+【Máy mài】 【52097】
+【Dầu gạo】 【52903】
+【Rừng nguyên sinh】 【53111】
+[Khuỷu tay vai] [52103]
+【Gà Oga】 【52959】
+【Món cơm】 【52913】
+【Chi phí nghỉ】 【51587】
+【Tháp Omnibus】 【52773】
+【Tinh chỉnh】 【51245】
+[Trung Quốc] [53513]
+[Bàn chải viết] [53827]
+【Tỷ lệ bảo hiểm】 【51873】
+【Bunkyo】 【52859】
+【Thanh kiếm mới】 【52499】
+【Trà đạo】 【51631】
+【Vị giác chồi】 【52753】
+【Pháo hoa】 【53009】
+【Nghiên cứu văn học】 【52839】
+【Cầu nguyện cầu nguyện】 【51845】
+[Cơ thể vật lý] [51543]
+[Dược điển Nhật Bản] [53627]
+[Màu hồng] [53139]
+【Selfed】 【53271】
+【Cải cách của Jeongmun】 【51251】
+[Trọng lượng nặng] [53203]
+【Thiết bị dừng tàu tự động】 【53225】
+【Hoàng đế】 【52427】
+【Một con tàu được vận chuyển】 【51889】
+【Trợ cấp gia đình】 【52315】
+【Để giết】 【51233】
+【Chăm sóc vú】 【53045】
+【Tư tưởng giác ngộ】 【53383】
+【Đặt bữa ăn hàng ngày】 【53663】
+【Bắn Bosn】 【51699】
+【Đáy hồ】 【52271】
+[Tăng] [51865]
+【Chuyển tiền】 【51433】
+【Đếm】 【51409】
+【Tuyến Venom】 【52215】
+【Cha mẹ】 【52569】
+【Mentor】 【52787】
+[Tiêu đề] [54131]
+【Bụng màu nâu】 【51623】
+【Người hưởng trợ cấp】 【53729】
+[Tiêm bắp] [53481]
+【Lịch】 【52543】
+【Phòng chống nhiệt】 【51477】
+【Công việc mới】 【52529】
+[Nguyên nhân] [51539]
+【Winding Union】 【51229】
+【Rửa đáy】 【52357】
+【Khoản vay bị đốt cháy】 【54017】
+【Ba giờ cao điểm】 【51713】
+【Centennial Year】 【51565】
+【Tự biểu hiện】 【53155】
+【Đời sống cho trẻ em】 【52251】
+【Ăn】 【52017】
+【Mottled】 【53941】
+【Tuyệt đối】 【52685】
+[Người văn hóa] 【52813】
+[Anh trai] [53319]
+【Thời gian hạn chế】 【51717】
+【Tự tử】 【53787】
+【Số lượng hàng hóa】 【52797】
+【Thuế Hoa Kỳ】 【52933】
+[Từ câu] [52867]
+【一艘】 【53443】
+【Làm đẹp】 【53073】
+【Tình hình ngoại giao】 【52681】
+【Cha mẹ】 【52615】
+【Mọi người】 【53349】
+【Lửa màu】 【52981】
+[Lại phía sau] [51231]
+【Bắc】 【51641】
+【Hem chia】 【52259】
+[Lustless] [53971]
+[Bàn chải viết] [53821]
+【Người bơi lội】 【52475】
+【Đóng góp】 【51939】
+【Suy luận】 【51763】
+[Tản nhiệt] [51525]
+【Thay đổi vĩnh viễn】 【54085】
+【Hàng hóa phát hành】 【51501】
+[Nhà nước cộng sản] [51739]
+【Trà】 【51629】
+【Chủ nghĩa tư bản đổi mới】 【54125】
+[Tôn giáo] 【51253】
+【My Lady】 【52755】
+[Cắt giấy tờ] [52677]
+【Hai hệ thống đảng lớn】 【53565】
+【Mẫu may】 【53505】
+【Thời gian uống trà】 【51595】
+[Viêm não Nhật Bản] [53621]
+【Lịch sử】 【51653】
+【Da】 【51289】
+【LÀM VIỆC GIỮ】 【52119】
+【Quy định tự nguyện】 【53179】
+【Chính sách mở cửa】 【53011】
+【Đào tạo tò mò】 【52335】
+【Quần áo】 【52763】
+【Quần áo】 【52761】
+【Làm đẹp】 【53071】
+【Nhiệt kế tối thiểu】 【52645】
+【】 Bên 【53215】
+【Phong trào làm đẹp】 【53031】
+【Tiến sĩ khoản】 【52729】
+【Người nổi tiếng】 【51391】
+【Rất hấp dẫn】 【52771】
+[Cải cách tôn giáo] [51255]
+【Tổng số mẫu】 【51333】
+[Khối lượng mở] [53463]
+[Nước lạnh] 【51915】
+【Nguy hiểm】 【53775】
+【Mua lại Cử nhân】 【53393】
+【Luật bảo tồn môi trường tự nhiên】 【53267】
+[Bàn chải viết] [53845]
+[Trong cái chết cháy bỏng] 【54019】
+[Thử nghiệm hòa giải] [52145]
+【Nhà máy thầu phụ】 【52365】
+【Nền văn minh mở】 【52853】
+[Chết người chết] 【51661】
+【Lĩnh vực đốt cháy】 【51669】
+【Heisei】 【53655】
+【Crest】 【52891】
+【寒 椿】 【51931】
+【Tadayuki】 【52187】
+【Cha mẹ lễ】 【52577】
+【Rượu độc】 【52203】
+【Lịch】 【53661】
+【Cơ quan quản lý cơ sở quốc phòng】 【51483】
+【Tadamura】 【52189】
+[Trái tim nhân tạo] [53673]
+【Ngọn lửa tự nhiên】 【53159】
+【Đường mới】 【52541】
+【Tiền tiết kiệm được hoãn】 【52253】
+【Bunraku Body】 【52881】
+【Tôn giáo mới nổi】 【52557】
+[Loisely] 【52581】
+【Cột phụ huynh】 【52589】
+【Cha mẹ anh em】 【52573】
+【Bộ phim mới】 【52553】
+【Mekkuten I] 【63733】
+【Mùa hè lạnh】 【52375】
+【Cửa hàng bất tận】 【53953】
+【Hoàn toàn】 【52695】
+【Làm mát mùa thu】 【54041】
+【Tadayuki】 【52179】
+【Hệ thống biểu diễn tỷ lệ phần trăm hạn chế danh mục】 【51715】
+【Văn học Trung Quốc】 【51957】
+【Tu viện tự nhiên】 【53259】
+【Vật liệu】 【52803】
+【Nyuma】 【51655】
+[Lừa] 【51369】
+【Sanator】 【52229】
+【Châu Âu】 【51711】
+【Chặt chẽ】 【53781】
+【Văn hóa】 【52855】
+【Footsteps】 【51355】
+【Đường phố】 【51659】
+【Bình đẳng giới】 【53113】
+【Scratch】 【53001】
+【Doppo】 【53905】
+【Lạnh】 【51905】
+【Hạt mới】 【52545】
+【Khóa học cuối】 【53091】
+【Như thế này】 【53101】
+【Bên ngoài】 【53015】
+【Placentia】 【52173】
+【Công việc uốn】 【52721】
+【】 Tạm thời 【51937】
+[Nghệ thuật] [53043]
+【Bảo hiểm xe hơi】 【53229】
+【Lịch sử văn hóa】 【52817】
+【Nhà vô địch sơn mài】 【52701】
+【Mùn cưa cá】 【63025】
+[Bút độc] [52211]
+【Động】 【54089】
+【Thiên nhiên】 【53269】
+【Bí mật rò rỉ】 【53765】
+【Y tá Attendant】 【53493】
+【Giai đoạn hai】 【53585】
+【Revealed】 【52123】
+【Một chỗ】 【53405】
+【Cỏ Kasumi】 【52291】
+【Vật lý trị liệu】 【53489】
+【Ngộ độc carbon monoxide】 【53441】
+【Số tiền chuyển】 【51435】
+【Kara Garog】 【51521】
+【Sperish】 【53321】
+【Cài đặt mua】 【52115】
+【Bìa giấy】 【52461】
+【Sản phẩm chính】 【53401】
+【Hộ chiếu số】 【51399】
+【Trên tàu】 【52341】
+【Tổng số】 【51339】
+【Tổng sức mạnh chiến đấu】 【51279】
+[Sao bò] [53491]
+[Hai mảnh thắt lưng] [53575]
+[Tự xa lánh] [53153]
+【Hình ảnh dày đặc】 【53777】
+【】 Chưa được đặt tên [52723]
+【Cá độc】 【52209】
+[Chính sách ngăn chặn] [53533]
+[Đổ mồ hôi] [51849]
+[Mùi hương nước hoa trưởng thành] [52151]
+【Hiện tượng thế giới】 【52081】
+【Lý thuyết văn học】 【52847】
+【Thuốc mới】 【52559】
+【Thổi】 【51807】
+【Giọng nói đẹp】 【53041】
+【Đường Raku】 【52385】
+【蟠踞】 【53901】
+【Penguin】 【53833】
+【Hộp đóng góp】 【51947】
+【Hải quan】 【53051】
+【Ước tính】 【51765】
+【Bộ trưởng】 【53755】
+[Sự tự tin đầy đủ] [53205]
+【Lễ khai mạc】 【53465】
+【Bút chì】 【52609】
+[Haruomoto] 【51791】
+[Thử nghiệm tôn giáo] [51261]
+[Tự quảng bá] [53151]
+【Bunrach yếu】 【52861】
+【Kỳ vọng】 【51635】
+【Cố vấn phụ huynh】 【52579】
+【Ma trận Masquerade】 【52277】
+【Nấu ăn】 【53969】
+【Kiến nghị】 【51751】
+【Vận hành mỏng】 【51981】
+[Sharp] [52495]
+[Bây giờ] [52045]
+【Quy tắc đạo đức cho báo】 【52547】
+【Kyogen tự tử】 【52395】
+【Địa điểm mùa thu】 【54053】
+【Thiên đường Bảy sao】 【52669】
+【Tỷ lệ bảo vệ】 【51471】
+【Kenzo】 【53327】
+【Thông điệp năm mới】 【53739】
+【Cảm giác màu】 【62893】
+【Chunghwa】 【51801】
+[Cây] [53377]
+【Sinh sản phóng to】 【52451】
+【Sản xuất bia】 【54105】
+[Peng Feng] [53855]
+【Ghi nhanh】 【51381】
+【Nước trà】 【51617】
+【Không thể chữa được】 【51695】
+[Điểm số tổng thể] [51343]
+[Kết nối theo chiều dọc] [51417]
+【General General】 【51281】
+[Thuyền] [54313]
+【Bán hàng trả góp】 【52113】
+【Biển bùn】 【53559】
+【】 【Hàng ngày 53649】
+【Cơ quan chính phủ】 【54213】
+[Bệnh] [51537]
+【Cửa chữa cháy】 【51449】
+【Chuyển học】 【53881】
+【Kanji】 【53515】
+【Kết thúc Đức Chúa Trời】 【53361】
+[Với người thân] 【52629】
+【Strife chính trị】 【54215】
+【Không bao gồm】 【51577】
+【Tổng số chỉ số】 【51321】
+[Cặp đôi] [52727]
+【Phí Imperial】 【52421】
+Cảm giác
+【Toàn quyền] 【51327】
+[Bảng trách nhiệm tài sản] [53129]
+[Rice] [52919]
+[Công thức tỷ lệ] [53809]
+【Megumi】 【53325】
+【Giá trị hàng năm】 【53717】
+【Bunraku】 【52883】
+【Đón】 【51431】
+【Điều kiện thiết yếu】 【53743】
+【Quan tâm] 【52591】
+【Parent Stock】 【52593】
+【Danh từ chất】 【52805】
+【Cánh tối nhất】 【52643】
+[Tiêu chuẩn Nông nghiệp Nhật Bản] [53623]
+【Người mới đến】 【52497】
+[Cư dân] [52235]
+【Quần áo dễ dàng】 【52005】
+【Blunt】 【51783】
+[Bí mật] [53747]
+[Công nhân cơ bắp] [53479]
+[Không còn ở trên] 【53873】
+【】 Đóng cửa 【53867】
+【】 Sơ sinh 【52501】
+【Cơ quan nuôi dạy con cái】 【52619】
+【Đại học phát thanh】 【51503】
+【Cây nho bóng】 【53657】
+【Bộ phận thư ký】 【53759】
+【Cổng】 【53013】
+[Tổng số dư] [51291]
+【Trò chơi trẻ em】 【51269】
+【Ngang】 【52465】
+【Bị thất lạc】 【52037】
+【Lưỡi độc】 【52197】
+【Trà đạo】 【51619】
+【Fire】 【52997】
+[Cạnh tranh] [51833]
+【Campuchia】 【54171】
+[Gối đầu gối] [52709]
+【】 Truyền thống 【53937】
+【Sát thương gây hại】 51541
+【Một cái chèn】 【53417】
+【Tea Purpose】 【51603】
+【Overlook】 【52025】
+【Trang phục】 【51759】
+【Hạn chế Kanji】 【51961】
+【Hội đồng】 53497
+[Năng lượng tự nhiên] [53245]
+【美 景】 【53065】
+【Tiền mặt] 【52077】
+【Sơ sinh】 【52503】
+【Xuất hiện】 【53121】
+【Cải tiến tiến bộ】 【52359】
+【Cấp độ đầu tiên】 【53445】
+【Bão chiều】 【51855】
+[Cơ quan Quốc phòng] 【51481】
+[Bằng chứng của con người] [53693]
+【Ezo Iku】 【52287】
+【Xã hội tri ân】 【51701】
+【Phòng chống】 【51487】
+【Ashigara】 【51351】
+【Ngang】 【52459】
+【Nozomi】 【51675】
+【Kẻ thù】 【51837】
+【Xây dựng bán】 【51857】
+[Bamboo] 【51907】
+[Mr.] 51265
+[Nghiện tự do] [53211]
+【Giữ lại】 【54079】
+【Lễ hội mùa thu】 【54051】
+【Cơ sở】 【53925】
+【Đóng】 【53863】
+[Cuộc nói chuyện hay] [53075]
+【Sự cống hiến】 【51951】
+【Kỳ nghỉ tự nhiên】 【53247】
+【Khai thác vai】 【52101】
+【Lustiness】 【52757】
+【Phong trào hiến máu】 【51941】
+【Kirita】 【51771】
+【Lưới chống tàu ngầm】 【51479】
+【Khiêu vũ Nhật Bản】 【53625】
+【Kích thước】 【51441】
+【Light Sense】 【52487】
+【Ngộ độc】 【52205】
+【Castor】 【52225】
+【Bữa tiệc của con tôi】 【52295】
+【Bắt đầu】 [53959]
+[Viết áp lực] [53825]
+[Kệ trà] [51615]
+[Kết cấu theo chiều dọc] [51415]
+【Bài viết mới】 【52521】
+【Cổng chung】 【51305】
+【Ashigiri】 【51365】
+【Trái tim phát sinh】 【51697】
+【Literate】 【52807】
+【Wildfire】 【51649】
+【Một số mức độ】 【51401】
+【Năng lượng năm】 【53735】
+【Gia cầm】 【51673】
+[Mẫu thử nghiệm] [53989]
+【Thú nhồi bông】 【53379】
+[Lụa tinh khiết] [51777]
+【Lo lắng】 【51491】
+【Cửa hàng Sushi】 【53333】
+[Seniority] [53289]
+[Shinto] [54103]
+[Barbarian] [53895]
+【Mua số lượng lớn】 【53415】
+【Bệnh】 【51553】
+[Hiện thực] [52059]
+【Công việc kéo sợi】 【51527】
+【Cười】 【53543】
+【Ashinagabachi】 【51361】
+【Nectarly Bath】 【51643】
+【Thù lao điều hành】 【54271】
+【Bàn chải】 【53847】
+【Bệnh】 【51535】
+【Bothering】 【53933】
+【Loyo】 【52183】
+[Maidyan] [53879]
+【Ứng viên Cadet】 【62835】
+【Lễ hội lửa】 【52989】
+【Dạy học】 【53341】
+【Hoàn thuế】 【52791】
+[Khoảng đầu năm] [53727]
+【Hoa Kỳ】 【52909】
+[Mourn] [54065]
+【Mồ hôi làm lại】 【51851】
+【Thơ】 【52401】
+【Đóng góp】 【51743】
+【Tổ tiên】 【52407】
+【Vấn đề giảm giá】 【52109】
+【Flag Song Ngư】 【52961】
+【Nogyo】 【51689】
+【Lượng rượu】 【54119】
+[Thu hẹp dệt] [54099]
+【Hàn Quốc】 【51963】
+【Màu sắc liên tiếp】 【51987】
+[Máy đo độ ẩm bầu ướt và khô] [51885]
+【Cuối mùa đông】 【53083】
+【Một chiến thắng】 【53437】
+【Lối vào】 【53007】
+【Tấm】 【53903】
+【Bệnh】 【51549】
+[Thời gian chấm công] [51573]
+【Maiden Peak】 【52333】
+【Rượu] 【54121】
+【Thư đăng ký】 【52069】
+【Di tản khẩn cấp】 【53313】
+【Loại lông cừu】 【53453】
+[Lý do] [53851]
+【Nosuko】 【51679】
+【Đừng nhìn đu】 【52033】
+【Haruomi】 【51805】
+【Tích cực】 【54267】
+【Sâu bướm】 【52915】
+【Bác sĩ phễu】 【54309】
+【Daisuke】 【52289】
+【Giới thiệu】 【51637】
+【Hirohara】 【52443】
+[Mài] [52093]
+[Xã hội chưa mở] [52745]
+[Lực lượng hiện tại] [52057]
+【Hệ thống giá đôi】 【53577】
+[Tôn giáo] [51263]
+【Tuổi】 【53723】
+【Bóng đá】 【51367】
+【Fire】 【53005】
+[Hàng hóa vốn] [53125]
+【Vị trí đắc địa】 【53519】
+[Bông] [51779]
+[Hàng chục ngàn] [51395]
+【Chi phí cho bộ sưu tập】 【51221】
+【Vòng tròn văn học】 【52843】
+[Mới] [52539]
+【Tiền bán】 【52067】
+【Kiến trúc sư】 【51869】
+[Ủy viên] [51875]
+【Tôn giáo mới】 【52537】
+【Cha mẹ】 【52601】
+【Oyashio】 【52617】
+【Tấm ngao vỏ】 【53915】
+【Coma】 【52949】
+【Công tác kiểm soát lũ】 【53947】
+【Kho báu quốc gia của con người】 【53699】
+[Nhà phát triển] [52089]
+[Hóa đơn dự phòng] [52169]
+【Huấn luyện viên】 【52139】
+【Một ấm đun nước】 【53433】
+【Trận chiến bắt đầu】 【51639】
+【Quỹ hưu trí】 【53731】
+【Chặt chẽ】 【53797】
+[Bunmu hai chiều] [52857]
+【HOOKO】 【51497】
+[Thư ký mùa xuân] 【51797】
+【Quy định chung】 【51315】
+【Trung tâm hồ】 【52269】
+【Đóng】 【51917】
+【Lantern Matrix】 【54129】
+【Thổi tre】 【52983】
+【Đại lý Flameproofing】 【51459】
+【Cơ sở chạy】 【51423】
+【Ban】 【53919】
+【Tiểu bang xấu xí】 【52175】
+[Nam tính] 【52149】
+【Điên】 【52391】
+【Đảo ngược một mũi tên duy nhất】 【53395】
+【Cha mẹ】 【52613】
+【Totoro】 【51319】
+【Giải phẫu mở】 【52679】
+【Sinh】 【51817】
+【Tắt giới hạn】 【51725】
+【Báo】 【52549】
+【Kẻ thù】 【54169】
+【Bộ mẫu】 【52015】
+[Poison] 【52199】
+[Bảo vệ nhân quyền] [53709]
+【Đầu bếp】 【51809】
+【Ban】 【53927】
+【Nhật ký sinh nhật】 【51547】
+【Văn phòng công tố viên quận】 【51707】
+[Vị trí mùa xuân] [51799]
+【Cơ】 【53477】
+[Lần thứ hai] [53579]
+【Hiện tại đã hoàn thành】 【52053】
+【Giết chết】 【54027】
+【Lậu] 【53799】
+[Gia đình] [52325]
+【Đóng】 【53865】
+【Cup】 [54111]
+【Trung học】 【53589】
+【Teda】 【51271】
+【Trà đạo】 【51607】
+【Đóng góp】 【51945】
+[Lúa gạo] [52899]
+[Đá bàng quang] [51531]
+【Chân kết hôn】 【51347】
+[Xa] [54287]
+【Scorched】 【54015】
+【Nghề cá ven biển】 【54297】
+【Cadence】 【53471】
+【Truyền】 【51439】
+【Nos Road】 【51677】
+【Hơn một năm】 【53725】
+【Sát trùng】 【52871】
+[Shutter] [54097]
+[Tiền gửi] [51693]
+【Trường học kèm theo】 【53495】
+[Hỗ trợ tự tử] [53217]
+【日 印】 【53637】
+【Bunny】 【52877】
+【Cộng hòa Nhân dân】 【53687】
+【Trứng lạnh】 【51909】
+【Tỷ lệ ngang bằng】 【53995】
+[Tài liệu giả mạo] [52863]
+【Công ty gốc rễ Patong】 【53929】
+【Giáo dục phổ thông】 【53429】
+[Xác minh tại chỗ] [52085]
+【Cày】 【53829】
+【Một cụm từ】 【53407】
+【Intake】 【51217】
+【Nipponization】 【53605】
+[Gây tê tại chỗ] [51729]
+[Mong muốn tự thể hiện] [53157]
+[Spring equinox] 【51789】
+【Máy ghép nối tự động】 【53233】
+[Tới Yuiki] [53877]
+【Tăng cực đại】 【52127】
+【Sickness】 【51545】
+[Móc mũi] 【51721】
+【Câu hỏi chung】 【51307】
+【Nhật Bản】 【53611】
+[Mune] 【51267】
+【Cuối đời】 【51651】
+【Lạnh Cook】 【51933】
+[Mùa thu] [54057]
+[Châu Âu] [51823]
+Hoshi】 【54071】
+【Bí mật】 【53785】
+【Bán hàng tự do】 【53171】
+【Chè trà】 【51613】
+[Thu khoản] [52719]
+【Fuki cotton】 【53373】
+【Tư tưởng phong kiến】 【53537】
+【Washi】 【54029】
+【Hai năm cỏ】 【53571】
+【Hoa cúc】 【51927】
+[Hookworm] [51719]
+[Đại lý dưỡng ẩm] [51469]
+[Đĩa đệm] [51767]
+[Tổng Lãnh sự quán] 【51335】
+【Ghé thăm】 【51529】
+[Vị trí hiện tại] [52049]
+【Trà gạo】 【51621】
+【美 美】 【53033】
+【Toàn diện】 【51301】
+【Đạo luật phát sóng】 【51505】
+【Nhiệt điện thế hệ】 【52965】
+【Sử dụng hàng ngày】 【53629】
+【Bồn tắm nước】 【54411】
+[Chuyển tiếp tại chỗ] [52083]
+【Kinh doanh hỗ trợ lẫn nhau】 【51737】
+【Đốt】 【52987】
+【Quán trà】 【51601】
+【Kế hoạch bí mật】 【53769】
+[Hiện tại] 【52073】
+【Có cơn giận dữ】 【52001】
+【Luật nhà Imperial】 【52419】
+【Hanjin】 【51955】
+[Lòng tốt] [52563]
+【Lực lượng vận tải】 【53789】
+【Săn chó hoang dã】 【51647】
+【Số hiện tại】 [52087]
+【Số】 [53891】
+【Tiếng cười】 【52793】
+【Bơi trong cái lạnh】 【51897】
+【Baidu】 【51567】
+【Đổi hướng】 【51443】
+【Nhà Duplex Kokaba】 【52887】
+【Luật tự nhiên】 【53251】
+【Lâu đài】 【52219】
+【Noma】 【51665】
+[Phiên bản chủ nhật] [53671]
+【Thiết bị điều khiển tàu tự động】 【53227】
+【Pháo chữa cháy nhanh】 【51379】
+【Cắt chân】 【51349】
+【Người đủ điều kiện】 【54153】
+【Phương trình nhị phân】 【53567】
+【CHỨC NĂNG LAYOUT】 【53403】
+【Kiểm soát dân sự】 【52833】
+【Đạo luật bảo vệ cá nhân】 【53685】
+【Đừng yêu cầu không nghe】 [52039]
+【】 Thay thế 【52571】
+【Tổng tư lệnh】 【51311】
+[Bệnh thận] [53307]
+【Một căn bệnh】 【】 【】】
+【Muối gạo】 【52925】
+[Ủy ban trọng tài] 【52143】
+【Thời kỳ băng hà】 【53357】
+【Droplet】 【52587】
+【Thiên Chúa] 【52031】
+【Blazer Sanity】 【53539】
+【Vợ】 【53145】
+【Thức ăn】 【51437】
+【Counter Horse】 【51819】
+【Sơn chống cháy】 【51453】
+【Tiền lương bằng hiện vật】 【52065】
+[Nomichi] 【51671】
+[Viết cổ áo] [53835]
+【Giày】 【53883】
+【Phòng Hộp đêm】 【54073】
+【Sunbusttobo】 【53633】
+【Nitta】 【52509】
+【Ba cảnh ở Nhật Bản】 【53603】
+【Rượu sake】 【54117】
+【Mũi gấu】 【53871】
+【Sự khác biệt về tình dục】 【53117】
+[Thiết bị bảo vệ mùa đông] [51473]
+【Lúa gạo】 【52921】
+[Artiodactylae] [51745]
+【Bộ lạc Hán】 【51969】
+【Người hiện tại】 【52079】
+[Trận đánh cọ] [53843]
+[Địa điểm cắm trại] [51667]
+【Luật Bảo hiểm Y tế】 【51877】
+【Han dịch】 【51971】
+【Quốc gia ký tên】 【52133】
+【Lối sống】 【53683】
+【Lúa gạo】 【52937】
+[Tiêu đề] [52837]
+【Tại chỗ giá】 【52063】
+【Đại lý】 【53523】
+[Intercropping] 【51989】
+【Số thẻ】 【53889】
+【Biểu hiện】 【53977】
+【Người】 【53679】
+【Yakiniku】 【53265】
+【Các vật phẩm điều tra】 【52043】
+【Bãi biển bị rò rỉ】 【53819】
+【Hiến pháp của Nhật Bản】 【53613】
+【Cháo Nanjisu】 【52667】
+【Đũa đầy】 【51583】
+【Tất cả các bạn có thể ăn】 【51227】
+【Quỳ】 【52713】
+[Với nhịp điệu] [51357]
+[Yoshinobu] [51493]
+【Tuner】 【52137】
+【Cột văn học】 【52841】
+[Thanh toán thuế theo kế hoạch] [51633]
+[Mặt đối mặt] 【51825】
+【Speedy】 【51373】
+【Ong tương tự】 【53993】
+【Bước nhận xét】 【52121】
+【Thời tiết lạnh】 【51925】
+【】 【Nhật Bản 53517】
+【Lễ kỷ niệm đám cưới】 【53369】
+【Súng trường】 【51663】
+【Nghiện】 【53375】
+【Giày bùn】 【53563】
+[Đang chờ xử lý] [52741]
+[Hàng chục] [51393]
+【Cảm giác thực tế】 【52061】
+【Phí thuê】 【52035】
+【Bắt buộc】 【52125】
+【Junichi】 【51773】
+【Thiên Chúa】 【54077】
+【Vũ khí cuối cùng】 【52653】
+【Thích hợp】 【54143】
+【Phát sóng】 【51507】
+【Vé】 【51219】
+【Purple Lan】 【53109】
+【National National Day】 【51861】
+【Kết thúc văn bản】 【52835】
+【Keeler】 【51691】
+【Một trăm ngày】 【51563】
+【Số Trung Quốc】 【51973】
+【Một lần không tái xét】 【53411】
+【Đồi gỗ đặc biệt】 【53817】
+[Tổ chức chính trị] [54223]
+[Xử lý tổng thể] [51313]
+【Giết chết gậy】 【53525】
+【Thời gian giảm giá】 【52111】
+【Ủy ban nhân dân】 【53681】
+【Chống nước】 【51447】
+[Tư bản] [53123]
+【Văn học Nhật ký】 【53651】
+【Chastity】 【52193】
+【Dây chữa cháy】 【51455】
+【Ngôn ngữ】 【54003】
+[Venom】 【52201】
+【Câu văn học】 【52879】
+[Nơi để hiển thị] [52027]
+[Thứ tự văn hóa] [52831]
+【Kiến trúc phòng cháy】 【51451】
+【Ném】 【52711】
+【Năm】 【53719】
+【Cha mẹ】 【52575】
+【Mở chân】 【53469】
+【Bungeo】 【52811】
+【JONJON】 【53665】
+【Phân phối vật lý】 [52779]
+【Lạnh tách】 【51913】
+【Tổng lệnh】 【51309】
+[Đồ nấu nướng] [52147]
+【Rừng chống lão hóa】 【51465】
+[Hyuga Water] 【53635】
+【Crest】 【52889】
+[Hạnh phúc mỗi ngày] 【53653】
+【Seam Soon】 【53503】
+【Tadashimori Monogatari】 【52191】
+【Thỏa thuận chính sách】 【54249】
+[Ushiroka] [54255]
+[Tăng doanh thu tự nhiên] [53263]
+【Điểm chính】 【53239】
+[Màu lạnh] [51903]
+【Thâm nhập】 【53841】
+【Con Trai Hoang Đàng】 【51523】
+【Bông gạo】 【52931】
+【Ngày biểu hiện】 【53973】
+【Tấm kim loại làm việc】 【53909】
+【Kinh tế mở】 【53459】
+【Tue lửa】 【52967】
+[Nissan] [53599]
+【Mitsuke】 【53805】
+[Vấn đề chủng tộc] [53705]
+【Xã hội lớp】 【53353】
+[Xử lý hàng hóa] [51887]
+【Heming】 【52261】
+【Junior] 【51769】
+【Nishiki】 【52009】
+【Từ điển màu】 【54005】
+【Kháng cáo】 【54505】
+【Ryokans】 【54081】
+[Purpura] [53105]
+【Chuyến đi】 【52021】
+[Hình phạt tự do] [53165]
+[Phát] [51425]
+【First Epistle】 【53397】
+【Giảm giá】 【52107】
+【Tiến sĩ Văn học】 【52845】
+【Tỷ lệ hàng năm】 【53733】
+【Bí mật】 【53753】
+【團 書】 【53897】
+【Ẩn Phật】 【53745】
+【Hai dây】 【53573】
+【Điều trị triệu chứng】 【51831】
+【Cold Moon】 【51899】
+【Tự đặt hàng】 【53195】
+【Cơ quan thủy sản】 【54435】
+[Quần đảo Nhật Bản] [53609]
+【Ghế rượu】 【54113】
+【Sổ sách】 【53917】
+【Ý nghĩa】 【51575】
+[Ghế điêu khắc] [52129]
+【Cấp nước】 【51429】
+[Người chăm sóc] 【52007】
+【Giao hàng hiện tại】 【52075】
+【Cái nhìn tốt】 【52019】
+【Đóng】 【53791】
+[Khoảng một năm] [54285]
+【】 Kazuki 【53447】
+【Thị trường giảm giá】 【52105】
+【Kiến thức】 【51787】
+【Thuốc chống ăn mòn】 [51461]
+【Cửa】 【53023】
+【Mũi gốc câu chuyện】 【53869】
+【Gaze】 【52155】
+【Thuộc sở hữu】 【54093】
+【Xã hội phong kiến】 【53535】
+[Tủ ngăn kéo] [52759]
+【Mẫu may】 【53509】
+【Thức ăn tự nhiên】 【53257】
+【Ký túc xá] 【54067】
+【Thực hành mặc】 【53339】
+【Chất phóng xạ】 【51509】
+[Tuổi] [54165]
+[Kệ trang trí] [54011]
+【Muddy】 【53557】
+【Quốc gia đối phương ảo】 【52279】
+【Bộ trưởng】 【53757】
+【Hệ thống bảo vệ】 【53347】
+【Không cho phép ngọn lửa】 【52979】
+[Thông minh] [51485]
+【Kiểm duyệt】 【52621】
+【Lâu đài】 【52241】
+[Tanyo] [51581]
+【Hàng trăm người khác] 【51557】
+【Ma sát xát vải】 【51883】
+【Jujin】 【51247】
+【Test Hell】 【53991】
+【Tòa án đơn giản】 【52003】
+【Tổng số bay】 【51325】
+【Văn hóa】 【52873】
+【Báo cáo trang web】 【52051】
+【Bảo vệ Communicator】 【51457】
+【Hiện tại cao】 【52055】
+[Sốt liên tục] 【51983】
+【Microtremors】 【52945】
+【Kế hoạch của chính phủ】 【54231】
+【Ziyun Zei】 【53107】
+[Myasthenia gravis] [53487]
+【Ẩm thực Nhật Bản】 【53619】
+[Công việc trang trí] [54013]
+【Giám sát】 【54345】
+【Dân số làm việc】 【54023】
+【Liao Bodo】 【51345】
+【Nhập khẩu song song】 【51555】
+【Còng cắt】 【51489】
+[Lý thuyết về quyền dân sự tự do] [53163]
+[Có thể thu vào] [51225]
+[Thanh] [53527]
+【Báo giá】 【51863】
+【Bảy khó khăn】 【52671】
+【Bundle】 【51977】
+【Xung đột】 【53803】
+【Taffa】 【52955】
+【Uống chất độc】 【54109】
+[Gây tê tại chỗ] [51731]
+【Thi hành tạm thời】 【52275】
+【Twisted】 【53435】
+【Age Pension】 【53741】
+[Trưởng thành] [52159]
+【Mikoto】 【53037】
+【Nhà mở】 【53529】
+[Xấu xí] [52177]
+【Hoạt động xe đạp】 【53241】
+【Vẻ đẹp tự nhiên】 【53255】
+【Động vật】 【53961】
+【Thiệt hại tài sản】 【52783】
+【Ném đá】 【51589】
+【Phí phòng】 【54075】
+【Mùa thu cỏ】 【54047】
+【Tuyến mưa mùa thu】 【54045】
+【Vật phẩm trả lại】 【52023】
+【Muối nướng】 【55007】
+【Mùa thu mùa thu】 【54055】
+[Không xa] [51999]
+【Burial Burial】 【53793】
+【Khuôn mặt ngu ngốc】 【51991】
+【Đền thờ chúa】 【52195】
+【Kiểm tra】 【52135】
+【Tạp chí tổng hợp】 【51295】
+[Shunko] 【51793】
+【Cư dân】 【52249】
+【Nhân vật】 【53701】
+[Bằng chứng vật lý] [52781]
+【Quảng cáo xin lỗi】 【51703】
+【Atsugi】 【52167】
+【Hoa hồng】 【52927】
+【Cổ phiếu】 【52029】
+【Tội phạm bí mật】 【53767】
+【Tsukiji】 【52165】
+[Thiếu nhận thức] [53549]
+[Nhiệt kế tự ghi] [53221]
+【Chất lỏng】 【51383】
+【Phật】 【53899】
+【Chứng nhận】 【53547】
+【Màu sắc mùa thu】 【54037】
+【Tuyên bố Đảng Cộng sản】 【51741】
+[Liberty] [53175]
+【Văn phòng tuyên bố】 【51733】
+【Căn hộ】 【51749】
+【Tấm tường】 【53923】
+[Nhật Bản I] [53631]
+【Mát mận】 【51923】
+【Tiêu đề】 【54137】
+【Trò chơi đuổi theo】 【54515】
+【Giáo dục trẻ em】 【51781】
+【Mizuhaya】 【54415】
+【Nâng cấp】 【63927】
+【Rogue】 【63321】
+[Đánh giá chữ viết tay] [53849]
+【Kế hoạch hàng năm】 【53737】
+【Gió địa phương】 【51727】
+[Vỏ trà] [51609]
+【Sự tinh khiết ghen tuông】 【51775】
+【Phòng trà】 【51599】
+[Expression] [53979]
+【Số tiền tuyệt đối】 【52687】
+【Có thể bị thất lạc】 【51235】
+[Cỏ thịt] [63895]
+【Mùa xuân Maki】 【51803】
+[Người thân] 【52597】
+【Hoa Kỳ và Pháp】 【52895】
+【Nhóm dân tộc cưỡi ngựa】 【51975】
+【So sánh hiragana】 【53807】
+【Công suất nhẹ】 【52479】
+[Tốt nhất Nhật Bản] [53601]
+[Foot footing] [51359]
+[Bỏ rơi uống] [53277]
+【Bị bỏ rơi】 【51591】
+【Cuộc thi】 【53813】
+【Đối thoại】 【51835】
+【Nomazuma gumi】 【51657】
+【Viri】 【51445】
+【Xã hội bí mật】 【53763】
+【Yayuda】 【53875】
+【Ichirou】 【53421】
+【Thiếu tá chính】 【52141】
+【Ấn bản thứ hai】 【53587】
+[Tóc thơm] [54095]
+【Đạo diễn】 【54841】
+【Đá quý】 【51403】
+【Không có ảnh】 【51683】
+【Viết】 【53853】
+【Correspondence】 【51827】
+【Hiệu ứng nhanh】 [51375]
+【Bác sĩ phương Đông】 【51959】
+【Doanh nghiệp】 【51735】
+【Voi】 【51747】
+[Tạm thời rời đi] [53423]
+【LỊCH SỬ】 【53749】
+【Tổng chi phí】 【51283】
+【Tòa án】 【53859】
+【Mở】 【53461】
+【Tỷ lệ ghi danh】 【54021】
+【Tiêu đề】 【54135】
+【Cầu】 【53975】
+【Biên giới】 【51895】
+【Bộ trưởng】 【53771】
+[Mục tiêu] [51821]
+【Cổng ánh sáng】 【53017】
+【Tông】 【53907】
+【Mua sắm】 【51943】
+[Sơn màu nước] [54427]
+【Dull】 【51785】
+【Mika】 【53039】
+【Số lượng thuế】 【51411】
+[Nichiaza] [53645]
+【Cha mẹ Guild】 【52623】
+【Bút chì】 【53839】
+【Bắt đầu buổi lễ】 【53957】
+【Nén】 【53783】
+【Người lưu giữ】 【55239】
+【Nước bên phải】 【54395】
+【Đóng băng】 【53183】
+【Quy mô nhỏ】 【55065】
+【Đóng tàu】 【54687】
+【Quanh năm】 【53711】
+【Cột lạnh】 【51929】
+[Cắt nâu] [51611]
+[Thể dục chuẩn bị] [51755]
+【Kenzō】 【53323】
+【Bài hát hái trà】 【51627】
+【Hạt gạo】 【52163】
+[Cửa hàng bán đĩa] [53913]
+【Nhật Bản rãnh】 【53617】
+【Tài chính thắt lưng buộc bụng】 【53315】
+【Rượu cắt】 【54115】
+【Mặt nước】 【53079】
+【1800 độ】 【51559】
+[Nỗi nhớ] [54063]
+[Cha mẹ] [53999]
+【May lá】 【53511】
+【Hạt phí】 【51893】
+【Nơi thích hợp】 【54151】
+【Kỷ luật cánh chính】 【53815】
+【Lưỡi nướng】 【54975】
+【Nhiệt nóng chảy】 【52171】
+【Thuế toàn diện】 【51297】
+【Phà】 【51911】
+【Tadatoshi】 【52185】
+【Từ chức】 【54009】
+【100 lựa chọn】 【51571】
+【Giải đấu đấu vật sumo】 【53521】
+【Cửa sổ】 【51275】
+【Tổng công thức hoa】 【51299】
+【Lò phản ứng nước áp lực】 【51841】
+[Mũ bơi] [54401]
+【Mở cổ áo】 【53475】
+【Hội đồng tư pháp】 【51709】
+【Snooze】 【53541】
+【Nhạc sĩ】 【51519】
+【Nghe】 【63477】
+[Như tôi mong đợi] [63731]
+[Chiều rộng tàu] [54325]
+【Thích Ca Mâu Ni】 【54645】
+【Từng người một】 【53389】
+【Nước mùa thu】 【54033】
+【Hiện tượng tự nhiên】 【53261】
+【Lễ nhóm】 【53359】
+【Phí điều trị】 【53951】
+【Ngôi sao đầu tiên】 【53439】
+[Mưa mù] 【53667】
+【Tài liệu kiểm tra】 【62549】
+【Moko】 【53943】
+【Quy tắc】 【54561】
+【Tạm đuổi】 【53425】
+【Đảo Akitsu】 【54049】
+【Phụ cấp chức vụ】 【54281】
+[Di chuyển không tự nguyện] [54751]
+【Cuộc bầu cử gián tiếp】 【51993】
+【Động lực học nhân khẩu học】 【53675】
+【Missed】 【53697】
+【Xuất huyết não】 【63983】
+[Khoa học nhận thức] [53545]
+【Bị bệnh】 【51533】
+【Biển Nhật Bản】 【53615】
+【Ngôn ngữ học toán học】 【51405】
+【Ngày sinh】 【53885】
+【Nông nghiệp】 【51919】
+【Thông cảm】 【52041】
+【Núi lửa】 【52969】
+【Phát hành ngày mai】 【51517】
+【Quyền lợi dân sự phúc lợi quốc gia】 【55391】
+【Tổ chức thực thi】 【55213】
+[Tàu thuyền] [54305]
+【Máy bay địch】 【54193】
+【Tự chìm】 【53187】
+【Từ chối】 【54091】
+[Skin-out] [53451]
+[Cuộc sống] [53647]
+【Một lợi nhuận】 【53449】
+【Một cặp khác biệt】 【53409】
+[Đề xuất] [54159]
+【Ngắt từ biển】 【52673】
+【Sáo】 【51413】
+【Từ bí mật】 【53795】
+【Nở ngực】 【53499】
+[Tên] [53295]
+[Giờ ánh sáng mặt trời] [53669]
+【Cuộc bầu cử trước】 【63033】
+【Nokonoki】 【53303】
+【Ghế phòng điêu khắc】 【52131】
+【Suimen】 【54409】
+【Viên đạn địch】 【54187】
+【Pha chế】 【55067】
+【Tương tự】 【54629】
+[Tần số] [53935]
+【Thùng】 【54123】
+【Kết luận】 【53371】
+【Giải thưởng toàn thời gian】 【53351】
+【Nhà máy hàng năm】 【53399】
+【Bóng】 【53659】
+【Giá lạm phát】 【52775】
+【Quá khứ đã hoàn thành】 【55507】
+【小 ở đây 屋】 【53887】
+【Họ và tên】 【63413】
+[Trước khi mặt trời lặn] 【53639】
+【香 香】 【63195】
+【Hiệp ước hiệp ước】 【54127】
+【Tiêu đề】 【54263】
+【Thỏa thuận Pajos】 【54239】
+【Bộ Tư pháp】 【53983】
+【Nước ép hồng】 【53141】
+【Vùng Primorsky】 【54299】
+【Trạm xe ngựa】 【54669】
+【Tự chế】 【53281】
+[Sau khi mặt trời lặn] 【53641】
+[Không đủ] [54257]
+【Xe hút thuốc】 【51979】
+【Akihiwa】 【54035】
+[Thiết bị nông nghiệp] [63889]
+【Lapa】 【53473】
+【Lễ hội mùa xuân】 【51795】
+【Honeybee】 【53501】
+【Côn trùng Birchworm】 【55311】
+【Tài sản quốc gia】 【55385】
+【Chính trị gia chính trị】 【63261】
+【Gió gió】 【62679】
+【Phong trào nông dân】 【63847】
+【Phát thanh chính trị】 【54217】
+【】 Vương quốc Anh 【54845】
+【Cá bụng】 【62149】
+【Xạ trị】 【51515】
+【Thương nhân gốm】 【52161】
+【Aki Maki】 【54059】
+[Mùa thu làm việc] [54039]
+【Windproof】 【51463】
+【Bộ giám sát】 【54341】
+[Phần thưởng] [51495]
+[Pigitta] [53823]
+[Đã phân loại sản xuất] [63267]
+【Hệ thống cấp cao】 [53715]
+【Dân số tĩnh】 【53677】
+【Máy đo áp lực】 【54379】
+【Quốc gia thù địch】 【54183】
+[Lớp học tuyệt vời] [55303]
+【Chasing wings】 【54489】
+【Núi lửa đôi】 【63949】
+【Superlative】 【52637】
+[Nhật Bản và Châu Âu] [53643]
+【Chơi】 【51427】
+【Bên trong con thỏ】 【51499】
+【Tadayuki yêu nước】 【52181】
+【Chúa tể của lâu đài đầu tiên của quốc gia】 【53413】
+[Tương đương] [53997]
+【Nước thần】 【54417】
+【Phúc lành】 【52321】
+【Container】 【53531】
+【Hội nghị quốc tế】 【55441】
+[Illegals] [54731]
+【Hokkaido】 【53921】
+【Trò chuyện】 【63829】
+【Kimono kimono】 【63915】
+【Thương gia】 【54241】
+【Saigo】 【54107】
+【Ling Sect】 【54001】
+[Nhũ tương] [63999]
+[Văn học của nông dân] [63845]
+【Sinh viên】 【54843】
+【Trên tàu】 【54301】
+【Làng nghỉ dưỡng quốc gia】 【55361】
+【Cao Có】 【55281】
+【】 Hàng ngày】 【53597】
+【Collapse】 【54813】
+【Watanai】 【54685】
+[Công việc nước bùn] [53553]
+【Dense】 【53773】
+【Điều chỉnh cuối năm】 【53713】
+[Phục hồi] [63921]
+【Người sáng lập】 【53857】
+【Đàm phán】 【55233】
+[Funbatish] [54307]
+【Mua nhỏ】 【55157】
+【Kẻ thù tấn công】 【54195】
+【Dầu nước】 【54397】
+【Orika】 【55247】
+【Trí tuệ】 【54555】
+【Mở】 【53455】
+【Đóng】 【53861】
+[Hiến pháp không bị kết án] 【54727】
+【Thành tựu】 【54557】
+【Phẫu thuật não】 【63981】
+【Trạm thủy điện】 【54359】
+【Thủy cung】 【54473】
+【Lương hưu】 【55461】
+【Khóa bát】 【55473】
+[Chinh phục] [54205]
+[Thu ếch] 【54061】
+【Phương pháp lý luận thông tư】 【54295】
+【Mô hình chức năng】 【54261】
+【Bệnh thời thơ ấu】 【55107】
+【Làng nước】 【54447】
+【Rising] 【54025】
+【Thực phẩm có hại】 【55285】
+[Hiệp ước không chiến tranh] [54753]
+【Rat chuột】 【54939】
+【Tách nước】 【54413】
+【Điểm tương đồng】 【54621】
+【Giám đốc kiểm tra】 【54339】
+【Động vật thủy sinh】 【54373】
+【Tư tưởng】 【54901】
+【Bài viết】 【54565】
+【Lựa chọn vật phẩm được chọn】 【63583】
+【Sấm Cá】 【54547】
+【Cười】 【55195】
+【Đánh giá quốc gia】 【55371】
+【Cho vay】 【63633】
+【Bodaiji】 【63813】
+【Xe lực】 【52337】
+【Fukujukake】 【63801】
+[Đến nơi này] [53095]
+【Theo đuổi】 【54509】
+【Bồi thường quốc gia】 【55415】
+【Đi qua】 【54691】
+【Cánh đồng nướng】 【54999】
+[Ryuusei] [63109]
+[Loại chứng nhận] [63203]
+【Mỏ chì】 【54335】
+【GIỚI HẠN NƯỚC】 【54423】
+【Tiêu hủy】 【54895】
+[Thuốc ngay lập tức] [63753]
+【Hiệp hội quân đoàn quân đoàn】 【54857】
+[Khu vực thiên tai] [54883]
+[Câu không thường xuyên] [54733]
+【Phân bón dạng lỏng】 【54707】
+[Cơ thể chữ thảo] [53831]
+【Ủy ban Nông nghiệp】 【63855】
+[Ấn phẩm tự xuất bản] [53273]
+[Ẩn] 【63361】
+【Tàu chờ】 【54319】
+【Thiệt hại do lũ lụt】 【54419】
+[Nông dân súng trường] 【63843】
+[Shogun] [54203]
+[Sự sống còn của fittest] [54149]
+【Thủy sản Biển Bắc】 【54771】
+【Lõi] 【54369】
+【Hệ thống quay】 【54591】
+【Lớp J】 【54631】
+【Phí nước】 【54457】
+【Cánh phà】 【54689】
+【Cổ phiếu】 【54265】
+【Mizuna】 【54429】
+【Nòng súng】 【55551】
+【Kẹo dính】 【53967】
+【Chào mừng】 【54681】
+[Cửa hàng gỗ] [54815]
+【Viên đạn】 【63905】
+[Dịch] [54155]
+【Reheating bắn】 【54495】
+[Mizuke] [54391]
+[Dầu không sấy] [54741]
+【Công trình nhỏ】 【55149】
+【Cung điện】 【54925】
+【Thuế bổ sung】 【54511】
+[Ngôn ngữ được sử dụng] [55477]
+【Gốc quyền lực) 【54537】
+【Tiêu đề】 【54133】
+[Viên đá bước] [55221]
+【Viết đúng】 【55343】
+【Tàu thêm】 【62643】
+【Quốc gia cầm quyền】 【54597】
+【Công việc trục vít】 【54539】
+【Nhu cầu hiệu quả】 【55269】
+[Nước] [54357]
+[Kami Shogi] 【63493】
+【Cơ thể chết đuối】 【63977】
+[Lens] [54449]
+【Câu hỏi】 【53689】
+【Gió chính thức】 【54253】
+[Bị đánh bại] [54973]
+【Bóng tối】 【54191】
+【Yuzu】 【54719】
+[Đã dịch] [54659]
+[Thử nghiệm thử nghiệm] [53987]
+【Tsurugi】 【54347】
+【Trạm thí nghiệm nông nghiệp】 【63887】
+【Loại】 【54619】
+【Bộ Nông nghiệp, Lâm nghiệp và Thủy sản】 【63869】
+【Muddiness】 【53939】
+【Chính sách】 【54563】
+【Bán cầu đất】 【63521】
+【Quyền lực nhà nước】 【55413】
+【Quan điểm chính trị】 【54251】
+[Di chuyển ra khỏi giỏ] 【63519】
+[Ngộ độc thủy ngân] [54471]
+【Tin Mừng】 【63803】
+【Đường truyền thống】 【54839】
+【Bàn tay】 【54665】
+【Bóng đá】 【63907】
+[Dây da] [63917]
+【Vòng lặp】 【54589】
+【Phân bón nước】 【54407】
+[Thunder] [54543]
+【Hiến chương LHQ】 【55425】
+【Komon】 【55139】
+[Vấn đề] [54283]
+【Quốc gia nông nghiệp】 【63877】
+【Bầu cử】 【63605】
+【Yêu cầu nghỉ hưu】 【54007】
+【】 【】 54635】
+【Phản ứng cấp tiến tự do】 [63839]
+【Tatamisui】 【55235】
+【Panmunjom】 【53911】
+【Kế hoạch lương hưu】 【55297】
+【Nước vào】 【54355】
+【Đăng ký】 【63939】
+【Cười】 【55191】
+【Lễ hội đêm】 【54699】
+【Tuyến nước】 【54475】
+【Phó Thống đốc】 【54809】
+【Rosette】 【54599】
+[Cấp độ cư trú] [52237]
+【Đường sắt quốc gia】 【55387】
+【Khuôn mặt ngạc nhiên】 【55565】
+【Chính trị gia】 【54247】
+【鳶 色】 【54521】
+【Phật giáo Hideaki】 【55119】
+【Cơn bão khủng bố】 【54955】
+[Barge] [54323]
+【Trẻ hóa xanh】 【63137】
+【Số tiền vượt quá】 【54971】
+【Fukusu】 【63791】
+[Phân bón] [54491]
+[Tích phân không xác định] [54735]
+【】 Miyae 【54931】
+【Khoa học Thủy sản】 【54439】
+【Phe đối lập】 【53483】
+【Gọi quốc tế】 【55451】
+【Biến】 【54581】
+【Yomiuri】 【63703】
+【Ở nước ngoài】 【54855】
+【Ankara】 【54613】
+【Chiến dịch chiến đấu】 【54469】
+【Thủy phi cơ】 【54361】
+【Blooming khác nhau】 【55187】
+【Thơ】 【62781】
+【Fetus】 【53963】
+【Chuyển nước】 【54455】
+【Theo dõi】 【54517】
+【Ikaruga】 【53945】
+[Mùa mưa bắt đầu] 【54879】
+[Trang điểm buổi tối] [54711]
+【Trận Moth】 【54697】
+【Khối u não】 【63997】
+【Tính toán】 【63609】
+【Hôn nhân quốc tế】 【55449】
+【Giao hàng bổ sung】 【54497】
+【Nông nghiệp】 【63875】
+【Quả bóng】 【64015】
+[Miền Bắc TNHH] [54773]
+【Kẻ thù】 【54185】
+[Chuyển động ngang] [54377]
+[Kỹ thuật thu thập] [62957]
+【Trận chiến nước】 【54383】
+【Kotable】 【55137】
+【Chuyển nước】 【54479】
+【Dạng tiến bộ】 【62413】
+【Thư sau】 【54777】
+【Mẫu Hakenko】 【55471】
+【Buổi tối】 【54717】
+【Giao hàng nhanh】 【63759】
+【Tổ chức chính trị】 【54229】
+【Viết câu trả lời】 【53837】
+【Rinzai】 【54593】
+【Ba lô】 【54793】
+【Giảm nước】 【54371】
+【Nhiều lớp】 【63951】
+【Tamushi】 【64013】
+【Phức tạp lạ】 【63967】
+[Nắm tay nắm tay] 【62661】
+【Tear tube】 【54611】
+[Thanh kiếm nhỏ] [55057]
+【Y học】 【54163】
+【Máy thủy lực】 【54381】
+【Buổi tối】 【54721】
+【Đầm lầy leo núi】 【54641】
+【Chỉ định】 【54147】
+【Time Bell】 【62745】
+【Tù giam trong tù】 【64001】
+【Invisibility】 【54961】
+【Tổng Giám đốc】 【54763】
+【Tài sản hữu hình】 【55263】
+【Pickled takuan ngâm】 【54639】
+【Từ chức】 【63935】
+【Quyền lợi】 【54145】
+【Đũa】 【54881】
+【Rong biển nướng】 【54993】
+[Màu cỏ] [62925]
+【Hoa hồng vô hạn】 【55275】
+[Câu phức hợp] [63943]
+[Chất lỏng] [54709]
+[Bàn chân nhỏ] [55113]
+【Chất lượng nước】 【54477】
+【Hành hương】 【54385】
+【Tuyến đôi】 【63965】
+【Thuộc địa】 【55571】
+【Tàu đánh cá】 【54327】
+【Kojo】 【55087】
+[Dòng không liên tục] [54739]
+[Froth] 【55547】
+【Tiền mặt khi giao】 【54513】
+【Được giao】 【54259】
+[Encephalomalacia] [63995]
+【Tư pháp tỵ nạn】 【54863】
+【Kẻ thù】 【54177】
+【Nhịp điệu】 【54601】
+【Đài tưởng niệm quốc gia】 【55399】
+【Đảo ngược】 【54789】
+【Lao động cơ thể】 【63899】
+【Mảnh nhỏ】 【55077】
+[Với xác thịt] [63893]
+【Chim】 【54935】
+【Tên ốm đau】 【54387】
+[Vật phẩm săn bắn] [62567]
+【Mất quân】 【54173】
+【Bộ luật quốc gia】 【55395】
+【Giá vé đêm】 【54703】
+【Ứng viên】 【54167】
+【Kunitachi】 【55389】
+【Tranh cãi】 【54571】
+【Tim mạch】 【54293】
+【Tuổi của năm từ vỏ rùa】 【55469】
+【Nội các thành phố】 【54211】
+【Cuộc chinh phục】 【54209】
+【Đóng góp chính trị】 【54225】
+【Xung đột】 【54199】
+【Sửa chữa】 【63421】
+【Hợp chất】 【63945】
+[Thủy hải sản chế biến] [54437]
+【Điều trị cổ phần nhỏ】 【55059】
+【Cảm ơn bạn nước mắt】 【55331】
+【Sĩ quan Quốc hội】 【54245】
+【Gối nước】 【54403】
+【Quốc gia thù địch】 【54179】
+【Tội phạm】 【54531】
+【Đi xe đạp】 【54585】
+[Cảm giác thịt] [63909]
+【Vật lộn bùn】 【53555】
+【Trường tiểu học】 【55081】
+【Trạm bán】 【54667】
+【Từ xa Zabin】 【63287】
+【Hậu trường】 【54797】
+[Aquarium] [54467]
+【Tối Haze】 【54723】
+【Chỗ ở của phòng】 【54757】
+【Viết qua】 【54677】
+【Nước chơi】 【54445】
+【Thần kinh sọ sọ】 【63987】
+【Đất thù địch】 【54175】
+【Ryoken Nenpu】 【63657】
+【Bắc Thái Bình Dương】 【54765】
+【Màng Kuroto】 【54291】
+【Tẩy】 【55031】
+【Kẻ thù】 【54189】
+【Phục hồi】 【63937】
+[Giang mai não] 【63991】
+【Giai điệu đôi】 【63959】
+【Dưa hấu】 【54367】
+【Biennials】 【53569】
+【Chính sách tài chính】 【54819】
+【Tuổi】 【54529】
+【Cup】 54405
+[Vốn huy động] [54461]
+【Grenadelepes】 【54289】
+【Bắn tre】 【55049】
+【Dòng chảy tâm linh】 【55901】
+【Giant】 【55111】
+【Thiết bị】 【55173】
+【Từ đồng nghĩa】 【54623】
+【Hội thảo】 【55891】
+【Dịch】 【54649】
+【Devotion Falling】 【55887】
+【Chasing bụng】 【54507】
+[Loài bản địa] [54837]
+【Treadway】 【55223】
+【Phố nổi tiếng】 【55987】
+[Overdose] [55497]
+【Sức mạnh cột sống】 【54795】
+【Thiếu Lâm】 【54725】
+【Kuninobu】 【55417】
+【Tín dụng】 【55015】
+【Tốc độ cực nhanh】 【54967】
+【Bảo vệ chống sương mù】 【55691】
+【Trong văn phòng】 【54835】
+【Turret】 【55557】
+【Cái chết của Nike】 【54907】
+【Cảnh giác】 【55345】
+【Nhà nước bồi thường】 【55411】
+【Vòng】 【54343】
+【Sở thích lịch sử】 【55991】
+【Nghệ thuật nhỏ】 【55091】
+【Luật sư được chọn】 【55453】
+【Đối số】 【54575】
+[Ulna] [54637]
+【Pháo hoa】 【54541】
+【Cụm từ】 【55975】
+【Bố trí an toàn】 【55567】
+【Koumon】 【55181】
+【Chín mươi】 【55437】
+【Chim quốc gia】 【55427】
+[Splash] 【54747】
+【Quà tặng】 【55273】
+【Tóc】 【55313】
+[Than hun khói] [55305]
+【Sự khác biệt nhỏ】 【55129】
+【Bầu trời xanh】 【55769】
+【Tàu ma】 【54321】
+【Trung học】 【56697】
+【Quân đội quốc gia】 【55369】
+【Dọn dẹp】 【55857】
+【Người phụ nữ】 【55115】
+【Tiến lên] 【54351】
+【Cuộc thi liên hoan thể thao quốc gia】 【55363】
+【Ome】 【55775】
+【Nghệ thuật và Khoa học】 【54897】
+【Puddle】 【54389】
+【Nội các đảng chính trị】 【54233】
+【Mất ngủ】 【56049】
+【Nhà biên tập】 【54569】
+【Tê giác】 【54605】
+【小山】 【55121】
+【Bán giọng nói】 【56073】
+【Mizuno đào】 【54465】
+【Hail thiệt hại】 【55561】
+【Các vấn đề chính trị】 【54219】
+【Đánh giá tương đối】 【55655】
+[Đồng hồ thạch anh] [54451]
+【Lau sạch】 【54487】
+【Kunihara】 【55403】
+【Hime Muti】 【56773】
+【Nhiệt độ】 【54157】
+【Chính trị】 【54237】
+【Fingertips】 【56755】
+[Xương nhỏ] [55135]
+[Cây thủy sinh] [54375]
+【Nước 蟷 螂】 【54481】
+【Miyamori】 【54929】
+【Bán】 【56085】
+[Đường thô] [55721]
+【Tiếp xúc quá mức】 【55495】
+[Tái phạm sinh sản] [54749]
+【Vùng Hokuriku】 【54775】
+【Minded】 【55669】
+[Màu Azuka] [55103]
+【Bị đốt cháy xác chết】 【54989】
+【Hữu hình và vô hình】 【55265】
+【Họa sĩ màu nước】 【54425】
+[Loại tàu] [54317]
+【DOUBLE] 【55695】
+【Mất sơ suất】 【55501】
+【Tên thay đổi】 【56011】
+[Một nơi thích hợp] [54141]
+[Doanh nhân hải quan] [55243]
+【Mắt Đêm】 【54695】
+【Kokugu】 【55155】
+【Ngành công nghiệp trong nước】 【55351】
+[Tâm nhĩ phải] [55335]
+[Raiju] [54549]
+[Tổng quát] [54761]
+【Chương hiệu quả】 【55253】
+【Có / Không】 【55299】
+[Mưa súng] [55559]
+【鏑 矢】 【54197】
+【Kintiani】 【55063】
+【Gạo vụ lúa】 【55095】
+【Nhóm thanh niên】 【55749】
+【Tai nạn thương tích】 【55505】
+【Nghề nghiệp】 【54851】
+【Khảo sát】 【54349】
+【Máy bay tuần tra】 【55013】
+【Cho vay nổi】 【55641】
+[Thuế nổi tiếng] [55257]
+【Hàng rào đóng tàu】 【54315】
+【Thông tin tuyển dụng】 【55327】
+【Badness】 【54083】
+[Cuộc Cách mạng Puritan] 【55823】
+[Tuổi] [54331]
+[Mochi net] [55959]
+【Hoàng hôn】 【54713】
+【Khoảng cách đến thế giới】 【55521】
+【Ngộ độc axit xanh】 【55789】
+【Ukijima】 【55635】
+【Quân đội】 【54493】
+【Ở văn phòng】 【55215】
+[Ngôn ngữ] [55815]
+【Cơ thể cổ xưa】 [55259]
+[Quay lại] [54791]
+【Aomi】 【55759】
+【Chi nhánh】 【55271】
+【Hydrangea】 【54459】
+[Kiểm kê tài sản] [54823]
+[Cảm hứng hơi thở] [55779]
+【Mẹo】 【54911】
+【Terra】 【54957】
+【Tâm thất phải】 【55337】
+【Rakuten】 【55647】
+【Dịch vụ viết】 【54679】
+【Tháng thành lập】 【56249】
+【Trận chiến kế thừa】 【55667】
+【】 [54937】]
+[Đôi mắt hyperopia] [55533]
+【Món ăn chay】 【55883】
+【Chuỗi hữu hạn】 【55277】
+【Nữ thần] 【56213】
+【Tuyển dụng kiểm tra】 【54867】
+【Thị trường trái cây】 【55763】
+【Các biện pháp thiệt hại lũ lụt】 【54421】
+[Quần áo thực vật] [54875]
+【Mildew】 【54431】
+【Thunder God】 【54545】
+【Lịch sử Văn học Quốc gia】 【55353】
+【Bụng ___ 8】 【55583】
+【Giải pháp tiêu hóa】 【55021】
+【Chậm】 【55491】
+[Bánh mài] [55729]
+【54951】 【từ dịch】
+【Futaba】 【54675】
+【Điểm tương đồng】 【54627】
+【Ga đường】 【54671】
+【Thành viên đảng】 【54235】
+[Thả] [56069]
+[Phát hình ảnh tĩnh] [55839]
+[Khoản phí bổ sung] [54501]
+【Sở Cứu Hỏa】 【55027】
+【Sử dụng rắn】 【56103】
+【Kochi】 【55117】
+【Quốc tịch】 【55457】
+[Giải phóng mặt bằng] [55835]
+【Ngày cư trú】 【54829】
+【Dịch vụ tưởng niệm ác】 【54503】
+[Đoàn thám hiểm] [55527]
+【Kokko】 【55379】
+【Phân bổ phòng】 【54759】
+[PERCEPTIONS] [55241]
+【】 【Hàng tháng 54523】
+【Thuế mua bất động sản】 【54743】
+【Đế quốc thứ ba】 【56705】
+【Đọc】 【55709】
+[Paraphrase] [55515]
+【Báo cáo】 [55209]
+【Nước mắt giòn】 【54609】
+【Bàn chân Octopus】 【55051】
+【Lỗi chết do sơ suất】 【55499】
+【Hạt dẻ nướng】 【54995】
+[Sản phẩm tinh chế] [55895]
+[Người tị nạn] [55933]
+【Lượng nước】 【54453】
+【Người phạm tội ý kiến】 【54729】
+Hội nghị Quốc phòng 【55393】
+【Đoàn Thanh niên】 【55747】
+【Mỹ nhăn】 【55171】
+Kháng 【54847】
+【Cuốn sách cũ】 【55509】
+【Biện pháp đối phó thảm họa】 【54885】
+【Chính sách hành chính】 【56099】
+【Trách nhiệm hữu hạn】 【55279】
+【Đổi tên thay đổi】 【54277】
+[Vas deferens] [55897]
+【Giá tiêu dùng】 【55043】
+【Giao dịch thanh lý】 【55829】
+【Bài hát】 【56013】
+【Kiểm tra ngực của bạn】 【54673】
+[Tiếng cười] [55189]
+【Vấn đề quốc tế】 【55447】
+【Phòng Tako】 【55055】
+【Moxa] 【54917】
+【Châu Âu】 【54683】
+【Một nửa ngày nhỏ】 [55069]
+【Ass Allars】 【54915】
+【Rừng phòng hộ】 【55581】
+【Thu nhập quốc dân】 【55367】
+【Lãnh thổ phía Bắc】 【54767】
+【】】 【【55939】
+【Mizutani reminiscence】 【54363】
+【Điện báo có dây】 【55315】
+【Aoki】 【55743】
+【HỘP】 【54393】
+【Lỗi hoạt động】 【55485】
+[Quyền sở hữu] [54827]
+【Số lượng】 【54353】
+【Đóng tàu】 【54311】
+【Khuyến mãi】 【55885】
+【Khen ngợi】 【54573】
+【Thẩm định giá bất động sản】 【54745】
+【Nitaka soba】 【54705】
+【Nguyên tắc không chắc chắn】 【54755】
+【Cười】 【55199】
+[Tên] [55993]
+【Hồ số】 【54951】
+【Luật quốc gia】 【55397】
+【Hình phạt】 【54941】
+【Mắt】 【55487】
+【Hoạt động】 【55489】
+【Runaway】 【55535】
+【Smalle】 【55079】
+【Thực hiện linh mục】 【54279】
+【Toori】 【55531】
+【Tủ tuyệt vời】 【54969】
+【Quy định an ninh】 【55569】
+【Tình trạng bệnh】 【55595】
+【Điểm ẩm】 【54919】
+【Tuyến tiêu hóa】 【55023】
+【Váy núi】 【56343】
+[Hoa dưới nước] [54365]
+[Tài sản nước ngoài] [54833]
+【Hộp nảy lên】 【55703】
+【Hệ thống dây điện chân Octopus】 【55053】
+【Chính sách cấp dưỡng】 【55333】
+【Bảo hiểm thiên tai】 【54887】
+【Cuộc thi bơi】 【54399】
+【Quỹ chính trị】 【54227】
+[Khách hàng nặng] [55931]
+【Lữ đoàn cứu hỏa】 【55029】
+【Đánh giá Odawara】 【55075】
+【Cư dân nước ngoài】 【54831】
+[Động cơ] [55321]
+【Động vật】 【54625】
+【Lưng trở lại】 【54787】
+【Bài hát về chim】 【56095】
+【Hakka】 【55681】
+【Thành tích】 【54527】
+【Ghế mời】 【54945】
+[Tính khí khí] [55963]
+【Kho bạc】 【55619】
+[Nghệ thuật biểu diễn dân gian] [56035]
+【Buổi sáng quốc gia】 【55429】
+【Asao】 【56171】
+【Kokka】 【55405】
+[Ngành] [54161]
+【Phong trào tiêu dùng】 【55045】
+【Sâu chiên】 【56273】
+【Luận án】 【54567】
+【Lực lượng Liên Hợp Quốc】 【55421】
+【Hỗ trợ】 【54913】
+【Đèn lồng Odawara】 【55073】
+【Đêm soba】 【54701】
+[Được thành lập] [55295]
+【Vấn đề nhân vật quốc gia】 【55377】
+[Quân Đoàn] 【54803】
+[Quả bóng thô ráp] [55719]
+【Yuzen Den】 【55245】
+【Xu hướng tiêu thụ】 【55041】
+【Văn học quốc gia】 【55357】
+[Vật lý y tế] [55575]
+【Nướng bánh】 【55001】
+【Động vật buôn bán】 【55293】
+【Cổ phiếu lăn】 【54273】
+【Picker】 【55205】
+[Rau màu] [55255]
+【Yoko】 【54553】
+【Toyama Ri】 【55519】
+【Tuyên ngôn nhân quyền】 【56137】
+【Tội phạm】 【54533】
+【Mất ngôi sao】 【54807】
+【Aiko】 【55657】
+[Ăn bán] [56083]
+【Đảng】 【55133】
+【Baojo】 【55613】
+【Máy móc thiết bị chính xác】 【55879】
+【Burnout】 【54979】
+【Gạo ngâm】 【54877】
+[Người đủ tiêu chuẩn] [55309]
+[Bố trí không phạm pháp] [56135]
+【Sinh kế】 【55481】
+【Bàn chải nướng】 【55003】
+[Lớp phủ thô] [55737]
+[Hơi bão hòa] [55563]
+【Hoa hướng dương】 【54781】
+[Tội phạm của thương tích sơ suất] [55503]
+【Hướng】 【56425】
+【Trả lời】 【55211】
+[Hình thức sử dụng] [55475]
+【Nghề nuôi nhỏ】 【55165】
+【Danh sách đọc】 【55711】
+【Quốc phòng của Satsuma】 【56271】
+【Móng vuốt nhỏ】 【55061】
+【Đạn chiếu sáng】 【54953】
+【Gà gia cầm】 【55169】
+[Khuôn mặt không rõ] [55697]
+【Cười】 【55193】
+【Cụm từ】 【54617】
+【Little Palm】 【55085】
+【Hiệp ước an ninh】 【56515】
+[Lust] 【55143】
+【Hạt nhỏ】 【55147】
+【Kiếm】 【56021】
+【Pháo binh】 【55553】
+【Vỏ rùa】 【55467】
+【Kiyoshi】 【55819】
+【Bảng tra tấn】 【54903】
+【Ngữ pháp quốc gia】 【55355】
+【Đại tướng】 【55511】
+【Serpent nước】 【54443】
+【Dốc dốc】 【54909】
+【Aomi Turtle】 【55771】
+[Sailing] [54303]
+【Giai điệu nước】 【54483】
+【Luật khẩn cấp】 【55267】
+[Ngủ] [55019]
+【Lịch】 【55131】
+【Nổi】 【55625】
+[Namayama] [55967]
+【Follower】 【54485】
+【Tuyên bố】 【54559】
+[Mong muốn chinh phục] [54207]
+【】 【54657】
+【Calcined】 【54987】
+【Nhỏ hơn】 【55159】
+【Cửa sau】 【54779】
+【Giao thông vận tải quốc gia】 【55433】
+【Chân nổi】 【55631】
+【Chia sẻ lợi nhuận】 【54873】
+【Đình chỉ】 【54801】
+【Tiêm tĩnh mạch】 【55847】
+【Dịch】 【54653】
+【Đêm Giao thừa】 【55071】
+【Tên dịch】 【56001】
+【Bóng nổi】 【55637】
+【Bóng nhẹ】 【55493】
+[Nhân viên] [55325]
+【Sinh nhật Phật】 【54643】
+【小 成】 【55083】
+[Ngộ độc thủy ngân hữu cơ] [55317]
+【Phải trái】 【55339】
+【Học giả quốc gia】 【55401】
+【小 鬢】 【55185】
+[Điều tra kiến ​​thức] [55813]
+【Mẫu】 【54615】
+【Miệng】 【54519】
+【Nền văn minh】 【55803】
+【Mặt nổi bật】 【56523】
+【Tuổi】 【54535】
+【Dịch】 【54655】
+[Thunder] 【54583】
+[Nhạc dân gian] [56037]
+[Xóa khu vực] [55865]
+【Thanh toán khi bạn làm】 【55287】
+【Tỉnh Miyauchi】 【54923】
+【Surimi】 【55217】
+【1 năm trước】 【55227】
+【Chủ đề】 【54633】
+【Quyền sở hữu】 【55141】
+【Đầu nhỏ】 【55179】
+【Mùi】 【54921】
+【Số ngang】 【55219】
+【Tuyên bố thanh lý】 【55831】
+[Cười] [55203]
+【Hợp đồng hợp tác】 【55323】
+[Mất màu] [54805]
+【Dừng dừng】 【54663】
+【Kém】 【55183】
+【Tiểu luận】 【55175】
+【Biến mất】 【55035】
+【Blue Fly】 【55797】
+【Tổ chức bóng nướng】 【54985】
+【Teruha Kyogen】 【54959】
+【Pháp luật】 【54595】
+【Nước mời】 【54949】
+【Bố trí bảo vệ】 【55579】
+【Thô / dày đặc】 【55733】
+【Tên cửa hàng】 【55985】
+[Bữa trưa] [55127]
+【Tẩy】 【55039】
+【Đầu cực】 【56545】
+【Lớp học Aozora】 【55765】
+【Tự do miễn phí】 【55483】
+【Canh tác hữu cơ】 【55319】
+【Hệ thống bầu cử quận】 【55177】
+【Quốc gia tự hào】 【55375】
+【Song Bird】 【56093】
+【Phát thanh truyền hình quốc tế】 【55445】
+【Đất thuộc sở hữu nhà nước】 【55381】
+【Bồi thường đền bù】 【54275】
+【Xem】 【55603】
+【Phong trào】 【55801】
+【Tầm nhìn nhỏ】 【55153】
+【Cứu trợ thiên tai】 【54889】
+【Starlight】 【55913】
+【Dầu phải】 【54869】
+【Kumagusa】 【55167】
+[Ghép nối] [54865]
+【Nhà Thanh】 【55825】
+【Trận chiến tiêu dùng】 【55033】
+【Các vấn đề chính trị】 【54243】
+[Chịu trách nhiệm] [54849]
+【Đại học Thủy sản】 【54433】
+【Xã hội thông tin】 【55805】
+【Tù nhân】 【54891】
+【Tĩnh mạch】 【55845】
+【Sắp xếp】 【55289】
+【Làm việc】 【54859】
+【Pod】 [55123]
+【Kho báu】 【55621】
+【Tài sản văn hóa hữu hình】 【55261】
+【Điều khoản hòa bình】 【55943】
+【Nghề nuôi con người】 【55283】
+【Chân dung phải】 【55011】
+【Luật công vụ quốc gia】 【55407】
+【Mặt đất xanh】 【55757】
+[Nhỏ] [55125]
+[Giáo dục thể chất và sức khỏe] [55573]
+[Cửa hàng in chữ] [55479]
+【Lễ hội tối】 【55017】
+【Mười mối quan hệ trò chơi】 【55229】
+[Thư bị mất] [54811]
+[Bầu trời đầy nhiệt huyết] [56761]
+[Đọc bản dịch] [54661]
+[Thói quen nắm giữ] [55541]
+[Tham khảo] [54963]
+【Các mặt hàng thuế】 【55301】
+[Phật] [54647]
+[Suyễn ở trẻ em] [55109]
+【Lạnh】 【55151】
+[Blue Standing] [55753]
+【Lĩnh vực nướng】 【54997】
+【Thị trường người mua】 【56053】
+【Vốn bất biến】 【54737】
+[Senimoku] [55699]
+【Shot đặt vai】 【55549】
+【Quốc gia Hàn】 【55435】
+【Còn lại】 【56193】
+[Giải trí] [55089]
+[Đường kẹo] [56227]
+[Ứng cử viên bọt] [55545]
+【Kiểm tra lô hàng bổ sung】 【54499】
+【Gangbang】 【54587】
+[Tâm trí] [55873]
+【Bên phải】 【55341】
+【Quay lại chạy】 【54785】
+【Bắc cực hiện tại】 【56825】
+【Hộp viết】 【55683】
+【Chín tháng】 【54905】
+[Bait] [54551]
+【Liên Hiệp Quốc cấp tiền】 【55419】
+【Mail】 【55463】
+【Đèo] 【54693】
+【Lời mời】 【54947】
+【Cá tuyết khô] 【56537】
+【Hành động tránh thai】 【55923】
+【Đồ nướng】 【54981】
+【Hepatobillia】 【56543】
+【Obese】 【55101】
+【Người cai trị】 【54603】
+【Câu chuyện may mắn】 【55201】
+【Lễ kỷ niệm LHQ】 【55423】
+【Tử vong】 【54933】
+【Cha】 【55349】
+【Quần áo quốc gia】 【55365】
+【Gạo nướng】 【54991】
+【Masaki】 【54201】
+[Dấu chân] [55225]
+【】 【】 54607 của Nga
+[Khéo léo] [54893]
+【Người sáng lập】 【55207】
+【Món nướng】 【55005】
+【Cá mập xanh】 【55795】
+【Kẻ thù】 【54181】
+【Phòng thí nghiệm thủy sản】 【54441】
+【Dự bị】 【54525】
+【Mua ban đầu】 【56061】
+[Hết hạn] [56475]
+【Thuyền đánh cá】 【54329】
+【Cười】 【55197】
+    
+

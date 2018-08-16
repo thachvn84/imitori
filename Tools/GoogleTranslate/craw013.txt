@@ -1,0 +1,2345 @@
+repl.it
+@anonymous/BriskGullibleAbstractions
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920212223242526272829303132333435
+
+const translate = require('google-translate-api');
+
+var fs = require("fs");
+var content = fs.readFileSync("retrans.txt", "utf8");
+
+translate("感じ", { from: 'ja', to: 'vi' }).then(res => {
+        console.log(res.text);
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.212s
+
+
+Repl.it: package installation success
+
+38412; 51215
+completed!----------------------------------
+=> undefined
+【垓】 【39665】
+[Tiếng Nhật] [39465]
+【Kannon】 【42621】
+【Maki】 【40229】
+[Junta] 【39899】
+【Tang lễ】 【39537】
+Cơ sở lý luận 【39411】
+【Okawa】 【40657】
+[Tiếng Nhật] [39421]
+【Loại trừ】 【39967】
+[Bad Day] [40239]
+【Đá gấp】 【39715】
+[Folds] [40031]
+【Chạy qua] 【40085】
+【Đột quỵ】 【40289】
+[Tôi sợ] [39487]
+【襤褸 家】 【40033】
+【Kỹ năng xấu】 【39477】
+【Nằm】 【39565】
+[Đèn] [40227]
+【May Rain】 【40435】
+【Thứ Bảy và Chủ Nhật】 【40709】
+【螻蛄】 【40013】
+[Hộ gia đình] [40345]
+[Armband] [39505]
+【Tangled】 【38435】
+[Theo cái rốn] [39947]
+【Mỗi món】 【40365】
+【Kiểu Nhật】 【39453】
+【Năm cũ】 【40399】
+【毫釐】 【39835】
+[Hàng thấp hơn] [40329]
+[Âm thanh âm thanh] [39777]
+【Yuujin】 【39571】
+【Vua Bon ngôi sao】 【39813】
+【Cánh】 【39531】
+【】】 【】 40211】
+【】 【】 【】 【】 【】
+【Koimizu】 【39183】
+【Chụp với bạn】 【39213】
+【肉肉】 【40145】
+【Cái chết】 【39921】
+【Thêm ngọc trai】 【39851】
+[Trở lại móng tay] [38567]
+【Sự cần thiết của nhà tài trợ】 【40617】
+【Chán nản】 【38439】
+【Từng người một】 【40255】
+【Đầy sức mạnh】 【38879】
+【Người nuôi bò sữa】 【38465】
+【Lối vào bên trong】 【40733】
+【Lão Tử】 【39341】
+【Yuiyo】 【39679】
+【Tōjin】 【39525】
+【Khó khăn mệt mỏi】 【39963】
+【篆 書】 【39907】
+【Trial】 【39501】
+【Khoa Khoa học và Công nghệ】 【38531】
+【Dì】 【39687】
+【Tendory】 【40707】
+【樅】 【39823】
+【Ba viên đá màu】 【40493】
+【Đám mây đen】 【40465】
+[Bài viết] [39413]
+【Tiện ích cũ】 【40425】
+【Kiếm】 【39535】
+【Hoa anh đào】 【40485】
+【Flat】 【39749】
+[Được gọi là] 【40057】
+【僭 す る】 【39581】
+【Ví dụ câu】 【39017】
+【Câu cá】 【40541】
+【Ryuuga Toraito】 【38715】
+【Một đứa trẻ】 【40269】
+【Rock Fall】 【38455】
+【Ridicule】 【40035】
+【Tình yêu gió】 【39195】
+[Biên giới] [50957]
+【Chiến lược】 【39925】
+【玳瑁】 【39873】
+[Ẩm thực Nhật Bản] [39443]
+【Tôi cũng thích côn trùng côn trùng lỗi】 【39991】
+【Khuyến mãi】 【40091】
+【Vụ đánh bom thảm】 【39911】
+【Thiên Chúa] 【40403】
+【Rakugo】 【38447】
+【Cái chết】 【39861】
+【閨 秀】 【40103】
+【Hạt đậu】 【39973】
+【】 Phương pháp 【】 39903】
+【Sparrow】 【39979】
+【Fluffy】 【40187】
+[Conan] 【39593】
+【Biển thần】 【40355】
+【Subaru】 【39787】
+【Ba con khỉ】 【40487】
+【Người】 【40583】
+[Vũ khí] [39509]
+【Bison】 【39885】
+【Khăn trứng】 【38489】
+【Khách】 【40609】
+【Kiếm】 【39533】
+【Hàng xóm】 【38957】
+【Rosicrucian】 【39993】
+【Vui vẻ】 【39729】
+【Ranbu】 【38481】
+[Tengashita] [39699]
+【Hitotsuko】 【40271】
+【Để ăn mệt mỏi】 【40069】
+【Trường lịch sử】 【39103】
+【】 Duyên dáng 【39689】
+【Ví dụ】 【39009】
+【Lao động tấn công】 【39305】
+【Giác quan thứ sáu】 【39367】
+[Sau cơn mưa] 【40995】
+【Rain Rain】 【40141】
+【Phân tán trầm cảm】 【39827】
+[Nhìn chằm chằm] 【39879】
+[Phiên bản cũ] [40401]
+【Rèm】 【39917】
+【Đặt phòng】 【38975】
+【Lịch】 【39087】
+【Phật】 【39083】
+[Số ví dụ] [39011]
+【Chỗ ngồi của Sư Phụ】 【40519】
+【Giết chết】 【39919】
+[Cánh tay] [39507]
+【Thảm họa】 【39961】
+[Mua một ngôi đền] 【40125】
+[Rơm giày] [39495]
+【Honor】 【39667】
+【Ngoại thất】 【40361】
+【Năm nay】 【40477】
+【Chân mưa】 【40299】
+[Enma] [40105]
+[Inoriya] [38565]
+【麝 香 Rouse】 【40199】
+[Tôi có thể nói] 【39475】
+【Kamen Shamisen】 【40447】
+【Trại POW】 【39543】
+【Vợ cũ】 【39339】
+【Reiki】 【40109】
+【Thuế cá nhân】 【40593】
+【Câu chuyện】 【38631】
+【Wagyu】 【39433】
+[Ngôn ngữ lạnh] [39039]
+【Nơi làm việc】 【39327】
+【】】 【】 40107】
+【掏 る】 【39763】
+【Đơn vị liền kề】 【38959】
+【】】 【39607】
+【Tây】 【40621】
+【Lean】 【39601】
+【】】 【】 40185】
+【Cơ học lượng tử】 【38869】
+[Phân phối] [39681]
+【Tháng 2】 【38941】
+【Bệnh tật】 【39735】
+【Khu vực thực hành】 【39207】
+【Inverse Craft】 【38553】
+【Bộ trưởng của Chúa】 【39717】
+【Cái chết tình yêu】 【39181】
+【Trận đánh】 【38897】
+【噤 む】 【40099】
+[Infamy] [40243]
+【Nửa đầu】 【40639】
+[Kiếm] [40721]
+[Vàng tiền bạc] [39951]
+【】 【】 39559 lỏng lẻo】
+【Làm đẹp】 【39529】
+【Kyan】 【39695】
+【Tác giả】 【40461】
+【Đóng tàu】 【40535】
+【Raiden】 【38431】
+【Hatching】 【39701】
+[Liên doanh] [39859]
+【Beard】 【40147】
+【Cực】 【39841】
+【旁】 【39785】
+[Cười nhạo báng] 【39661】
+【Một lựa chọn】 【40293】
+【Tetsuzen】 【40531】
+【Ges】 【40379】
+【Đặt con bò đực】 【38915】
+【Mệt mỏi】 【40415】
+【Cắt cạnh】 【39905】
+【Bị nuốt chửng】 【40071】
+【Tháp】 【39333】
+【Ngày trước ngày hôm qua】 【40263】
+【Quỳ】 【40077】
+【Chogoku】 【38621】
+【Liyuan】 【38525】
+【Cả hai ngôi nhà】 【38739】
+【Một triệu yên】 【40873】
+【Yêu và ghét】 【40231】
+【】 【Hot 40581】
+【Lễ khắc phục】 【38453】
+【Rơi】 【40219】
+[Rơi xuống] [39675]
+【Chuông Bell】 【39811】
+【龕】 【40225】
+【Đặt hàng】 【38993】
+[Tenpo] [39755]
+【鯱】 【40163】
+【Nước nóng cục bộ】 【38617】
+【Fushima】 【40553】
+【Không có điện] 【38885】
+[Đừng quay trở lại các cành hoa rơi mà không cần chiếu lại gương] 【38443】
+【Mục tiêu cơ hội】 【38939】
+[Tóc nách] [39929]
+[Nếu bạn thích] [38861]
+[Mưa sao băng] 【38679】
+【Chảy trong】 【38667】
+[Đang chìm sẽ bị treo] 【39775】
+[Kimono] [39447]
+[Hoa mẫu đơn] [39965]
+【鯔】 【40159】
+[Cuộc đàm phán hòa bình] [39463]
+【Mọi thứ】 【40867】
+[Kinh doanh xấu] [40233]
+【Kích động】 【39067】
+【Loài bò sát】 【39863】
+【Ngẫu nhiên】 【38479】
+[Hướng dẫn] [40341]
+【Cả hai vị thần】 【38817】
+【靺 鞨】 【40115】
+[Tiến trình hòa bình] [39459]
+【Phân loại】 【39721】
+【Đào tạo gia đình】 【40349】
+【Thuyền du thuyền】 【39613】
+[Có xu hướng miễn cưỡng] [39753]
+【Từ điển của Keisai】 【39815】
+【颪】 【40127】
+【倥偬】 【39551】
+[Lỗi] [40001]
+【Tsukuda】 【40677】
+【Mục yêu thích】 【40075】
+【Leap tháng】 【40309】
+【Giá thầu thành công】 【38451】
+【Rừng Yunlun】 【39549】
+【Bạch tuộc luộc】 【39969】
+【Phong Thủy】 【39791】
+【Giọng nói tuyệt vời】 【39693】
+[Áo khiêu dâm] [39869]
+[Số lần sinh] [40547]
+【Huyền thoại】 【39633】
+【Một bộ】 【40281】
+【Vòng】 【38951】
+[Tỷ lệ sinh] [40549]
+【Hoa sen】 【39211】
+【Cả hai người trong số họ】 【38773】
+【Bunka】 【40131】
+[Tàu lạnh] [39053]
+【Lạnh rượu】 【40925】
+[Đổ vào] [40669]
+【0】 bên dưới 【39071】
+【Chị】 【40505】
+【Thỏ】 【40305】
+【Quấy rối】 【39831】
+【】 Trắng 【39515】
+【Phật】 【40177】
+【Scammer】 【39619】
+【Không vội vàng】 39733
+【】 Cùng nhau 【39519】
+【Phạn】 【39809】
+【Cái chết】 【39609】
+【Quadlet】 【39363】
+[Đến] [38427]
+[Điểm số] [41011]
+【】 【Nhật Bản 39457】
+【Một thế kỷ】 【40277】
+【Cầu Rozibashi】 【39999】
+【Trường ngầm ngầm】 【39949】
+【藜】 【39995】
+【Hayashi】 【38935】
+【Nhân viên giao dịch tiền】 【38801】
+【Bowl】 【39511】
+【麝 香 豌豆】 【40203】
+【Từ điển Nhật-Anh】 【39423】
+【Ivy】 【40139】
+【Đảng Lao động】 【39317】
+【Người bị ảnh hưởng】 【39739】
+【Rơm Burd】 【39499】
+【鰈】 【40169】
+[Cạo] [40681]
+【Nổi】 【41111】
+【Đứng] 【38633】
+【Cửa sau】 【38547】
+【Người cho vay】 【41217】
+【Ủy ban liên lạc】 【39273】
+【Sai Department】 【40481】
+【Groakesman】 【39821】
+【Bowl】 【39513】
+【Yêu cầu chấp thuận】 【39895】
+【37th】 【40491】
+【Vai trò hỗ trợ】 【39485】
+【Chương duy nhất】 【40261】
+[Phân tán và tán xạ] 【40221】
+【Quần short ngắn】 【39697】
+【Renka】 【39209】
+【Cửa sau】 【38587】
+Cảm giác
+【Cười】 【39691】
+【Exalted】 【41331】
+【Lựu đạn phóng】 【39781】
+【Fart và hỏa hoạn làm cho tiếng ồn từ đầu】 【39707】
+【椹】 【39817】
+[Musky] [40195]
+【Tính khí Samurai】 【40811】
+【Ghé thăm】 【39131】
+[Lối ra] 【40543】
+【Wadai】 【39435】
+【Quận Wakayama】 【39427】
+【Tùy chỉnh】 【40047】
+【Tàu điện】 【38901】
+【】 【】 【】 Lỏng lẻo】
+【Liên tục】 【39269】
+【Bài tập xác nhận】 【38557】
+[Phiên bản quyết định] [40413]
+【Los Angeles】 【39575】
+【Anh trai tôi】 【40683】
+[Anh em họ của tôi] [40847]
+【Lịch】 【39093】
+[Sức mạnh của chân] [40393]
+[Đồ ăn xấu] [40237]
+【Fleece】 【38581】
+【Anh Sơn】 【40685】
+[Tóc rối loạn] [38469]
+【Đơn】 【40661】
+【Threading】 【39771】
+[Không có ngoại lệ] 【38999】
+【Wadpei】 【39449】
+【Manju】 【40135】
+【Mục đích】 【39587】
+【蜆】 【40005】
+【Đồng nghiệp】 【38503】
+【諷 耶】 【40055】
+[Phạm lỗi] 【38511】
+[Shoji] [40615]
+【Trở lại Enclosure】 【38541】
+[Splenomegaly] [39931]
+【】 【Cao cấp 39591】
+【Koi naguri】 【39157】
+【Rừng】 【38933】
+【饐 え る】 【40137】
+【Lông mày】 【40003】
+【Chất lượng】 【39897】
+【Châm cứu】 【40101】
+【Cây Noriko】 【39779】
+【Mái tóc đen】 【40469】
+【Maiden】 【39887】
+【Giáo dục】 【40009】
+【Bàn chân phẳng】 【39751】
+【Cả hai chân】 【38751】
+[Để xoay mở] 【39765】
+[Chế ngự] 【39527】
+【Khoa Khoa học】 【38529】
+【Giai đoạn đất】 【38615】
+【Làm việc】 【39853】
+【Đầu hàng】 【38671】
+[Răng phía trước] [40637]
+[Ba chiều] [38657]
+【Tảo xanh】 【38919】
+【Revenge】 【38569】
+【Tình yêu bói toán】 【39187】
+【Ghi nhớ】 【39725】
+[Seikyo] [40049]
+【鯔 の じ の】 【40161】
+【Cảnh đẹp】 【51177】
+【Vương miện】 【39331】
+【Điếu thuốc đôi】 【38789】
+【Ugly】 【40525】
+【Naga】 【39371】
+【Rikyu】 【38597】
+【Việc làm】 【39287】
+【Cả hai ngày】 【38813】
+【Mối quan hệ tình yêu】 【39189】
+【Rikko Kasei】 【38653】
+【俎】 【39539】
+【Ông già】 【39345】
+【Thanh niên】 【39743】
+【Cách đến】 【38425】
+【Môi dưới】 【40327】
+【Búp bê】 【40561】
+[Waza] [39467]
+[Annoyment] 【40043】
+【Sins】 【39797】
+【Penguin】 【38477】
+【Scorpio】 【40017】
+[Thăm mộ] [40833]
+【Tempo】 【38913】
+【Cam】 【39825】
+【Yao Ya】 【40023】
+【Ran Country】 【38499】
+【Buổi sáng bình minh】 【39121】
+【Rượu vang đỏ Pandora】 【39637】
+【Mưa mẫu】 【40303】
+【豼 貅】 【40067】
+【Bánh xe】 【38949】
+【Wolong】 【40353】
+【靉 靆】 【40111】
+【Seabird】 【40357】
+【Đổ vào】 【41549】
+【Bìa sau】 【38571】
+【Egg Whisk】 【38491】
+【Người tạo】 【40641】
+【Từ keo】 【39941】
+【Na ni】 【39975】
+【Renga】 【39221】
+【Cái chết】 【39671】
+【尨】 【39703】
+【Cơm chiên】 【39845】
+【Mất lưỡng tính】 【38785】
+【Shimo】 【40325】
+【Dwarf】 【39889】
+【Cỏ mùa hè】 【40343】
+【】】 【】 【39799】
+【Tượng Bin】 【38793】
+[Dấu vân tay] [39757]
+【】 Dragon 【40025】
+【Khối lượng hoang dã】 【38473】
+【Vùng nước Musk】 【40197】
+【Quay băng】 【39875】
+【Một ngày】 【40285】
+【鱚】 【40181】
+【Vương miện】 【38989】
+【Thân dưới】 【40333】
+【Rau】 【39989】
+【蓖 麻】 【39983】
+【Vương miện】 【40377】
+【Máy trả lời】 【38697】
+[Giải phóng] [39557]
+【Kira】 【39913】
+[Cưỡi không thẳng thắn] [38539]
+[Hàng xa xỉ] 【40073】
+[Vũ khí] [41269]
+【Môi trên】 【40567】
+【Hải quan】 【40051】
+[Khổng lồ] [39627]
+[Tiếng Nhật] [39445]
+【Mười ngón tay】 【40529】
+【】 Ukiyo 【41083】
+【Ngoại】 【38559】
+【俚 耳】 【39545】
+【Trả lời】 【40675】
+[Shonen] [40507]
+【Kẻ hèn nhát】 【38731】
+【癸】 【40949】
+【Gạo khô】 【40375】
+【Rikagaku】 【38527】
+【Tai nạn lao động】 【39307】
+【Bison】 【39685】
+【Nước lạnh】 【39043】
+【Bạn có thể nghe thấy nó】 【41241】
+【Biên niên sử】 【39119】
+[Triển lãm] [40741]
+【Ghé thăm Nhật Bản】 【38415】
+【Tình yêu trái tim】 【40927】
+[Lực lượng] [38911]
+【Thất bại】 【39255】
+[Dấu chân] [40647]
+【Phạn】 【39805】
+【Với cà phê】 【39481】
+【Nước mắt】 【39727】
+【Chủ tịch】 【38533】
+【禊】 【39893】
+【Shigemo】 【40539】
+【吮 癰 盗 盗】 【39639】
+【】 Danh dự】 39451】
+【Làm tốt nhất】 【39407】
+【Ruggot】 【40213】
+[Gọi để tuyển dụng] [39027]
+【匈】 【39631】
+【訥 van】 【40041】
+【帷幄 上奏】 【39719】
+【Trận đấu chính thức】 【40445】
+【Hai người】 【38781】
+【Xu hướng khởi hành】 【39553】
+【Palm】 【39819】
+【Anh trai trẻ】 【38981】
+【Lao động và phúc lợi】 【39295】
+【Bản thân mình】 【40433】
+【】 Bên 【38809】
+【Số lượng】 【40449】
+【40 tay】 【40503】
+【Ryujin】 【38719】
+【Glean lacquer】 【39939】
+【Viên chức liên bang】 【39265】
+【Tới phòng】 【40443】
+[Kéo dài ăn] 【41299】
+【Điện Sting】 【38903】
+【DISCLOSURE】 【38985】
+【Lịch sử phía sau】 【38579】
+【Bộ Lao động】 【39313】
+【Trình tự thời gian】 【40771】
+【Looping】 【40993】
+【Bán hàng mở cửa】 【38549】
+【Đảng Lao động】 【39325】
+【Cảm ơn bạn】 【41003】
+【Nói】 【39473】
+[Tệ hơn] [39795]
+【Làm thế nào để kỷ luật】 【40079】
+【艱 苦】 【39959】
+【篳 篥】 【39909】
+【Điểm bức xạ】 【40081】
+【奠 都】 【39683】
+[Amaterasu Ogin] [40695]
+【轗 軻】 【40083】
+【Mourning】 【40671】
+[Để vít lên] [39769]
+【Công đoàn】 【39319】
+【噎 せ る】 【39659】
+[Nghỉ đêm] [40291]
+【Furui】 【41349】
+【Đêm lạnh】 【40887】
+【Cửa hàng cắt tóc】 【38535】
+[Để thư giãn] [39023]
+【Khiêu dâm】 【39871】
+[Kính tự nhiên] [40705]
+[Nghiền nát] [40501]
+[Lên trên] [40571]
+【Biên lai】 【38873】
+【Yêu cầu】 【38429】
+【Tình yêu kiệt sức】 【39193】
+【鯣】 【40157】
+[Lóa nhau] [39877]
+【Tài khoản】 【39125】
+【Dải Ngân hà】 【40691】
+[Mực] [40339]
+[Có thể tháng 5] [40437]
+【Một nửa giày】 【40793】
+【戛 然】 【39745】
+【Đậu] 【40065】
+【Sân sau】 【38555】
+【Hinoki】 【39793】
+【Wakaku】 【39431】
+【Kẻ thù】 【39625】
+[Vé chuyển đổi] [39595]
+【蒟 蒻】 【39981】
+【咫 尺】 【39645】
+【Catfish Beard】 【40165】
+【Lịch sử ngày】 【39123】
+【Địa lý lịch sử】 【39109】
+【Xử lý】 【40113】
+[Lê] [38523]
+[Xuất hiện như một sao chổi] 【39723】
+[Kimono] [39455]
+【噺 家】 【39641】
+[Yêu em] 【39159】
+[Rơi đầu] [38459]
+【Jiro】 【39361】
+[Phong cách phương Tây] [39469]
+[Khu vực xanh] [38923]
+【Cả hai con hổ】 【38763】
+【Đai điện】 【38905】
+【Số ngày】 【40757】
+【Đứng lên】 【38647】
+【Luật sáng kiến】 【38619】
+【Năm / Tháng】 【40767】
+【Nguồn cung】 【38501】
+【Yêu em】 【39163】
+【Ca hát】 【41085】
+【Bên Orgy】 【38471】
+【Rối loạn trĩ】 【39147】
+【Ủy ban thương mại liên bang】 【39261】
+【Gặp gỡ sét đánh】 【38461】
+【Một trận chiến】 【41047】
+[Tàng hình] [39577]
+【Cả hai vụ mua lại】 【38811】
+【Chọn rừng】 【38441】
+【Ghen tị với tình yêu】 【39151】
+[Mưa lạnh] 【39031】
+【Urasenke] 【38561】
+【Thiên Tân Thiên Chúa】 【40699】
+【Vật phẩm không bị lỗi】 【38867】
+【Kỷ luật ly dị】 【38601】
+【Người đàn ông mạnh mẽ】 【38891】
+【Cổng gia đình】 【41207】
+[Bài phát biểu] [39479]
+【Tài sản hiện tại】 【38685】
+[Senso] [40629]
+【Một bữa】 【40273】
+[7] [40513]
+【Dầu Nhăn】 【40985】
+【黐】 【40205】
+【Hin] 【40021】
+【Cả hai bên】 【38843】
+[Feng Fist] 【40011】
+【Tiệc Bon Festival】 【40851】
+[Tên tiếng Nhật] [40937]
+[Chú hề cá mập] [39493]
+【Mát】 【38857】
+【Khó đến】 【38413】
+【Chất thải】 【39285】
+【Nước mắt】 【38963】
+【Bodhwan】 【39807】
+【Lễ hội hoa】 【41791】
+[Ngoại lệ] [39003]
+【Riber】 【39517】
+【Koibutsu】 【39199】
+[Để chôn] 【39731】
+[Qua đời] 【40545】
+【Biến nó thành】 【39767】
+【】】 【】 39649】
+[Hãy chiên chân] 【40973】
+【Cơ quan】 【38507】
+【Mighty】 【40849】
+[Eclair] [39677]
+【Mẹo】 【39521】
+[Bằng kép] [38807]
+【Kiếm tiền phong phú】 【41041】
+【Lo lắng】 【40015】
+【Vùng lưỡng cực】 【38757】
+[Ngành công nghiệp tủ đông] [39057]
+【Họp】 【38995】
+【Bụi bột】 【40823】
+[Dấu cũ] [40419]
+【Mặt sau】 【38551】
+【Một nơi】 【41045】
+【Kẻ hèn nhát】 【38505】
+【Giao thông đường bộ】 【38603】
+【】】 【】 40191】
+【Tình yêu vợ】 【39179】
+【Em gái】 【38973】
+【Thay đổi】 【39901】
+【Ryugo】 【38717】
+【Trung thu】 【41609】
+【Quản lý ký túc xá】 【38851】
+【Lịch sử】 【39101】
+【Bệnh táo】 【38929】
+【Biến】 【38575】
+【Một tháng】 【41043】
+【Vị trí sai】 【39599】
+【Nghe】 【41235】
+[Tiếng Nhật] [39437]
+【Thỏa thuận hòa bình】 【39461】
+【Cuộc sống cũ】 【41267】
+【Đã theo học】 【38417】
+【Đồ ngọt Nhật Bản】 【39429】
+【Chỗ ngồi】 【38421】
+【Quốc gia nhỏ】 【40875】
+【Kawabe】 【40631】
+【Chai bé】 【39647】
+【Chấn thương] 【38725】
+【Cả hai cánh tay】 【38845】
+【Lửa】 【40351】
+【Thiệt hại mát mẻ】 【39033】
+[Bơi đứng] [41577]
+[Bầu trời mùa thu] [40965]
+【Cả hai nắp đậy】 【38743】
+【Lễ hội Yu Lan Bon】 【41109】
+【Giá khác biệt】 【41599】
+【Cả hai loài】 【38779】
+[Rie] [38537]
+【Quân lính】 【40407】
+【Để chi tiêu】 【41625】
+[Thatched mái nhà] [39497]
+【Mùa xuân tới】 【40903】
+【Tám】 【41147】
+【Thương gia quen thuộc】 【50955】
+【Cả hai bên] 【38747】
+【Ryuza】 【38707】
+【Thiệt hại muối】 【40319】
+【Quốc gia】 【39135】
+【Trang web lưu vong】 【38675】
+【】 【】 39243】
+[Ba chiều] [40499]
+【Aspect】 【41001】
+【Tinshi】 【40063】
+【Nhật Bản】 【40759】
+【Tranh】 【39711】
+【Bao gồm】 【40223】
+【Tanabata】 【40515】
+[Cá đông lạnh] [39055]
+【Gió Bắc】 【40845】
+【Nhân chứng】 【38623】
+【Sản xuất ban đầu】 【40559】
+[Đông gió] [40725]
+【熨斗】 【39849】
+[Nước lạnh] [39029]
+【Lịch sử】 【39105】
+[Mùa hè] [38641]
+【Lúa mì mùa thu】 【40783】
+【Mây] 【40311】
+【Chèn một bánh】 【41037】
+【Sản phẩm] 【40551】
+【Priestess】 【39115】
+【Nỗ lực gấp đôi】 【40755】
+【Hành động cướp bóc】 【38663】
+【Rokko】 【39387】
+【Vị thần】 【41205】
+【LOL] 【39643】
+【Ghibli】 【40385】
+【Moths】 【40007】
+[Tập đoàn đá] [39891]
+【Chiến tranh đất】 【38613】
+【Monzuki】 【39567】
+【Thời đại lịch sử】 【39127】
+【Hội đồng cơ sở】 【38961】
+【俎 上】 【39541】
+【Kyoko】 【39547】
+【Xung đột】 【39415】
+【Chiến đấu】 【40037】
+【Sáng nay】 【40473】
+【Sợ hãi】 【39789】
+[Quay lại cổ áo] [38545]
+【魍 魎】 【40149】
+【Tranh】 【39713】
+【Mắt thứ tám】 【40789】
+【Ngày lễ lao động】 【39309】
+[Thương tích nghiêm trọng] [40537]
+【饂 飩】 【40133】
+【Sống trong tình yêu】 【39153】
+【Số người đứng đầu】 【40727】
+【Đêm tối】 【40249】
+【】 Thời trang 【39837】
+【Khóa học】 【38515】
+【Kẻ hèn nhát】 【38735】
+【Thịt nguội】 【39061】
+【Em trai út của tôi】 【40859】
+【Hagihara】 【40777】
+【Tình yêu hôn nhân】 【39169】
+【Viễn cảnh】 【41033】
+【Cho đến nay】 【41063】
+【Bảo hiểm tai nạn lao động】 【39291】
+【Rinma】 【38927】
+【褌】 【40027】
+【Sandman】 【40045】
+【Cả hai bên】 【40913】
+[Roasted rang] [39843]
+[Kéo cắt tỉa] [39615]
+[Tiếp tục] [39253]
+【Khen ngợi và kiểm duyệt】 【39669】
+[Chế độ quân chủ lập hiến] [38645]
+【Lông mi】 【39883】
+【Mũ Rơm] [40787]
+【Cả hai】 【38791】
+【Tình yêu tình yêu】 【39185】
+【魘 れ れ る】 【40153】
+【】 【39783】
+【Từ đồng nghĩa】 【38969】
+【Xem trên cao】 【39563】
+【Warrant】 【38733】
+【Phòng đôi】 【38741】
+【Chất lượng】 【40763】
+【Tinh thần thế giới】 【39075】
+[Ví dụ thời gian] [39007]
+[Mặc cũ] [38513]
+[Viết tắt] [38661]
+【Ác linh】 【40245】
+【Vòng ném】 【38953】
+【Mũi gương】 【40797】
+【Bài hát lao động】 【39301】
+[Trại lao động] 【39311】
+【Về nhà】 【38591】
+【Luận án tiến sĩ】 【40779】
+【Tuyên bố】 【38977】
+【Gia đình Ronin】 【39337】
+【Ryuu】 【40909】
+【Sách hiếm】 【41247】
+【Đô vật】 【38887】
+[Đồng hồ hai đồng hồ] [38745]
+【Ngày mai sau】 【41413】
+【Bài hát nổi tiếng】 【38677】
+【Okinawa】 【41133】
+【あ る】 【41007】
+【Cả hai tên】 【38823】
+[Khung bên trong] [39491]
+【Mười lần】 【40527】
+【Kém】 【39137】
+【Cây】 【41237】
+【】 Cổ】 40429】
+【Âm thanh】 【38673】
+【麝 香 猫】 【40201】
+【Đợi người đàn ông】 【39417】
+【Đặt sang một bên] 【41701】
+【Ghế ngả】 【39603】
+[Dọc ngang] [40533]
+[Vật liệu dự phòng] 【38573】
+【Cái nhìn của con chim】 【39561】
+【猊 下】 【39865】
+【Liếc nhìn】 【39881】
+【Junka】 【39987】
+[Cơ hội] [41105]
+[Nén lạnh] [39041]
+【Cả hai bánh xe】 【38837】
+【Cho tương lai】 【40625】
+【Dot lỗ】 【40209】
+【Tuổi】 【41679】
+[Winter] 【38659】
+【Bồn tắm ngoài trời】 【39283】
+【Wow】 【40059】
+【Hôm nay】 【40471】
+[Chèn] [39953]
+[Phòng kiểu Nhật] [39441]
+【Hành khách trọn đời】 【40627】
+【Vào ngày】 【41065】
+【Hoàng đế】 【40693】
+【Powerstone】 【38907】
+【Tenjin】 【40697】
+【Chế độ ăn kiêng đặc biệt】 【38943】
+【Kenichi】 【39747】
+【Quả bầu khô】 【41231】
+【Người thành công】 【39737】
+【Nhiệt đới】 【40743】
+【Rokkoshi thanh lọc】 【39373】
+【Tái sinh trung bình】 【39081】
+【Nhiều người ghen tuông】 【40653】
+【Ryugu】 【38705】
+[Kiếm] [41193]
+【Suzuki】 【39069】
+【Turtle】 【40383】
+【Akuyoshiyoshiya】 【40321】
+[Xem] [39503]
+【Mùa thu】 【38649】
+【Nội chiến】 【39117】
+【Tengashita】 【40689】
+【Uống】 【39651】
+【哥哥】 【40193】
+【】 【】 39597】
+[Sniff] 【39657】
+【Đến] 【38423】
+【Ban】 【39623】
+【Dịch vụ quân sự】 【40409】
+【膾 菜】 【39943】
+【Torigori】 【41357】
+【Blessing】 【40869】
+【Sông tình yêu】 【39177】
+【Cuộc sống cho cuộc sống】 【41059】
+【Sông Romi】 【39867】
+【Tảo lam】 【38495】
+【Attendant】 【39217】
+【Đom đóm】 【41315】
+【Kotera】 【40423】
+【刪 定】 【39611】
+[Người vợ tốt] 【38863】
+[Sợi tơ] [41323]
+【Hình dạng quạt】 【40633】
+【Cảm giác nguy hiểm】 【40983】
+【Bát gạo】 【40785】
+[Dừng lại] [38625]
+【Kami】 【40565】
+【Tay trống】 【41343】
+【浜 楽】 【39569】
+【Tsubo Arashi】 【39357】
+【Đêm mặc】 【40893】
+【Đền hình lục giác】 【39365】
+【Người phụ nữ cũ】 【39349】
+【Trung tâm Y tế Công cộng】 【40831】
+【Upland Rice】 【40907】
+【Hội chợ】 【40557】
+【Ryuta Hime】 【38711】
+【Yu Lan Bon】 【41107】
+【Học】 【39409】
+【】 【41097 nổi bật】
+【Thợ săn sói đào tạo】 【38445】
+【Tâm trí của cá nhân】 【40597】
+[Quan hệ mối quan hệ] 【39167】
+[Southern Ocean] 【40747】
+[Để hòa nhập vào] [41067]
+【Ghi chú thứ 64】 【39377】
+【Các phát biểu khác】 【40651】
+【Lời cảm ơn】 【38729】
+【Năm sau】 【38419】
+【Otani】 【40323】
+【Samurai bên trong】 【40737】
+【Lá thấp hơn】 【40337】
+【Chó sói】 【39705】
+【Daffodil Daffodils】 【39653】
+【Chuyện tình】 【39197】
+[Thực hành] [39205]
+【Rang】 【39847】
+【Trang trại bò sữa】 【38463】
+[Ryuji] [39621]
+[Cả hai người đàn ông] [38827]
+【Sinh viên quốc tế】 【38695】
+【Dụng cụ nấu ăn】 【38855】
+【Sách cầu nguyện】 【41257】
+【Rakuchu】 【38433】
+【Thuế lũy tiến】 【38965】
+【Cả hai bên】 【38761】
+【Hoàng thượng】 【38819】
+【Số tiền nhỏ】 【40173】
+[Xem cột] [38493]
+【Em gái】 【38987】
+【Nước mưa】 【40301】
+【Người hiện tại】 【38689】
+【Hiệp hai】 【40331】
+【Corpse】 【39589】
+[In hai mặt] [38825]
+【Thủ tướng Liên bang】 【39263】
+【Tidy lên】 【40971】
+[Suy nghĩ] [41225]
+【Thiên Tân】 【41245】
+【Cho thuê nhà】 【38563】
+【Trường học dành cho người khiếm thính】 【39355】
+【Mất mất】 【39143】
+【Tóc màu xám】 【40781】
+【Một năm】 【40287】
+【Kéo rắm và gấu vào mông】 【39709】
+[Cảm giác đoàn kết] [39245]
+【Asao】 【40979】
+【Hoa trong cả hai tay】 【38777】
+【Tin vui】 【39329】
+【Cả hai chuyến bay】 【38821】
+【Waka】 【39425】
+[Gió mát] [40919]
+【Trường học cho người điếc và câm】 【39351】
+【Tất cả các bạn có thể làm】 【41435】
+【Mẹ chồng】 【39955】
+【Động vật】 【40803】
+【Musume】 【40673】
+【Xe Rồng】 【38709】
+【】 【】 39281 của Nga]
+[Mislead] [39489]
+【Rokko】 【39385】
+[Cuốn sách cũ] [40431]
+【Giết giết】 【41321】
+【Lịch sử của Handan】 【40093】
+【Nợ ngắn hạn】 【38687】
+【Shuzo】 【40523】
+【Lingyun】 【38849】
+【美人 男】 【40795】
+【Bài tập】 【40119】
+【Bị quấy rầy】 【38467】
+【Yoshinobu】 【41183】
+【Giỏ hơi】 【40575】
+【Loving】 【39155】
+【Grassy】 【41303】
+【Amphoteric】 【38783】
+【Mũ bảo hiểm bên trong】 【41089】
+【Rough out】 【41009】
+【天 人】 【40703】
+[Sợi gai dầu] [40975]
+【六 本 法 書】 【39401】
+【Múa rối】 【39579】
+【Sáu lần liên tiếp】 【39403】
+【】】 【【40207】
+【Ryotei】 【38853】
+【Tấm khô】 【40373】
+【Khuỷu tay đôi】 【38815】
+[Lên trên] [40569]
+【Tắt】 【40679】
+【Nước vào】 【40765】
+【Kiểm toán】 【39095】
+【Cánh cổng】 【38543】
+【Gingiva】 【40509】
+【Trường hợp xấu nhất】 【40605】
+【Waka Haiko】 【39439】
+【Tìm hiểu】 【38583】
+[Khuyến khích] [39065]
+【Giáo dục thể dục】 【39293】
+【Blue General】 【40963】
+【Với cáo】 【41253】
+【】 【】 41181】
+【】 Bóng】 【40941】
+【Zuko】 【39915】
+【Máy cắt đá】 【40805】
+[Okinawa] [41139]
+【Trò chơi】 【40369】
+【Bác sĩ Y khoa】 【40251】
+[Bồn tắm nước lạnh] [39047]
+【Trẻ và già】 【39343】
+【Đứa trẻ bị giết】 【41591】
+【Cuộc gặp gỡ】 【40089】
+【Cách sống】 【41017】
+【Stockholm】 【39997】
+【Cả hai mất】 【40917】
+【Khi vắng mặt】 【38699】
+【Ken] 【39201】
+[Đứng] [38627]
+【Tuần tự】 【39251】
+【Rokujin】 【39381】
+【Rambda】 【39335】
+【CIE】 【40825】
+【Shatter】 【41369】
+【Wa Yang】 【39419】
+【Du học】 【38693】
+【Một con cá】 【39839】
+[Mẹ của ngọc trai] [40579]
+【Lịch sử】 【39099】
+【Cả hai nơi ở】 【38829】
+【Vết chiến thắng】 【39231】
+【Nỗi nhớ】 【41789】
+【Ba cặp】 【40495】
+[Tuyên bố] [40879]
+【Nghỉ hưu】 【41075】
+[Đậu phụ đông lạnh] 【40719】
+【Gói】 ​​【41643】
+【2 phần】 【40753】
+【Ngày】 【40809】
+【Cả hai chân】 【40915】
+【Taiko Nhật Bản】 【40935】
+【Thiên Chúa] 【41227】
+【Giá vé】 【41157】
+【Phong trào lao động】 【39299】
+【Vết thương】 【41251】
+【Binaural】 【38775】
+【Anh】 【38971】
+[Tới hôm nay] [40475]
+【Cả hai đối số】 【38841】
+[Tàu đông lạnh] [39059]
+【Trường Ran】 【38497】
+【Lịch sửa đổi】 【39085】
+【Máy đổi tiền】 【38799】
+【Yoshikazu】 【40387】
+[Suy nghĩ kiểu chiến tranh lạnh] [39049]
+【Từ nền lịch sử】 【39111】
+【Đáp ứng】 【38937】
+【Yin Warrior】 【41177】
+【Yoshiya】 【40391】
+[Mai] [40853]
+[Đồng phục] [41035]
+[Vỏ bọc gân] [39935]
+【Phật】 【40819】
+【Takeshi】 【39855】
+【Quá nhiều】 【41127】
+【Nông dân】 【39321】
+【Nhà dưỡng lão】 【39347】
+【Hayashi】 【39663】
+【Cái chết chiến đấu】 【40087】
+[Sử dụng] [41441]
+【Pheasant】 【41249】
+【Đường Forest】 【38931】
+【Hạ viện】 【38749】
+【FAR】 【40317】
+【Ngày rò rỉ tuyết】 【41373】
+【Keju】 【41203】
+【Orihime】 【41149】
+【Ginniko】 【40439】
+【Chết】 【39673】
+【Li】 【38517】
+【Loại liên minh】 【39241】
+[Điều hòa] [39063]
+【Quay trở lại】 【39923】 nữa
+【Hành trình】 【38727】
+【Cả hai quốc gia】 【38765】
+【Đặt hàng】 【40923】
+【Đền】 【40643】
+[Ema] [40359]
+【Hoạt động Liên minh】 【39227】
+【Rokumi】 【39399】
+【Ngôn ngữ song ngữ】 【38767】
+【Horn World】 【40367】
+【Hốc mũi】 【40799】
+【Kiểm tra】 【38889】
+【Rửa gấu】 【40999】
+【Chảy】 【40861】
+【Kurogawa Hole】 【39573】
+【Ủy ban Quan hệ Lao động】 【39297】
+【鰰】 【40179】
+【Sáu bậc cha mẹ】 【39391】
+[Nói chuyện] [39471]
+【Hiệu ứng】 【41239】
+【Gật đầu】 【40121】
+【Không sửa vương miện cho Lee】 【38519】
+【Tái chế】 【39257】
+【】 Lê 【38521】
+【Độ đục】 【39247】
+[Ryo] [38871]
+【Người】 【40591】
+【Trí tuệ】 【38983】
+【Rakugo】 【38449】
+[Lạnh mắt] [39037]
+【Địa điểm lịch sử】 【41423】
+【Cả quân đội】 【38759】
+【Liếm】 【39957】
+【Bộ phim lịch sử】 【39107】
+[Crimson] [40577]
+[Trận chiến của thế giới] [39233]
+【Sansyo】 【40489】
+【Tenshi Niji】 【40991】
+【Hiệu ứng lập thể】 【38655】
+【Tên trục】 【41421】
+【】 【Thị trường 41079】
+[Ginzo] [40977]
+【Trước khi các tội phạm của quân đội】 【38947】
+【Ba lô】 【38585】
+【鰊】 【40171】
+[Khổ] [38599]
+【Lễ hội bình thường】 【39015】
+【Nhân viên】 【38509】
+【Hiện tại】 【41061】
+【Tiêu cực】 【41311】
+【Rùng mình】 【39145】
+【Đi đến kết thúc】 【40457】
+【Streaming】 【38681】
+【Cửa hàng】 【40711】
+[Bồn điện] [38899]
+【Okami Yashimi】 【41135】
+【Đức hạnh】 【40595】
+[Millet] [40247]
+【Tháng 9】 【39249】
+【Ca hát tình dục】 【39383】
+【Tội ác tối cao】 【39171】
+【Late] 【41137】
+【Bước chân】 【40143】
+【Puddler】 【40029】
+[Để thư giãn] [39025]
+【譫 語】 【40061】
+【Đạn đường】 【38669】
+【Cân cân】 【38805】
+【Cả hai thái cực】 【38755】
+[Mưa mây] [40989]
+【Thiết bị Arita】 【41005】
+【Ryuusei Bishiru】 【38713】
+【Phòng trà】 【40663】
+【六 日本】 【39389】
+【Outrun】 【41289】
+【Triết lý lịch sử】 【39113】
+【Gi】 【38925】
+【Haiku】 【40775】
+【Reiki】 【39077】
+[Tam giác nghịch] [40395]
+【Súng săn】 【38859】
+【蓖 麻 子】 【39985】
+【Đừng mây đánh dấu chim đứng】 【38635】
+【Công nhân bị thương】 【39289】
+【】 【Cũ hơn 40397】
+【Mũi thoại】 【40801】
+【Kichiyo Mười】 【40389】
+【WINDOW】 【41187】
+【Bản phát hành】 【39759】
+【Miệng] 【41305】
+【Hội đồng thành phố】 【50549】
+【Fascination】 【40151】
+【Ngọa lưng】 【39933】
+【Phần 6】 【39397】
+【Trồng】 【41081】
+[Đầu gối] [41189]
+【Xem xét】 【39629】
+[Nửa đêm] [40891]
+【鱸】 【40183】
+【Sốc sân khấu】 【41325】
+[Bắc Băng Dương] [40843]
+【Chết người] 【41093】
+【Hoa ngựa】 【38683】
+[Ngất xỉu] 【38457】
+【Beetle】 【40453】
+【Hisatomi】 【41263】
+【Đảo ngược】 【38577】
+[Bay] [40761]
+【Mọi góc】 【41309】
+【Đường của các vị thần】 【41229】
+【Hòa bình】 【40729】
+【Kẻ thù tình yêu】 【41335】
+【Bắt đầu] 【41319】
+【Kẻ thù】 【39803】
+【鷦 鷯】 【40189】
+【Hạ viện】 【38737】
+【Nhân sự】 【40585】
+[Bài hát cũ] [40421]
+[Tháp] [39277]
+[Phá vỡ] [41287]
+【Ẩn】 【41073】
+【Người】 【40589】
+【Tải】 【39971】
+【Giường hoa】 【41197】
+【Hạng công tác】 【39303】
+【Nhà lân cận】 【38955】
+【Từ điển thư】 【41019】
+【Ⅳ】 【40835】
+【Tạm trú tạm thời】 【41213】
+【Vịt】 【40953】
+【Cả hai thế giới】 【38831】
+【Chụp】 【38475】
+[Cả hai tay áo] [38795]
+【Ngày hôm trước】 【40265】
+【Yamato】 【40933】
+【Muddiness】 【38483】
+【Từ đồng nghĩa】 【38967】
+【Phía bắc】 【40839】
+【鰆】 【40167】
+【Một nhóm】 【40283】
+【Cục Giao thông vận tải đất】 【38605】
+【Ngày sau ngày mai】 【40877】
+【Cửa đến cửa】 【40957】
+【Ma thuật】 【40381】
+【Ghi chú】 【38691】
+【Cả hai bên】 【38839】
+【Con gái】 【40687】
+【Chết lá】 【41223】
+【Xử lý ngoại lệ】 【38997】
+【Đông Bắc】 【40841】
+【Một người khác】 【40827】
+【Riko】 【39229】
+【Chín màu】 【40511】
+【Bưu thiếp】 【41115】
+【Buồn ngủ】 【40215】
+[Điền kinh] [38609]
+【Giết chết gỗ】 【41347】
+【Cá chép streamer】 【41337】
+【Hợp tác】 【39215】
+【Các ngày nghỉ liên tiếp】 【39223】
+[Không có vài thứ] [41021]
+[Nói] 【41365】
+[Koizumi] [39051]
+【Swastika】 【39635】
+【Lợi nhuận】 【38629】
+[Trung bình] [40665]
+【Khó khăn ngũ cốc】 【38701】
+【Kurokuma】 【40467】
+[Bằng cách nào đó] [41725]
+【顰 蹙】 【40123】
+【Quay】 【40715】
+【Ngân sách Liên bang】 【39267】
+【Phật tim】 【40815】
+[Intertwine] [38437]
+【Hơn 60 tiểu bang】 【39379】
+【Luật yêu thích】 【40791】
+【Zero Fight】 【39073】
+[Vẽ] [41169]
+【Chăm sóc】 【38721】
+【Bị lạnh】 【39019】
+【Lòng đỏ trứng】 【38485】
+[Chất lượng] [38865]
+【】 Bình thường 【41333】
+【Rika】 【38595】
+[Đọc bổ sung] [40813]
+【Giấc mơ của Handan】 【40095】
+【Sau đó】 【40441】
+【Uchidomiya】 【40731】
+Cuối năm] [40769]
+【Thử nghiệm lâm sàng】 【38945】
+【GEN】 【40451】
+【Chiến đấu】 【38909】
+【Trường Terato】 【41593】
+【Tin tưởng】 【40987】
+[Đen] [40463]
+【Phía Nam】 【40745】
+【Chim xanh】 【38921】
+【Quyết định] 【41261】
+【Bắt đầu viết】 【41167】
+[Máy hai mục đích] [38833]
+【Thay thế】 【41071】
+【Dương Tử】 【40253】
+【Số Lịch】 【39091】
+【Bị cấm】 【41055】
+【Knead】 【39761】
+[Quay lại Nhật Bản] [40905]
+[Mùi mùi] [39927]
+【Bảy mươi bảy】 【41425】
+【Shan】 【40603】
+【Cắt đôi】 【38787】
+【Mè thần kinh】 【39945】
+【Kiếm tiền】 【41973】
+【Samba】 【40497】
+【Xanh lục】 【40635】
+【Tính tự ti】 【39139】
+【Nơi biểu diễn】 【40773】
+[Người phụ nữ cá Ayu] 【40955】
+[Chị em] [40411]
+【Sáng hôm sau】 【40899】
+【Bão hòa】 【40555】
+【Tam giác đều】 【40611】
+【Bìa】 【40417】
+【Đen】 【41313】
+【Rượu】 【39977】
+【Vương quốc Anh】 【39225】
+【】 Dragon 【41341】
+【Sự suy giảm】 【41345】
+【戌】 【39741】
+【Chính quyền lực lượng lao động】 【39323】
+【Chết cây】 【41221】
+【Lama】 【39655】
+【Ví dụ】 【39013】
+[Câu cá] [41883]
+[Điểm nhanh] [40645]
+【Đèn】 【40713】
+【Người】 【40587】
+【Cả 3 ngày】 【38769】
+【Cửa hàng đổi tiền】 【38797】
+【Quy mô treo】 【41171】
+【訝 し む】 【40039】
+【狗 桐】 【40961】
+【Tinh trùng】 【40619】
+【Đổi tiền】 【38803】
+【Cả hai suy nghĩ】 【38771】
+【Điện tự hào】 【38893】
+【Tất cả các quốc gia cờ】 【40865】
+【】 【【39001】
+【Ngày cây xanh】 【38917】
+[Mưa] 【40297】
+[Iranji] [40881]
+[May] [41087]
+【Tập】 【41317】
+【Chó】 【41155】
+【Mũ rơm】 【41959】
+【Lịch Sách】 【41445】
+【Lưới muỗi】 【41209】
+【Hàng hóa】 【41431】
+【Bắt đầu】 【41039】
+[Tuổi] [40931]
+【Người điếc】 【39359】
+[Ý nghĩa tuyệt vời] [39035]
+【Chính quyền nội bộ】 【40739】
+【Riko】 【38593】
+[Dạng tiếp tục] 【39271】
+【Phật tự nhiên】 【40817】
+[Trận chiến của phụ nữ liên tiếp] [39235]
+【Bơi】 【38881】
+【Sankei】 【41401】
+【Ma sát nước lạnh】 【39045】
+[Trộn] [39203]
+【27th】 【40749】
+【Người kém】 【39141】
+【Da điện】 【38883】
+[Dao] [41283]
+[Mát] [39021]
+【】 Hợp pháp 【40613】
+【Cháu】 【38979】
+【Ngôn ngữ cũ】 【41351】
+【Một năm trước】 【40267】
+【Quốc gia láng giềng】 【40921】
+【Tình yêu mèo】 【39191】
+【Trụ sở hoạt động trên đất】 【38611】
+【Triển lãm】 【39133】
+【Đám mây chân】 【40313】
+【Chân đứng】 【38643】
+【Cheating】 【40997】
+【Liên hệ】 【39275】
+【Cá Todo】 【40951】
+【Lịch sử】 【39097】
+【Tenjin earthi】 【40701】
+【Okabe】 【41131】
+【Gương tròn】 【40315】
+【Hoàn thành niềm vui vĩ đại】 【40659】
+[Trang điểm] [41103]
+【Okusama】 【41053】
+【Chai rỗng】 【40967】
+[Tường thuật] [41195]
+【Delusion】 【40883】
+【Nội Hồ】 【42109】
+【Loveless không biến】 【42057】
+【Dòng chảy Pyroclastic】 【41179】
+【Tôm Ise】 【41025】
+【Đặc biệt cảm ơn】 【41151】
+【鴟 尾】 【41433】
+【Tiện nghi tình yêu】 【39175】
+【Freezing】 【40717】
+【Nhà】 【41015】
+【Vô hình】 【38589】
+【Lãng mạn Yu-Gi】 【39173】
+【Bánh bao】 【40129】
+【Pháo hoa】 【39857】
+【Tâm linh】 【39079】
+[Ngón giữa] [40667]
+【上 上】 【41113】
+【Bộ trưởng Bộ Lao động】 【39315】
+【Gia đình】 【40257】
+【Cả hai cánh】 【38835】
+【Hệ thống Rokkasho】 【39375】
+【鯒】 【40155】
+【Khách】 【40517】
+[Refutable] [41809]
+【Cha mẹ】 【41869】
+【Cũng tạm thời】 【41215】
+【Băng đo】 【41913】
+【Thời kỳ】 【50973】
+【Đứng lên】 【38639】
+[Zushi] [40521]
+【】 Danh dự 【40053】
+【Gia đình tôi】 【40347】
+【Miệng rồng】 【38703】
+【Bipolar】 【38753】
+【Tháng Sáu】 【39369】
+【Retrouction】 【41389】
+【Tiger bên lề】 【40945】
+【Sáu quốc gia lớn】 【39393】
+【Hiếm 【】 41255】
+【】 【Khô 40371】
+【Cá nhân】 【41353】
+【Tất nhiên】 【40885】
+【Madam Qi】 【40943】
+【Trứng nướng】 【41587】
+【Sữa】 【50729】
+[Shoji] [40829]
+【Màu trứng】 【38487】
+【Tiểu sử】 【38665】
+[Nocturnal] [40889]
+[Sắp xếp] [41273]
+【Suetake】 【40863】
+【Ya】 【40479】
+【Thượng viện】 【40563】
+【Trẻ em】 【41141】
+【Imperial】 【41937】
+【Phong cảnh】 【51131】
+【Đến】 【40455】
+[Sâu sắc] 【41859】
+[Momentarily] [41363]
+【Chiên gà】 【41211】
+【Xây dựng lại】 【38637】
+【Đứa trẻ nhỏ nhất】 【40855】
+[Unrequited] 【41191】
+[6] [39395]
+[Waivie] [40655]
+【Turf yakitori】 【39279】
+【Shimo】 【40335】
+【Striker Lost Streak】 【39237】
+【Utamida】 【41219】
+【Docking】 【50565】
+【Chương bên】 【50851】
+【Thức ăn】 【41799】
+【Hoàn thành】 【41153】
+【Rồng hổ】 【40911】
+【Tập nói chuyện】 【41771】
+【Happy】 【40837】
+【Anh trai Takuro】 【41339】
+[Một tuổi] [41049]
+【Toàn tuyến】 【41537】
+【Cục tiền gửi】 【50857】
+【Ý thức nhận thức】 [50941]
+[Cuộn muỗi] [41199]
+【Weiwen】 【41027】
+【Shiranui】 【40807】
+【Đảo quốc】 【40723】
+【Làm đẹp】 【41185】
+【Hai bữa】 【40751】
+【Timepiece】 【50949】
+【Nằm xuống】 【41741】
+[Có liên quan] 【41161】
+【Shimo Kagami】 【41329】
+【Vải】 【38877】
+【Chú tuyệt vời】 【41123】
+【Tenshi】 【41619】
+【Nhảy】 【41145】
+【Hoarseness】 【40217】
+【Đột nhiên】 【41491】
+【Mỗi lần】 【40363】
+[Máu vui vẻ] [40235]
+【鰤】 【40175】
+[Đùi bên trong] [40735]
+【Tính năng】 【41117】
+【Nhân lực】 【40599】
+【Da người】 【41833】
+【Câu lạc bộ bất ngờ】 【41857】
+[Ngày xửa ngày xưa] [41957]
+【Số 110】 【41847】
+【Viết sai lầm】 【50677】
+【Lãnh đạo】 【41449】
+【Quần áo】 【41259】
+【Kim 鯱】 【40405】
+[Coi chừng] [41293]
+【Cắm hoa】 【41201】
+[Tất cả mọi thứ] [40871]
+【Giết chết】 【41897】
+【Hộp đánh dấu】 【41077】
+【Bán nhựa】 【41121】
+【Vị trí xà phòng】 【50831】
+【Công ty】 【50757】
+【Giỏ tay】 【50401】
+【Nhiều】 【41573】
+[Phá vỡ bên trái] 【42257】
+[Đào tạo] [50385]
+【Mẹ giữ】 【41899】
+【Cuối buổi chiều】 【42011】
+[Tiếp tục viết] 【50671】
+【Gà nướng】 【41991】
+【Sửa đổi phương pháp lịch sử】 【39129】
+【Giảm】 【41705】
+【Giải thích】 【42081】
+【Quốc gia】 【41307】
+【Temari】 【50351】
+【】 【】 【39937】
+【Trì hoãn】 【51065】
+【Lịch】 【39089】
+【】 Bạc 【41031】
+【Thất bại】 【40483】
+【Một mảnh Luo】 【41057】
+【】】 【40601】
+【Ishiko đóng gói】 【50791】
+【Suku】 【42115】
+【Cửa hàng ban đêm】 【42029】
+【Thống đốc】 【41381】
+【Thả tập tin đính kèm】 【41635】
+[Mio] [41407]
+【Chuyên gia】 【50877】
+【Diction】 【41615】
+【Ủy ban】 【41023】
+【冽 々】 【42055】
+【Phạm vi giá】 【41747】
+【Choking) 【42047】
+【Khô khô】 【41819】
+【Kabaki】 【41297】
+[Hình phạt] [42391]
+【Chỗ ở】 【41559】
+【Cuối】 【40857】
+【Sau đó】 【40981】
+【Mắt cưa】 【50947】
+【Ấm đầu】 【41987】
+【Trái đất】 【50703】
+【Có một điều chết tiệt】 【41275】
+【Treo xuống] 【51025】
+【Bù nhìn】 【41903】
+【Cụm từ】 【41301】
+【Châu Á không tự nhiên】 【41521】
+[Hoàn toàn] [41933]
+【Hatchobori】 【41777】
+【Mát】 【41851】
+[Để biên giới] [41873]
+【Biped và ba câu】 【41733】
+【Diễn viên hài】 【41931】
+【Yukata】 【40897】
+【Bìa】 【41779】
+【Sự thật / Sai】 【51111】
+【Nio】 【41727】
+【Một cô gái】 【42529】
+【Câu hỏi】 【51149】
+[Nhà tù] [41279]
+[Mùa hè] [41165]
+【Từ ngữ】 【41787】
+[Khen] [41233]
+【Exodus】 【41671】
+【】 Nhà nước 【41451】
+[Với một cánh] [41797]
+[Showers] 【41735】
+【Overfishing】 【42045】
+【Cần câu】 【41649】
+【Dựa trên】 【41979】
+[Sự thật] [41971】
+[Thơ] [42275]
+【Chỉ】 【41575】
+【Sợi xích】 【50513】
+【Viết bài】 【50553】
+【Kỷ luật】 【42835】
+【Cùng trường】 【42105】
+【Tipping khách hàng】 【41455】
+【Hoàn thành trò chơi】 【42603】
+【Người độc thân】 [40275】
+【Màn hình】 【41627】
+【猩 々】 【41461】
+[Dây câu] [41645]
+[Sinh viên] [50227]
+【Món ăn muối】 【50375】
+【Cuối phụ nữ】 【51057】
+【Leaner】 【42037】
+【Tháp đá】 【50817】
+[Teaspoon] [41605]
+【Du lịch một mình】 【41837】
+[Heal] 【41703】
+[Kim may] [41737]
+【Mở rộng】 【42371】
+【Tuần lễ】 【50221】
+【Học viên】 【51129】
+【Revive】 【42027】
+【Lợi nhuận】 【50631】
+【Misplace】 【50673】
+【Viết hương vị】 【50649】
+【Cổ phiếu thực tế】 【51123】
+[Tiết niệu] [41839]
+【Công ty】 【50767】
+【Vẽ】 【41823】
+【Cuộc sống】 【50505】
+【Lý tưởng】 【41749】
+【Gối tay】 【50329】
+【Mọi thứ] 【41719】
+[Lễ hội mùa hè] 【41707】
+[Bông tình cảm] [40573]
+【Opuntu】 【41985】
+[Eikoji] [41393]
+【Phòng thủ đặc biệt】 【50873】
+【着 信】 【50579】
+[Qing] [41515]
+【Công ty】 【50769】
+【Nhật Bản】 【42065】
+[Ngưỡng] 【41099】
+【Đức】 【41697】
+【Cuộc đua đi bộ】 【50783】
+【Hủy mèo】 【41499】
+【Làm lại】 【42001】
+【Yuzu】 【42007】
+[Truy tố] [42847]
+【Đóng] 【41861】
+【Yên mặt】 【41927】
+【Busy】 【41905】
+[Đọc một cá thu] [41395]
+【Địa điểm】 【41677】
+【Đợt đầu】 【41783】
+【Ngân hàng】 【41817】
+【Hachiohe】 【41999】
+【Ryugakusei】 【41581】
+【Hướng Mùa hè】 【41709】
+[Di chuyển lên] [41761]
+【Tsubari】 【41639】
+[Khủng hoảng] 【50561】
+【Shichiba】 【41427】
+【Câu cá đất】 【41129】
+【Cửa hàng mở】 【42427】
+【Thông tin】 【51097】
+【Lừa đảo trí tuệ】 【51063】
+【Muối】 【41417】
+[Mưa] [41829]
+[Hưu trí] [42005]
+【Thức ăn hàng ngày】 【41843】
+【Bị tách】 【41173】
+【Lưỡi dao】 【41277】
+【Cộng đồng làng】 【50493】
+【Người bạn cũ】 【41265】
+【Đóng cửa giữa tuần】 【50687】
+【Điệp khúc】 【41469】
+[Thứ năm] [41939]
+[Ishige] [41517]
+[Chan-Chan] 【50913】
+【Cà phê đá】 【42361】
+【Nướng】 【50715】
+【Nơi lưu trữ】 【50855】
+【Nhu cầu】 【42915】
+【Bị bắt】 【41691】
+【Oku】 【43109】
+【Văn phòng kế toán tổng hợp】 【42567】
+【Một đêm tối qua】 【41051】
+【Cơ thể】 【41563】
+【Concert] 【42191】
+【Cơ thể】 【51079】
+[Mùa xuân ra] [42069]
+【Cuối】 【51069】
+【Nắm bắt cơm】 【41731】
+【Kể câu chuyện】 【50641】
+【Này bạn】 【41547】
+[Tay] [41553]
+[Chất thải giấy] [42313]
+【Vật phẩm cầm tay】 【50337】
+【Số ngày】 【41759】
+[Người thợ khóa] [41557]
+[Mở rộng hoặc dọc] [41769]
+【Âm nhạc ấn tượng】 【42137】
+【Chỗ để xe đạp】 【41481】
+【Tuyệt đẹp】 【41795】
+【Lấy một thanh gươm】 【41893】
+【Cải tiến loài】 【42577】
+【Cách mạng】 【41695】
+【Đánh giá】 42769
+【Chuyển】 【41879】
+【Giảm giá】 【41743】
+【Dango mũi】 【50889】
+【Điểm ngoặt】 【42571】
+【Để tìm】 【41943】
+【Thủ thư】 【50839】
+【Thư】 【49833】
+【Nghệ thuật và thủ công】 【41295】
+【Kẹp pin】 【41967】
+【Sử dụng tâm trí】 【41291】
+【Mệt mỏi] 【40969】
+【Mùa hoa】 【41163】
+【Rơi】 【41633】
+【Asami】 【41525】
+【Ngắm vách đá】 【41419】
+【Furisode】 【41881】
+【Tài năng】 【41385】
+【Trẻ và già】 【40929】
+【Takoyaki】 【41571】
+【Play Stationary】 【41411】
+【Sparrow Spirited】 【50555】
+【Gần đây đã chuyển】 【50171】
+【Thing ngây thơ】 【41367】
+[Tới hàng nghìn] 【41601】
+【Được yêu thích】 【50937】
+【Vải tuyết】 【41519】
+【Hố súng mù của Guild Guild】 【41969】
+【Từ điển】 【51137】
+【Dụng cụ đánh bắt cá】 【41651】
+[Shade khô] 【41175】
+【Giao hàng】 【41803】
+【Nước xâm nhập】 【42425】
+【Viết để viết】 【50657】
+【Thầy tu】 【50789】
+[Tenxi] [41665]
+【Đông Á 【41673】
+【Nghèo sống】 【41855】
+【Nóng bán】 【41471】
+【眈 々】 【41589】
+【Teriyaki】 【41659】
+【Tiệp Khắc】 【42495】
+【Quần áo】 【41981】
+【Đợi nơi trú ẩn】 【41915】
+【Xử lý các biện pháp phòng ngừa】 【41693】
+【Tâm lý xã hội】 【50739】
+【Trực tiếp rõ ràng】 【41621】
+【Xác nhận trường】 【51105】
+【Lễ tân Reed】 【42017】
+【Lính cứu hoả】 【41825】
+[Tiến lên / lùi lại] [41457]
+[Chống cờ] 【41807】
+[Kho lưu trữ] [50859]
+【Lò đất】 【50721】
+【Điện khí】 【50595】
+[Intriguingly] [41281]
+【Xác định】 【42039】
+【Thái Lan tre】 【42133】
+【Hạt】 【51003】
+【尸 諌】 【42673】
+【Tôn trọng】 【50499】
+【Niềm vui】 【42075】
+【Tuần tới] 【42043】
+【Cây lily】 【42009】
+【Bằng chứng】 【51021】
+【Thời kỳ khủng khiếp】 【41527】
+【Số 1 9】 【41845】
+【Hộp tiền gửi đêm】 【41989】
+【Ném đi】 【41501】
+【Tìm nó】 【41941】
+【Không còn】 【41399】
+【Ống đất sét】 【50719】
+【Bài hát tiếng Pháp】 【42239】
+【Rarity】 【51041】
+【Động vật lưỡng cư】 【42049】
+[Để treo] [41647]
+【Nhìn quanh】 【41387】
+【Bước vào thủy triều】 【50079】
+【Tước đất】 【50693】
+[Shinpei] [41443]
+[Thay đổi] [41375]
+【着 着】 【41603】
+【Sách đất】 【50695】
+【Oxford】 【41505】
+【Lối vào / ra】 【41667】
+[Cười] [41507]
+【Chuyển】 【50909】
+【Luật Giáo hội】 【42197】
+【Nước ép Sushi】 【41503】
+【Viết tay】 [50295]
+【Năm quốc gia vĩ đại】 【41379】
+【Gấp ba lần】 【41403】
+【Tổng số người làm việc】 【41755】
+【Tầng Co】 【41459】
+【Mười điều】 【41477】
+【Tiêu chuẩn】 【41655】
+【Hai ngày sau】 【42013】
+【Thấy nó】 【42437】
+【Mảnh của Shamisen】 【42131】
+【Tinh khiết tinh khiết】 【51015】
+【Chổi tay】 【50387】
+【Debris Flow】 【50691】
+【Nấu ăn】 【41569】
+【SINH VIÊN TRƯỜNG HỢP】 【50659】
+【Vinh danh】 【41561】
+【Bay xuống】 【41687】
+【Bữa tối】 【42761】
+【Kỳ vọng】 【42637】
+【Khóa học】 【42593】
+【Gà thứ ba】 【41409】
+【Trên toàn quốc ♪】 [41535]
+【Stayday】 【41567】
+【Ding ngồi】 【41657】
+【Ghi chú cũ】 【41361】
+【Tenchu】 【41661】
+【Quần áo mùa đông】 【50261】
+【Tsuburayura】 【41641】
+【Từ xa] 【42885】
+【Trang bị】 【41631】
+【Tháng trước】 【41529】
+[Om thẳng đứng] 【42023】
+[Liền kề nhau] [41685]
+[Dịch] [50923]
+【Mọi cách】 【50611】
+【Rakugo】 【42183】
+【Yasu】 【41995】
+【Sự kiện】 【41479】
+【Cái gì】 【41723】
+【Đêm khuya】 【42025】
+【Phòng thi】 【51051】
+【ー ー】 【42097】
+【Khởi đầu】 【50569】
+【Phật】 【41543】
+【Khoá học chính】 【41453】
+【Sôi động】 【42749】
+【Hakuraku】 【41811】
+[Bằng mọi cách] [41533]
+【Trận đánh】 【42063】
+【Quỷ vương】 【41675】
+【Phá vỡ thành từng mảnh】 【41371】
+[Tắt] [41467]
+【Cuốn sách nổi bật】 【50939】
+【Nướng muối】 【41637】
+【Thiết kế âm thanh】 【42167】
+[Cá] [50861]
+【Tiểu thuyết thực nghiệm】 【51141】
+【Sushi】 【41497】
+【Nanihonaki】 【41429】
+【Baiu Rake】 【42355】
+【Cưỡi ngựa】 【41767】
+【Bằng tay】 【51155】
+【Dall của cốc】 【42501】
+[Đưa tôi] [41653]
+【Các bước để chạy bộ】 【41877】
+【Lý do tồn tại】 【50507】
+[Thanh toán] [41415]
+[Chiều rộng] [41949]
+【Hải quân】 【42581】
+【Phương pháp trực tiếp thẳng】 【41921】
+【Được trang bị】 【41555】
+[Condone] [41613]
+【Khoa học thực nghiệm】 【51145】
+【Khoa Phẫu thuật】 【51117】
+【Định dạng nhạc】 【42155】
+【儺】 【40939】
+【Cấp】 【51017】
+【Toàn bộ khuôn mặt】 【42423】
+【】 Dogashi 【50723】
+【Hành khách】 【41763】
+【Matsukasa】 【41925】
+[Futru sẽ bị thối] 【41875】
+【Đi chung xe】 【40959】
+【Đền 【】 【50953】
+【Chè cá hồi】 【41391】
+【Có lượt】 【41773】
+【Rush để chà】 【41509】
+【Cross Breaker】 【41447】
+【Jar】 【40947】
+【Làm mới】 【41545】
+【Hộp xà phòng】 【50833】
+【Chazuke】 【41607】
+【Chiến thắng hoặc thua】 【51165】
+【Một vòng】 【41835】
+【Đọc】 【42031】
+【Lỗi trong bóng】 【42289】
+【Dự đoán】 【43003】
+【Hat] 【43203】
+【Người cao tuổi】 【41751】
+【Shinbashi】 【42225】
+【Dengeki】 【42791】
+[Trong tâm trí] [42327]
+[Sinh thái học] [42277]
+【Lời chứng thực】 【42281】
+【Chiến tranh Tây Hoa Kỳ】 【43151】
+【Marugishi】 【41929】
+【Kiến thức Monkei】 【43671】
+[Chiến thắng] 【42575】
+【Sucking tờ】 【41487】
+【Vòng】 【42573】
+【Nằm may】 【41867】
+[Thuốc lạnh] [42311]
+【Khu dân cư】 【43107】
+【Tắm] 【42857】
+[Hàm ẩn] [42541]
+【Đặt phòng】 【43039】
+【】 Đóng 【42059】
+【Nhà thờ khổng lồ】 【42209】
+【】 Grove 【41359】
+[Dễ bị tổn thương] 【43053】
+【Loại bỏ】 【42783】
+【Cứu trợ】 【42515】
+【Một ngày nắng】 【43511】
+【Rùa】 【42733】
+【Kỳ vọng】 【42307】
+【Việc làm】 【41669】
+【Crossword】 【42823】
+【Chiến thắng】 【42601】
+【Tháp cao gấp năm】 【41377】
+【Dòng chảy 2】 【42249】
+【Thợ làm móng tay】 【42359】
+【Rất vui được gặp bạn】 【43461】
+【Nghỉ đêm】 【42405】
+【Băm nhỏ】 【41243】
+【Phúc lành】 【42445】
+【Phụ lục】 【42773】
+【Mở】 【42583】
+【Giáo dục ăn kiêng】 【42235】
+【Thưởng thức】 【42595】
+【Kashiwa Maki】 【43189】
+【Khuyến mãi】 【42953】
+[Là một cái bát] 【42283】
+【Recital】 【42759】
+【Heisei】 【42229】
+[Đang chìm] 【42743】
+【Quân đội】 【43043】
+【Mẫu thư】 【41775】
+[Gems] 【41909】
+【Một trường】 【42525】
+【Région】 【41827】
+【Khu ổ chuột】 【42493】
+[Sớm] [42251]
+【Yêu cầu】 【42051】
+[Đợi] [43091]
+【Chân đế】 【43777】
+[Mesozoic] [43275]
+【Túi may mắn】 【43845】
+【Tầm nhìn nước ngoài】 【42737】
+【Dự thảo】 【42735】
+【Tai nghe được】 【41951】
+[Phiên bản khu vực] [43221]
+【Cái khác】 【41629】
+[Mặc] [42111]
+[Biased] [42253]
+【Tám lần cắt】 【41997】
+【Tuổi】 【42435】
+【Cạnh lưỡi dao】 【43517】
+[Rẽ trái] 【42255】
+【Xoắn】 【41841】
+[Kiyomoto] [42205]
+【Mạch tích hợp cực lớn】 【41617】
+【Phát âm】 【43127】
+【Mặt trận crack】 【43079】
+【Cho nó】 【43699】
+【Thương lượng】 【42991】
+【Hai câu chuyện】 【41729】
+【Tính toán】 【42331】
+【Tiêu đề】 【42145】
+【Truncate】 【41285】
+【Một học kỳ】 【42527】
+【Một nhỏ nhỏ】 【42699】
+[Niềm tin] [41475]
+【】 Điểm 【42453】
+[Meiji] 【42443】
+[Hai tuần trước] [41539]
+【Chèn】 【42865】
+【Màu sắc】 【43049】
+[Viết đồ dùng] [42401]
+[Quen thuộc] 【41945】
+【Bộ màu đỏ】 【42241】
+【Quà tặng】 【42471】
+[Sorrow] [42811]
+【Tăng trưởng】 【42781】
+【Ngọn lửa thấp】 【42415】
+【Ngày qua ngày】 【42407】
+【Đông y】 【42611】
+【Quá nhiều] 【42295】
+【Cuộc thi Âm nhạc】 【42165】
+【Bóng chày chuyên nghiệp】 【42411】
+【Phương Đông】 【42701】
+[Không chấp thuận] 【42717】
+【Được xây dựng】 【41579】
+【Biến】 【41977】
+【Giá cao】 【42083】
+【Nhật Bản-Hàn Quốc】 【42383】
+【Khuyến khích】 【43391】
+【Các ngày lễ hàng tuần】 【42325】
+【Điền】 【41863】
+【Bảo hiểm tổng hợp】 【42617】
+【Dễ hiểu】 【42061】
+【Quen thuộc】 【42785】
+【Kỷ yếu】 【42349】
+【Biwa Lake】 【43155】
+【Trận phòng thủ】 【42413】
+【Bunkyo no shi】 【43185】
+【Negishi】 【43141】
+【Cùng một lúc】 [42299]
+【Bóng】 【43747】
+【楽 楽】 【42187】
+[Tiếp tục] [43019]
+【Kano】 【42797】
+【Quần đảo】 【41437】
+【Lái xe đủ】 【42787】
+【Không】 【42771】
+【Jujube】 【42747】
+【Búa】 【43165】
+[Một vài tháng] [41489]
+【Daikichi】 【43289】
+【Tắt】 【41745】
+【Tưởng niệm】 【42519】
+【Giống như vua】 【44091】
+[Chất hữu cơ] 【42451】
+【Tiết lộ】 【42813】
+【Tòa án âm nhạc】 【42193】
+[Wakaku] [42135]
+【Do Thái giáo】 【42511】
+【Tadashi】 【43313】
+[Seiza] [41513]
+【Quay lại】 【42767】
+【Ngay giữa】 【42543】
+【Kết thúc của Edo】 【42141】
+【Chính】 【42555】
+【Tiếp xúc】 【41993】
+【Lương hàng ngày】 【42385】
+【Trị liệu âm nhạc】 【42163】
+[Người cai trị chéo] [42263]
+【Lễ hội】 【42333】
+【Todoke】 【42729】
+[Utozawa] [42143]
+【Tiết kiệm】 【41623】
+【Moe màu】 【41975】
+[Màu đen tinh khiết] [41919]
+【Hyun】 【41485】
+【Treo】 【42795】
+【Folklore】 【41953】
+【Ngôn ngữ nói】 【42395】
+【Phá vỡ nó】 【42597】
+【Nhà của chúng tôi】 【42067】
+【Quyền lợi】 【42681】
+【Rust] 【42073】
+【Tự tin】 【42851】
+【Thuê】 【42309】
+【Kênh đào】 【43407】
+【Bột】 【43479】
+【Trước】 【42963】
+【Thác nước nữ】 【42269】
+【Nghỉ hưu】 【42019】
+【Dưới đáy】 【43415】
+[Cuộc sống] [42687]
+【Kyoya】 【42957】
+【Tại sao] 【42381】
+【Ngân sách】 【42079】
+[Tbsp] [41125]
+【Chào buổi sáng】 【42479】
+【Chú ý】 【42021】
+【Shogun] 【42639】
+【Tính đơn giản】 【42619】
+[Kim loại] [43065]
+【Văn phòng kỷ luật】 【43249】
+【Đũa dùng một lần】 【42087】
+【Xã hội theo chiều dọc】 【41585】
+【】 【Đứng 42887】
+【Kích thước trứng】 【43111】
+【Bàn】 【42265】
+【Bài phát biểu】 【42393】
+【Masters】 【42181】
+【】 Gần đó 【41917】
+【Phó Thủ tướng】 【43385】
+【Công cộng / Tư nhân】 【42609】
+【Con voi châu Phi】 【43123】
+【Nghe】 【42741】
+【Kết thúc】 【42419】
+【Nằm xuống, 【42303】
+【Theo như thế giới không tồn tại】 【42035】
+【Nhúng】 【42849】
+[Hình nón cắt ngắn] [43363]
+[Thay đổi ác ý] [42089]
+【Seki】 【42625】
+【Genji】 【42221】
+【Tổng cục】 【42279】
+[Frozen] 【41849】
+[Sửa đổi] 【41885】
+【Không ngủ sót】 【42467】
+【Mọi thứ】 【41717】
+[Cắt đột quỵ] [41713]
+【Sống】 【42377】
+【Cạnh tranh khốc liệt】 【42247】
+【Ở giữa】 【41923】
+【Ban chỉ đạo Hạ viện】 【42657】
+【Một chiếc cốc khác】 【41887】
+[Tuyên bố] [42829]
+[Xuống xe] [42837]
+【Tăng】 【43015】
+【Leo lên】 【42977】
+【Theo dõi】 【42989】
+【Ngọn lửa bên trong】 【42107】
+【Yinchu】 【42827】
+【Totami Tsubo】 【41757】
+【Ba người vay ba】 【41405】
+【Onishi】 【42651】
+【Hai ngày sau ngày mai】 【42015】
+[Yêu thích] 【41493】
+【Nhật Bản] 【42463】
+【Được rồi] 【42449】
+【Namida】 【42879】
+【Đường cong】 【41911】
+【Atsushi】 【42669】
+【Kakuuchi】 【42589】
+【Suikaku】 【43207】
+[Scratch] 【41463】
+【Tự hỗ trợ】 【42777】
+【Cơ quan phát triển không gian quốc gia】 【42547】
+【Cởi quần áo】 【42347】
+【Chuyển tiếp】 【42291】
+【Thế giới Shogi】 【42643】
+【Bắt buộc】 【42709】
+[Khắc] [43729]
+【Đã bao gồm thuế】 【41531】
+【Đường ống】 【42615】
+【Chuẩn bị】 【43063】
+【Người phương Tây】 【42305】
+【Dọc】 【42127】
+【Leo】 【42985】
+【Mỗi tuần】 【42095】
+【Gradient】 【42173】
+【Ban】 【42683】
+【Ryugaku】 【42429】
+[Đứng lên] [41583]
+[Bóng] [42557]
+【Ngói】 【42863】
+【Chuyển phát nhanh】 【42339】
+[Ho-ho] [43105]
+【Inanimate】 【42441】
+[Manshi] [41815]
+【Tuổi thọ】 【43259】
+【Phòng Kế hoạch】 【42633】
+【Uống nó】 【42535】
+【Trường hợp khẩn cấp】 【42663】
+[Mở trò chơi] [42485]
+【Waseda】 【42071】
+【Seiza】 【42831】
+【Mũi gió】 【41785】
+【Ran giết chết】 【41891】
+【Nhạc Baekje】 【42213】
+【Sóng điện từ】 【43309】
+【Cánh tay mở rộng】 【42259】
+【Người đàn ông lắc Wu】 【41961】
+【Quần áo nắng】 【41805】
+【Quyền thuê】 【43235】
+[Trưa và vẫn tối] 【42261】
+【Công ty Sou】 【41541】
+[Mặt khóc] 【42373】
+【Giọng nói đầu】 【42201】
+【Rogue】 【41271】
+【Mới hoàn thành】 【41739】
+【Bìa】 【43299】
+【Seiyu】 【42179】
+【Phần Oginji】 【42151】
+【裃】 【42125】
+[Nhật Bản] [41565]
+【Kho chứa than】 【43263】
+【Vẽ】 【42721】
+【Đài quan sát khí tượng khu vực】 【42613】
+[Đóng lại] [41681]
+【Ngủ】 【42409】
+[Natri sulfite] [43133]
+【Moby】 【42211】
+【】 【】 41831 thống nhất】
+【Numata】 【43681】
+【Nhạc phim】 【42147】
+[Hiệu suất] [42149]
+【Zul nghỉ】 【41511】
+【Hai điểm】 【42869】
+【Giáo Hội Âm Nhạc】 【42195】
+【Bản lề cửa】 【43793】
+[Tường băng] [43631]
+[True] [41473]
+【Giàu dưới vành】 【43351】
+【Riêng biệt】 【41889】
+【Cũng tốt] 【42457】
+【Kanji】 【42599】
+【Bên trong khu vườn】 【42553】
+【Thành công】 【42809】
+【Gaijin】 【42655】
+【Mật ong bao gồm】 【43045】
+【Triển vọng】 【42861】
+【Rơi】 【42873】
+【Lễ】 【42481】
+【Mảnh vỡ】 【42091】
+[Kiki] [42821]
+【Homecoming】 【42645】
+【Đang cố gắng tìm】 【43357】
+【Cánh đặc biệt】 【43575】
+【Chạy】 【42945】
+【Trong bệnh viện】 【42539】
+【Gọi】 【42917】
+【Đã bán hết】 【42607】
+[Thêm] [41397]
+[Tăng dần và giảm dần] [42929]
+【LDP】 【42219】
+【Bị đình chỉ】 【41611】
+【Hiệp ước】 【42725】
+[Hàng chục] [42379]
+【Bằng vũ lực】 【41597】
+【Nhạc cụ】 【42189】
+【Mực xóa】 【43651】
+【Mourning】 【42745】
+【Nhạc cụ】 【42177】
+【Sân nhanh】 【42661】
+【Chỗ ở】 【41689】
+【Grip】 【42123】
+【So sánh】 【41935】
+[Ban nhạc] [42271]
+【Ân huệ】 【42647】
+【Thuận lợi】 【42267】
+【Độc lập】 【43323】
+【Sống】 【42677】
+【Đêm】 【42033】
+[Tây Bắc Bắc] [41895]
+[Xuất hiện dũng cảm] [42003]
+【Phương pháp tiêu chuẩn】 【42635】
+[Sai lầm] 【42417】
+【20】 【41781】
+【Senjo】 【41523】
+【Nani】 【42233】
+【Bên trong] 【42627】
+【Tiền Mỹ】 【43149】
+[Ngủ ngon] [42389]
+【Giai điệu âm nhạc】 【42185】
+【Nghèo】 【41853】
+【Khủng hoảng tín dụng】 【42217】
+【Có thể thấy】 【42431】
+【Núi Hiraoka】 【43153】
+【Dù bạn làm gì】 【41715】
+[Hình bầu dục] [42345]
+【Majesty】 【42923】
+【Chính mình】 【42323】
+【Flyweight】 【42505】
+【Kích hoạt】 【42799】
+【】 【Thứ ba 43293】
+【Giữ trên] 【42315】
+【Chuyển phát nhanh】 【42341】
+【Cấp dưới】 【42713】
+【Thu hút】 【42403】
+[Tỉnh] [43945]
+【Biểu ngữ】 【42559】
+【Phòng Phát triển】 【42585】
+[Cảm giác đáng tin cậy] [42517]
+【】 【41983】 khác nhau
+【Ban】 【44185】
+【Ở】 【42891】
+【Thực hành】 【43273】
+【Tàn tích】 【41355】
+[Nỗ lực] [42175]
+【Tổng số tấm】 【41753】
+【】 【Sau chiến tranh 【42139】
+[Cánh tay trái] [42667]
+[Thay đổi nguyên tố] [41963]
+【Xuống trên mặt đất】 【43401】
+【Fuchu】 【42227】
+【Trừ】 【41663】
+【Căn hộ】 【42703】
+【Overweight】 【42293】
+【Mục】 【43077】
+[Giây phút đến ngày mai] [42319]
+[Bất cứ điều gì] 【42561】
+[Mang tôi] [42357]
+【Otaki】 【42273】
+【So sánh】 【41595】
+【Học viện】 【42483】
+【Nha khoa y khoa】 【42523】
+【Thư】 【42841】
+【Liệu pháp chữa trị】 【42649】
+【Số tiền tương tự】 【42103】
+【Sự thẩm vấn đáng ngờ】 【41865】
+【Nói】 【43051】
+【Lên máy bay】 【42711】
+【Đầu xuân】 【42335】
+【Thư viện nhạc】 【42159】
+【Tháo gỡ】 【42793】
+[Side-by-side] 【42465】
+【Đoàn thám hiểm】 【42499】
+【Mũi] 【41793】
+【Muromachi】 【42223】
+【Niềm vui】 【41465】
+【Một câu hỏi】 【42533】
+【Khoa Kỹ thuật】 【42317】
+【Meguya】 【41495】
+【Người cao tuổi】 【42565】
+【】 Tùy chọn 【43023】
+【Ryukoku】 【44443】
+【Vòng bi】 【42629】
+【Trái đất】 【43029】
+【】 Giao thông 【42979】
+【Lockdown】 【42937】
+【Mở】 【42789】
+[Chất vô cơ] [42439]
+【Giao hàng】 【42949】
+【Thủy sản】 【42329】
+【Bỏ phiếu】 【43883】
+【Tổ chức】 【41683】
+【】 【】 【42041】
+【Công ty】 【43055】
+[Modulus co giãn] [43301]
+[Vé trước] [41907]
+【Nhà bị bỏ hoang】 【43453】
+【Hy vọng】 【42715】
+【Cám gạo miso】 【43787】
+【Ngựa ngựa】 【41821】
+[Đóng cửa niêm phong] [42855]
+[Soba shop] [42343]
+[Sử dụng] [42101]
+【Một thế giới khác】 【42477】
+【Em bé rơi xuống】 【41901】
+【Retriever】 【42765】
+[Món quà] [42671]
+【Được rồi】 【42447】
+【Trở về】 【42825】
+[Sưng] [42719]
+【Điều chỉnh】 【42351】
+【Yuen】 【44065】
+【Hoàn thành ném】 【42605】
+【Đồng】 【43331】
+【Tự hướng dẫn】 【42779】
+【Breaking】 【42883】
+[Lắc mạnh] [42843]
+【Đặc biệt】 【41721】
+[Cá giấy] [41439]
+【Không có] 【42099】
+[Nhạc cụ] 【42171】
+【Để bóng râm】 【43653】
+【Đầu tôi đau】 【43139】
+[Sự oán giận] [42751]
+【Cuộc thi】 【42817】
+【Áo khoác】 【43853】
+[Khóc vào ban đêm] [42117]
+【Overdo】 【42475】
+【Bắn hạ】 【41711】
+【Tổng công ty trường】 【42591】
+【Khoa học y tế】 【42521】
+[Nấm thương hàn] [43217]
+[Maggot] 【41801】
+【Trao đổi văn hóa】 【43183】
+[Xử lý thuốc trừ sâu] [43025]
+【】 Đã ngồi】 【43211】
+[Làm đúng giờ] 【42421】
+【】 【Mạnh mẽ 42469】
+【Nghỉ hưu】 【42459】
+【Lincoln】 【43099】
+【Mỏng】 【42301】
+【Otome】 【41143】
+[Rất hiếm] [42695]
+【Tăng trưởng】 【42053】
+[Mỗi ngày] [41871]
+【Phạt cảnh cáo】 【42455】
+【Mua đô la】 【42503】
+【Không phận】 【42461】
+【】 【Nặng 41483】
+【Tỷ giá hối đoái Yên】 【42551】
+[Đã mượn] 【42753】
+【Cờ vua và Nữ tu】 【42641】
+【Tiếng nói của Trái đất】 【42199】
+【Cực Vault】 【43169】
+[Cắt hết] [41813]
+【Cảnh đêm】 【42119】
+【Live Alone】 【42531】
+[Cảm ơn bạn đã vinh dự] [43343]
+    
+

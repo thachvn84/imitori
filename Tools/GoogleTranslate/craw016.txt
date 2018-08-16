@@ -1,0 +1,2242 @@
+repl.it
+@anonymous/BriskGullibleAbstractions
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920212223242526272829303132333435
+
+const translate = require('google-translate-api');
+
+var fs = require("fs");
+var content = fs.readFileSync("retrans.txt", "utf8");
+
+translate("感じ", { from: 'ja', to: 'vi' }).then(res => {
+        console.log(res.text);
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.023s
+
+
+Repl.it: package installation success
+
+76823; 89626
+completed!----------------------------------
+=> undefined
+[phức tạp và tinh tế] 【88278】
+[thiết bị chăm sóc trẻ em] [89088]
+[bom lithium] 【78562】
+[đồ nội thất đơn vị] [78502]
+[Chủ nghĩa Manichae] [78418]
+[cartel trái phép, cartel trái phép] [78660]
+[hướng dẫn chương trình, hướng dẫn chương trình] [78316]
+[trục spline] [78016]
+[axit photphonic] [78364]
+[bài tập nhịp điệu] 【78560】
+[phản ứng nhiệt] [78106]
+[oxit cơ bản] [78940]
+[y học thể thao] [78026]
+[Perseus] 【78354】
+[radium spring] 【78536】
+[nhóm ketone] [77850]
+[Nội chiến Tây Ban Nha] 【78018】
+[in lụa màn hình] [77944]
+[phát thanh stereo] [77998]
+[Đám mây Magellanic] 【78408】
+[guanosine triphosphate, GTP] 【77826】
+[tội gián điệp] [78014]
+[hoạt động mẫn cảm] [79110]
+[bệnh lùn, lá quăn] 【78734】
+[độ cao phân tử] 【78492】
+[Centaurus, Centaur] [77862]
+[đơn vị nhập bằng giọng nói] [78982]
+[kinh tế vĩ mô] [78402]
+[nitrit kali] 【78620】
+[đèn halogen vonfram] 【78198】
+[xe hơi tự động, ô tô có hộp số tự động] [78182]
+[bọ cánh cứng] 【78846】
+[Thẩm mỹ Marxist] 【78426】
+[nhạc baroque] 【78208】
+[tuyết rơi bất ngờ] [79194]
+[luật không gian] 【78840】
+[Cúm Tây Ban Nha, cúm Tây Ban Nha] 【78020】
+[Cuộc cách mạng Copernicus] 【77882】
+[titan trắng] [78088]
+[tái kỹ thuật] [77308]
+[mangan nodule] [78438]
+[Bề mặt Fermi] [78270]
+[trung học cơ sở] 【77974】
+[kali cromat] 【77820】
+[nguyên tắc chi phí đầy đủ] [78286]
+[da dê] 【78496】
+[rang trong wrapper lá, thực phẩm rang bọc trong lá] [78358]
+[U lympho Hodgkin, bệnh Hodgkin] [78360]
+[bảng cân đối dùng thử hàng ngày] [77048]
+[Định lý Pascal] [78212]
+[tổ chức lãnh đạo, tổ chức lãnh đạo] [78552]
+[tính cách cuồng loạn] [78230]
+[thức dậy] [77108]
+[brooding] [78764]
+[bị kích thích] [79156]
+[trà hoa nhài] 【77960】
+[Chuyển động Brown] [78298]
+[đến một sự hiểu biết lẫn nhau, hủy bỏ lẫn nhau] [79218]
+[nhảy trượt tuyết] 【77962】
+[viêm phổi mycoplasma] [78398]
+[Dầu đỏ Thổ Nhĩ Kỳ] 【78590】
+[Delftware] [78126]
+[chiến lược xoay] [77982]
+[polyvinyl axetat, PVAC] [78388]
+[nipa palm] 【78164】
+[Ichthyol, ichthammol] [77412]
+[sodium cyclamate] [77932]
+[đặt trên phanh, dừng lại] 【78302】
+[misgared miso] [76932]
+[Percheron] 【78352】
+[Nhà thờ Coptic] 【77880】
+[phân số mol] [78494]
+[Malthusianism] 【78428】
+[cơ thể racemic] 【78538】
+[chế độ độc tài vô sản] [78328]
+[kim loại vô định hình] [77548]
+[cụm hoa ly tâm] [78916]
+[hợp kim magiê] 【78404】
+[Vấn đề của Fermat] [78268]
+[Thiết bị Josephson] [77978]
+[axit monocarboxylic] [78482]
+[Chủ nghĩa Mác-Lênin] [78422]
+[sợi triacetate, sợi triacetate] [78134]
+[cọ cọ khô] 【78546】
+[gạch chamotte] 【77942】
+[ma trận cơ học] [78416]
+[Nguyên tắc trả tiền ô nhiễm, PPP] 【78954】
+[xuất hiện trên sân khấu, nằm trong ánh đèn sân khấu] 【78276】
+[axit uronic] [77666]
+[Lực lượng Coulomb] [77804]
+[liệu pháp hormon] 【78366】
+[khảm thuốc lá] 【78068】
+[bão trong một tách trà] 【77876】
+[mũ panama] 【78214】
+[chim ưng] 【78642】
+[Hằng số Boltzmann] 【78380】
+[nhóm carboxyl] [77740]
+[axit thiocyanic] [78082]
+[đường giao nhau giữa hai dòng hải lưu, dòng nơi hai dòng đại dương gặp nhau, tất nhiên, điểm quay] [77010]
+[xe pallet] 【78226】
+[ngư lôi] 【78356】
+[bom plutonium] 【78314】
+[thùng bia] 【78242】
+[xuất khẩu chìa khóa trao tay] 【78062】
+[tên công ty với dòng chữ "kabushiki kaisha" ở cuối] [88844]
+[nhiễm virus chậm] [78036]
+[bệnh dịch tả] [79054]
+[Soapberry Ấn Độ, soapberry Trung Quốc, hạt dẻ, cây xà phòng] [77104]
+[tiền gửi biển] [79266]
+[tàu vít] [77988]
+[năng lượng tiềm năng] [78668]
+[hypanthium] 【78826】
+[hình xuyến rắn] 【78902】
+[Máy Jacquard] [77956]
+[tăng giá siêu việt] [78680]
+[Tụng kinh Gregorian] 【77846】
+[Bộ Nội vụ và Truyền thông] [79640]
+[axit malonic] [78432]
+[bốn quy tắc số học] [76842]
+[chất sắt từ] [78264]
+[vi khuẩn nitrit] 【78622】
+[báo mèo] [78336]
+[Ngôn ngữ lãng mạn] 【78606】
+[trọng lượng rơm] [78006]
+[Giáo hội Anh giáo] 【77592】
+[Gulf Stream] 【78456】
+[tâm lý bất thường] [78696]
+[Con lắc của Foucault] 【78252】
+[bàn ăn thấp, bàn trà] [76990]
+[dạng quạt] [76944]
+[Hạt dẻ châu Âu] 【78512】
+[sinh viên tham dự các bài giảng] 【79768】
+[các nguyên tố gia đình halogen] [78196]
+[tàu đẩy phản lực] [77950]
+[Wildcat hoang dã, wildcat châu Phi] 【78566】
+[kubinage, cổ ném] 【76880】
+[ảnh nude] 【78178】
+[dầu oxit kẽm] [78094]
+[bệnh bạch cầu lymphocytic] [78572]
+[Sinn Fein] 【77946】
+[số điện thoại chính, số điện thoại chính] [76982]
+[văn hóa sân thượng] 【78104】
+[axit lauric] [78534]
+[sứ titan] 【78086】
+[lý thuyết số lượng tiền] [79172]
+[ánh sáng welterweight] 【78526】
+[quả bom thông minh] [78030]
+[axit dicarboxylic] [77952]
+[câu chuyện huyền thoại anh hùng, truyền thuyết về anh hùng] [78890]
+[muỗi sốt rét] 【78420】
+[chó tốt] [77208]
+[Nhóm Trojan] 【78144】
+[len merino] 【78472】
+[Nhà thờ Methodist] [78460]
+[axit barbituric] [78206]
+[một công ty] 【78788】
+[nhóm sulfo] [78034]
+[sóng vô tuyến vũ trụ] [78836]
+[bạo lực trong một giáo phái, xung đột nội bộ] [77044]
+[Số Mach] [78412]
+[thiết bị hi-fi] [78186]
+[Rượu Madeira] 【78414】
+[chủ nghĩa quốc tế vô sản] 【78326】
+[Luật của Bode] 【78368】
+[Ngôn ngữ Á-Âu] [77478]
+[thái độ đối đầu] 【87750】
+[kéo dây, kéo dây] [78818]
+[số dư tài khoản chuyển khoản] 【78706】
+[cây coca] [77870]
+[axit photphoic] [78362]
+[Kinh tế học Marx] [78424]
+[mùi hương kéo dài] [76840]
+[nhà máy bãi biển] [79288]
+[triệt để] 【77030】
+[niềm tin đầu tư mở] [77244]
+[khối đất ổn định] 【78656】
+[bài tập trị liệu] 【78870】
+[đánh bắt cá] 【78142】
+[Hebrew] 【78330】
+[Hộp mực] [76866]
+[miễn dịch cấy ghép] [78704]
+[Máy kéo] [78090]
+[giao dịch đóng dấu] [77992]
+[bom napalm] 【78160】
+[dầu cây rum] [77912]
+[biodiesel] [80432]
+[cá heo sông] [79082]
+[Giáo hội cải cách] [79240]
+[nhóm nitroso] 【78168】
+[cân bằng đồ chơi] [77114]
+[quyền truyền tải công cộng] [79998]
+[amoni clorua] [78922]
+[chai mực] [77414]
+[hệ thống thang trượt] [78032]
+[liếc nhìn một cách nhanh chóng] 【88204】
+[Giờ chuẩn Greenwich] [77840]
+[câu lạc bộ phóng viên nước ngoài] [79394]
+[Biến Cepheid] [77854]
+[giấy ngà] 【77476】
+[tím sâu] 【78228】
+[Hình tượng Lissajous] 【78558】
+[Celtic] 【77860】
+[Châu Phi Lục địa] 【77362】
+[Luật của Hubble] 【78192】
+[sợi polyester, sợi polyester] [78386]
+[đến với một giác quan] 【78638】
+[thép niken] 【78162】
+[luật tích cực] [76864]
+[cảm thấy mũ] 【78052】
+[hồ chứa magma] 【78406】
+[trao đổi kết hôn] 【78686】
+[tài khoản chẵn lẻ] 【78222】
+[chu kỳ axit tricarboxylic, chu trình TCA] [78136]
+[iguana biển] 【79246】
+[khu định cư có tường bao quanh, thị trấn có tường bao quanh] [78674]
+[quỹ tin tưởng] [77290]
+[nhạc gypsy] 【77954】
+[dây thêu] [77868]
+[phá vỡ băng, vú băng] 【78102】
+[danh mục bán lẻ, danh mục bán lẻ] [77724]
+[nghệ thuật trừu tượng] [77364]
+[quyền phân phối] [80002]
+[Linkweed Nhật Bản] 【77006】
+[chuông đất nung] 【77200】
+[ngày cố định] [79456]
+[Alpen] 【77384】
+[thanh sắt] [77146]
+[Aztec] 【77486】
+[crinum] [77070]
+[súng hơi, súng hơi cay] [77758]
+[xã hội không tổng hợp] [78044]
+[Nền văn minh Indus] [77424]
+[dệt hoa] [77958]
+[bên dưới số thập phân, không có tài khoản] [77902]
+[sông, sông] [76942]
+[quả bóng cao su] [77906]
+[axit dehydrocholic] [78112]
+[bảo hiểm hàng hóa] [78864]
+[axit dehydroacetic] [78114]
+[phim khiêu dâm, phim xanh] [78392]
+[kỳ lạ] 【78692】
+[Đường Appian] 【77496】
+[liệu pháp xạ trị cobalt] [77878]
+[junior welterweight] [77964]
+[Hiệu ứng Mössbauer, không phát huỳnh quang cộng hưởng hạt nhân] [78458]
+[quảng cáo nhiều] [78430]
+[vệ tinh trinh sát] 【78012】
+[mận châu Âu chung] 【78516】
+[mặt đất] [77190]
+[tâm lý học cá nhân] [78132]
+[phân chia heterotypic] [78690]
+[bột nền, bột rời] [79900]
+[nhóm phenyl] [78258]
+[Kính thiên văn Keplerian] 【77858】
+[sinh sản thực vật] [78878]
+[xắt nhỏ cá, sò ốc hoặc rau, mặc sốt] 【77148】
+[sodium hydrogen sulfite] [78630]
+[nhựa methacrylic] [78464]
+[cơ quan thực vật] 【78876】
+[mì ăn liền] 【78008】
+[muối diazonium] [77948]
+[bị đốt cháy thành đống tro tàn, không có gì] 【78844】
+[tên thương hiệu] [78452]
+[thuốc nhuộm cơ bản] [78942]
+[thanh sô cô la] [77064]
+[khối lượng phân tử] 【78488】
+[axit sorbic] [78058]
+[cảm giác ấm áp] 【78976】
+[hào quang thiên văn] [77218]
+[quả bóng cao su] [77908]
+[tiếng nói chung] [78798]
+[quy mô sáp đỏ] [78574]
+[Hành động có chức năng lợi ích của kẻ thù] [77134]
+[hệ thống hồ bơi] [78306]
+[nhiễm trichomoniasis âm đạo] [78138]
+[cảm biến rò rỉ gas] [77768]
+[ánh sáng trung bình] [78530]
+[bảo hiểm tài trợ giáo dục] [79488]
+[junior featherweight] [77968]
+[micro-ampere mét] [78396]
+[thương mại được kiểm soát, thương mại do chính phủ quản lý] [79630]
+[bia nhẹ] 【79714】
+[đa hình] [79964]
+[Thiên hà Seyfert] [78040]
+[đường cát] 【77828】
+[tài chính cổ phần] [77242]
+[axit linolenic] [78564]
+[sóng xung] 【78224】
+[thủy ngân clorua] 【78934】
+[ngành công nghiệp kiềm] 【78048】
+[Điều lệ của UNESCO] 【78506】
+[độ phân giải chiral, độ phân giải quang học, độ phân giải racemic] [78540]
+[lớp phổ] [78024]
+[Ionium] 【77402】
+[Báo Trung Quốc] [79162]
+[thần kinh sản, loạn thần kinh sản khoa] 【78762】
+[thương hiệu] [78300]
+[dạng sonata] [78050]
+[Nguyên tắc của Fermat] [78266]
+[vật liệu mồi] [79088]
+[giảm số tiền thuế nước ngoài] [79378]
+[cào cắn, nhai nhai] 【78852】
+[bệnh dịch hạch] 【78346】
+[pha nhật thực] [76914]
+[kinh doanh may mặc] [77510]
+[nền kinh tế bong bóng] [77460]
+[soused cá thu] 【77018】
+[nói trong một vòng - về cách, đệm đòn] 【77698】
+[cây tro] [76928]
+[Luật Phục hồi Dân sự] 【77456】
+[sốt xuất huyết] 【78128】
+[cá mập xanh] 【78644】
+[Món bánh] [79164]
+[ném cánh tay, ném cánh tay] [76902]
+[giao dịch hoán đổi, giao dịch hoán đổi] [77264]
+[xâm phạm bờ biển] [79262]
+[thủng dạ dày, thủng dạ dày] [78728]
+[kính thiên văn vũ trụ] [77256]
+[khối không khí cực] [79560]
+[không có hit] 【77100】
+[tuabin nước cánh quạt] 【78320】
+[Manx cat] [78440]
+[phương pháp cắt rãnh] [78140]
+[creatine phosphate] [77808]
+[sô cô la nâu] [78092]
+[thuốc nhuộm tar] [78060]
+[cân nặng cơ sở] [77970]
+[hành lang trụ cột] [77008]
+[cua ếch đỏ] 【78640】
+[chăn mền mùa hè] 【79050】
+[đồ nội thất bằng thép] 【77994】
+[sóng tần số cực cao, EHF] 【78446】
+[Con voi Ấn Độ, voi châu Á] 【77648】
+[nhựa phenol] [78260]
+[sóng trung tâm] [78042]
+[tin xấu đi nhanh] 【78636】
+[liều thuốc chỉ được dùng một lần] [77040]
+[thống kê lưới] [78470]
+[Mèo Xiêm] [77940]
+[đồng beryllium] [78334]
+[Hiến chương Olympic] 【77712】
+[trở nên rộng hơn] [79828]
+[khu vực dưới đồi] [78614]
+[giấy coban clorua] [78930]
+[khá hơn, hơi ngắn] [76998]
+[vũ khí laser năng lượng cao] [78582]
+[hóa thạch nhân tạo] [79012]
+[trực khuẩn phó thương hàn] [78216]
+[sốt pharyngoconjunctival] 【78308】
+[phụ nữ cằn cỗi, phụ nữ vô trùng] [76834]
+[Neuro-computer] [77278]
+[rừng thường xanh] [76910]
+[xe điện diesel] 【78110】
+[Hội chứng hacker] 【78190】
+[mua bán ký gửi] [78676]
+[leo núi, đi bộ đường dài] [76830]
+[ô nhiễm chì] [78918]
+[hươu hoang] 【78254】
+[Ấn Độ giáo] 【78232】
+[lenticularis] [78588]
+[Chữ số La Mã] 【78594】
+[tin tưởng đầu tư loại đơn vị] [78504]
+[điểm phân biệt] 【80016】
+[Sao chổi của Halley] 【78194】
+[năng lượng ion hóa, năng lượng ion hóa] [77612]
+[tiếng chim bồ câu guillemot] [79286]
+[axit terephthalic] [78108]
+[Kỹ thuật Delphi] [78124]
+[bàn ủi] 【77344】
+[clubroom] 【77074】
+[hộp số tự động] [77686]
+[tranh chấp trong nước, rắc rối gia đình] 【79064】
+[tiểu thuyết đầu tiên] [77410]
+[Viện Y tế Quốc gia] [77324]
+[chú ý, thận trọng] [79712]
+[sợi acetate, sợi axetat] [77492]
+[subletting và subleasing] [77022]
+[địa chất tàu ngầm] [79318]
+[kiện tụng liên quan đến trạng thái cá nhân] [79926]
+[tỷ giá hối đoái của đồng đô la] 【78156】
+[nhận được một rakeoff, có được một cú đá, lấy một cú đá] 【78250】
+[Trung bình Dow-Jones] [78076]
+[flavin enzyme, flavoenzyme] [78280]
+[gió mùa xuân kể về những bông hoa] [79132]
+[đô la rẻ tiền] 【78150】
+[sát thủ vệ tinh] 【77782】
+[hệ thống nhận đa dạng] [78072]
+[Chỉ số Laspeyres] 【77306】
+[đền bù cho gia đình bị bỏ hoang] 【78742】
+[Thiên hà Andromeda] 【77602】
+[Thỏ Angora] 【77594】
+[liên minh tiền tệ] [79174]
+[bảo đảm khoản vay, trái phiếu có bảo đảm] 【77320】
+[nguyên âm ngắn] 【80092】
+[phương pháp đánh cá acoustic] [78978]
+[thực phẩm kiềm] [77566]
+[alto saxophone] 【77382】
+[Sói Tasmania] 【78066】
+[vụ nổ núi lửa] [79100]
+[quảng cáo hình ảnh] [77630]
+[hoạt động phân số] [78278]
+[penciling lông mày] [79206]
+[Đại sứ lưu động] 【78710】
+[Phản ứng của Fehling] [78256]
+[cây mạch máu] [78716]
+[cây làm vườn] 【78906】
+[thép gọng] 【78570】
+[Thần thoại La Mã, huyền thoại La Mã] 【78592】
+[vải căng] [78002]
+[axit salicylic] [77916]
+[rượu gas] 【77752】
+[sư đoàn jonidan] 【76898】
+[tsetse bay] 【78100】
+[hợp chất nitro] [78170]
+[từ tốt nhất đến tồi tệ nhất, từ trên xuống dưới, mọi loại, tất cả các loại] 【78248】
+[truyền hình kết hợp và máy quay video] [79912]
+[Phép chiếu của Mercator] 【78474】
+[thủy ngân cyanide] 【77928】
+[Tango Argentina] 【77380】
+[highlight halftone] [78188]
+[Điếc streptomycin] [78004]
+[nakamise, cửa hàng lót một lối đi trong các khu của một ngôi đền Shinto] [77004]
+[nguyên tắc niềm vui] [79232]
+[bỏng lớn hoặc bỏng] [79796]
+[đài phát thanh hoặc chương trình truyền hình phát sóng trong cùng một khoảng thời gian trên tất cả hoặc hầu hết các ngày] [76970]
+[nhôm anodized), nhôm anot hóa] [77388]
+[mì ăn liền, mì Trung Quốc trước] [77418]
+[trường học] 【79486】
+[đăng ký gia súc] [79058]
+[xe ngựa] 【78374】
+[cơ chế giá] [79024]
+[người chưa lập gia đình] [77032]
+[khí hậu ven biển, khí hậu duyên hải] [79250]
+[ngộ độc rượu methyl] [78468]
+[phương pháp bể phốt] [78038]
+[liệu pháp gia đình] [79056]
+[sinh viên năm thứ tư] [76844]
+[Khí cầu Zeppelin] 【78098】
+[Cá sấu sông Nile] 【78158】
+[sinus gland] 【77910】
+[hệ thống ký quỹ] 【78116】
+[miso nâu nhạt] [77060]
+[axit glucuronic] [77842]
+[trả tiền ra khỏi túi của chính mình] [79236]
+"Sinh học" [79822]
+[đối số vũ trụ] [78842]
+[mực in] [78812]
+[tuyến apocrine] [77522]
+[Cặp song sinh Xiêm] 【77938】
+[axit glutamic] [77844]
+[tôn giáo bí truyền] [77066]
+[Vượt qua] 【79176】
+[hemoglobinopathy] 【78694】
+[xây dựng khung gỗ] [78096]
+[Ống Eustachian] [77670]
+[công thức phản ứng] [79004]
+[trứng khảm] 【78480】
+[este phthalate] [78274]
+[giá rẻ đặc biệt] 【76974】
+[bút viên] [79880]
+[cybercop] [80302]
+[bài hát bawdy, bài hát dâm dục, bài hát khiêu dâm] 【76888】
+[nước cứng vĩnh viễn] 【78882】
+[amoni molybdate] [78484]
+[Cửa sổ kiểu Pháp] [78284]
+[Hội chứng Down] [78074]
+[sàn vinyl] [78238]
+[sự chiếm đoạt gian lận] [78958]
+[hiện tượng bánh rán] [78148]
+[sắt clorua] 【78936】
+[lý thuyết lựa chọn dòng vô tính] [77814]
+[đường ray được để lại bởi các phương tiện đã đi trước đó trước đây] [76948]
+[cà phê arabica] 【77556】
+[giày trượt] 【77990】
+[nhóm amin] [77534]
+[ảnh đương thời] [77900]
+[tài liệu dùng để cắm hoa] [79128]
+[Tinh vân Orion] 【77708】
+[che lấy mu bàn tay và cổ tay] [76876]
+[mất điều khiển động cơ] [78866]
+[xuất khẩu nhà máy sản xuất] [77298]
+[thuốc phiện, thuốc phiện] 【77366】
+[liên quan đến ai đó bằng máu] 【78914】
+[Câu lạc bộ Paris] 【77286】
+[ngành công nghiệp cưới] [78296]
+[Tiếng Anh Anh] 【77404】
+[khối bê tông] 【78304】
+[Gấu đen Mỹ] [77542]
+[theo dõi nhanh] [77288]
+[lý thuyết đối lưu mantle] [78442]
+[luật chống ma quỷ] [77282]
+[corpus allatum] [77554]
+[Định lý Euler] [77694]
+[đường hầm dưới đáy biển] [79278]
+[những cơn gió quanh những tòa nhà cao tầng] [79978]
+[Mặt trăng Galilean, vệ tinh Galilean] 【77774】
+[trọng lượng nhẹ] 【78528】
+[junior lightweight] 【77976】
+[chơi đạo đức, chơi ngụ ngôn] [79692]
+[tinh vân khí] [77760]
+[cá voi minke, cá voi có đuôi] 【78448】
+[eggcase của argonaut lớn hơn, argonaut lớn hơn] [78632]
+[khí hậu gió mùa] 【78498】
+[Ý] 【77626】
+[ngoại giao đô la] 【78152】
+[Wildcat hoang dã] 【78514】
+[cây hoa] [79140]
+[tài chính quy mô nhỏ] [77310]
+[phản ứng iodoform] [78508]
+[bột giấy sulfite] 【78628】
+[cuộc cách mạng vô sản] [78324]
+[dao nhà bếp cho sashimi] 【77212】
+[cormorant không bay, Galormagos cormorant] [77772]
+[hệ thống thực tập] [77422]
+[xử lý thời gian thực] [78556]
+[giao hàng bất thường] [78702]
+[ô giấy] [78342]
+[Hiệu ứng Cherenkov] 【78080】
+[sau khi niềm vui đến đau đớn, không có niềm vui mà không đau đớn, không có hoa hồng mà không có gai, lấy cái tốt với cái xấu] [79490]
+[tủ quần áo cỡ nhỏ] [78332]
+[Afrikaans] 【77518】
+[amoni clorua] [78928]
+[Luật của Stokes] 【78000】
+[không nợ quốc gia] [77268]
+[tốc độ rất chậm] 【77206】
+[ngộ độc thực phẩm salmonella] [77920]
+[đột nhiên ra khỏi hư không] [79858]
+[căn cứ đánh thuế] [79170]
+[một cái gì đó nổi tiếng trên toàn thế giới] [79886]
+[Bò đực Mỹ] 【77180】
+[luật bảo toàn động lượng] [78872]
+[hệ thống lớp] [79358]
+[phân cực quay, phân cực quay] [79226]
+[cỏ tre] 【77186】
+[Citron Trung Quốc] 【79044】
+[tái tổ hợp gen, biến đổi gen, GM] 【78746】
+[lacework] 【78584】
+[Lamarckism] 【78548】
+[thiên văn học neutrino] 【78176】
+[Giáo hội Chính thống Hy Lạp] 【77796】
+[mí mắt duy nhất, mí mắt với nếp gấp epicanthic, mí mắt trên không có nếp gấp] 【78786】
+[kính hiển vi ion] [77618]
+"Siee" [80040]
+[Maori] 【78400】
+[tế bào khô mangan] [78434]
+[hoạt động tình nguyện, tình nguyện] 【78378】
+[tiến hóa hóa học] [78996]
+[cuộc cách mạng lâu dài] [78880]
+[chu kỳ glyoxylate] [77838]
+[ruột] [77028]
+[sự khác biệt trong chiến thắng] 【76900】
+[gelada, gelada baboon] 【77866】
+[tâm trạng âm nhạc] 【78450】
+[cuộc biểu tình diễu hành] 【78118】
+[một phần của một tòa nhà nơi nước được lưu thông, khu vực ẩm ướt] [80094]
+[độ nhạy màu, độ nhạy màu] [79592]
+[Cây anh túc California] [79138]
+[lịch trình nhượng bộ] [79678]
+[Aberdeen Angus] 【77508】
+[cuốn sách được in riêng tư, ấn bản riêng] [76852]
+[tuyết biển] [79268]
+[cách làm] 【78688】
+[hạt nhân ống phấn] [79142]
+[phẫu thuật ngày, thủ tục ban ngày] [79954]
+[ngữ nghĩa chung] 【78792】
+[tit khác nhau] 【76826】
+[tổ của riêng mình] [79238]
+[một cách giữ, cách giữ] [76860]
+[axit cacboxylic] [77746]
+[quá trình soda amoni clorua] [78924]
+[viscose rayon] 【78236】
+[biến ngưng tụ] [79040]
+[bóng vít] 【78372】
+[cầu cứng nhắc] 【78518】
+[stereo-nhiếp ảnh] [77996]
+[tọa độ ecliptic] [78968]
+[quả bom] 【78370】
+[axit thiosulphuric, axit thiosulfuric] [78084]
+[lý thuyết động lực học] [78070]
+[nút chai cambium] [77888]
+[junior nặng] 【77972】
+[Huy chương danh dự với dải ruy băng màu tím] 【76854】
+[địa hình tàu ngầm] [79284]
+[nhóm vinyl] [78240]
+[mất ý thức] [78684]
+[cắt nút Gordian] [79234]
+[bài phát biểu tuyên truyền, bài phát biểu viêm] 【77354】
+[anticyclon lạnh] [79566]
+[axit metacrylic] [78462]
+[sốt pharyngoconjunctival] 【78816】
+[Số Köchel] [77848]
+[ngành công nghiệp cho thuê] [78550]
+[cụm chuyển động] 【78868】
+[sea hare] 【78854】
+[chất bán dẫn phức hợp] [79008]
+[cải tiến lửa] [79538]
+[rối loạn ý thức] [78682]
+[hỏi hoặc đặt một câu hỏi, đặt câu hỏi] [77458]
+[mặt trước núi lửa] 【79096】
+[Aramaic] 【77562】
+[siêu nặng] [77980]
+[nhảy thực hành] [76856]
+[không phải cá và gà, khó dự đoán] [79244]
+[sash roller] [79500]
+[dòng máy bay phản lực phía trước cực] [79562]
+[đài thiên văn corona] [77896]
+[quan sát đại dương] [79306]
+[hoạt động bỏ qua] [78200]
+[đài phát thanh nghiệp dư] [77530]
+[nhóm butyl] [78294]
+[Thứ Hai đen] 【77296】
+[thanh toán quá nhiều, trả quá nhiều] [79190]
+[Aryan] 【77468】
+[axit ketonic] [77852]
+[vỏ rễ hoa mẫu đơn] 【78972】
+[cổ phần chéo] [79524]
+[hồ caldera] 【77736】
+[màu khóa, màu nền] 【78986】
+[khảo sát hình ảnh] [77632]
+[chim ưng vàng] 【78962】
+[trái tim của vận động viên] 【78028】
+[chẩn đoán hình ảnh] [79204]
+[kế toán lạm phát] [77656]
+[có cả ngoại hình và chất, là một người từ bi và chỉ là người, thú vị và có tính hướng dẫn] [79118]
+[bẫy chụp] [78130]
+[thiên văn học vị trí] [78670]
+[tuabin bơm ngược] [78394]
+[bác sĩ phẫu thuật cây] [77444]
+[người tiêu dùng chính] 【78780】
+[Hội chứng Adams-Stokes] [77494]
+[triết lý khoa học] 【79078】
+[bảo vệ chống lại thủy triều] [77090]
+[bảng tổng đài] [77818]
+[liệu pháp laser] [78580]
+[tâm trí ích kỷ] [79198]
+[Mauser rifle] 【78476】
+[quần áo tồi tàn và thức ăn đơn giản] [78634]
+[Đế quốc Anh] 【77622】
+[thước kẻ uốn] 【77718】
+[mô nút chai, phellem] [77890]
+[chưa đầy một tuổi] [78046]
+[nhóm nitro] 【78172】
+[nguyên tắc vũ trụ] [78828]
+[vật liệu núi lửa, vật liệu pyroclastic] [79094]
+[sơ đồ hoa] [79130]
+[grated yam] 【76896】
+[hormone luteotropic] 【78966】
+[cần cẩu đăng quang] [79552]
+[Yiddish] 【77628】
+[ví dụ mới] [76922]
+[tăng bùng nổ, bùng nổ hoặc bùng phát sâu bệnh] [76988]
+[muối] 【78952】
+[dòng khí đi xuống] [78988]
+[nhiễm trùng truyền qua vật nuôi] [78348]
+[cảnh tối] [77126]
+[plover trên bãi biển, plovers gần bờ] [77068]
+[ban nhạc xoắn ốc] [78010]
+[gram vết] [77834]
+[vật lý hóa học] [79006]
+[amyl nitrit] [78616]
+[thép vanadi] 【78204】
+[đẩy xuống bằng cách dựa vào] [77132]
+[phim dưới lòng đất] [77390]
+[giảm xuống mực nước biển trung bình] [79294]
+[say tàu xe] [79032]
+[lúa giống] 【76878】
+[inkstone] [77184]
+[Lý thuyết Galois] 【77778】
+[lá ghép hợp kim] [78848]
+[giấy không carbon] [78180]
+[Ả Rập] 【77376】
+[bạc cyanide] 【77926】
+[kính hiển vi tương phản pha] [78664]
+[bão sấm sét] [78860]
+[câu cá biển] [79276]
+[thanh khoản dư thừa] [79186]
+[súng núi] [76832]
+[whisk tre] 【77220】
+[viêm miệng aphthosa] [77516]
+[Cơ quan dịch vụ tài chính] [79658]
+[cánh quạt sân thay đổi] [79042]
+[sáu ngày một tuần] [79946]
+[Lục địa Mỹ, châu Mỹ] [77374]
+[một ngày một tuần] [79936]
+[Tây Ban Nha-Nhật Bản] 【79930】
+[nông nghiệp cắt giảm và đốt] [79114]
+[khoanh tay] [77156]
+[greylag goose đông] [79330]
+[potash feldspar] 【77734】
+[Athens] 【77358】
+[máy nén khí] [78648]
+[Trâu Ấn Độ] [77650]
+[cây mận mùa đông có hoa đỏ] [79558]
+[tài khoản của chính mình, một tài khoản đã nhận được từ ai đó ngay từ đầu] [77016]
+[dan rank, hạng cao cấp, đai đen] [77000]
+[soda kem, soda kem] [77338]
+[vải đàn hồi] [77682]
+[cell tiêu chuẩn cadmium] [77728]
+[ascomycete, sac fungus] [76850]
+[con gái thứ tư sinh ra] [79732]
+[Nhà thờ Tin Lành] 【78318】
+[Clostridium botulinum] 【78376】
+[Tâm lý học Gestalt] [77864]
+[Bệnh Crohn] [77816]
+[Tiếng Hindi] 【78234】
+[dạ dày] 【78722】
+[clorua magiê] 【78932】
+[xử lý bằng tia nước] [78898]
+[điểm được phân bổ cho một điểm, đạt được] [76858]
+[hiệu ứng đòn bẩy] [77316]
+[điện trở rắn] [78056]
+[quân đội và hải quân] [77136]
+[hiệu ứng boomerang] 【78292】
+[giải pháp cresol saponated] [77810]
+[quyền trưởng tộc] [79060]
+[ngân hàng gen] 【78744】
+[psilocybin] [80316]
+[fissure phun trào] [79496]
+[giao điểm tranh giành, tranh giành người đi bộ, X-crossing, băng qua đường chéo] [77986]
+[hai tờ] [77046]
+[chiếc lược rộng răng] [79216]
+[khảo sát câu hỏi] [77394]
+[góc chung] 【78794】
+[Ghép ghép] [79212]
+[bom khí] 【77762】
+[garter stitch] 【77748】
+[năm ngày một tuần] [79944]
+[con gái thứ hai] [79734]
+[gia tộc địa phương mạnh mẽ] 【77196】
+[yêu nhau, yêu thương nhau, quan hệ tình dục, làm tình] [79818]
+[viết bởi người chết] 【78750】
+[Nhà Windsor] [77658]
+[ngộ độc crom] [77822]
+[chụp xiên] [77984]
+[thị trường nước ngoài] 【77246】
+[Tinea translucens] 【78736】
+[tái chế nhiên liệu hạt nhân] [79446]
+[axit pyrophosphoric] [78246]
+[nhịp sinh học] [79416]
+[enzyme thủy phân] [79030]
+[tự giải nén] [79966]
+[năng lực tâm thần] [78678]
+[Oort đám mây] 【77692】
+[Cây xương rồng Giáng sinh, xương rồng cua] [79166]
+[bắc fulmar] 【78288】
+[ủng cao su] [77904]
+[trao đổi khí] 【77756】
+[cuộc đua vượt rào] 【78184】
+[ván ép in] [78312]
+[mỹ phẩm] [79766]
+[đồ nội thất mây] 【78542】
+[kiểm tra đồng vị] [77472]
+[cơ học ứng dụng] [78956]
+[sao neutrino] [78174]
+[tầng lớp sừng, lớp sừng, lớp cornified] [79462]
+[dụng cụ sậy] 【78554】
+[thuyền cứu hộ] 【77918】
+[sợi cashmere] 【77722】
+[tác nhân alkyl hóa] [77578]
+[cảm thấy nhẹ nhõm, cảm thấy hạnh phúc sau khi đã được thuyên giảm trách nhiệm, được giải thoát khỏi trách nhiệm] [79158]
+[truy cập tối thiểu] [77302]
+[kali cyanide] [77924]
+[nhựa alkyd] [77572]
+[thuyền cánh quạt không khí] 【78322】
+[điều hướng omega] [77702]
+[điều trị chỉnh hình] [79824]
+[phát hiện tội phạm khoa học, điều tra pháp y] [79076]
+[ẩm thực với hải sản tươi sống] [79270]
+[Trò chơi Châu Á] 【77348】
+[chứng khoán có lãi suất cố định] [79458]
+[lily vàng tia] [76828]
+[tôm hùm, mysid] [76912]
+[chim bồ câu trong nước, chim bồ câu hoang dã] 【77198】
+[bromination] [76882]
+[mũ bảo hiểm hình mũ bảo hiểm] [79534]
+[biến thể vĩ độ] 【78720】
+[bán thuốc, dược phẩm, bán thuốc] 【78754】
+[chính sách nhập cư] [78712]
+[người mạnh mẽ hay khéo léo, người chơi giỏi] [77454]
+[kể từ đó] 【79772】
+[cánh tay trên] [77202]
+[Lịch Do Thái] 【78500】
+[axit metaphosphoric] [78466]
+[hệ thống piggyback] 【78244】
+[Nguyên tắc của Archimedes] [77574]
+[cường độ địa chấn bất thường] [78698]
+[cột sống núi lửa] 【79092】
+[bánh táo] 【77356】
+[Bệnh sán lá gan của Trung Quốc, bệnh sán lá gan phương Đông] [79632]
+[phù hợp mặt bích] [78282]
+[hợp chất chelate] [77784]
+[cổ áo đứng] [77138]
+[Dãy núi Appalachia, Appalachians] [77360]
+[chính sách chiết khấu] [79498]
+[máy phát điện nam châm vĩnh cửu] [78886]
+[nhà máy bãi biển] [79252]
+[kênh âm thanh thứ hai] [77078]
+[junior bantamweight] [77966]
+[có một sự trở lại cho mọi nhận xét] 【79842】
+[mỗi bữa ăn] 【77096】
+[rối loạn thần kinh đường tiêu hóa] [78732]
+[Hội chứng Eisenmenger] [77470]
+[chuyển đổi năng lượng nhiệt đại dương] [79302]
+[Ngựa của Przewalski] 【78310】
+[liệu pháp gợi ý] 【78658】
+[mèo đi lạc] [79988]
+[công nghệ sinh học y học] [78758]
+[người phụ nữ cũng vượt qua thủ tướng của mình, matron cũng tiên tiến trong độ tuổi] [77192]
+[giọng "cấp tính"] [79782]
+[Ủy ban điều phối tranh chấp môi trường] [79660]
+[sản phẩm địa phương] [77002]
+[kiểm tra luminol] 【78576】
+[một phần tư thế kỷ] [76846]
+[nhân vật âm tiết] 【78984】
+[lưỡi ướt] 【76862】
+[Chế độ Ancien] 【77398】
+[Finch finch, xã hội finch] [76884]
+[an toàn của cuộc sống trên biển, SOLAS] 【78054】
+[đồng cỏ bunting, cá mập trắng lớn, con trỏ trắng] [77092]
+[Cây cao su Ấn Độ] [77640]
+[Mèo Ba Tư] 【78350】
+[Kỷ nguyên Archaeozoic] 【76848】
+[thiết lập bản thân khỏi cuộc sống của một công nhân cổ trắng, thôi việc với tư cách là một người trả lương và khởi nghiệp kinh doanh độc lập] [76994]
+[chu trình nhiên liệu hạt nhân] [79444]
+[lên men rượu] [77582]
+[axit aspartic] [77488]
+[giờ watt] 【78610】
+[Người Mỹ da đỏ] 【77372】
+[kỹ thuật viên y học] [78894]
+[trống nhỏ] 【76906】
+[dấu mũ chữ nổi] [79780]
+[Chu trình Krebs] [77812]
+[chưa báo cáo] 【79726】
+[axit indoleacetic] [77638]
+[nhà hát dưới lòng đất, nhà hát dưới lòng đất] [77392]
+[bên trong và bên ngoài công ty] [79762]
+[bị đánh gục, bị choáng ngợp, bị choáng váng, bị ném vào vòng lặp] 【78410】
+[thiết kế-in] [77276]
+[bệnh lao mở] [79354]
+[axit arachidonic] [77552]
+[Trò chơi Châu Á] 【77350】
+[mặc dù mọi thứ có thể xuất hiện theo cách này] [79846]
+[món cá và rau sống dấm dấm] [77224]
+[Ngôn ngữ Ấn-Âu] 【77426】
+[tóc cơ thể] [76966]
+[thiết bị điện gia dụng] [79066]
+[giờ ampe] [77606]
+[dạng đất ven biển] [79256]
+[Tinh vân Con cua] [79342]
+[anaplasmosis] [77504]
+[tinh vân xoắn ốc] [78858]
+[hội chứng ruột kích thích] [79188]
+[người khiếu nại không hợp lý cho một công ty, người khiếu nại không ngừng, người khiếu nại mãn tính] [79784]
+[giới hạn sàn] [77440]
+[ứng dụng tại chỗ, phân phối một giọt hoặc điểm của một cái gì đó] [79752]
+[mệnh lệnh giả thiết] [79014]
+[chỉ đạo đến cảng] [79924]
+[nằm úp xuống] 【79812】
+[bumblebee] [79146]
+[icterus hạt nhân] [79432]
+[dây thần kinh trochlear] 【79508】
+[Thỏa thuận Plaza] 【77294】
+[ngựa tốt] [77124]
+[Văn hóa Hồi giáo] [77624]
+[Leyden jar] 【78524】
+[sản xuất giấy phép, sản xuất giấy phép] [78522]
+[rượu monohydric] 【78768】
+[telemeter y tế] 【78756】
+[kỳ nghỉ hàng năm] 【77050】
+[thịt trái trên xương sống của cá hoặc thịt bò] [79670]
+[lý thuyết ngăn chặn hạt nhân] [79450]
+[tế bào prokaryotic] ​​[79916]
+[băng giá] 【77342】
+[công nhân nhập cư] 【78714】
+[làm mì] [76938]
+[mở cửa của tôi] [79348]
+[Luật biển] [79322]
+[cuộc cách mạng khoa học] [79070]
+[bói toán] 【77182】
+[con heo rừng] [79086]
+[aspergillosis] [77490]
+[tảo nâu] [79512]
+[văn phòng chính phủ chung] 【78796】
+[rau quả tươi] [76936]
+[show băng] [77340]
+[đậu hũ hạt đắng] 【78900】
+[biểu thức tuyến tính] [78778]
+[hoa quả và rau] [79080]
+[Thần học giải phóng, thần học giải phóng] [79220]
+[mô xốp] [79292]
+[cái bẫy lươn] 【78862】
+[tất cả các năm, quanh năm] 【80042】
+[nền tảng súng] 【77086】
+[Yếu tố Rh, Rhesus] [77334]
+[Chó Eskimo] 【77674】
+[Rodentia] [77168]
+[nhạc phổ biến] 【78382】
+[bát canh] [76886]
+[vườn hổ bướm] [79108]
+[nhà hát nghệ thuật, nhà hát nghệ thuật] [77332]
+[Mã Morse] 【78478】
+[cây halophilous] [78946]
+[tàu chiến không thể bị chìm] [77322]
+[danh sách hạn chế nhập khẩu] [77280]
+[Mèo Angora] [77596]
+[Nhạc Latin] 【78544】
+[hệ thống trợ giúp pháp lý dân sự] [79994]
+[giả thuyết chemiosmotic] ​​[78994]
+[các trang không theo thứ tự do lỗi liên kết] [76824]
+[Ngân hà] 【79084】
+[Phong trào nghệ thuật và thủ công] [77466]
+[Nhân Chứng Giê-hô-va] 【77680】
+[cau cọ] [77590]
+[Chữ viết tiếng Ả Rập] [77378]
+[nhìn chằm chằm ra trò chơi, trò chơi mà trong đó hai đứa trẻ nhìn nhau cố gắng làm cho các đối thủ cười đầu tiên, liên tục nhìn vào một cái gì đó] [77162]
+[bảy ngày một tuần] [79948]
+[Tapir Brazil, heo vòi ở vùng đất thấp] 【77546】
+[mống mắt thỏ] 【77024】
+[European robin] 【78510】
+[axit benzen-sulfonic] [78338]
+[thời kỳ kinh tế bong bóng] [77462]
+[Cepheus] 【77856】
+[ethyl aminobenzoate] [77532]
+[nọc độc] [78850]
+[eccrine gland] 【77672】
+[đảo nhiệt] 【80442】
+[cháy rừng] 【79920】
+[mạch hoạt động] [78912]
+[khách nước ngoài] [79402]
+[dòng máy bay phản lực cận nhiệt đới] [78624]
+[nhóm aldehyde] [77586]
+[đột nhiên biến mất đâu đó] [79860]
+[thuyền đánh cá độc lập] [77036]
+[bộ phim truyền hình] [77434]
+[Cải Brussels] [79208]
+[tấm biển] [79298]
+[chu kỳ ornithine] 【77714】
+[pariah dog] 【78220】
+[axit polyphosphoric] [78390]
+[đồng phân tốc độ] [79222]
+[đám mây oxy hóa] 【77696】
+[mông của một con ngựa bị cưỡi hoặc đi theo, bắt chước mù] [79904]
+[muối dinh dưỡng] [78874]
+[liệu pháp sốc insulin] [77634]
+[giả định vô tội, giả vờ vô minh] [77154]
+[vườn cây me chua, ổ chua] 【76838】
+[hợp kim nhôm] [77588]
+[tài liệu di chúc] 【78740】
+[nội dung người lớn, nội dung màu hồng] [80192]
+[giới thiệu các hướng dẫn của một công ty, công ty, triết lý công ty] [76868]
+[tổ chức quản lý, tổ chức quản lý] [79626]
+[kết nối đinh tán] [78568]
+[Mugwort Nhật Bản] 【77110】
+[chuẩn độ chelatometric] [77786]
+[bị đánh, bị đánh] [79836]
+[hình nón con lắc] [78904]
+[sản phẩm núi lửa] [79102]
+[mũi đỏ] [76940]
+[thay đổi mực nước biển] [79296]
+[Đại hội toàn quốc châu Phi, ANC] 【77520】
+[cai ngục] 【77450】
+[đất tro núi lửa] 【79090】
+[đồi và cánh đồng, đồi và dale] [77210]
+[thiên hà nhỏ gọn] [77898]
+[biện pháp chống lạm phát] [77428]
+[cửa trượt bằng kính] 【77770】
+[phương pháp dẫn urani] [77660]
+[ngộ độc khí] [77764]
+[mẹ độc thân] [79718]
+[muối kiềm] [77564]
+[người vợ trẻ, người phụ nữ đã lập gia đình trẻ] [76870]
+[alkyl benzen sulfonate] [77576]
+[Đế chế La mã] 【78596】
+[Chim bồ câu phương Đông, chim bồ câu phía đông, turtledove rufous] 【77226】
+[Pegasus, con ngựa có cánh] 【78344】
+[vết thương hở] [79356]
+[chim bồ câu đăng quang] [79554]
+[câu lạc bộ hạt nhân] [79426]
+[đọc quá nhiều vào] 【76924】
+[tiếng chuột rút của nhà văn] [76894]
+[gia đình lớn] 【76980】
+[mô hình được làm từ hoa cúc có cánh hoa bị rối loạn, đặc biệt được sử dụng trên các đỉnh gia đình] [79820]
+[màu rửa sạch] [79872]
+[Khâu Afghanistan] [77514]
+[bánh bọc trong lá tre] 【77222】
+[trường này, trường học đang được đề cập] [79742]
+[khí nổ clo] [78950]
+[mặt phẳng vũ trụ] [77258]
+[quyền yêu cầu mua cổ phần] [79528]
+[trang trại biển, marifarm] [79324]
+[mùi của một cái gì đó thối, mùi thối] 【77072】
+[kiện tụng liên quan đến trạng thái cá nhân] [79928]
+[công thức phát triển và nhập khẩu] [79350]
+[Drosophila melanogaster] 【78964】
+[Người Anh] 【77406】
+[con đường gai góc] 【78808】
+[mọi thứ, mọi khả năng] [77216]
+[Hợp đồng quyền chọn] [77700]
+[công nghiệp hóa chất khí] [77754]
+[điều dưỡng tại nhà] [79062]
+[liên kết ether] [77668]
+[khả năng chạy] [76960]
+[vật chất tối] [77270]
+[hiệu ứng giá] [79026]
+[hóa keo] [77894]
+[pin mặt trời vô định hình] [77550]
+[Hiệp ước ANZUS] 【77598】
+[nhạc cổ điển] [77806]
+[thai kỳ bất thường] 【78700】
+[zephyr lily] 【77914】
+[polyp dạ dày] 【78724】
+[axit cytidylic] [77936]
+[peroxit axit béo] [79182]
+[Spaceship Earth] 【78834】
+[tự giải nén] [79968]
+[lý thuyết cách ly] [79480]
+"Annasaki a" [77506]
+[Viceroy của Ấn Độ] 【77652】
+[hiện tượng giao thoa, hiện tượng bề mặt] [79334]
+[puffin có sừng] [79474]
+[đồng hồ tương tự, đồng hồ analog] [77234]
+[Đột biến chồi, chồi thể thao] [79210]
+[bệnh lỵ amip, kiết lỵ amebic] 【77370】
+[ngộ độc nitroglycol] 【78166】
+[hydrogen cyanide] [77930]
+[Bệnh Addison] [77484]
+[mẫu chữ ký] [77452]
+[Nghệ thuật Hy Lạp] [77802]
+[pitcher pitch đầu tiên] [76890]
+[trận chiến pháo binh] 【77088】
+[đại lý antiknock] 【77600】
+[dị ứng hạt nhân, sự phản đối của người Nhật đối với vũ khí hạt nhân] [79424]
+[máy tương thích] [77254]
+[khó khăn bên ngoài, mối đe dọa nước ngoài] 【79410】
+[hội chứng hyperventilation] [79178]
+[kế thừa chính] [78782]
+[mô vĩnh viễn] [78888]
+[Cuộc chiến Afghanistan] 【77512】
+[Angora dê] 【77396】
+[natri peroxide] [79180]
+[dầu thô tại chỗ] [77260]
+[khu mua sắm] [77330]
+[Dải Gaza] 【77750】
+[nội dung địa phương] [77318]
+[tinh thể ion] [77616]
+[không có gì đặc biệt] [79850]
+[cái mỏm ngựa của linh mục, bàn chải dài, tóc trắng] 【77080】
+[thao tác gen] [78748]
+[luật nước ngoài] [79380]
+[con nuôi, con nuôi] [77112]
+[nhảy nhào lộn] [77346]
+[cây dừa] [77872]
+[chơi đạo đức] 【79688】
+[Ban Thư ký Nội các] [79650]
+[tế bào nhân chuẩn] [79914]
+[quản lý thử nghiệm] [79996]
+[thanh kiếm] 【78790】
+[Rahmen, cấu trúc khung cứng nhắc] [78520]
+[lệnh chuyển tiền nước ngoài] [79382]
+[sự kiện trường học] [79484]
+[rừng xanh mùa hè] [79052]
+[đĩa vỡ] [79724]
+[Chương trình Apollo, Project Apollo] [77524]
+[Nhà thờ Chính thống Hy Lạp] 【77794】
+[lò phản ứng làm mát bằng khí] [77766]
+[Cuộc chiến tranh phiện] 【77368】
+[gọi điện thoại cho thị trường, giao dịch cuộc gọi] 【77250】
+[mì lạnh, mì Trung Quốc ướp lạnh, mì Trung Quốc lạnh kèm theo súp để ngâm] [77142]
+[Viennese waltz] [77430]
+[ghép gan] [79634]
+[thiết bị tiêu dùng] [77436]
+[phân biệt giá cả] [79028]
+[kích thước tủ] [77780]
+[phim xã hội đen] [77790]
+[Ấn-Trung] 【77642】
+[Thành phố Vatican] 【78612】
+[cây ngũ cốc] [79116]
+[phi thuyền không người lái thử nghiệm] [77300]
+[huy chương đồng] [77232]
+[lý thuyết phlogiston] [77438]
+[kinh nghiệm đau thương] [79392]
+[Cúp bóng đá châu Á] 【80186】
+[hệ thống mạch máu mở] [79352]
+"Kan, miếng sushi" [77176]
+[sự kiện dàn dựng, tình huống giả, hiệu suất được sắp xếp trước] [80178]
+[sốt hào quang] 【78974】
+[Triết học Hy Lạp] 【77800】
+[giông bão núi lửa] [79104]
+[tỷ lệ trực tiếp đến thuế gián thu] [77014]
+[văn phòng chính phủ] 【79572】
+[quá trình hoành tráng] [79478]
+[thuế chống bán phá giá] [78078]
+[hình thành nụ hoa] [79120]
+[căn cứ monoacidic] [78772]
+[vệ tinh giám sát đại dương] [79304]
+[nghiên cứu khả thi] 【77292】
+[lịch sử khoa học] [79074]
+[ngư dân đánh bắt xa bờ] 【78970】
+[hồng ngọt] 【77174】
+[công ty tàu hơi nước] [76946]
+[tàu biển] [79368]
+[liên kết với lệnh mua chứng khoán] [79530]
+[kể từ đó] 【79770】
+[cá sargassum] [79126]
+[lưu vực đại dương] [79290]
+[sáp nhập ngực đỏ] [79260]
+[bảo hiểm nhân thọ du lịch ở nước ngoài] [79248]
+[Nhật-Tây Ban Nha] 【79932】
+[an ninh y tế] 【78760】
+[bộ y tế] 【78752】
+[công việc lớn, công việc tuyệt vời] [76978]
+[điện trở trượt] [79502]
+[cá mòi khô] [79580]
+[con đường dọc theo một vách đá] 【79414】
+[đẩy ra khỏi vòng từ phía sau] [76962]
+[chôn cất bằng cách tiếp xúc với các yếu tố, nghề cá trên không] [77076]
+[ký tự ngữ âm semaio] [79700]
+[tốc độ rất chậm] 【77204】
+[nơi tối mát] 【77140】
+[đếm hệ thống, cách đếm] [76934]
+[quản lý lao động, quản lý lao động] [77144]
+[Cashmere dê] 【77720】
+[lúa mì cứng] 【78120】
+[độ cứng giá xuống] [79020]
+[Cái sàng của Eratosthenes] 【77684】
+[hình thức rondo] 【78608】
+[liệu pháp đồng vị] [77474]
+[nhiệm vụ bảo mật] [76874]
+[Viện Khoa học Y học] [77328]
+[cuộc cách mạng năng lượng] [77676]
+[tampala, áo của Joseph, Amaranthus tricolor] 【77130】
+[làm việc ngày lễ, người trong một ngày nghỉ làm việc] [77464]
+[addHYPHENon] [77502]
+[amoni nitrit] [78618]
+[hoa lá] [79152]
+[đài phát thanh nghiệp dư] 【77528】
+[cua đậu] 【78824】
+[kem sundae, kem sundae] 【77336】
+[Nghệ thuật phương Đông] 【77704】
+[Người dùng Internet] [80218]
+[nông nghiệp làm vườn] 【78908】
+[đô la mạnh] 【78154】
+[khu vực sinh địa lý biển] [79316]
+[axit guanylic] [77824]
+[vấn đề năng lượng, vấn đề năng lượng] [77678]
+[đất và gió biển] [79326]
+[tiếng nổ tai màu nâu] 【77228】
+[tội lương tâm, tội phạm được công nhận, hành động được thực hiện trong khi biết rằng nó không nên là] [79454]
+[phiên cuối cùng của năm] [76984]
+[Quy trình Bayer] [78202]
+[chất lỏng hoạt dịch] [79506]
+[sợi aramid, sợi aramid] [77238]
+[ileocecum] [79228]
+[dân sự và quân sự] [79578]
+[làm giàu urani] [77664]
+[quận bầu cử nhỏ, khu vực bầu cử một thành viên] [76904]
+[kẹp tóc trang trí công phu] 【80160】
+[trường đại học dược phẩm, trường đại học dược phẩm] [77118]
+[hệ thống mạng đăng ký cư dân cơ bản, hệ thống số ID công dân trực tuyến quốc gia, Juki Net] [79684]
+[Người Anh, công dân Anh, người Anh] 【79792】
+[dạ dày] 【78730】
+[ngộ độc cadmium] 【77726】
+[Đài quan sát vĩ độ] 【78718】
+[cặp đôi yêu thương, vài con chim tình yêu, cặp vợ chồng hạnh phúc] 【79814】
+[gửi và rút tiền, nhận và thanh toán] [79746]
+[thể dục nhịp điệu] [80240]
+[hồi quy bờ biển] [79272]
+[Corona Borealis, Vương miện phía Bắc] [79550]
+[túp lều trên bãi biển, nhà câu lạc bộ bên bờ biển] 【79242】
+[quy trình amylo] [77540]
+[chuyển nhượng cổ phiếu] 【79526】
+[Luật của Ohm] [77690]
+[cà rốt và gậy] 【78652】
+[giác mạc giác mạc] [79468]
+[giọng khàn khàn] 【78944】
+[Tam giác của Pascal] 【78210】
+[noninterference, nonintervention] [77102]
+[tám mươi tám ngày từ đầu mùa xuân] 【77062】
+[Ngôn ngữ Ấn Độ, ngôn ngữ Ấn-Aryan] 【77646】
+[Ngôn ngữ Austronesian] 【77480】
+[chia thành nhiều phần] [77082]
+[hỗn hợp phụ gia của màu sắc, hỗn hợp phụ gia của màu sắc] [79034]
+[từ trường vĩnh cửu] [78884]
+[máy móc hóa học] 【78992】
+[dây bọc] 【77922】
+[belladonnalily] 【79048】
+[trường nông nghiệp] [77054]
+[tuổi bốn mươi, một mươi bốn mươi] 【77188】
+[từng mục riêng lẻ, một bài viết, một mục trong một tập hợp, một mục từ một tập hợp] [76996]
+[ống mở] [79344]
+[Bộ Môi trường] [79644]
+[bánh bao bột gạo trộn với ngải cứu] [76956]
+[hội đồng làng] [79728]
+[bằng cách nào đó hoặc khác] [79862]
+[số lượng lớn hơn một chút, phần lớn hơn] [76964]
+[tin nhắn tức thì, IM] [80202]
+[tiếng vang vọng] 【78980】
+[vật liệu nhựa] [79038]
+[ngày hè nóng bức, ngày mà nhiệt độ đạt tới ít nhất 25 độ C] [79716]
+[phản xạ giác mạc] [79472]
+[canh tác nương rẫy bằng nhựa, trồng cây trong nhà kính vinyl có mái che dài] [78146]
+[bướm parnassian] [77526]
+[đánh dấu] 【77056】
+[kimono đệm] [77166]
+[ràng buộc thuế quan] [79674]
+[tin tưởng đầu tư tại chỗ] [77262]
+[pin kiềm] [77568]
+[phim ngoạn mục] [78022]
+[tàu địch] [77020]
+[muối và khô] [78938]
+[dịch vụ tưởng niệm chiến tranh đã chết] [79698]
+[khốn kiếp!]] [80074]
+[giao dịch liên ngân hàng] [77636]
+Cảm giác
+[con trai thứ năm] 【79740】
+[máy thêu] [78444]
+[làng đông đúc] [79230]
+[Đại hội Hoa Kỳ] [77544]
+[Lá đồng của Roger] 【77116】
+[lên men axit amin] [77536]
+[Ả Rập] 【77560】
+[xu hướng ion hóa, xu hướng ion hoá] [77614]
+[ném vào một con tôm và kéo ra một con cá voi, sử dụng một sprat để bắt một cá thu] [79328]
+[Luật kiểm soát ngoại hối] [79370]
+[chiếu tatami] 【79956】
+[ngân hàng ảo] [80632]
+[kali cyanide] [79788]
+[ngành công nghiệp vũ trụ] [78832]
+[người hóa thạch] [79010]
+[khối gỗ hoặc đá để đập vải] [77178]
+[các nước sản xuất dầu] [76836]
+[quả bom megaton] 【78454】
+[Cây gai dầu Ấn Độ] [77654]
+[Cây cọ cối xay gió của Trung Quốc, cọ Chusan, cọ gai dầu] [77160]
+[loài chim ruồi narcissus] 【77172】
+[hiển thị câu chuyện] [79336]
+[diode nhạy áp lực] [79584]
+[bệnh động kinh chấn thương] [79390]
+[khỉ ăn cua] [79340]
+[phát ban ma túy] 【77120】
+[axit orotic] ​​[77716]
+[kim loại đất kiềm] [77570]
+[Altaic] 【77584】
+[Đảo Phục Sinh] 【77610】
+[chemoluminescence] [79002]
+[truyền hình tinh thể lỏng] [78896]
+[axit monobasic] [78766]
+[chương trình tie-up, chương trình kết nối] [78064]
+[mới tốt nghiệp] [76918]
+[cuộn đám mây] 【78598】
+[tế bào mẹ phấn hoa] [79144]
+[Viện Y tế Quốc gia] [77326]
+[tỷ lệ giá-thu nhập, PER] [79520]
+[cấy ghép hạt nhân] [79430]
+[thiết bị đầu cuối chăm sóc] [77272]
+[bị lóa mắt bởi, bị dizzied bởi, bị mất phương hướng, bị lạc vào, trở nên tối] [79696]
+[dao nhà bếp cho sashimi] 【77214】
+[phim khoa học] [79068]
+[truyện ngắn ngắn] [76908]
+[hệ thống thông tin kế toán, AIS] [79214]
+[kg-weight, kilogram-weight] [77788]
+[nét vẽ ban đầu trong thư pháp] [79690]
+[máy bay tuần tra trên biển, MPA] [79314]
+[tỷ giá ngoại hối] 【79376】
+[tự do biển] [79312]
+[Hội đồng cách mạng] [79482]
+[hàng không đi lại] [77252]
+[vải, vải chéo] 【78654】
+[thị trường lao động bên ngoài, thị trường lao động bên ngoài] [79408]
+"Udo" 【77034】
+[Nhân vật Trung Quốc] [79160]
+[nitric monoxide] [78774]
+[lớp học trong các tầng lớp] [79362]
+[hệ thống sa thải] 【78776】
+[trifoliate cam, cam cứng] [77158]
+[lịch sử giai thoại] 【78804】
+[ảnh màu, ảnh màu] [77732]
+[hàng rào gai] 【78810】
+[superphosphate vôi] [79192]
+[loài chim cursorial, runners] [76958]
+[Quần đảo Anh] 【77620】
+[khoản vay không có lãi suất] 【77266】
+[xylitol, đường gỗ nhân tạo] [79980]
+[Cờ bạc trên Internet] [80208]
+[pseudocholera trẻ con] [79018]
+[chương trình truy cập, chương trình truy cập] [77482]
+[thảm hình] [79148]
+[sau đó] [79854]
+[trẻ sơ sinh sau sinh] [79184]
+[điện báo in] ​​[78814]
+[mỗi học kỳ] [77094]
+[nước làm mát chính] 【78784】
+[đạn lạc] 【78802】
+[hệ thống quay vòng] [77312]
+[tội phạm mạng] 【80306】
+[slapdown] 【76992】
+[súp miso thịt lợn, súp miso với thịt lợn và rau] [77038]
+[shishamo smelt] 【77122】
+[góc mắt] [77106]
+[ruộng bậc thang] [79952]
+[tòa án hiến pháp] [81018]
+[axit deoxyribo nucleic, ADN] [77274]
+[Toàn Nhật] 【77230】
+[Calvinism] 【77738】
+[pha hạt nhân] [79440]
+[lớp học] [79360]
+[Bóng đá Mỹ] [79418]
+[bookrest] [76892]
+[tương tự] 【77446】
+[thung lũng ngầm, hẻm núi ngầm] [79280]
+[đốt nhang, dụng cụ để chở than sống] [79106]
+[đường đi bộ, đi bộ] 【77084】
+[bể thận] [76930]
+[cây che bóng] 【78820】
+[tuần lộc rêu] [79134]
+[tắt động cơ xe khi dừng] [80182]
+[Kính thiên văn Galilean] 【77776】
+[thuế tiêu thụ chung] 【78800】
+[đứng cho bình hoa] [79136]
+[phân chia thứ hai, trung học] [79756]
+[bong bóng dot-com] [80212]
+[hai ngày một tuần] [79938]
+[rừng nhiệt đới cận nhiệt đới] [78626]
+[tách sự thờ phượng, di chuyển của một vị thần được tôn thờ đến một đền thờ khác] [88842]
+[Lực lượng Coriolis] [77884]
+[cuộc trò chuyện điện thoại dài] [79702]
+[cần cẩu hinh trắng] [76926]
+[tổng diện tích sàn] [78910]
+[phiền hà, cần sự trợ giúp và lao động của người khác] [79680]
+[theo bất kỳ cách nào, không đời nào] [79868]
+[cô dâu rất trẻ, cô dâu nhỏ hơn một cô gái] [77128]
+[cánh đồng đầy hoa] [79150]
+[thỏa thuận rúp] [77314]
+[Cơ quan dịch vụ bưu chính] [79662]
+[có tiêu đề, được đặt tên] 【80014】
+[ngộ độc khí clo] 【78948】
+[Hội đồng Bảo an Nhật Bản] [79652]
+[axit arsenic] [77164]
+[mắt áo choàng] [79398]
+[tác phẩm hội họa] [79202]
+[nền kinh tế yếu kém] 【81348】
+[Bộ Tài chính] [79648]
+[đẩy và xô đẩy, xô đẩy, hustling] [89186]
+[nhện biển] [79274]
+[chuỗi urani] [77662]
+[Điêu khắc Hy Lạp] 【77798】
+[thị trường ngoại hối] 【79374】
+[cần cẩu đăng quang đỏ, cần cẩu Nhật Bản] 【77194】
+[cát trắng, cát trắng, khu vực trong một khu vườn hoặc lối vào của một ngôi nhà có cát trắng hoặc sỏi, sỏi tách một giai đoạn Noh từ khán giả, tòa án của pháp luật trong thời kỳ Edo, trong đó các bên ngồi trên cát trắng] 77058】
+[vương miện gai] 【78806】
+[thuyền giấy cói] 【78646】
+[tiêu chuẩn kiểm toán] [79616]
+[Các sự kiện Alpine, môn thể thao Alpine] 【77386】
+[bệnh viện hệ thống mở] [77688]
+[xác suất phân phối] [79460]
+[trang web, trang web] 【80236】
+[ngày và đêm bị đảo ngược] [89544]
+[Nghị định thư Kyoto] [80810]
+[không ai biết tương lai nắm giữ gì, tương lai là một cuốn sách khép kín] [79786]
+[phiên đầu tiên của năm] [76986]
+[hot stand-by] [79636]
+[khách sạn spa, khu nghỉ dưỡng suối nước nóng, cơ sở y tế đa mục đích] [77248]
+[cuộc sống mới] [76916]
+[vệ tinh nghiên cứu khoa học] [79072]
+[ô nhiễm môi trường không gian] [78830]
+[không gian buồn nôn] [78838]
+[mùa lột xác] [79598]
+[phép đo góc] [79464]
+[chứng loạn thần kinh do chấn thương bên ngoài, loạn thần kinh chấn thương, rối loạn thần kinh tai nạn] [79388]
+[sinh viên nghệ thuật] 【79200】
+[hiệu ứng phụ thuộc] [78672]
+[giấy cuộn] 【78600】
+[hướng dẫn đào tạo] [79882]
+[cùng họ và tên riêng] 【80126】
+[radar đa pha] 【78666】
+[mỏ than tàu ngầm] [79282]
+[một công việc chính] [76872]
+[quilter] [79832]
+[quân đội lớn] [76976]
+[quy trình buồng chì] [78920]
+[dải giấy có quảng cáo, quấn quanh chiếc áo khoác của một cuốn sách] [76968]
+[tên lửa hạt nhân] [79428]
+[vườn cây ăn quả] [79536]
+[dịch vụ chia sẻ tập tin] [80448]
+[tự mình ăn trưa] 【88378】
+[phát hành chứng từ] 【79744】
+[nhóm cacbonyl] [77744]
+[wedeling] [77432]
+[kinh tuyến nhật, kinh thiên thiên] [78960]
+[thử nghiệm ống mở] [79346]
+[hệ thống dạ dày] 【78726】
+[chính quyền trực tiếp] [79570]
+[giấy chứng nhận năng lực của seamen] [79258]
+[triển lãm được tài trợ bởi chính phủ] [79576]
+[thủ thuật khôn ngoan, kế hoạch nham hiểm, nghệ thuật tinh quái] [77152]
+[phí người lưu giữ] 【79990】
+[khách truy cập duy nhất] [80526]
+[thuốc bất hợp pháp] [80566]
+[galah, cockatoo ngực hồng] 【88894】
+[nguyên âm dài] [77012]
+[địa hình khô cằn] [79544]
+[liều thuốc chỉ được dùng một lần] [77042]
+[máy rung áp điện] [78650]
+[văn hóa sân thượng] [79364]
+[hoa hiếp dâm, hoa cải dầu] [79838]
+[Chợ JASDAQ] 【80318】
+[hợp đồng giá-cộng] [77874]
+[tự do, lặn tự do, lặn da] 【80452】
+[mô hình dữ liệu, mô hình hóa dữ liệu] [79720]
+[adenosine triphosphate, ATP] [77498]
+[bagworm, bagworm moth] [77098]
+[lột xác] [79600]
+[chèo thuyền] 【77730】
+[xoay chăn thả] [79046]
+[Thế vận hội Olympic, Thế vận hội] 【77710】
+[block trading] [80456]
+[khởi động] 【88758】
+[lưu trữ kỹ thuật số] [89150]
+[nhà vô địch bảo vệ] [80382]
+[thuốc chẩn đoán, dược phẩm chẩn đoán] [79962]
+[chiến thuật tắc nghẽn, chiến thuật quấy rối] [88386]
+[toàn bộ thị trấn, khắp thành phố, khắp thị trấn] [79704]
+[phản ứng tổng hợp hạt nhân laser] [78578]
+[một con cá trên bảng thớt, người trong một tình huống mà họ bị bất lực] [79982]
+[mục tiêu lạm phát] [80228]
+[tiếp thị thể thao] [80340]
+[Orion, Hunter] 【77706】
+[hoạt động ngoại khóa] [79168]
+[trò chơi shogi nhanh] 【76952】
+[Viện nghiên cứu chung, phòng thí nghiệm đa ngành] [79758]
+[bùn lửa núi lửa] 【79098】
+[cải cách y tế] 【80576】
+[cái này và cái kia] [79840]
+[Kinh tế cũ] 【80252】
+[chấm bi] [80394]
+[xương sườn xương sườn] [80162]
+[ngân hàng mắt] 【79470】
+[quyền tụng công khai] 【80000】
+[hoàn thành khác] [77448]
+[rừng mưa xanh] [78856]
+[nhiệt động lực học] [79000]
+[gọi lại, gọi lại cho ai đó] 【79710】
+[cha mẹ sinh học] [79730]
+[bốn ngày nữa] [79892]
+[khuôn mặt có mũi, người có khuôn mặt mũi] [79826]
+[cuộc cách mạng giá] 【79022】
+[tàu điều tra đại dương] [79320]
+[xe dành cho người tàn tật, xe hỗ trợ] 【80036】
+[Central League, CL] [80348]
+[cách này và điều đó, nhiều phương tiện, mọi phương tiện] [79810]
+[fentanyl] [80450]
+[thị trường tài chính quốc tế] 【81156】
+[tiền ký quỹ] 【79112】
+[đơn vị cơ sở, điện thoại chính] [80072]
+[mắt ác] [79694]
+[Bộ Kinh tế, Thương mại và Công nghiệp, METI] [79642]
+[kẹp hoặc vòng để gắn dây chuyền vào dây chuyền] [80054]
+[xăng có chỉ số octan cao, xăng có chỉ số octan cao] [80422]
+[Bảo mật Internet] [80210]
+[khía cạnh quản lý] [88698]
+[LDL cholesterol, cholesterol lipoprotein mật độ thấp, cholesterol xấu] [80546]
+[tính năng kép] [79876]
+[di chuyển máy bay phản lực] 【78708】
+[Thế vận hội mùa hè] [80638]
+[chấm dứt một cái gì đó, có được một cái gì đó hơn với, bỏ một cái gì đó một đã được tham gia vào quá dài hoặc quá mức độ] [79834]
+[Đấu giá trên Internet] [80206]
+[Hệ thống ngân hàng trung ương châu Âu, ESCB] [80618]
+[lột xác] [79596]
+[nhà máy bí mật] 【78822】
+[ô cảm biến] [79586]
+[hệ thống phao được quản lý] [79622]
+[khóc vì niềm vui, khóc hạnh phúc] 【79802】
+[Ấn phẩm Pháp] [89456]
+[tiebreaker] 【80354】
+[pseudohypertrophy của cơ bắp] [79016]
+[lỗi hoa] [79124]
+[Châu lục châu Á] [77352]
+[vải lau mồ hôi ra] [79602]
+[thể hình] [80484]
+[bioterrorism] [80430]
+[Từ điển Anh-Anh] 【80028】
+[ảnh vệ tinh] [80608]
+[Cây phong Nhật Bản] 【89336】
+[perigone] [79122]
+[vòng tay] 【80034】
+[cải cách ngân hàng] [80886]
+[Gothic Lolita] 【88986】
+[khuyết tật học tập] [80686]
+[có đôi mắt] [89570]
+[bộ phận sinh dục bên ngoài] [79396]
+[bảo hiểm điều dưỡng] [80646]
+[vô dụng và có hại] 【88460】
+[Các bà mẹ] 【80498】
+[tùy theo hoàn cảnh, phụ thuộc vào trạng thái của sự vật] [88518]
+[bốn người] 【80156】
+[Listeria monocytogenes] [80536]
+[thời hạn lịch sự để gọi, khởi hành và ở đâu đó] [80142]
+[hệ thống trợ giúp pháp lý dân sự] [79992]
+[mô hình kinh doanh] 【80598】
+[thâm nhiễm phổi thoáng qua] [78770]
+[các đám mây biểu ngữ trong các lớp] [89550]
+[tải nợ] [81200]
+[kho vũ khí hạt nhân] [80676]
+[với sức sống nhưng kết thúc mà không có hành động, nâng cao giọng nói của một người và sau đó không hành động] [88862]
+[bị phân tâm, nhảy ra khỏi đường đua] 【88806】
+[luật sửa đổi] [80654]
+[milkfish] 【80058】
+[bán hàng bên ngoài, bán hàng bên ngoài] [79400]
+[phiếu trượt] [79504]
+[sắp xếp hoặc thủ tục thanh toán] [80052]
+[cuộc sống nhanh, cuộc sống tiêu tan, cuộc sống nổi loạn] 【88402】
+[thay đổi âm thanh mũi] [89292]
+[vi khuẩn gram âm] [77830]
+[tiêu chuẩn toàn cầu] [80278]
+[trung học và trung học, trung bình và cao] 【80062】
+[anh trai] [79874]
+[Bộ Kinh tế, Thương mại và Công nghiệp, METI] 【88730】
+[Địa chỉ Giao thức Internet, địa chỉ IP] [80216]
+[giấy phép sử dụng tên của huấn luyện viên] 【80022】
+[video trực tuyến] [80330]
+[Trình duyệt web, phần mềm duyệt web] [80222]
+[nước chanh] 【89016】
+[hòa bình và yên tĩnh, an toàn và yên bình, yên tĩnh và không kém phần quan trọng] 【88298】
+[cái đinh bị nhô ra, cây cao bắt được nhiều gió] 【80168】
+[đợi đến lượt mình] [79708]
+[thư giải thích, giải thích bằng văn bản] [89202]
+[Cúm Châu Á, Cúm Châu Á] [80184]
+[càng nhiều càng tốt] [89106]
+[khăn khô] [79546]
+[thẻ nhà tài trợ] 【80558】
+[bánh bao bột gạo trộn với ngải cứu] [79806]
+[Hợp tác hài hòa, hợp tác chặt chẽ] 【88690】
+[cảm giác cực kỳ lạnh lẽo khiến người ta cảm thấy tê, đau nhói, gần như tê liệt, đau lòng, chạm vào tim] 【80080】
+[điều này có nghĩa là, đó là để nói] [89442]
+[đóng góp cho xã hội] [81338]
+[viêm mũi trước sicca] [79542]
+[Tour de France] 【80372】
+[Chúc mừng năm mới] [79910]
+[viêm giác mạc Herpetic] [79466]
+[người Mỹ] 【80050】
+[mua sắm qua điện thoại] [80378]
+[mức độ đó, mức độ đó, nhiều, nhiều người] [79774]
+[nó không thể được giúp đỡ, không có cách nào khác] [79866]
+[định vị toàn cầu] [78892]
+[mông của một con bò] 【79804】
+[Hoa Kỳ và Hàn Quốc, Mỹ-Hàn Quốc] 【89410】
+[tạp chí e-mail, tạp chí điện tử] [80508]
+[điểm của một cuộc tranh luận không rõ ràng, kỳ hạn của một cuộc tranh cãi không được lý luận] [88682]
+[luật pháp] [80130]
+[tài liệu nhạy cảm] [79588]
+[Luật thủ tục hành động tình trạng cá nhân] 【80010】
+[tốc độ truyền tải xuống] [80624]
+[Tháng Năm Nữ hoàng] 【88908】
+[mì khô] [79548]
+[chính sách đối ngoại yếu, ngoại giao yếu ớt] 【88602】
+[corbie-step, corbel gable, crowsteps] 【88706】
+[lực hạt nhân] [79438]
+[đa phương tiện] 【80540】
+[động vật có hại] [79412]
+[Giao thức Montreal] [80524]
+[Kế hoạch phát triển quốc gia toàn diện] [89424]
+[sống sẽ] 【80542】
+[chó hoang, chó rừng châu Á, chó rừng vàng, chó rừng bên hông] [89344]
+[tranh chấp hợp đồng] [80950]
+[jackal vàng, chó rừng châu Á] [89350]
+[Khối thịnh vượng chung] [80200]
+[giấy cuộn, cuộn giấy in] [79568]
+[trung tâm chăm sóc điều dưỡng, trung tâm chăm sóc điều dưỡng] [80284]
+[Hợp tác kinh tế châu Á-Thái Bình Dương, APEC] [80242]
+[nhu yếu phẩm hàng ngày, nhu yếu phẩm hàng ngày] [79722]
+[hòa thuận] [79816]
+[Chúc mừng năm mới] [79898]
+[tăng trưởng ác tính, u ác tính] [80548]
+[điều trị kéo dài suốt đời] [80612]
+[kịch bản nhỏ] 【79778】
+[ba ngày kể từ hôm nay, bốn ngày kể từ hôm nay] [79890]
+[Bộ trưởng Nội các] [79476]
+[phá vỡ một thùng rượu lễ kỷ niệm] 【80820】
+[chúc ai đó may mắn, chúc ai đó tốt] [89192]
+[cybersquatter] [80298]
+[phối hợp ăn mặc, phối hợp trang phục, phiên phù hợp, trang phục phù hợp] [78738]
+[con mèo quái vật hai đuôi thần thoại] [89610]
+[ortho-normalization, ortho-normalization] [80084]
+[bọ dermestid] [79516]
+[hẹn hò với bồi thường, mại dâm nữ sinh] [79638]
+[có khuynh hướng, có khả năng] [79870]
+[tân bảo thủ] 【88998】
+[một vòng điện thoại di động] [80090]
+[đối xứng xoay] [79224]
+[gọi điện thoại để lấy hẹn] [79748]
+[an ninh nhượng bộ] [79676]
+[cúi mình về phía trước, đi chơi] 【89096】
+[hệ thống tiền tệ được quản lý] [79628]
+[chính sách quản lý] [80966]
+[phát triển hoang dã, chạy đến chất thải] 【80070】
+[Hội chứng Down] [80364]
+[bãi rác, bãi rác] [80296]
+[ngân hàng di động] [80522]
+[kiến trúc xanh] 【80272】
+[con trai thứ tư] [79738]
+[điều tra hình sự] [80944]
+[người có việc làm] 【79798】
+[chúc may mắn!], tất cả là tốt nhất] 【89190】
+[chỉ đạo đến mạn phải] [79922]
+[cựu tội nhân, người già-thị-phố, người già thích lối sống tự do và dễ dàng không bị cản trở bởi những điều cấm kỵ xã hội] 【88336】
+[ám ảnh xã hội] 【81336】
+[bị bác bỏ, bị chán nản, chán nản, mất lòng] [79934]
+[Nhật Bản và Hàn Quốc là một] 【80164】
+[megabank] 【80510】
+[mega-float] 【89156】
+[hủy giá] [80636]
+[văn học kỳ dị, văn học kỳ quái] [88634]
+[enterococci kháng vancomycin, VRE] [80436]
+[trang khiêu dâm] [80490]
+[tài chính vi mô] [80504]
+[mái chèo hấp] [79384]
+[Ủy ban Cá voi Quốc tế, IWC] [81170]
+[viêm phổi do pneumocystis carinii] [80266]
+[một mối quan hệ gần gũi] [88644]
+[dẫn xuất tín dụng] [80268]
+[Văn phòng Nội các] [79654]
+[amphotericin] 【80098】
+[đặt một cái gì đó trên lưng của ai đó, làm cho ai đó mang cái gì đó, đặt trách nhiệm lên ai đó, buộc tội ai đó có bổn phận, gây thương tích cho ai đó] [79794]
+[quy trình ra quyết định] [80556]
+[giết người cẩu thả] 【80642】
+[một năm trước] [89310]
+[giá dầu thô] [81032]
+[thần linh, tinh thần của người chết] [88864]
+[trong và ngoài nước, trong và ngoài nước] [79760]
+[quyền cho vay] [80004]
+[con thằn lằn đuôi] [79420]
+[bán hàng gian lận các dịch vụ trừ tà] [88652]
+[Pháo đài Okinawan] [79976]
+[được cho biết hoặc được nghe để nghe điều gì đó thường xuyên đến mức quý vị bị các vết chai trên tai] 【88782】
+[Bệnh Creutzfeldt-Jakob, CJD] [80270]
+[ứng suất môi trường] [80716]
+[Bầu cử Hạ viện] [79754]
+[tùy chọn chứng khoán] [80326]
+[ý kiến ​​thứ hai] [80344]
+[rất thận trọng, thực hiện mọi biện pháp phòng ngừa có thể] 【88590】
+[Chancellor Chúa] 【80132】
+[không thể làm] 【88874】
+[kết quả thử nghiệm] [79686]
+[kết hợp cửa hàng rượu và quầy bar, kết hợp off-giấy phép và quán rượu, uống rượu trong khi đứng trong cửa hàng] 【80032】
+[số lượng đại biểu] [80680]
+[xếp hạng truyền hình cao] [81114]
+[ngân sách tài khoản chung] [80590]
+[sao chép và dán] 【80018】
+[khi nhìn theo cách đó] [79852]
+[tất cả tự nhiên là ảm đạm và hoang vắng, cảnh nhìn hoang vắng và hoang mang xa như mắt có thể thấy] [88440]
+[lỗi kép] [80366]
+[hình ống hoa] [79620]
+[giám sát ngân hàng] [80888]
+[nơi trên] [88854]
+[dump lõi, dump nội dung bộ nhớ] [79918]
+[Ủy ban quan hệ lao động cho thuyền viên] [79668]
+[Kinh tế mới] 【80410】
+[nội dung số] [80386]
+[bốn ngày một tuần] [79942]
+[Người Anh, người Anh] 【80046】
+[bệnh lý đa thần kinh amyloidotic, FAP] 【80196】
+[quản lý chuỗi cung ứng] [80314]
+[con gái thứ năm] [79736]
+[vụ bê bối kế toán] [80650]
+[Người chiến tranh Bồ Đào Nha] 【79514】
+[khí hậu đại dương] [79308]
+[quỹ quản lý tiền bạc, MMF] 【80500】
+[nụ cười tự mãn, mỉm cười một nụ cười hài lòng] [79790]
+[ảnh hưởng đến việc bán rong] [80550]
+[nhà đầu tư cá nhân] [81056]
+[diễn viên hài đóng vai người yêu, người đàn ông vừa đẹp trai vừa vui vẻ] [89548]
+[giấy phép lái xe tiêu chuẩn] [89300]
+[theo dõi, bắt chước hoặc theo dõi một người nào đó một cách mù quáng, đi trên lưng của ai đó, cưỡi ngựa của ai đó, tận dụng lợi thế] 【79906】
+[sách nước ngoài, sách nước ngoài, tác phẩm phi Phật giáo] [79386]
+[phù hợp với rất nhiều trong cuộc sống, trong một phương tiện, phù hợp với vị trí của một người, phù hợp với địa vị xã hội của một người] 【88452】
+[mua sắm quỹ bằng chứng khoán, cho vay cầm cố chứng khoán] [79522]
+[mại dâm trẻ em] [81312]
+[ba ngày một tuần] [79940]
+[tinh thần kinh doanh] [80780]
+[đội tuyển quốc gia] 【80402】
+[thiết kế đẹp như tranh vẽ] [79338]
+[ghi âm không giám sát] 【80030】
+[bán cấp myelo-optico-neuropathy, SMON] [80342]
+[cố gắng của đô vật ozeki để đạt được cấp bậc yokozuna, không đủ điều kiện thăng hạng cho yokozuna] 【80020】
+[tro men] 【80114】
+[lệ phí khi thành công, phí dự phòng, tiền thưởng hoàn thành] 【88928】
+[hành động tạo ra một thứ gì đó, -ification] [88812]
+[liên doanh] [81136]
+[nơi làm việc và nơi cư trú] [79894]
+[Kế hoạch phát triển quốc gia toàn diện] 【89426】
+[thuyền buồm nhỏ được sử dụng để thu thập nori, v.v.] [89306]
+[thành viên gia đình còn lại ở nhà] 【88648】
+[wrapper crape] [79494]
+[an toàn thực phẩm] [89390]
+[Internet banking] [80214]
+[như nước ra khỏi lưng vịt] [79422]
+[diễn giải ngôn ngữ ký hiệu] [81352]
+[anime song] 【88964】
+[xen kẽ các pha hạt nhân] [79442]
+[chi phí hoạt động] [80596]
+[nhân viên y tế] [80574]
+[kali iodine] 【80530】
+[viêm phổi mắc phải cộng đồng] [80104]
+[ngân hàng này, ngân hàng của tôi] [89494]
+[cơ quan thay thế] [80562]
+[ứng cử viên lớn, ứng cử viên mạnh mẽ, á hậu trước] 【88580】
+[nhạo báng và chế giễu, nhạo báng và khinh bỉ] 【88550】
+[hối hận và thông cảm, có sự gắn bó dai dẳng và thông cảm với ai đó] [88456]
+[lần trước, không bao giờ một lần nữa, chỉ có điều này] [79848]
+[cưa hai lưỡi] 【88776】
+[truyền hình trả tiền, truyền hình trả tiền] [80474]
+[thay đổi phương thức] [80518]
+[rình rập] [80324]
+[zero-emission] [80350]
+[nghỉ chăm sóc trẻ em] 【89090】
+[tin nhắn cao siêu] [80310]
+[hộp làm tổ] [79492]
+[Web lướt web] [80234]
+[loại lò nung rất cũ được làm bằng cách đào một cái hố ở sườn đồi] 【80038】
+[trạng thái lục địa] [79750]
+[khoa học thể thao] [80338]
+[bị thao túng] 【80150】
+[móc khóa và móc khóa] [89302]
+[bằng cách nào đó hoặc khác] [79864]
+[hương vị thơm ngon, hương vị tuyệt vời] 【88938】
+[viêm mũi dị ứng] 【80198】
+[Mạng lưới đại lý dự án nghiên cứu nâng cao, ARPANET] 【80180】
+[bộ phận nghiên cứu, phần điều tra] [79764]
+[hoạt động giữ giá, PKO] 【80690】
+[ghen tị với những thứ không liên quan gì đến việc đó, ghen tị với những người khác đang yêu nhau] [88388]
+[Từ điển Anh-Anh] 【80026】
+[Hội nghị đa phương, đàm phán đa phương] [80154]
+[huyết tương khô] [79540]
+[bảo tồn môi trường] [79610]
+[tinh linh núi một mắt] [89616]
+[crib sheet, cheat sheet, quyển phác thảo lớn được sử dụng trong quá trình quay phim truyền hình để thông báo cho diễn viên về hướng sân khấu đặc biệt, tin nhắn chuyển tiếp, v.v.] [88890]
+[viễn thám viễn thám] [79300]
+[quản lý tốt, quản lý tốt] [79950]
+[theo phong cách, gợi nhớ, gắn hoặc kéo dài trên] [79960]
+[giấy gấp, giấy gói kimono, giấy gấp lại và giấu bên trong một chiếc áo kimono] [89226]
+[Nhà cung cấp dịch vụ Internet, ISP] [80224]
+[các chế phẩm kháng sinh hỗn hợp] [80100]
+[sản xuất theo đơn đặt hàng, BTO] 【81358】
+[Cartel quốc tế] 【81150】
+[mạng tốc độ cao] [81120]
+[Nasdaq Nhật Bản] 【80404】
+[progestin] [80464]
+[hệ thống thanh toán liên ngân hàng] [80166]
+[tự sát gia đình] 【80582】
+[lý thuyết sinh thái] [80738]
+[thảm họa ô nhiễm hóa học] [80628]
+[thư ký trả tiền của chính phủ] 【81088】
+[nới lỏng tiền tệ] [80870]
+[cyberterrorism] 【80300】
+[chất ức chế tái hấp thu serotonin chọn lọc, SSRI] [81686]
+[acetaminophen, paracetamol] [80190]
+[bảo lãnh vay tiền] 【81202】
+[cắt lumpectomy] [81354]
+[khu vực chiếm đóng] [81660]
+[cướp xe] [80434]
+[công nghệ xanh] [80274]
+[mở rộng quân sự] 【80902】
+[bên trong một bảng hoặc danh sách] [79972]
+[kế hoạch chiến tranh] 【81664】
+[máy khoan bề mặt khẩn cấp] 【80850】
+[hệ thống kế toán đánh dấu thị trường] [81314]
+[thâm hụt ngân sách] 【81228】
+[Ủy ban Nhân quyền Liên Hợp Quốc] 【81184】
+[tỷ lệ điện thoại nội hạt, tỷ lệ cuộc gọi nội hạt] [81264]
+[Chương trình Lương thực Thế giới, WFP] 【81496】
+[mất thị trường] 【81256】
+[tội phạm quốc tế] 【81166】
+[Marburg virus] [80496]
+[phân bổ cổ phần của bên thứ ba] [81766]
+[nhiệm vụ quan trọng, nhiệm vụ quan trọng] [80774]
+[người không khuyết tật, người khỏe mạnh] [80152]
+[Bệnh cúm Hồng Kông] [80480]
+[chuyển khoản] [81882]
+[thiết kế môi trường] [79606]
+[Webcast, phát trên Internet] [80226]
+[bong bóng công nghệ] 【80374】
+[tiêu chuẩn toàn cầu] [81500]
+[tiêu chuẩn toàn ngành] [80822]
+[telepolitics] 【80376】
+[khuyết tật bẩm sinh] [81654]
+[đầu tư cổ phần] [80698]
+[cybersleuth] [80304]
+[khoản vay cá nhân] 【81052】
+[nhóm môi trường chuyên nghiệp] [80732]
+[công ty phát triển nhanh] 【80796】
+[năng lực phòng thủ, khả năng phòng thủ] [82156]
+[biên soạn chính phủ] [79574]
+[hộp thư, hộp thư điện tử] 【80506】
+[khủng hoảng chính trị] 【81578】
+[pseudoephedrine] [80458]
+[chất gây ô nhiễm hữu cơ liên tục, POP] [81244]
+[băng thông cao] [81122]
+[mức độ đó, mức độ đó] [79776]
+[Ngoại giao sổ séc, ngoại giao sổ séc] 【81402】
+[rối loạn cảm xúc] 【80712】
+[tài sản thuế thu nhập hoãn lại, DTA] 【80896】
+[phát hành cổ phần] 【80700】
+[tập thể dục sinh lý] 【80594】
+[lực lượng chính trị] [81554]
+[Kinh doanh Internet] [80416]
+[lý thuyết chính trị] 【81604】
+[thị trường giao ngay] [81038]
+[hormone nam] 【81780】
+[trang mua sắm trực tuyến] [80262]
+[tên miền] [80398]
+[tham nhũng chính trị] [81540]
+[công ty nước ngoài] [80254]
+[trường quân sự] 【80904】
+[nhạc trực tuyến] [80332]
+[hút mỡ] [81282]
+[rối loạn hành vi, rối loạn hành vi] [81108]
+[giáo với lưỡi cắt cong] [80708]
+[hoạt động nhân đạo] [81476]
+[hộp giải mã] [80346]
+[cảnh sát hàng hải] 【80662】
+[rối loạn lo âu xã hội] [81340]
+[phòng thủ tên lửa nhà hát, TMD] [81662]
+[Công ước Geneva] 【80322】
+[đối đầu quân sự] 【80926】
+[chia cổ phiếu ngược] 【80702】
+[số dư chính, PB] [80460]
+[thiopental] [80370]
+[thạch dinh dưỡng] [79564]
+[một cách nói chuyện] 【79958】
+[gián điệp kinh tế] [80968]
+[tính năng ba] [79878]
+[Đề án Ponzi] 【80492】
+[Trái phiếu chính phủ Nhật Bản, JGB] 【81956】
+[hỗ trợ hậu cần] [81074]
+[salad khoai tây] 【82410】
+[tổ chức bảo trì sức khỏe, HMO] 【81010】
+[xây dựng quân đội] [80924]
+[dựa trên dân tộc, cơ sở nổi tiếng] 【80008】
+[vốn cổ phần tư nhân] [82174]
+[tập thể dục quân sự chung] [80814]
+[hồ sơ bắt giữ] [81738]
+[vận chuyển cùng nhau, gửi cùng một lúc] 【80096】
+[người có tay nghề] [79830]
+[công nhân nước ngoài] 【80670】
+[bắt đầu sai] [82056]
+[Virus Ebola] 【80246】
+[năng lực cạnh tranh kinh tế] [80974]
+[kết nối Internet nhanh] [81116]
+[vụ đánh bom tự sát] [81328]
+[Bộ trưởng Bộ Văn hóa và Du lịch] [79706]
+[tiếng súng than bùn] [79510]
+[Tiếng Anh Anh] 【80048】
+[đau kinh tế] [80982]
+[nợ công ty] 【80760】
+[phòng thí nghiệm tội phạm] 【80640】
+[Tổ chức hàng hải quốc tế, IMO] [81152]
+[sơ suất chuyên nghiệp dẫn đến cái chết] [80834]
+[cách tiếp cận từ dưới lên đến quản lý, onHYPHENthực hiện ra quyết định tại chỗ, phương pháp thực hành] [79908]
+[Parapoxvirus] 【80440】
+[chỉ số trùng hợp] [80584]
+[gọi nội tại] [81024]
+[tôm khô] [79582]
+[vốn đã thanh toán] [82088]
+[hệ thống bảo hiểm y tế] [80580]
+[truy cập bài hát và bài thơ] [81356]
+[cuộc họp phân tích] 【80194】
+[hồi sức tim phổi, CPR] 【81458】
+[thời gian bảo vệ bản quyền] [81814]
+[xe buýt không có một bước lên vào nó, thường là bởi vì nó làm giảm chính nó hoặc có một thang máy, xe buýt tầng thấp] [80420]
+[jōjutsu] 【81436】
+[vụ kiện cổ đông] 【80704】
+[quản lý chăm sóc] [80288]
+[cải cách tài chính] [80864]
+[gian lận chứng khoán] 【81422】
+[xếp hạng sức mạnh tài chính] [81234]
+[steroid đồng hóa] 【80356】
+[đòi tiền chuộc] [81470]
+[đào tạo tinh thần] [80516]
+[kẹo nicotine] [80408]
+[mô hình kinh tế] [80972]
+[suy gan] 【80750】
+[chính khách tham nhũng] [80614]
+[hệ thống bảo hiểm chăm sóc điều dưỡng] [80648]
+[chạm vào] 【80060】
+[quản lý rủi ro của công ty] [80756]
+[phiếu cổ đông] 【80706】
+[lợi nhuận hoạt động] [80600]
+[lệnh bắt giữ quốc tế] [81164]
+[trách nhiệm chiến tranh] [81668]
+[Bệnh Parkinson] [80438]
+[thặng dư tài khoản vãng lai] [80988]
+[hàng không có nhãn hiệu] 【82182】
+[truyền tiền] 【81040】
+[dụng cụ phẫu thuật] [81350]
+[đối số đóng, câu lệnh đóng] [81216]
+[công ty cổ phần] 【80816】
+[công ty điện thoại đường dài] [81826]
+[thu nhập bằng sáng chế] [81920]
+[xạ trị] [82128]
+[công nghệ quang tử] [81080]
+[tái quốc hữu] [81208]
+[Internet di động] [80520]
+[Lực lượng quan sát của LHQ] 【81178】
+[đất nước thế tục] 【79884】
+[phẫu thuật điều chỉnh thị lực] [81286]
+[kali cyanide] [81632]
+[hệ thống chính trị] [81568]
+[nhà hoạt động chống hút thuốc] [81014]
+[quảng cáo trên thị trường] 【81096】
+[suy giảm nhận thức nhẹ, MCI] 【81000】
+[Tổng thống đương nhiệm] [81044]
+[máy quét hình ảnh cộng hưởng từ, máy quét MRI] [81322]
+[tốc độ truyền dữ liệu] [80380]
+[bảo vệ nhãn hiệu] 【81394】
+[nhân viên hợp đồng] [80948]
+[dioxin] [80360]
+[thứ tự từ chủ tịch công ty] [81342]
+[trang web hẹn hò trực tuyến] 【81380】
+[gật đầu đồng ý, gật đầu đồng ý] [82844]
+[tiêm gây chết người] [81802]
+[phẫu thuật thay đổi tình dục] 【81510】
+[đi lên khẩn cấp, bề mặt khẩn cấp] [80848]
+[Hiệp ước về sự gia tăng NonHYPHEN vũ khí hạt nhân, Hiệp ước phổ biến vũ khí hạt nhân không HYPHEN] [79434]
+[xoắn ốc giảm phát] [80390]
+[trình duyệt web, phần mềm duyệt web] [80238]
+[tiêu thụ quá mức] [80644]
+[chia sẻ thông tin] [81430]
+[Streptococcus viridans] [80102]
+[chiếm đóng quân sự] [80922]
+[không nhúc nhích một inch, đứng vững] 【80118】
+[nhà của cha mẹ, nguồn gốc của một người, sự giáo dục của một người, quá khứ của một người] 【80140】
+[quản trị doanh nghiệp] [80290]
+[ô nhiễm hóa học] [80626]
+[cửa hàng trực tuyến] [80264]
+[ngân hàng ngoại hối được ủy quyền, ngân hàng ngoại hối được ủy quyền] [79372]
+[san hô ống nội tạng] [79618]
+[Biên nhận tiền gửi của Mỹ, ADR] [82106]
+[chia sẻ nhạc] 【80620】
+[việc làm cố định] [80602]
+[sự trở lại kinh tế] 【80952】
+[suy thoái toàn cầu] [81498]
+[chỉ số kinh tế] [80976]
+[tội phạm có chủ ý, tội phạm có chủ ý] 【80990】
+[Ủy ban năng lượng nguyên tử] [81028]
+[đã sử dụng nhiên liệu hạt nhân] [81246]
+[tốc độ tăng trưởng doanh thu] [81362]
+[điều tra chung] [80818]
+[tội phạm tài chính] 【80878】
+[điều chỉnh theo mùa] 【80778】
+[radio vệ tinh] [80604]
+[kế hoạch chăm sóc] [80286]
+[năng lực quân sự] [80938]
+[sản phẩm máu] [81006]
+[kẹo cao su nicotine] [80406]
+[quỹ xã hội] 【81334】
+[thị trường trái phiếu] [81086]
+[hóa đơn tài chính, FB] 【81614】
+[công ty khởi nghiệp] [81462]
+[khoản vay ngân hàng] 【80890】
+[đàm phán lương] [81836]
+[căng thẳng chính trị] [81580]
+[Confederations Cup] [80294]
+[can thiệp chính trị] [81548]
+[suy thoái môi trường] [80722]
+[ví ảo] [80428]
+[vùng chiến đấu] [81076]
+[ectoparasitism] [79404]
+[lancefish trẻ, lance cát trẻ] 【80066】
+[sụt giảm kinh tế] [80960]
+[megabank] 【80806】
+[tấn công hóa học] [80630]
+[người khiếm thị] [81284]
+[hệ thống tài chính] [80860]
+[quy trình chính trị] [81542]
+[người tị nạn môi trường] [80730]
+[ám sát chính trị] [81574]
+[chính trị quốc gia] [81142]
+[thể thao cực đoan] 【80244】
+[chaebol] 【80368】
+[tấn công quân sự] [80914]
+[điều của riêng mình, thứ được giữ trong tay, đặc sản của một người, sở trường của một người, điểm mạnh của một người] 【80138】
+[thẻ nhà tài trợ] 【80396】
+[hướng dẫn yêu cầu ngân sách, mức trần cho các yêu cầu ngân sách] [80672]
+[kinh tế sụp đổ, khủng hoảng kinh tế] [80986]
+[Chỉ số giá cổ phiếu Tokyo, TOPIX] 【81906】
+[chất thải bệnh viện] 【80578】
+[hoạt động cấy ghép tim] [81456]
+[cặp song sinh dính liền] 【81002】
+[Địa chỉ web] [80230]
+[chất ức chế protease] [80466]
+[Văn phòng Cao ủy Liên Hiệp Quốc về người tị nạn, UNHCR] [81186]
+[tiền đai] 【80158】
+[lãi suất cực thấp] [81820]
+[cơ sở hạ tầng viễn thông] [81844]
+[thương lượng] 【81250】
+[chính phủ phục vụ, bộ máy quan liêu] 【80012】
+[thư spam] [80334]
+[chỉ số giá tiêu dùng, CPI] [81416]
+[Lực lượng đặc nhiệm hành động tài chính về rửa tiền, FATF] [80868]
+[Thế vận hội cổ đại] 【81058】
+[kế hoạch tổ chức lại, kế hoạch tổ chức lại, kế hoạch tái cơ cấu] 【81204】
+[nền kinh tế bên ngoài] [79406]
+[nhiễm trùng cấp tính] [80794]
+[thu nhập dự báo] [80830]
+[thuốc giãn cơ] [80844]
+[hợp tác song phương] 【81708】
+[không thể chịu được nữa, không thể chịu đựng lâu hơn nữa] [80124]
+[sake ginjō] 【80108】
+[Internet radio] [80220]
+[nhu cầu của khách hàng] [81070]
+[xử phạt quân sự] 【80920】
+[bệnh động mạch vành] [80710]
+[cuộc tấn công quân sự, đình công quân sự] [80912]
+[doanh thu đặc biệt] 【81926】
+[tùy chọn chứng khoán] [80694]
+[bầu cử thị trưởng] 【81262】
+[hệ thống điện thoại cầm tay cá nhân, PHS] [80746]
+[cá hồi hồng, cá hồi lưng gù] [79518]
+[quỹ chiến dịch] 【81680】
+[picornavirus] [80446]
+[án tử hình] 【81278】
+[Hợp tác kinh tế châu Á-Thái Bình Dương, APEC] [80188]
+[dịch vụ chăm sóc] [80282]
+[quyết định chính trị] [81552]
+[viêm âm đạo candida, nhiễm nấm âm đạo] [79672]
+[tội phạm kế hoạch] 【80992】
+[quyền phát thải carbon dioxide] [81950]
+[kinh tế bất ổn] [80964]
+[lực lượng lao động] [81236]
+[homocysteine] [80478]
+[kế toán suy giảm tài sản] [81036]
+[tham gia hoặc vướng vào, hòa nhập vào, có gì đó để làm với, giao dịch với] 【80144】
+[lò phản ứng hạt nhân ánh sáng-nước] [80998]
+[phiếu bầu] 【81774】
+[khu tài chính] 【80866】
+[Bệnh Legionnaires] [81220]
+[báo với rất nhiều quảng cáo và gửi miễn phí] [80454]
+[jōdō] 【81438】
+[tình hình việc làm] [81064]
+[thao tác giá cổ phiếu] [80692]
+[mức độ ô nhiễm] [80616]
+[Olympic Park] 【80256】
+[Ai trên trái đất?] 【79856】
+[chế độ độc tài quân sự] [80934]
+[Tất cả các cơ quan] 【80250】
+[chủ nghĩa tư bản tự nhiên] [81326]
+[nhà đầu tư nước ngoài] 【80668】
+[câu hỏi một lần nữa, lặp lại một câu hỏi, lặp lại một truy vấn] 【80170】
+[thưởng hiệu suất] [80828]
+[chuỗi cung ứng] [80312]
+[bệnh tiểu đường khởi phát vị thành niên] 【81346】
+[thông báo thu nhập hàng quý] [81254]
+[tổng chi phí tài khoản] [80588]
+[nhà lãnh đạo xa bên phải] [80836]
+[báo cáo tài chính] [81232]
+[quy tắc quân sự] [80916]
+[bỏ phiếu chiến lược] [81674]
+[nhà phân tích quân sự] [80898]
+[ô nhiễm dioxin] [80362]
+[ví ảo] [80634]
+[viêm ruột cục bộ, viêm ruột vùng] [81050]
+[người viết lời] 【80336】
+[điện thoại vệ tinh] [80610]
+[lịch sử pháp lý] 【82140】
+[luật chống đối] 【80552】
+[hầm thịt hoặc cá nhỏ] 【80044】
+[Lực lượng Delta] 【80392】
+[Đảm bảo tiền gửi ngân hàng] [82246]
+[tín dụng tiêu dùng] [81412]
+[cơ quan tài chính] 【80876】
+[mật độ xương] [81190]
+[gian lận tài chính] 【80872】
+[Lance cát Nhật Bản, cát trắng Thái Bình Dương] 【80064】
+[cách lấy] 【82350】
+[thiệt hại chiến tranh] 【81672】
+[điều phối viên cấy ghép] [80560]
+[đứng trên tiptoes] [82348]
+[hydrochlorofluorocarbon, HCFC] [80424]
+[chi phí cung cấp] [80812]
+[ngôn ngữ truy vấn có cấu trúc, SQL] [81104]
+[quỹ dự trữ tiền, MRF] 【80502】
+[hệ thống làm mát lõi khẩn cấp, ECCS] [80854]
+[rock cứng, cứng và không chịu nổi, clangor] 【82374】
+[cấu trúc tài chính] [81222]
+[chủ nghĩa phát xít] [80414]
+[tự do tư duy] [81268]
+[shoetree] 【82370】
+[tạp chí công việc] 【80800】
+[kênh tin tức] [80412]
+[giảm nợ] [81198]
+[đánh giá kinh tế] [80984]
+[tội phạm của công ty] 【80770】
+[ngộ độc thực phẩm ngộ độc] 【80482】
+[lỗi y tế] [80572]
+[nguyên tắc kế toán doanh nghiệp] [80754]
+[chuỗi cung ứng toàn cầu] [80276]
+[hóa đơn giả] 【80782】
+[ước tính thu nhập] [80826]
+[nhận xét công khai] [80134]
+[nhiệm vụ quân sự] 【80936】
+[gián đoạn gây ra gián đoạn ngân hàng] [82046]
+[trao đổi nợ-thiên nhiên] [80718]
+[sản phẩm tài chính, công cụ tài chính] [80874]
+[bấm huyệt] [82008]
+[liệu pháp gen] [80568]
+[hệ thống pháp lý] [80534]
+[cựu quyền] 【81714】
+[nhận được một sự sụp đổ, có một mảnh may mắn bất ngờ] 【80148】
+[kênh không tranh giành] [80418]
+[hy sinh bay] 【80784】
+[trả cho mỗi lần xem] [80476]
+[bài phát biểu chấp nhận] [81272]
+[Ủy ban an toàn công cộng quốc gia] [79656]
+[Ủy ban quốc tế về bảo vệ phóng xạ, ICRP] [81172]
+[xếp hạng sức mạnh tài chính] [81230]
+[phần trăm tỷ giá hối đoái] 【80696】
+[bí mật quân sự] 【80906】
+[kiểm tra đa giác, thử dò tìm nói dối] [80488]
+[tội phạm có tổ chức, tội phạm có tổ chức] 【81696】
+[đào tạo cao độ] [81124]
+[chức năng gan] 【80748】
+[kết nối luôn bật] [81428]
+[yêu cầu thuế, điều tra thuế, điều tra thuế] [81642]
+[rổ được gói trong giấy, vỏ cây hoặc da] 【80088】
+[địa điểm gần đó] 【80856】
+[có trái tim của một người xúc động] 【80078】
+[rối loạn thần kinh] [81468]
+[trang web sân bay, giáp sân bay] [79888]
+[phần lớn ổn định] [80554]
+[suy thoái môi trường] [80740]
+[tỷ lệ nhiễm trùng] [80714]
+[psilocybin] [80308]
+[phát hành trái phiếu chính phủ] 【81148】
+[đăng ký cử tri] [81684]
+[lần cuối cùng, người cuối cùng, trước đó] [80056]
+[tự do ngôn luận, tự do ngôn luận] 【81048】
+[cơ quan phản đối] [81736]
+[Capella, Alpha Aurigae] 【80116】
+[TV độ phân giải cao, HDTV] 【81128】
+[tòa án quân sự] [80942]
+[pin lithium-ion] [80538]
+[bạo lực gia đình] 【80400】
+[báo cáo kinh tế hàng tháng] 【81008】
+[tiếng hát] [81628]
+[Moxifloxacin] 【80106】
+[chính phủ chăm sóc] 【81242】
+[dòng điện] 【80024】
+[kế toán quản lý] [79624]
+[lá phiếu tranh chấp] 【80788】
+[thuốc bị cấm] [80842]
+[Lỗi đánh máy do kanji sai phụ thuộc khi xử lý văn bản] [80112]
+[suy thoái kinh tế] [80958]
+[triển khai quân sự] [80940]
+[công nghệ chống nhiễu] [82086]
+[Thế vận hội hiện đại] 【80858】
+[thuốc cấp cứu] 【80798】
+[ứng cử viên nữ] [81392]
+[ô nhiễm quang hóa] [81078]
+[ống tre đầy nước mà chống lại một hòn đá khi làm trống, thiết bị để dọa chim từ vườn] [81330]
+[kho dự trữ hạt nhân] [80678]
+[hoạt động hợp nhất] [81132]
+[Tổng thống diễn xuất] [81760]
+[Hệ thống dự đoán thông tin liều lượng khẩn cấp môi trường, SPEEDI] [80846]
+[thuốc thử nghiệm] [81288]
+[camera giám sát] [80742]
+[chương trình bảo hiểm y tế quốc gia] [81174]
+[kế hoạch hưu bổng của công ty] [80768]
+[anten thu cao] [81130]
+[rối loạn lưỡng cực] 【81700】
+[thứ tự cải tiến kinh doanh] [80832]
+[hoạt động ngoại giao] [80666]
+[nhóm bên trái] [80840]
+[cửa hàng tạp hóa] 【81238】
+[hệ thống y tế] 【80570】
+[doanh thu trung lập] [81640]
+[cơ sở nuôi dạy con] [82112]
+[cải cách tài chính, tái thiết tài chính] [81226]
+[Trị liệu hành vi] [81110]
+[ngân hàng thương gia] 【80494】
+[được di chuyển đến điểm của nước mắt, được xúc động] 【80076】
+[nấm gây ảo giác] [81034]
+[hội chứng suy giảm miễn dịch mắc phải, AIDS] [81072]
+[nợ xây dựng] [81016]
+[sợi tối, sợi tối] [80358]
+[báo cáo thu nhập] [81364]
+[hội chứng kháng insulin] [80204]
+[danh sách mong muốn] [81270]
+[tương lai trái phiếu chính phủ] 【81146】
+[Hoạt động hòa bình quốc tế] [81168]
+[rối loạn tự miễn] [81324]
+[thu nhập gọi] [81366]
+[tổ chức nhân quyền, tổ chức nhân quyền] [81472]
+[apoptosis, apoptotic] ​​[79970]
+[kế hoạch tổ chức lại, kế hoạch tổ chức lại] [81214]
+[Ủy ban Kiểm tra An ninh Công cộng] [79666]
+[có một cuộc sống lâu dài, sống lâu] 【82650】
+[kanji kiểu cũ] 【82346】
+[Hướng dẫn chương trình điện tử, EPG] 【81880】
+[bong bóng kinh tế] [80970]
+[ý chí chung, volonte generale] 【80586】
+[truyền hình tương tác] [81702]
+[phát sóng trên mặt đất] 【81792】
+[Máy chủ web] [80232]
+    
+

@@ -1,0 +1,2157 @@
+repl.it
+@anonymous/BriskGullibleAbstractions
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920212223242526272829303132333435
+
+const translate = require('google-translate-api');
+
+var fs = require("fs");
+var content = fs.readFileSync("retrans.txt", "utf8");
+
+translate("感じ", { from: 'ja', to: 'vi' }).then(res => {
+        console.log(res.text);
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 3.93s
+
+
+Repl.it: package installation success
+
+102431; 115233
+completed!----------------------------------
+=> undefined
+[kanji "chiến đấu" cấp tiến] [104124]
+[sứ sơn vàng] [114724]
+[năng lượng tối] [102544]
+[như vậy, vì vậy, vì lý do đó] [104046]
+[Ngày đầu tiên của con chuột của năm mới, ngày đầu tiên của con chuột của tháng] [103214]
+[kestrel chung] [102586]
+[nhảy bungee, nhảy bungee] 【102736】
+[hazelnut] [104038]
+[kanji cấp tiến 79 ở bên phải] [103558]
+[canxi axetat] [102662]
+[kanji "tám" cực đoan ở trên cùng] [103060]
+[trang nghiêm mà không được hách, được trang nghiêm, và hơn nữa ấm áp, như vậy là nhẹ nhàng] [103252]
+[cho một cơ hội để làm một cái gì đó trượt qua ngón tay của một người] [104140]
+[gukbap] 【104646】
+[các bảng tiêu chuẩn về thành phần thực phẩm] [103628]
+[đưa trở lại với tâm trạng tốt, vui lên] [104416]
+[đông lạnh tại chỗ] 【102778】
+[chữ số nửa chiều rộng] [104486]
+[Liswort của Chamisso] [104848]
+[chọn một ngày tốt lành bằng cách xem thông tin chiêm tinh trên lịch, ngày được chọn theo cách như vậy] [103492]
+[kanji "côn trùng" cấp tiến ở bên trái] [103934]
+[dưới gốc cây] [103082]
+[mẹ bán thời gian, mẹ làm việc] [103238]
+[đối tượng giống như ấm trà thường làm bằng sơn mài và được sử dụng để đổ chất lỏng nóng và lạnh, chậu nước với hai tay cầm ở hai bên được sử dụng để rửa mặt hoặc tay của một người] 【104074】
+[Xia] [113260]
+[chảo tako-yaki] 【102596】
+[Hổ Tasmania] [104668]
+[farfalle] [103970]
+[bột chì mịn dùng để viết trên lacquerware] [103830]
+[nơi mà một người đã đi đến, nơi mà một trong những đã đi] [104288]
+[Nivkh] 【103840】
+[nhân cơ hội này] 【103718】
+[kanji "lúa gạo" cấp tiến ở bên trái] [103880]
+[người phối ngẫu tốt] [103298]
+[cõi tâm linh của nhân loại] [103260]
+[nghệ sĩ-tu sĩ] [102902]
+[không đáng nhắc đến, không có gì đặc biệt] [103258]
+[không có một từ nào, thậm chí không có phản ứng nhỏ nhất] [103742]
+[quả táo hoa] 【103728】
+[bạn nhận được những gì bạn phải trả cho, rẻ và khó chịu] [104142]
+[Người mù dẫn người mù, nếu người mù dẫn người mù, cả hai sẽ rơi vào mương] [102742]
+[Tôi cầu nguyện điều đó, tôi ước điều đó] [103418]
+[một vài giờ] [104178]
+[Glehnia littoralis] [103606]
+[anh em phức tạp, gắn bó không tự nhiên với người em trai, người da đen đương thời] [104434]
+[oxoacid] [102474]
+[Hình ảnh cộng hưởng từ, MRI] [105042]
+[kẽm sulfat] [102558]
+[chóng mặt, mất phương hướng, bị lóa mắt, lạc vào] [104246]
+[hoàn toàn bị thu hút bởi, hoàn toàn bị cuốn hút bởi] [102866]
+[màu tím nhạt] [103798]
+[Sebastes iracundus] 【102796】
+[Món mì Tứ Xuyên phủ sốt mè và dầu ớt] [104550]
+[giữ một kỷ lục, giữ một kiểm đếm] [104156]
+[không thể cưỡng lại, không thể đàn áp] [104174]
+[thẻ thơ ca màu đỏ, ba thẻ bài thơ đỏ thơ] [113146]
+[Mont Blanc] 【102766】
+[tuổi chín mươi, một người chín mươi] [103984]
+[bị nhốt cảm giác, cảm giác cau có, cảm giác bị mắc bẫy, cảm giác tuyệt vọng, bị ràng buộc] [102578]
+[đỏ mặt với sự xấu hổ] [104422]
+[màu đỏ nhạt] [103804]
+[một hạng, một cấp] [104294]
+[cuckoo nhỏ hơn] 【105118】
+[Khu vực Nam cực, vùng cực nam] [103638]
+[không thể giúp, không còn cách nào khác ngoài] [104158]
+[kanji "nắp ấm" cực đoan] [103054]
+[Nhân sâm Nhật Bản] 【102622】
+[giống như, giống như, không khác gì] [104058]
+[bốn con thú, bốn vị thần nói để cai trị bốn hướng] [103330]
+[ô nhục tổ tiên của một người, làm hoen ố danh dự của tổ tiên của một người] [104234]
+[rotator cuff tear] [102572]
+[kali ferrocyanide] [102676]
+[ngày đầu tiên và mười lăm tháng âm lịch] [103496]
+[cơ quan chứng nhận] [102628]
+[thu thập thảo dược và kéo cây thông non ra rễ] [103220]
+[fovea centralis] 【105056】
+[chỉ một chút xíu] 【103000】
+[chữ số có độ rộng đầy đủ] [104488]
+[Vòi của Baird] [104532]
+[Aldebaran, Alpha Tauri] [103308]
+[bắt và phát hành] [103860]
+[mười hai từ được sử dụng để đánh dấu lịch cũ là chỉ số của các hoạt động may mắn và không may mắn] [103476]
+[cảm thấy chóng mặt] 【103598】
+"Ngoài ra r và g っ て ん ひ ろ せ い" [102638]
+[kanji "răng" cấp tiến ở bên trái] [104256]
+[Et tu, Brutus?, Và bạn cũng vậy] [104264]
+[tiếng thằn lằn] [104682]
+[Mực nang không xương của Nhật] 【105366】
+[lưới muỗi hình lều] [103036]
+[đền thờ sau] [103358]
+[Tàu quét mìn lớp Yaeyama] 【105698】
+[bulgogi] [104564]
+[Ấm đun nước Trung Quốc với ba chân] [104128]
+[dạng chiêm tinh học dựa trên Xiuyaojing] [103484]
+[trường cao đẳng nữ] [104464]
+[tội phạm duy nhất bao gồm nhiều tội phạm độc lập] [103210]
+[tự gây thương tích, tự hại] 【102580】
+[kanji radical 13] [103062]
+[kanji "hiển thị" căn bản ở bên trái] [103894]
+[bị mất trong sự ham muốn cho sự giàu có, ném tất cả sự thận trọng và lương tâm đi theo đuổi sự giàu có] [104240]
+[kanji "bên" cấp tiến ở bên trái] [103574]
+[Koel châu Á] 【105140】
+[Grand Empress Dowager, Hoàng hậu hoàng hậu và Hoàng hậu] [103374]
+[nhận thức sâu sắc] [102488]
+[đền thờ phụ] [103348]
+[báo in] ​​[104920]
+[đặt tên] [102706]
+[dị sắc sắc, mắt có màu khác] [102968]
+[quả táo hoa] 【103734】
+[Tháng Sáu] [104898]
+[vài phút, một vài phút] [104180]
+[trở nên vô tình, ngừng theo kịp các tiêu chuẩn xã hội, không liên lạc được với thực tế] [103780]
+[Giờ Greenwich] [103452]
+[nằm xuống] 【103722】
+[hạt macadamia] [104882]
+[kanji "người phụ nữ" cấp tiến ở bên trái] [103142]
+[bản chất thực sự của một người] [104710]
+[quần áo hoa văn bằng dương xỉ chân của sóc] [103756]
+[điểm uống rượu rẻ] [103634]
+[kanji "đầu heo" cấp tiến] [103174]
+[vải bọc theo chiều ngang tạo thành phần dưới cùng của một số trang phục truyền thống của Nhật Bản] [103852]
+[theo lựa chọn, ý chí của chính mình sẽ, theo sáng kiến ​​của chính mình, từ một con dơi của riêng mình] [104086]
+[Nhân sâm châu Á] [102624]
+[Cuckoo nhỏ hơn] 【105112】
+[thuốc kháng viêm không steroid, NSAID] [102746]
+"Azalea ryuu" [104712]
+[hành động như một đối diện, tạo thành một đối tác, hoạt động như một đôi] [103786]
+[kanji "ngày" cấp tiến ở bên trái] [103548]
+[Luật Ainu mới] 【103844】
+[cupronickel] [102560]
+[định lý giá trị trung gian] [102594]
+[Biểu đồ Hertzsprung-Russel, sơ đồ nhân sự] [103312]
+[chơi bài, gạch mạt chược làm từ xương động vật] [104238]
+[quanh cổ, cỡ cổ] [103972]
+[đánh bóng giày của một người, làm sạch đôi giày của bạn] [104522]
+[carpaccio] [103944]
+[kiểu tóc của phụ nữ] [103748]
+[cấp trên] [103314]
+[ba kleshas độc hại trái tim của con người] [104622]
+[kanji "lửa" triệt để ở dưới cùng] [103564]
+[cây thông bị kéo ra trong "ne-no-hi-no-asobi"] [103224]
+[nơi gặp gỡ cho các nhà thư pháp và họa sĩ] [102820]
+[redlip mullet] [102810]
+[dhyana] 【104594】
+[Sadaparibhuta] [104972]
+[kanji "box" hoặc "country" radical] [103132]
+[đình chỉ giấy phép lái xe] [104270]
+["giới hạn nhiệt" năng lượng mặt trời hạn] [103702]
+"Tôi xin lỗi, p ___ _ _ _ _ _
+[tiếng sậy lớn] [105164]
+[dự án hệ gen] [102770]
+[kanji "chi nhánh" cấp tiến như bao vây] [103534]
+[Viện đào tạo tỉnh] [104456]
+[kanji "gạo" cấp tiến ở bên trái] [103904]
+[kanji "chim" cấp tiến] [104014]
+[kanji "cày" hoặc "gốc cây ba nhánh"] [103920]
+[chim lồng, người có quyền tự do bị hạn chế] [103690]
+[Agnus Dei] [103432]
+[tao-tie, người tàn bạo, thèm khát của cải] [103048]
+[mặc dù vậy, mặc dù có thể là] 【104050】
+[huajiaoyan, muối tiêu Tứ Xuyên] [104040]
+[kanji "axe" cấp tiến ở bên phải] [103544]
+[Chòm sao "mái nhà" Trung Quốc] [103466]
+[Hệ thống tiết kiệm bưu điện] [103444]
+[poêlé, poêler, bơ rang] 【104034】
+[hydrogen iodide, HI] [102466]
+[phía Thái Bình Dương của Nhật Bản, biển Đông, hoặc về Nhật Bản] [103516]
+[Chianti] 【104186】
+[giải thích bổ sung, thông tin bổ sung] [103714]
+[Giờ quốc tế, UT] [103450]
+[bệnh] [103764]
+[phán xét tuyệt vời] [103408]
+[kanji "vỏ" cấp tiến ở bên trái] [103998]
+[con dấu cao su tự mực] [104190]
+[sao snapper] 【102790】
+[ký tự La Mã có chiều rộng đầy đủ] [104492]
+[số người đọc, số người đăng ký] [104184]
+[batard] 【102538】
+[nhận từ người khác] [103106]
+[mũ bảo hiểm với mái tóc trắng mọc ra từ đầu để làm cho một người trông giống như một người già, gốc Kanji "cũ" ở trên cùng] [103918]
+"Makaku Yakushima" [104420]
+[Khu vực Wernicke] [105006]
+[cổ hình vuông] [103806]
+[giáo sư] [103506]
+[các bảng tiêu chuẩn về thành phần thực phẩm ở Nhật Bản] [103632]
+[ion hydro] [102454]
+[dấu biên] [104818]
+[bị sa thải, bị sa thải] [103488]
+[phân loại gỗ thơm được sử dụng làm hương] [104406]
+[oxy phản ứng] [102482]
+[cha mẹ từng bước] [103848]
+[katakana nửa chiều rộng] [104438]
+[Glehnia littoralis] [103610]
+[một phần của vải được giấu gần nhất với da khi mặc một bộ quần áo được bọc ở phía trước của một] [103776]
+[phòng trà] 【104732】
+[rất nhiều trong mở] [102864]
+[auberge] [104028]
+[bó tóc, tóc tuft] [104090]
+[ngành công nghiệp kim loại bùng nổ] [104100]
+[cổ vũ, thường xuyên nhảy múa trong vòng cổ vũ] [103952]
+[Rayleigh tán xạ] [104474]
+[mắt không phù hợp về màu sắc] [102970]
+[Cochin] [104206]
+[mua một vé bán hàng trước] [103738]
+[cadmium sulfide] 【102548】
+[vị thần Trung Hoa cổ đại ở phía bắc] [103338]
+[thật đẹp trai] [104164]
+[kanji radical 13] [103064]
+[xúc tu mực] [104220]
+[từ cái nôi đến mộ] [104998]
+[chi] 【102898】
+[phối hợp phối hợp] [113310]
+[flambe] [103948]
+[hấp dẫn vào tội phạm] [103086]
+[vijnapti-matrata] [104194]
+[chuỗi vương miện] [103002]
+[kanji "mặt trăng" cực đoan ở bên trái] [103550]
+[tổ yến, tổ nhanh] [102952]
+[kanji "jar" cấp tiến ở bên trái] [103908]
+["thính giác màu" gây mê] [105054]
+[kanji "quần áo" cấp tiến ở bên trái] [103938]
+[những thứ không tồn tại] [103678]
+[darmstadtium] [102506]
+[Tôi cầu nguyện, tôi ước] [103458]
+[vương miện đẹp với vẻ đẹp lớn hơn] [103244]
+[kanji "người" cực đoan ở trên cùng] [103056]
+[Trung Quốc "ma" chòm sao, "ngày của ma"] [103472]
+[chóng mặt, chóng mặt] 【104244】
+[đồ lót ngắn tay của những người quý tộc] [103810]
+[kanji "kim loại" hoặc "vàng" cấp tiến ở bên trái, ngành công nghiệp kim loại] [104098]
+[May] [104896]
+[kanji "thanh kiếm" cấp tiến ở bên phải] [103116]
+["từ tập trung"] [104718]
+"Okasen Ryu, souchoku của Futoshi chiyo s" [104950]
+[chiết xuất nhân sâm] [104068]
+[Ngày của Rat, thu thập các loại thảo mộc và kéo ra cây thông trẻ bởi rễ, cây thông kéo ra theo cách như vậy] [103216]
+[thu hút sự chú ý] [104278]
+[kim loại nhóm bạch kim, nguyên tố nhóm bạch kim] [102526]
+[áo khoác đua] [104232]
+[dung dịch axit kali dicromat-sulfuric] [102648]
+[máy xay hạt tiêu] [104740]
+[notoginseng] [102618]
+[Freon] 【102694】
+[sợi dây mảnh đi qua lỗ trong một đồng xu] [103022]
+[Harijan] 【104506】
+[các vị thần quan sát con người từ trên trời] [103406]
+[chú tôm hùm] [103596]
+[kanji "cửa" cấp tiến] [103528]
+[thịt bò giật] 【104056】
+[kẽm sulfide] [102556]
+[ký tự toàn bộ chiều rộng] [104482]
+[tức giận đến mức một người bị vướng vào những thứ không liên quan, có một cơn giận dữ] [103254]
+[kanji "cơ thể" cấp tiến ở bên trái] [104006]
+[chuyên gia tư vấn] [102438]
+[nửa marathon] [103958]
+[hormon côn trùng] [105336]
+[bùng nổ kinh tế do các vụ mua sắm đặc biệt, đặc biệt trong thời chiến) [104102]
+[thực hiện được sử dụng để nâng cao hiệu quả của vở kịch] [104372]
+[chờ đợi một người nào đó bàn tay và bàn chân, chăm sóc cá nhân của một ai đó] [104212]
+[Diệc đêm Nhật Bản] 【102900】
+[vải màu bằng cách đặt một tờ giấy lên trên nó và đánh vào thuốc nhuộm, vải màu theo cách như vậy] [103752]
+[kanji "cong sông" cấp tiến] [103156]
+[ununquadium] [102498]
+[kanji "dừng" cấp tiến ở bên trái] [103556]
+[Hội trường thuyết Phật giáo] 【104696】
+[thuốc laser] [104500]
+[mặt tối] 【104228】
+[sóc đất] [102816]
+[seaborgium] [102514]
+[Cuckoo nhỏ hơn] 【105088】
+[Thư viện Quốc gia, Thư viện Quốc hội] [104454]
+[người được chọn, người được chọn, số ít người được chọn] [103654]
+[ngạc nhiên, gây sốc, quai hàm] [104274]
+[tên tội phạm hình sự] [103188]
+[vòng cổ] [103794]
+[quận ngoại thành] [102444]
+[nubuck] [104296]
+[kanji "giáo" cấp tiến ở bên phải] [103524]
+[tineid] [103594]
+[đừng làm cho người khác những gì bạn sẽ không làm cho bạn] 【103006】
+[nhăn trên của tay áo, nắp tay áo] [103808]
+[mặc chính thức tiêu chuẩn mặc bởi sinh viên, usu. khi đi phỏng vấn] [105492]
+[bây giờ nó là như vậy, vì nó là như vậy] 【104048】
+[Hạt mè nghiền nát trong nước và ướp lạnh như đậu phụ] [104778]
+[Khu vực Kobe] [104214]
+[thuộc da sử dụng hợp chất crôm] [102650]
+"Takoyaki Ban" 【102606】
+[Nhân sâm châu Á] [102614]
+[cuối mùa thu] [103288]
+[kanji "mắt" cấp tiến ở bên trái] [103886]
+[Hương thơm Chypre] [103768]
+[Tháng 10] [104906]
+[điểm quay] [104308]
+[kanji "thịt" cấp tiến ở bên trái] [103552]
+[rơm hoặc cỏ khô] [103762]
+[siderostat] [103440]
+[Ngày xửa ngày xưa, một thời gian dài trước đây] [102906]
+[cuối mùa thu hoặc đầu mùa đông sương, "sương lạnh" năng lượng mặt trời hạn] [103704]
+[cần sa cổ họng trắng] [102948]
+[Phong trào giải phóng Buraku] [103836]
+[khối lượng đơn đặt hàng, đơn đặt hàng đã nhận được] [102436]
+[Trung Quốc "dạ dày" chòm sao] [103462]
+[cần cẩu có mũ trùm] [105178]
+[Herrenmoral] [104348]
+"Bareru er, ryukyu" [104300]
+[miacis] [104262]
+[suy nghĩ tích cực] [113256]
+[phát ra âm thanh chói tai] [102874]
+[không chỉ] [103380]
+[Bạn có thể nói lại lần nữa, Nice] 【103872】
+[đào tạo tự nguyện, thực hành tự nguyện, thực hành miễn phí] [104680]
+[hệ thống limbic] [105016]
+[ununpentium] [102496]
+[tội phạm cùng nhau bởi hai hay nhiều người] [103190]
+[advaitam] [104582]
+["ngày ma"] [103474]
+[Viện đào tạo cho công chức] [104460]
+[cuckoo nhỏ hơn] 【105116】
+[ẩn mình] [113480]
+[kanji "gai" cực đoan ở đầu trang] [104252]
+[kanji "vỏ lớn" cấp tiến] [104110]
+[phản đối] [104788]
+[Tê giác Ấn Độ, một con tê giác sừng lớn] 【104318】
+[Thổ dân Tasmania] [104664]
+[bùa biển bạc] 【102788】
+[trượt nước] [104356]
+[flagstaff được trang trí bằng ngà voi mang bởi hoàng đế hoặc một vị tướng] [102998]
+[về những điều kiện tốt như vậy để biết suy nghĩ của nhau] [113218]
+[một cây được nhìn thấy vào mùa đông, cây thường xanh] [104704]
+[Gilyak] 【103842】
+[Snath của Latham] 【105176】
+[hộp giấy, thùng giấy] [104412]
+[như này, hey, xem ở đây, tôi nói] [103242]
+[gầy vàng] 【102802】
+[con dấu sửa đổi, con dấu hiệu chỉnh] [104820]
+[điều đó có thể có thể] [102890]
+[Grand Empress Dowager, Hoàng hậu hoàng hậu và hoàng hậu] [103372]
+[tội phạm] [103196]
+[phác thảo của một con cá đơn độc] [102640]
+[dasabhumi] 【104690】
+[kanji "chân" hoặc "chân" cấp tiến ở bên trái, bị trễ, quá khứ, trước đó] [104004]
+[Giờ chuẩn Greenwich, GMT] [103454]
+[nỗi buồn hay cảm xúc của Hoàng đế] [104070]
+[bắp ngô, bắp, đường sắt] [105160]
+[nhóm thực phẩm] [103624]
+[Ngựa vằn của Grevy] [104316]
+[người thích du học, người muốn du học] [103508]
+[nirmanakaya] [104968]
+"Dòng chảy Sinto" [104944]
+[tân Darwin] [102824]
+[kanji "tấn công" cấp tiến ở bên phải] [103538]
+[gọi chim] [105134]
+[chà vào, đào tạo, chuẩn bị cho] [103240]
+[Lễ hội ngựa Chagu Chagu, đồ chơi ngựa gỗ nhỏ có chuông trên cổ của nó] [104536]
+[mã hành chính và dân sự] [112544]
+[nhấp nháy nước mắt, đôi mắt đầy nước mắt nhấp nháy] [103670]
+[ununhexium] [102494]
+[phủ nhận từ ngữ cụm từ] [113592]
+[ba lê trượt tuyết, acroski] [104364]
+[người bạn sở thích, bạn bè đã đạt được thông qua sở thích hoặc cá tính chung] [104088]
+[khắc-tie khắc, con số của một sinh vật của thần thoại Trung Quốc khắc trên đồ đồng trong triều đại Yin-Chou] [102986]
+[kanji "vách đá" cấp tiến] [103128]
+[kanji "trái tim" cấp tiến ở bên trái] [103522]
+[Nó là như vậy, nó là như vậy] 【102888】
+[dầu làm lệch hướng, khay cạn với giá để thoát thực phẩm sau khi chiên sâu] [102600]
+[Nghi lễ đền thờ được tổ chức với hai tháng đầu năm để dự báo một vụ thu hoạch thành công, trồng lúa theo mùa trên một cánh đồng liên kết với một ngôi đền] [104386]
+[chỉ vì lợi ích của hình thức] 【102720】
+[áo khoác lông thú, quần áo được làm từ chim chóc] [103294]
+[tiếng chuông kêu vang, nhạc cụ, đá bị va đập, vv] [103412]
+[kanji "làng" cấp tiến] [104022]
+[ununoctium] [102490]
+["hạt trong tai" năng lượng mặt trời hạn] [103698]
+[kanji "lưỡi" cấp tiến ở bên trái] [103924]
+[HFCS 55, xi-rô ngô fructose cao chứa 55% fructose] [104176]
+[thời gian trôi qua, thời gian nhận thức, thời gian tương đối] [102536]
+[hôn nhân cưỡng bức] [103976]
+[kanji "hổ" cực đoan] [103932]
+[Anthurium lily, flamingo lily, Anthurium] 【102896】
+[kanji "tóc" cực đoan ở trên cùng] [104122]
+[một khi bạn đã chết, đó là nó] 【102566】
+[tam giác nguyên âm] [103436]
+[Chòm sao "sừng" Trung Quốc] [103464]
+[mướp đắng, bầu đắng] [104606]
+[kanji "tay" cấp tiến ở bên trái] [103532]
+[đối tác ngoại tình, người yêu ngoại tình] [103856]
+[thịt heo chín lần] [104598]
+[khó khăn khủng khiếp] [104146]
+[hoa ăn được] [104042]
+[cân nhắc] [104440]
+[kanji "vải" cấp tiến ở bên trái] [103158]
+[huyết thanh thật, thuốc thật] [102696]
+[tiếp nhận tín hiệu] [102432]
+[kanji "gốc xương trần" ở bên trái] [103276]
+[cây chàm, cây thông thường] [102760]
+[thép molypden crom, thép molypden crom] [102652]
+[đoán chính xác đối tượng nào sẽ bật lên trên một thử nghiệm, có dự đoán của một người sẽ chính xác] [104162]
+[mũ săn bắn] [103960]
+[Bạch Hổ, bảy biệt thự của các thiên đường phương Tây] [103334]
+[paracetamol] [103736]
+[Thứ Năm] [104872]
+[tiếng chuông hoặc chuông báo] [103410]
+[ketamine] 【102700】
+[lòng biết ơn sâu sắc] 【102744】
+[urushiol] [103648]
+[kanji "cúi đầu" ở bên trái] [103172]
+[sợi gai dầu hoặc vải lanh dệt thành vải thô được sử dụng cho màn chống muỗi, quần áo mùa hè, v.v.] [103032]
+[nakiri bocho, var của dao Nhật dùng để cắt rau] [102598]
+[máy bay mặt trời] [104498]
+[nhóm tự tử, tự sát hàng loạt, sắp xếp tự sát của hai hay nhiều người] [102576]
+[câu lạc bộ săn bắn] [103982]
+[rìa ở đầu mũi kiếm] [103510]
+[kanji "vỏ lớn" cấp tiến] [104112]
+[hộp karaoke, câu lạc bộ với các phòng riêng có thể thuê với máy karaoke] [104216]
+[tội phạm mục tiêu của họ cần một số lượng lớn người hành động cùng nhau] [103212]
+[nhôm sulfat 3), nhôm sunfat] [102686]
+[kanji "chân cong" chân cực đại] [103148]
+[trong một thời gian ngắn, trong một thời gian, trong một thời gian, trong thời gian này] [104188]
+[trượt tuyết tự do] [104362]
+[Sasamorpha borealis] [103080]
+[ethanol sinh học] [103660]
+[kana đầy đủ chiều rộng] [104480]
+[truy cập cho các bộ phận] [103686]
+[lọ đất nung nhỏ, thân có chất béo để đựng nước, bình nước dùng cho bồn tắm đầu tiên của em bé] [103906]
+[sốt cocktail] [104832]
+[ghế nhạc] [104150]
+[phytochrome] 【102658】
+[alkyne] [102458]
+[yếu tố nguy hiểm, gen gây chết người] [102838]
+[gulping repetitively] [103642]
+[đề xuất nhóm] [113110]
+[Chu kỳ Saros] [103438]
+[whimbrel] [105192]
+[cuối mùa hè, tháng sáu âm lịch] [103270]
+[yêu kẻ thù của bạn] 【103044】
+[kanji "thực phẩm" cấp tiến ở bên trái] [104116]
+[flunitrazepam, mái nhà] 【102698】
+[Samantabhadra, Fugen, Puxian] [104960]
+[anutpattika-dharma-ksanti] [104588]
+[cuộc đua -mỗi] [104136]
+[kanji "ngựa" cấp tiến ở bên trái] [104118]
+[Tháng 11] [104908]
+[hiếp dâm] 【102708】
+[sooty albatross] 【102936】
+[Koel châu Á, cuckoo nhỏ hơn] 【105138】
+[đừng làm cho người khác những gì bạn sẽ không làm cho bạn] 【103008】
+[Nghi lễ đền thờ được tổ chức với hai tháng đầu năm để dự báo một vụ thu hoạch thành công, trồng lúa theo mùa trên một cánh đồng liên kết với một ngôi đền] [104388]
+[không cố gắng sửa lỗi mà chỉ làm cho nó trông đẹp hơn trên bề mặt] [103248]
+[mũ tắm] [104260]
+[kanji "ngôi làng lớn" cấp tiến] [104012]
+[hòa bình và đáng yêu, khiêm nhường và trang nghiêm] [103340]
+[kanji "cá" cấp tiến ở bên trái] [104134]
+[trò chơi hoang dã] [104310]
+[bream biển đỏ] 【102780】
+[fudoki cổ đại được biên soạn theo lệnh hoàng gia năm 713 CE] [112156]
+[Sasamorpha borealis] [103084]
+[crake trắng trán] [105158]
+[đỏ tươi] [103802]
+[kanji "thung lũng" cấp tiến ở bên trái] [103990]
+[rồng xanh, Rồng Azure, bảy biệt thự của các thiên đường phía đông, con ngựa lớn với một chiếc áo khoác màu xanh nhạt, hình dạng của một cây thông già] [103324]
+[phản ứng tổng hợp lạnh] 【102486】
+[hai mươi tám biệt thự của thiên văn học Trung Quốc] [103322]
+[Sóc Nhật] [102812]
+[kanji "văn học" cấp tiến] [103540]
+[kanji "lúa mì" cấp tiến] [104248]
+[tiếng chuông hoặc tiếng vang vang lên, tiếng nước hay tiếng sóng vang lên] [103096]
+[tathagatagarbha] [104774]
+[người dễ bị ép buộc tặng quà cho một người phụ nữ, người đàn ông chỉ dùng để nhận quà từ] [102710]
+[số lượng tội phạm] [103208]
+[gnocchi] [103962]
+[kanji "lỗ" gốc ở trên cùng] [103898]
+[Unitarian] 【102730】
+[không có cách nào để đối phó với một cái gì đó] [103726]
+[xuyên thủng thứ gì đó xuyên suốt] [103236]
+[khu vườn bí mật, khu vườn riêng, tên dành cho cơ quan sinh dục nữ] [104418]
+[hydrogen bromide] [102462]
+[thành viên liên kết] [103782]
+[tiếng bước chân] 【102776】
+[lặn dưới sự che chở và trốn] [103094]
+[BASE jumping] 【102728】
+[luật sư do tòa chỉ định] [103616]
+[tiếng chim] [103914]
+[ngôi đền cấp dưới] [103350]
+[từ gốc] [103656]
+[xiên que đậu phụ nướng và tráng miso] [104370]
+[Southern Cross] 【103446】
+[đầu của một dụng cụ lưỡi dao, những từ sắc nhọn, nhân vật xấu xa] [103514]
+[hải âu lang thang] [102942]
+[sap chưa tinh chế của cây sơn mài] [103650]
+[tiếng kim loại, tiếng kim loại] [102718]
+[bắp cải cuộn, bắp cải nhồi bông] [105702]
+[con dao nhỏ mà phần lớn là trang trí hoặc được sử dụng để cắt các chữ cái mở và những thứ tương tự] [104076]
+[mô hình tập trung] [104182]
+"Kanji" Wa "la t và p" [103070]
+["nhiệt nhẹ" hạn năng lượng mặt trời] [103700]
+[bỏ qua định kiến ​​của một người] 【102982】
+[sự kết hợp của màu sắc được tạo ra bởi lớp quần áo] [103772]
+[Thứ Sáu] 【104874】
+[Các ngôn ngữ thổ dân] [104662]
+[kanji "tai" cấp tiến ở bên trái] [103922]
+[tung hứng] [104822]
+[sự thật gấp ba lần] [112340]
+[kanji "đá" cấp tiến ở bên trái] [103892]
+[chảy mạnh] 【102768】
+[mua một số lượng lớn] [113138]
+[quần áo màu trắng đơn giản sử dụng thuốc nhuộm] [103750]
+[gặp tai nạn, gặp tai nạn] [102584]
+[Sunbird] 【105754】
+[cây chàm] [102762]
+"Chỉ Yakushima" [104302]
+[bệnh viện quận] [104444]
+[kanji "cũ" gốc ở đầu trang] [103916]
+[không phải một] [104468]
+[tê giác trắng] [103942]
+[Glehnia littoralis] [103608]
+[bỏ sang một bên niềm tin và giáo lý] [102984]
+[hành lá xuân xanh] [102754]
+[cuckoo nhỏ hơn] [105100]
+[strophulus, kẹo cao su màu đỏ] [103112]
+[thế giới của con người] [103262]
+[Hemerocallis fulva var. Kwanso] [103758]
+[bỏ trống và không suy nghĩ, điều gì đó nên ở đó không phải là không] [102854]
+[nhân viên cảnh sát gắn kết] [105616]
+[hiệu ứng mắt đỏ] [112482]
+[Luật chống tội phạm có tổ chức] [103820]
+[suy ngẫm về những điều hữu hình, cụ thể] [104926]
+[Siberian thrush] 【105156】
+[kanji cấp tiến 35 khi ở dưới cùng] [103140]
+[Gasterosteus microcephalus] [111856]
+[Tiếng Okinawa, tiếng Okinawa] [103646]
+[Hãy đến với tâm trí, bật vào đầu của một người] 【102878】
+[Tôi rất tiếc, tôi cảm thấy khủng khiếp nhưng, tôi xin lỗi nhưng] 【103424】
+[braising] [103946]
+[mờ và xa] [104258]
+[hoa ăn được] [104044]
+[loại hợp kim đồng và kẽm ở khoảng 33 - 67% được sử dụng để hàn kim loại như đồng và sắt] [103088]
+[cuckoo nhỏ hơn] 【105094】
+[nơi tóc được tập hợp lại với nhau trên đỉnh đầu, tóc được buộc lại với nhau ở vị trí này] [103746]
+[yếu tố cấu trúc, yếu tố bên ngoài thành phần của một tội phạm, actus reus] [103200]
+[black porgy] 【102784】
+[cá] 【102850】
+[màu muội] [102938]
+[Hàn Quốc] 【104666】
+[Giáo phái Hosso của Phật giáo] [104576]
+[bản chất của nhân sâm] [104066]
+[tham gia, tham gia vào] [104980]
+[silpasthanavidya] [104768]
+[bề mặt trơn tru không bị trầy xước của một đồng xu "zeni" cũ] [103018]
+[ngựa vằn] [102630]
+[thiên đường] 【102848】
+[ngày không may mắn] [103838]
+[trình diễn dengaku chuyên nghiệp] [104390]
+[viết văn học] [103832]
+[Kiểu Pháp, Presta van] [104398]
+[xuất hiện say sưa và vui vẻ] [102858]
+[lý thuyết tương ứng] [104614]
+[barium sulfate] [102528]
+[kanji "mưa" cực đoan ở trên cùng] [104106]
+[Sebastes iracundus] 【102794】
+[ảnh hưởng đến sự thay đổi hiến pháp thông qua sự giải thích sáng tạo của hiến pháp, diễn giải lại hiến pháp] [103652]
+[kanji "con" cấp tiến ở bên trái] [103144]
+[wombat chung] [104656]
+[tủ bên trong] [104224]
+[thông tin khác nhau được ghi lại trong niên giám] [103498]
+[bail ra biển với một muỗng cà phê] [103692]
+[sâu đỏ tươi] 【103800】
+[ham khô chữa khỏi] [104560]
+[sách y khoa, tạp chí y khoa] [103784]
+[bất kỳ vị thần thực phẩm nào, Uka-no-Mitama] 【104752】
+[myna phổ biến, myna Ấn Độ, mynah thông thường, mynah Ấn Độ] 【105268】
+[tiếng chim] [103912]
+[gọi nhau, gọi cho nhau] [103688]
+[các bảng tiêu chuẩn về thành phần thực phẩm ở Nhật Bản] [103630]
+[khớp thẻ] [104840]
+[silicon tetraclorua] [102682]
+[nhỏ lòng thương xót, lớp lót bạc của một đám mây đen, an ủi trong nỗi buồn, phước lành trong ngụy trang] [104686]
+[Vương quốc Asura] [103228]
+[meme] 【102716】
+[phân biệt giữa đúng và sai] [103268]
+[một số câu chuyện thú vị, cuốn sách có chứa một số câu chuyện thú vị] [104688]
+[ba lần một tuần] [103974]
+[kanji "horn" cấp tiến ở bên trái] [103986]
+[tự sát bằng cách rạch cổ họng] [104428]
+[kanji "jewel" cực đoan ở bên trái] [103878]
+[kanji "mùa đông" cấp tiến ở đầu trang] [103138]
+[nhà nhanh] [102946]
+[rằng điều đó có thể xảy ra, mặc dù vậy, mặc dù vậy] 【104054】
+[kanji "cửa" cấp tiến] [103530]
+[Động vật Burgess] 【102826】
+[gnomefish] [104094]
+[năm nay, năm hiện tại] [103266]
+[Biểu đồ Hertzsprung-Russel, sơ đồ nhân sự] [103310]
+[nhận được kết thúc ngắn của thanh, có được kết thúc xấu của một món hời] [104280]
+[Hạt Brazil] [104880]
+[mì luộc] [104554]
+[phantom chi] 【104368】
+[kanji "miệng" cấp tiến ở bên trái] [103130]
+[kanji sun radical bên phải] [103146]
+[Quả thật] [103732]
+[tốt và xấu] [103414]
+[Trạm vũ trụ quốc tế] [102450]
+[baby hatch, bánh xe đúc] [104994]
+[Nhà máy rượu nổi tiếng, nhà máy bia nổi tiếng] [104298]
+[cơ quan cấp quyền] [102626]
+[dấu vết hóa thạch] [104344]
+[ngả người ra khỏi cửa sổ xe hơi hoặc xe lửa] [104914]
+[silicon nitride] [102684]
+[Tiếng thổ dân] [104658]
+[phong cách nhuộm-tie được sử dụng trong thời đại Nara] [103004]
+[varna] [104512]
+[xương của bàn chân, sức mạnh của đôi chân của một người] [105648]
+[kanji "giáo" cấp tiến ở bên trái] [103888]
+[roentgenium] [102504]
+[kanji "chim hoàng đạo" cực đoan] [104018]
+[người nộp thuế không cư trú] [104984]
+[kanji "móng vuốt" ở trên cùng] [103568]
+[gốc cây gốc ở bên trái, gốc cây hai nhánh ở bên trái] [103896]
+[thần cá nhân] [103428]
+[cơ quan cấp giấy phép] [104592]
+[làm một chuyến hành hương] [104160]
+[phá vỡ một sự tham gia] [104408]
+[hải âu chân đen] [102944]
+"Carna" 【104852】
+[thuật ngữ chung cho chín lỗ trong cơ thể con người và động vật có vú khác] [103302]
+[trước mắt một người, ngay gần đó, trong vòng một cú ném đá] [104210]
+[bộ sưu tập truyện] [102904]
+[xếp hàng liên tiếp] [103390]
+[ununseptium] [102492]
+[có xu hướng, chịu trách nhiệm, có một liên lạc, có một chút] 【104062】
+[bột màu trắng được sử dụng trong quá khứ như sắc tố khuôn mặt và được sử dụng trong sơn gần đây hơn] [103828]
+[xe năng lượng mặt trời] [104494]
+[không có cách nào để giải quyết] [103710]
+[xin việc, xin việc] [105046]
+[dấm rượu] [104736]
+[mercurials] [102518]
+[treo trên tường] 【102540】
+[Khu vực của Wernicke] [105010]
+[chế độ ăn uống tập trung vào bánh mì] [105058]
+[từ lâu trước cho đến ngày nay] [102758]
+[Sterling bạc] [104786]
+[trường y khoa quận] [104448]
+[Crux] [103442]
+[tiếng khóc lóc] [103744]
+[kanji "tấn công" cấp tiến ở bên phải] [103536]
+[phản đối dữ dội, ngọn lửa giận dữ] [104616]
+[Thứ tư] [104870]
+[anhydrit crom] [102656]
+[gốc kanji chạy từ trái sang phần dưới cùng của chữ kanji, kanji bao vây loại gốc tự do] [103114]
+[cảm thấy đói, đói] [112490]
+[miếng đệm hình bầu dục với hai dải dài gắn bên dưới obi để làm cho nó trông đầy đủ hơn] [103778]
+[đưa tâm hồn và tâm hồn vào một cái gì đó] [104290]
+[mướp đắng, bầu đắng] [104608]
+[bohrium] [102512]
+[thời kỳ tối tăm, thời đại đen tối] [104226]
+[phương pháp làm vải bằng cách đập trên lá được đặt trên đó, tô màu vải bằng cách đặt một tờ giấy lên trên nó và đánh vào thuốc nhuộm, vải màu theo cách như vậy] [103754]
+[Mũi bồ câu, Cape petrel, pintado petrel] [102934]
+[thành phần trên cùng của gốc "kanji" chủ đề] [103160]
+[Đua ngựa] [104724]
+[lá chắn của con người] [103578]
+[petrel lặn] [102930]
+[ổ đỡ giữ dầu] [104114]
+[gourami] [102844]
+[Arabis flagellosa] [104632]
+[tế bào cơ, tế bào cơ] [102632]
+[được cho là, được xem là] 【104060】
+[đọc tình hình, cảm nhận được tâm trạng] [103940]
+[gen tự nhiên] [102830]
+[rotator cuff] [102570]
+[nhật thực hình khuyên] [103344]
+[honeysuckle xanh, haskap] [102534]
+[tham khảo từ điển] [102590]
+[firebrat] [103586]
+[xem ánh sáng ban ngày, được tiết lộ, được nhận ra] [103668]
+[Hãy đến với tâm trí, bật vào đầu của một người] 【102880】
+[Chòm sao "rổ" của Trung Quốc] [103500]
+[naan, nan] [104610]
+[clivia, Kaffir lily] 【102440】
+[nó không phải là như vậy, nó không có vẻ như vậy, nó không nên được như vậy] 【102886】
+[lợi nhuận xấu dần dần nhanh chóng như chúng thu được] [103394]
+[rotator cuff] [102588]
+[Tháng 2] 【104890】
+[unstitched, mở mặt của một số quần áo truyền thống Nhật Bản, quần áo với một bên mở, áo choàng mặc bởi các quan chức quân sự với một vòng cổ, unstitched bên mở và không chạy] [103864]
+[ao dai] [104660]
+[Phim Hollywood] [113292]
+[chăm sóc sức khỏe] [104566]
+[cuối xuân] [103286]
+"Moai" 【105066】
+[người lính ngự trị đông] [105162]
+[không đứng đắn công khai] [103204]
+[đồng hành săn bắn] [103980]
+[Hình ảnh cộng hưởng từ, MRI] [105044]
+[kéo một cơ bắp, căng cơ] [104276]
+[Kho hàng đầu súp Trung Quốc] [104556]
+[kanji "lửa" triệt để ở bên trái] [103562]
+[nhà bếp với một quầy nhỏ để ăn, usu. một cái nhìn vào phòng khách và phòng ăn] [104792]
+"Fu hào nhoáng điên cuồng" [104476]
+[kanji "băng" cấp tiến] [103074]
+[kimono ngắn tay với mặt sau màu trắng trơn] [102958]
+[fan hâm mộ chính thức gấp làm bằng hinoki cypress, blackberry lily, báo lily, hoa báo] 【102894】
+[tự tử nhóm, tự sát hàng loạt, sắp xếp tự tử của hai hay nhiều người] [102574]
+[đánh thức từ cơn sốt mê sảng gây sốt] [103658]
+[chickweed rang và trộn với muối, sau đó nghiền thành bột để sử dụng làm kem đánh răng] [104988]
+[kanji radical "wa" hoặc "cover" ở trên cùng] [103068]
+[chuyển hóa nitơ] [102472]
+[tiếng thổi sậy đen trán] [105166]
+"Kanji" Wa "la t và p" [103072]
+[bao gồm bảo vệ cho sách, thường ở dạng hộp gấp có móc, bộ đếm bìa sách, bìa sách hoặc áo khoác bụi] [102722]
+[mười hai từ được sử dụng để đánh dấu lịch cũ là chỉ số của các hoạt động may mắn và không may mắn] [103478]
+[súng trường] [103038]
+[bị cảm lạnh] [104284]
+[ngứa để thể hiện khả năng của một người] 【102990】
+[swiftlet] [102924]
+[vách đá hoặc đỉnh cao gần như thẳng đứng] [103834]
+[oxygenase] [102480]
+[bề rộng lưng] [103460]
+[kali bromide] [102672]
+[vui mừng, phấn khởi] [103602]
+[dây đeo nhỏ được buộc ở thắt lưng của một hanpi] [103812]
+[mực rạn san hô lớn, mực hình bầu dục] [104392]
+[có một bộ cờ] [103644]
+[nồng độ ion hydro] [102456]
+[những thứ không tồn tại] [103680]
+[ghế hình trụ làm bằng rơm phủ trong vải] [104084]
+[tất cả cùng nhau trong một dòng, tất cả cùng nhau trong một lần, ăn mặc cẩu thả, quá áp cho dịp này] [102912]
+[chromium oxide] [102654]
+[sáo xây dựng bằng tre] [103076]
+[bị cuốn hút và phân tâm bởi một thứ gì đó] [102868]
+[kanji "gốc xương trần" ở bên trái] [103274]
+[petrel khổng lồ] [102932]
+[Châu Âu thường] [104340]
+[trường đại học khoa học sức khỏe tỉnh] [104450]
+[tự cắt xén, tự gây thương tích] [102582]
+[kanji "lông" cấp tiến] [103884]
+[ký tự La Mã nửa chiều rộng] [104490]
+[cá xiên phủ miso và nấu chín] [104376]
+[Lý thuyết tiến hóa Lamarckian trong đó các cá thể mất các đặc điểm không được sử dụng và phát triển đặc điểm] [105028]
+[đai da đặc biệt được sử dụng trong trang phục của tòa án, được phủ bằng sơn mài màu đen và được trang trí bằng đá và đồ trang sức] [104326]
+[Tôi cầu nguyện một cách nghiêm túc rằng, tôi cầu xin điều đó, tôi khao khát điều đó] [103426]
+[chàm nhạt] [103796]
+[kanji "xe" cấp tiến ở bên trái] [104008]
+[Cá rô biển Thái Bình Dương, cá goby, cá tuyết đỏ của Matsubara, dace Nhật Bản, bất kỳ cá nước mặn đỏ ăn được nào] 【102800】
+[Châu Âu] 【104338】
+[thêm thịt, thêm chất] [105722]
+[nâng cao mình lên đến chiều cao đầy đủ của một người, tấn công một tư thế khó khăn] 【104026】
+[với điều này tôi, bởi điều này tôi] [103256]
+[đặc biệt keo kiệt] [103614]
+[Viện đào tạo nhân viên giảng dạy] [104458]
+[cuối mùa đông] [103290]
+[đối tác thống trị của một mối quan hệ đồng giới] [103874]
+[counterculture] [104790]
+[đầy đủ màu sắc] [103846]
+[nửa trần truồng, trần truồng trên eo] [102738]
+[thỏa thuận mạnh] [113050]
+[viêm da tiết bã, chàm tiết bã nhờn] [103184]
+[kanji "cây" cấp tiến ở bên trái] [103554]
+[arsenic trioxide, asen trắng, asen pentoxit] [102552]
+[thích nghi, chịu trách nhiệm, có khuynh hướng] [103682]
+[đơn đặt hàng nhận được] [102752]
+[tee shot] 【104728】
+[kanji "lều chấm" căn bản] [103882]
+[hộp gỗ mang trên lưng để cất giữ vật phẩm cho một cuộc hành hương] [103300]
+[kanji "đứng" triệt để ở bên trái] [103900]
+[như vậy và như vậy] [102892]
+[Peucedanum japonicum] [103612]
+[nhổ trong gió, đắm mình trong gió, bị kẹt trong cái bẫy của chính bạn, gặt những gì bạn gieo] [103724]
+[Yatagarasu, con quạ ba chân sinh sống dưới ánh mặt trời trong thần thoại Trung Quốc] [112022]
+[bitters] [104884]
+[đồ ăn nhồi bông] [104812]
+[cười ngọt] 【102774】
+[hành động với sự kiềm chế và phù hợp với các cách thức của nghi thức] [102980]
+[lưỡi bò đen] [103168]
+[quần áo thông thường] 【103582】
+[cành hoa thơm] [112702]
+[kanji "mũi tên" cấp tiến ở bên trái] [103890]
+[tiếng gọi của cuckoo nhỏ hơn, cuckoo nhỏ hơn] [105142]
+[Altair, Alpha Aquilae] [103306]
+[dây đeo gạc trang trí treo ở phía trước bên trái của kohimo khi buộc phải đóng hanpi] [103814]
+[mì Trung Quốc lạnh kèm theo súp để ngâm] [104652]
+[Hokkaido sika, Yezo sika] [104304]
+[nguyên tố tổng hợp, nguyên tố nhân tạo] [102502]
+[cá gefilte] 【102748】
+[là trường hợp đó] [103716]
+[tattler lang thang] [105202]
+[trán mèo] 【102604】
+[liệu pháp oxy hyperbaric] [104934]
+[Arcturus, Alpha Bootis] [103304]
+[loại thắt lưng da đeo với trang phục của tòa án và được trang trí bằng sừng tê giác] [104324]
+[người đàn ông lái một người phụ nữ xung quanh miễn phí, người đàn ông được một người phụ nữ sử dụng cho chiếc xe của mình] [102714]
+[Trung Quốc "ma" chòm sao, "ngày của ma"] [103470]
+[sử dụng hết năng lượng và ý chí của một người, bị kiệt sức] [104196]
+[sậy] [105170]
+[dark chub] 【102804】
+[Kim Hoa ham] 【104558】
+[tự tử bằng cách rạch cổ họng] [104426]
+[tập hợp lại và biên soạn] [103026]
+[viền lông] [103850]
+[giải thích giáo lý của Đức Phật] [104694]
+[tự từ chối đại từ người đầu tiên được người cao tuổi sử dụng] [102920]
+[magnesium carbonate] 【102688】
+[với một tiếng lách cách, với một tiếng kêu, âm thanh của một sự giảm đột ngột] [103760]
+[infraclass] [103674]
+[kanji "da" cấp tiến] [104108]
+[bóng tối của sự dốt nát] [104618]
+[lãng phí nỗ lực của một người, làm việc không có hiệu lực] [112936]
+[nông nghiệp và thủy sản] [102750]
+[rừng mưa nhiệt đới] [104674]
+[cãi nhau giữa những người bạn] [103110]
+[nếu bạn muốn thành công, hãy giúp người khác thành công] 【102978】
+[Rối loạn Colony Collapse, Vanishing Bee Syndrome] [102876]
+[thời cổ đại, thời đại cũ, thời gian từ lâu trôi qua] [103826]
+[gen trùng lặp] [102834]
+[Đường sắt màu vàng của Swinhoe] [103402]
+[cầu nguyện cho sự xuất hiện của một vị thần, sự chuyển giao nghi lễ của một vị thần gia tộc chia cho một địa điểm mới] [103368]
+[yukhoe] 【104650】
+[phương pháp nhuộm trong đó một màu liên tục chuyển từ dày đặc sang diffense, khuếch tán thành dày đặc - được nhập khẩu từ miền tây Trung Quốc và được sử dụng trong ảnh Phật giáo, đồ trang trí đền thờ, vv, trong thời kỳ Nara và Heian]
+[sóng thần] [102724]
+[agemono nabe, nồi dày để chiên sâu] [102602]
+[illite] 【103862】
+[kanji "lợn" cấp tiến ở bên trái] [103994]
+[trốn vào trốn] [103092]
+[meitnerium] [102508]
+[đồng hồ nguyên tử xêzi] [102530]
+[người dân, quần chúng, công chúng, những người lớn chưa rửa] 【103098】
+[phương thức đặt hàng, thủ tục đặt hàng] [102908]
+[đại học tỉnh] [104452]
+[tiếng lùm cây thông thường] 【102764】
+[cupronickel] [102562]
+[hẹn hò với kali-argon] [102670]
+[thuế thu nhập doanh nghiệp] [102732]
+[leo trọc] [102842]
+[tenkasu] 【102610】
+[hydrat hydrat] [102702]
+[mức cholesterol] [104954]
+[được bổ nhiệm, bổ nhiệm tạm thời cho một nhiệm vụ cụ thể] [104530]
+[cực kỳ khôn ngoan hơn người bình thường] [103100]
+[thủy ngân sulfide] 【102524】
+[một con tê giác sừng lớn, tê giác Ấn Độ] [104320]
+[Khu vực của Wernicke] 【105008】
+[kanji "cừu" cấp tiến ở bên trái] [103910]
+[bluetail viền đỏ] [105152]
+[kanji "jewel" cực đoan ở bên trái] [103876]
+[mặt khâu của một số quần áo truyền thống của Nhật Bản, quần áo với một mặt khâu, áo choàng với một vòng cổ, bên khâu và chạy, mặc bởi các hoàng đế và các quan chức cấp cao] [103868]
+[cuckoo nhỏ hơn] 【105096】
+[cuộc đua xe năng lượng mặt trời] 【104496】
+[gen đáp ứng miễn dịch, gen IR] [102828]
+[rupakaya] [104966]
+[chống chủ nghĩa Semit] [103740]
+[kanji "hổ" cực đoan] [103930]
+[thần thu hoạch và sự giàu có] [104754]
+[kanji "làng lớn" cấp tiến ở bên phải] [104010]
+[người đàn ông được một người phụ nữ sử dụng để trả tiền cho bữa ăn của cô ấy] [102712]
+[uốn cong thành vòng lặp] [103030]
+[kanji "giáo" cấp tiến ở bên phải] [103526]
+[xây dựng một khu đền thờ Shinto được xây dựng trên nền đất thấp nhất] [103790]
+[các vị thần] [103378]
+[gen gây chết người] [102836]
+[trái cây không rõ] [103730]
+[err và không thay đổi cách của một người, đây là những gì nó là để err] [103246]
+[lưu vong vì tội] [103102]
+[Crux] [103448]
+[oxygenase] [102478]
+[chung nhanh] [102926]
+[carbon vô định hình] [102468]
+[chim di cư] [105074]
+[Nhân sâm Nhật Bản] 【102620】
+[phiên liên tục, zaraba] [105072]
+"Kyushuicha ct" [103618]
+[Fougere fragrance] [103766]
+[được trộn lẫn với, trộn với] [103662]
+[cikitsavidya] [104764]
+[kanji "núi" cực đoan ở đầu trang] [103154]
+[đứa trẻ sinh ra từ con ngoài giá thú, con ngoài giá thú, con yêu] [104472]
+[hoàng tử mới sinh, ngôi đền mới xây] [103362]
+[Xiuyaojing] 【103482】
+[Ficus erecta] 【105602】
+["tuyết nhỏ" hạn mặt trời] [103708]
+[cảm thấy đói, đói] [112494]
+[áo choàng với một vòng cổ, các mặt được khâu và một chiếc chạy, được mặc bởi hoàng đế và các quan chức cấp cao] [103866]
+[dương xỉ chân của sóc, Lepisorus thunbergianus, màu sắc của các lớp quần áo dưới một lớp phủ, kiểu tóc của phụ nữ cổ đại, quần áo hoa văn bằng dương xỉ chân của sóc) [103770]
+[tư thế áp đặt, tư thế khó khăn] [104024]
+[cắt một thanh kiếm theo đường chéo từ vai] [104858]
+[tiếng liềm răng] 【105624】
+["sương giá gốc" năng lượng mặt trời hạn] [103706]
+[nhận ra một đứa trẻ chưa sinh] [104470]
+[Tôi sợ rằng nó có khả năng đó, với tất cả sự tôn trọng] [103420]
+[metylmercury, metyl thủy ngân] [102522]
+[hành động chạy trốn trốn] [103090]
+[Thật là đáng tiếc ... ... thật đáng tiếc là ..., thật không may là ... ...] [103422]
+[đầu gối cao] 【105354】
+[cuộc khủng hoảng lớn] 【102546】
+[đưa ra lý do] [104154]
+[yêu một đứa trẻ quá nhiều vì lợi ích của chính họ] [104540]
+[Formosan huýt sáo, ruồi trắng và trắng] [105154]
+[vui mừng, phấn khởi] [103600]
+[đai da đặc biệt được sử dụng trong trang phục của tòa án, được phủ bằng sơn mài màu đen và được trang trí bằng đá và đồ trang sức] [104330]
+[đột ngột và bất ngờ] [102872]
+[tháng mười một âm lịch] [103292]
+[cesium 137, cesium 137] [102532]
+[dubnium] [102516]
+[tội không đứng đắn] [103202]
+[núi anoa] [104798]
+[Ra khỏi tầm nhìn, ra khỏi tâm trí] [102704]
+[giọng Tōhoku dày] [103636]
+[đồ uống chào đón] [104030]
+[tập một, tập đầu tiên] [102972]
+[ushnisha] [104590]
+[đúng bristletail] [103590]
+[kali ferricyanide] 【102674】
+[nội soi laser] [104502]
+[kỹ thuật số remastering] [104810]
+[arsenic trioxide, asen trắng] [102554]
+[black porgy] 【102782】
+[nhạc chuông] [103580]
+[đèn cao hoặc chân nến, nến cao] [104082]
+[kanji "tripod" radical] [104130]
+[tập hợp và bó lại với nhau] [103028]
+[kanji "đậu" gốc ở bên trái] [103992]
+[vỏ nhỏ, động vật có vỏ nhỏ, kanji "vỏ" cấp tiến ở bên trái] [104000]
+[trikaya] [104962]
+[Bánh ngọt kiểu Heian làm từ trứng vịt hoặc trứng ngỗng trộn với rau luộc và gói trong mochi sau đó được cắt thành hình vuông] [102988]
+"Hakata rich ct" [103622]
+[Trung Quốc] [103182]
+[ngôi đền mới được xây dựng] [103360]
+[giữ gì đó] [103978]
+[bi sắt] [104816]
+[kanji radical 13] [103066]
+[không ngứa cũng không cảm thấy đau đớn, không bị ảnh hưởng bởi một thứ gì đó, không cảm nhận được ảnh hưởng của thứ gì đó] [103050]
+[Chaldean] 【103520】
+[trở nên nghiêm túc hơn, có chất lượng khuyến khích bạn ăn nhiều hơn sau đó, có tác dụng kéo dài] [104286]
+[áo choàng được mặc bởi các viên chức quân sự với một vòng cổ, các mặt mở không bị mở và không chạy] [103854]
+[kanji "nước" cấp tiến] [103052]
+[kanji cấp tiến 79 ở bên phải] [103560]
+[cái nào, một trong số bất kỳ] [104466]
+[tốt] 【104092】
+["hạt đầy" hạn năng lượng mặt trời] [103696]
+[ru ngủ vào sự an lạc, an ủi và an ủi] [103040]
+[kiểm tra chẩn đoán, xét nghiệm chẩn đoán] [102960]
+[Zen, phong cách khó hiểu của thơ ca trung niên Nhật Bản] [104626]
+[Nhật Bản đen] 【104748】
+[silverfish] [103588]
+[hoàn trả hết] [104424]
+[kanji "hộp-on-side" cấp tiến] [103120]
+[đai da đặc biệt được sử dụng trong trang phục của tòa án, được phủ bằng sơn mài màu đen và được trang trí bằng đá và đồ trang sức] [104328]
+[căng thẳng quốc tế, căng thẳng quốc tế] [104504]
+[Cáo đỏ Ezo] [104292]
+[hexavalent chromium] [102646]
+[bang bang chicken] 【104596】
+[chuỗi neptunium] [102484]
+[một khi bạn đã chết, đó là nó] 【102564】
+[huấn luyện viên cá nhân, huấn luyện viên thể dục] [104568]
+[Tuần lễ chim] [103604]
+[kanji "ẩn hộp" cấp tiến] [103122]
+[tội hình sự] [103186]
+[cuối mùa thu, tháng thứ chín âm lịch] [103278]
+[tháng mười âm lịch] [103284]
+[đóng cửa chính mình, chen vào chính mình trong khi bị bao vây, lột xác] [103042]
+[bưởi hồng] [104720]
+[mèo đi lạc] [102734]
+[sambhogakaya] [104964]
+[demi-glace] 【104354】
+[kanji "con dấu" cấp tiến ở bên phải] [103124]
+[vật chất tối] [102542]
+[thu hái thảo dược và kéo cây thông non ra rễ] [103222]
+[kanji "chạy" triệt để ở bên trái] [104002]
+[thịt cua trộn với rau và lòng đỏ trứng, hấp trong vỏ của nó] [104036]
+[đang được thực hiện, được đưa vào thực tế, hoạt động] [102592]
+[tấn công không đứng đắn] [103206]
+[Yezo, thời kỳ Edo-thời kỳ của người Ainu bao gồm hầu hết Hokkaido] [104198]
+[kali dicromat] [102644]
+[Vermilion Bird, bảy biệt thự của các thiên đường phía nam] [103332]
+[kanji "từ" căn bản ở bên trái] [103988]
+[sravaka, tín đồ của Phật giáo Hinayana] [103234]
+[khối gỗ nhỏ dùng để làm sạch mông sau khi đi vệ sinh] [104080]
+[parathormone] [105302]
+[phản ứng da điện, GSR] [105030]
+[nước chảy bên dưới, kanji "nước" gốc ở dưới cùng] [103626]
+[Ánh sáng đất, ánh sáng mặt đất] [104400]
+[kanji "nhảy múa chân" cực đoan] [103926]
+[Tháng Chín] [104904]
+[nhẹ nhàng và tinh khiết] [103342]
+[Bao vây bị cấm màu tím] [112666]
+[binh sĩ của hệ thống ritsuryo bảo vệ cổng của cung điện hoàng gia, tòa án, vv, thuật ngữ dùng để chỉ những người đàn ông trẻ tuổi bị buộc phải lao động cưỡng bức trong hệ thống ritsuryo, lính gác ban đầu đóng quân tại ngôi đền lớn ở Ise và đền thờ ở Atsuta, Nagoya để bảo vệ các quan chức ở đó] [103108]
+[Cá bạc phương Đông] [103584]
+[quyến rũ và nguyền rủa, một cái gì đó hoang mang, cái gì đó dẫn đầu một kẻ lạc lối, công việc của ma quỷ] [104200]
+[mô cơ] [102636]
+[ký tự nửa chiều rộng] [104484]
+[tuổi hai mươi, tuổi hai mươi] [103870]
+[Nhật Bản đen] 【104746】
+[Thay đổi nguyên âm vĩ đại] [103434]
+[Băng đảng Malaysia] 【104526】
+[Weigela hortensis] [104716]
+[Formosan sika, Đài Loan sika] 【104306】
+[ngay cả khi trường hợp đó, mặc dù đó không phải là trường hợp] [104052]
+[tom yum goong] [104672]
+[đại từ người đầu tiên sử dụng chữ cái] [102966]
+[như nhìn ra vực thẳm, như đứng trên rìa vực thẳm] [103416]
+[lưng ghế] 【104072】
+[người bảo vệ khôn ngoan và có thể] [104192]
+[quan sát các lý do và loại lỗi mà một người là phải biết họ là đạo đức hay không] [103250]
+[thornyhead băng rộng, cá gai đuôi rộng, cá tuyết kichiji] [105380]
+[ngày tiêu chuẩn biểu thị sự thay đổi của các mùa] [103486]
+[Dán mè Trung Quốc] 【104552】
+[vẽ nhiều] [104282]
+[không rõ] [104702]
+[thủy ngân tự nhiên] [102520]
+[kanji "hai mươi chân" cấp tiến] [103166]
+[sáng rực rỡ, chiếu sáng trắng] 【102870】
+[máy bay giấy] [102608]
+[Trung Quốc] [103180]
+[không thể cưỡng lại, không thể đàn áp] [104172]
+[roundtail paradisefish] 【102846】
+[đầu mùa thu, tháng thứ bảy âm lịch] [103272]
+[quinella, quiniela] [103676]
+[anutpattika-dharma-ksanti] [104586]
+[kanji "móng vuốt" ở bên trái] [103570]
+[calcium phosphate 2)] [102668]
+[Trâu châu Phi, Cape trâu] [104796]
+[Cuckoo nhỏ hơn] 【105098】
+[thu thập thảo dược và kéo cây thông non ra rễ] [103218]
+[đầu của ngọn giáo, cạnh ở đầu của thanh kiếm] [103512]
+[đền thờ liên kết] [103354]
+[lý thuyết mạch lạc] [104612]
+[cảnh sát quốc tế] [102962]
+[Eurasian curlew] 【105198】
+[cổng của một ngôi làng] [103388]
+[Phương ngữ Tōhoku, phương ngữ Tohoku] [103620]
+[làm sạch bọt] [104096]
+[đặt mạng sống] [104314]
+[curlew dài hạn] 【105196】
+[tê giác đen] [104332]
+[rồng xanh, Rồng Azure] [103326]
+[nhân cơ hội này] 【103720】
+[Phong bì kiểu phương Tây Nhật Bản] [104268]
+[thần thu hoạch và sự giàu có] [104756]
+[cánh đồng lúa nở sớm] [104242]
+[đơn vị kết hợp, đơn vị hai trong một, đơn vị nhiều người trong một, mô hình tích hợp] [113002]
+[kanji "badger" cấp tiến ở bên trái] [103996]
+[sóc đất] [102814]
+[cá chim đốm] [102792]
+[bất kỳ cây sồi nào thuộc chi Castanopsis] [104266]
+[sách liên quan đến lịch, lịch, niên giám] [103494]
+[trong sự thật, đúng như bạn đang thực hành] [102964]
+[calcium hydroxide 2)] [102664]
+[thử tất cả các phương tiện có thể] [104402]
+[Món mì Nagasaki với nhiều lớp trên bề mặt] [104218]
+[khá vui vẻ, khá vui vẻ, khá hạnh phúc] 【102852】
+[sốt sò] [104352]
+"Daikon" 【104636】
+[ununtrium] 【102500】
+[lý thuyết biểu hiện] [112572]
+[kanji "tre" gốc ở trên cùng] [103902]
+[Redstart Mỹ] [105186]
+[hassium] [102510]
+[trở lại Osaka] [103950]
+[phiên thông tin công ty] [105068]
+[ba trục] [102910]
+[Cơn bão châu Âu] [102928]
+[ngôn ngữ pidgin, Pijin] [102954]
+[greenling, medaka ricefish] 【104800】
+[Hẹn gặp lại, Bye, Ciao] [104698]
+[đúng bristletail] [103592]
+[cứng và không tì vết, căng thẳng mà không có bất kỳ looseness, bám chặt, kéo hoặc kéo dài càng nhiều càng tốt, creaking của một cánh cửa hoặc chèo] [102914]
+[ngoài điều này, ngoài những điều này] [102822]
+[mất co giật] [105004]
+[Đức Chúa Trời] [112120]
+[Shingon phái] [104976]
+[thiền thực hiện khi đi bộ] [104148]
+[Người Mỹ bình thường] [104230]
+[kanji "đi con người" cấp tiến] [103178]
+[quy tắc một quốc gia đòi hỏi nhiều người đàn ông tuyệt vời] [103296]
+[mười cõi tâm linh] [103230]
+[Callisto] [103320]
+[Tê giác Javan] [104322]
+[lupus ban đỏ] [105294]
+[apt to, chịu trách nhiệm, dễ bị] [103684]
+[hệ gen người] [102772]
+[Bàn tay của Đức Phật, bàn tay có hoa] [104776]
+[oxoacid] [102476]
+[cuckoo nhỏ hơn] 【105114】
+"Zen" [104624]
+[namul] 【104654】
+[spaghettini] [103964]
+[kanji "gói" cực đoan] [103118]
+[bình đựng trà đã phát âm là "vai" gần cổ] 【104856】
+[trọng lượng trang trí được sử dụng để giữ rèm cửa và những thứ tương tự như thổi bay trong gió] [104078]
+[hỗn hợp natri] [102690]
+[octathlon] [103956]
+[tổ nhanh] [102922]
+[kanji "con dấu quanh co" ở bên phải] [103126]
+[Kế hoạch chào mừng 21] [104032]
+[Laysan hải âu] 【102940】
+[cảm thấy bắt buộc, không thể không cảm thấy, không thể không làm] [104170]
+[onHYPHENcông việc đào tạo, OJT] 【102726】
+[dharmata] [104574]
+[như mọi khi, giống như mọi khi] [103264]
+[cuckoo nhỏ hơn] 【105122】
+[bóng bouncy] 【105820】
+[màu cam máu] [104722]
+[hiện tượng cụ thể của bê tông] [104770]
+[alkyne] [102460]
+[kanji "đi" triệt để] [103936]
+[Chòm sao "Mở rộng Net" của Trung Quốc] [112624]
+[đền thờ chính] [103352]
+[bị khóa trong vật lộn] [102442]
+[bầy biển đỏ thẫm] 【102786】
+"Nhật Bản" [112528]
+[thực hiện nghi thức cầu nguyện cho một vụ thu hoạch lúa thành công trong năm tới] [104380]
+[sabdavidya, tụng kinh các bài thánh ca Phật giáo] [104762]
+[giấy tái chế linh tinh, giấy có thể tái chế không phải là báo cũ và hộp carton] [104410]
+[Cơ quan Vũ trụ Châu Âu] [102452]
+[được trộn lẫn với, trộn với] [103664]
+[đình chỉ giấy phép lái xe] [104272]
+[kali dicromat] [102642]
+[Neocortex, neopallium] [105022]
+[prajna-paramita] [104952]
+[yêu một đứa trẻ quá nhiều vì lợi ích của chính họ] [104538]
+[hiện tại hoàn hảo căng thẳng] [113298]
+[trứng telolecithal] [105810]
+[nắp xăng dầu] [114130]
+[Kshatriya] [104514]
+[collops scops owl] [104684]
+[canxi florua] [102666]
+[Lakshmi] 【104520】
+[ngạc nhiên] [104978]
+["mưa hạt" năng lượng mặt trời hạn] [103694]
+[cá xiên, phủ miso và nấu chín] [104378]
+[hãng sản xuất may mặc] [104876]
+[không được kết luận như thế này, sẽ không kết thúc như thế này] [102916]
+[trượt tuyết trên không] [104366]
+[cuckoo nhỏ hơn] 【105084】
+[sợi dây màu đen dùng để ràng buộc bọn tội phạm, bị ràng buộc trong tù] [103016]
+[pre-cum, pre-xuất tinh, chất lỏng của Cowper] [104222]
+[xây dựng một khu đền thờ Shinto được xây dựng trên nền đất cao nhất] [103788]
+[từ giàu có mùa xuân giàu có, những người nhìn thấy thấy giàu có tìm thấy sự giàu có] [103398]
+[mũ dệt kim, mũ len] [105478]
+[Nó là như vậy, nó là như vậy] 【102882】
+"Kanji" không phải là "may mắn" [104132]
+[buồng oxy hyperbaric] [104936]
+[Nhân sâm Mỹ] [102616]
+[ngạc nhiên, ngạc nhiên và thay đổi biểu hiện của một người] [102856]
+[sắt tóc, kẹp uốn tóc, sắt thẳng] [104986]
+[đền thờ sau] [103356]
+Cảm giác
+[tre nhỏ] [103078]
+[đạt được một nền tảng đáng tin cậy và ở trong tình trạng an toàn] [102740]
+[vô biên rộng hoặc rộng, mờ và không rõ ràng] [103024]
+[Miquel's mazus] 【106532】
+[sleight of hand] [104542]
+[dấm đen, usu. Được sản xuất từ ​​gạo chưa được đánh bóng, tảo bẹ hay nấm shiitake xay và trộn với dấm, được sử dụng để ăn cá và rau sống] [105536]
+[cuckoo nhỏ hơn] 【105102】
+[kanji "xác chết" cấp tiến] [103150]
+[kanji "mũi" cực đoan ở bên trái] [104254]
+[hiển thị rõ ràng] [102862]
+[vương quốc naraka] [103226]
+[liên tục không-thời gian] [102568]
+[đặt mạng sống của một người] [104312]
+[hmm, tôi hiểu rồi, hrm] [103858]
+[rêu phlox, rêu hồng] 【102798】
+[đầu mùa đông, tháng mười âm lịch] [103280]
+[sức mạnh thể chất, sức mạnh của cơ bắp của một người] [103392]
+[nghẹt thở, thắt chặt tim, thắt chặt tạm thời của một ngực được nâng lên bởi cảm xúc mạnh mẽ] [103640]
+[thiết kế hoa mận, vải lụa với thiết kế hoa mận] [104394]
+[Thiền tông dựa trên giáo lý của Bồ Đề Đạt Ma] [104630]
+[vòng cổ] [103792]
+[Nhân sâm châu Á] [102612]
+[hormone luteinizing] [105040]
+"Dosa" [104620]
+[nhóm nitơ] [102470]
+[interleukin] 【105300】
+[Tàu khu trục Shirane] 【105696】
+[cù lao nhỏ hơn] 【105110】
+[trượt tuyết mogul] [104360]
+[tên ngôi đền, tên được đặt cho một lăng mộ] [104850]
+[kali iodide, KI] [102680]
+[Bensasi goatfish] 【102808】
+[Grand Empress Dowager, Hoàng hậu hoàng hậu và hoàng hậu] [103376]
+[ném búa] [103954]
+[tidepool gunnel] [102994]
+[cá muối và sấy khô qua đêm] [103104]
+[giá rẻ, giá rẻ] [103672]
+[cản trở nội bộ, bất kỳ rối loạn thị giác nào gây ra bởi một vấn đề trong mắt] [105032]
+[trước mũi của bạn, ngay bên cạnh bạn, đầu mũi của một người] [104208]
+[cấp trên] [103318]
+[mô hình suy nghĩ, đào tạo tư duy] [104436]
+[Tê giác Sumatra] [104336]
+[cảm thấy bắt buộc, không thể không cảm thấy, không thể không làm] [104168]
+[fettucine] [103966]
+[phản bội một bí mật] [104958]
+[hành động một mình trong phạm tội] [103194]
+[mực giáo] [104396]
+[kanji "trái đất" cấp tiến ở bên trái] [103134]
+[luật điều chỉnh các khoản chi tiêu, sắc lệnh tổng thống, pháp lệnh tiết kiệm] [113180]
+[swumped trắng] [102956]
+[vệt nước mắt] [102950]
+[cây chè] [104804]
+[kali ferrocyanide, kali ferricyanide] [102678]
+[toad lily] [105130]
+[cách sống nghèo nàn và bất cẩn, tự từ bỏ đại từ đầu tiên] [102918]
+[hành lá trắng, hành lá trắng] [102756]
+[yêu hàng xóm của bạn] 【103046】
+[tội phạm mục tiêu của họ cần một số lượng lớn người hành động cùng nhau] [103198]
+[Con cú đại bàng Á-Âu] [104642]
+[sốt nâu] [104836]
+[đơn vị đo tiền tố, đơn vị SI bổ sung] [102840]
+[Sáu nhãn của lịch Nhật Bản, cho biết mỗi ngày tốt lành như thế nào] [103480]
+[Stilton] 【104828】
+[yên tĩnh và tĩnh lặng, không có dấu hiệu của cuộc sống] [102860]
+[âm mưu hình sự] [103192]
+[arsenicals] [102550]
+[Cây thông Oregon] 【105388】
+[áo cổ tròn được mặc bởi các thành viên của giới quý tộc và triều đình] [103822]
+[dùng hết sức lực] [104912]
+[nấm nhợt nhạt] [105214]
+[kanji "ba" hoặc "tóc trang trí" cấp tiến ở bên phải] [103176]
+[một cặp quần lót] [114916]
+[bai ze] 【104706】
+[Cuckoo nhỏ hơn] 【105092】
+[lễ tôn giáo] [103366]
+[kanji "stretch" radical] [103164]
+[lộn xộn, hỗn loạn, rải rác ngẫu nhiên về] [103010]
+[bị lôi cuốn bởi một điều gì đó xấu xa, bị thắng bởi một thứ gì đó xấu xa] [104204]
+[hủy diệt hoàn toàn và hoàn toàn] [104064]
+[Roquefort] 【104826】
+[cuckoo nhỏ hơn] 【105108】
+[phiên bản tinh tế của điệu nhảy ta-asobi được biểu diễn ở Tōhoku khoảng một nửa trong suốt tháng âm lịch đầu tiên] [104382]
+[adarsa-jnana] [104580]
+[khoảng cách từ đường may ở mặt sau của kimono đến cuối ống tay áo] [103818]
+[Daurian redstart] [105184]
+[dấu vết hóa thạch] [104342]
+[nước ép vắt] [104742]
+[Biết mình] 【102974】
+[trường y khoa quận] [104446]
+[ảnh hưởng bí ẩn, hiệu ứng bí ẩn] [104946]
+[quyến rũ và nguyền rủa, một cái gì đó hoang mang, cái gì đó dẫn đầu một kẻ lạc lối, công việc của ma quỷ] [104202]
+[kết hôn, tán thành] [103824]
+[bốn vị thần đã nói để cai trị bốn hướng, bốn vị thần nói để cai trị trong bốn mùa] [103328]
+[Xin lỗi để áp đặt nhưng ..., Xin lỗi nhưng ...] 【105508】
+[Tháng Tám] [104900]
+[Armenia] [106142]
+"Bạc hà" 【114886】
+[vân sam hổ đuôi] 【114562】
+[hormone steroid] [105348]
+[phong cách của câu chuyện jōruri được sử dụng cho điệu nhảy kabuki] [114984]
+[không có Chúa!, đó là một thế giới độc ác] [114122]
+[Luật của Mendel] 【105928】
+[kết hợp kém] [103316]
+[giữ liên lạc, giữ liên lạc] [105520]
+[scaup lớn hơn] [105180]
+[vượt ra ngoài ý nghĩa hay vị trí của một người, không phù hợp với cuộc đời của một người] [104166]
+[giáo lý của Phật, học thuyết Phật giáo] [104692]
+[Gorgonzola] [104830]
+[axit abscisic] [105322]
+[lĩnh vực liên kết với một ngôi đền] [104384]
+[Con lăn châu Âu] [104648]
+[Bột gạo cao cấp được làm từ gạo không nếp] [104676]
+[trạng thái độc tài] [106024]
+[bắp cải đông đông] 【105744】
+[khiêu dâm trẻ em] [104548]
+[thử thách đầu tiên, lần đầu tiên thử] [104996]
+[saung] 【113740】
+[bilberry biển] [114672]
+[kanji "lễ" cấp tiến] [103170]
+[chlorofluorocarbon, CFC] [102692]
+[Đất Tịnh Độ, cõi tâm linh của Phật tử] [103232]
+[tóc đen, ngựa tóc đen] [104744]
+[hazel grouse] 【105630】
+[Bodhi-manda] 【104700】
+[chim gõ kiến ​​bụng trắng] [114548]
+[âm mưu phá hủy cung điện hoàng gia hoặc lăng mộ hoàng gia] [105766]
+[loa siêu trầm] [105880]
+[clop clop, rumble rumble, âm thanh của một cái gì đó đang được đun sôi] [115106]
+[người nộp thuế cư trú] [104982]
+[kanji "căng" cực đoan] [103162]
+[liễu ptarmigan, đỏ grouse] [105632]
+[mướp đắng, bầu đắng] [104604]
+[lãnh đạo của một nhóm, tua cột cờ đen trang trí lớn được làm từ tóc đuôi hoặc gai dầu, chim ưng, makushita rikishi đầu tiên được liệt kê trên banzuke] [103014]
+[dấm hoa quả] [104940]
+[gochujang] 【104600】
+[kanji "vách đá rải rác" cấp tiến] [104250]
+[trang web của một máy tính bảng Phật giáo] [104236]
+[cú sừng lớn] [104644]
+[sức khỏe toàn diện] 【105038】
+[phòng thực hành bên trong] [115008]
+[Grand Empress Dowager] [103370]
+[Śakra, Shakra, Indra, Shakra Devanam Indra] 【104518】
+[thử tất cả các phương tiện có thể] [104404]
+[ý chí quyền lực] [104346]
+[Nhật Bản waxwing] 【105188】
+[sừng tê giác] [104334]
+[suối nước nhỏ] [115194]
+[dầu thơm] [104802]
+[cuối mùa đông, tháng mười hai âm lịch] [103282]
+[cuckoo nhỏ hơn] 【105080】
+[ramjet] [104930]
+[có một con mắt tốt, là một người sành điệu] [114064]
+[swat - để đánh với một đòn tát sắc nét thường với một nhạc cụ] [115152]
+[Tà thần vĩ đại] [115168]
+[Artemis] [114154]
+[kanji "chim già" cấp tiến] [104104]
+[xuất tinh trong miệng] [114786]
+[không phù hợp, không cầm nến] [105350]
+[nhận thức chính trị] [114206]
+[bất kỳ loài chim nào trong gia đình Motacillidae, cuckoo nhỏ hơn] [105128]
+[Giấy Mino] [113854]
+[lương hưu cá nhân] [114408]
+[phân chia vị thần bổn của một đền thờ, để chia sẻ nó với một đền thờ, tinh thần chia theo cách như vậy] [103364]
+[ném găng tay xuống] [115178]
+[kanji "núi" cấp tiến ở bên trái] [103152]
+"Shimane Shushu" [104578]
+[grannyvine] 【114448】
+[Tokyo thử nghiệm, Tòa án quân sự quốc tế về Viễn Đông, IMTFE] 【106018】
+[Người ăn cắp Nhật Bản, cá mòi Nhật Bản] 【105436】
+[Sklavenmoral] [104350]
+[không có ý tưởng nhỏ] [104974]
+[Hormone thần kinh thực quản] [105318]
+[paleocortex, paleopallium] [105018]
+[phalarope đỏ, phalarope màu xám] 【105236】
+[samgyetang, súp nhân sâm gà] 【104640】
+[Cuộc thám hiểm Đài Loan] 【114304】
+[nhấp nháy phía bắc] [105434]
+[Cây thông bạc Thái Bình Dương] 【106078】
+[Japantown] 【105524】
+[Ẩm thực Bắc Kinh] 【114904】
+[tiếng chuông nhỏ] 【105216】
+[lúa mì bắc] [105260]
+[phương pháp kiếm tiền, cách kiếm tiền] [114108]
+[prosciutto] [104562]
+[sự khiêm tốn sâu sắc, sâu sắc] 【102992】
+"Azalea ryuu" [104714]
+[Luật Hồi giáo] [105504]
+[nữ phóng viên truyền hình trẻ tuổi] [104916]
+[vượn cáo đuôi tròn] [105612]
+[Miquel's mazus] 【106530】
+[The Big Dipper, cày, cày, mặt trời, mặt trăng, thủy ngân, sao Kim, sao Hỏa, sao Mộc và sao Thổ] 【114598】
+[Abukuma lớp tàu khu trục hộ tống] [105680]
+[Hoa nhài châu Á, hoa nhài châu Á] 【114718】
+[remastering] [104808]
+[tàu ngầm hạt nhân] [115014]
+[năm skandhas] [115188]
+[hijab] 【105420】
+[phong cách bài phát biểu lịch sự bằng tiếng Nhật] 【105710】
+[jaeger ký sinh, Bắc cực skua] 【105210】
+[archicortex, archipallium] [105020]
+[Kẻ hủy diệt lớp Ishikari hộ tống] [105684]
+[sao hồi] 【105596】
+[một tinh thần dịu dàng quan trọng hơn ngoại hình, đẹp trai cũng đẹp trai] [105580]
+[homeobox] [102832]
+[Quercus gilva] 【114678】
+[tâm trí lừa đảo] [104924]
+[Âm thanh của nút hoặc công tắc được nhấn] [105480]
+[đào tạo buổi sáng] [114198]
+[món ăn dân tộc] 【114892】
+[cấp phép, cho phép] [104956]
+[Cá kiếm Thái Bình Dương] [105442]
+"Kanji" nó sống động "[103136]
+[tham gia vào cuộc trò chuyện sôi nổi] [113684]
+[ban nhạc diễu hành] [104892]
+[ding-dong dash] 【105476】
+[Deuteromycota, nấm không hoàn hảo, nấm mitosporic, nấm anamorphic] 【105736】
+[vỏ bọc myelin] 【105024】
+[varna] [104508]
+[thiết bị có trục được sử dụng để thay đổi phông nền của vở kịch, biến một thứ gì đó theo cách người ta sẽ dùng đầu bếp dengaku-doufu ở cả hai bên] [104374]
+[Châu Á cổ tích bluebird] 【105252】
+[bellows imperial harbor, giáo lý Phật giáo Shinto] 【114870】
+[rối loạn tự miễn] [105284]
+[Tàu khu trục lớp Tachikaze] 【105674】
+[bột mì ngọt] [104602]
+[alaya-vijnana] [104584]
+"Kun" 【115056】
+[oxpecker] [105272]
+[không thể nhìn thấy mặt trăng vì mưa, tháng 5 âm lịch] [105414]
+[cá thu xanh] 【105450】
+[quyết định xét xử, quyết định của tòa án, phán quyết từ phiên tòa] [115032]
+[có hình xăm trên khuôn mặt] [104922]
+[bất kỳ con vịt nào có thân trắng] [105220]
+[giảm cân, giảm cân] [105720]
+[ít nhất là như vậy] [102884]
+[tinh bột nước lợ] [105786]
+[Phí NHK] [103346]
+[bài hát hay bài thơ khó hiểu] [104628]
+[chu kỳ động] [105310]
+[Rùa đen, bảy biệt thự của các thiên đường phía Bắc] [103336]
+[deva] 【114862】
+[hetuvidya] 【104758】
+[muskrat] 【105758】
+[Thiền Phật giáo dựa trên những giáo lý nguyên thủy của Đức Phật] [104634]
+[cái gì đó hay cái gì khác, cái gì-làm-bạn-gọi-nó, cái gì-làm-bạn-gọi-chúng, blah blah blah, yada yada yada] [113926]
+[truyện tranh bốn bảng] [105356]
+[người có lưỡi sắc nhọn] [114616]
+[dấm hoa quả] [104938]
+[mô hình tốt] [115198]
+[Tháng mười hai] [104910]
+[ống polyvinyl clorua, ống PVC] [105562]
+[pentastomid] 【114762】
+[morpho] 【105752】
+[tathata] 【105400】
+"Giá trị" [114656]
+[hormon sinh dục giả] [105312]
+[hormon tuyến giáp prothoracic] [105334]
+[Tuyên ngôn của nhân loại] [114292]
+[Cuckoo nhỏ hơn] 【105086】
+[Tiếng rìu lửa Nhật Bản] 【105244】
+[Siberian blue robin] 【105150】
+[X quang] 【114400】
+[truy cập cho đền thờ] [115040]
+[minnow nước ngọt, chub nhạt] 【105444】
+[bryozoans] 【114750】
+[virus suy giảm miễn dịch ở người, HIV] [105994]
+[mille crepe] 【105062】
+[xanh nâu] 【105256】
+[cá thu xanh] [105452]
+[tinh linh tạo tác] [113812]
+[đạt được thành công] [104928]
+[Simon tre] 【105834】
+[Cherokee] 【104862】
+[Tháng Bảy] 【104902】
+[tóc nhuộm] 【114700】
+[Tháng Tư] [104894]
+[hormone nữ] [105340]
+[grand mal] 【105000】
+[tiếng hát] [114932]
+[phiếu trượt] [114512]
+[Cuckoo nhỏ hơn, Tricyrtis macropoda] 【105132】
+[mặc dù ngồi trên đống giàu có, một người trở lại bàn tay trắng, có cơ hội tốt chỉ để nó trượt khỏi tầm tay bạn] [103396]
+[đám mây buổi tối đầu, mây lúc hoàng hôn] [104708]
+[Aryavalokitesvara] 【114832】
+[email trống] 【104782】
+[rối loạn mắt thoái hóa gây ra bởi mây trước mặt học sinh] [105034]
+[prothoracic gland] [105332]
+[Cuckoo nhỏ hơn] 【105090】
+[luật thống trị] [105932]
+[Rau diếp Hàn Quốc] 【104670】
+[siêu công nghệ, công nghệ vượt quá khả năng hiện tại của chúng tôi, chủ yếu trong khoa học viễn tưởng] [114640]
+[redstart chung] 【105258】
+[hành động trẻ, trông trẻ] [114784]
+[Món ăn phương Tây, thức ăn kiểu phương Tây] [114902]
+[cá thu muối] [105460]
+[Trường phái karate Okinawa] 【106044】
+[khoanh tay, đứng và xem] [115020]
+[Sở cảnh sát Los Angeles, LAPD] 【114246】
+[cytokine] 【105298】
+[không tốt hay xấu] [114618]
+[Khảo cổ học Kinh thánh] [106100]
+[đại bàng con rắn có lưỡi] [113866]
+[ống polyvinyl clorua, ống PVC] [105560]
+[Elaeagnus multiflora var. Hortensis] [105552]
+[hình vuông, hình vuông] [103504]
+[nhân bản] 【105278】
+[không thể đạt được] [105416]
+[Số ID] [114878]
+[barracuda đỏ] 【105458】
+[Shudra, Sudra] [104510]
+[nhân viên mà shide được gắn vào để làm cho một go-hei] [104948]
+[dâu tây giả, dâu tây giả] 【105818】
+[phalarope cổ đỏ] 【105234】
+[Lịch Hồi giáo] [105498]
+[lăng kính ngũ giác] [105586]
+[pescatore] 【105792】
+[crimson crepe] 【114978】
+[bằng chứng về bánh pudding đang ăn] [104846]
+[Hệ thống nhà Thanh giao số lượng bằng nhau của người Mãn Châu và Hán Trung Quốc cho các cơ quan chính quyền trung ương] [115150]
+[đốt nông nghiệp, thiết lập một lĩnh vực bốc cháy] [103384]
+[điện trở kéo lên] [114928]
+[Cuckoo nhỏ hơn] 【105082】
+[thần thực phẩm] [104750]
+[xương chân thấp] [105658]
+[Hội chứng Sjogren, bệnh Sjogren] [105282]
+[thuốc toàn diện] 【105036】
+[Con cú nhảy kiểu Á-Âu] [104638]
+[Hida salamander] 【105540】
+[cô gái đại học] 【114920】
+[Cá thu jack Nhật Bản, cá thu ngựa Nhật Bản] 【105372】
+[dạng văn học truyền đạt một sắc thái văn bản chính thức] [105716]
+[thùng nhựa] [114644]
+[Thứ hai] 【104866】
+[đầu bò cắt đuôi] [106434]
+[quyển phác thảo lớn được sử dụng trong quá trình quay phim truyền hình để thông báo cho diễn viên về hướng sân khấu đặc biệt, tin nhắn chuyển tiếp, vv, thẻ cue, tấm nôi, tấm cheat] [105556]
+["tsuchinoe" ngày rơi gần nhất với phân chim hoặc mùa thu] [103490]
+[kẹo] [104886]
+[chỉ ăn một chút, có một chút thèm ăn] [105462]
+[rõ ràng và vang dội] [103386]
+[Opus Dei] [103430]
+[bình đựng trà] [104854]
+[đi cùng với một trò đùa, vv lúc đầu rồi chỉ ra sự lố bịch của nó] [104430]
+[gia vị dán được làm từ yuzu zest và ớt] [105374]
+[sử dụng chữ Hán đọc chữ Hán để đại diện cho các từ tiếng Nhật bản địa] [115026]
+[đá quăn, đầu gối dày] 【105194】
+[Eurasian wryneck] 【105428】
+[tinh bột khoai tây] 【105726】
+[nam] 【104794】
+[số di động] [106094]
+[Thứ ba] [104868]
+[hormone nữ] [105342]
+[gelato] [105794]
+[Hormone neurohypophyseal] [105316]
+[chảy nước mắt] [115208]
+[tôm sakura] [104842]
+[giáo viên lớp, giáo viên chủ nhiệm, giáo viên mẫu] 【105070】
+[kanji "nhập" cấp tiến lên trên cùng] [103058]
+[Biết mình] 【102976】
+[Tiếng khét tiếng của Wernicke] [105012]
+[Sự pha trộn phổ biến thời Edo của giáo lý đạo đức Phật giáo, Thần đạo và Khổng giáo] [105398]
+[Chim gõ kiến ​​của Anna] 【105426】
+[Hóc môn sinh dục] [105324]
+[daikon và ớt dai dẳng, daikon mài và cà rốt] 【105064】
+[hạt tiêu] [114642]
+[tiếng xào xạc] 【105182】
+[chaetognath] 【114770】
+[Hội nghị Châu Á-Phi, Hội nghị Châu Á-Phi] [113582]
+[Mendelism] [105930]
+[khó có được, khó có được] 【105274】
+[Suryaprabha] 【114848】
+[ngáy, gầm gừ] 【105778】
+[thay đổi ngữ âm, thay đổi âm thanh, thay đổi âm thanh] [103712]
+[tia vây] 【105618】
+[cá trích mòng biển] 【105190】
+[xé ra, xé ra] [114190]
+[đi về phía nam] [113468]
+[ngữ pháp học] [114970]
+[sâu đậu phộng] [114758]
+[giá rượu] [104738]
+[điểm tham quan, điểm du lịch] [115046]
+[cho chính mình, đầu hàng mình] 【114604】
+[huấn luyện viên động vật] [104570]
+[số đăng ký tài sản] [114936]
+[giấm gạo] 【105534】
+[giày cao bồi] 【114866】
+[buchi salamander] [104780]
+[halfsies, chia đều giữa hai người] [105708]
+[Akasagarbha] 【114852】
+[mở rộng khu vực bán hàng, tăng số lượng giường] [114922]
+[cù lao nhỏ hơn] 【105120】
+[kanji "bò" cấp tiến ở bên trái] [103576]
+[cổ ngỗng và mộng mộng] [105626]
+[đã tốt hơn, được khuyến khích] [114634]
+[từ mấy giờ] 【105376】
+[mũi tên sâu] [114772]
+[trang phục samurai xanh nhạt thường mòn khi tự tử] [104358]
+[redshank chung] [105238]
+[tháng dài] [115132]
+[Tàu ngầm lớp Harushio] 【105676】
+[cát eo hẹp, dải cát đỏ] [115200]
+[Gỗ tre Nhật Bản, tre gỗ khổng lồ, madake, tre Simon] 【105836】
+[thịt cua giả, que cua] [105060]
+[Cuckoo nhỏ hơn] 【105078】
+[Kamchatka stonecrop] [114172】
+[quá xấu hổ để gặp] [104442]
+[lăng kính hình bát giác] 【105592】
+[pterobranchs] 【114780】
+[tội phạm chiến tranh hạng B và lớp C] [106014]
+[bậc thầy của cánh đồng lúa, nông dân trưởng, con chim cu nhỏ hơn] [105126]
+[lupus ban đỏ] [105286]
+[dendrolatry] [115180]
+[gatha] [104970]
+[phalanx của bàn chân] 【105652】
+[tiếng gọi của cuckoo nhỏ hơn] [105144]
+[tiệc trà] 【104730】
+[viên nang thời gian] [104878]
+[Thế giới âm nhạc, thế giới âm nhạc] [114696]
+[sốt mù tạt] [104838]
+[8 tội ác không thể tha thứ trong luật Nhật Bản cổ đại] [105768]
+[súp mì soumen và các thành phần khác nhau trong nước tương] [104824]
+[lụa crepe] 【114994】
+[hormon peptide] [105346]
+[thế giới của mười hướng] [106380]
+[piping plover] 【105228】
+[bắc shrike, shrike xám lớn] 【105136】
+[Phalarope của Wilson] [105232]
+[con thú tốt lành] [115064]
+[Dao cạo của Occam, dao cạo của Ockham] 【105052】
+[Nhật Bản spatterdock] 【115226】
+[nguyên nhân gây đau đầu, đau ở cổ] [104534]
+[một dòng suối phun ra từ một thung lũng] [103404]
+[kousso, kosso, cusso, koso] [114374】
+[ubame oak] 【105530】
+[clip ngắn được sử dụng để bắt đầu và kết thúc quảng cáo thương mại trên truyền hình Nhật Bản] 【114946】
+[Bánh pudding Giáng sinh, bánh pudding mận] 【114666】
+[được ngâm, ướt đẫm] [114992]
+[giam giữ một tên tội phạm trong một ngôi đền như một hình thức trừng phạt] [105404]
+[chứng ngộ bất ngờ] [105408]
+[giai đoạn nang trứng, giai đoạn tăng sinh] [105308]
+[adhyatmavidya] [104766]
+[video quảng cáo, video nhạc, lượt xem trang] [114958]
+[vestimentiferan] 【114768】
+[vùng núi của Quận Kunigami ở miền Bắc Okinawa] [115210]
+[thornyhead băng rộng, cá gai rộng rãi, cá tuyết kichiji] 【105378】
+[dù bạn có cố gắng gì đi chăng nữa, thảm kịch có thể xảy ra với bạn, may mắn có thể đến bất ngờ] [104844]
+[áo] 【105608】
+[nỗi đau khi gặp những người không thích] [115184]
+[Sinh nhật của Hoàng đế Meiji] [115074]
+[hagfish trong nước] 【105646】
+[di truyền phóng xạ] [106004]
+[đối xứng xuyên tâm] [114782]
+[Violaceae] [114646]
+[Người chiến binh sậy kiểu Á-Âu] [105168]
+[bạc hà, gai elae gai, ôliu gai] 【105544】
+[toàn bộ khu vực, toàn bộ khu vực] [104528]
+[Người Sinhalese, người Sinhalese] 【114258】
+[tránh bởi tất cả mọi người, không thích tất cả mọi người] 【114186】
+[phần phía tây của Nhật Bản, các quốc gia phương Tây, 33 ngôi đền trong khu vực Kinki có chứa một bức tượng Quán Thế Âm, một cuộc hành hương của những ngôi đền này] [105510]
+[sử dụng động từ hoặc cách chia tính từ làm danh từ] [115232]
+[cầu vồng có mùi] [105464]
+"Xin lỗi, tôi xin lỗi, Sushi ー ー ー d, Sushi mưa, Kaiten-zushi" [104544]
+[chút grebe] 【114712】
+[là một trong số] 【114996】
+[Bộ trưởng Quốc phòng, Bộ trưởng Quốc phòng] [114100]
+[Cuộc khảo sát đất đai toàn quốc của Toyotomi Hideyoshi] [115144]
+[lựa chọn xã hội] [105992]
+[ký sinh trùng bố mẹ] [105146]
+[điểm đông] [105076]
+[làm chủ] [104806]
+[một điểm, trang trí khâu, thiết kế mũi kim nhỏ, bình cứu trợ mang vào để đối mặt với một đập] 【114962】
+[huh?, có chuyện gì vậy?] [105724]
+[tee-up, teeing] 【104726】
+[Tàu vận chuyển xe hạng Osumi] [105700]
+[chú ruồi xanh và trắng] [105148]
+"Dòng chảy Sinto" [104942]
+[có một em bé được một người phụ nữ khác chăm sóc, cho con bú, sữa mẹ nhận được từ một người phụ nữ khác] [114976]
+[Mahesvara] 【114814】
+[thay đổi hình ảnh, usu. với ý nghĩa tình dục, chẳng hạn như đặt khuôn mặt của một ai đó trên đầu trang của một hình ảnh của một thần tượng khỏa thân, vv] [105362]
+[mười hành vi tốt, hoàng đế] [105774]
+[ping pong dash, ding dong dash] 【105538】
+[Wahhabism, Wahabism] [106218]
+[xương cọ] [105656]
+[elan vital] 【106252】
+[Anatolian] [106134]
+"Fetus" 【105396】
+[chub cá thu] [105448]
+[Chuyển động của Bright] [106216]
+[tĩnh mạch giận dữ] 【105352】
+[Tin Mừng theo Matthew] 【107040】
+[margarita] 【105486】
+[thử nghiệm lao tố] [106008]
+[thường trú nhân đặc biệt] [106860]
+[con lười hai lưỡi] [105894]
+[Thần thú] [106844]
+[Tiếng Trung-Tây Tạng] [106102]
+[rắn hổ mang cổ đen] [105864]
+[gangal cơ bản] [105014]
+[hổ phách Nhật Bản trẻ tuổi] 【105576】
+[bệnh lupus ban đỏ hệ thống, SLE] [105290]
+[viêm khớp dạng thấp mãn tính] [105280]
+[Gián đoạn Mohorovicic] [106038]
+[mở đầu tiên] [105506]
+[hornworts] 【106522】
+[Cá hồi Đại Tây Dương] [105438]
+[tiến hóa phân tử] [106248]
+[Sailfin poacher] [105594]
+[Mong] 【106174】
+[trạng thái cư trú, tình trạng visa, chứng nhận cư trú] [106862]
+[Asiatic cóc] [106414]
+[tuyệt đối không phù hợp, tội ác chống lại gia đình hoàng gia] 【105762】
+[mẹ làm việc] [105918]
+[Tàu khu trục Kongo] 【105668】
+[vàng da sơ sinh] [106270]
+[hậu tố cho người quen thuộc] [106636]
+[steelhead] [105466]
+[dải daikon thái lát dài và sấy khô] [105784]
+[Tàu khu trục lớp Hatakaze] 【105672】
+[Gián Đức] 【105902】
+[hội chứng suy giảm miễn dịch tiểu học] [106284]
+[bắp cải skunk màu vàng] [106314]
+[Tiếng Albania] 【106138】
+[Tin Mừng Gioan] 【107048】
+[Zygomycota] 【105742】
+[trâu bò] [106440]
+[hoàng hôn morpho] 【105756】
+[Vòng hoa Giáng sinh] 【105638】
+[tại thời điểm viết] [106622]
+[piculet olivaceous] 【105432】
+[hộp đập] 【105490】
+[Nghiêng] [106144]
+[tổ chức sản xuất âm thanh] [106910]
+[rượu vang loquat] 【105606】
+[Malayo-Polynesia] [106112]
+[Tháng 1] [104888]
+[tiếng Latin thô tục] 【106098】
+[trò chuyện vô nghĩa, lãng phí hơi thở] 【106214】
+[sức sống vũ trụ, tinh thần tự do] [104860]
+[Tin Mừng Thánh Luca] 【107064】
+[cơ sartorius] [107416]
+[giờ làm thêm đêm] [106850]
+[thực phẩm dựa trên thực vật] [105526]
+[Kẻ hủy diệt lớp Yubari hộ tống] 【105682】
+[Virus DNA] [105980]
+[ngày trong tương lai gần khi sự kiện lớn dự kiến ​​xảy ra] [106818]
+[Australoid] 【106190】
+[goldeneye chung] [106204]
+[Epstein-Barr virus, EBV] [105392]
+[di truyền dân số] [106 000]
+[cổ vũ] 【105578】
+[Sắc lệnh từ một quan chức cao cấp trong chính phủ hoặc quân đội có tình trạng của một tài liệu chính thức ràng buộc] [106720]
+[sườn núi giữa đại dương, sườn núi giữa] [106046]
+[nón nhọn] 【105944】
+[Samuel II] [106986]
+[chịu trách nhiệm, đổ lỗi] 【105418】
+[mực mực] [106330]
+[ABO nhóm máu] [106264]
+[Chùa tre Trung Quốc, tre tootsik] 【105840】
+[Finno-Ugric] [106172]
+[áo thun bụng đen, áo phông màu xám] 【105206】
+[CD radio-cassette] [105568]
+[virus suy giảm miễn dịch ở người, HIV] [105996]
+[Tàu khu trục lớp Murasame] 【105690】
+[sidewinder] [105866]
+[chi nhánh của các ngôn ngữ] [106106]
+[Gỗ tre Nhật Bản, tre gỗ khổng lồ, madake, tre Henon] 【105838】
+[trifles, chi tiết nhỏ] [106682]
+[Tàu tuần dương Aegis] [105664]
+[new-skinned newt] [105248]
+[bướm bướm] [105582]
+[guenon] 【106544】
+[Tàu khu trục Atago] [105670]
+[vai nướng] 【106698】
+[goatsbeard brotula] [106450]
+[Thử nghiệm DNA] [105984]
+"Xin đừng thất bại cho đến sáng" [106006]
+"Lần này là vô lý d" [106312]
+[cò trắng] [106374]
+[discoid lupus ban đỏ] [105292]
+[than cao cấp được sản xuất từ ​​gỗ sồi ubame] 【105528】
+[chim bay, chim bay lên] 【105910】
+[Ấn-Đức] [106120]
+[tiếng còi chung] [106420]
+[bít tết tartare] 【105906】
+[caecilian] 【106506】
+[nấm sữa chua] 【106070】
+[Tòa án quân sự quốc tế về Viễn Đông, IMTFE, Tokyo Trials] [106016]
+[Vaishya, Vaisya] [104516]
+[Yu, Shun và Yu, Yu, Công tước của Chu, Khổng Tử ] [104772]
+[tàu nước ngoài] [106486]
+[coevolution] [106258]
+[Simon tre] 【105830】
+[sapsucker bụng vàng] [105430]
+[Ngũ Tuần] 【106978】
+[Dravidian] 【106126】
+"Soba" [106056]
+[trật khớp hông, hông bị trật khớp] [106278]
+[zig-zag rice leafhopper] 【105874】
+[ubame oak] 【105532】
+[Trung-Tây Tạng] [106124]
+[Chive, tỏi chive Trung Quốc] 【105956】
+[Đế chế Đông La Mã] [107152]
+[tteokbokki, ddeokbokki] 【105732】
+[dải daikon thái lát dài và sấy khô] [105782]
+[tiến hóa phân tử] [106250]
+[cây thông Douglas phổ biến] 【105386】
+[lãnh đạo dự án] [106968]
+[agnathans] [105642]
+[Cây gỗ Eurasian] [105242]
+[rêu] 【106524】
+[Áo thun vàng Eurasian] 【105226】
+[quần thể thao] [105610]
+[pock được đổ chuông] [105218]
+[người phụ nữ lớn tuổi] 【106474】
+[trường cao đẳng nữ] [104462]
+[tattler đuôi xám] [105200]
+[Pharisee] [107126]
+[định hướng khách hàng] [105940]
+[mực vàng, mực nang của Madokai] [105364]
+[trình tạo số giả ngẫu nhiên] [105276]
+[độc tố vi khuẩn] [106306]
+[đã sử dụng cửa hàng quần áo nữ] [104546]
+[tạp chí biên nhận] [105422]
+[sâu đục thân sọc] [106362]
+[tiếng súng thông thường] [105204]
+[Hy Lạp] [107178]
+[grosbeak weaver] [106348]
+[chó ngoại quốc] [106608]
+[tòa nhà lớn và lộng lẫy] [106202]
+[asthenosphere] [106030]
+[amphibole] [105922]
+[Tiếng Albania] 【106136】
+[Diana khỉ] 【106556】
+[Hành tây xứ Wales] [105952]
+[muskrat] 【105760】
+[Ngôn ngữ Munda] [106184]
+[tuần tra biên giới, cảnh sát biên phòng, biên phòng] [106304]
+[Celtic] [106152]
+[mù tạt khí] [106296]
+[Nhóm máu Rh] [106268]
+[romanization] [107156]
+[VX] [106302]
+[Mongoloid] 【106188】
+[axit ribonucleic, RNA] [105982]
+[Chiến tranh Trung-Nhật] 【106290】
+[trứng Homolecithal] [105812]
+[Elaeagnus multiflora var. Hortensis] [105550]
+"" [106684]
+[Thế giới khỉ cũ] [106542]
+[oriole hốc đen] [105254]
+[asthenosphere] [106028]
+[honeyeater] [106352]
+[luộc] [105796]
+[Ngôi sao Hollywood] [106384]
+[tận dụng thời điểm khó khăn] 【106764】
+[bánh bao tinh bột nước lợ] [105790]
+[luật độc lập] [105938]
+[đường dẫn chủ đề, danh sách đường dẫn, đường dẫn đường dẫn] [105950]
+[Tusita] 【105412】
+[lặng lẽ và ngoan ngoãn] [106826]
+[cộng-trừ] [106092]
+[cơ thể hấp dẫn, thân hình đẹp] [105888]
+[caecilian] [106504]
+[giết người hoặc chủ của chính mình] [106568]
+[lăng kính lục giác] 【105588】
+[caecilian] 【106508】
+[Amur goby] 【106448】
+[nhân viên ba phần] [106588]
+[hàng rào tốt tạo nên hàng xóm tốt, hàng rào giữa giữ tình bạn xanh] [106716]
+[Trung Quốc tre, tre nhập khẩu từ Trung Quốc] [105842]
+[quốc gia làm việc] [106730]
+[Nhân bản DNA] [105986]
+[Cây thông Douglas Nhật Bản] 【105382】
+[tiếng chim ưng có tiếng ruby] 【105424】
+[tiến hóa sáng tạo] [106254]
+[sao hồi] 【105598】
+[hành vi thói quen của một người] 【106488】
+[ống polyvinyl clorua, ống PVC] [105566]
+[do ...] 【105570】
+[Tàu khu trục lớp Haruna] 【105694】
+[sự suy giảm dầu] [106806]
+[warthog] [106326]
+[Septuagint] [106940]
+[myrmecology] [106368]
+[skunk sọc] [106322]
+[adenosine diphosphate, ADP] [105974]
+[dỡ hành lý] [106872]
+[mực vàng, mực không xương của Nhật] 【105370】
+[bệnh lupus ban đỏ hệ thống, SLE] [105288]
+[tám giáo phái Phật giáo Nhật Bản đầu tiên, tám nhà sư Nhật Bản đến thăm Trung Quốc trong thời kỳ đầu Heian] [106618]
+[acetylcellulose] [105296]
+[lỗi sin, lỗi bên trái] [106052]
+[định lý không hoàn chỉnh] [106242]
+[cá và chim] [106482]
+[cây thông trắng] 【106086】
+[chung starling, Châu Âu starling] [105264]
+[cố định nội dung, giải quyết vấn đề, thực hiện thỏa thuận] 【105628】
+[khỉ savannah] 【106552】
+[Hoa hồng giáng sinh] 【105640】
+[cây thông ponderosa] 【105802】
+[sậy] [105172]
+[kana nửa chiều rộng] [104478]
+[hai giáo phái Phật giáo được giới thiệu đến Nhật Bản trong thời kỳ Heian và sáu giáo phái giới thiệu thời kỳ Nara] [106616]
+[cuộc hành hương của Saigoku-Sanjūsansho] [105514]
+[tôm sú, tôm sú] 【105916】
+[tiếng giông lửa] [105542]
+[chub cá thu] [105454]
+[Pantone] [106310]
+[đen mamba] 【105862】
+[ngày qua ngày, trong nhiều ngày] [106870]
+[peperoncino] [106328]
+[tôm càng xanh] 【104678】
+[Ý] 【105472】
+[C-stroke] [106838]
+[liên kết cuff] [105882]
+[sậy] [105174]
+[gastrotrichs] [106574]
+[rút ra khỏi một người nào đó do lời nói hoặc hành động của họ, có tâm trạng bị hủy hoại, phóng to hoặc lùi máy ảnh để có được hình ảnh rộng hơn] [105926]
+[Astilbe microphylla] [106074]
+[confit] [106332]
+[đông màu vàng nhạt đục] 【105496】
+[Plover vàng Mỹ] 【105224】
+[tiến hóa song song] [106244]
+[Người Tây Ban Nha] 【105468】
+[cuckoo nhỏ hơn] 【105124】
+[hội chứng suy giảm miễn dịch tiểu học] [106282]
+[bị sát hại, được hỗ trợ bởi một số người khác, được nuôi dưỡng bởi người khác] [105814]
+[Epistle đến Galatians] [107138]
+[ếch cây xanh trong rừng] [106444]
+[Tàu khu trục Takanami] 【105692】
+[Người Bắc Di, người man rợ phía bắc] [106494]
+[biết bạn không biết gì] 【106924】
+[dạng văn học truyền đạt sắc thái của lời nói] [105714]
+[truyện tranh bốn bảng] [105360]
+[bồn tắm bằng đá, phòng tắm hơi được lấy bên trong một cái hang hoặc phòng đá] [105846]
+"Tshimashima rin" [106068]
+[lấy các mặt hàng như sách, CD và DVD trước ngày chính thức bán) [106746]
+[indigo bunting] [106208]
+[greenshank] [106394]
+[cây thông] [105870]
+[kim tự tháp bát giác] [105590]
+[sudoku, số nơi] [105634]
+[vòng tròn hoa] [107202]
+[nhóm ngôn ngữ, nhóm từ] [106104]
+[goumi, dâu tây anh đào] [105546]
+[kim tự tháp ngũ giác] [105584]
+[Duce, Il Duce] 【106212】
+[Broussonetia kazinoki] 【106518】
+[xương của cẳng trên và dưới] [105660]
+[cảnh tiền thưởng, chẳng hạn như phim DVD, chương trình truyền hình, v.v.] [105884]
+[cyclostomes] [105644]
+[Mực ống thông thường của Nhật, mực bay Thái Bình Dương, mực nang vàng, mực nang không xương của Nhật Bản] 【105368】
+[blueback] 【105962】
+[xe trộn bê tông] 【105750】
+[Rắn hổ mang Ấn Độ, rắn hổ mang, rắn hổ mang châu Á] 【105858】
+[Epistle đến Colossians] [107078]
+[warthog] [106324]
+[bò giấu rám nắng bằng tannin] [105878]
+[jaeger đuôi dài, skua đuôi dài] [105212]
+[tham dự học ngoại ngữ tại một trường gần ga xe lửa] [104918]
+"Tôi không hiểu" [105482]
+[aschelminth] [106570]
+[myxomycete, slime mold] [105738]
+[Greenfinch châu Âu] [106338]
+[Altaic] 【106118】
+[một cái gì đó-một cái gì đó, một cái gì đó hoặc khác] [106796]
+[lý thuyết quyền của tiểu bang] [106036]
+[Cây thông Douglas] 【105384】
+[sàn làm sạch] [105666]
+[Á quân Âu Á] 【106422】
+[treo lượn] 【106772】
+[hoàng đế] [105776]
+[hoa niềm đam mê màu xanh] [105968]
+[Cây thông bạc châu Âu] 【106076】
+[năm khoa học của Ấn Độ cổ đại] [104760]
+[nụ hôn đầu tiên] [104864]
+[bujian] [107776]
+[công trống màu xanh lá cây] [106400]
+[đơn bào gây sốt rét] [106288]
+[cắt rời, thứ gì đó đã bị cắt rời] [105394]
+[Hành tây xứ Wales, hành tây bó Nhật Bản] [105954]
+[sudoku] 【105636】
+[nộp đơn khiếu nại] [106626]
+[dịch chuyển hông bẩm sinh] [106280]
+[tiếng thét màu vàng] [106206]
+[33 nơi thiêng liêng trong vùng Kanto] [105518]
+[tất cả, đêm không ngủ ngon hơn] [105746]
+[thiết bị chính xác, thiết bị tinh tế] [105806]
+[Thằn lằn không chân] 【106502】
+[Mỏm vàng của Mỹ] [106342]
+[Nhật yam] 【105728】
+[Indonesia] 【106150】
+[adenosine diphosphate, ADP] [105976]
+[như bạn muốn, như bạn sẽ] 【105572】
+[Zechariah] 【107036】
+[Kestrel Mỹ] [106416]
+[chuyển đổi lao tố dương tính sau khi chủng ngừa BCG] [106010]
+[bạn tốt hơn xem bước của bạn!, ngủ với một mắt mở!] 【106600】
+[Armenia] 【106140】
+[bệnh viện nhi đồng, bệnh viện nhi khoa] [106634]
+[kinetin] 【105320】
+[hồ sơ ly dị] [106630]
+[Dock Nhật Bản] 【104990】
+[Hóc môn sinh dục] [105326]
+[hai nhân vật, chive Trung Quốc, tỏi chive] [105958]
+[rotifer] [106572]
+[Slavic] [106156]
+[hormone tăng trưởng] [105328]
+[Ostrogoth] [107184]
+[Niger-Kordofan] 【106128】
+[Người Goth, người Gothic] [107186]
+[Tập hợp Mandelbrot] [106718]
+[mùa xuân có tính axit] 【105852】
+[tiếng cười chung] 【105270】
+[đồng hồ được đặt trên bàn, giá sách, v.v.] [104784]
+[dạng văn học truyền đạt sắc thái của lời nói lịch sự] [107592]
+[hormon sinh dục giả] [105314]
+[thay đổi hình ảnh, usu. với ý nghĩa tình dục, chẳng hạn như đặt khuôn mặt của một ai đó trên đầu trang của một hình ảnh của một thần tượng khỏa thân, vv] [105358]
+[báo chí dài] 【105868】
+[Bướu Graafian] 【105306】
+[Baltic] [106166]
+[Gián Mỹ] [105904]
+[barracuda lớn] 【105456】
+[peridotite] [106032]
+[giảm cân, giảm cân] [105718]
+[Chồn Mỹ] 【106318】
+[rắn hổ mang, rắn hổ mang Ấn Độ, rắn hổ mang châu Á] [105860]
+[Hệ thống Aegis] [105662]
+"Moho" 【106040】
+[chiến thắng phụ thuộc vào sự may mắn trong ngày] [106762]
+[oán giận, hận thù và cảm xúc khó chịu] [106766]
+[bắt đầu một hành động, có màn cửa mở, có một sự khởi đầu] [105474]
+[Người ruồi thế giới cũ] [105262]
+[trở lại câu lạc bộ] [105770]
+[shit cho bộ não] [106820]
+[tên thay thế cho henon tre] 【105824】
+[co giật-âm] 【105002】
+[capuchin màu nâu, mũ trần] 【106222】
+[đông màu vàng nhạt đục] 【105494】
+[Nhật Bản pipistrelle, dơi nhà Nhật Bản] 【105898】
+[Ngôn ngữ Semitic] [106158]
+[ma sát ngang, chống trượt] [106048]
+[Giới hạn Roche, giới hạn của Roche] [105554]
+[basidiomycete] 【105734】
+[ngay khi đến] [105402]
+[cỏ liềm] 【105620】
+[redpoll phổ biến] [106346]
+[tuyên bố rằng một là một viên gạch đi từ chiến thắng trong khi bàn tay của một người là hoàn toàn che giấu, là một bước đi từ hoàn thành một cái gì đó] [105484]
+[Cá hồi Úc] 【105440】
+[thời điểm tốt để xem mặt trăng] [105390]
+[nó chỉ đơn giản là lịch sự phổ biến để làm sạch sau khi chính mình, một con chim không hôi tổ mà nó sắp sửa rời đi, để lại một nơi mà mọi người nên thấy rằng mọi thứ đều tốt đẹp] [105912]
+[đường sắt tốc độ cao, quá cảnh nhanh] [105600]
+[33 ngôi đền trong khu vực Kinki có một bức tượng Quán Thế Âm] [105512]
+[pseudogene] [106866]
+[bánh sandwich phô mai nướng, phô mai nướng] 【106388】
+[Linh sam bạc của Veitch] 【106090】
+[nhà chung cư martin] [106390]
+[hướng người tiêu dùng] [105942]
+[Áo vàng Thái Bình Dương] 【105208】
+[pine siskin] 【106336】
+[miếng daikon khô và thái mỏng] 【105780】
+[bồn tắm hoặc đá làm bằng đá] [105848]
+[Turkic] 【106162】
+[Thẩm phán] 【106902】
+[pyroxene andesite] [105920]
+[Thư thứ hai cho người Corinth] 【107070】
+[điều trị bệnh sốt rét] [106292]
+[Hình ảnh cộng hưởng từ hạt nhân, NMRI] [105048]
+[Bức tranh Phật giáo] [107120]
+[Greenfinch phương Đông] [106340]
+[giấy photocopy, giấy photocopy] [104414]
+[con đường quanh co] [104734]
+[vỏ bọc myelin] 【105026】
+[được mở rộng, đa dạng, bao phủ rất nhiều mặt đất, bao gồm nhiều chủ đề khác nhau] 【105828】
+[hải sản ướp muối và rượu sake rồi hấp] [105948]
+[hormone giới tính] [105330]
+[cóc cóc, cóc biển, cóc khổng lồ] 【106404】
+[ho-ho-ho] [106054]
+[Apocrypha] [107112]
+[hormone động vật] [105338]
+[Meliosma rigida] [105604]
+[myxomycete, slime mold] [105740]
+[DNA tái tổ hợp] [105988]
+[Đảng Quốc xã] 【106026】
+[Afro-Asiatic] [106114]
+[godwit đuôi đen] [105230]
+[Roman Curia] [107148]
+[kiểu tóc với mái tóc cắt ngắn thành lông dài của đàn ông điển hình] [105706]
+[cóc với làn da bị mụn cóc] [106410]
+[Lời cầu nguyện của Chúa] [106750]
+[kem cao răng, kali hydro tartrat] [105908]
+[Châu Âu] 【105470】
+[Ashkenazim] [107188]
+[giám mục đỏ] [106350]
+[thẻ giao dịch, thẻ thu tiền] [105798]
+[Không có gì!, Đừng đề cập đến nó!] 【105748】
+"Himito-sensei c" [106116]
+[tiến hành một cách hợp lý, đi qua các kênh thích hợp] [106598]
+[Simon tre, bất kỳ tre mỏng nhưng linh hoạt] [105832]
+[astilbe] [106072]
+[Món tai thỏ Okinawa] [105488]
+[Robin Mỹ] 【105246】
+[tàu đất nung cho đồ uống có cồn, v.v.] [106464]
+[Epistle to Titus] [107088]
+[bất kỳ con khỉ của gia đình Cebidae] [106220]
+[34 nơi thiêng liêng trong và xung quanh Chichibu, tỉnh Saitama] [105516]
+[Iran] [106146]
+[Uralic] [106122]
+[Ezra] 【106996】
+[Cây thông Sakhalin] 【106084】
+[Japantown] 【105522】
+[người đàn ông chỉ được sử dụng để nhận bữa ăn từ, người đàn ông luôn luôn trả tiền cho thực phẩm] [107150]
+[tập tin gián đoạn ngân hàng] [106628]
+[muni, Phật] 【106378】
+[tổ chức này, quốc hội này, bệnh viện này, phòng khám này] [106382]
+"Thái Lan" 【106160】
+[đá vôi ruồi] [105240]
+[Hegira, Hejira, Hijra] 【105502】
+[Tàu ngầm lớp Oyashio] 【105678】
+[melena sơ sinh] [106272]
+"Habanero" [106096]
+[dâu tây giả, dâu tây giả] [105816]
+[leafhopper lúa xanh] 【105872】
+[hormone nam] [105344]
+[cây thông chạy đất] [106528]
+[hội chứng suy giảm miễn dịch tiểu học] [106286]
+[lưới nội chất] [105970]
+[bánh gạo mochi với mứt đậu đỏ, bánh gạo mochi phủ mứt đậu đỏ, bánh gạo mochi] 【106794】
+[Cây thông của Maries] 【106082】
+[xe làm bằng đất sét] [106466]
+[The Big Dipper, cày, cày, đỉnh gia đình đại diện cho bảy ngôi sao sáng, người ăn trộm Nhật Bản, cá mòi Nhật Bản] [105964]
+[ống polyvinyl clorua, ống PVC] [105564]
+[đường hô hấp trên, đường hô hấp trên] [106892]
+[Henon tre] 【105822】
+[ớt] 【106484】
+[kestrel chung, tiếng còi chung] [106418]
+[Thư đầu tiên cho người Corinth] 【107068】
+[Daniel] 【107012】
+"Kaji f g g" [105574]
+[ngủ tối] [106452]
+[mochi rắc bột đậu nành ngọt] 【105808】
+[bất kỳ con vịt nào có thân trắng] [105222]
+[gia công siêu chính xác, cắt siêu chính xác] [105826]
+[Joshua] 【106980】
+[Machilus thunbergii] [106512]
+[sashimi trang trí, thứ gì đó không có ý nghĩa gì, có thể dễ dàng làm được mà không cần] [106498]
+[proboscideans, proboscidians] [106042]
+[ghi danh vào một ngôi trường đền thờ, con ghi danh vào một ngôi trường đền thờ, giam giữ một tội phạm trong một ngôi đền như một hình thức trừng phạt, đi đến một ngôi đền và ăn năn] [105406]
+[Tiếng Mon-Khmer] 【106176】
+[lưỡi liềm lưỡi liềm] [105548]
+[Đầu tiên của Peter] 【107096】
+[không thể tập trung vào] [106874]
+[loại keo được sản xuất từ ​​tinh bột nước lợ] [105788]
+[ma cà rồng] 【106228】
+[Tàu khu trục lớp Hatsuyuki] 【105686】
+[Người công dân Ấn Độ, công dân thông thường, công trống xanh] 【106398】
+[ý chí và di chúc bí mật] [106926]
+[người da màu, không phải da trắng] 【106198】
+[cảm ơn bạn rất nhiều] 【105844】
+[ảnh chụp bằng điện thoại di động, chụp ảnh bằng điện thoại di động, email từ điện thoại di động có ảnh đính kèm] [104432]
+[phong cách bài phát biểu lịch sự bằng tiếng Nhật] [105712]
+[phalanx của bàn tay, phalanx của bàn chân] 【105650】
+[Cuộc chiến tranh Ba Tư] 【106178】
+[hầm lẩu được làm bằng bộ phận nội tạng, rau và miso] 【105730】
+[nuốt bướm ấu trùng] [106430]
+[Nhật Bản eight-barbel loach] 【106438】
+[Cây thông trắng Nhật Bản] 【105804】
+[Luật Murphy] 【106906】
+[phân tích hệ gen] [106376]
+[watermark kỹ thuật số, watermark kỹ thuật số, watermark điện tử] [105946]
+[sốt rét tertian] [106294]
+[tám nhà sư Nhật Bản đến thăm Trung Quốc trong thời kỳ đầu Heian] [106612]
+[sâu đục thân vàng] [106360]
+[Tàu khu trục lớp Asagiri] 【105688】
+[bình nước nóng] [106830]
+[Chú khỉ thế giới mới] 【106546】
+[Niger-Congo] 【106130】
+[Cá đuối châu Á, Urosphena squameiceps, gia đình của chim, Urosphena, bao gồm cả stubtail châu Á, râu ngắn Timor, vv] [106064]
+    
+

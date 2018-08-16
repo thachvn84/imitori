@@ -1,0 +1,1788 @@
+repl.it
+@anonymous/BriskGullibleAbstractions
+Nodejs
+No description
+
+run
+repl talk
+(games)
+Sign up
+Files
+index.js
+history
+1234567891011121314151617181920212223242526272829303132333435
+
+const translate = require('google-translate-api');
+
+var fs = require("fs");
+var content = fs.readFileSync("retrans.txt", "utf8");
+
+translate("感じ", { from: 'ja', to: 'vi' }).then(res => {
+        console.log(res.text);
+
+node v9.7.1 linux/amd64
+   
+
+Repl.it: Installing fresh packages
+Repl.it: google-translate-api
+
++ google-translate-api@2.3.0
+added 32 packages in 4.296s
+
+
+Repl.it: package installation success
+
+89627; 102430
+completed!----------------------------------
+=> undefined
+[Norman Conquest] [91270]
+"Salmon ju" [91790]
+[pompon dahlia] 【90678】
+[var. của con chuồn chuồn đỏ] 【90950】
+[lẩu thịt heo, hầm heo] 【91028】
+[choco cornet] 【91070】
+[giá củ cải] 【90866】
+[sử dụng tiền làm vũ khí, sức mạnh của tiền] [91732]
+[tốc độ lớn, tốc độ nhanh bất cẩn] 【91346】
+[ngày này tuần trước, một tuần trước hôm nay] [91232]
+[Ý] 【91256】
+[Bunkyū thời đại] 【92738】
+[đếm lại] 【90996】
+[phòng để thở] 【91352】
+[Byzantine] 【90618】
+[Di sản thế giới, Di sản văn hóa và thiên nhiên thế giới] [91038]
+[sản xuất và bán hàng, tích hợp theo chiều dọc] [91136]
+[đội trưởng lửa, nhân viên cứu hỏa] 【92052】
+[Kỹ thuật Lamaze] 【90718】
+[thanh toán cho các dịch vụ y tế] [91748]
+[kiểm tra kỹ năng kanji, kanji test] 【91596】
+[vượt qua hoàn thành] 【90972】
+[mezzo sở trường] 【90702】
+"Eein gaeru" [92390]
+[cửa hàng đồ chơi] 【91100】
+[Thế hệ đầu tiên của một gia đình, trường học hay giáo phái tôn giáo] [92170]
+[trốn thoát nguy hiểm] 【92228】
+"Manju Eira" 【92408】
+[giương lên] [92072]
+[đục hoàn toàn] 【91294】
+[cuộc thi sắc đẹp mang tên Hoa hậu ...] 【91592】
+[có ý định thuyết phục một người nào đó và không thuyết phục bản thân, đi len và trở về nhà, một chút bit] [91408]
+[chiếu phim] 【90722】
+[ao trong vườn] [92290]
+[số tiền trung bình từ một khách hàng] [90920]
+[Phật, Thích Ca Mâu Ni, Đức Phật lịch sử] [91964]
+[người sống động hay nhanh chóng] 【91124】
+[làm giường] 【91880】
+[không đủ nghiên cứu] 【90836】
+[Hội thân hữu, Quakers] 【90646】
+[không bao giờ hài lòng với những gì người ta nhận được, và luôn mong muốn nhiều hơn, cho một người một inch và có họ một dặm] [91366]
+[sản xuất và bán hàng, tích hợp theo chiều dọc] [91138]
+[Trung Phi] [91644]
+[độ đồng nhất cứng, dán dày] 【91000】
+[hạt câu kết thúc nghi vấn thể hiện nghi ngờ] 【91786】
+[mắng về một vấn đề nhỏ] [91150]
+[cartwheel] 【91128】
+[chập chững biết đi, thực hiện những bước ngoặt] [91334]
+[bản in đầu tiên] [91286]
+[Giấy chứng nhận đủ điều kiện cho tình trạng thường trú] [90976]
+[vẽ hoặc viết bằng bút chì] 【91328】
+[chỉ với một cú nhấp chuột] 【90994】
+[hiệp ước tự sát] 【91324】
+[đỉnh núi Phú Sĩ, đỉnh núi Phú Sĩ] 【91302】
+[mang theo thứ gì đó xung quanh] [91012]
+[tiếng khóc forsythia, khóc chuông vàng] 【91518】
+[Vật lý thiên văn hạt nhân] [91430]
+[lọ kim loại hoặc nồi] 【91730】
+[Danh pháp Linna] 【90734】
+[báo cháy hoặc cảm biến] [91676]
+[quầy cho ghế hoặc ghế] 【91598】
+[mô tả chung, danh sách đầy đủ] 【90962】
+[nước tiểu còn lại trong bàng quang sau khi đi tiểu] [91338]
+[loại áo dài được mặc bởi các thành viên băng đảng biker bousouzoku, vv] [91074]
+[càng lớn thì càng ít càng tốt, quá lớn quá nhỏ] 【91116】
+"Genki mang" [92740]
+[kem kiểu cũ] 【91716】
+[Lễ vẽ nước, nghi thức vẽ nước thiêng] [90830]
+[hai con thỏ] 【91278】
+[bị kinh hoàng, tràn ngập sự lo lắng, run rẩy vì sợ hãi, năng suất khủng bố] 【90764】
+[đường đồng phân, xi-rô ngô fructose cao, HFCS] [91216]
+['ra'-gỡ bỏ, thực hành bỏ qua' ra 'từ cách chia động từ' rareru '] [92044]
+[nếm kim loại] 【91726】
+[Đế quốc Anh] 【91086】
+[quay lưng lại, nhìn lên] 【91794】
+[một con thỏ] 【91280】
+[hàm hyperelliptic] [91568]
+[Anh đào Bing, anh đào nhập khẩu vào Nhật từ Mỹ] [92244]
+[sản phẩm quốc gia ròng, NNP] 【91502】
+[dù có bao nhiêu thời gian trôi qua] 【91848】
+[trò chơi bingo] 【90622】
+[khóa bàn phím số] 【91778】
+[Mauritania] 【90710】
+[obi cho nam giới sử dụng, áo kimono nam] 【90784】
+[ấn phẩm kỷ niệm] [91442]
+[thuốc kích thích sinh con] [91096]
+[đi bộ một đoạn ngắn từ một bến tàu ngắn, hãy đi vào đầu con lợn của bạn] 【90974】
+[Đại hội Hoa Kỳ] 【91626】
+[được quá khổ] [91544]
+[trên lý do ít nhất, tại một chiếc mũ] 【90912】
+['từ bỏ'] 【92046】
+[Cộng đồng nguyên tử châu Âu, Euratom] 【91690】
+[phụ âm đầu tiên, âm tiết khởi đầu] [91908]
+[previa nhau thai] [91240]
+[không tính] 【91174】
+[Kỷ nguyên Kyōtoku] 【92646】
+[Chương trình Apollo, Dự án Apollo, Apollo] 【91252】
+[giày mưa, galoshes] 【90742】
+[giành chiến thắng liên tiếp, có một chuỗi chiến thắng dài] 【91006】
+[lớp cao và thấp] [91060]
+[tình yêu bị mù] 【92234】
+[cho công chúng] 【92004】
+[xây dựng cơ thể] [91172]
+[ưu tiên tối đa, ưu tiên tối đa, xử lý ưu tiên] [91506]
+[một sự kiện được tổ chức vào đêm sau ngày cuối cùng của một số lễ hội thường là lửa trại và khiêu vũ] [91504]
+[mycobacteria] [91764]
+[lối sống] 【93034】
+[Khoai tây Ai-len Cobbler] 【92080】
+[súp mỏng cá hoặc hải sản vỏ sò luộc trong nước biển] [92100]
+[một trăm ngọn núi hàng đầu của Nhật Bản] [91036]
+[một đứa trẻ bị đốt cháy sợ hãi lửa, một lần cắn hai lần nhút nhát, trở nên thận trọng hơn từ một kinh nghiệm xấu] [91454]
+[kết nối tĩnh mạch phổi dị thường một phần, PAPVC, thoát nước tĩnh mạch phổi bất thường một phần, PAPVD, trở lại tĩnh mạch phổi bất thường một phần, PAPVR] [91464]
+[marmoset jacchus)] [91130]
+[giáo viên xuất khẩu trong thời Meiji] 【91446】
+[bóng đèn khô] 【91946】
+[chấn thương nghiêm trọng] [91094]
+[trả lời nghiêm túc] [91044]
+[đối tượng rơi, vật rơi] [92066]
+[đêm chết] 【90928】
+[Thiết bị y tế, dụng cụ y tế] [91238]
+"Kagen ga" [92570]
+[ngọn lửa lớn] 【91410】
+[một người chiến đấu trong hoàn cảnh khó khăn] 【91104】
+[cây nho bầu] 【91546】
+[bột ớt cayenne] 【90932】
+[người bị bệnh ngoài da] [93084]
+[xã hội cho việc nghiên cứu truyện tranh manga, manga] 【91382】
+[tia vũ trụ chính] [91434]
+[xã hội cho việc nghiên cứu truyện tranh manga, manga] 【91380】
+[9 chân, skittles] 【91318】
+[fan columbine] 【90766】
+[trước xuất tinh, chất lỏng trước khi xuất tinh, chất lỏng của bò, tiền trước] [90904]
+[gia đình thu hẹp] 【91120】
+[ghi bàn tay trong hanafuda với một thẻ hoa 20 điểm và sáu thẻ hoa một điểm, một cái gì đó mà đứng trên phần còn lại] [91248]
+[viết một cái gì đó về hoa hồng, văn bản mới được viết] 【90874】
+[full swing] 【90642】
+[muskmelon] 【90690】
+[chơi lớn] 【90970】
+[trượt băng nghệ thuật] 【90636】
+[trong đám đông, trong đám đông lớn] 【90780】
+[quá muộn] 【90758】
+[decanter nghi lễ với một vòi và xử lý hình bán nguyệt] [91828]
+[sal mirabilis, mirabilite, natri sulfat decahydrat, natri sulphate decahydrate] [91250]
+[Thời đại Hōan, thời đại Hoàn] 【92452】
+[cơ quan sáng chế] [92016]
+[bóng gạo phủ đậu đỏ ngọt, bột đậu nành hoặc mè] 【90806】
+[phân tích quan hệ liên ngành] [91176]
+[thẻ với các từ hoặc cụm từ được viết trên chúng, được sử dụng trong các trò chơi karuta Nhật Bản] 【92162】
+[Thời đại Shōka] 【92548】
+[Kỷ nguyên Kan'en] 【92716】
+[Thời đại Kōhō] 【92374】
+[giữ nghi ngờ] 【91376】
+[tiền bảo vệ] [91878]
+[Bệnh Meniere] 【90704】
+[Kỷ nguyên Tenroku] 【92378】
+[khi nó trở thành, khi nói đến] [91604]
+[Học thuyết Monroe, chủ nghĩa Monroe] 【90714】
+[nữ diễn viên nhỏ, phụ nữ] 【90680】
+[microbrewery] 【90900】
+[lối vào, vào] [91164]
+[húng quế ngọt] 【91218】
+[phụ thuộc vào sự hỗ trợ của cha mẹ] [92782]
+[Sơ đồ Venn] 【90658】
+[Thời đại Shōchō] 【92636】
+[Phoenicia] 【90638】
+[Thời kỳ Tenryaku] 【92368】
+[đầy đặn] 【91484】
+[microcurie] 【90686】
+[kết nối tĩnh mạch phổi dị thường một phần, PAPVC, thoát nước tĩnh mạch phổi bất thường một phần, PAPVD, trở lại tĩnh mạch phổi bất thường một phần, PAPVR] [91460]
+[ngứa ngáy để đưa kỹ năng của mình vào sử dụng] 【91162】
+[hình ảnh sườn] [92940]
+[số điện thoại trực tiếp] [92038]
+[tian cha, trà ngọt, trà lá đen, blackberry Trung Quốc] 【91134】
+[chữ ký chung] 【92138】
+[lúm đồng tiền trên một má] 【90998】
+[truy cập cho tàu thuyền] 【90914】
+[Philopon] 【92896】
+[bệnh nhân và họ hàng] [92146]
+[lên xe sai] [91564]
+[Mười thời đại yo] 【92468】
+[mùa hè năm ngoái, mùa hè năm ngoái] [91016]
+[trò chơi được chơi dưới hình thức trừng phạt bởi kẻ thua cuộc trong cuộc thi] [92862]
+[búp bê bằng gỗ, loại trang điểm sân khấu, loại tác phẩm nghệ thuật sử dụng giấy, vải và dán] [91202]
+[ném xuống nhiều vật thể liên tiếp, cùng một lúc với số lượng lớn] [91080]
+[Polaroid] 【90676】
+[Tiếng Anh] 【92078】
+[Tiếng Hindi] 【90614】
+[Kỷ nguyên Keiō] 【92742】
+[câu lạc bộ karaoke] 【91102】
+[hộp đựng cơm luộc] 【90808】
+[trên các điều khoản rất tốt với nhau, gắn bó lãng mạn] 【90852】
+[lão hóa dân số] [91896]
+[xi-rô đường nâu] 【91490】
+[bất kỳ loài cá nào của gia đình Merlucciidae] 【90706】
+[túi rơm] [91738]
+[nhà cung cấp dịch vụ chăm sóc sức khỏe] 【91992】
+[bên trong một ngôi đền] 【91838】
+[Tôi nghĩ rằng sẽ không, có lẽ không phải là] 【92182】
+[bụi cây tuyết tùng] 【91806】
+[Câu lạc bộ khiêu vũ] 【91770】
+[trở nên say đắm] 【91508】
+[Viagra] 【92804】
+[bougainvillea] 【90648】
+[một cạnh, một đầu, một bên] [91724]
+[gấu nhỏ, gấu cub] 【91304】
+[minibike] 【90694】
+[chi nhánh đền thờ hoặc nhà thờ] 【91698】
+[thảm điện được làm nóng] 【91042】
+[triển lãm đặc biệt] 【91306】
+[mùa hè tới] 【92118】
+[chơi câm, giả vờ ngu dốt, hành động như vô tội] [91132]
+[giữa tháng một lễ hội ở miền bắc Nhật Bản, với những túp lều tuyết trong đó trẻ em chơi nhà, lều tuyết] [91736]
+[rùa bí ẩn, thời đại Reiki] 【92316】
+[ngày khởi hành] 【92788】
+[với ý nghĩa sâu sắc, mang tính gợi ý, mang thai có ý nghĩa] [91482]
+[Kỷ nguyên Kenryaku] 【92514】
+[Hàn Quốc-Nhật Bản] 【91530】
+[mất tất cả, không có gì, mất đi sự quan tâm và hiệu trưởng] [91112]
+"Yamataikoku" [90938]
+"Kokomi Doku l" 【91206】
+[Người Đan Mạch, Danes, Dane] 【92026】
+[phân tích khoảng không quảng cáo] [91212]
+[nghỉ chăm sóc trẻ em] [92136]
+[nếu tôi là ...?] 【90846】
+[cùng sọc, chim lông] 【90916】
+[cụm từ hoàn toàn phù hợp] 【92150】
+[cánh đồng hoa núi cao] 【90810】
+[tern nhỏ, sterna albifrons] [92230]
+[cửa hàng quần áo cũ, ai đó bán quần áo cũ] 【91402】
+[Minos] 【90696】
+[lần xuất hiện liên tiếp] [91198]
+"Hopi" 【91114】
+[Thời đại Shōan] 【92566】
+[với một cú hích] 【91008】
+[Kỷ nguyên] 【92620】
+[quên viết một cái gì đó, để lại một cái gì đó ra, bỏ qua một cái gì đó] [90872]
+[ghi chú một lý do] 【91882】
+[kết quả kinh doanh tốt] 【91296】
+[phụ âm alveolar, âm thanh nơi lưỡi chạm vào sườn núi phía sau đầu răng phía trước của bạn] 【90894】
+[màu đỏ sẫm, màu vỏ cây bách] [91860]
+[Khoa miễn dịch, Khoa miễn dịch] [91210]
+[Thành phần tiếng Anh] 【91362】
+[người bạn thực sự, bạn thân] 【91456】
+[hạt tiêm] [91548]
+[máy bơm nhiệt khí] 【92074】
+[người dễ] 【91400】
+[thay đổi nét mặt hoặc màu sắc] [91812]
+[phản ứng luminol] [90740]
+[Rome] 【91098】
+[rút kiếm] 【91866】
+[người chơi mạt chược] 【91322】
+[hàng ngày mặc bởi những người đàn ông ở Nhật Bản cổ đại] [91842]
+[đóng gói chặt chẽ, đầy đủ công suất] 【91526】
+[tòa nhà hành chính] 【91480】
+[bị đói] 【91422】
+[làm cho sự vội vàng lớn, đã bị bắt mất cảnh giác, scurrying không chuẩn bị, đổ xô đến một trường hợp khẩn cấp với thanh kiếm trong tay, không có thời gian để gắn nó ở thắt lưng] 【90774】
+[chim ruồi] 【91696】
+[chiến lược chiến đấu cận chiến] [91444]
+[Hamadryas khỉ đầu chó, khỉ đầu chó thiêng liêng] 【90692】
+[denghu] 【91918】
+[kích thích sự quan tâm, nâng cao nhận thức về] [91648]
+[Mercurochrome, merbromin] 【90682】
+[run rẩy vì sợ hãi, run rẩy khắp nơi] 【91868】
+[khay gỗ] 【91830】
+"Jinja Keigen Era" [92330]
+[nhồi nhét] [91378]
+[Cờ hiệu hải quân Nhật Bản, cờ Nhật dùng trên tàu quân sự] 【91288】
+[Mona Lisa, La Gioconda] 【90712】
+[lực lượng gìn giữ hòa bình, PKF] 【90624】
+[quần dài] 【90868】
+[Kenkyū thời đại] 【92502】
+"Takeshi er" [92572]
+[Thời đại Shōhō, thời đại Shōho] 【92690】
+'S Totoro mọi thứ' [91178】
+[anh trai] 【90926】
+[Thoại qua IP, VoIP] [90942]
+[Hệ thống giải trí Super Nintendo, SNES] 【92034】
+[vị trí thông thường, vị trí có triển vọng quảng cáo] 【90898】
+[Cuộc chiến tranh Punic] 【90672】
+[trưởng phòng nhân sự] 【92082】
+[lapwing đầu xám, lapwing xám đầu] [92264]
+[Hōki thời đại] 【92332】
+[một sinh viên không bao giờ được quên tôn vinh giáo viên của họ] [99288]
+[Kỷ nguyên Kōchō] 【92554】
+[không thể giúp, không thể cưỡng lại, không thể chịu đựng không, phải không ..., không nên ..., phải ..., phải ..., nên ...] 【91602】
+[ý nghĩa] 【91772】
+"Các cô gái Jiaru, Chira Ku mang" [92422]
+[người quản lý không thông cảm, trưởng phòng với một trái tim bằng đá] 【90798】
+[một tòa nhà N tầng] [91314]
+[cửa hàng công đoàn] 【90716】
+[cụm từ, v.v. ở cuối chữ cái, vv] 【91930】
+[nhiệm vụ dễ dàng, không vấn đề gì] 【90850】
+[Thời đại Shōji] 【92504】
+[phiếu bút, sai lầm bằng văn bản, một điều gì đó bị hủy hoại do nhầm lẫn bằng văn bản] 【90882】
+[nhau thai accreta] 【92156】
+[phần của một người] [91242]
+[con rắn mù, rắn hổ, kẻ ngu vội vàng] [92960]
+[Borneo] 【90670】
+[buổi tối lạnh, mát vào buổi tối] [91850]
+[được sử dụng để ăn ngon nhất, có khẩu vị tinh tế] 【90946】
+[bộ ngực đẹp, ngực hình tốt] 【91088】
+[axit ribonucleic, RNA] [90728]
+[một hoặc hai kích cỡ, một hoặc hai cấp độ] [91904]
+"Okonomiyaki sho p" 【91398】
+[phần triệu, PPM] 【90630】
+[phụ âm] 【91910】
+[nói chuyện, kể chuyện] 【91084】
+"Manjiri" [92696]
+[màu nâu vàng, ngựa có màu nâu vàng] 【90988】
+[chóng mặt, cảm thấy chóng mặt] 【91258】
+[đền thờ trang] 【91820】
+[yếu tố tham nhũng] [91018]
+[ánh sáng rất mờ] 【91818】
+[Ngân hàng Trung Quốc] 【92298】
+[blues kinh nghiệm bởi tuyển dụng nơi làm việc ngay sau khi bắt đầu công việc] [91594]
+[Phương pháp Hoffmann] [90664]
+[bỏ trốn, tự cởi bỏ, không được chú ý sớm] [91170]
+[Diff để viết hoặc vẽ, không viết tốt] 【90888】
+[đặc điểm có được] [91026]
+[na-tính từ] [91040]
+[tràn đầy, tràn ngập] [91342]
+[quấy rối từ vị trí quyền lực, quấy rối điện] [91110]
+[cà chua bi] 【92242】
+[thời gian, giết thời gian] [91412]
+[sơ đồ phân tán] [90878]
+[bị bất ổn, chẳng làm gì cả] [90958]
+[Kỷ nguyên Kōō] 【92632】
+[F1 lai, lai đầu tiên, lai đầu tiên] [92218]
+[sư tử-chung chung] 【90800】
+[cuộc hành trình đầy sự cố] [91214]
+[cuối cùng, đầu tiên, LIFO] 【91980】
+[như X, rồi Y] [91146]
+[kết nối tĩnh mạch phổi dị thường một phần, PAPVC, thoát nước tĩnh mạch phổi bất thường một phần, PAPVD, trở về tĩnh mạch phổi bất thường một phần, PAPVR] 【91462】
+[Hệ thống Hepburn] 【90654】
+[Magpie châu Âu] 【90990】
+[quy tắc cú pháp] [92816]
+[Thời đại Shōwa] 【92578】
+[Liên hoan Âm nhạc và Nghệ thuật Woodstock] [92838]
+[Sir] 【91262】
+[cơ sở phục hồi chức năng cho người già] [91760]
+[tiêu thụ nhiên liệu thấp] [91282]
+[quần áo mùa hè thấm mồ hôi Nhật Bản cổ đại] 【91852】
+[với một swoosh, tại một ngã swoop] [92184]
+[gần dấu hiệu, khá gần, không phải là một dự đoán xấu] 【90880】
+[thành phần thơ mộng] [92802]
+[động lượng] 【91440】
+[đối mặt] 【91308】
+[bối rối, bối rối] 【92144】
+[nâng ngực] [91292]
+[tàu choo-choo] [91692]
+[Kỷ nguyên Ryakunin] 【92534】
+[người lao động trong ngày] [92270]
+[bánh kẹo nhỏ bao gồm hai bánh quy mỏng như bánh quế với kem giữa chúng] [91612]
+[viewcam] [91636]
+[tò mò đủ, kỳ quặc đủ, lạ để nói] 【90818】
+"Kanoe Eri, Kanawa Eri" [92388]
+[thờ phượng bởi hoàng đế tại một ngôi đền] [91228]
+[lặp đi lặp lại trong khoảng thời gian, mỗi khác] [91652]
+[nerd] 【91156】
+[có động cơ kín đáo, có một cái rìu để mài] 【92212】
+[millimicron] 【90698】
+[Sinh nhật của Đức Phật] 【91966】
+[danh mục với toàn bộ tác phẩm của một nghệ sĩ, danh mục raisonne] [91032]
+[mỗi quý, tất cả các bên] [90986]
+[Thời kỳ Bunpō] 【92580】
+[ngừng viết] 【90984】
+[quá trình preequilibrium] [91438]
+[Chōkan thời đại] 【92484】
+"Vấn đề mang theo" [92734]
+[cốt lõi, xương] [91420]
+[trưng bày búp bê trong Hinamatsuri, Hinamatsuri, Liên hoan Girls ', Lễ hội búp bê] 【90814】
+[hỗn hợp của bảy loại gia vị] [90930]
+[lưu ý tốc độ thả nổi] [91284]
+[hành xử khiêm tốn] 【90952】
+[Giải Pulitzer] 【90632】
+[ngồi xuống] 【91844】
+[phần ngoại giao] 【92198】
+[tránh hoặc né tránh trách nhiệm] [91540]
+[lãnh thổ] 【91424】
+[hôn nhân hạnh phúc, hôn nhân hạnh phúc] 【90876】
+"Eikan gori" [92386]
+[báo khói] 【91674】
+[liên kết trường học hoặc debenture] [92204]
+[hùng hồn và lành nghề] [91478]
+[trứng chậm luộc để lòng đỏ cứng nhưng màu trắng vẫn mềm] 【92856】
+[leo cây gỗ, đỉnh gia đình có hình dạng như trèo cây gỗ] [91004]
+[irinotecan hydrochloride] [91646]
+[sâu màu tím] 【91340】
+[Liên bang Hoa Kỳ] 【91624】
+[bị lừa bởi một cái gì đó, được đưa vào] [91494]
+[tìm kiếm hộ gia đình] [93148]
+[dòng bán chạy] [92278]
+[chuẩn bị cho mình điều tồi tệ nhất, tăng cường một quyết tâm, chấp nhận số phận của mình, chuẩn bị cho mình] [91148]
+[giữa màn hình] [91536]
+[liệu pháp đa ngành] 【91996】
+[dệt truyền thống của quần đảo Yaeyama ở Okinawa] [91468]
+[thất bại một bước ngắn thành công lớn, rơi vào rào cản cuối cùng] [91386]
+"Gói t waxpipe, mặc giá, thỏ" [92236]
+[vua của ngọn đồi, vua của lâu đài, vua của núi] [90854]
+[nói chuyện khàn khàn, hét lên khàn khàn] 【91934】
+[mì ăn liền mua trong cốc] [91534]
+[giỏ tre] 【91154】
+[một số người tin rằng, cho ai đó ấn tượng] 【90848】
+[nhiều đến mức, choáng ngợp, mang đi, vì quá nhiều] [92014]
+[-ish, giống như, ném một cái gì đó ra, ném một cái gì đó đi] [91570]
+[cửa hàng đồ cổ] 【91416】
+[Imperial Diet] [92064]
+[ngủ dưới các vì sao, quan hệ tình dục ngoài trời] [93144]
+[kho báu vĩ đại, thời đại Taihō, thời đại Daihō, hala-mạn đà la] 【92310】
+[không phải viết thư hoặc thăm một ai đó] [91672]
+[đóng tại Pháp, cư trú tại Pháp] [92094]
+[thể hiện sự khinh miệt, nhìn xuống, có một ý kiến ​​thấp, gây ra sự sụp đổ, suy giảm] [90794]
+[quá trình hạt nhân phức hợp] [91436]
+[Thời đại Jōtoku, thời đại Shōtoku] 【92438】
+[cộng đồng chiến dịch door-to-door, hoạt động tìm kiếm, chiến dịch dọn dẹp được tiến hành kỹ lưỡng trên một khu vực] [91222]
+[với một tiếng cười vô nghĩa, với một tiếng cười trống rỗng] 【90606】
+[khoản vay qua điện thoại, cho mượn qua điện thoại] 【91528】
+[không nhìn thấy gỗ cho cây, được bắt kịp với các vấn đề tầm thường và mất tầm nhìn của bức tranh lớn] [91024]
+"Kanbun Eri" [92698]
+[khả năng vượt trội hơn các chuyên gia] [91466]
+[Hỗn hợp Bordeaux] [90668]
+[có chuyện gì sao?, có gì sai không?] 【92250】
+[nằm thấp, không nói gì và chờ cơ hội] 【90796】
+[mezzo piano] 【90700】
+[truy cập ngôn ngữ] 【91954】
+[tức giận của một người cấp trên, phải chịu sự giận dữ của một ông chủ, mang cơn thịnh nộ xuống trên một, phải chịu cơn thịnh nộ hoàng gia, xúc phạm hoàng đế] [92192]
+[tiêu đề tập lệnh] [91058]
+[mùa tan băng, tan băng] 【90864】
+[tiến sĩ chỉ theo luận án] [91388]
+[số sản phẩm] [91188]
+[Thời đại Wadō] 【92314】
+[Thời đại Shōryaku] 【92394】
+[truy cập cho các quốc gia] [91898]
+[mất phương hướng, thua lỗ] 【91718】
+[cảnh cuối cùng] [92028]
+[tò mò đủ, kỳ quặc đủ, lạ để nói] 【90820】
+[quan hệ chính trị lạnh nhưng quan hệ kinh tế nóng] 【91492】
+[biến một ai đó xuống mà không vi phạm chúng, từ chối một cách duyên dáng, từ chối lịch sự] 【91226】
+[Kỷ nguyên Genky] 【92508】
+[miệng nhăn nhó, nút miệng] 【90768】
+[tiêu đề chủ đề] [90978]
+[corpus thoại, đối thoại corpora] [91166]
+[nhãn cầu] [91022]
+[nhóm đối lập trong nhóm công việc hai lượt] 【91192】
+[không phải vậy] [91668]
+[hình ảnh máy tính có nền trong suốt, hình ảnh truyền] [91368]
+[Kỷ nguyên Enkyū] 【92424】
+[đếm "sao" để kiểm đếm điểm số cho đến nay, một cái gì đó đã biến mất] [91310]
+[Magna Carta] 【90688】
+[giá đỡ ống nghiệm] [91354]
+[được cống hiến, dành tất cả thời gian và năng lượng cho mình] [90870]
+[Kỷ nguyên Nin'an] 【92488】
+[trao đổi công bằng, trao đổi tương đương, trao đổi giá trị bằng nhau] [92022]
+[sách lịch sử] [91336]
+[theo cách đó] [91050]
+[người phụ nữ với một cuộc sống tình yêu hỗn loạn, người phụ nữ luôn luôn có rắc rối con người] 【90790】
+[bắn ai đó, xả ai đó, ly dị vợ] 【91846】
+[Hành tây Nhật Bản] 【91180】
+[Australian Open] 【91642】
+[nó khôn ngoan hơn để kiếm tiền đều đặn theo thời gian, lợi ích ánh sáng tạo ra ví nặng] 【91406】
+[dần dần trở nên nghèo nàn, tình hình ngày càng tệ hơn và tệ hơn] [92158]
+[nghĩ một cái gì đó hơn và hơn, rack não của một người, đánh bại một mất mát] 【90838】
+"Thước kẻ" 【92132】
+[bắt côn trùng, bắt bọ] [91066]
+[proofreader] [91092]
+[euphoria kinh nghiệm của sinh viên đại học hoặc tuyển dụng nơi làm việc vào đầu năm học hoặc nơi làm việc] [91586]
+[chìa khoá ai đó xuống đất] [91864]
+[hạt gắn liền với một cụm từ và hoạt động trên toàn bộ cụm từ] [92020]
+[tài khoản ngân hàng không hoạt động] [91616]
+[tìm kiếm, để tìm] [91566]
+[ít cơ thể] [91432]
+[khoa học lớn] 【91452】
+[ghế vệ sinh có chức năng vệ sinh] [91524]
+[cá giá rẻ cho quần chúng] [93046]
+[giường chăm sóc dài hạn, giường chăm sóc dài hạn, giường giai đoạn mãn tính, giường giai đoạn mãn tính] 【91746】
+[xe hạng hai] 【92112】
+[chạy đến] [91816]
+[rơm zori] 【91858】
+[câu cá trên sông] 【91936】
+[happoshu, rượu vang sủi, rượu sủi tăm, rượu sủi tăm] [91572]
+[Thời kỳ Tenpyō-kanpō, thời kỳ Tenbyō-kanpō] 【92322】
+[Quy mô Richter] 【91774】
+[khoa học thông tin thời gian không gian, khoa học thông tin không gian thời gian] [91448]
+[thờ phượng bởi hoàng đế tại một ngôi đền] [91230]
+[ngoại hình của người phụ nữ hoặc quyến rũ] 【90858】
+[Bắc Âu kết hợp] [91268]
+[Hoàng đế búp bê] 【90822】
+"Kennin ga" 【92506】
+[bút danh tự chọn của nhà sư] [92176]
+[Kỷ nguyên Juei] 【92498】
+[Tiếng Nhật phát âm của chữ kanji] 【91926】
+[chăm sóc hỗ trợ, điều trị hỗ trợ] [91988]
+[bánh kẹo bao gồm hai bánh quy mỏng như bánh quế với kem giữa chúng] [91610]
+[khói thuốc lá] 【92188】
+[nhà người già chăm sóc đặc biệt] 【91756】
+[sữa chế biến, sữa sản xuất] 【91196】
+[phụ âm cuối cùng] 【91912】
+[Ổ ghi Bunsen] 【90650】
+[ở dạng hoàn hảo, đi bơi] 【92006】
+[niềm vui được sinh ra bởi một người phụ nữ] 【90860】
+[Kỷ nguyên Kōan] 【92616】
+[người nản lòng, cừu bị dẫn đến một lò mổ] [92268]
+[Tiếng Do Thái] 【90652】
+[không có gì mạo hiểm, không có gì đạt được] 【91552】
+[tiến sĩ sau khi hoàn thành một khóa học] [91390]
+[búp bê bằng gỗ với trang phục Nhật Bản được làm từ vải với các cạnh nhét vào rãnh trong gỗ, búp bê kimekomi] 【91204】
+[không có vấn đề lớn, không phù hợp, không đáng lo ngại về] 【91144】
+[Kỷ nguyên Kannō, thời đại Kan'ō] 【92752】
+[linh hồn đói] 【90944】
+[di chuyển không hiệu quả hoặc lãng phí] 【91948】
+[Leek Nhật Bản, hành tây Trung Quốc, dưa chua chua ngọt của tỏi tây Nhật Bản] 【91184】
+[sub-temple] [92936]
+[cải tạo lại thị trấn, đổi mới thị trấn] 【91972】
+[nhận thức sai lầm, nhầm lẫn] 【91578】
+[dòng văn hóa pop Trung Quốc] 【91522】
+[camassia, lục bình hoang dã] 【91664】
+[Bufferin] 【91658】
+[thiệt hại nghiêm trọng, chấn thương hoặc mất mát, đòn nặng] [92910]
+"Kenzensho" 【92568】
+[tỷ lệ sinh sống] 【92760】
+[dẫn người xung quanh bằng mũi] [92224]
+[đầu tiên, đầu tiên, FIFO] 【91982】
+[theo dõi nhịp tim, đồng hồ đo tốc độ] 【91584】
+[cổ vũ] 【90968】
+[có một người phối ngẫu thích hợp cho tất cả mọi người, mỗi Jack có Jill của mình] 【91574】
+"Shinokue" [92628]
+[loài chim ăn thịt] 【91870】
+[đối diện với cách khác] 【91800】
+[voi con, voi con] 【91122】
+[Turk] 【91560】
+[kỹ thuật nắm lấy cánh tay của đối phương để ngăn anh ta giữ chặt đai của một người] [90772]
+"Bukkira" [92664]
+[báo tiếng nước ngoài] 【92200】
+[Kỷ nguyên Genkō] 【92592】
+[cậu bé đã khóc sói] 【91766】
+[với dòng chảy, đi theo thời gian] [91950]
+[năm ngôi đền quan trọng nhất của một vùng] 【92922】
+[tận hưởng một cuộc sống lâu dài là một vấn đề để chúc mừng] [91872]
+[khoa học toán học và vật lý] [91046]
+[tìm hiểu] [91360]
+[một phần nhỏ] 【91118】
+[Kyoto nhỏ, biệt danh cho các thị trấn tương tự Kyoto] 【91556】
+[Kỷ nguyên Kōhei] 【92420】
+[sợ hãi, tràn đầy sự lo lắng] 【90762】
+[tàu trống rỗng tạo ra âm thanh tốt nhất] 【92246】
+[kanji "gò" hoặc "ngôi làng nhỏ" cấp tiến ở bên trái] [91780]
+[cách duy nhất] [92092]
+[Anh, Anh] 【91538】
+[tranh đá, nghệ thuật đá] 【91710】
+[cười một cái gì đó, nhún vai một vấn đề] 【92216】
+[vỏ động cơ] [91634]
+[Kỷ nguyên Genryaku] 【92500】
+[ngạc nhiên ngoài lời nói, không nói nên lời] 【90782】
+[dorayaki] 【91220】
+[bom bẩn] 【90934】
+[Trường phái Thiền tông Rinzai] 【92178】
+[kem dưỡng ẩm, kem dưỡng ẩm] 【90982】
+[hoàn toàn không thú vị] [92102]
+[nhà người già chăm sóc đặc biệt] 【91754】
+[chiến đấu với nhau, chiến đấu với nhau] 【92088】
+[mắt] 【91952】
+[ở trong tình trạng khốn khổ, xuống và xuống] [91320]
+[đi qua bướu cổ, thành công qua phần lớn công việc] [92214]
+"Tanen Eri, Tanwa giru" [92754]
+[bộ hàng đầu, chỗ ngồi bên hông] 【91734】
+[newsstand] [91142]
+[có vẻ tốt, ngoại hình đẹp, nhìn tốt] 【92108】
+[vây hậu môn] 【90948】
+[không thể thoát khỏi một vấn đề khẩn cấp mà không cần phải hi sinh] 【91108】
+[chùm monoenergetic] [91372]
+[khung hình, hình ảnh đóng khung] [91620]
+[Đồ ngọt Nhật Bản được làm từ gạo nếp và đậu đỗ azuki] 【90936】
+[người đàn ông cầu hôn, Chúa giải quyết] 【92084】
+[Thời đại Shōhei] 【92598】
+[Thời đại ]ei] 【92634】
+[Lactobacillus bifidus] 【90620】
+[có vẻ, tôi đoán] 【91532】
+[trang web địa phương, vị trí tạo phim hoặc quay phim] [91680]
+[khiêu vũ suốt đêm, nhảy cho đến bình minh] 【90802】
+[tuyết tùng đỏ] 【91704】
+[nếu bạn nhấn mạnh] 【91606】
+[kanji "vách đá rải rác" cấp tiến] [92226]
+[Vimalakirti Sutra] 【91924】
+[vấn đề chúc mừng, sự kiện hạnh phúc] [90834]
+[cồng kềnh, đổ xô] 【91082】
+[cốc kem, cốc kem] 【91714】
+[Kính thiên văn Newton] 【101626】
+[hôn nhân thực tế, hôn nhân thông thường] 【91962】
+[tấm màu xanh, bạt xanh] [92140]
+[đám mây tốt lành, thời đại Keiun, thời đại Kyōun] 【92312】
+[lợi nhuận dễ dàng] 【91956】
+[karate gi, đồng phục karate] 【92868】
+[loại đó, như thế] [91702]
+[hóa chất tốt] [91034]
+[chia sẻ một bữa ăn] 【91052】
+[Tàu hoàng, tàu hoàng gia] [90832]
+[futsal] 【92152】
+["kick the can" trò chơi] 【92164】
+[diester] [91632]
+[Thời đại Kōshō] 【92648】
+[qieyun] 【91916】
+[được xác định hoặc mạnh mẽ] 【91810】
+[quan tâm đến đàn ông, ngứa cho nam giới] 【90786】
+[Đội trưởng] 【90910】
+[hình thức thanh lọc Shinto] [91582]
+[biểu tượng bưu điện] [91514]
+[thu hút thông báo, bắt mắt, nổi bật] 【91890】
+[danh từ có thể đếm được] 【90992】
+[Chanh Hirami] 【92814】
+[Leek núi lửa] 【91182】
+[Thời kỳ Chōryaku] 【92412】
+[Thời kỳ Tenpyō-hōji] 【92326】
+[giữ ẩm, duy trì độ ẩm] 【90980】
+[nhà geisha] 【91062】
+[gia vị daikon bào chế với đậu nành và giấm, thường cho cá hoặc rau] 【90856】
+[Thời đại Tenchō] 【92340】
+[Bắc Âu kết hợp] [91266]
+[bỏ qua cho] [92238]
+[liên minh nhà sản xuất - bán lẻ] [91140]
+[người ăn xin tại đền Ise Grand] 【93098】
+[Chloranthaceae] 【92076】
+[Thời đại Jōryaku, thời đại Shōryaku] 【92426】
+[cấp bậc và thành viên tập thể của nhân viên, nhân viên bình thường, nhân viên cấp thấp] [91072]
+[với một tiếng nổ lớn] 【91796】
+[Giải pháp của Ringer] 【90730】
+[không có gợi ý] 【91014】
+[kéo dài ở lại] 【91312】
+[Mycobacterium leprae, vi khuẩn gây bệnh Hansen] 【92976】
+[trường đại học này, cơ sở giáo dục này] [91332]
+[biện pháp quyết liệt hoặc điều trị] [91364]
+[nói nhanh] 【91106】
+[ngày của tháng, truy cập trong nhiều ngày] [91512]
+[một phần từ, một phần công ty với, chia tay, phá vỡ quan hệ với] [91048]
+[Thời kỳ Chōhō] 【92398】
+[trăm lần thờ phượng] [90816]
+[sử dụng trong một inch của cuộc sống của nó, sử dụng từng chút một, tận dụng tối đa] 【91708】
+[chỉ ra rằng một trang hoặc trang web có thể được liên kết mà không bị giới hạn] 【91900】
+[Thứ Bảy] [91264]
+[Choco Cro, bánh sừng bò sô-cô-la] [91068]
+[thuốc nhuộm hữu cơ] [91520]
+[làm như vậy, làm điều này] 【91662】
+[lý do gì đó] 【91158】
+[phát sóng nối tiếp đài hoặc truyền hình trong cùng một khoảng thời gian mỗi ngày hoặc một tuần] [90826]
+[Áo của Nga] 【90738】
+[chèn dấu cách] [92240]
+[patissier, đầu bếp bánh ngọt] 【91614】
+[trường đại học khoa học] 【91384】
+[trận chiến ba góc] 【90954】
+"Kanji Eri" [92432]
+[đầu tiên trong] [91986]
+[làng] 【92766】
+[lông đuôi] 【90812】
+[Thời kỳ Ten'en] 【92380】
+[tinh thể lỏng viewcam] [91638]
+[xấu hổ, mất mặt] 【92154】
+[giảm bớt nhau, thay phiên nhau] 【91942】
+[phục hồi năng lượng của một người, phục hồi tinh thần của một người, nạp năng lượng cho pin của một người] [91660]
+[Người phụ nữ của năm, đề cập đến một người phụ nữ sinh ra trong một năm có dấu hiệu hoàng đạo Trung Quốc giống như năm hiện tại] [90964]
+[Hōen thời đại] 【92462】
+[Mister Donut] 【92840】
+[một lần] 【91712】
+[scribblings, scrawlings] 【90886】
+[nói về sở thích của một người, nói chuyện với con gái, tán gẫu] 【91358】
+[có xu hướng phá vỡ hoặc dễ dàng dự án] [91886]
+[một hòn đá lăn không có rêu] [91562]
+[bìa da, bao da] 【91940】
+[Giá thầu cạnh tranh hoặc đặt giá thầu] [91682]
+[roleplay] [91244]
+[blogger] 【92142】
+[Tôi hiểu rồi, tôi hiểu rồi, giờ tôi biết, Vì vậy, đó là lý do] [90844]
+[chó đồng cỏ] 【92120】
+[trò chơi một chiều] 【90752】
+"Ichimadotsu l" 【91056】
+[kobori, bơi trong khi mặc giáp] [92860]
+[bổ sung khách quan, danh từ hoặc tính từ sau và sửa đổi đối tượng trực tiếp] [90896]
+[trường danh tiếng] 【93054】
+[mà nhiều, nhiều, mức độ đó, chỉ có vậy, một mình, không nhiều hơn thế] [92256]
+"Địa chỉ gia đình Wusho" [92904]
+[đầu tiên ở Nhật Bản] 【92090】
+[Thời đại Ōchō] 【92576】
+[nhà cơ sở, tấm nhà] 【90662】
+[thời gian của tội phạm] 【92008】
+[vào thời điểm đó, thời điểm đó] 【91208】
+[đau bụng kinh, đau kinh nguyệt] [91348]
+[tu sĩ không xuất gia] [91486]
+[dao động neutrino] 【91370】
+[đầu tiên] 【91984】
+[gầm gừ, ầm ầm] [91260]
+[bất cứ ai chọn, một chiều] 【91814】
+"Những thú vui là Hiragana, Hiragana no Oka" [91064]
+[liệu pháp dứt khoát] 【91990】
+[với tiếng thịch] 【92180】
+[Wu-triều đại đọc các ký tự Trung Quốc] 【91922】
+[hemerocallis, daylily] 【91684】
+[Nơi có ý chí, có một cách] 【91316】
+[Levite, thành viên của bộ tộc Do Thái Levi] 【91500】
+[tìm đường đi, tìm đường đi] 【91722】
+[súp trứng] 【90884】
+[mùi máu] [91224]
+[Ống bê tông Hume] 【90612】
+[trượt ra khỏi bao kiếm của một người] 【91856】
+[Cuộc chiến tranh Trung-Nhật lần thứ hai] 【93024】
+[như vậy và như vậy, như vậy và] 【92776】
+[bài viết hoặc bài viết được cấp bằng sáng chế, sáng chế được cấp bằng sáng chế] [92018]
+[lịch trình làm việc ngày và đêm] 【91190】
+"Hakuchi hươu cao cổ" 【92306】
+[mỗi điểm, mỗi điểm rẽ] 【91968】
+"Kakirase" [92640]
+[khởi động] 【92262】
+"Enclosure gee" [92336]
+[đậu tương ớt] 【91054】
+[theo cách nào] 【91694】
+[microbrewery] 【90902】
+"Eenbun Eri" [92614]
+[toàn bộ răng giả] 【92818】
+[dựa trên sắp xếp lại theo đúng thứ tự] [91326]
+[tham dự muộn] 【90760】
+[Thời đại Shōan, thời đại Jōan] 【92492】
+[có một ngày tốt lành, chăm sóc, gặp bạn] 【92148】
+[Thời đại Jōgan] 【92352】
+[cạo phần trán] [92104]
+[Bác sĩ thời kỳ Edo làm việc tại một phòng khám công cộng] 【92886】
+[ném thức ăn, nuốt xuống] 【91010】
+[tiếng trống cao nhỏ kiểu Nhật hoặc taiko với đầu kéo căng bằng dây thừng] 【91474】
+[Thời đại Jōhei, thời đại Shōhei] 【92364】
+[Kỷ nguyên Kan'ei] 【92688】
+"Con hươu cao cổ Eiwa" [92622]
+[loại đó, như thế] 【91700】
+[Moses] 【90708】
+[bột gỗ sồi, bột acorn] [91744]
+[Thời đại Jōkyō] 【92702】
+[Pamirs] 【90610】
+[Kỷ nguyên Entoku] 【92660】
+[Kōryaku thời đại] 【92624】
+[blazing fastball] [91290]
+[giấy chứng nhận kiểm định ô tô] [91194]
+[trung tâm chăm sóc khẩn cấp và quan trọng] [92128]
+[tiêu thụ thức ăn và đồ uống trong nhà hàng] [92784]
+[Thời kỳ Tenpyō-shōhō] 【92324】
+[Kỷ nguyên Eishō] 【92416】
+[chủ nhân của rượu sake, sake sommelier] 【92794】
+[cơ sở phục hồi người cao tuổi] 【91758】
+[Hội Phụ Huynh-Giáo Viên, PTA] 【90628】
+[roleplay] [91246]
+[đàn ông trong đàn ông, nam tính nam tính, nam alpha] 【91906】
+[phòng xông hơi đá] 【91498】
+[không thể quyết định, không quyết định] 【90840】
+[thu hút khách hàng] [90918]
+[cải tạo lại ngôi làng, đổi mới làng] 【91970】
+[Thời đại Chōwa] 【92402】
+[Chiến tranh Triều Tiên] 【93028】
+[nhìn bức tranh sơn dầu] [92116]
+[gỗ rắn, gỗ tự nhiên] [92160]
+[bám vào, bám vào, tuân thủ] [91840]
+[thức cả đêm, qua đêm mà không ngủ] 【91854】
+[trung tâm của một giai đoạn noh, thời đại Shōchū] 【92586】
+[Công ước Ramsar] 【90720】
+[Thời đại Ōhō] 【92482】
+[hành động điên rồ, hành động không thể tin được, chiều cao của sự điên rồ, hành động điên cuồng tuyệt đối] [93060]
+[Mở Sesame!] 【90940】
+[luật phúc lợi cao tuổi] 【91752】
+[viết sai, viết sai bằng văn bản] [90890]
+[tra cứu ngược] [91762]
+[đào lên, mổ] [91020]
+[Thời kỳ Bunryaku] 【92530】
+[Bắc Kinh] 【90660】
+[nam giới hiện diện] 【90788】
+[Dãy núi Rocky, Rockies] 【90750】
+[trò chơi lễ hội, trong đó người tham gia cố gắng bắt cá vàng trong một cái môi giấy cạn] 【91784】
+[Đại sứ Nhật Bản ở triều đại Sui Trung Quốc] 【91920】
+[bắt một ngón tay, bị một ngón tay bị chèn ép, kẹt ngón tay vào một cánh cửa, nghi lễ cắt ngón tay yakuza] 【92854】
+[đường mòn xe đạp, đường dành cho xe đạp] 【91618】
+[Kỷ nguyên Ninna] 【92356】
+[hòa hợp với] 【92068】
+[chiến thắng quyết định, thắng tay] 【91272】
+[đầu ngủ sớm để tăng] [91396]
+[khăn giấy] 【91932】
+[nấu ăn nhẹ kiểu Kyoto với rau luộc và thức ăn ướp, cũng được phục vụ tại các nhà hàng] [91488]
+[ngoài tầm kiểm soát hoặc thẩm quyền, thêm -] 【91944】
+[mũ rơm của phụ nữ] 【91808】
+[nam thần, nam thần] 【91678】
+[giải thích đầy đủ, có trách nhiệm] 【91834】
+"Nếu bạn sống và sakura" [91476]
+[gạch an toàn, lựa chọn không nguy hiểm, người dễ dàng xử lý] [92126]
+[ban cho một nhà sư, cúng dường cho các nhà sư] [91824]
+[mù quáng trước những vở kịch ngắn, chơi vô tội] 【91902】
+[tên thời đại được chọn bởi người thường] [92296]
+[tối trước bình minh] 【91782】
+[nó có vẻ như vậy, đó là những gì nó trông giống như] [90908]
+[Kỷ nguyên Kyōju] 【92474】
+[muỗng cà phê] 【92024】
+[Maori] 【91274】
+[Tam, Freemason] 【90640】
+["hoàn thành" tem] [92232]
+[chăm sóc giảm nhẹ] 【91994】
+[mống mắt] 【92830】
+[cuối cùng biện minh cho các phương tiện, hoàn cảnh có thể biện minh cho một lời nói dối] [91078]
+[mở rộng và thay đổi cấu trúc của tòa nhà] [91168]
+[hồ giàu chất dinh dưỡng] 【100788】
+[lật một bàn trong sự tức giận, đảo lộn một bảng trong sự giận dữ] [91670]
+[vườn rêu] 【92174】
+[kinh doanh cho vay tiền] 【92096】
+[ba cổ vũ] 【92086】
+[Mì Trung Quốc] 【93004】
+[đám cưới đơn giản, đám cưới khiêm tốn] 【91298】
+[lễ đính hôn truyền thống của Nhật Bản, tiệc đính hôn] 【91998】
+[quần áo ngụy trang] [92032]
+[sông Amazon, Amazon] 【91254】
+[nhà điều hành truyền thông vô tuyến] [91404]
+[ồn ào và hawing, shilly-shallying] 【91706】
+[Thời đại Chōji] 【92442】
+[cạnh đơn] 【91002】
+[Thời đại Keichō] 【92684】
+[cuộc họp cá nhân] [92048]
+[không thể quay trở lại trong quần vợt] 【90726】
+[xe buýt thành phố] 【91742】
+[tiêm dung dịch Ringer] [90732]
+[tìm kiếm từ, tìm kiếm và kiểm duyệt những từ không chính trị không chính xác] [92850]
+[Empress doll] 【90824】
+[Thời đại Jōkyō, thời đại Shōkyū] 【92518】
+[Hiến pháp Châu Âu] [91686]
+[hoạt động gìn giữ hòa bình, PKO] 【90626】
+[dấu chấm đen trung tâm trên bảng đi, thời đại Tengen] [92384]
+[Thời đại Jōwa, thời đại Teiwa] 【92610】
+[trò đùa dơ bẩn, trò đùa màu xanh, chủ đề không đứng đắn, chủ đề bawdy, nói chuyện tình dục] 【91876】
+[sủa và đuổi theo] 【91458】
+[áo dài] 【90450】
+[một người có vũ trang, một người] [93082]
+[hổ saber-răng] 【92110】
+[khoảng thời gian dài] [91978]
+[Núi, Núi] 【91768】
+"Heiji ga" 【92478】
+[thuốc phiện] 【90634】
+[tương tự, gần bằng nhau] 【90770】
+[thời gian chết] [92010]
+[khan hiếm người đàn ông đủ điều kiện, khó khăn cho một người phụ nữ để tìm một người đàn ông, người đàn ông thiếu] 【90792】
+[Chōtoku thời đại] 【92396】
+[chu kỳ ngắn, thời gian ngắn] [91884]
+[Khi ở Rome, làm như người La Mã làm] 【91428】
+[công trình] [92098]
+[anh trai] 【90924】
+[neutron biểu mô] 【91414】
+[lửa khói để đẩy lùi muỗi] [91740]
+[giảng đường của một ngôi đền] 【92932】
+[tin hay không] 【91152】
+[có ký ức về việc tự làm gì đó] 【92056】
+[sōrin] 【93242】
+[yunwei] 【91914】
+[Thời đại Shōō] 【92562】
+[Chính sách Trắng Úc] 【91650】
+[corotron] 【92130】
+[nata de coco, kẹo dừa] 【90906】
+[ngoài ra, quay trở lại chủ đề, đủ về điều đó] [92266]
+[đường bờ biển sâu sắc, bờ biển rias] 【90724】
+[khung ảnh] [91622]
+"Tenan gaeru" [92350]
+[đầu và thân, đầu cao, đầu dài] 【91862】
+[longhorn, gia súc sừng dài] 【91030】
+[Kỷ nguyên Kahō] 【92434】
+[viết hoặc vẽ bằng mực] [91330]
+[không khí] 【100792】
+[quần áo đơn giản, quần áo khiêm tốn] 【91356】
+"Ken Genes, Genkets gira" [92686]
+[chết bởi chết đuối] 【90828】
+[san lấp mặt bằng bột hoặc chất lỏng] [92012]
+[Thời đại Man'en] 【92736】
+[xe tải] 【90744】
+[bảo trì môi trường, cải thiện môi trường] 【91608】
+[Osaka, ngọn đồi lớn] 【91090】
+[kỳ vọng là ..., lý do là ..., thực tế là ..., đó là ...] [92030]
+[tạo ra một giật gân, thu hút sự chú ý] [91894]
+[thanh lọc] 【91580】
+[Phương pháp Itayose] [92834]
+[Kỷ nguyên Kōan] 【92560】
+[fools vội vàng nơi thiên thần sợ hãi để đi bộ] [92964]
+[tiếng chim bay cùng nhau] 【90960】
+[quầy cho giường] [91750]
+"Mys đào tạo s rt, jinjiri, shinjiri" [92318]
+[khả năng thu hút khách hàng] 【90922】
+[Thời đại Tentoku] 【92370】
+[thờ phượng hay ngưỡng mộ các nền văn hóa phương Tây] [91576]
+[Kỷ nguyên Kanpyō, thời đại Kanbyō] 【92358】
+[phao rất lớn được sử dụng để mang taiko tại các lễ hội] [93234]
+[wow!, oh!, eek!, gee!, yeah!, được rồi!, nhanh lên!, waah!, boohoo!] [92050]
+「エ イ ロ ッ ク え ら」 【92676】
+[Kỷ nguyên Eishō] 【92666】
+[rơi qua, không có gì, bị hủy hoại] 【90756】
+[Quần đảo Marshall] 【90684】
+[ryūsha] 【93262】
+[hàng ngày may mặc của quý tộc ở Nhật Bản cổ đại, lụa khô sau khi đã được rửa sạch trong nước đồng bằng và kéo dài ra] 【91802】
+[thu hút sự chú ý, thu hút thông báo, bắt mắt] 【91892】
+[Kỷ nguyên Ninju] 【92346】
+[cá voi sát thủ giả] 【91600】
+[lợi nhuận cao] 【91418】
+[rìa của thị trấn, vùng ngoại ô của một ngôi làng] [91874]
+[chọn tươi] [91654]
+[thay đổi bài viết] 【91394】
+[fanqie] 【91928】
+[kiểm tra lấy mẫu tuần tự] [91200]
+"Genkai mang" [92450]
+"Kansei Eri" [92724]
+[đẩy lùi đối thủ của một người trong khi bị khóa trong các khu phố gần, có khuynh hướng hướng tới, gần gũi với] [91300]
+[Tiếng Nga roulette] 【90748】
+[chuông gió đồng treo từ mái hiên của tháp đền hoặc sảnh, chuông gió, chuông gió] 【91836】
+[hợp chất kanji] 【90842】
+[con sao biển gai] 【90804】
+[gợn sóng trên sông] 【91938】
+[khoa học ám ảnh] [91450]
+[lurk trên một diễn đàn, đọc một diễn đàn mà không cần đăng bài viết] [91496]
+[karesansui, khu vườn cảnh quan khô truyền thống] 【92294】
+[hút thuốc thụ động, khói thuốc thụ động] 【92190】
+[cuộc đua kết hợp] 【91516】
+[Triều đại Joseon, Triều đại nhà Hàn Quốc] 【92880】
+[truy cập những thứ dài, mỏng] [91276]
+[Xem dưới dạng sự cố] 【91374】
+[được di chuyển, được rút ra] 【92222】
+[Thời đại Jōei] 【92528】
+[Hợp tác chính trị châu Âu, EPC] 【91688】
+[xe cơ giới hai bánh, xe đạp có động cơ] 【91186】
+[bài báo được cung cấp với mức giá hời hợt, món hời thực sự] 【90776】
+[đối mặt với sự thật] 【91960】
+[tốt hơn chết đói hơn vỗ béo trên sự giàu có, không hạ thấp bản thân để hành vi bất công, không có vấn đề làm thế nào tuyệt vọng bạn đang] [91350]
+[kê hoặc bánh gạo, rang và cứng với xi-rô tinh bột và đường] 【91974】
+[cuộc họp điều hành, cuộc họp của ban giám đốc] [91426]
+[Thành viên Quốc hội Hoa Kỳ] [91628]
+[khu đền thờ] 【92930】
+[làm một con đường, cho một bài học tiểu học] 【91720】
+[kính tròn có vành nhựa dày] 【90746】
+[giá vé xe buýt] 【91392】
+[huy hiệu đầu vào, thẻ của khách truy cập] [91160]
+[Thời đại Chōgen] 【92410】
+[Kỷ nguyên Ryakuō, thời đại Rekiō] 【92606】
+[Shu-Han] 【91826】
+[chiến dịch thông tin, chương trình nhận thức] [91126]
+[hey đó, tôi nói, xem ở đây] 【92836】
+[Thời đại Shōgen] 【92550】
+[như vậy và như vậy, như vậy và như vậy] 【90892】
+[Kỷ nguyên Kankō] 【92400】
+[không phải một thứ cũng không phải là thứ khác] [91976]
+[Kỷ nguyên Engen] 【92596】
+[Người bạn Internet hoặc danh sách bạn bè] 【91510】
+[hạt liên kết] [91550]
+[chó bắp] 【91590】
+[có mái tóc của một người đứng cuối] 【91776】
+[một nghi ngờ ẩn nấp trong tâm hồn của một người và điều đó không thể giải quyết được] [92060]
+[Giải pháp của Lugol] 【90736】
+[Thời kỳ Tenpyō-jingo] 【92328】
+[không có gì] 【90754】
+[món ăn dựa trên hành và cá ngừ] 【92000】
+[Behcets bệnh, hội chứng Behcet] 【90656】
+"Genkin ga" 【92710】
+"Enji er" [92362]
+[Kỷ nguyên Ninpei] 【92472】
+[sinh viên tốt nghiệp] 【90956】
+[kéo lên bởi rễ] 【92208】
+[một người đóng vai 'gót chân' trong đấu vật, phim ảnh, vv] [91470]
+[đầu bếp trưởng, bếp trưởng] 【91076】
+[Kỷ nguyên Kōka] 【92730】
+[cawing] 【90862】
+[Người Pháp, người Pháp] 【91554】
+[nhổ kim loại, xiên kim loại] 【91728】
+[chứng nhận sau giết mổ] [92134]
+[chờ đợi một thời gian dài, chờ đợi và chờ đợi, háo hức chờ đợi] [92852]
+[nhảy trượt tuyết] 【91558】
+[được nhập học miễn phí về sức mạnh của tên của một người, được cho vào một nơi nào đó bởi vì một người được công nhận] [91630]
+[bàn đọc sách] 【91822】
+[tham quan một ngôi đền] 【91804】
+[Kỷ nguyên Kōgen] 【92546】
+"Genku er e" [92590]
+[All-England Open, Wimbledon, Giải vô địch mở] [91640]
+[như những quả giống như quả táo không rơi xa cây] [91542]
+[Triều đại Joseon, Triều đại Yi, Triều đại nhà Lý Việt Nam] 【92882】
+[hình ảnh được vẽ hoặc vẽ trên fusuma] [92172]
+[Đức Chúa Cha] [93168]
+"Ninji giru" [92538]
+[Thời đại Shuchō, thời đại Suchō, thời đại Akamitori] 【92308】
+[mô hình vai trò] [90966]
+[Thời đại Kaō] 【92490】
+[không có hy vọng tiến lên] 【92768】
+[hơi sáng] 【91792】
+「か ん ぎ え ら, か ん き え ら」 【92748】
+[hoa khỉ, mimulus] 【93378】
+[Thời đại Jōgen, thời đại Shōgen] 【92512】
+[đặc sản, sở trường, điểm mạnh] 【90778】
+[Thời kỳ Gangyō, thời đại Genkei] 【92354】
+[trở về Hoa Kỳ, thuật ngữ được sử dụng để đi học] [92778]
+[Thời đại Tenpō] 【92728】
+[làm gì] 【92274】
+[Thời đại Kashō] 【92344】
+[để một người giữ, hối lộ bằng cách trượt tiền vào tay của một người] [92206]
+[Chủ tịch ủy ban an toàn công cộng quốc gia] [93518]
+[băng chỉnh sửa] [91656]
+[đa dạng sinh học] 【92798】
+[phần còn lại của cuộc đời] 【91832】
+[đi đến một cửa hàng tiện lợi] 【93176】
+[Biển Đông] 【92842】
+[Homer đôi khi gật đầu] 【92820】
+[vậy sao?] [92800]
+[Thời đại Jian] 【92406】
+[sinh sống, đứa trẻ sinh ra còn sống] 【92758】
+[đốt cháy hoàn toàn, đốt cháy không có gì] [91344]
+[scooter với một khoang dưới ghế để giữ một chiếc mũ bảo hiểm] [92040]
+[mù tạt dán, mù tạt tiếng Anh] 【91588】
+[đánh răng] 【93178】
+[Thời đại ]wa] 【92372】
+"Yasukuni" 【93444】
+[Món ăn Trung Quốc] 【93000】
+[Thời đại Tenpyō, thời Tenbyō, thời đại Tenhei] 【92320】
+"Bunan mang, Bunan gaeru" [92642]
+[Cá sấu Trung Quốc] 【100860】
+[mobsters, gangsters] 【92992】
+[trường đặc biệt dành cho trẻ em khuyết tật] 【93070】
+"Kaneteeru" [92404]
+[Người Trung Quốc] [93106]
+[dương vật lớn] 【90062】
+[phong cách của khu vườn có một con đường xung quanh một cái ao] [92292]
+[bị khóa] 【92282】
+[yêu cầu cầu nguyện, xin cầu nguyện] [93166]
+[Bun'ei thời đại] 【92556】
+[Kỷ nguyên Genkō] 【92584】
+[Thời đại Eikyo] 【92638】
+"Benet hươu cao cổ, Bunwa mang" [92612]
+[cơ quan thám tử] [93188]
+[tên của ngôi đền] 【92928】
+[trong một ngôi đền, trong khuôn viên đền thờ, ngôi đền phụ] [93160]
+[Kanshō thời đại] 【92652】
+[nạn nhân của một tội phạm] 【92196】
+[loại đũa dài dùng để chế biến cá, loại đũa dài dùng để giữ cá trong lễ dao chạm khắc] [91472]
+[mống mắt, mống mắt Nhật Bản] 【92828】
+[cải cách pháp lý] [93528]
+[Kỷ nguyên Kenpō] 【92516】
+[tên núi danh dự được đặt trước tên của một ngôi đền] [92166]
+[máy nước nóng tức thì, máy nước nóng theo yêu cầu] [92248]
+[Thời đại Tengi] 【92418】
+[công ty điều tra, cơ quan nghiên cứu] 【93094】
+[Kỷ nguyên Tenbun] 【92672】
+"Kattei" [92532]
+[Thời đại Tengyō, thời đại Tenkei] 【92366】
+[Hizbollah, Hezbollah, Hisbollah, Hizballah] 【92786】
+[Thời kỳ Ten'ei] 【92448】
+"Frog eira" [92732]
+[tōsō-on, đọc Tang-song] [92914]
+[Thời đại Bunshō] 【92654】
+[những người, thường được sử dụng liên quan đến trình độ và yêu cầu cho một vị trí, trong khả năng của] [92764]
+[lớp đặc biệt dành cho trẻ em khuyết tật] [93062]
+[Kỷ nguyên Kōei] 【92608】
+[giúp những người phung] 【92978】
+[tổ chức một lễ tưởng niệm cho người chết, cầu nguyện cho hạnh phúc của họ trong cuộc sống tiếp theo bằng kinh tụng kinh] 【92950】
+"Chase Soba, ramen" 【93002】
+[mục đích thực sự nằm ở nơi khác] [92832]
+[bắt đầu bắt, thu thập] [89640]
+[sō-on, Bài hát] 【92912】
+[Kỷ nguyên Saikō] 【92348】
+[Điều gì sẽ là một cách tốt để làm điều đó?] [92284]
+[Thời đại Tenshō] 【92680】
+[Tam giác vàng] 【92036】
+"Địa chỉ Wamo Myth" [92902]
+"Ginza" 【93146】
+[bơ lên, cố gắng để có được mặt tốt] 【92824】
+[Knudsen cell] [92780]
+[Thời đại Angen] 【92494】
+[Kỷ nguyên Kyushu] 【92470】
+[bầu không khí tôn giáo] 【93212】
+[kết quả] [92254]
+[tiếp tục phủ sóng, xin vui lòng quay lại, PTO] 【93458】
+[chinaberry, cây hạt Nhật Bản, gỗ đàn hương Ấn Độ] 【93200】
+[đòn quyết định, thắng lợi] 【93180】
+[Cuộc chiến tranh Trung-Nhật lần thứ hai] 【93020】
+[Chiến tranh Imjin] 【92884】
+"Con hươu cao cổ Genkai" [92522]
+[đứa trẻ khuyết tật, đứa trẻ tàn tật] [92972]
+[người gác cổng] 【93132】
+[không có da ngoài mũi của tôi, vấn đề của người khác] 【93202】
+[phương pháp ngoại suy] [92202]
+[cuộc xâm lược quân sự huyền thoại của Hàn Quốc vào thế kỷ thứ 3] 【92876】
+[tóc vàng] 【92186】
+[Thời đại Tenō] 【92334】
+[lòng thương xót của ai đó] 【93238】
+"Eiyosetsu" [92392]
+[Chiến tranh Imjin] 【92878】
+[Karyaku thời đại] 【92588】
+[Kỷ nguyên Enpa] 【92700】
+[cảm thấy lo lắng, cảm thấy sợ hãi, cảm thấy tự ý thức, mất thần kinh, có được bàn chân lạnh, có được sự giận dữ, giật mình, ngạc nhiên, bị sốc, cảm thấy sợ hãi, bị hoảng sợ, ngại ngùng, bẽn lẽn]
+[Bệnh Hashimoto, viêm tuyến giáp của Hashimoto] 【92866】
+[Trận chiến Thượng Hải] 【93016】
+[phong cách cổng chùa có bốn cột trụ hỗ trợ và một mái đầu hồi] [92944]
+[có ký ức về việc tự làm gì đó] [92054]
+[Kỷ nguyên Einin] 【92564】
+"Kinuhikari" 【93484】
+[Kỷ nguyên Eiman] 【92486】
+[Thời đại Jōhō, thời đại Shōho, thời đại Shōhō] 【92744】
+[bánh kếp hình lưỡi liềm ngọt ngào của bánh xốp giống bánh kếp chứa đầy bột adzuki, bánh bao Trung Quốc, bún Trung Quốc] [93006]
+[Kỷ nguyên Kōji] 【92674】
+[Thời đại En'ō] 【92536】
+[thêm một cái gì đó để hoặc thay đổi một tác phẩm nghệ thuật hoàn thành, một cái gì đó được thêm vào hoặc thay đổi theo cách này] [93396]
+"Tạp chí" [92454]
+[Thời đại Anna, thời đại Anwa] 【92376】
+"Kanen gaeru" [92540]
+[Thời đại Jōgen, thời đại Teigen] 【92382】
+[là một công nhân nhanh chóng, nhanh chóng hình thành mối quan hệ với phụ nữ, hãy nhanh chóng đến với bạo lực] 【92288】
+[Thời đại Eihō, thời đại Eiho] 【92428】
+"Yo !!, W!" 【92252】
+[Thời đại Meiō] 【92662】
+[đứa trẻ khuyết tật, đứa trẻ tàn tật] [92974]
+[dòng truyền thừa bắt đầu với Hoàng đế Kameyama] 【92956】
+[Cuộc chiến tranh Trung-Nhật lần thứ hai] 【93022】
+[không có mối quan tâm của tôi, không có gì để làm với tôi] 【90132】
+[Bộ trưởng Bộ Y tế, Lao động và Phúc lợi] [93510]
+"Eiji ga" [92464]
+[Chiến tranh Nga-Nhật] 【93010】
+[Kỷ nguyên Eichō] 【92436】
+[ronin, samurai vô danh] 【93320】
+[Sự cố Thượng Hải, ngày 28 tháng 1 sự cố] 【93014】
+[tăng lên mức cao nhất có thể] 【92210】
+[Thời đại ]nin] 【92656】
+[đầu cạo, người có đầu cạo] 【91788】
+[Kỷ nguyên Kyōroku] 【92670】
+[quay lại] 【92792】
+[ảnh kỹ thuật số thay đổi] [92114]
+[cử hành hoàn thành đền thờ hoặc xây dựng đền thờ] [92948]
+[Cuộc chiến Đông Á, cuộc chiến tranh Thái Bình Dương] 【93026】
+[hướng dẫn tạm thời] [93204]
+[oh!] 【92276】
+"ETERANEEL" [92446]
+[Thời đại Chōroku] 【92650】
+[Vương quốc Anh, Anh] 【92058】
+[Cây thông trắng Nhật Bản] 【92300】
+[đúc trên khâu] 【93362】
+[Darwin] 【90420】
+[Thời kỳ Ken'ei] 【92510】
+[Thời đại Jishō, thời đại Chishō] 【92746】
+[ghét nhau, ghét lẫn nhau] [92806]
+"Dajijiri" 【92456】
+[Thời đại Meireki] 【92694】
+[chính xác trung tâm của mạn đà la Garbhadhatu, nền tảng mà ngọn lửa được thắp sáng trong một chiếc đèn đá] [93248]
+[Thời đại Genchū] [92604]
+[chó cũ] 【92122】
+[Kiểm tra thời gian Edo của cây lúa] [92106]
+"Cẩn thận ga" [92414]
+[Thời đại Gen'ō] 【92582】
+[Thời đại Hōei] 【92704】
+[Cây thông trắng Nhật Bản, goyoumatsu] 【92302】
+[tranh trần trang trí] [92908]
+[chanh phẳng, chanh Hirami, chanh phẳng mỏng, shekwasha, quýt Đài Loan] 【92812】
+"Bun baku cha sa tama" [93326]
+[người bị chôn vùi, người bị chôn vùi] [92062]
+[bông xanh đồng bằng] 【92966】
+[Thời đại Engyō, thời đại Enkei] 【92574】
+[tấm đá] 【91888】
+[đứa trẻ khuyết tật học tập] [93076]
+[Yupian] 【93350】
+[tham gia một shot tại] 【93888】
+[bất kỳ cơ hội nào, nó xảy ra, một số cơ hội] 【93186】
+[Thời đại Bunōō] 【92552】
+[hệ thống điện tử tương quan mạnh] 【90574】
+[các dấu chấm câu trong haiku, renga, v.v. chẳng hạn như "ya", "kana", "keri", v.v.] [92260]
+[tiểu sử của một nhà sư hoặc lịch sử của một ngôi đền được kể trong hình ảnh] [93348]
+[Kỷ nguyên Kenchō] 【92544】
+[Kỷ nguyên Eiryaku] 【92480】
+[dòng truyền thừa từ Hoàng đế Gofukakusa đến Hoàng đế Gokomatsu] 【92958】
+"Genki eira" [92678]
+[bể thu ngưng tụ] [93366]
+[cơ quan điều tra tư nhân] [93092]
+[Kỷ nguyên Kōnin] 【92338】
+[người tàn tật về tâm thần, người bị thách thức về tinh thần] [93152]
+[Kỷ nguyên Kōji] 【92466】
+[Kỷ nguyên Kōwa] 【92602】
+[chó săn, chó cai ngục] 【93142】
+[Kỷ nguyên Ōtoku] 【92430】
+[lạm dụng vợ chồng] [93332]
+[Kỷ nguyên Enkyō] 【92714】
+[mâu thuẫn lẫn nhau] [92124]
+[camassia, lục bình hoang dã] [91666]
+[giữ ổn định] 【92890】
+[Ủy ban bản cáo trạng thẩm phán] 【93498】
+[những thứ giống nhau lần lượt] 【92808】
+[Thời đại Jōwa, thời đại Shōwa] 【92342】
+[mì làm bằng dải phẳng] 【92286】
+[những người này, những người này] 【92790】
+[người tập hợp đất đêm] 【93110】
+[ngôi đền di động trang trí, phao được sử dụng trong các lễ hội] [93236]
+[hậu tố xúc phạm, hậu tố khiêm tốn] [92272]
+[Kỷ nguyên Kyōwa] 【92726】
+[Thời đại Chōshō] 【92460】
+[Kakei thời đại, thời đại Kakyō] 【92630】
+"Rukyu s san ds" [92846]
+"Rukyu s san ds" [92844]
+[khu vực burakumin] 【93088】
+[lời chào mở đầu trên các lá thư] [92772]
+[Shotokan] 【92858】
+[dạ dày tráng miệng, có chỗ cho món tráng miệng mặc dù đã đầy] 【93190】
+[Sự cố Thượng Hải, ngày 28 tháng 1 Sự cố, Trận chiến Thượng Hải] 【93012】
+[thay đổi tương đối so với năm ngoái] [92070]
+"Tôi xin lỗi, tôi xin lỗi, nhưng không sao, đây là hình ảnh yêu thích của tôi" ___ ___ ___ 0
+"Meiwa ga" 【92720】
+[cuộc xâm lược quân sự huyền thoại của Hàn Quốc vào thế kỷ thứ 3] 【92874】
+[khu vực burakumin] 【92988】
+[Thời đại Shōtoku] 【92706】
+[Thời đại Jōō] 【92520】
+[Bộ trưởng Bộ Giáo dục, Văn hóa, Thể thao, Khoa học và Công nghệ] [93508]
+[Kỷ nguyên Kentoku] 【92600】
+[Thời đại Yōwa] 【92496】
+[trẻ tự kỷ] [92970]
+[nhân viên bảo trì đường sắt] [92984]
+[sinh] 【92756】
+"Con hươu cao cổ Bunraku" [92682]
+"Eito ga" [92626]
+[có hay không] 【91958】
+[chuyên gia trị liệu massage] [92900]
+[Bộ trưởng Bộ Kinh tế, Thương mại và Công nghiệp] 【93512】
+[Kyoto Gozan, năm ngôi đền Rinzai quan trọng nhất của Kyoto, cũng như Nanzen-ji] [92924]
+[Thời đại An'ei] 【92722】
+[tại sao có, cảm ơn bạn] 【92258】
+"Karokuro" [92524]
+[Thời đại Hōgen, thời đại Hogen] 【92476】
+[mặc một bộ kimono không có bất kỳ đồ lót nào] [93312]
+[ăn tại McDonald's] 【92864】
+[làm việc chăm chỉ, cống hiến hết mình, hãy siêng năng] [92042]
+[Huy hiệu của Thomson] 【90522】
+[Ba chiến lược tất cả] [92872]
+[Thời đại Shōō, thời đại Jōō] 【92692】
+[trung tâm của mạn đà la Garbhadhatu] [93264]
+[Shirvanshah] 【93412】
+[loại băng buộc được sử dụng trên quà tặng đám cưới, quà tặng tốt, v.v.] [92774]
+[da không bị thương] [92194]
+[Chiến tranh Trung-Nhật đầu tiên] 【93008】
+"Sasanishiki" 【93486】
+[học sinh không thể theo kịp trường] 【93456】
+[công ty chúng tôi, công ty của tôi] 【92848】
+"Kenzimira" 【92594】
+"Hinohikari" 【93478】
+[tiếng gì đó trôi nổi hoặc chìm trong nước] [93302]
+[miếng vải] 【92906】
+[Thời đại Shōkyō, thời đại Shōkei] 【92750】
+[đánh giá toàn diện, hơn tất cả sự phán xét, bình luận chung] [93374]
+[mười ngôi đền Rinzai quan trọng, thứ hai có ý nghĩa đối với Kyoto Gozan] 【92926】
+[nhận dạng hoặc kiểm tra lý lịch] [93096]
+[Bộ trưởng Bộ Đất đai, Hạ tầng và Giao thông] [93514]
+[các cơ quan nội tạng như ruột được sử dụng làm thực phẩm] [93224]
+"Great Elegance" [92668]
+"Ansayeira" [92526]
+[ngôi đền phụ, đặc biệt là một thiền định được thành lập để kỷ niệm cái chết của một linh mục cao cấp] [92934]
+[mảnh hy vọng, tia hy vọng, tia hy vọng] [92220]
+[vào một ngôi đền, viếng thăm một ngôi chùa, tham gia một ngôi chùa với tư cách là một linh mục hoặc linh mục chính] [92168]
+[vị trí chính phủ của Mạc phủ, chịu trách nhiệm quản lý đền và miếu] [93392]
+[đền thờ do nhà nước bảo trợ, đặc biệt là những ngôi đền được người Mạc phủ ưa chuộng và bảo vệ trong thời kỳ Kamakura] [92946]
+[cá vàng bán rong, người bán rong cá vàng] [93306]
+[mận khô, mận khô] 【92770】
+[mất rất nhiều giao dịch với, một số ít] 【92280】
+[Mạn đà la của hai cõi, vương quốc Womb và vương quốc Ma trận Ma trận] [93266]
+[trẻ nhỏ, chuột thảm, mắt cá chân-biter] [93048]
+[Bộ trưởng Nhà nước chịu trách nhiệm cải cách quy định] [93526]
+[người chỉ có người nước ngoài] 【93808】
+[bị xóa hoặc kiểm duyệt bởi công cụ tìm kiếm của Google] [95268]
+"Yêu ngay từ cái nhìn đầu tiên" 【93476】
+[đối phó với một số lượng lớn] 【94018】
+[khoảnh khắc cuối cùng, cuối cùng] [93862]
+[bít tất 5] [94882]
+[tranh cãi về sách giáo khoa của trường] 【93790】
+[tốn kém, tốn kém] 【94258】
+[là một gánh nặng, gây rắc rối cho một ai đó] 【94178】
+[người mất ít nhất một tay] [93080]
+[Triều đại nhà Lương] 【93352】
+[quản lý đầu tư định lượng] [93760]
+"" [93488]
+[The Pillow Book] [93424]
+[Bộ ba Thích Ca Mâu Ni, bộ ba Gautama] 【92938】
+[miếng đệm hình đĩa để nhấn giấy khi in từ một khối gỗ, cọ xát pad, baren] [93240]
+[Đạo luật kiểm soát nhập cư và người tị nạn] [93550]
+[thế giới đầu tiên] [94432]
+[vật liệu tiên tiến, vật liệu công nghệ cao mới] [94764]
+[tập hồ sơ] 【93826】
+[thu hoạch gạo trong khi vẫn còn màu xanh, tuyển dụng sinh viên đại học trước ngày được thỏa thuận] 【92996】
+["đang được tiếp cận, phía chúng ta về câu chuyện] 【93762】
+[phần kế toán] 【94402】
+[Đảng Cộng sản Nhật Bản] 【93650】
+[Món ăn Trung Quốc] 【92998】
+[rượu vang làm bằng nho bị ảnh hưởng bởi thối cao quý] 【94492】
+[Tòa án tối cao Osaka] 【93596】
+[nghỉ mưa, đắm mình trong mưa] 【93044】
+[người lùn, gobgle mắt goby] 【94354】
+[Hồi giáo, Hồi giáo] 【93578】
+[bài tiết âm đạo, chất bôi trơn âm đạo] [93870]
+[cá ngừ đóng hộp nhẹ] 【93818】
+"Phi thường" [93482]
+[Thời đại Tenshō] 【92458】
+"Koshihikari" 【93472】
+[thẳng thắn trung thực, kiên định trung thực] 【94888】
+[cho đến bây giờ, chưa bao giờ] 【93208】
+[nói chuyện rực rỡ] 【93996】
+[khu erogenous] [94238]
+[truy cập cho màu sắc] [93388]
+[Hiệp ước ba bên] 【93682】
+"Lang thang" [93426]
+[ghé thăm nhiều lần] [93972]
+[qua đời, thở cuối cùng] 【93470】
+[được một điều tốt, kiếm tiền mà không làm việc, túi của một người] 【93934】
+[whaa whaa] 【93318】
+[Kỷ nguyên Kyōhō] 【92708】
+[bất hòa, có bất hòa] 【93772】
+[có tiềm năng cho ..., có nó trong một để làm] 【93738】
+[ngay trên, chết trên, phù hợp với một T, trên nút, hoàn toàn chính xác] 【93720】
+[đất dưới sự kiểm soát của gia đình hoàng gia hoặc Mạc phủ] [93162]
+[đền thờ kỷ niệm thành lập hoặc người sáng lập] [93346]
+[kỹ thuật vật lý] [93370]
+[Thời kỳ Chōkyō] 【92658】
+[Lễ hội pháo hoa sông Sumida] 【93582】
+[bài thơ ngưỡng mộ] 【94946】
+[Người Nhật sống ở nước ngoài] 【94308】
+"Ponzu" [92892]
+[Khác ... ... khó khăn ...] 【93216】
+[chi phí an sinh xã hội, chi tiêu phúc lợi xã hội] [93874]
+"Món nướng hiện đại" [93464]
+[Tòa án Thẩm phán Thẩm phán] 【93496】
+"Nebuta" 【93824】
+[đá thấp] 【93410】
+[người tập hợp đất đêm] [93108]
+[phù hợp] 【93384】
+[người nghiện heroin] 【93150】
+[tận hưởng sự thịnh vượng] [93910]
+[hút đến, cà ri với ai đó] [93974]
+[dự đoán sẽ thắng, chắc chắn sẽ được bầu, tự do] 【94136】
+[ca đỏ] [93638]
+[slurp một cái gì đó ồn ào] 【93700】
+[vương miện đẹp với vinh quang lớn hơn] 【94122】
+[chạy trốn khỏi kẻ địch, biến đuôi, phơi bày điểm yếu của một kẻ thù] [93922]
+[clickety-clack] 【93878】
+[người từ] 【93778】
+[làm mới tình bạn cũ] 【94062】
+[với số lượng lớn] [93882]
+[tham khảo ý kiến ​​bác sĩ] [94232]
+[có thể quản lý bằng cách nào đó hay cách khác] 【94220】
+[bảo tàng dân gian] 【93576】
+[Cảnh sát đặc biệt cao hơn] 【94138】
+[tăng tinh thần chiến đấu] 【94770】
+[đại lý đá] 【92980】
+[ở đỉnh cao sức mạnh hoặc ảnh hưởng của một người, ở đỉnh cao của sự nổi tiếng của một người] [93904]
+[thuyền tuần tra quân sự] 【93544】
+[đùa giỡn] 【93998】
+[bị mắng nặng] [93962]
+[máy làm đá bào] [93414]
+[Bộ trưởng Nhà nước về vấn đề lãnh thổ Okinawa và miền Bắc] [93516]
+[người câm] 【93068】
+[không biết, không có đầu mối] 【93608】
+[giảng dạy bà ngoại của bạn để hút trứng, dạy một cái gì đó cho một người biết nhiều hơn bạn, rao giảng cho ca đoàn] 【92826】
+[hạt adverbial] 【93836】
+[Tượng đài đá bị vỡ] 【94462】
+[đeo mặt nạ, che giấu ý định thực sự của một người] [94032]
+[nơi ... là có liên quan, khi nó trở thành, nếu nó trở thành] [93758]
+[cầu nguyện Đức Phật] 【93336】
+[Người Bắc Triều Tiên] 【92994】
+[bị nghi ngờ không có lý do] 【93898】
+"" [92822]
+[đám mây bay qua bầu trời] 【93398】
+[tòa đền lớn, đền lớn] 【93390】
+"Kyoto p pokodon, Kyoto che ct" [93184]
+[bảo tàng lịch sử tự nhiên] [93572]
+[đi thẳng] [94356]
+[đèn lồng giấy hình trụ] [93288]
+[đèn lồng vườn, đèn treo] [94154]
+[ngành công nghiệp quản lý chất thải] 【92982】
+[deerfly] 【92962】
+[gạch được sử dụng để che các lỗ đinh trong vỏ cây bách với mục đích chống thấm] 【94822】
+[tiến độ nhanh] [94520]
+[Ủy ban Quan hệ Lao động Trung ương] [93740]
+[lấy một hoa hồng, cắt, lấy một phần của hành động, lấy một cú đá] 【93040】
+[bạn trai cũ, bạn trai cũ] 【94740】
+[đặt ra một vụ nổ, bắt đầu một ngọn lửa dưới một người nào đó, thúc đẩy một người nào đó với những từ thô lỗ] 【94176】
+[dạng liên tục khi được sử dụng như một sự kết hợp] [95046]
+[Thời đại Shōtai] 【92360】
+[thành viên gia đình, thành viên của hộ gia đình] [94438]
+[người bị bệnh ngoài da] [93086]
+[tổng thầu] [93134]
+[nơi ... có liên quan, khi nó trở thành, nếu nó trở thành] [93756]
+[phụ tá tổng thống] 【93714】
+[công ty kinh doanh sản phẩm] 【94674】
+[Quân đội Hoàng gia Nhật Bản] [93612]
+[mức độ thoải mái] [93304]
+[Wei, Cao Wei] 【93654】
+[thời tiết lý tưởng để đi bộ] 【94798】
+[tham gia một kỳ nghỉ thư giãn trong khu vực thần kinh] 【93192】
+[chủ nhân của rượu sake, cố vấn vì lợi ích] 【92796】
+[Người Hà Lan] 【93116】
+[Thư viện Quốc gia] 【93502】
+[được tụ tập lại với nhau, được đông đúc với nhau] 【94804】
+[có một ranh giới giữa thiên tài và sự điên rồ] [93058]
+[câu lạc bộ sách] 【93856】
+[dường như, dường như, được cho là] [91236]
+[đưa ra một câu trả lời thẳng thắn, được kiềm chế] 【94050】
+[theo luật] [94116]
+[được jostling với nhau] 【93906】
+[Người Do Thái, jus] 【93124】
+"Đây là một điều" f "Nó là" [94400]
+[tài nguyên thiên nhiên] [93810]
+[nổi trội trong một điều, trở thành một bậc thầy trong một nghệ thuật] 【94478】
+[liên quan đến công việc, trong quá trình làm việc] 【94506】
+[Ma túy và ma túy kiểm soát Luật] [93568]
+[khiêu vũ có nguồn gốc ở Kochi Prefecture sử dụng "naruko"] 【93364】
+[Liên hoan Kanto] 【93586】
+[bánh cá ngừ] 【93814】
+[tiếng nói không đứng đắn, nói chuyện bẩn thỉu] 【94800】
+[làm cho zori trở nên thô lỗ với những cái móc rơm] [93316]
+[ủy ban cáo trạng] 【93500】
+[làm cho chính mình được biết đến với công chúng, trở nên phổ biến, đạt được ảnh hưởng] 【94002】
+[một loại điều như thế, được sử dụng sau cụm từ để sửa đổi danh từ sau] [93432]
+[máy may overlock] [94332]
+[hình ảnh của ...] 【93730】
+[hành động bảo trợ] 【93890】
+[liệu pháp mát-xa] [92898]
+[hấp dẫn kokoku đặc biệt] 【93532】
+[ước mơ làm một tài sản tại một thời điểm, giấc mơ làm giàu nhanh chóng] 【93900】
+[đền thờ có chứa một hình ảnh được tôn kính của A Di Đà] 【93340】
+[chờ đợi chờ đợi, chờ đợi trong dự đoán] [94348]
+[chạm vào điểm quan trọng] 【94066】
+[suou] 【93294】
+[bộ phận giết người] 【94744】
+[trang web của một trận chiến đẫm máu] 【98716】
+[lượng mưa hạn chế rơi vào một khu vực nhất định] [93840]
+[quay lưng lại] 【93924】
+[về cuộc tấn công, về cuộc tấn công] [93644]
+[Tần, Ch'in] 【93684】
+[xiaolongbao, súp bánh bao] 【93226】
+[thùng tái chế, hộp tái chế] [93602]
+[khuôn mặt phản diện] 【94184】
+[những cây cột nhỏ hỗ trợ các trụ cột chính của một torii hoặc một cổng đền thờ] [92942]
+[gái mại dâm làm việc tại xà phòng] [93128]
+[vung cánh tay rất nhiều trong khi đi bộ, được dũng cảm] [93954]
+[ngành công nghiệp dược phẩm, ngành công nghiệp dược phẩm] [93442]
+[cần sa nhựa] [93494]
+[Kỷ nguyên Kanpō] 【92712】
+[vui lên] 【93834】
+[bị bỏ lại phía sau] 【93950】
+"Cover" [93244]
+[Sự cố Thiên An Môn, Thảm sát Thiên An Môn] 【93420】
+[ngay cả người thợ săn cũng sẽ không giết chết con chim đã bay đến chỗ anh ta] [94070]
+[của tất cả mọi người] [93198]
+[kiểu tóc phụ nữ Nhật Bản cổ đại] 【93310】
+[sửa chữa động cơ] [93948]
+[bao kiếm da cá] 【93314】
+[vì lý do nào đó] 【94540】
+[là một công cụ hay con mèo sẵn sàng cho một người] [93966]
+[thanh toán hàng năm, thanh toán hàng năm] [93628]
+[chạy qua tài sản của một người] [93832]
+[quyết tâm] 【94056】
+[hành tinh lùn] 【93630】
+[thất bại nhất định] 【93196】
+[Nếu nó xảy ra, nếu chúng ta làm ..., nếu chúng ta lấy ..., nếu chúng ta giả định ...] [93752]
+[Đền Shinto trên khu đền thờ Phật giáo dành riêng cho vị thần phụ của khu vực] [93342]
+[ngay cả người thợ săn cũng sẽ không giết chết con chim đã bay đến chỗ anh ta] [94072]
+[súng phòng không] [93540]
+[Chuyện này không kết thúc, tôi sẽ trả thù] 【93322】
+[Bộ trưởng Nhà nước chịu trách nhiệm về chính sách kinh tế và tài chính] [93522]
+[trả nợ] 【93968】
+[affiant] 【93848】
+[Luật thuế thu nhập] [93566]
+[Vairocana, Mahavairocana, Dainichi Buddha, Nyorai Buddha] [93260]
+[chiếu sáng nhẹ nhàng và rõ ràng] [94234]
+[Sự cố cầu Marco Polo] 【93696】
+[đầu dương vật] 【93804】
+[người bị thu hút về thể chất] [93806]
+[Cách mạng nông dân Donghak] 【93676】
+[ở trong tình trạng hỗn loạn] [93916]
+[người khuyết tật trực quan, người khiếm thị, người mù] [93154]
+[đáng xem] 【94424】
+[may mắn, kết thúc sợi dây thừng của một người] 【93386】
+[lỗ mũi loe] [93300]
+[cùng dạng số ít và số nhiều] [93598]
+[charango, nhạc cụ dây nhỏ, giống như đàn dây từ Bolivia] 【94282】
+[tuyên bố ấn tượng] 【93960】
+[hợp tác xã thủy sản] 【94508】
+[Lễ hiến tế gấu nâu Ainu] 【94396】
+[giò nướng] [93232]
+[Phong cách Nhật Bản] 【93394】
+[đừng để cảnh giác của bạn xuống ngay cả sau khi chiến thắng] 【94024】
+[Trường phái Obaku của Thiền tông] [92918]
+[Garbhadhatu, Womb Realm, Vương quốc Ma trận, Garbhadhatu Mạn đà la, Đom vương quốc Mạn đà la, Vương quốc Ma trận Mạn đà la] [93250]
+[nhân viên hỏa táng] 【93130】
+[có chân, có thể đi lại, trở thành Á hậu giỏi] 【93032】
+[sử dụng ngụy biện] [94054]
+"Tare ty f" Shimonoseki "[93678]
+[Bộ trưởng Tài chính] 【93506】
+[trường đặc biệt dành cho trẻ em khuyết tật] [93072]
+[Hải quỳ Nhật Bản, Anemone hupehensis var. Japonica] 【94828】
+[dựa trên kiến ​​thức sâu sắc của một người] [93940]
+[Đạo luật kiểm soát nhập cư và người tị nạn] [93548]
+[chợ vàng] 【94186】
+[người nộp đơn] [93846]
+[irrumatio, mặt-chết tiệt] 【94472】
+[với số lượng lớn] [93880]
+[hoàn thành trách nhiệm của một người] 【94200】
+[aleph, Aleph] 【94476】
+[được trải nghiệm theo những cách trên thế giới, nếm vị đắng và ngọt ngào] [93174]
+[đường tiêu hóa] [94242]
+[Perissodactyla] [94488]
+[nhà chung cư không có cửa sổ] 【92968】
+"Hagurari noberei" [92952]
+[~ giai đoạn thứ] 【93438】
+[luật tiểu bang, quy chế tiểu bang] [93784]
+"Hua Echizen" [93480]
+[Bộ trưởng Nhà nước chịu trách nhiệm về chính sách khoa học và công nghệ] [93530]
+[sửa] 【94124】
+"Owpe của Craze Booze Hey của Lee" [93592]
+[dẫn dắt một nhóm người] [93986]
+[trong thư pháp, một phong cách giữ bàn chải giữa ngón cái và ngón giữa] [94460]
+"Hakata Denta Hey s chae l" [93580]
+[Đền Yasukuni] 【93452】
+[Thời đại Hōreki] 【92718】
+[theo như tôi biết] 【94076】
+[đại học nha khoa, trường đại học nha khoa] [93408]
+[ngày hiếp dâm] 【93330】
+[đánh bóng kỹ năng của một người] 【93932】
+"Capricorn không uống gì t" [92954]
+[tự chải chuốt, chải chuốt lẫn nhau, chải chuốt xã hội, chải chuốt cá nhân] [92002]
+[hộp lửa trong đèn lồng truyền thống của Nhật Bản] 【93382】
+[ca sĩ nổi tiếng, ca sĩ nhạc pop] 【94158】
+[tinh thần tổ tiên, tập thể của tinh thần tổ tiên đã mất đi tính cách riêng của họ, tổ tiên được coi là một kami, tinh thần của một kami] [93416]
+[mùa trượt tuyết] 【94166】
+[Thời đại Hōji] 【92542】
+[được chọn] 【94262】
+"Luồng tiến hóa" [93430]
+[nhận được một lời trách mắng] [93980]
+[đứa trẻ khuyết tật học tập] [93078]
+[một người đàn ông chết đuối sẽ bắt gặp rơm] 【93976】
+[trên núi, trong khuôn viên của một ngôi đền] [93158]
+[hoàn toàn tự do, tự do lớn, không bị cản trở] 【93296】
+"Kenji er" [92558]
+[súng trường] [93538]
+[Vairocana] 【93768】
+[chiếu sáng với nhau] [93292]
+[Quy định hình sự để kiểm soát chất nổ] [93560]
+[thành viên của gia đình hoàng gia] [93854]
+[hiện tượng trên cạn] [94236]
+[sau bữa sáng] 【94110】
+[máy ảnh tự động] [93114]
+[Hōtoku thời đại] 【92644】
+[tội phạm có chủ ý] 【94608】
+[Giải vô địch] 【93492】
+[sợ hãi khỏi trí thông minh của một người, ngạc nhiên, kinh ngạc, sững sờ] 【94058】
+[Taika thời đại] 【92304】
+[thiết lập một cái gì đó của chính mình, công ty hoặc trật tự tôn giáo được thành lập theo cách như vậy] [93286]
+[thói quen ăn, môi trường sống ăn] 【94226】
+[Người Mỹ, Yankee] 【93120】
+[giả vờ không biết, giả vờ không nhận ra ai đó, giả vờ ngu dốt, chơi ngây thơ] [94174]
+[lĩnh vực của các giác quan, thế giới hợp lý, thế giới vật chất] [94274]
+[Di Lặc] 【93282】
+[được chuẩn bị tốt, đúng lúc, hợp lý] [93440]
+[bán cuối năm] 【94416】
+[lệnh của Hoàng đế, thông điệp riêng từ một hoàng đế] 【94228】
+[Thuật ngữ Edo được sử dụng để loại bỏ người từ Kansai] 【93100】
+[cho cuộc sống của một người, nằm xuống cuộc sống của một người] 【93170】
+[trò chơi trực tuyến] 【93786】
+[tầm thường không thể hiểu được điều tuyệt vời] 【93066】
+[gỗ băm nhỏ, dăm gỗ, bệnh zona mỏng] [93344]
+"Muzishijikin sensei" [93422]
+[Thời đại Jōji, thời đại Teiji] 【92618】
+[trả thù] 【93982】
+[đa kháng thuốc, MDR] [95140]
+[trừ khi bạn làm điều gì đó] 【93632】
+[Hội đồng nhân viên] 【93742】
+[nồi cà phê] 【94168】
+[chịu rủi ro cho ai đó, gây nguy hiểm cho ai đó] [94022]
+[bảng gỗ] 【93850】
+[Người Hàn Quốc] 【93112】
+[không!, không!, tsk!] 【93368】
+[hãy để tiền nằm yên] 【94030】
+[khu vực đồng hóa, khu vực được nhắm mục tiêu cho các biện pháp chống phân biệt đối xử, khu vực burakumin] [93090]
+[Nomonhan Incident, Trận Khalkhin Gol] 【93680】
+[nhận được những gì người ta muốn bằng cách phàn nàn hoặc càu nhàu, thu lợi bằng cách nắm lấy hoặc lấy một đường khó, nhận được nhiều hơn bằng cách nâng cao một tiếng ồn ào] 【93038】
+[nói chuyện lớn, được đánh bom] 【93958】
+[không hoàn thành những gì bạn đang nói, dừng những gì bạn đang nói] 【94446】
+[quên đi một số rắc rối bằng cách làm điều gì đó thú vị] 【93920】
+[ga xe lửa trống] 【93050】
+[không do dự trong việc nói, không do dự trong việc tuyên bố] [93792]
+[Bộ trưởng Nhà nước phụ trách tư nhân hóa dịch vụ bưu chính] [93524]
+[giả vờ là đồng tính] 【94088】
+[lấy thế giới bằng cơn bão, giữ vững trên tâm trí của người dân] [93902]
+[tầm thường không có quyền chỉ trích tuyệt vời] [93064]
+[Tôi đây, tôi đang ở nhà!] 【93744】
+[mặc quần của một người thấp, quần mặc theo cách như vậy] [95328]
+[Bộ trưởng Bộ Nội vụ và Truyền thông] [93504]
+[Cuộc Cách mạng Puritan] 【93712】
+[xe phát thải thấp] [93554]
+[tham ô của công ty] [93042]
+[thế kỷ mới] 【93802】
+"Akitakomachi" [93474]
+[nhà làm phim] 【93722】
+[giải bạc] 【94412】
+[Ngôn ngữ Ấn Độ, ngôn ngữ Ấn-Aryan] 【94960】
+[chuyển sự chú ý của mình sang, tập trung sự chú ý vào] [93460]
+[taming, taming] 【93418】
+[quang phổ phát xạ] [94148]
+[rất nhiều, bao giờ rất nhiều, bất kỳ số lượng, ít hoặc nhiều, nếu lớn hay nhỏ] [93620]
+[Bóng đá theo luật Úc, Bóng đá Úc] [93334]
+"Cô gái Kousaka" 【93360】
+[cách đặc biệt của riêng mình] 【94378】
+[một kẻ ngốc có thể đưa ra một lời khuyên khôn ngoan] [93952]
+[cảm giác tốt, cảm thấy thoải mái] 【94504】
+[giữ nhanh sâu trong, đưa vào một người đàn ông quan hệ tình dục] 【94312】
+[Người Ý] [93122]
+"Tara no Masaka Enoi" [93660]
+[tàu chiến của tôi] [93542]
+[nhấn ai đó mà ít nhất là mong đợi nó, trả thù ai đó ở một nơi không chắc chắn, trả thù ai đó trong một cuộc thi khác] [93944]
+[được khuyến khích bởi thành công ban đầu] [93886]
+[tất cả mọi thứ sở hữu] 【93798】
+[dòng văn hóa pop Hàn Quốc] 【93468】
+[sidelocks, tóc tại các ngôi đền] 【93702】
+[nhìn chán nản] 【93918】
+[đầu mũi] [93324]
+[suy nghĩ về, gửi trái tim của một người ra, hơn một suy nghĩ đi qua, nghĩ về một cái gì đó rất xa, suy nghĩ hoài cổ] [93624]
+[bánh bột kê, kê mochi] 【93308】
+[Cách mạng Pháp] 【93710】
+[Hiến pháp Mười bảy điều] 【93656】
+[giả vờ ra ngoài] [93908]
+[từ bây giờ] 【94452】
+[làm cho rắc rối, làm cho sóng, gây bất hòa] 【93774】
+[ánh sáng từ bên ngoài, ánh sáng tự nhiên] 【93706】
+[không có tình yêu giống như của một người cha, không đứa trẻ nào biết anh ta thân thiết với bố mẹ như thế nào] [93206]
+[khu vực burakumin] 【92990】
+[trước] 【93914】
+[theo một nghĩa nào đó, theo một cách nào đó, một mức độ] [93782]
+[nó không phải là] [93404]
+[clothesline] [93604]
+[cách suy nghĩ hời hợt, ý tưởng nửa nướng] 【94928】
+[giáo sư chuyên đọc các chữ Hán trong các văn bản Nho giáo cổ điển] [92916]
+[đọc thơ hay ca hát bằng giọng mềm mại] [93356]
+[loại quần togy rộng thùng thình với phần rộng thùng thình chiếm bảy HYPHEN phần mười của chiều dài của chân quần] [95054]
+[đại lý vật nuôi trong nước] 【92986】
+[năm] 【93800】
+[sự vắng mặt của một người] [94266]
+[Người Trung Quốc, người Mãn Châu, Chink] 【93104】
+"Diễn xuất - Bốn mùa" 【93658】
+[về các thuật ngữ xấu, tại loggerheads] [93748]
+[nơi đẹp] 【93298】
+[Vajradhatu mạn đà la, vương quốc kim cương mạn đà la] [93270]
+[chiến sự mở, chiến tranh] 【94042】
+[A Di Đà] 【94134】
+[thực hành bằng cách lặp lại, học bằng rote] 【94376】
+"Gendenzu, Kimonoko rm" [92870]
+[Quả cầu quý, đá Cintamani, viên ngọc mong muốn, hōju] [93272]
+[làm lỗi] [93716]
+[thuế đánh dấu, thuế mục đích đặc biệt] [93876]
+[cùng với một kẻ hút chỉ cầu xin được chia tay từ tiền của mình] [94034]
+[tháng này] [94194]
+[kỷ niệm sự phục hồi của bệnh tật] [93994]
+"Mai taya, Miroku" 【93280】
+[bạn không thể cung cấp những gì bạn không có, không có gì xuất phát từ không có gì] [93842]
+[hai nửa của toàn bộ, hai bánh xe trên đó tất cả mọi thứ cuộn] [93634]
+[nguy hiểm không thể tin được] 【93056】
+[Đế chế Nhật Bản] 【93674】
+[biểu hiện chỉ số tử vong cao do tai nạn giao thông] [93036]
+[tiếng nói kết hợp từ hai ngôn ngữ] 【94342】
+[kẹp nóng, kẹp nóng đỏ] 【91798】
+[sảnh kendo] 【93594】
+[gạch mạt chược] 【94142】
+[hãy chu đáo, từ trái tim, được chăm sóc yêu thương] 【93372】
+[ổn định, có được một công việc ổn định, kết hôn và nuôi dưỡng một gia đình, trang phục cho mình, trang phục chính mình] [93434]
+[màu lạc đà] [93222]
+[Di Lặc] 【93276】
+[Đảng mới Nippon] 【93490】
+[đồng tàu và chuông khắc] [93228]
+[Kinh Mahavairocana, Mahavairocana Tantra] 【93256】
+[gái điếm làm việc tại một khu đất xà phòng] [93126]
+[làm chủ những bí mật của] [93942]
+[không có lý do] 【95070】
+[sau khi về hưu] 【94112】
+[ngắn hai hoặc ba lần lưới xung quanh quầy lễ tân của một cửa hàng] [93402]
+[bị mọi người ghét] 【92762】
+[nấm ma thuật] 【93328】
+[fan site, fansite] 【94098】
+[nhập khẩu trần] 【94374】
+[Decembrist] 【94084】
+[công nhân giết mổ, nhân viên lò mổ] 【93138】
+[tiếng mưa dài] 【93838】
+[sao lùn trắng] [93640]
+[truy cập hình ảnh Phật giáo] [93400]
+[khuyết tật học tập, học tập bị vô hiệu hóa] [93074]
+[lừa đảo chuyển tiền, lừa đảo chuyển khoản ngân hàng] [93564]
+[buổi cầu nguyện] [93164]
+[cũng vậy, là ... hay gì đó] [93436]
+[cho trái tim của một người, rơi vào tình yêu, biến tâm trí của một người hướng tới, suy nghĩ] 【93626】
+[Kokumin Shinto, Đảng Nhân dân mới] 【93698】
+[Ghi chú] [94436]
+[cuộc bầu cử tổng thống] 【93406】
+[gây áp lực, đẩy về phía trước, bị ép, chịu áp lực] [93642]
+[gạo phủ đầy thịt lợn và rau] [92894]
+[Cuộc chiến tranh Trung-Nhật lần thứ hai] 【93018】
+[hội thảo qua điện thoại] [94668]
+[làm sạch dân tộc] [95432]
+[chuyển động tương đối] [94336]
+[công ty dịch vụ phúc lợi xã hội] [93866]
+[cuộc họp cầu nguyện] 【92810】
+[Sau nhà Hán] 【93662】
+[gọi và âm thanh do côn trùng tạo ra] [93214]
+[sử dụng ai đó chống lại họ] 【94722】
+"Otomuro" 【93284】
+[Garbhadhatu, Womb Realm, Vương quốc Ma trận] 【93258】
+[bảo tàng lịch sử] 【93574】
+[nguyên thủ quốc gia] [93210]
+[Hình ảnh Phật giáo dùng làm đồ trang sức hoặc trang trí nhà của một người] [93354]
+[tìm việc làm, tìm việc] [93618]
+[một con chuột dồn vào chân sẽ cắn một con mèo, tuyệt vọng biến những kẻ hèn nhát can đảm] [94068]
+"Meiji kontsutsukichi" [93672]
+[đền thờ phụ, đền thờ liên kết] [93156]
+[Hegira, Hejira, Hijra] 【93686】
+[hàng lâu bền] [93766]
+[vượt qua đường sắt không bị cản trở] 【93052】
+[tên Phật giáo sau khi chết] [95124]
+[tread trên băng mỏng, đi ra ngoài trên một chi, đi bộ một dây, có rủi ro] 【93892】
+[tên trường] 【93182】
+[ca đỏ] [93636]
+[đánh bại ai đó trong trò chơi của riêng họ] [93964]
+[có sự cương cứng] 【93750】
+[Triều đại Ottoman] 【93688】
+[tội phạm hình sự] 【93558】
+[loại quảng cáo chiêu hàng] [94514]
+[đặt một van điều tiết về thủ tục tố tụng] [93230]
+[học điều gì đó thông qua việc nghe] [94094]
+[thay đổi quần áo, thay đổi hình nền hoặc da] 【94484】
+[Cải cách Kyouhou] 【93694】
+[ngành công nghiệp dược phẩm] 【93450】
+[trụ cột trung tâm của một ngôi chùa, shinbashira, lãnh đạo của tôn giáo Tenri] [93274]
+[Danh sách các thành kiến] [93718]
+[Thời đại Kashō] 【92444】
+[Vajradhatu, vương quốc kim cương, Vajradathu mạn đà la, vương quốc kim cương mạn đà la] [93268]
+[ukebana] 【93246】
+[bắt một con chồn ngủ] 【93894】
+[áp phích treo, áp phích quảng cáo] 【94128】
+[cửa hàng trăm yên] 【93708】
+[thạch hạnh nhân] 【93860】
+[đóng ngoặc vuông] [93844]
+[Kỷ nguyên Kōwa] 【92440】
+[Garbhadhatu Mạn đà la, Mạn đà điểu Mạn đà la, Ma trận Mạn đà la mạn đà la] [93252]
+[công ty mới thành lập, liên doanh] [94496]
+[sống cùng nhau, là bạn thân] 【93970】
+[lindy hop, lindy] 【94532】
+[trút giận dữ] 【94324】
+[nấm sò] 【94292】
+[hạt kết thúc câu] [93724]
+[trong thư pháp, một phong cách giữ bàn chải giữa ngón cái và ngón trỏ] [94458]
+[Chuyến bay được kiểm soát thành địa hình, CFIT] [94398]
+[Người Nga, russki, russky] 【93118】
+[Đất nước Na] 【93652】
+[người phụ nữ có mục đích mang lại may mắn cho người đàn ông cô ấy ở gần] [93172]
+[làm điều gì đó với sự miễn cưỡng đau đớn] 【93926】
+[ánh sáng được cho là được quan sát từ một số sợi tóc hoặc trán trong trán của Đức Phật, tia sáng từ mái tóc trắng] 【94170】
+[Tusita trời, Tushita] 【93278】
+[chịu trách nhiệm, chịu trách nhiệm] 【94198】
+[Kinh Mahavairocana, Mahavairocana Tantra] 【93254】
+[thực hiện nghi thức cuối cùng về người đã chết, đưa cho ai đó thông báo cuối cùng của họ, cho ai đó từ cuối cùng] [93912]
+    
+
