@@ -1,6 +1,7 @@
 Source/FE/node_modules
 Source/BE/.settings
 Source/BE/target
+source/BE/.idea
 Source/AdminFE/node_modules
 Source/FE/package-lock.json
 Source/AdminFE/package-lock.json

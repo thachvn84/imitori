@@ -1,8 +1,8 @@
 package imitori.mongodb.repository;
 
-import imitori.mongodb.entity.ENVIWordEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
+
+import imitori.mongodb.entity.ENVIWordEntity;
 
 // This is an Interface.
 // No need Annotation here

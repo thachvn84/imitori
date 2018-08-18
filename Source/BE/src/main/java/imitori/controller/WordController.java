@@ -1,25 +1,8 @@
 package imitori.controller;
 
-import imitori.neo4j.entity.SimilarToRelEntity;
-import imitori.neo4j.entity.WordEntity;
-import imitori.neo4j.dto.SimilarToRelDto;
-import imitori.neo4j.dto.WordDto;
-import imitori.services.WordService;
-
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import imitori.neo4j.dto.SimilarToRelDto;
+import imitori.neo4j.dto.WordDto;
+import imitori.neo4j.entity.SimilarToRelEntity;
+import imitori.neo4j.entity.WordEntity;
+import imitori.services.WordService;
 
 @RestController
 @RequestMapping("/dic/word/")
