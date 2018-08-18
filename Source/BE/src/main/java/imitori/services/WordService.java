@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
-import imitori.mongodb.entity.ENWordEntity;
-import imitori.mongodb.entity.JAWordEntity;
+import imitori.mongodb.entity.ENVIWordEntity;
+import imitori.mongodb.entity.JAENWordEntity;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.entity.OppositeToRelEntity;
 import imitori.neo4j.entity.RelatedToRelEntity;
@@ -321,9 +321,9 @@ public class WordService {
     public Collection<Map<String, Integer>> getMeansScore(Long jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
-        JAWordEntity jaw = this.jaEnDicService.getWordById(jid);
+        JAENWordEntity jaw = this.jaEnDicService.getWordById(jid);
         
-        ArrayList<String> jres = jaw.getAllMeans();
+        ArrayList<String> jres = jaw.getAllEnMeans();
         //System.out.println("------------");
         //System.out.println(jres.toString());
         //System.out.println("------------");
@@ -331,9 +331,9 @@ public class WordService {
         ArrayList<String> eres = new ArrayList<>();
 
         for (int i = 0; i < jres.size(); i++) {
-            ArrayList<ENWordEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
+            ArrayList<ENVIWordEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
             for (int j = 0; j < ew.size(); j++) {
-                ArrayList<String> mjres = ew.get(j).getAllMeans();
+                ArrayList<String> mjres = ew.get(j).getAllViMeans();
                 for (int k = 0; k < mjres.size(); k++) {
                     eres.add(mjres.get(k));
                 }
@@ -366,12 +366,12 @@ public class WordService {
                     //exception handling left as an exercise for the reader
                 }
             }
-            System.out.println(jaw.getAllMeans().toString());
+            System.out.println(jaw.getAllEnMeans().toString());
             try(FileWriter fw = new FileWriter("myfile.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter out = new PrintWriter(bw))
             {
-                out.println(jaw.getAllMeans().toString());
+                out.println(jaw.getAllEnMeans().toString());
             } catch (IOException e) {
                 //exception handling left as an exercise for the reader
             }

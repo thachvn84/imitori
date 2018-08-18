@@ -12,7 +12,7 @@ import imitori.utils.StringUtils;
 
 @Document(collection = "EnWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ENWordEntity {
+public class ENVIWordEntity {
     @Id
     private Long id;
 
@@ -234,7 +234,7 @@ public class ENWordEntity {
         }
     }
 
-    public ArrayList<String> getAllMeans() {
+    public ArrayList<String> getAllViMeans() {
         ArrayList<String> res = new ArrayList<>();
         //Get mean from Word
         for (int i = 0; i < this.means.size(); i++) {

@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import imitori.mongodb.entity.ENWordEntity;
+import imitori.mongodb.entity.ENVIWordEntity;
 
 @Repository
-public class ENWordRepository {
+public class ENVIWordRepository {
     @Autowired
     MongoTemplate mongoTemplate;
 
@@ -21,18 +21,18 @@ public class ENWordRepository {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "id"));
         query.limit(1);
-        ENWordEntity maxObject = mongoTemplate.findOne(query, ENWordEntity.class);
+        ENVIWordEntity maxObject = mongoTemplate.findOne(query, ENVIWordEntity.class);
         if (maxObject == null) {
             return 0L;
         }
         return maxObject.getid();
     }
 
-    public ArrayList<ENWordEntity> findByWord(String w) {
-        ArrayList<ENWordEntity> res = new ArrayList<>();
+    public ArrayList<ENVIWordEntity> findByWord(String w) {
+        ArrayList<ENVIWordEntity> res = new ArrayList<>();
         Query query = new Query();
         query.addCriteria(new Criteria("word").is(w));
-        List<ENWordEntity> mres = mongoTemplate.find(query, ENWordEntity.class);
+        List<ENVIWordEntity> mres = mongoTemplate.find(query, ENVIWordEntity.class);
         for (int i = 0; i < mres.size(); i++) {
             res.add(mres.get(i));
         }

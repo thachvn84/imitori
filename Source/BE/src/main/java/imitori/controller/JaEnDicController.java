@@ -9,12 +9,12 @@ import java.util.Map;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import imitori.mongodb.entity.ENWordEntity;
-import imitori.mongodb.entity.JAWordEntity;
-import imitori.mongodb.repository.JAWordRepository;
-import imitori.mongodb.repository.ENWordCrudRepository;
-import imitori.mongodb.repository.ENWordRepository;
-import imitori.mongodb.repository.JAWordCrudRepository;
+import imitori.mongodb.entity.ENVIWordEntity;
+import imitori.mongodb.entity.JAENWordEntity;
+import imitori.mongodb.repository.JAENWordRepository;
+import imitori.mongodb.repository.ENVIWordCrudRepository;
+import imitori.mongodb.repository.ENVIWordRepository;
+import imitori.mongodb.repository.JAENWordCrudRepository;
 import imitori.services.JaEnDicService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class JaEnDicController {
     }
 
     @PostMapping("/addOneWord")
-    public Long add(@RequestBody JAWordEntity word) {
+    public Long add(@RequestBody JAENWordEntity word) {
         Long res = 0L;
         res = jaEnDicService.addOneWord(word);
         return res;

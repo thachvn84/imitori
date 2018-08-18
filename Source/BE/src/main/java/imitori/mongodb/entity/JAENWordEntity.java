@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 @Document(collection = "JaWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class JAWordEntity {
+public class JAENWordEntity {
     @Id
     private Long id;
 
@@ -370,7 +370,7 @@ public class JAWordEntity {
         }
     }
 
-    public ArrayList<String> getAllMeans() {
+    public ArrayList<String> getAllEnMeans() {
         ArrayList<String> res = new ArrayList<>();
         if (this.sense != null) {
             for (int i = 0; i < this.sense.size(); i++) {
