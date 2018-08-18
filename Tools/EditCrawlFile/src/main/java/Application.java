@@ -23,7 +23,7 @@ public class Application {
 
         System.out.println(sb.size());
 
-        br = new BufferedReader(new FileReader("untrans.txt"));
+        br = new BufferedReader(new FileReader("myfile.txt"));
         ArrayList<String> uts = new ArrayList<>();
 
         try {
@@ -36,6 +36,7 @@ public class Application {
                 for (Integer i = 0; i < sb.size(); i++) {
                     if (sb.get(i).equals(count.toString())) {
                         found = true;
+                        sb.remove(count.toString());
                         break;
                     }
                 }
@@ -47,6 +48,7 @@ public class Application {
                 }
                 found = false;
                 line = br.readLine();
+               //
             }
         } finally {
 
@@ -61,5 +63,7 @@ public class Application {
         } finally {
 
         }
+        System.out.println(sb.toString());
+
     }
 }

@@ -7,3 +7,4 @@ Source/AdminFE/package-lock.json
 Tools/JsonToObject/target
 Source/**/**/*.class
 Tools/**/*.class
+Tools/GoogleTranslate/node_modules

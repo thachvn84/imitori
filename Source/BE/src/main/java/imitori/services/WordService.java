@@ -354,6 +354,26 @@ public class WordService {
                 } catch (IOException e) {
                     //exception handling left as an exercise for the reader
                 }
+            } else if (jaw.getr_ele() != null) {
+                System.out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
+                
+                try(FileWriter fw = new FileWriter("myfile.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw))
+                {
+                    out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
+                } catch (IOException e) {
+                    //exception handling left as an exercise for the reader
+                }
+            }
+            System.out.println(jaw.getAllMeans().toString());
+            try(FileWriter fw = new FileWriter("myfile.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw))
+            {
+                out.println(jaw.getAllMeans().toString());
+            } catch (IOException e) {
+                //exception handling left as an exercise for the reader
             }
             //System.out.println("nomean");
         }
