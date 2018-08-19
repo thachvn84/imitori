@@ -61,7 +61,7 @@ public class WordController {
                 .body(new WordDto(result.getId(), result.word, result.spell, result.lang));
     }
 
-    @GetMapping("/search2")
+    @GetMapping("/searchrange")
     public void findWord(@RequestParam Long id1, @RequestParam Long id2) {
         System.out.println("Range: " + id1.toString() + " ~ "  + id2.toString() + ": ");
         for (Long i = id1; i < id2; i++) {
@@ -71,6 +71,11 @@ public class WordController {
             //System.out.println("search2 " + i); 
             wordService.getMeansScore(i);
         }
+    }
+
+    @GetMapping("/search2")
+    public void findWord(@RequestParam Long id) {
+        wordService.getMeansScore(id);
     }
 
     // Return the list of [Word.word, r.score] that [Input

@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import imitori.utils.StringUtils;
 
-@Document(collection = "JaWords")
+@Document(collection = "JaEnWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JAENWordEntity {
     @Id

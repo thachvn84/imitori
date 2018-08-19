@@ -63,6 +63,7 @@ public class JaEnDicService {
         } else {
             return res;
         }
+        System.out.println(res.toString());
         return res;
     }
 

@@ -318,7 +318,7 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public Collection<Map<String, Integer>> getMeansScore(Long jid) {
+    public Collection<Map<String, Integer>> getMeansScore_debug(Long jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
         JAENWordEntity jaw = this.jaEnDicService.getWordById(jid);
@@ -376,6 +376,36 @@ public class WordService {
                 //exception handling left as an exercise for the reader
             }
             //System.out.println("nomean");
+        }
+        
+        return res;
+    }
+
+    @Transactional(readOnly = true)
+    public Collection<Map<String, Integer>> getMeansScore(Long jid) {
+        Collection<Map<String, Integer>> res = new ArrayList<>();
+
+        JAENWordEntity jaw = this.jaEnDicService.getWordById(jid);
+        
+        ArrayList<String> jres = jaw.getAllEnMeans();
+
+        ArrayList<String> eres = new ArrayList<>();
+
+        for (int i = 0; i < jres.size(); i++) {
+            ArrayList<ENVIWordEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
+            for (int j = 0; j < ew.size(); j++) {
+                ArrayList<String> mjres = ew.get(j).getAllViMeans();
+                for (int k = 0; k < mjres.size(); k++) {
+                    eres.add(mjres.get(k));
+                }
+            }
+        }
+
+        if (eres.size() != 0) {
+            System.out.println(jaw.getk_ele().get(0).getkeb());
+            System.out.println(eres.toString());
+        } else {
+            System.out.println("nomean");
         }
         
         return res;

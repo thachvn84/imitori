@@ -21,6 +21,9 @@ public class WordEntity {
     public String word;
     public ArrayList<String> spell;
     public String lang;
+    
+    //Depend on "lang", the id should query from JA/EN/ or even VN mongoDict
+    public Long mongoId;
 
     @Relationship(type = "SIMILAR_TO", direction = Relationship.OUTGOING)
     private ArrayList<SimilarToRelEntity> similarTo = new ArrayList<>();

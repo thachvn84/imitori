@@ -1,7 +1,5 @@
 package imitori.neo4j.dto;
 
-import java.util.ArrayList;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SimilarToRelDto {

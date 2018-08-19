@@ -48,9 +48,9 @@ public class JaEnDicController {
     }
 
     @GetMapping("/getAllMeansById")
-    public Collection<Map<String, Long>> getAllMeansById(@RequestParam Long id) {
-        Collection<Map<String, Long>> res = new ArrayList<>();
-        //res = jaEnDicService.getAllMeansById(id);
+    public  Collection<String> getAllMeansById(@RequestParam Long id) {
+        Collection<String> res = new ArrayList<>();
+        res = jaEnDicService.getAllMeansById(id);
         return res;
     }
 
