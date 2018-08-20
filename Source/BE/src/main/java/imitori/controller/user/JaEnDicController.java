@@ -1,4 +1,4 @@
-package imitori.controller;
+package imitori.controller.user;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import imitori.mongodb.entity.JAENWordEntity;
-import imitori.services.JaEnDicService;
+import imitori.services.user.JaEnDicService;
 
 @RestController
 @RequestMapping("/dic/jaen")

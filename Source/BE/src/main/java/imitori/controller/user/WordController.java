@@ -1,4 +1,4 @@
-package imitori.controller;
+package imitori.controller.user;
 
 import java.util.Collection;
 import java.util.Map;
@@ -16,7 +16,7 @@ import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.entity.SimilarToRelEntity;
 import imitori.neo4j.entity.WordEntity;
-import imitori.services.WordService;
+import imitori.services.user.WordService;
 
 @RestController
 @RequestMapping("/dic/word/")

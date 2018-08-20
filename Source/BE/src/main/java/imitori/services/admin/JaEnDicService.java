@@ -1,4 +1,4 @@
-package imitori.services;
+package imitori.services.admin;
 
 import java.util.ArrayList;
 import java.util.Optional;

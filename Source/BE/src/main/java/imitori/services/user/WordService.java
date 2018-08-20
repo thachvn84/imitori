@@ -1,4 +1,4 @@
-package imitori.services;
+package imitori.services.user;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
