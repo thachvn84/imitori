@@ -84,7 +84,8 @@ export default {
 
                 var that = this;
                 Vue.http.get('http://localhost:9001/dic/word/search?word=' + this.word).then(function (response) {
-                    console.log(response.body);/*
+                    console.log(response.body);
+                    /*
                     switch (response.body.restype) {
                         case 0:
                             { //Single word

@@ -1,7 +1,9 @@
-package imitori.controller.user;
+package imitori.controller;
 
 import java.util.Collection;
 import java.util.Map;
+
+import com.google.gson.Gson;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +18,7 @@ import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.entity.SimilarToRelEntity;
 import imitori.neo4j.entity.WordEntity;
-import imitori.services.user.WordService;
+import imitori.services.WordService;
 
 @RestController
 @RequestMapping("/dic/word/")
@@ -49,16 +51,21 @@ public class WordController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<WordDto> findOneByWord(@RequestParam String word) {
-
-        WordEntity result;
-        result = wordService.findOneWord(word);
-        if (result == null) {
-            result = new WordEntity(0L, "", "", "");
+    public ResponseEntity<String> findOneByWord(@RequestParam String word) {
+        struct resClass {
+            //Integer restype;
+            WordEntity data;
         }
-        // System.out.println(excutePost(""));
+        resClass res = new resClass();
+        //res.restype = 0;
+        res.data = wordService.findOneWord(word);
+        if (res.data != null) {
+            //res.restype = 0;
+        }
+        Gson gson = new Gson();
+        //System.out.println(gson.toJson(res.restype));
         return ResponseEntity.status(HttpStatus.CREATED).header("Access-Control-Allow-Origin", "*")
-                .body(new WordDto(result.getId(), result.word, result.spell, result.lang));
+                .body(gson.toJson(res));
     }
 
     @GetMapping("/searchrange")

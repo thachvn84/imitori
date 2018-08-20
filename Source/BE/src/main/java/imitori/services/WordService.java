@@ -1,4 +1,4 @@
-package imitori.services.user;
+package imitori.services;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -345,23 +345,23 @@ public class WordService {
             //System.out.println(eres.toString());
         } else {
             if (jaw.getk_ele() != null) {
-                System.out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
+                System.out.println("�?" + jaw.getk_ele().get(0).getkeb() + "】");
                 try(FileWriter fw = new FileWriter("myfile.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw))
                 {
-                    out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
+                    out.println("�?" + jaw.getk_ele().get(0).getkeb() + "】");
                 } catch (IOException e) {
                     //exception handling left as an exercise for the reader
                 }
             } else if (jaw.getr_ele() != null) {
-                System.out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
+                System.out.println("�?" + jaw.getr_ele().get(0).getreb() + "】");
                 
                 try(FileWriter fw = new FileWriter("myfile.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw))
                 {
-                    out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
+                    out.println("�?" + jaw.getr_ele().get(0).getreb() + "】");
                 } catch (IOException e) {
                     //exception handling left as an exercise for the reader
                 }

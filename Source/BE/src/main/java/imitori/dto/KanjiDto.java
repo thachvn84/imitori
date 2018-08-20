@@ -1,4 +1,4 @@
-package imitori.dto.admin;
+package imitori.dto;
 
 import java.util.ArrayList;
 

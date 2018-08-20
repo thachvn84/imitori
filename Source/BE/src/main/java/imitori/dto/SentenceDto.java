@@ -1,4 +1,4 @@
-package imitori.dto.admin;
+package imitori.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
