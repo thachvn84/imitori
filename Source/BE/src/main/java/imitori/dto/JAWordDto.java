@@ -6,37 +6,54 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class JAWordDto {
     @JsonProperty("id")
-    private Long id;
+    public Long id;
 
     @JsonProperty("word")
-    private String word;
+    public String word;
 
     @JsonProperty("kanji")
-    private ArrayList<KanjiDto> kanji;
+    public ArrayList<KanjiDto> kanji;
 
     @JsonProperty("furigana")
-    private String furigana;
+    public String furigana;
 
     @JsonProperty("romaji")
-    private String romaji;
+    public String romaji;
 
     @JsonProperty("tl")
-    private String tl;
+    public String tl;
 
     @JsonProperty("sentence")
-    ArrayList<SentenceDto> example;
+    public ArrayList<SentenceDto> example;
 
     @JsonProperty("similarword")
-    ArrayList<JAWordDto> similarword;
+    public ArrayList<JAWordDto> similarword;
 
     @JsonProperty("transword")
-    ArrayList<VIWordDto> transword;
+    public ArrayList<VIWordDto> transword;
 
     @JsonProperty("oppositeword")
-    ArrayList<JAWordDto> oppositeword;
+    public ArrayList<JAWordDto> oppositeword;
 
     @JsonProperty("relatedword")
-    ArrayList<JAWordDto> relatedword;
+    public  ArrayList<JAWordDto> relatedword;
 
+    public JAWordDto() {
+        this.kanji = new ArrayList<>();
+        this.example = new ArrayList<>();
+        this.similarword = new ArrayList<>();
+        this.transword = new ArrayList<>();
+        this.oppositeword = new ArrayList<>();
+        this.relatedword = new ArrayList<>();
+    }
 
+    public JAWordDto(String w) {
+        this.word = w;
+        this.kanji = new ArrayList<>();
+        this.example = new ArrayList<>();
+        this.similarword = new ArrayList<>();
+        this.transword = new ArrayList<>();
+        this.oppositeword = new ArrayList<>();
+        this.relatedword = new ArrayList<>();
+    }
 }

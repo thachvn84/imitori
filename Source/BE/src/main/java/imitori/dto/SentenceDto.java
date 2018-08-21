@@ -11,4 +11,5 @@ public class SentenceDto {
 
     @JsonProperty("vi")
     public String vi;
+ 
 }

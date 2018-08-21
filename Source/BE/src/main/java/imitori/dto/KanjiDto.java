@@ -6,29 +6,36 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class KanjiDto {
     @JsonProperty("id")
-    private Long id;
+    public Long id;
 
     @JsonProperty("kanji")
-    private Long kanji;
+    public String kanji;
 
     @JsonProperty("hanviet")
-    private ArrayList<String> hanviet;
+    public ArrayList<String> hanviet;
 
     @JsonProperty("mean")
-    private String mean;
+    public String mean;
 
     @JsonProperty("onyomi")
-    private ArrayList<String> onyomi;
+    public ArrayList<String> onyomi;
 
     @JsonProperty("kunyomi")
-    private ArrayList<String> kunyomi;
+    public ArrayList<String> kunyomi;
 
     @JsonProperty("klass")
-    private String klass;
+    public String klass;
 
     @JsonProperty("stroke")
-    private Long stroke;
+    public Integer stroke;
 
     @JsonProperty("wordlist")
-    private ArrayList<JAWordDto> wordlist;
+    public ArrayList<JAWordDto> wordlist;
+
+    public KanjiDto() {
+        this.hanviet = new ArrayList<>();
+        this.onyomi = new ArrayList<>();
+        this.kunyomi = new ArrayList<>();
+        this.wordlist = new ArrayList<>();
+    }
 }

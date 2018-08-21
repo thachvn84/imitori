@@ -119,3 +119,18 @@ ul {
   padding-left:30px;
   box-shadow: 0 0 20px #dffff570;
 }
+
+.HanViet {
+  color: blue;
+}
+
+.kanji-detail {
+  margin-bottom: 5px;
+  padding: 5px;
+  box-shadow: 2px 0px 3px #b99898;
+}
+
+.more-space {
+  padding: 5px;
+  margin-bottom: 3px;
+}

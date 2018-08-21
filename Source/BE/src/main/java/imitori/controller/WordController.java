@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import imitori.dto.JAWordDto;
 import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
 import imitori.neo4j.entity.SimilarToRelEntity;
@@ -50,22 +51,22 @@ public class WordController {
         wordService.deleteOneWord(id);
     }
 
+    class resClass {
+        public int restype;
+        public String data;
+    }
     @GetMapping("/search")
-    public ResponseEntity<String> findOneByWord(@RequestParam String word) {
-        struct resClass {
-            //Integer restype;
-            WordEntity data;
-        }
-        resClass res = new resClass();
-        //res.restype = 0;
-        res.data = wordService.findOneWord(word);
-        if (res.data != null) {
-            //res.restype = 0;
-        }
+    public ResponseEntity<resClass> findOneByWord(@RequestParam String word) {
         Gson gson = new Gson();
-        //System.out.println(gson.toJson(res.restype));
+        resClass res = new resClass();
+        JAWordDto we = wordService.getDummyWord();
+        res.data = gson.toJson(we);
+        if (res.data != null) {
+            res.restype = 1;
+        }
+        System.out.println(gson.toJson(res));
         return ResponseEntity.status(HttpStatus.CREATED).header("Access-Control-Allow-Origin", "*")
-                .body(gson.toJson(res));
+                .body(res);
     }
 
     @GetMapping("/searchrange")

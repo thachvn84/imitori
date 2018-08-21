@@ -11,7 +11,7 @@
             <button class="btn btn-primary" type="submit" v-on:click="queryWord"> Search </button>
         </form>
     </div>
-    <div v-if="this.restype == 0">
+    <div v-if="restype == 1">
         <h4> Result </h4>
         <word-detail type="hover" :word="resWord">
 
@@ -37,11 +37,10 @@ var tmpRomaji = "";
 
 export default {
     components: {
-        WordDetail
+        'word-detail':WordDetail,
     },
     props: {
-        restype: 0,
-        resWord: {
+        resWord2: {
             type: Object,
             default: function () {
                 return {
@@ -70,53 +69,44 @@ export default {
                     }]
                 }
             }
-        },
-        data() {
-            return {
-                SearchWordTitle: "Search:",
-                word: ""
-            };
-        },
+        }
+    },
+    data() {
+        return {
+            SearchWordTitle: "Search:",
+            word: "",
+            restype: 0,
+            resWord: "",
+        };
+    },
+    methods: {
+        queryWord: function (e) {
+            e.preventDefault();
 
-        methods: {
-            queryWord: function (e) {
-                e.preventDefault();
+            var that = this;
+            Vue.http.get('http://localhost:9001/dic/word/search?word=' + this.word).then(function (response) {
+                console.log(response.body);
+                switch (response.body.restype) {
+                    case 0:
+                        { //Unregistered
+                            that.restype = response.body.restype;
+                        }
+                        break;
+                    case 1:
+                        { //Multiword
+                            that.restype = response.body.restype;
+                            that.resWord = JSON.parse(response.body.data);
+                            console.log(that.resWord);
+                        }
+                        break;
+                    default:
+                        { //Unknown res
 
-                var that = this;
-                Vue.http.get('http://localhost:9001/dic/word/search?word=' + this.word).then(function (response) {
-                    console.log(response.body);
-                    /*
-                    switch (response.body.restype) {
-                        case 0:
-                            { //Single word
-                                this.restype = 0;
-                                that.resWord.id = response.body.id;
-                                that.resWord.word = response.body.word;
-                                that.resWord.kanji = response.body.kanji;
-                                that.resWord.furigana = response.body.furigana;
-                                that.resWord.romaji = response.body.romaji;
-                                that.resWord.tl = response.body.tl;
-                                that.resWord.example = response.body.example;
-                                that.resWord.similarword = response.body.similarword;
-                                that.resWord.transword = response.body.transword;
-                                that.resWord.relatedword = response.body.relatedword;
-                                that.resWord.oppositeword = response.body.oppositeword;
-                            }
-                            break;
-                        case 1:
-                            { //Multiword
+                        }
+                        break;
+                }
 
-                            }
-                            break;
-                        default:
-                            { //Unknown res
-
-                            }
-                            break;
-                    }*/
-
-                });
-            }
+            });
         }
     }
 }

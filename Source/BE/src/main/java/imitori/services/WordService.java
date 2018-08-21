@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
+import imitori.dto.JAWordDto;
+import imitori.dto.KanjiDto;
+import imitori.dto.SentenceDto;
+import imitori.dto.VIWordDto;
 import imitori.mongodb.entity.ENVIWordEntity;
 import imitori.mongodb.entity.JAENWordEntity;
 import imitori.neo4j.dto.WordDto;
@@ -407,6 +411,103 @@ public class WordService {
         } else {
             System.out.println("nomean");
         }
+        
+        return res;
+    }
+
+    @Transactional(readOnly = true)
+    public JAWordDto getDummyWord() {
+        JAWordDto res = new JAWordDto();
+        res.id = 100L;
+        res.word = "日本語";
+        KanjiDto kj = new KanjiDto();
+        // 日
+        kj.id = 0L;
+        kj.kanji = "日";
+        kj.hanviet.add("Nhật");
+        kj.hanviet.add("Nhựt");
+        kj.mean = "Ngày, Mặt trời";
+        kj.onyomi.add("二");
+        kj.onyomi.add("ニチ");
+        kj.onyomi.add("ジツ");
+        kj.kunyomi.add("ひ");
+        kj.kunyomi.add("か");
+        kj.stroke = 4;
+        kj.klass = "Nhật";//Bộ thủ
+        kj.wordlist.add(new JAWordDto("日本"));
+        kj.wordlist.add(new JAWordDto("二十日"));
+        kj.wordlist.add(new JAWordDto("本日"));
+        kj.wordlist.add(new JAWordDto("明日"));
+        res.kanji.add(kj);
+        // 本
+        kj = new KanjiDto();
+        kj.id = 1L;
+        kj.kanji = "本";
+        kj.hanviet.add("Bản");
+        kj.hanviet.add("Bổn");
+        kj.mean = "Bản thể, bản chất";
+        kj.onyomi.add("ホン");
+        kj.klass = "Mộc";//Bộ thủ
+        kj.stroke = 5;
+        kj.wordlist.add(new JAWordDto("日本"));
+        kj.wordlist.add(new JAWordDto("本来"));
+        kj.wordlist.add(new JAWordDto("本当"));
+        kj.wordlist.add(new JAWordDto("本社"));
+        res.kanji.add(kj);
+        //語
+        kj = new KanjiDto();
+        kj.id = 2L;
+        kj.kanji = "語";
+        kj.hanviet.add("Ngữ");
+        kj.mean = "Ngôn ngữ, từ ngữ";
+        kj.onyomi.add("ゴ");
+        kj.kunyomi.add("かたらう");
+        kj.klass = "Ngôn";//Bộ thủ
+        kj.stroke = 14;
+        kj.wordlist.add(new JAWordDto("国語"));
+        kj.wordlist.add(new JAWordDto("外国語"));
+        kj.wordlist.add(new JAWordDto("語彙"));
+        kj.wordlist.add(new JAWordDto("言語"));
+        res.kanji.add(kj);
+
+        res.furigana = "にほんご";
+        res.romaji = "nihongo";
+        res.tl = "N";
+        
+        SentenceDto s = new SentenceDto();
+        s.id = 0L;
+        s.ja = "日本語は難しいです";
+        s.vi = "Tiếng Nhật khó";
+        res.example.add(s);
+        s = new SentenceDto();
+        s.id = 1L;
+        s.ja = "私は日本語で話せます";
+        s.vi = "Tôi có thể nói chuyện bằng tiếng Nhật";
+        res.example.add(s);
+        s = new SentenceDto();
+        s.id = 2L;
+        s.ja = "日本語の漢字はとても難しいです";
+        s.vi = "Kanji của tiếng Nhật rất là khó";
+        res.example.add(s);
+
+        res.similarword.add(new JAWordDto("ニッポン語"));
+        res.similarword.add(new JAWordDto("扶桑語"));
+        res.similarword.add(new JAWordDto("ジャパン語"));
+
+        VIWordDto vi = new VIWordDto();
+        vi.id = 0L;
+        vi.tl = "n";
+        vi.word = "Tiếng Nhật";
+        res.transword.add(vi);
+        vi = new VIWordDto();
+        vi.id = 1L;
+        vi.tl = "n";
+        vi.word = "Ngôn ngữ Nhật";
+        res.transword.add(vi);
+
+        res.relatedword.add(new JAWordDto("ベトナム語"));
+        res.relatedword.add(new JAWordDto("中国語"));
+        res.relatedword.add(new JAWordDto("英語"));
         
         return res;
     }
