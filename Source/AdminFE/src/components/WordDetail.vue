@@ -25,10 +25,12 @@
                         <input id="word-edit" class="form-control" type="text" name="word" v-model="word.word" autocomplete="" />
                         <label class="px-2" for="word.kana">kana:</label>
                         <input id="kana-edit" class="form-control" type="text" name="kana" v-model="word.furigana" autocomplete="" />
-                        <label class="px-2" for="word.mean">Kanji:</label>
-                        <div v-for="k in word.kanji" class="container-fluid">
-                            <kanji-view type="hover" :kanji="k">
-                            </kanji-view>
+                        <div class="kanji-analyze">
+                        <label class="text-primary h5 more-space text-center" for="word.mean">KANJI</label>
+                            <div v-for="k in word.kanji" class="container-fluid">
+                                <kanji-view type="hover" :kanji="k">
+                                </kanji-view>
+                            </div>
                         </div>
                         <button class="btn btn-primary ml-2" type="submit" v-on:click="donothing"> Add </button>
                         <label class="px-2"> Means:</label>

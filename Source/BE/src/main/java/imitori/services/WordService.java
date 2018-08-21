@@ -7,7 +7,9 @@ import java.io.PrintWriter;
 import java.util.*;
 
 import imitori.dto.JAWordDto;
+import imitori.dto.KanjiClassDto;
 import imitori.dto.KanjiDto;
+import imitori.dto.KunyomiDto;
 import imitori.dto.SentenceDto;
 import imitori.dto.VIWordDto;
 import imitori.mongodb.entity.ENVIWordEntity;
@@ -418,22 +420,24 @@ public class WordService {
     @Transactional(readOnly = true)
     public JAWordDto getDummyWord() {
         JAWordDto res = new JAWordDto();
-        res.id = 100L;
+        VIWordDto vi = new VIWordDto();
+        res.id = 100;
         res.word = "日本語";
         KanjiDto kj = new KanjiDto();
         // 日
-        kj.id = 0L;
+        kj.id = 0;
         kj.kanji = "日";
         kj.hanviet.add("Nhật");
         kj.hanviet.add("Nhựt");
-        kj.mean = "Ngày, Mặt trời";
+        kj.mean.add(new VIWordDto(2, "Ngày", "n"));
+        kj.mean.add(new VIWordDto(3, "Mặt trời", "n"));
         kj.onyomi.add("二");
         kj.onyomi.add("ニチ");
         kj.onyomi.add("ジツ");
-        kj.kunyomi.add("ひ");
-        kj.kunyomi.add("か");
+        kj.kunyomi.add(new KunyomiDto("ひ", ""));
+        kj.kunyomi.add(new KunyomiDto("か", ""));
         kj.stroke = 4;
-        kj.klass = "Nhật";//Bộ thủ
+        kj.klass.add(new KanjiClassDto(2, "Nhật", "Mặt trời"));//Bộ thủ
         kj.wordlist.add(new JAWordDto("日本"));
         kj.wordlist.add(new JAWordDto("二十日"));
         kj.wordlist.add(new JAWordDto("本日"));
@@ -441,13 +445,15 @@ public class WordService {
         res.kanji.add(kj);
         // 本
         kj = new KanjiDto();
-        kj.id = 1L;
+        kj.id = 1;
         kj.kanji = "本";
         kj.hanviet.add("Bản");
         kj.hanviet.add("Bổn");
-        kj.mean = "Bản thể, bản chất";
+        kj.mean.add(new VIWordDto(4, "Bản thể", "n"));
+        kj.mean.add(new VIWordDto(5, "Bản chất", "n"));
         kj.onyomi.add("ホン");
-        kj.klass = "Mộc";//Bộ thủ
+        kj.kunyomi.add(new KunyomiDto("もと", ""));
+        kj.klass.add(new KanjiClassDto(2, "Mộc", "Cây cối"));//Bộ thủ
         kj.stroke = 5;
         kj.wordlist.add(new JAWordDto("日本"));
         kj.wordlist.add(new JAWordDto("本来"));
@@ -456,13 +462,14 @@ public class WordService {
         res.kanji.add(kj);
         //語
         kj = new KanjiDto();
-        kj.id = 2L;
+        kj.id = 2;
         kj.kanji = "語";
         kj.hanviet.add("Ngữ");
-        kj.mean = "Ngôn ngữ, từ ngữ";
+        kj.mean.add(new VIWordDto(6, "Ngôn ngữ", "n"));
+        kj.mean.add(new VIWordDto(7, "Từ ngữ", "n"));
         kj.onyomi.add("ゴ");
-        kj.kunyomi.add("かたらう");
-        kj.klass = "Ngôn";//Bộ thủ
+        kj.kunyomi.add( new KunyomiDto("かた", "らう"));
+        kj.klass.add(new KanjiClassDto(2, "Ngôn", "Lời nói, ngôn ngữ"));//Bộ thủ
         kj.stroke = 14;
         kj.wordlist.add(new JAWordDto("国語"));
         kj.wordlist.add(new JAWordDto("外国語"));
@@ -474,36 +481,16 @@ public class WordService {
         res.romaji = "nihongo";
         res.tl = "N";
         
-        SentenceDto s = new SentenceDto();
-        s.id = 0L;
-        s.ja = "日本語は難しいです";
-        s.vi = "Tiếng Nhật khó";
-        res.example.add(s);
-        s = new SentenceDto();
-        s.id = 1L;
-        s.ja = "私は日本語で話せます";
-        s.vi = "Tôi có thể nói chuyện bằng tiếng Nhật";
-        res.example.add(s);
-        s = new SentenceDto();
-        s.id = 2L;
-        s.ja = "日本語の漢字はとても難しいです";
-        s.vi = "Kanji của tiếng Nhật rất là khó";
-        res.example.add(s);
+        res.example.add(new SentenceDto(0, "日本語は難しいです","Tiếng Nhật khó"));
+        res.example.add(new SentenceDto(1, "私は日本語で話せます","Tôi có thể nói chuyện bằng tiếng Nhật"));
+        res.example.add(new SentenceDto(2, "日本語の漢字はとても難しいです","Kanji của tiếng Nhật rất là khó"));
 
         res.similarword.add(new JAWordDto("ニッポン語"));
         res.similarword.add(new JAWordDto("扶桑語"));
         res.similarword.add(new JAWordDto("ジャパン語"));
 
-        VIWordDto vi = new VIWordDto();
-        vi.id = 0L;
-        vi.tl = "n";
-        vi.word = "Tiếng Nhật";
-        res.transword.add(vi);
-        vi = new VIWordDto();
-        vi.id = 1L;
-        vi.tl = "n";
-        vi.word = "Ngôn ngữ Nhật";
-        res.transword.add(vi);
+        res.transword.add(new VIWordDto(0, "Tiếng Nhật", "n"));
+        res.transword.add(new VIWordDto(1, "Ngôn ngữ Nhật", "n"));
 
         res.relatedword.add(new JAWordDto("ベトナム語"));
         res.relatedword.add(new JAWordDto("中国語"));

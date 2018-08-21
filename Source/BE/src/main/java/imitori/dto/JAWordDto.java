@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class JAWordDto {
     @JsonProperty("id")
-    public Long id;
+    public Integer id;
 
     @JsonProperty("word")
     public String word;
