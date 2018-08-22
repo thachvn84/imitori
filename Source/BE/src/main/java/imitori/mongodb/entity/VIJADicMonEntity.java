@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "ViJaWords")
+@Document(collection = "ViJaDic")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class VIJAWordEntity {
+public class VIJADicMonEntity {
 }

@@ -1,7 +1,11 @@
 <template>
 <div class="kanji-detail">
     <div class="form-group">
-        <label class="px-2" for="kanji.id"><kbd>ID: {{kanji.id}}</kbd></label>
+        <div class="clearfix">
+            <label class="px-2 vcenter" for="kanji.id"><kbd>ID: {{kanji.id}}</kbd></label>
+            <button class="btn btn-primary m-1 btn-xs" type="submit" v-on:click="donothing"> Edit </button>
+            <button class="btn btn-primary m-1 btn-xs float-right" type="submit" v-on:click="donothing"> Delete </button>
+        </div>
         <div class="row">
             <div class="col-md-1  more-space">
                 <label for="Kanji" v-on:click="donothing">Kanji</label>
@@ -9,13 +13,13 @@
             </div>
             <div class="col-md-2  more-space">
                 <label for="Furigana">Nghĩa</label>
-                <div v-for="(on, index) in kanji.mean">
+                <div v-for="(on, index) in kanji.mean" :key=index>
                     <input class="form-control more-space text-center input-sm" type="text" name="On" v-model="kanji.mean[index].word" autocomplete=""  readonly/>
                 </div>
             </div>
             <div class="col-md-2 more-space">
                 <label for="Klass">Bộ thủ</label>
-                <div v-for="(on, index) in kanji.klass">
+                <div v-for="(on, index) in kanji.klass" :key=index>
                     <input class="form-control more-space text-center input-sm" type="text" name="On" v-model="kanji.klass[index].klass" autocomplete=""  readonly/>
                 </div>
             </div>
@@ -25,28 +29,24 @@
             </div>
             <div class="col-md-2  more-space">
                 <label for="Furigana">Onyomi</label>
-                <div v-for="(on, index) in kanji.onyomi">
+                <div v-for="(on, index) in kanji.onyomi" :key=index>
                     <input class="form-control more-space text-center input-sm" type="text" name="On" v-model="kanji.onyomi[index]" autocomplete=""  readonly/>
                 </div>
             </div>
             <div class="col-md-2  more-space">
                 <label for="Furigana">Kunyomi</label>
-                <div v-for="(on, index) in kanji.kunyomi">
-                    <input class="form-control more-space text-center input-sm" type="text" name="On" autocomplete="" :value="kanji.kunyomi[index].kun + ( kanji.kunyomi[index].okuri.length > 0 ? ' (' + kanji.kunyomi[index].okuri + ')' : '')"  readonly></input>
+                <div v-for="(on, index) in kanji.kunyomi" :key=index>
+                    <input class="form-control more-space text-center input-sm" type="text" name="On" autocomplete="" :value="kanji.kunyomi[index].kun + ( kanji.kunyomi[index].okuri.length > 0 ? ' (' + kanji.kunyomi[index].okuri + ')' : '')"  readonly/>
                 </div>
             </div>
             <div class="col-md-2  more-space">
                 <label for="Furigana">Wordlist</label>
-                <div v-for="(on, index) in kanji.wordlist">
+                <div v-for="(on, index) in kanji.wordlist" :key=index>
                     <input class="form-control more-space text-center input-sm" type="text" name="On" v-model="kanji.wordlist[index].word" autocomplete=""  readonly/>
                 </div>
             </div>
         </div>
         <input class="d-none" type="submit" v-on:click="donothing">
-        <div class="row">
-            <button class="btn btn-primary m-1" type="submit" v-on:click="donothing"> Edit </button>
-            <button class="btn btn-primary m-1" type="submit" v-on:click="donothing"> Save </button>
-        </div>
     </div>
 </div>
 </template>
@@ -69,10 +69,6 @@ export default {
     }
 };
 </script>
-
-<style>
-
-</style>
 
 <style>
 

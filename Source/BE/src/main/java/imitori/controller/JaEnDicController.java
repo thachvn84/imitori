@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import imitori.mongodb.entity.JAENWordEntity;
+import imitori.mongodb.entity.JAENDicMonEntity;
 import imitori.services.JaEnDicService;
 
 @RestController
@@ -26,7 +26,7 @@ public class JaEnDicController {
     }
 
     @PostMapping("/addOneWord")
-    public Long add(@RequestBody JAENWordEntity word) {
+    public Long add(@RequestBody JAENDicMonEntity word) {
         Long res = 0L;
         res = jaEnDicService.addOneWord(word);
         return res;

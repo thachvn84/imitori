@@ -8,24 +8,24 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import imitori.mongodb.entity.ENVIWordEntity;
-import imitori.mongodb.repository.ENVIWordCrudRepository;
-import imitori.mongodb.repository.ENVIWordRepository;
+import imitori.mongodb.entity.ENVIDicMonEntity;
+import imitori.mongodb.repository.ENVIDicMonCrudRepository;
+import imitori.mongodb.repository.ENVIDicMonRepository;
 
 @Service
 public class EnViDicService {
     private final static Logger LOG = LoggerFactory.getLogger(JaEnDicService.class);
 
-    private final ENVIWordCrudRepository enVIWordCrudRepository;
-    private final ENVIWordRepository enVIWordRepository;
+    private final ENVIDicMonCrudRepository enVIWordCrudRepository;
+    private final ENVIDicMonRepository enVIWordRepository;
 
-    public EnViDicService(ENVIWordCrudRepository crud, ENVIWordRepository repo) {
+    public EnViDicService(ENVIDicMonCrudRepository crud, ENVIDicMonRepository repo) {
         this.enVIWordCrudRepository = crud;
         this.enVIWordRepository = repo;
     }
 
     @Transactional(readOnly = true)
-    public Long addOneWord(ENVIWordEntity word) {
+    public Long addOneWord(ENVIDicMonEntity word) {
         long id = this.enVIWordRepository.getMaxWordId() + 1;
         word.setid(id);
         this.enVIWordCrudRepository.insert(word);
@@ -33,12 +33,12 @@ public class EnViDicService {
     }
 
     @Transactional(readOnly = true)
-    public ENVIWordEntity getWordById(long id) {
-        Optional<ENVIWordEntity> resq = this.enVIWordCrudRepository.findById(id);
+    public ENVIDicMonEntity getWordById(long id) {
+        Optional<ENVIDicMonEntity> resq = this.enVIWordCrudRepository.findById(id);
         if (resq.isPresent()) {
             return resq.get();
         } else {
-            return new ENVIWordEntity();
+            return new ENVIDicMonEntity();
         }
     }
 
@@ -51,8 +51,8 @@ public class EnViDicService {
     public ArrayList<String> getAllMeansById(Long id) {
         // Return the colletion of <Word: Id>
         ArrayList<String> res = new ArrayList<>();
-        Optional<ENVIWordEntity> resq = this.enVIWordCrudRepository.findById(id);
-        ENVIWordEntity word = new ENVIWordEntity();
+        Optional<ENVIDicMonEntity> resq = this.enVIWordCrudRepository.findById(id);
+        ENVIDicMonEntity word = new ENVIDicMonEntity();
         if (resq.isPresent()) {
             word = resq.get();
             ArrayList<String> mean = new ArrayList<>();
@@ -67,8 +67,8 @@ public class EnViDicService {
     }
 
     @Transactional(readOnly = true)
-    public ArrayList<ENVIWordEntity> getWordByWord(String w) {
-        ArrayList<ENVIWordEntity> res = new ArrayList<>();
+    public ArrayList<ENVIDicMonEntity> getWordByWord(String w) {
+        ArrayList<ENVIDicMonEntity> res = new ArrayList<>();
         return this.enVIWordRepository.findByWord(w);
     }
 

@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type = "SIMILAR_TO")
-public class SimilarToRelEntity {
+public class SimilarToRelNeoEntity {
     @Id
     @GeneratedValue
     private Long id;

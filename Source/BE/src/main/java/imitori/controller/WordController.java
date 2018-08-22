@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import imitori.dto.JAWordDto;
 import imitori.neo4j.dto.SimilarToRelDto;
 import imitori.neo4j.dto.WordDto;
-import imitori.neo4j.entity.SimilarToRelEntity;
+import imitori.neo4j.entity.SimilarToRelNeoEntity;
 import imitori.neo4j.entity.WordEntity;
 import imitori.services.WordService;
 
@@ -125,8 +125,8 @@ public class WordController {
     // If one of them (from Word, Relation, ToWord) existed, only update
     // If not existed, create full element
     @PostMapping("/rel/create/similarto")
-    public SimilarToRelEntity createSimilarToRelEntity(@RequestBody SimilarToRelDto input) {
-        SimilarToRelEntity res = new SimilarToRelEntity();
+    public SimilarToRelNeoEntity createSimilarToRelEntity(@RequestBody SimilarToRelDto input) {
+        SimilarToRelNeoEntity res = new SimilarToRelNeoEntity();
         res = wordService.createSimilarToRel(input.id1, input.id2, input.score);
         return res;
     }

@@ -6,10 +6,10 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import imitori.mongodb.entity.JAENWordEntity;
+import imitori.mongodb.entity.JAENDicMonEntity;
 
 @Repository
-public class JAENWordRepository {
+public class JAENDicMonRepository {
 
     @Autowired
     MongoTemplate mongoTemplate;
@@ -18,7 +18,7 @@ public class JAENWordRepository {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "id"));
         query.limit(1);
-        JAENWordEntity maxObject = mongoTemplate.findOne(query, JAENWordEntity.class);
+        JAENDicMonEntity maxObject = mongoTemplate.findOne(query, JAENDicMonEntity.class);
         if (maxObject == null) {
             return 0L;
         }
@@ -26,11 +26,11 @@ public class JAENWordRepository {
     }
 
     public int getWordCount() {
-        return mongoTemplate.findAll(JAENWordEntity.class).size();
+        return mongoTemplate.findAll(JAENDicMonEntity.class).size();
     }
 
     public void insertWord(long w) {
-        JAENWordEntity word = new JAENWordEntity();
+        JAENDicMonEntity word = new JAENDicMonEntity();
         word.setent_seq(w);
 
         mongoTemplate.insert(word);

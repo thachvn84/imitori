@@ -12,13 +12,13 @@ import imitori.dto.KanjiDto;
 import imitori.dto.KunyomiDto;
 import imitori.dto.SentenceDto;
 import imitori.dto.VIWordDto;
-import imitori.mongodb.entity.ENVIWordEntity;
-import imitori.mongodb.entity.JAENWordEntity;
+import imitori.mongodb.entity.ENVIDicMonEntity;
+import imitori.mongodb.entity.JAENDicMonEntity;
 import imitori.neo4j.dto.WordDto;
-import imitori.neo4j.entity.OppositeToRelEntity;
-import imitori.neo4j.entity.RelatedToRelEntity;
-import imitori.neo4j.entity.SimilarToRelEntity;
-import imitori.neo4j.entity.TranslateToRelEntity;
+import imitori.neo4j.entity.OppositeToRelNeoEntity;
+import imitori.neo4j.entity.RelatedToRelNeoEntity;
+import imitori.neo4j.entity.SimilarToRelNeoEntity;
+import imitori.neo4j.entity.TranslateToRelNeoEntity;
 import imitori.neo4j.entity.WordEntity;
 import imitori.neo4j.repositories.WordRepository;
 
@@ -88,7 +88,7 @@ public class WordService {
             WordEntity w = wi.next();
             // Check the InComing word
             System.out.println("In come: " + w.word);
-            for (SimilarToRelEntity smlt : w.getSimilarTo()) {
+            for (SimilarToRelNeoEntity smlt : w.getSimilarTo()) {
                 if (smlt.startWord != null && smlt.endWord != null) {
                     System.out.println("\"" + smlt.startWord.word + "\" -> \"" + smlt.endWord.word + "\" | Score: "
                             + smlt.score.toString());
@@ -110,7 +110,7 @@ public class WordService {
         while (wi.hasNext()) {
             WordEntity w = wi.next();
             System.out.println("Out come: " + w.word);
-            for (SimilarToRelEntity smlf : w.getSimilarFrom()) {
+            for (SimilarToRelNeoEntity smlf : w.getSimilarFrom()) {
                 if (smlf.startWord != null && smlf.endWord != null) {
                     System.out.println("\"" + smlf.startWord.word + "\" -> \"" + smlf.endWord.word + "\" | Score: "
                             + smlf.score.toString());
@@ -126,8 +126,8 @@ public class WordService {
 
     // Create a SimilarTo relationship beetween two word
     @Transactional(readOnly = true)
-    public SimilarToRelEntity createSimilarToRel(Long id1, Long id2, Integer score) {
-        SimilarToRelEntity res = new SimilarToRelEntity();
+    public SimilarToRelNeoEntity createSimilarToRel(Long id1, Long id2, Integer score) {
+        SimilarToRelNeoEntity res = new SimilarToRelNeoEntity();
         res = wordRepository.createSimilarToRel(id1, id2, score);
         return res;
     }
@@ -148,8 +148,8 @@ public class WordService {
     // If one of them (from Word, Relation, ToWord) existed, only update
     // If not, create full of word
     @Transactional(readOnly = true)
-    public SimilarToRelEntity createPairOfSimilarWord_Full(WordDto w1, WordDto w2, Integer sc) {
-        SimilarToRelEntity res = new SimilarToRelEntity();
+    public SimilarToRelNeoEntity createPairOfSimilarWord_Full(WordDto w1, WordDto w2, Integer sc) {
+        SimilarToRelNeoEntity res = new SimilarToRelNeoEntity();
         WordEntity word1 = new WordEntity();
         //Search through the spell to find first match
         for (int i = 0; i < w1.spell.size(); i++) {
@@ -204,23 +204,23 @@ public class WordService {
 
     // Create a RelatedTo relationship beetween two word and return the new one
     @Transactional(readOnly = true)
-    public RelatedToRelEntity createRelatedToRel(Long id1, Long id2, Integer score) {
-        RelatedToRelEntity res = new RelatedToRelEntity();
+    public RelatedToRelNeoEntity createRelatedToRel(Long id1, Long id2, Integer score) {
+        RelatedToRelNeoEntity res = new RelatedToRelNeoEntity();
         res = wordRepository.createRelatedToRel(id1, id2, score);
         return res;
     }
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public RelatedToRelEntity setRelatedToRel(Long id1, Long id2, Integer score) {
-        RelatedToRelEntity res = new RelatedToRelEntity();
+    public RelatedToRelNeoEntity setRelatedToRel(Long id1, Long id2, Integer score) {
+        RelatedToRelNeoEntity res = new RelatedToRelNeoEntity();
         // TODO: Implement
         return res;
     }
 
     @Transactional(readOnly = true)
-    public RelatedToRelEntity createPairOfRelateWord_Full(WordDto w1, WordDto w2, Integer sc) {
-        RelatedToRelEntity res = new RelatedToRelEntity();
+    public RelatedToRelNeoEntity createPairOfRelateWord_Full(WordDto w1, WordDto w2, Integer sc) {
+        RelatedToRelNeoEntity res = new RelatedToRelNeoEntity();
         // TODO: Implement
         return res;
     }
@@ -253,23 +253,23 @@ public class WordService {
 
     // Create a Translate relationship beetween two word and return the new one
     @Transactional(readOnly = true)
-    public TranslateToRelEntity createTranslateToRel(Long id1, Long id2, Integer score) {
-        TranslateToRelEntity res = new TranslateToRelEntity();
+    public TranslateToRelNeoEntity createTranslateToRel(Long id1, Long id2, Integer score) {
+        TranslateToRelNeoEntity res = new TranslateToRelNeoEntity();
         res = wordRepository.createTranslateToRel(id1, id2, score);
         return res;
     }
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public TranslateToRelEntity setTranslateToRel(Long id1, Long id2, Integer score) {
-        TranslateToRelEntity res = new TranslateToRelEntity();
+    public TranslateToRelNeoEntity setTranslateToRel(Long id1, Long id2, Integer score) {
+        TranslateToRelNeoEntity res = new TranslateToRelNeoEntity();
         // TODO: Implement
         return res;
     }
 
     @Transactional(readOnly = true)
-    public TranslateToRelEntity createPairOfTranslateWord_Full(WordDto w1, WordDto w2, Integer sc) {
-        TranslateToRelEntity res = new TranslateToRelEntity();
+    public TranslateToRelNeoEntity createPairOfTranslateWord_Full(WordDto w1, WordDto w2, Integer sc) {
+        TranslateToRelNeoEntity res = new TranslateToRelNeoEntity();
         // TODO: Implement
         return res;
     }
@@ -302,23 +302,23 @@ public class WordService {
 
     //Create a Opposite to Relationship between two word
     @Transactional(readOnly = true)
-    public OppositeToRelEntity createOppositeToRel(Long id1, Long id2, Integer score) {
-        OppositeToRelEntity res = new OppositeToRelEntity();
+    public OppositeToRelNeoEntity createOppositeToRel(Long id1, Long id2, Integer score) {
+        OppositeToRelNeoEntity res = new OppositeToRelNeoEntity();
         res = wordRepository.createOppositeToRel(id1, id2, score);
         return res;
     }
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public OppositeToRelEntity setOppositeToRel(Long id1, Long id2, Integer score) {
-        OppositeToRelEntity res = new OppositeToRelEntity();
+    public OppositeToRelNeoEntity setOppositeToRel(Long id1, Long id2, Integer score) {
+        OppositeToRelNeoEntity res = new OppositeToRelNeoEntity();
         // TODO: Implement
         return res;
     }
 
     @Transactional(readOnly = true)
-    public OppositeToRelEntity createPairOfOppositeWord_Full(WordDto w1, WordDto w2, Integer sc) {
-        OppositeToRelEntity res = new OppositeToRelEntity();
+    public OppositeToRelNeoEntity createPairOfOppositeWord_Full(WordDto w1, WordDto w2, Integer sc) {
+        OppositeToRelNeoEntity res = new OppositeToRelNeoEntity();
         // TODO: Implement
         return res;
     }
@@ -327,7 +327,7 @@ public class WordService {
     public Collection<Map<String, Integer>> getMeansScore_debug(Long jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
-        JAENWordEntity jaw = this.jaEnDicService.getWordById(jid);
+        JAENDicMonEntity jaw = this.jaEnDicService.getWordById(jid);
         
         ArrayList<String> jres = jaw.getAllEnMeans();
         //System.out.println("------------");
@@ -337,7 +337,7 @@ public class WordService {
         ArrayList<String> eres = new ArrayList<>();
 
         for (int i = 0; i < jres.size(); i++) {
-            ArrayList<ENVIWordEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
+            ArrayList<ENVIDicMonEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
             for (int j = 0; j < ew.size(); j++) {
                 ArrayList<String> mjres = ew.get(j).getAllViMeans();
                 for (int k = 0; k < mjres.size(); k++) {
@@ -351,23 +351,23 @@ public class WordService {
             //System.out.println(eres.toString());
         } else {
             if (jaw.getk_ele() != null) {
-                System.out.println("�?" + jaw.getk_ele().get(0).getkeb() + "】");
+                System.out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
                 try(FileWriter fw = new FileWriter("myfile.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw))
                 {
-                    out.println("�?" + jaw.getk_ele().get(0).getkeb() + "】");
+                    out.println("【" + jaw.getk_ele().get(0).getkeb() + "】");
                 } catch (IOException e) {
                     //exception handling left as an exercise for the reader
                 }
             } else if (jaw.getr_ele() != null) {
-                System.out.println("�?" + jaw.getr_ele().get(0).getreb() + "】");
+                System.out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
                 
                 try(FileWriter fw = new FileWriter("myfile.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw))
                 {
-                    out.println("�?" + jaw.getr_ele().get(0).getreb() + "】");
+                    out.println("【" + jaw.getr_ele().get(0).getreb() + "】");
                 } catch (IOException e) {
                     //exception handling left as an exercise for the reader
                 }
@@ -391,14 +391,14 @@ public class WordService {
     public Collection<Map<String, Integer>> getMeansScore(Long jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
-        JAENWordEntity jaw = this.jaEnDicService.getWordById(jid);
+        JAENDicMonEntity jaw = this.jaEnDicService.getWordById(jid);
         
         ArrayList<String> jres = jaw.getAllEnMeans();
 
         ArrayList<String> eres = new ArrayList<>();
 
         for (int i = 0; i < jres.size(); i++) {
-            ArrayList<ENVIWordEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
+            ArrayList<ENVIDicMonEntity> ew = this.enViDicService.getWordByWord(jres.get(i));
             for (int j = 0; j < ew.size(); j++) {
                 ArrayList<String> mjres = ew.get(j).getAllViMeans();
                 for (int k = 0; k < mjres.size(); k++) {
@@ -416,6 +416,14 @@ public class WordService {
         
         return res;
     }
+
+    @Transactional(readOnly = true)
+    public JAWordDto searchJAWord(String word) {
+        JAWordDto res = new JAWordDto();
+        
+        return res;
+    }
+
 
     @Transactional(readOnly = true)
     public JAWordDto getDummyWord() {
@@ -494,7 +502,9 @@ public class WordService {
 
         res.relatedword.add(new JAWordDto("ベトナム語"));
         res.relatedword.add(new JAWordDto("中国語"));
-        res.relatedword.add(new JAWordDto("英語"));
+        JAWordDto eigo = new JAWordDto("英語");
+        eigo.relatedword.add(new JAWordDto("韓国語"));
+        res.relatedword.add(eigo);
         
         return res;
     }

@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type = "RELATED_TO")
-public class RelatedToRelEntity {
+public class RelatedToRelNeoEntity {
     @Id
     @GeneratedValue
     private Long id;

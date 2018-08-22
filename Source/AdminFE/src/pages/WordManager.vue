@@ -37,7 +37,7 @@ var tmpRomaji = "";
 
 export default {
     components: {
-        'word-detail':WordDetail,
+        'word-detail':WordDetail
     },
     props: {
         resWord2: {

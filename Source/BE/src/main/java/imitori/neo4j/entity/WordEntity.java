@@ -2,10 +2,10 @@ package imitori.neo4j.entity;
 
 import java.util.ArrayList;
 
-import imitori.neo4j.entity.SimilarToRelEntity;
-import imitori.neo4j.entity.TranslateToRelEntity;
-import imitori.neo4j.entity.RelatedToRelEntity;
-import imitori.neo4j.entity.OppositeToRelEntity;
+import imitori.neo4j.entity.SimilarToRelNeoEntity;
+import imitori.neo4j.entity.TranslateToRelNeoEntity;
+import imitori.neo4j.entity.RelatedToRelNeoEntity;
+import imitori.neo4j.entity.OppositeToRelNeoEntity;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
@@ -26,28 +26,28 @@ public class WordEntity {
     public Long mongoId;
 
     @Relationship(type = "SIMILAR_TO", direction = Relationship.OUTGOING)
-    private ArrayList<SimilarToRelEntity> similarTo = new ArrayList<>();
+    private ArrayList<SimilarToRelNeoEntity> similarTo = new ArrayList<>();
 
     @Relationship(type = "SIMILAR_TO", direction = Relationship.INCOMING)
-    private ArrayList<SimilarToRelEntity> similarFrom = new ArrayList<>();
+    private ArrayList<SimilarToRelNeoEntity> similarFrom = new ArrayList<>();
 
     @Relationship(type = "TRANSLATE_TO", direction = Relationship.OUTGOING)
-    private ArrayList<TranslateToRelEntity> translateTo = new ArrayList<>();
+    private ArrayList<TranslateToRelNeoEntity> translateTo = new ArrayList<>();
 
     @Relationship(type = "TRANSLATE_TO", direction = Relationship.INCOMING)
-    private ArrayList<TranslateToRelEntity> translateFrom = new ArrayList<>();
+    private ArrayList<TranslateToRelNeoEntity> translateFrom = new ArrayList<>();
 
     @Relationship(type = "RELATED_TO", direction = Relationship.OUTGOING)
-    private ArrayList<RelatedToRelEntity> relatedTo = new ArrayList<>();
+    private ArrayList<RelatedToRelNeoEntity> relatedTo = new ArrayList<>();
 
     @Relationship(type = "RELATED_TO", direction = Relationship.INCOMING)
-    private ArrayList<RelatedToRelEntity> relatedFrom = new ArrayList<>();
+    private ArrayList<RelatedToRelNeoEntity> relatedFrom = new ArrayList<>();
 
     @Relationship(type = "OPPOSITE_TO", direction = Relationship.OUTGOING)
-    private ArrayList<OppositeToRelEntity> oppositeTo = new ArrayList<>();
+    private ArrayList<OppositeToRelNeoEntity> oppositeTo = new ArrayList<>();
 
     @Relationship(type = "OPPOSITE_TO", direction = Relationship.INCOMING)
-    private ArrayList<OppositeToRelEntity> oppisteFrom = new ArrayList<>();
+    private ArrayList<OppositeToRelNeoEntity> oppisteFrom = new ArrayList<>();
 
     public WordEntity() {
     }
@@ -71,35 +71,35 @@ public class WordEntity {
         return id;
     }
 
-    public ArrayList<SimilarToRelEntity> getSimilarTo() {
+    public ArrayList<SimilarToRelNeoEntity> getSimilarTo() {
         return this.similarTo;
     }
 
-    public ArrayList<SimilarToRelEntity> getSimilarFrom() {
+    public ArrayList<SimilarToRelNeoEntity> getSimilarFrom() {
         return this.similarFrom;
     }
 
-    public ArrayList<TranslateToRelEntity> getTranslateTo() {
+    public ArrayList<TranslateToRelNeoEntity> getTranslateTo() {
         return this.translateTo;
     }
 
-    public ArrayList<TranslateToRelEntity> getTranslateFrom() {
+    public ArrayList<TranslateToRelNeoEntity> getTranslateFrom() {
         return this.translateFrom;
     }
 
-    public ArrayList<RelatedToRelEntity> getRelatedTo() {
+    public ArrayList<RelatedToRelNeoEntity> getRelatedTo() {
         return this.relatedTo;
     }
 
-    public ArrayList<RelatedToRelEntity> getRelatedFrom() {
+    public ArrayList<RelatedToRelNeoEntity> getRelatedFrom() {
         return this.relatedFrom;
     }
 
-    public ArrayList<OppositeToRelEntity> getOppositeTo() {
+    public ArrayList<OppositeToRelNeoEntity> getOppositeTo() {
         return this.oppositeTo;
     }
 
-    public ArrayList<OppositeToRelEntity> getOppositeFrom() {
+    public ArrayList<OppositeToRelNeoEntity> getOppositeFrom() {
         return this.oppisteFrom;
     }
 

@@ -27,7 +27,6 @@ rt {
     font-size: 8px;
 }
 
-body .warm-background {}
 
 .sticky-footer {
     position: fixed;
@@ -161,4 +160,42 @@ input[readonly] {
     cursor: pointer;
     color: black;
     box-shadow: none;
+}
+
+label.vcenter {
+    margin-top: 0.8rem;
+    text-align: right;
+}
+
+.trans-word  {
+    margin-bottom: 20px;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 2px 0px 3px #e3b8b8;
+    border: 1px solid #e3b8b8;
+}
+
+.word-detail {
+    margin-bottom: 10px;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 2px 0px 3px #e3b8b8;
+    border: 1px solid #e3b8b8;
+}
+
+.viword-view  {
+    margin-bottom: 10px;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 2px 0px 3px #e3b8b8;
+    border: 1px solid #e3b8b8;
+}
+
+.sentence-view  {
+    margin-bottom: 10px;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 2px 0px 3px #e3b8b8;
+    border: 1px solid #e3b8b8;
+}
+
+.btn-xs {
+    font-size: 8px;
+    padding: 4px 10px;
 }

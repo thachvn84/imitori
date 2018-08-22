@@ -10,9 +10,9 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import imitori.utils.StringUtils;
 
-@Document(collection = "EnViWords")
+@Document(collection = "EnViDic")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ENVIWordEntity {
+public class ENVIDicMonEntity {
     @Id
     private Long id;
 

@@ -1,9 +1,9 @@
 package imitori.neo4j.repositories;
 
-import imitori.neo4j.entity.OppositeToRelEntity;
-import imitori.neo4j.entity.RelatedToRelEntity;
-import imitori.neo4j.entity.SimilarToRelEntity;
-import imitori.neo4j.entity.TranslateToRelEntity;
+import imitori.neo4j.entity.OppositeToRelNeoEntity;
+import imitori.neo4j.entity.RelatedToRelNeoEntity;
+import imitori.neo4j.entity.SimilarToRelNeoEntity;
+import imitori.neo4j.entity.TranslateToRelNeoEntity;
 import imitori.neo4j.entity.WordEntity;
 
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public interface WordRepository extends Neo4jRepository<WordEntity, Long> {
     //Create similar to relation
     @Query("MATCH (n:Word),(m:Word) " + "WHERE ID(n)={id1} and ID(m)={id2} " + "MERGE (n)-[r:SIMILAR_TO]->(m) "
             + "ON CREATE SET r.score={sc} " + "ON MATCH SET r.score={sc} " + " RETURN n,r,m")
-    SimilarToRelEntity createSimilarToRel(@Param("id1") Long id1, @Param("id2") Long id2,
+    SimilarToRelNeoEntity createSimilarToRel(@Param("id1") Long id1, @Param("id2") Long id2,
             @Param("sc") Integer score);
 
     //Find word that relate to 
@@ -67,7 +67,7 @@ public interface WordRepository extends Neo4jRepository<WordEntity, Long> {
            + "ON CREATE SET r.score={sc} "
            + "ON MATCH SET r.score={sc} "
            + "RETURN n,r,m")
-    RelatedToRelEntity createRelatedToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
+    RelatedToRelNeoEntity createRelatedToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
 
     //Find word that translate to
     @Query("MATCH(w:Word{word:{w}})-[r: TRANSLATE_TO]->(m) return w,r,m")
@@ -83,7 +83,7 @@ public interface WordRepository extends Neo4jRepository<WordEntity, Long> {
            + "ON CREATE SET r.score={sc} "
            + "ON MATCH SET r.score={sc} "
            + "RETURN n,r,m")
-    TranslateToRelEntity createTranslateToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
+    TranslateToRelNeoEntity createTranslateToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
 
     //Find word that opposite to
     @Query("MATCH(w:Word{word:{w}})-[r: OPPOSITE_TO]->(m) return w,r,m")
@@ -98,7 +98,7 @@ public interface WordRepository extends Neo4jRepository<WordEntity, Long> {
            + "ON CREATE SET r.score={sc} "
            + "ON MATCH SET r.score={sc} "
            + "RETURN n,r,m")
-    OppositeToRelEntity createOppositeToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
+    OppositeToRelNeoEntity createOppositeToRel(@Param("id1") Long id1, @Param("id2") Long id2, @Param("sc") Integer score);
 
     // Delete a word
     @Query("MATCH (n:Word) WHERE ID(n) = {id} OPTIONAL MATCH (n)-[r]-() DELETE n,r")

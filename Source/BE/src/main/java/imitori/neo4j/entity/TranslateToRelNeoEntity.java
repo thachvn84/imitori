@@ -7,7 +7,7 @@ import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
 @RelationshipEntity(type = "TRANSLATE_TO")
-public class TranslateToRelEntity {
+public class TranslateToRelNeoEntity {
     @Id
     @GeneratedValue
     private Long id;

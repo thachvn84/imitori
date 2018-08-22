@@ -8,51 +8,51 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import imitori.mongodb.entity.JAENWordEntity;
-import imitori.mongodb.repository.JAENWordCrudRepository;
-import imitori.mongodb.repository.JAENWordRepository;
+import imitori.mongodb.entity.JAENDicMonEntity;
+import imitori.mongodb.repository.JAENDicMonCrudRepository;
+import imitori.mongodb.repository.JAENDicMonRepository;
 
 @Service
 public class JaEnDicService {
     private final static Logger LOG = LoggerFactory.getLogger(JaEnDicService.class);
 
-    private final JAENWordCrudRepository jaENWordCrudRepository;
-    private final JAENWordRepository jaENWordRepository;
+    private final JAENDicMonCrudRepository jaENDicMonCrudRepository;
+    private final JAENDicMonRepository jaENDicMonRepository;
 
-    public JaEnDicService(JAENWordCrudRepository crud, JAENWordRepository repo) {
-        this.jaENWordCrudRepository = crud;
-        this.jaENWordRepository = repo;
+    public JaEnDicService(JAENDicMonCrudRepository crud, JAENDicMonRepository repo) {
+        this.jaENDicMonCrudRepository = crud;
+        this.jaENDicMonRepository = repo;
     }
 
     @Transactional(readOnly = true)
-    public Long addOneWord(JAENWordEntity word) {
-        long id = this.jaENWordRepository.getMaxWordId() + 1;
+    public Long addOneWord(JAENDicMonEntity word) {
+        long id = this.jaENDicMonRepository.getMaxWordId() + 1;
         word.setid(id);
-        this.jaENWordCrudRepository.insert(word);
+        this.jaENDicMonCrudRepository.insert(word);
         return id;
     }
 
     @Transactional(readOnly = true)
-    public JAENWordEntity getWordById(long id) {
-        Optional<JAENWordEntity> resq = this.jaENWordCrudRepository.findById(id);
+    public JAENDicMonEntity getWordById(long id) {
+        Optional<JAENDicMonEntity> resq = this.jaENDicMonCrudRepository.findById(id);
         if (resq.isPresent()) {
             return resq.get();
         } else {
-            return new JAENWordEntity();
+            return new JAENDicMonEntity();
         }
     }
 
     @Transactional(readOnly = true)
     public Long getMaxId() {
-        return this.jaENWordRepository.getMaxWordId();
+        return this.jaENDicMonRepository.getMaxWordId();
     }
 
     @Transactional(readOnly = true)
     public ArrayList<String> getAllMeansById(Long id) {
         // Return the colletion of <Word: Id>
         ArrayList<String> res = new ArrayList<>();
-        Optional<JAENWordEntity> resq = this.jaENWordCrudRepository.findById(id);
-        JAENWordEntity word = new JAENWordEntity();
+        Optional<JAENDicMonEntity> resq = this.jaENDicMonCrudRepository.findById(id);
+        JAENDicMonEntity word = new JAENDicMonEntity();
         if (resq.isPresent()) {
             word = resq.get();
             ArrayList<String> mean = new ArrayList<>();
