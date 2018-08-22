@@ -14,7 +14,7 @@ import imitori.utils.StringUtils;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ENVIDicMonEntity {
     @Id
-    private Long id;
+    private Integer id;
 
     @Field("word")
     public String word;
@@ -28,11 +28,11 @@ public class ENVIDicMonEntity {
     @Field("fieldmeans")
     public ArrayList<ChuyenNganh> fieldmeans;
 
-    public Long getid() {
+    public Integer getid() {
         return this.id;
     }
 
-    public void setid(Long id) {
+    public void setid(Integer id) {
         this.id = id;
     }
 

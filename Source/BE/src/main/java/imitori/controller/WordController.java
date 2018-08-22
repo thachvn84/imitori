@@ -31,23 +31,23 @@ public class WordController {
     }
 
     @GetMapping("/add")
-    public Long createOneWord(@RequestParam String word, @RequestParam String spell, @RequestParam String lang) {
-        Long id = 0L;
+    public Integer createOneWord(@RequestParam String word, @RequestParam String spell, @RequestParam String lang) {
+        Integer id = 0;
         WordEntity wi = wordService.createOneWord(word, spell, lang);
         id = wi.getId();
         return id;
     }
 
     @PostMapping("/add")
-    public Long createOneWord(@RequestBody WordDto input) {
-        Long id = 0L;
+    public Integer createOneWord(@RequestBody WordDto input) {
+        Integer id = 0;
         WordEntity wi = wordService.createOneWord(input.word, input.spell, input.lang);
         id = wi.getId();
         return id;
     }
 
     @GetMapping("/delete")
-    public void deleteOneWord(@RequestParam Long id) {
+    public void deleteOneWord(@RequestParam Integer id) {
         wordService.deleteOneWord(id);
     }
 
@@ -70,9 +70,9 @@ public class WordController {
     }
 
     @GetMapping("/searchrange")
-    public void findWord(@RequestParam Long id1, @RequestParam Long id2) {
+    public void findWord(@RequestParam Integer id1, @RequestParam Integer id2) {
         System.out.println("Range: " + id1.toString() + " ~ "  + id2.toString() + ": ");
-        for (Long i = id1; i < id2; i++) {
+        for (Integer i = id1; i < id2; i++) {
             if (i % 100 == 0) {
                 System.out.println("--------- [" + i.toString() + "/" + id2.toString() + "] ------------");
             }
@@ -82,7 +82,7 @@ public class WordController {
     }
 
     @GetMapping("/search2")
-    public void findWord(@RequestParam Long id) {
+    public void findWord(@RequestParam Integer id) {
         wordService.getMeansScore(id);
     }
 

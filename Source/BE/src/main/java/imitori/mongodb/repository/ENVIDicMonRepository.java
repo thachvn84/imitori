@@ -17,13 +17,13 @@ public class ENVIDicMonRepository {
     @Autowired
     MongoTemplate mongoTemplate;
 
-    public long getMaxWordId() {
+    public Integer getMaxWordId() {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "id"));
         query.limit(1);
         ENVIDicMonEntity maxObject = mongoTemplate.findOne(query, ENVIDicMonEntity.class);
         if (maxObject == null) {
-            return 0L;
+            return 0;
         }
         return maxObject.getid();
     }

@@ -26,14 +26,14 @@ public class JaEnDicController {
     }
 
     @PostMapping("/addOneWord")
-    public Long add(@RequestBody JAENDicMonEntity word) {
-        Long res = 0L;
+    public Integer add(@RequestBody JAENDicMonEntity word) {
+        Integer res = 0;
         res = jaEnDicService.addOneWord(word);
         return res;
     }
 
     @GetMapping("/getWordById")
-    public String getWordById(@RequestParam Long id) {
+    public String getWordById(@RequestParam Integer id) {
         System.out.println("getWordById");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String res = gson.toJson(jaEnDicService.getWordById(id));
@@ -42,12 +42,12 @@ public class JaEnDicController {
     }
 
     @GetMapping("/getMaxId")
-    public Long getWordCount() {
+    public Integer getWordCount() {
         return jaEnDicService.getMaxId();
     }
 
     @GetMapping("/getAllMeansById")
-    public  Collection<String> getAllMeansById(@RequestParam Long id) {
+    public  Collection<String> getAllMeansById(@RequestParam Integer id) {
         Collection<String> res = new ArrayList<>();
         res = jaEnDicService.getAllMeansById(id);
         return res;

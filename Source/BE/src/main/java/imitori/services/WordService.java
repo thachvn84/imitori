@@ -52,7 +52,7 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public void deleteOneWord(Long id) {
+    public void deleteOneWord(Integer id) {
         wordRepository.deleteOneWord(id);
     }
 
@@ -63,7 +63,7 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public WordEntity findOneWord(Long id) {
+    public WordEntity findOneWord(Integer id) {
         WordEntity result = wordRepository.findOneWord(id);
         return result;
     }
@@ -71,8 +71,8 @@ public class WordService {
     /* 1. API for SimilarTo Relationship
      *  - findSimilarTo(String word) -> Collection of word:score where given word SimilarTo
      *  - findSimilarFrom(String word) -> Collection of word:score which similar to given word
-     *  - createSimilarToRel(Long id1, Long id2, Integer score) -> Create a SimilarTo relation and return new one
-     *  - setSimilarRelScore(Long from_id, Long to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
+     *  - createSimilarToRel(Integer id1, Integer id2, Integer score) -> Create a SimilarTo relation and return new one
+     *  - setSimilarRelScore(Integer from_id, Integer to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
      *  - createPairOfSimilarWord(String w1, String l1, String w2, String l2, Integer sc) -> Create relation between two word
      *  - createPairOfSimilarWord_Full(String w1, String sp1, String l1, String w2, String sp2, String l2, Integer sc)
      *      -> Create relation between word and setting full information
@@ -126,7 +126,7 @@ public class WordService {
 
     // Create a SimilarTo relationship beetween two word
     @Transactional(readOnly = true)
-    public SimilarToRelNeoEntity createSimilarToRel(Long id1, Long id2, Integer score) {
+    public SimilarToRelNeoEntity createSimilarToRel(Integer id1, Integer id2, Integer score) {
         SimilarToRelNeoEntity res = new SimilarToRelNeoEntity();
         res = wordRepository.createSimilarToRel(id1, id2, score);
         return res;
@@ -135,7 +135,7 @@ public class WordService {
     // Set a score for a SimilarRel between 2 word, if the rel is null, create the
     // rel
     @Transactional(readOnly = true)
-    public void setSimilarRelScore(Long from_id, Long to_id, Integer rel_score) {
+    public void setSimilarRelScore(Integer from_id, Integer to_id, Integer rel_score) {
         WordEntity fw = findOneWord(from_id);
         WordEntity tw = findOneWord(to_id);
         if (fw == null || tw == null) {
@@ -179,8 +179,8 @@ public class WordService {
     /* 2. API for Related Relationship
      *  - findRelatedTo(String word) -> Collection of word:score where given word related to
      *  - findRelatedFrom(String word) -> Collection of word:score which related to given word
-     *  - createRelatedToRel(Long id1, Long id2, Integer score) -> Create a RelatedTo relation and return new one
-     *  - setRelatedToRelScore(Long from_id, Long to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
+     *  - createRelatedToRel(Integer id1, Integer id2, Integer score) -> Create a RelatedTo relation and return new one
+     *  - setRelatedToRelScore(Integer from_id, Integer to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
      *  - createPairOfRelatedWord_Full(WordDto w1, WordDto w2, Integer sc)
      *      -> Create relation between word and setting full information
      */
@@ -204,7 +204,7 @@ public class WordService {
 
     // Create a RelatedTo relationship beetween two word and return the new one
     @Transactional(readOnly = true)
-    public RelatedToRelNeoEntity createRelatedToRel(Long id1, Long id2, Integer score) {
+    public RelatedToRelNeoEntity createRelatedToRel(Integer id1, Integer id2, Integer score) {
         RelatedToRelNeoEntity res = new RelatedToRelNeoEntity();
         res = wordRepository.createRelatedToRel(id1, id2, score);
         return res;
@@ -212,7 +212,7 @@ public class WordService {
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public RelatedToRelNeoEntity setRelatedToRel(Long id1, Long id2, Integer score) {
+    public RelatedToRelNeoEntity setRelatedToRel(Integer id1, Integer id2, Integer score) {
         RelatedToRelNeoEntity res = new RelatedToRelNeoEntity();
         // TODO: Implement
         return res;
@@ -228,8 +228,8 @@ public class WordService {
     /* 3. API for TranslateTo Relationship
      *  - findTranslateTo(String word) -> Collection of word:score where given word translate to
      *  - findTranslateFrom(String word) -> Collection of word:score which translate to given word
-     *  - createTranslateToRel(Long id1, Long id2, Integer score) -> Create a TranslateTo relation and return new one
-     *  - setTranslateToRel(Long from_id, Long to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
+     *  - createTranslateToRel(Integer id1, Integer id2, Integer score) -> Create a TranslateTo relation and return new one
+     *  - setTranslateToRel(Integer from_id, Integer to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
      *  - createPairOfSimilarWord_Full(WordDto w1, WordDto w2, Integer sc)
      *      -> Create relation between word and setting full information
      */
@@ -253,7 +253,7 @@ public class WordService {
 
     // Create a Translate relationship beetween two word and return the new one
     @Transactional(readOnly = true)
-    public TranslateToRelNeoEntity createTranslateToRel(Long id1, Long id2, Integer score) {
+    public TranslateToRelNeoEntity createTranslateToRel(Integer id1, Integer id2, Integer score) {
         TranslateToRelNeoEntity res = new TranslateToRelNeoEntity();
         res = wordRepository.createTranslateToRel(id1, id2, score);
         return res;
@@ -261,7 +261,7 @@ public class WordService {
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public TranslateToRelNeoEntity setTranslateToRel(Long id1, Long id2, Integer score) {
+    public TranslateToRelNeoEntity setTranslateToRel(Integer id1, Integer id2, Integer score) {
         TranslateToRelNeoEntity res = new TranslateToRelNeoEntity();
         // TODO: Implement
         return res;
@@ -277,8 +277,8 @@ public class WordService {
     /* 4. API for Opposite Relationship
      *  - findOppositeTo(String word) -> Collection of word:score where given word opposite to
      *  - findOppositeFrom(String word) -> Collection of word:score which opposite to given word
-     *  - createOppositeToRel(Long id1, Long id2, Integer score) -> Create a OppositeTo relation and return new one
-     *  - setOppositeRelScore(Long from_id, Long to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
+     *  - createOppositeToRel(Integer id1, Integer id2, Integer score) -> Create a OppositeTo relation and return new one
+     *  - setOppositeRelScore(Integer from_id, Integer to_id, Integer rel_score) -> Set a score for a relation and create if not existed.
      *  - createPairOfOppositeWord_Full(WordDto w1, WordDto w2, Integer sc)
      *      -> Create relation between word and setting full information
      */
@@ -302,7 +302,7 @@ public class WordService {
 
     //Create a Opposite to Relationship between two word
     @Transactional(readOnly = true)
-    public OppositeToRelNeoEntity createOppositeToRel(Long id1, Long id2, Integer score) {
+    public OppositeToRelNeoEntity createOppositeToRel(Integer id1, Integer id2, Integer score) {
         OppositeToRelNeoEntity res = new OppositeToRelNeoEntity();
         res = wordRepository.createOppositeToRel(id1, id2, score);
         return res;
@@ -310,7 +310,7 @@ public class WordService {
 
     // Set a score for a relation and create if not existed
     @Transactional(readOnly = true)
-    public OppositeToRelNeoEntity setOppositeToRel(Long id1, Long id2, Integer score) {
+    public OppositeToRelNeoEntity setOppositeToRel(Integer id1, Integer id2, Integer score) {
         OppositeToRelNeoEntity res = new OppositeToRelNeoEntity();
         // TODO: Implement
         return res;
@@ -324,7 +324,7 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public Collection<Map<String, Integer>> getMeansScore_debug(Long jid) {
+    public Collection<Map<String, Integer>> getMeansScore_debug(Integer jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
         JAENDicMonEntity jaw = this.jaEnDicService.getWordById(jid);
@@ -388,7 +388,7 @@ public class WordService {
     }
 
     @Transactional(readOnly = true)
-    public Collection<Map<String, Integer>> getMeansScore(Long jid) {
+    public Collection<Map<String, Integer>> getMeansScore(Integer jid) {
         Collection<Map<String, Integer>> res = new ArrayList<>();
 
         JAENDicMonEntity jaw = this.jaEnDicService.getWordById(jid);

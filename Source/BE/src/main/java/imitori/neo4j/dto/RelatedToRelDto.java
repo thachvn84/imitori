@@ -5,26 +5,26 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class RelatedToRelDto {
 
     @JsonProperty("id")
-    private Long id;
+    private Integer id;
 
     @JsonProperty("id1")
-    public Long id1;
+    public Integer id1;
 
     @JsonProperty("id2")
-    public Long id2;
+    public Integer id2;
 
     @JsonProperty("score")
     public Integer score;
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public RelatedToRelDto(Long id) {
+    public RelatedToRelDto(Integer id) {
         this.id = id;
     }
 

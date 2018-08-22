@@ -6,6 +6,6 @@ import imitori.mongodb.entity.ENVIDicMonEntity;
 
 // This is an Interface.
 // No need Annotation here
-public interface ENVIDicMonCrudRepository extends MongoRepository<ENVIDicMonEntity, Long> { // Long: Type of ENWord ID.
+public interface ENVIDicMonCrudRepository extends MongoRepository<ENVIDicMonEntity, Integer> { // Integer: Type of ENWord ID.
 
 }

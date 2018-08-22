@@ -16,14 +16,14 @@ import org.neo4j.ogm.annotation.Relationship;
 public class WordEntity {
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
 
     public String word;
     public ArrayList<String> spell;
     public String lang;
     
     //Depend on "lang", the id should query from JA/EN/ or even VN mongoDict
-    public Long mongoId;
+    public Integer mongoId;
 
     @Relationship(type = "SIMILAR_TO", direction = Relationship.OUTGOING)
     private ArrayList<SimilarToRelNeoEntity> similarTo = new ArrayList<>();
@@ -52,14 +52,14 @@ public class WordEntity {
     public WordEntity() {
     }
 
-    public WordEntity(Long id, String word, ArrayList<String> spell, String lang) {
+    public WordEntity(Integer id, String word, ArrayList<String> spell, String lang) {
         this.id = id;
         this.word = word;
         this.spell = spell;
         this.lang = lang;
     }
 
-    public WordEntity(Long id, String word, String spell, String lang) {
+    public WordEntity(Integer id, String word, String spell, String lang) {
         this.id = id;
         this.word = word;
         this.spell = new ArrayList<String>();
@@ -67,7 +67,7 @@ public class WordEntity {
         this.lang = lang;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

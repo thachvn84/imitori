@@ -6,6 +6,6 @@ import imitori.mongodb.entity.JAENDicMonEntity;
 
 // This is an Interface.
 // No need Annotation here
-public interface JAENDicMonCrudRepository extends MongoRepository<JAENDicMonEntity, Long> { // Long: Type of JAWord ID.
+public interface JAENDicMonCrudRepository extends MongoRepository<JAENDicMonEntity, Integer> { // Long: Type of JAWord ID.
 
 }

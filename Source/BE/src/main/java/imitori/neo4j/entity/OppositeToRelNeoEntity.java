@@ -10,7 +10,7 @@ import org.neo4j.ogm.annotation.StartNode;
 public class OppositeToRelNeoEntity {
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
 
     public Integer score;
 
@@ -20,7 +20,7 @@ public class OppositeToRelNeoEntity {
     @EndNode
     public WordEntity endWord;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 }

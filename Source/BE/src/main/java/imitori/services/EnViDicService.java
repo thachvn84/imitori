@@ -25,15 +25,15 @@ public class EnViDicService {
     }
 
     @Transactional(readOnly = true)
-    public Long addOneWord(ENVIDicMonEntity word) {
-        long id = this.enVIWordRepository.getMaxWordId() + 1;
+    public Integer addOneWord(ENVIDicMonEntity word) {
+        Integer id = this.enVIWordRepository.getMaxWordId() + 1;
         word.setid(id);
         this.enVIWordCrudRepository.insert(word);
         return id;
     }
 
     @Transactional(readOnly = true)
-    public ENVIDicMonEntity getWordById(long id) {
+    public ENVIDicMonEntity getWordById(Integer id) {
         Optional<ENVIDicMonEntity> resq = this.enVIWordCrudRepository.findById(id);
         if (resq.isPresent()) {
             return resq.get();
@@ -43,12 +43,12 @@ public class EnViDicService {
     }
 
     @Transactional(readOnly = true)
-    public Long getMaxId() {
+    public Integer getMaxId() {
         return this.enVIWordRepository.getMaxWordId();
     }
 
     @Transactional(readOnly = true)
-    public ArrayList<String> getAllMeansById(Long id) {
+    public ArrayList<String> getAllMeansById(Integer id) {
         // Return the colletion of <Word: Id>
         ArrayList<String> res = new ArrayList<>();
         Optional<ENVIDicMonEntity> resq = this.enVIWordCrudRepository.findById(id);

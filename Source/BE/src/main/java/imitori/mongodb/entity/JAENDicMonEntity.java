@@ -15,10 +15,10 @@ import imitori.utils.StringUtils;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JAENDicMonEntity {
     @Id
-    private Long id;
+    private Integer id;
 
     @Field("ent_seq")
-    private Long ent_seq;
+    private Integer ent_seq;
     
     @Field("k_ele")
     private List<k_ele_Class> k_ele;
@@ -29,19 +29,19 @@ public class JAENDicMonEntity {
     @Field("sense")
     private List<sense_Class> sense;
 
-    public Long getid() {
+    public Integer getid() {
         return this.id;
     }
 
-    public void setid(Long id) {
+    public void setid(Integer id) {
         this.id  = id;
     }
 
-    public long getent_seq() {
+    public Integer getent_seq() {
         return this.ent_seq;
     }
 
-    public void setent_seq(long s) {
+    public void setent_seq(Integer s) {
         this.ent_seq = s;
     }
 

@@ -25,15 +25,15 @@ public class JaEnDicService {
     }
 
     @Transactional(readOnly = true)
-    public Long addOneWord(JAENDicMonEntity word) {
-        long id = this.jaENDicMonRepository.getMaxWordId() + 1;
+    public Integer addOneWord(JAENDicMonEntity word) {
+        Integer id = this.jaENDicMonRepository.getMaxWordId() + 1;
         word.setid(id);
         this.jaENDicMonCrudRepository.insert(word);
         return id;
     }
 
     @Transactional(readOnly = true)
-    public JAENDicMonEntity getWordById(long id) {
+    public JAENDicMonEntity getWordById(Integer id) {
         Optional<JAENDicMonEntity> resq = this.jaENDicMonCrudRepository.findById(id);
         if (resq.isPresent()) {
             return resq.get();
@@ -43,12 +43,12 @@ public class JaEnDicService {
     }
 
     @Transactional(readOnly = true)
-    public Long getMaxId() {
+    public Integer getMaxId() {
         return this.jaENDicMonRepository.getMaxWordId();
     }
 
     @Transactional(readOnly = true)
-    public ArrayList<String> getAllMeansById(Long id) {
+    public ArrayList<String> getAllMeansById(Integer id) {
         // Return the colletion of <Word: Id>
         ArrayList<String> res = new ArrayList<>();
         Optional<JAENDicMonEntity> resq = this.jaENDicMonCrudRepository.findById(id);
