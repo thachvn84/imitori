@@ -8,50 +8,46 @@ import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document(collection = "JaWords")
+import imitori.mongodb.entity.ENWordMonEntity.WordFormClass;
+
+@Document(collection = "ViWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class JAWordMonEntity {
+public class VIWordMonEntity {
     @Id
     public Integer id;
 
     @Field("word")
     public String word;
 
-    @Field("furi")
-    public String furi;
-
-    @Field("romaji")
-    public String romaji;
-
     @Field("tl")
     public String tl;
 
-    @Field("accent")    
-    public String accent;
+    @Field("ChuyenNganh")
+    public String chuyennganh;
 
-    @Field("jlptlevel")
-    public String jlptlevel;
-
+    @Field("LinhVuc")
+    public String linhvuc;
+    
     @Field("sentences")
     public ArrayList<Integer> sens_id;
 
     @Field("similarword")
     public ArrayList<Integer> similar_id;
 
+    @Field("jatrans")
+    public ArrayList<TransRelMonEntity> ja_id;
+
     @Field("entrans")
     public ArrayList<TransRelMonEntity> en_id;
 
-    @Field("vitrans")
-    public ArrayList<TransRelMonEntity> vi_id;
-
-    @Field("oppositeoword")
+    @Field("oppositeword")
     public ArrayList<Integer> opposite_id;
 
     @Field("relatedword")
     public ArrayList<Integer> related_id;
 
     @Field("subinfo")
-    public ArrayList<String> subInfo;
+    public ArrayList<String> subinfo;
 
     @Field("form")
     public ArrayList<WordFormClass> form;
@@ -64,11 +60,11 @@ public class JAWordMonEntity {
         public String word;
 
         @Field("sentences")
-        public ArrayList<Integer> snes_id;
+        public ArrayList<Integer> sens_id;
     }
 
-    public JAWordMonEntity() {
-
+    public VIWordMonEntity() {
+        
     }
 
 

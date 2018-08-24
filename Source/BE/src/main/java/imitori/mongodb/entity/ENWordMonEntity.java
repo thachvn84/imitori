@@ -8,29 +8,20 @@ import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document(collection = "JaWords")
+@Document(collection = "EnWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class JAWordMonEntity {
+public class ENWordMonEntity {
     @Id
     public Integer id;
 
     @Field("word")
     public String word;
 
-    @Field("furi")
-    public String furi;
-
-    @Field("romaji")
-    public String romaji;
+    @Field("spell")
+    public String spell;
 
     @Field("tl")
     public String tl;
-
-    @Field("accent")    
-    public String accent;
-
-    @Field("jlptlevel")
-    public String jlptlevel;
 
     @Field("sentences")
     public ArrayList<Integer> sens_id;
@@ -38,13 +29,13 @@ public class JAWordMonEntity {
     @Field("similarword")
     public ArrayList<Integer> similar_id;
 
-    @Field("entrans")
-    public ArrayList<TransRelMonEntity> en_id;
+    @Field("jatrans")
+    public ArrayList<TransRelMonEntity> ja_id;
 
     @Field("vitrans")
     public ArrayList<TransRelMonEntity> vi_id;
 
-    @Field("oppositeoword")
+    @Field("oppositeword")
     public ArrayList<Integer> opposite_id;
 
     @Field("relatedword")
@@ -64,11 +55,12 @@ public class JAWordMonEntity {
         public String word;
 
         @Field("sentences")
-        public ArrayList<Integer> snes_id;
+        public ArrayList<Integer> sens_id;
+        
     }
 
-    public JAWordMonEntity() {
-
+    public ENWordMonEntity() {
+        
     }
 
 
