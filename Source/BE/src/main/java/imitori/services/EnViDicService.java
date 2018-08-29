@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import imitori.mongodb.entity.ENVIDicMonEntity;
-import imitori.mongodb.repository.ENVIDicMonCrudRepository;
-import imitori.mongodb.repository.ENVIDicMonRepository;
+import imitori.entity.mongodb.ENVIDicMonEntity;
+import imitori.repository.mongodb.ENVIDicMonCrudRepository;
+import imitori.repository.mongodb.ENVIDicMonRepository;
 
 @Service
 public class EnViDicService {

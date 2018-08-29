@@ -12,6 +12,9 @@ public class KanjiClassDto {
     @JsonProperty("mean")
     public String mean;
 
+    public KanjiClassDto() {
+        
+    }
     public KanjiClassDto(Integer id, String k, String m) {
         this.id = id;
         this.klass = k;

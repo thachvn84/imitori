@@ -4,7 +4,16 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import imitori.dto.JAWordDto;
 import imitori.dto.KanjiClassDto;
@@ -12,20 +21,16 @@ import imitori.dto.KanjiDto;
 import imitori.dto.KunyomiDto;
 import imitori.dto.SentenceDto;
 import imitori.dto.VIWordDto;
-import imitori.mongodb.entity.ENVIDicMonEntity;
-import imitori.mongodb.entity.JAENDicMonEntity;
-import imitori.neo4j.dto.WordDto;
-import imitori.neo4j.entity.OppositeToRelNeoEntity;
-import imitori.neo4j.entity.RelatedToRelNeoEntity;
-import imitori.neo4j.entity.SimilarToRelNeoEntity;
-import imitori.neo4j.entity.TranslateToRelNeoEntity;
-import imitori.neo4j.entity.WordEntity;
-import imitori.neo4j.repositories.WordRepository;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+import imitori.dto.neo4j.WordDto;
+import imitori.entity.mongodb.ENVIDicMonEntity;
+import imitori.entity.mongodb.JAENDicMonEntity;
+import imitori.entity.neo4j.OppositeToRelNeoEntity;
+import imitori.entity.neo4j.RelatedToRelNeoEntity;
+import imitori.entity.neo4j.SimilarToRelNeoEntity;
+import imitori.entity.neo4j.TranslateToRelNeoEntity;
+import imitori.entity.neo4j.WordEntity;
+import imitori.repository.neo4j.WordRepository;
+import imitori.services.mongodb.JAWordMonService;
 
 @Service
 public class WordService {
@@ -34,11 +39,13 @@ public class WordService {
     private final WordRepository wordRepository;
     private final JaEnDicService jaEnDicService;
     private final EnViDicService enViDicService;
+    private final JAWordMonService jaWordMonService;
 
-    public WordService(WordRepository wordRepository, JaEnDicService ja, EnViDicService en) {
+    public WordService(WordRepository wordRepository, JaEnDicService ja, EnViDicService en, JAWordMonService jm) {
         this.wordRepository = wordRepository;
         this.jaEnDicService = ja;
         this.enViDicService = en;
+        this.jaWordMonService = jm;
     }
 
     @Transactional(readOnly = true)

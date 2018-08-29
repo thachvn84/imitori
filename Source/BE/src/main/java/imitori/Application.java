@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 
 @SpringBootApplication
-@EnableNeo4jRepositories("imitori.neo4j.repositories")
+@EnableNeo4jRepositories("imitori.repository.neo4j")
 public class Application {
 
     public static void main(String[] args) {
