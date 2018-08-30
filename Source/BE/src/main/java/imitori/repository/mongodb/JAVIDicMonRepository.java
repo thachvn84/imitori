@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
 import imitori.entity.mongodb.JAVIDicMonEntity;
+import imitori.utils.BEConstant;
 
 @Repository
 public class JAVIDicMonRepository {
@@ -46,41 +47,101 @@ public class JAVIDicMonRepository {
         query.addCriteria(Criteria.where("word").is(w.word));
         JAVIDicMonEntity mr = mongoTemplate.findOne(query, JAVIDicMonEntity.class);
         if (mr == null) {
-            return -1;
+            return BEConstant.WORD_NOT_FOUND;
         } 
         if (mr.furigana == null || mr.tl == null) {
-            return -2;
+            return BEConstant.WORD_FOUND_BUT_HAS_NULL_FIELD;
         }
         if (!mr.furigana.equals(w.furigana) || !mr.tl.equals(w.tl)) {
-            return -1;
+            return BEConstant.WORD_NOT_FOUND;
         }
         
         return mr.id;
     }
 
+    /*
+     *  modifyCondition: Modify the Query condition to search.
+     */
+    private Query modifyCondition(String key, String value, int option) {
+        Query query = new Query();
+        switch(option) {
+            case BEConstant.SEARCH_EQUAL:{
+                query.addCriteria(Criteria.where(key).is(value));
+            } break;
+            case BEConstant.SEARCH_CONTAIN: {
+                query.addCriteria(Criteria.where(key).in(value));
+            } break;
+            default: {
+
+            } break;
+        }
+        return query;
+    }
+
+    /*
+     *  searchAllByWord: Search and get multiple word that word.word equal w
+     *  Input:
+     *      String w: input word
+     *      Integer option: 
+     *          SEARCH_EQUAL: search with fully equal between String option
+     *          SEARCH_CONTAIN: search with w is contain in word
+     *  Return value: 
+     *      ArrayList of result
+     */
     public ArrayList<JAVIDicMonEntity> searchAllByWord(String w, Integer option) {
         List<JAVIDicMonEntity> res = new ArrayList<>();
         ArrayList<JAVIDicMonEntity> ares = new ArrayList<>();
-        res = mongoTemplate.find(new Query().addCriteria(Criteria.where("word").is(w)), JAVIDicMonEntity.class);
+
+        Query query = modifyCondition("word", w, option);
+
+        res = mongoTemplate.find(query, JAVIDicMonEntity.class);
         for(int i = 0; i < res.size(); i++) {
             ares.add(res.get(i));
         }
         return ares;
     }
 
+    /*
+     *  searchAllByFurigana: Same as search by word, but key is furigana
+     *  Input & Return value are same searchAllByWord also.
+     */
     public ArrayList<JAVIDicMonEntity> searchAllByFurigana(String w, Integer option) {
         List<JAVIDicMonEntity> res = new ArrayList<>();
-        Query query = new Query();
-        switch(option) {
-            
-        }
-        res = mongoTemplate.find(new Query().addCriteria(Criteria.where("furigana").is(w)), JAVIDicMonEntity.class);
-        
+
+        Query query = modifyCondition("furigana", w, option);
+
+        res = mongoTemplate.find(query, JAVIDicMonEntity.class);
         ArrayList<JAVIDicMonEntity> ares = new ArrayList<>();
         for(int i = 0; i < res.size(); i++) {
             ares.add(res.get(i));
         }
         return ares;
     }
+
+    /*
+     *  updateWordById: Update a word by given id and w data
+     *  This function will search word by id in dic, and update result with new data given by w
+     *  Input:
+     *      Integer id: The word ID
+     *      JAVIDicMonEntity w: The w data.
+     *  Return value: 
+     *      word id
+     */
+    public Integer updateWordById(Integer id, JAVIDicMonEntity w) {
+        Query query = new Query();
+
+        query.addCriteria(Criteria.where("id").is(id));
+        query.limit(1);
+
+        JAVIDicMonEntity res = mongoTemplate.findOne(query, JAVIDicMonEntity.class);
+        if (res != null) {
+            res.updateFrom(w);
+        } else {
+            return BEConstant.WORD_NOT_FOUND;
+        }
+
+        return res.id;
+    }
+
 
 }

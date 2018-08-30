@@ -57,5 +57,10 @@ public class JAVIDicMonService {
         return res;
     }
 
+    @Transactional(readOnly = true)
+    public Integer updateWord(Integer id, JAVIDicMonEntity w) {
+        return this.jvrep.updateWordById(id, w);
+    }
+
 
 }
