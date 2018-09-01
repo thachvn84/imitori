@@ -91,6 +91,7 @@ public class JAVIDicMonEntity {
                     this.means.get(existed_id).linhvuc = w.means.get(i).linhvuc != null ? 
                                                          w.means.get(i).linhvuc : 
                                                          this.means.get(existed_id).linhvuc;
+                    //Check the array list of sentence in means, if ja is existed, update vi, if not, add.
                     if (w.means.get(i).sentences != null) {
                         for (int l = 0; l < w.means.get(i).sentences.size(); l++) {
                             boolean sens_existed = false;
@@ -113,6 +114,7 @@ public class JAVIDicMonEntity {
                             }
                         }
                     }
+                    // Check the array list of similar word, if existed, update. If not existed, add.
                     if (w.means.get(i).similarword != null) {
                         if (this.means.get(existed_id).similarword != null) {
                             for (int a = 0; a < w.means.get(i).similarword.size(); a++) {
@@ -127,6 +129,7 @@ public class JAVIDicMonEntity {
                             this.means.get(existed_id).similarword = w.means.get(i).similarword;
                         }
                     }
+                    // Check the array list of opposite word, if existed, update. If not existed, add.
                     if (w.means.get(i).oppositeword != null) {
                         if (this.means.get(existed_id).oppositeword != null) {
                             for (int a = 0; a < w.means.get(i).oppositeword.size(); a++) {
@@ -141,6 +144,7 @@ public class JAVIDicMonEntity {
                             this.means.get(existed_id).oppositeword = w.means.get(i).oppositeword;
                         }
                     }
+                    // Check the array list of relate word, if existed, update. If not existed, add.
                     if (w.means.get(i).relatedword != null) {
                         if (this.means.get(existed_id).relatedword != null) {
                             for (int a = 0; a < w.means.get(i).relatedword.size(); a++) {

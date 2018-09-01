@@ -32,6 +32,24 @@ public class JAVIDicMonRepository {
     }
 
     /*
+     * Search a word by given string, and return this id if found, if not, return -1
+     * Return value: 
+     *  -1 : Not found
+     *  id : ID of found word
+     */
+    public Integer searchWord(String w) {
+        Query query = new Query();
+        query.limit(1);
+        query.addCriteria(Criteria.where("word").is(w));
+        JAVIDicMonEntity mr = mongoTemplate.findOne(query, JAVIDicMonEntity.class);
+        if (mr == null) {
+            return BEConstant.WORD_NOT_FOUND;
+        } else {
+            return mr.id;
+        }
+    }
+
+    /*
      * Search a word, and return this id if found, if not, return -1
      * Comparision condition (AND conditions):
      *  - word equal
