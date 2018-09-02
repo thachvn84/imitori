@@ -224,4 +224,21 @@ public class VIJADicMonEntity {
         ArrayList<String> res = new ArrayList<>();
         return res;
     }
+
+    public void updateFrom(VIJADicMonEntity w) {
+        this.word = w.word != null ? w.word : this.word;
+        if (w.means != null) {
+            if (this.means == null) {
+                this.means = new ArrayList<>();
+            }
+            this.means = w.means;
+        }
+
+        if (w.fieldmean != null) {
+            if (this.fieldmean == null) {
+                this.fieldmean = new ArrayList<>();
+            }
+            this.fieldmean = w.fieldmean;
+        }
+    }
 }

@@ -71,13 +71,13 @@ public class JAENDicMonEntity {
 
     public static class k_ele_Class {
         @Field("keb")
-        private String keb;
+        public String keb;
 
         @Field("ke_inf")
-        private List<String> ke_inf;
+        public List<String> ke_inf;
 
         @Field("ke_pri")
-        private List<String> ke_pri;
+        public List<String> ke_pri;
 
         public String getkeb() {
             return this.keb;
@@ -106,19 +106,19 @@ public class JAENDicMonEntity {
 
     public static class r_ele_Class {
         @Field("reb")
-        private String reb;
+        public String reb;
 
         @Field("re_nokanji")
-        private String re_nokanji;
+        public String re_nokanji;
 
         @Field("re_restr")
-        private List<String> re_restr;
+        public List<String> re_restr;
 
         @Field("re_inf")
-        private List<String> re_inf;
+        public List<String> re_inf;
 
         @Field("re_pri")
-        private List<String> re_pri;
+        public List<String> re_pri;
 
         public String getreb() {
             return this.reb;
@@ -164,40 +164,40 @@ public class JAENDicMonEntity {
 
     public static class sense_Class {
         @Field("stagk")
-        private List<String> stagk;
+        public List<String> stagk;
 
         @Field("stagr")
-        private List<String> stagr;
+        public List<String> stagr;
 
         @Field("pos")
-        private List<String> pos;
+        public List<String> pos;
 
         @Field("xref")
-        private List<String> xref;
+        public List<String> xref;
 
         @Field("ant")
-        private List<String> ant;
+        public List<String> ant;
 
         @Field("field")
-        private List<String> field;
+        public List<String> field;
 
         @Field("misc")
-        private List<String> misc;
+        public List<String> misc;
 
         @Field("s_inf")
-        private String s_inf;
+        public String s_inf;
 
         @Field("lsource")
-        private List<lsource_Class> lsource;
+        public List<lsource_Class> lsource;
 
         @Field("dial")
-        private List<String> dial;
+        public List<String> dial;
 
         @Field("gloss_mean")
-        private List<String> gloss_mean;
+        public List<String> gloss_mean;
 
         @Field("gloss_phrase")
-        private List<gloss_phrase_Class> gloss_phrase;
+        public List<gloss_phrase_Class> gloss_phrase;
 
         public List<String> getstagk() {
             return this.stagk;
@@ -299,16 +299,16 @@ public class JAENDicMonEntity {
 
     public static class lsource_Class {
         @Field("xml_lang")
-        private String xml_lang;
+        public String xml_lang;
 
         @Field("content")
-        private String content;
+        public String content;
 
         @Field("ls_type")
-        private String ls_type;
+        public String ls_type;
 
         @Field("ls_wasei")
-        private String ls_wasei;
+        public String ls_wasei;
 
         public String getxml_lang() {
             return this.xml_lang;
@@ -345,10 +345,10 @@ public class JAENDicMonEntity {
 
     public static class gloss_phrase_Class {
         @Field("g_type")
-        private String g_type;
+        public String g_type;
 
         @Field("content")
-        private String content;
+        public String content;
 
         public String getg_type() {
             return this.g_type;
@@ -399,6 +399,34 @@ public class JAENDicMonEntity {
         StringUtils f = new StringUtils();
 
         return f.removeDuplicate(res);
+    }
+
+    public void updateFrom(JAENDicMonEntity w) {
+        this.ent_seq = w.ent_seq != 0 ? w.ent_seq : this.ent_seq;
+        if (w.k_ele != null) {
+            if (this.k_ele != null) {
+                this.k_ele = w.k_ele;
+            } else {
+                this.k_ele = new ArrayList<>();
+                this.k_ele = w.k_ele;
+            }
+        }
+        if (w.r_ele != null) {
+            if (this.r_ele != null) {
+                this.r_ele = w.r_ele;
+            } else {
+                this.r_ele = new ArrayList<>();
+                this.r_ele = w.r_ele;
+            }
+        }
+        if (w.sense != null) {
+            if (this.sense != null) {
+                this.sense = new ArrayList<>();
+            } else {
+                this.sense = new ArrayList<>();
+                this.sense = w.sense;
+            }
+        }
     }
 
 }

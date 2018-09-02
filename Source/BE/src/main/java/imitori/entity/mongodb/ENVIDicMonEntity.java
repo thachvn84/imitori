@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import org.apache.tomcat.websocket.WsPongMessage;
 import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -299,5 +300,24 @@ public class ENVIDicMonEntity {
         StringUtils f = new StringUtils();
 
         return f.removeDuplicate(res);
+    }
+
+    public void updateFrom(ENVIDicMonEntity w) {
+        this.word = w.word != null ? w.word : this.word;
+        this.spell = w.spell != null ? w.spell : this.spell;
+        if (w.means != null) {
+            if (this.means != null) {
+                this.means = w.means;
+            } else {
+                this.means = new ArrayList<>();
+                this.means = w.means;
+            }
+        }
+        if (w.fieldmeans != null) {
+            if (this.fieldmeans == null) {
+                this.fieldmeans = new ArrayList<>();
+            }
+            this.fieldmeans = w.fieldmeans;
+        }
     }
 }
