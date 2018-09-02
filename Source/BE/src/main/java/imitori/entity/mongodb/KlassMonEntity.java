@@ -21,5 +21,15 @@ public class KlassMonEntity {
     @Field("mean")
     public String mean;
 
+    public KlassMonEntity() {
+
+    }
+
+    public void updateFrom(KlassMonEntity w) {
+        this.klass = w.klass;
+        this.hanviet = w.hanviet;
+        this.mean = w.mean;
+    }
+
 
 }
