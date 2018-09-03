@@ -89,7 +89,7 @@ public class VIWordMonRepository {
         List<VIWordMonEntity> res = new ArrayList<>();
         ArrayList<VIWordMonEntity> ares = new ArrayList<>();
 
-        Query query = new MongoUtils().modifyCondition("word", w, option);
+        Query query = MongoUtils.modifyCondition("word", w, option);
         res = mongoTemplate.find(query, VIWordMonEntity.class);
 
         for (int i = 0; i < res.size(); i++) {

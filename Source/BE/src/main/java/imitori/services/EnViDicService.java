@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import imitori.entity.mongodb.ENVIDicMonEntity;
 import imitori.repository.mongodb.ENVIDicMonCrudRepository;
 import imitori.repository.mongodb.ENVIDicMonRepository;
+import imitori.utils.BEConstant;
 
 @Service
 public class EnViDicService {
@@ -69,7 +70,7 @@ public class EnViDicService {
     @Transactional(readOnly = true)
     public ArrayList<ENVIDicMonEntity> getWordByWord(String w) {
         ArrayList<ENVIDicMonEntity> res = new ArrayList<>();
-        return this.enVIWordRepository.findByWord(w);
+        return this.enVIWordRepository.findAllByWord(w, BEConstant.SEARCH_CONTAIN);
     }
 
 }

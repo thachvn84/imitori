@@ -1,6 +1,7 @@
 package imitori.services.mongodb;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -87,19 +88,30 @@ public class JAVIDicMonService {
      * ======================== SEARCH ONE ========================
      */
     @Transactional(readOnly = true)
-    public JAVIDicMonEntity findFirstWord(String w, Integer option) {
+    public JAVIDicMonEntity findFirstWord(String w) {
         JAVIDicMonEntity res = new JAVIDicMonEntity();
-
-        // TODO: Implement this function.
-
+        Integer res_id = jvrep.searchWord(w);
+        if (res_id >= 0) {
+            Optional<JAVIDicMonEntity> opt = jvcrudrep.findById(res_id);
+            if (opt.isPresent()) {
+                res = opt.get();
+            }
+        }
         return res;
     }
 
+    /*
+     * Search by furigana and return first result
+     */
     @Transactional(readOnly = true)
     public JAVIDicMonEntity findFirstFurigana(String w, Integer option) {
-        JAVIDicMonEntity res = new JAVIDicMonEntity();
-
-        return res;
+        ArrayList<JAVIDicMonEntity> res = new ArrayList<>();
+        res = jvrep.searchAllByFurigana(w, option);
+        if (res.size() > 0) {
+            return res.get(0);
+        } else {
+            return new JAVIDicMonEntity();
+        }
     }
     /*
      * ======================== SEARCH ALL ========================

@@ -79,6 +79,11 @@ public class JAENDicMonEntity {
         @Field("ke_pri")
         public List<String> ke_pri;
 
+        public k_ele_Class(String k) {
+            this.keb = k;
+            this.ke_inf = new ArrayList<>();
+            this.ke_pri = new ArrayList<>();
+        }
         public String getkeb() {
             return this.keb;
         }
@@ -119,6 +124,13 @@ public class JAENDicMonEntity {
 
         @Field("re_pri")
         public List<String> re_pri;
+
+        public r_ele_Class(String furi) {
+            this.reb = furi;
+            this.re_restr = new ArrayList<>();
+            this.re_inf = new ArrayList<>();
+            this.re_pri = new ArrayList<>();
+        }
 
         public String getreb() {
             return this.reb;
@@ -427,6 +439,16 @@ public class JAENDicMonEntity {
                 this.sense = w.sense;
             }
         }
+    }
+
+    public ArrayList<String> getKeb() {
+        ArrayList<String> res = new ArrayList<>();
+        return res;
+    }
+
+    public ArrayList<String> getReb() {
+        ArrayList<String> res = new ArrayList<>();
+        return res;
     }
 
 }

@@ -1,0 +1,6 @@
+Class policy: 
+    1. VIWordNeoEntity
+    2. JAWordNeoEntity
+    3. ENWordNeoEntity
+    4. SensNeoEntity
+    4. KanjiNeoEntity

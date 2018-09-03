@@ -1,11 +1,13 @@
 package imitori.services.mongodb;
 
+import java.util.ArrayList;
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import imitori.dto.KanjiClassDto;
 import imitori.entity.mongodb.KlassMonEntity;
 import imitori.repository.mongodb.KlassMonCrudRepository;
 import imitori.repository.mongodb.KlassMonRepository;
@@ -54,6 +56,7 @@ public class KlassMonService {
         if (id == -1) {
             id = this.krep.getMaxId() + 1;
             kj.id = id;
+            this.kcrudrep.insert(kj);
             return id;
         } else {
             return id;
@@ -78,13 +81,73 @@ public class KlassMonService {
     /*
      * ======================== SEARCH ONE ========================
      */
-
+    /*
+     * Search by klass and return first result.
+     */
+    @Transactional(readOnly = true)
+    public KlassMonEntity findFirstKlass(String w) {
+        KlassMonEntity res = new KlassMonEntity();
+        Integer res_id = krep.searchKlass(w);
+        if (res_id >= 0) {
+            Optional<KlassMonEntity> opt = kcrudrep.findById(res_id);
+            if (opt.isPresent()) {
+                res = opt.get();
+            }
+        }
+        return res;
+    }
+    /*
+     * Search by hanviet and return first result
+     */
+    @Transactional(readOnly = true)
+    public KlassMonEntity findFirstHV(String w, Integer option) {
+        ArrayList<KlassMonEntity> res = new ArrayList<>();
+        res = krep.searchAllByHanviet(w, option);
+        if (res.size() > 0) {
+            return res.get(0);
+        } else {
+            return new KlassMonEntity();
+        }
+    }
+    /*
+     * Search by mean and return first result
+     */
+    @Transactional(readOnly = true)
+    public KlassMonEntity findFirstMean(String w) {
+        ArrayList<KlassMonEntity> res = new ArrayList<>();
+        res = krep.searchAllByMean(w, BEConstant.SEARCH_CONTAIN);
+        if (res.size() > 0) {
+            return res.get(0);
+        } else {
+            return new KlassMonEntity();
+        }
+    }
      /*
      * ======================== SEARCH ALL ========================
      */
     /*
+     *  Search All by Hanviet
+     */
+    @Transactional(readOnly = true)
+    public ArrayList<KlassMonEntity> searchAllByHV(String w, Integer option) {
+        ArrayList<KlassMonEntity> res = krep.searchAllByHanviet(w, option);
+        return res;
+    }
+    /*
+     *  Search All by mean
+     */
+    @Transactional(readOnly = true)
+    public ArrayList<KlassMonEntity> searchAllByMeans(String w) {
+        ArrayList<KlassMonEntity> res = krep.searchAllByMean(w, BEConstant.SEARCH_CONTAIN);
+        return res;
+    }
+    /*
      * ======================== MODIFY ONE ========================
      */
+    @Transactional(readOnly = true)
+    public Integer updateWord(Integer id, KlassMonEntity w) {
+        return this.krep.updateKlassById(id, w);
+    }
     /*
      * ======================== MODIFY BATCH ======================
      */

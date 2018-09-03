@@ -92,7 +92,7 @@ public class JAENDicMonRepository {
         List<JAENDicMonEntity> res = new ArrayList<>();
         ArrayList<JAENDicMonEntity> ares = new ArrayList<>();
 
-        Query query = new MongoUtils().modifyCondition("k_ele.keb", w, option);
+        Query query = MongoUtils.modifyCondition("k_ele.keb", w, option);
         res = mongoTemplate.find(query, JAENDicMonEntity.class);
 
         for (int i = 0; i < res.size();  i++) {
@@ -115,7 +115,7 @@ public class JAENDicMonRepository {
         List<JAENDicMonEntity> res = new ArrayList<>();
         ArrayList<JAENDicMonEntity> ares = new ArrayList<>();
 
-        Query query = new MongoUtils().modifyCondition("r_ele.reb", w, option);
+        Query query = MongoUtils.modifyCondition("r_ele.reb", w, option);
         res = mongoTemplate.find(query, JAENDicMonEntity.class);
 
         for (int i = 0; i < res.size();  i++) {

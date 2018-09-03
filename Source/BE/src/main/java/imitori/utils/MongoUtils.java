@@ -3,11 +3,11 @@ package imitori.utils;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
-public class MongoUtils {
+public final class MongoUtils {
     /*
      *  modifyCondition: Modify the Query condition to search.
      */
-    public Query modifyCondition(String key, String value, int option) {
+    public static Query modifyCondition(String key, String value, int option) {
         Query query = new Query();
         switch(option) {
             case BEConstant.SEARCH_EQUAL:{

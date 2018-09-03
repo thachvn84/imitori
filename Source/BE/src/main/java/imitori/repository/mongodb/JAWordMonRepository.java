@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import imitori.entity.mongodb.JAWordMonEntity;
 import imitori.utils.BEConstant;
+import imitori.utils.MongoUtils;
 
 @Repository
 public class JAWordMonRepository {
@@ -77,25 +78,6 @@ public class JAWordMonRepository {
     }
 
     /*
-     *  modifyCondition: Modify the Query condition to search.
-     */
-    private Query modifyCondition(String key, String value, int option) {
-        Query query = new Query();
-        switch(option) {
-            case BEConstant.SEARCH_EQUAL:{
-                query.addCriteria(Criteria.where(key).is(value));
-            } break;
-            case BEConstant.SEARCH_CONTAIN: {
-                query.addCriteria(Criteria.where(key).in(value));
-            } break;
-            default: {
-
-            } break;
-        }
-        return query;
-    }
-
-    /*
      *  searchAllByWord: Search and get multiple word that word.word equal w
      *  Input:
      *      String w: input word
@@ -109,7 +91,7 @@ public class JAWordMonRepository {
         List<JAWordMonEntity> res = new ArrayList<>();
         ArrayList<JAWordMonEntity> ares = new ArrayList<>();
 
-        Query query = modifyCondition("word", w, option);
+        Query query = MongoUtils.modifyCondition("word", w, option);
         res = mongoTemplate.find(query, JAWordMonEntity.class);
 
         for (int i = 0; i < res.size(); i++) {
@@ -124,7 +106,7 @@ public class JAWordMonRepository {
     public ArrayList<JAWordMonEntity> searchAllByFurigana(String w, Integer option) {
         List<JAWordMonEntity> res = new ArrayList<>();
 
-        Query query = modifyCondition("furigana", w, option);
+        Query query = MongoUtils.modifyCondition("furigana", w, option);
         res = mongoTemplate.find(query, JAWordMonEntity.class);
 
         ArrayList<JAWordMonEntity> ares = new ArrayList<>();

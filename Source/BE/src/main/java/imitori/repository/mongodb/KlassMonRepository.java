@@ -74,7 +74,7 @@ public class KlassMonRepository {
         if (!mr.hanviet.equals(k.hanviet) || !mr.mean.equals(k.mean)) {
             return BEConstant.WORD_NOT_FOUND;
         }
-        return -1;
+        return mr.id;
     }
 
     /*
@@ -91,7 +91,7 @@ public class KlassMonRepository {
         List<KlassMonEntity> res = new ArrayList<>();
         ArrayList<KlassMonEntity> ares = new ArrayList<>();
         
-        Query query  = new MongoUtils().modifyCondition("hanviet", hv, option);
+        Query query  = MongoUtils.modifyCondition("hanviet", hv, option);
         res = mongoTemplate.find(query, KlassMonEntity.class);
         
         for (int i = 0; i < res.size(); i++) {
@@ -107,7 +107,7 @@ public class KlassMonRepository {
     public ArrayList<KlassMonEntity> searchAllByMean(String w, Integer option) {
         List<KlassMonEntity> res = new ArrayList<>();
 
-        Query query = new MongoUtils().modifyCondition("mean", w, option);
+        Query query = MongoUtils.modifyCondition("mean", w, option);
         res = mongoTemplate.find(query, KlassMonEntity.class);
 
         ArrayList<KlassMonEntity> ares = new ArrayList<>();
