@@ -1,25 +1,33 @@
 package imitori.entity.neo4j;
 
 import java.util.ArrayList;
+
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
-import imitori.utils.JapaneseCharacter;
-
-@NodeEntity(label = "JAWord")
-public class JAWordNeoEntity {
+@NodeEntity(label="Word")
+public class WordNeoEntity {
     @Id
     @GeneratedValue
     private Integer id;
+
     public String word;
-    public String furigana;
-    public String romaji;
-    public String tl;
-    
-    //Depend on "lang", the id should query from JA/EN/ or even VN mongoDict
-    public Integer mongoId;
+    public String spell;
+    public Integer tl;
+
+    /* wordtype: to detect which type of this word:
+        NEO_JA_TYPE: JAWord
+        NEO_EN_TYPE: ENWord
+        NEO_VI_TYPE: VIWord
+        Depend on type, will query corresponding MongoDB collection
+        to get word information
+    */
+    public Integer wordtype; 
+
+    /* The ID of Mongo Collection */
+    public Integer mongoId; 
 
     @Relationship(type = "SIMILAR_TO", direction = Relationship.OUTGOING)
     private ArrayList<SimilarToRelNeoEntity> similarTo = new ArrayList<>();
@@ -48,24 +56,13 @@ public class JAWordNeoEntity {
     @Relationship(type = "HAS_SENTENCES", direction = Relationship.OUTGOING)
     private ArrayList<SensRelNeoEntity> sentences = new ArrayList<>();
 
-    public JAWordNeoEntity() {
+    public WordNeoEntity() {
     }
 
-    String toRomaji(String furi) {
-        String res = "";
-        for (int i = 0; i < furi.length(); i++)
-        {
-            res += JapaneseCharacter.toRomaji(furi.charAt(i));
-        } 
-        return res;
-
-    }
-
-    public JAWordNeoEntity(Integer id, String word, String furi, String tl) {
+    public WordNeoEntity(Integer id, String word, String spell, Integer tl) {
         this.id = id;
         this.word = word;
-        this.furigana = furi;
-        this.romaji = toRomaji(furi);
+        this.spell = spell;
         this.tl = tl;
     }
 

@@ -45,20 +45,10 @@ public class ENWordNeoEntity {
     @Relationship(type = "OPPOSITE_TO", direction = Relationship.INCOMING)
     private ArrayList<OppositeToRelNeoEntity> oppisteFrom = new ArrayList<>();
 
-    @Relationship(type = "HAS_EXAMPLE", direction = Relationship.OUTGOING)
-    private ArrayList<HasExampleRelNeoEntity> hasExample = new ArrayList<>();
+    @Relationship(type = "HAS_SENTENCES", direction = Relationship.OUTGOING)
+    private ArrayList<SensRelNeoEntity> sentences = new ArrayList<>();
 
     public ENWordNeoEntity() {
-    }
-
-    String toRomaji(String furi) {
-        String res = "";
-        for (int i = 0; i < furi.length(); i++)
-        {
-            res += JapaneseCharacter.toRomaji(furi.charAt(i));
-        } 
-        return res;
-
     }
 
     public Integer getId() {
@@ -97,28 +87,12 @@ public class ENWordNeoEntity {
         return this.oppisteFrom;
     }
 
-    public ArrayList<HasExampleRelNeoEntity> getHasExample() {
-        return this.hasExample;
+    public ArrayList<SensRelNeoEntity> getSentences() {
+        return this.sentences;
     }
     @Override
     public String toString() {
         String res = new String();
-        /*
-            WordEntity {
-                id: 00000
-                word: A
-                spell: [A1, A2],
-                lang : EN
-                similarTo: [Id1, Id2],
-                similarFrom: [Id3, Id4],
-                TranslateTo: [Id5, Id6],
-                TranslateFrom: [Id7, Id8],
-                RelatedTo: [Id9],
-                RelatedFrom: [Id10],
-                OppositeTo: [Id11],
-                OppositeFrom: [Id12]
-            }
-        */
 
         return res;
     }
