@@ -1,6 +1,21 @@
-Class policy: 
-    1. VIWordNeoEntity
-    2. JAWordNeoEntity
-    3. ENWordNeoEntity
-    4. SensNeoEntity
-    4. KanjiNeoEntity
+Neo4J classes: 
+    Dic class (with major field): 
+        1. ENVIDicNeoEntity
+        2. JAENDicNeoEntity
+        3. JAVIDicNeoEntity
+        4. VIJADicNeoEntity
+    WordClass (with major field):
+        1. ENWordNeoEntity
+        2. JAWordNeoEntity
+        3. VIWordNeoEntity
+    KanjiClass: 
+        1. KanjiNeoEntity
+        2. KlassNeoEntity
+    Sentences:
+        1. SensNeoEntity
+    Relation: 
+        1. TransRelNeoEntity
+        2. RelatedRelNeoEntity
+        3. OppositeRelNeoEntity
+        4. SimilarRelNeoEntity
+        5. SensRelNeoEntity

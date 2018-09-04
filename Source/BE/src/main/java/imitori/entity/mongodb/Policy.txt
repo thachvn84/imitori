@@ -1,0 +1,20 @@
+MongoDB classes: 
+    Dic class: 
+        1. ENVIDicMonEntity　★
+        2. JAENDicMonEntity　★
+        3. JAVIDicMonEntity　★
+        4. VIJADicMonEntity　★
+    Word class: 
+        1. ENWordMonEntity　★
+        2. JAWordMonEntity　★
+        3. VIWordMonEntity　★
+    KanjiClass:
+        1. KanjiMonEntity　★
+        2. KlassMonEntity　★
+    Sentences: 
+        1. SensMonEntity (id, ja, vi, en)　★
+    Relation: 
+        1. TransRelMonEntity (id, from, to, score) ★
+        2. RelatedRelMonEntity ★
+        3. OppositeRelMonEntity ★
+        4. SimilarRelMonEntity ★

@@ -8,6 +8,8 @@ import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import imitori.utils.MongoUtils;
+
 @Document(collection = "JaWords")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JAWordMonEntity {
@@ -42,7 +44,7 @@ public class JAWordMonEntity {
     public ArrayList<Integer> sens_id;
 
     @Field("similarword")
-    public ArrayList<Integer> similar_id;
+    public ArrayList<SimilarRelMonEntity> similar_id;
 
     @Field("entrans")
     public ArrayList<TransRelMonEntity> en_id;
@@ -51,10 +53,10 @@ public class JAWordMonEntity {
     public ArrayList<TransRelMonEntity> vi_id;
 
     @Field("oppositeoword")
-    public ArrayList<Integer> opposite_id;
+    public ArrayList<OppositeRelMonEntity> opposite_id;
 
     @Field("relatedword")
-    public ArrayList<Integer> related_id;
+    public ArrayList<RelatedRelMonEntity> related_id;
 
     @Field("subinfo")
     public ArrayList<String> subInfo;
@@ -103,44 +105,17 @@ public class JAWordMonEntity {
 
         /* Similar Word */
         if (w.similar_id != null) {
-            if (this.similar_id != null) {
-                for (int i = 0; i < w.similar_id.size(); i++) {
-                    if (!this.similar_id.contains(w.similar_id.get(i))) {
-                        this.similar_id.add(w.similar_id.get(i));
-                    }
-                }
-            } else {
-                this.similar_id = new ArrayList<>();
-                this.similar_id = w.similar_id;
-            }
+            this.similar_id = MongoUtils.mergeSimRel(this.similar_id, w.similar_id);
         }
 
         /* Opposite word*/
         if (w.opposite_id != null) {
-            if (this.opposite_id != null) {
-                for (int i = 0; i < w.opposite_id.size(); i++) {
-                    if (!this.opposite_id.contains(w.opposite_id.get(i))) {
-                        this.opposite_id.add(w.opposite_id.get(i));
-                    }
-                }
-            } else {
-                this.opposite_id = new ArrayList<>();
-                this.opposite_id = w.opposite_id;
-            }
+            this.opposite_id = MongoUtils.mergeOppRel(this.opposite_id, w.opposite_id);
         }
 
         /* Related word */
         if (w.related_id != null) {
-            if (this.related_id != null) {
-                for (int i = 0; i < w.related_id.size(); i++) {
-                    if (!this.related_id.contains(w.related_id.get(i))) {
-                        this.related_id.add(w.related_id.get(i));
-                    }
-                }
-            } else {
-                this.related_id = new ArrayList<>();
-                this.related_id = w.related_id;
-            }
+            this.related_id = MongoUtils.mergeRelRel(this.related_id, w.related_id);
         }
 
         /* Sub info */
@@ -159,44 +134,11 @@ public class JAWordMonEntity {
 
         /* En Trans */
         if (w.en_id != null) {
-            if (this.en_id != null) {
-                for (int i = 0; i < w.en_id.size(); i++) {
-                    // Check if current en_id list is contain w.to or not
-                    boolean trans_found = false;
-                    for (int j = 0; j < this.en_id.size(); j++) {
-                        if (w.en_id.get(i).to == this.en_id.get(j).to) {
-                            this.en_id.get(j).score = w.en_id.get(i).score;
-                            trans_found = true;
-                            break;
-                        }
-                    }
-                    if (!trans_found) {
-                        this.en_id.add(w.en_id.get(i));
-                    }
-                }
-            } else {
-                this.en_id = new ArrayList<>();
-                this.en_id = w.en_id;
-            }
+            this.en_id = MongoUtils.mergeTransRel(this.en_id, w.en_id);
         }
         /* Vi Trans */
         if (w.vi_id != null) {
-            if (this.vi_id != null) {
-                for (int i = 0; i < w.vi_id.size(); i++) {
-                    //Check if current vi_id list is contain w.to or not
-                    boolean trans_found = false;
-                    for (int j = 0; j < this.vi_id.size(); j++) {
-                        if (w.vi_id.get(i).to == this.vi_id.get(j).to) {
-                            this.vi_id.get(j).score = w.en_id.get(i).score;
-                            trans_found = true;
-                            break;
-                        }
-                    }
-                    if (!trans_found) {
-                        this.vi_id.add(w.vi_id.get(i));
-                    }
-                }
-            }
+            this.vi_id = MongoUtils.mergeTransRel(this.vi_id, w.vi_id);
         }
 
         /* Word Form */

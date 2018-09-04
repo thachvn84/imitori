@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import org.apache.tomcat.websocket.WsPongMessage;
 import org.neo4j.ogm.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;

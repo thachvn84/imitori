@@ -8,6 +8,9 @@ public class JapaneseCharacter {
 	private final static String VERSION =
 			"$Id: JapaneseCharacter.java,v 1.2 2002/04/20 18:10:24 djmay Exp $";
 
+	public static String getVersion() {
+		return VERSION;
+	}
 	/**
 	 * Determines if this character is a Japanese Kana.
 	 */
