@@ -1,10 +1,12 @@
-package imitori.entity.neo4j;
+package imitori.entity.neo4j.rel;
 
 import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
+
+import imitori.entity.neo4j.WordNeoEntity;
 
 @RelationshipEntity(type = "SIMILAR_TO")
 public class SimilarToRelNeoEntity {
@@ -15,10 +17,10 @@ public class SimilarToRelNeoEntity {
     public Integer score;
 
     @StartNode
-    public WordEntity startWord;
+    public WordNeoEntity startWord;
 
     @EndNode
-    public WordEntity endWord;
+    public WordNeoEntity endWord;
 
     public Integer getId() {
         return id;

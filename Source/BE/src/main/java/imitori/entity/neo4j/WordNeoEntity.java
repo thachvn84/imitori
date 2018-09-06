@@ -7,6 +7,12 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
+import imitori.entity.neo4j.rel.OppositeToRelNeoEntity;
+import imitori.entity.neo4j.rel.RelatedToRelNeoEntity;
+import imitori.entity.neo4j.rel.SensRelNeoEntity;
+import imitori.entity.neo4j.rel.SimilarToRelNeoEntity;
+import imitori.entity.neo4j.rel.TranslateToRelNeoEntity;
+
 @NodeEntity(label="Word")
 public class WordNeoEntity {
     @Id
@@ -15,6 +21,11 @@ public class WordNeoEntity {
 
     public String word;
     public String spell;
+
+    /*
+    * Tl: Please refer to BEConstant.java file
+    * Section: Tuloai
+    */
     public Integer tl;
 
     /* wordtype: to detect which type of this word:
