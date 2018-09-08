@@ -6,6 +6,13 @@ public final class BEConstant {
     public static final int NEO_JA_WORD = 1000;
     public static final int NEO_EN_WORD = 2000;
     public static final int NEO_VI_WORD = 3000;
+    //NeoDicType
+    public static final int NEO_JAEN_DIC = 4000;
+    public static final int NEO_JAVI_DIC = 5000;
+    public static final int NEO_ENVI_DIC = 6000;
+    public static final int NEO_ENJA_DIC = 7000;
+    public static final int NEO_VIJA_DIC = 8000;
+    public static final int NEO_VIEN_DIC = 9000;
 
     //Tuloai
     public static final int TL_ABBR = 10001; //Abbreviation

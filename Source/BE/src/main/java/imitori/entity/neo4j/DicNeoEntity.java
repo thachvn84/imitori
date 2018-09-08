@@ -16,12 +16,12 @@ public class DicNeoEntity {
     private Integer id;
 
     /* dictype: To detect which type of this dic
-        NEO_JAVI_TYPE: JA-VI dict
-        NEO_JAEN_TYPE: JA-EN dict
-        NEO_ENVI_TYPE: EN-VI dict
-        NEO_ENJA_TYPE: EN-JA dict
-        NEO_VIJA_TYPE: VI-JA dict
-        NEO_VIEN_TYPE; VI-EN dict
+        NEO_JAVI_DIC: JA-VI dict
+        NEO_JAEN_DIC: JA-EN dict
+        NEO_ENVI_DIC: EN-VI dict
+        NEO_ENJA_DIC: EN-JA dict
+        NEO_VIJA_DIC: VI-JA dict
+        NEO_VIEN_DIC; VI-EN dict
     */
     public Integer dictype;
 

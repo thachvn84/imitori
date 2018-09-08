@@ -28,7 +28,15 @@ public class KanjiMonEntity {
     public ArrayList<String> onyomi;
 
     @Field("kunyomi")
-    public ArrayList<String> kunyomi;
+    public ArrayList<Kunyomi_Class> kunyomi;
+
+    public class Kunyomi_Class {
+        @Field("kun")
+        public String kun;
+        
+        @Field("okuri")
+        public String okuri;
+    }
 
     @Field("jpltlevel")
     public String jlptlevel;
@@ -71,7 +79,15 @@ public class KanjiMonEntity {
         if (w.kunyomi != null) {
             if (this.kunyomi != null) {
                 for (int i = 0; i < w.kunyomi.size(); i++) {
-                    if (!this.kunyomi.contains(w.kunyomi.get(i))) {
+                    boolean found_kun = false;
+                    for (int j = 0; j < this.kunyomi.size(); j++) {
+                        if (this.kunyomi.get(j).kun.equals(w.kunyomi.get(i).kun)) {
+                            found_kun = true;
+                            this.kunyomi.get(j).okuri = w.kunyomi.get(i).okuri;
+                            break;
+                        }
+                    }
+                    if (!found_kun) {
                         this.kunyomi.add(w.kunyomi.get(i));
                     }
                 }
