@@ -12,6 +12,10 @@ public class WordNeoService {
 
     private final WordNeoRepository repo;
 
+    public WordNeoService(WordNeoRepository rp) {
+        LOG.debug("Initliaze");
+        this.repo = rp;
+    }
     /*
      * ======================== INITIALIZE ========================
      */

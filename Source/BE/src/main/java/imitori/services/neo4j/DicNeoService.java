@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service 
 public class DicNeoService {
-    private final static Logger LOG = LoggerFactory.getLogger(DicNeoService.class)
+    private final static Logger LOG = LoggerFactory.getLogger(DicNeoService.class);
 
     private final DicNeoRepository repo;
 

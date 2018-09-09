@@ -12,6 +12,11 @@ public class SensNeoService {
 
     private final SensNeoRepository repo;
 
+    public SensNeoService(SensNeoRepository rp) {
+        LOG.debug("Initialize");
+        this.repo = rp;
+    }
+
     /*
      * ======================== INITIALIZE ========================
      */

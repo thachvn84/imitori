@@ -1,21 +1,43 @@
 package imitori.repository.neo4j;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
-import org.springframework.data.neo4j.annotation.Query;
-import org.springframework.data.neo4j.repository.Neo4jRepository;
-import org.springframework.data.repository.query.Param;
-
-import imitori.entity.neo4j.rel.OppositeToRelNeoEntity;
-import imitori.entity.neo4j.rel.RelatedToRelNeoEntity;
-import imitori.entity.neo4j.rel.SimilarToRelNeoEntity;
-import imitori.entity.neo4j.rel.TranslateToRelNeoEntity;
 import imitori.entity.neo4j.WordNeoEntity;
 
-public interface WordNeoRepository extends Neo4jRepository<WordNeoEntity, Integer> {
+public class WordNeoRepository {
+    private final WordNeoCrudRepository crud;
 
-    // Add a word
-    
+    public WordNeoRepository(WordNeoCrudRepository cr) {
+        this.crud = cr;
+    }
 
+    public Integer searchWord(String s) {
+        return crud.searchWord(s);
+    }
+
+    public Integer searchWord(WordNeoEntity s) {
+        return -1;
+    }
+
+    public Integer getMaxId() {
+        return -1;
+    }
+
+    public Integer insert(WordNeoEntity w) {
+        return -1;
+    }
+
+    public WordNeoEntity findOneByWord(String w) {
+        WordNeoEntity res = new WordNeoEntity();
+        return res;
+    }
+
+    public ArrayList<WordNeoEntity> findAllByWord(String w, Integer option) {
+        ArrayList<WordNeoEntity> res = new ArrayList<>();
+        return res;
+    }
+
+    public Integer updateWord(Integer id, WordNeoEntity w) {
+        return -1;
+    }
 }
